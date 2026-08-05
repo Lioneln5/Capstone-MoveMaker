@@ -1,0 +1,23 @@
+# Raw and source-backup datasets
+Data/source_backups/
+Data/TransferMarkt/
+Data/2017-2024/
+
+# Large cleaned Transfermarkt relational tables
+Data/processed/transfermarkt_clean/tables/
+
+# Python and notebook artifacts
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local environment and editor files
+.env
+.venv/
+venv/
+.vscode/
+.idea/
+
+# Operating-system artifacts
+.DS_Store
+Thumbs.db
