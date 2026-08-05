@@ -1,0 +1,13 @@
+check,actual,expected,status,notes
+Output row preservation,35139,35139,OK,Left joins must retain one row per transfer.
+Transfer event ID uniqueness,35139,35139,OK,Primary transfer event key remains unique after every merge.
+Transfer natural-key duplicates,0,0,OK,No join fanout or duplicate source transfers.
+Player dimension key uniqueness,0,0,OK,Required for a many-to-one join.
+Club dimension key uniqueness,0,0,OK,Required for two many-to-one joins.
+Player Dimension Rows Matched,35139,35139,OK,Historical union dimension should cover every transfer fact ID.
+From Club Dimension Rows Matched,35139,35139,OK,Historical union dimension should cover every transfer fact ID.
+To Club Dimension Rows Matched,35139,35139,OK,Historical union dimension should cover every transfer fact ID.
+Source transfer fields preserved,True,True,OK,Every cleaned transfer column remains unchanged and in original row order.
+Player identity join flags,35139,35139,OK,A historical player-dimension row exists for every transfer.
+Origin club identity join flags,35139,35139,OK,A historical club-dimension row exists for every origin club ID.
+Destination club identity join flags,35139,35139,OK,A historical club-dimension row exists for every destination club ID.

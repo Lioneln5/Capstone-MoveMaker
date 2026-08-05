@@ -1,0 +1,27 @@
+{
+  "grain": "One cleaned player transfer event.",
+  "primary_key": "transfer_event_id",
+  "natural_key": [
+    "player_id",
+    "transfer_date",
+    "from_club_id",
+    "to_club_id"
+  ],
+  "input_transfer_rows": 35139,
+  "output_rows": 35139,
+  "output_columns": 63,
+  "unique_players": 4345,
+  "unique_origin_clubs": 6508,
+  "unique_destination_clubs": 5413,
+  "same_club_id_rows": 1,
+  "origin_canonical_name_available_rows": 35139,
+  "destination_canonical_name_available_rows": 35139,
+  "checks_passed": 12,
+  "checks_failed": 0,
+  "inputs": {
+    "Data\\processed\\transfermarkt_clean\\tables\\transfers_clean.csv": "e99e82fa1b660236c893a4f0f543edda1c5282a3058767a7c665db3fb53f8221",
+    "Data\\processed\\transfermarkt_clean\\player_identity_union.csv": "2e8effe416d06da9f760785883113373fb879ad7b1ebaf27a59fc751468a9b7f",
+    "Data\\processed\\transfermarkt_clean\\club_dimension_historical.csv": "2a89325ee2bb8cbfe2da67697b9af5440dad226730db75c03d7394b1ed16b62e"
+  },
+  "output_sha256": "70f329d9670e4c95c5356504b8dbc508c22e35cd55253faaa24f51989be2f667"
+}
