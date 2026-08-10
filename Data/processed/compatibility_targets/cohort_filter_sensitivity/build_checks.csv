@@ -1,0 +1,146 @@
+check,severity,passed,observed,expected,detail
+no_forbidden_predictors,blocking,True,,none,"Target, eligibility, exclusion, and roster fields cannot enter either model."
+only_two_declared_feature_sets,blocking,True,player_history_baseline;full_explicit_fit,player_history_baseline;full_explicit_fit,The diagnostic does not run the unnecessary five-feature-set grid.
+primary_policy_opportunity_funnel_matches_eligibility,blocking,True,eligibility=312;funnel=312,equal,Sequential funnel and imported exclusion logic must select identical rows.
+opportunity_primary_membership_reproduced,blocking,True,0,0,The diagnostic must exactly reproduce the frozen primary eligibility flag.
+primary_policy_performance_funnel_matches_eligibility,blocking,True,eligibility=271;funnel=271,equal,Sequential funnel and imported exclusion logic must select identical rows.
+performance_primary_membership_reproduced,blocking,True,0,0,The diagnostic must exactly reproduce the frozen primary eligibility flag.
+primary_policy_adaptation_funnel_matches_eligibility,blocking,True,eligibility=256;funnel=256,equal,Sequential funnel and imported exclusion logic must select identical rows.
+adaptation_primary_membership_reproduced,blocking,True,0,0,The diagnostic must exactly reproduce the frozen primary eligibility flag.
+all_season_arrivals_opportunity_funnel_matches_eligibility,blocking,True,eligibility=398;funnel=398,equal,Sequential funnel and imported exclusion logic must select identical rows.
+all_season_arrivals_performance_funnel_matches_eligibility,blocking,True,eligibility=332;funnel=332,equal,Sequential funnel and imported exclusion logic must select identical rows.
+all_season_arrivals_adaptation_funnel_matches_eligibility,blocking,True,eligibility=317;funnel=317,equal,Sequential funnel and imported exclusion logic must select identical rows.
+no_destination_minutes_threshold_opportunity_funnel_matches_eligibility,blocking,True,eligibility=312;funnel=312,equal,Sequential funnel and imported exclusion logic must select identical rows.
+no_destination_minutes_threshold_performance_funnel_matches_eligibility,blocking,True,eligibility=312;funnel=312,equal,Sequential funnel and imported exclusion logic must select identical rows.
+no_destination_minutes_threshold_adaptation_funnel_matches_eligibility,blocking,True,eligibility=289;funnel=289,equal,Sequential funnel and imported exclusion logic must select identical rows.
+all_roles_opportunity_funnel_matches_eligibility,blocking,True,eligibility=335;funnel=335,equal,Sequential funnel and imported exclusion logic must select identical rows.
+all_roles_performance_funnel_matches_eligibility,blocking,True,eligibility=271;funnel=271,equal,Sequential funnel and imported exclusion logic must select identical rows.
+all_roles_adaptation_funnel_matches_eligibility,blocking,True,eligibility=256;funnel=256,equal,Sequential funnel and imported exclusion logic must select identical rows.
+fully_relaxed_opportunity_funnel_matches_eligibility,blocking,True,eligibility=424;funnel=424,equal,Sequential funnel and imported exclusion logic must select identical rows.
+fully_relaxed_performance_funnel_matches_eligibility,blocking,True,eligibility=398;funnel=398,equal,Sequential funnel and imported exclusion logic must select identical rows.
+fully_relaxed_adaptation_funnel_matches_eligibility,blocking,True,eligibility=373;funnel=373,equal,Sequential funnel and imported exclusion logic must select identical rows.
+primary_ridge_rolling_effect_reproduced,blocking,True,5.551115123125783e-17,<1e-12,The diagnostic primary row must reproduce the published rolling ridge result.
+all_season_arrivals_opportunity_final_superset,blocking,True,0,0,Every relaxed final cohort must retain every primary-cohort row.
+all_season_arrivals_opportunity_all_target_rows_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_opportunity_target_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_opportunity_transfer_type_transfer_or_loan_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_opportunity_strict_compatibility_features_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_opportunity_june_october_arrival_window_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_opportunity_outfield_role_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_opportunity_destination_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_opportunity_prior3_performance_baseline_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_opportunity_prior3_baseline_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_performance_final_superset,blocking,True,0,0,Every relaxed final cohort must retain every primary-cohort row.
+all_season_arrivals_performance_all_target_rows_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_performance_target_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_performance_transfer_type_transfer_or_loan_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_performance_strict_compatibility_features_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_performance_june_october_arrival_window_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_performance_outfield_role_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_performance_destination_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_performance_prior3_performance_baseline_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_performance_prior3_baseline_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_adaptation_final_superset,blocking,True,0,0,Every relaxed final cohort must retain every primary-cohort row.
+all_season_arrivals_adaptation_all_target_rows_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_adaptation_target_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_adaptation_transfer_type_transfer_or_loan_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_adaptation_strict_compatibility_features_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_adaptation_june_october_arrival_window_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_adaptation_outfield_role_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_adaptation_destination_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_adaptation_prior3_performance_baseline_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_season_arrivals_adaptation_prior3_baseline_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_opportunity_final_superset,blocking,True,0,0,Every relaxed final cohort must retain every primary-cohort row.
+no_destination_minutes_threshold_opportunity_all_target_rows_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_opportunity_target_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_opportunity_transfer_type_transfer_or_loan_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_opportunity_strict_compatibility_features_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_opportunity_june_october_arrival_window_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_opportunity_outfield_role_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_opportunity_destination_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_opportunity_prior3_performance_baseline_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_opportunity_prior3_baseline_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_performance_final_superset,blocking,True,0,0,Every relaxed final cohort must retain every primary-cohort row.
+no_destination_minutes_threshold_performance_all_target_rows_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_performance_target_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_performance_transfer_type_transfer_or_loan_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_performance_strict_compatibility_features_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_performance_june_october_arrival_window_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_performance_outfield_role_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_performance_destination_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_performance_prior3_performance_baseline_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_performance_prior3_baseline_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_adaptation_final_superset,blocking,True,0,0,Every relaxed final cohort must retain every primary-cohort row.
+no_destination_minutes_threshold_adaptation_all_target_rows_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_adaptation_target_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_adaptation_transfer_type_transfer_or_loan_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_adaptation_strict_compatibility_features_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_adaptation_june_october_arrival_window_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_adaptation_outfield_role_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_adaptation_destination_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_adaptation_prior3_performance_baseline_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+no_destination_minutes_threshold_adaptation_prior3_baseline_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_opportunity_final_superset,blocking,True,0,0,Every relaxed final cohort must retain every primary-cohort row.
+all_roles_opportunity_all_target_rows_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_opportunity_target_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_opportunity_transfer_type_transfer_or_loan_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_opportunity_strict_compatibility_features_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_opportunity_june_october_arrival_window_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_opportunity_outfield_role_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_opportunity_destination_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_opportunity_prior3_performance_baseline_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_opportunity_prior3_baseline_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_performance_final_superset,blocking,True,0,0,Every relaxed final cohort must retain every primary-cohort row.
+all_roles_performance_all_target_rows_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_performance_target_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_performance_transfer_type_transfer_or_loan_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_performance_strict_compatibility_features_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_performance_june_october_arrival_window_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_performance_outfield_role_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_performance_destination_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_performance_prior3_performance_baseline_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_performance_prior3_baseline_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_adaptation_final_superset,blocking,True,0,0,Every relaxed final cohort must retain every primary-cohort row.
+all_roles_adaptation_all_target_rows_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_adaptation_target_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_adaptation_transfer_type_transfer_or_loan_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_adaptation_strict_compatibility_features_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_adaptation_june_october_arrival_window_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_adaptation_outfield_role_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_adaptation_destination_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_adaptation_prior3_performance_baseline_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+all_roles_adaptation_prior3_baseline_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_opportunity_final_superset,blocking,True,0,0,Every relaxed final cohort must retain every primary-cohort row.
+fully_relaxed_opportunity_all_target_rows_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_opportunity_target_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_opportunity_transfer_type_transfer_or_loan_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_opportunity_strict_compatibility_features_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_opportunity_june_october_arrival_window_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_opportunity_outfield_role_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_opportunity_destination_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_opportunity_prior3_performance_baseline_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_opportunity_prior3_baseline_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_performance_final_superset,blocking,True,0,0,Every relaxed final cohort must retain every primary-cohort row.
+fully_relaxed_performance_all_target_rows_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_performance_target_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_performance_transfer_type_transfer_or_loan_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_performance_strict_compatibility_features_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_performance_june_october_arrival_window_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_performance_outfield_role_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_performance_destination_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_performance_prior3_performance_baseline_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_performance_prior3_baseline_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_adaptation_final_superset,blocking,True,0,0,Every relaxed final cohort must retain every primary-cohort row.
+fully_relaxed_adaptation_all_target_rows_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_adaptation_target_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_adaptation_transfer_type_transfer_or_loan_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_adaptation_strict_compatibility_features_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_adaptation_june_october_arrival_window_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_adaptation_outfield_role_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_adaptation_destination_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_adaptation_prior3_performance_baseline_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+fully_relaxed_adaptation_prior3_baseline_minutes_at_least_450_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
+only_ridge_scored,blocking,True,ridge,ridge,No elastic-net or boosted-tree models are run in this diagnostic.
+only_declared_feature_sets_scored,blocking,True,full_explicit_fit;player_history_baseline,full_explicit_fit;player_history_baseline,Only the requested baseline and full compatibility designs are evaluated.
+all_scored_rows_preseason_safe,blocking,True,0,0,Every recorded source season must precede the destination outcome season.
+all_source_files_unchanged_during_run,blocking,True,0,0,Hash equality proves the diagnostic did not modify any declared source file.

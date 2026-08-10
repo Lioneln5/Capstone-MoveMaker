@@ -1,0 +1,5 @@
+origin_id,train_start_year,train_end_year,validation_year,evaluation_year,training_window,selection_rule
+origin_2019,2018,2018,2019,2020,2018-2018,"minimum validation MAE, then RMSE, then hyperparameter JSON"
+origin_2020,2018,2019,2020,2021,2018-2019,"minimum validation MAE, then RMSE, then hyperparameter JSON"
+origin_2021,2018,2020,2021,2022,2018-2020,"minimum validation MAE, then RMSE, then hyperparameter JSON"
+origin_2022,2018,2021,2022,2023,2018-2021,"minimum validation MAE, then RMSE, then hyperparameter JSON"

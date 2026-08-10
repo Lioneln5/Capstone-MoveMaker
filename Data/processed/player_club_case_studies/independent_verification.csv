@@ -1,0 +1,13 @@
+check,severity,passed,observed,expected,detail
+required_outputs_exist,blocking,True,all present,all present,Every declared case-study artifact exists.
+build_checks_all_pass,blocking,True,0,0,All construction-time invariants passed.
+source_manifest_hashes_match,blocking,True,all match,all match,Verification uses the exact recorded source artifacts.
+dual_target_cohort_recomputed,blocking,True,124,124,The mature dual-target evaluation cohort independently reproduces.
+deterministic_selection_recomputed,blocking,True,"['pts:121477:379:GB1:2021', 'pts:181378:417:FR1:2022', 'pts:238752:1390:IT1:2021', 'pts:25488:380:IT1:2023', 'pts:284884:940:ES1:2022', 'pts:286779:2687:ES1:2023', 'pts:352392:667:FR1:2021', 'pts:456492:3:L1:2023', 'pts:623040:276:IT1:2022', 'pts:66100:131:ES1:2023', 'pts:80444:405:GB1:2022', 'pts:82503:367:ES1:2023']","['pts:121477:379:GB1:2021', 'pts:181378:417:FR1:2022', 'pts:238752:1390:IT1:2021', 'pts:25488:380:IT1:2023', 'pts:284884:940:ES1:2022', 'pts:286779:2687:ES1:2023', 'pts:352392:667:FR1:2021', 'pts:456492:3:L1:2023', 'pts:623040:276:IT1:2022', 'pts:66100:131:ES1:2023', 'pts:80444:405:GB1:2022', 'pts:82503:367:ES1:2023']",The twelve reported cases exactly match the predeclared category and role quotas.
+case_category_counts_exact,blocking,True,"{'confirmed_warning': 3, 'false_warning': 3, 'confirmed_positive': 2, 'validated_tradeoff': 2, 'false_positive': 2}","{'confirmed_warning': 3, 'false_warning': 3, 'confirmed_positive': 2, 'validated_tradeoff': 2, 'false_positive': 2}","Success, warning, trade-off, and failure representation is exact."
+target_predictions_map_to_verified_pairs,blocking,True,24,24 exact mappings,Every case prediction maps exactly to the verified rolling-origin paired output.
+transfer_details_map_to_targets,blocking,True,all match,all match,"Names, clubs, dates, and transfer ids map to the canonical target table."
+style_profiles_recomputed,blocking,True,96 exact rows,96 exact rows,Every player/team style value and gap maps to the strict feature matrix.
+context_preference_profiles_recomputed,blocking,True,72 exact rows,72 exact rows,"Every historical context, preferred level, slope, and distance maps to the strict feature matrix."
+aggregate_fit_scores_recomputed,blocking,True,all match,all match,Familiarity and preference-fit scores independently reproduce from six component distances.
+feature_timing_safe,blocking,True,0,0,"Every case uses player, preference, and club-context seasons strictly before the outcome season."

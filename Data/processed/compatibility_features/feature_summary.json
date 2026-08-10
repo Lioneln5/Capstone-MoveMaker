@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "broad_target_rows": 905269,
+  "advanced_target_rows": 17790,
+  "strict_model_eligible_rows": 10540,
+  "roster_model_eligible_rows": 10069,
+  "preference_model_eligible_rows": 7378,
+  "blocking_checks": 8,
+  "blocking_failures": 0
+}

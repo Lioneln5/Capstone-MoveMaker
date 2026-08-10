@@ -2,9 +2,69 @@
 Data/source_backups/
 Data/TransferMarkt/
 Data/2017-2024/
+Data/Open-Data-Master/
+football-datasets-main/
 
 # Large cleaned Transfermarkt relational tables
 Data/processed/transfermarkt_clean/tables/
+Data/processed/football_datalake_clean/tables/
+
+# Large reproducible canonical row-level tables
+Data/processed/canonical_integration/canonical_transfer_history.csv
+Data/processed/canonical_integration/transfer_source_evidence.csv
+Data/processed/canonical_integration/valuation_source_evidence.csv
+Data/processed/canonical_integration/canonical_valuation_history.csv
+Data/processed/canonical_integration/canonical_player_dimension.csv
+Data/processed/canonical_integration/player_snapshot_evidence.csv
+Data/processed/canonical_integration/canonical_latest_valuation.csv
+Data/processed/canonical_integration/canonical_club_dimension.csv
+Data/processed/canonical_performance/canonical_player_team_season_performance.csv
+Data/processed/canonical_performance/modeling_scope_2017_2024.csv
+Data/processed/canonical_performance/fbref_advanced_performance_features.csv
+Data/processed/canonical_performance/performance_difference_review.csv
+
+# Large reproducible compatibility feature tables
+Data/processed/compatibility_features/broad_lagged_player_features_2017_2024.csv
+Data/processed/compatibility_features/advanced_compatibility_model_matrix.csv
+Data/processed/compatibility_features/teammate_style_compatibility_features.csv
+Data/processed/compatibility_features/roster_conditioned_teammate_style_context.csv
+Data/processed/compatibility_features/strict_prior_club_style_context.csv
+Data/processed/compatibility_features/advanced_lagged_player_styles.csv
+
+# Large reproducible comprehensive-master components
+Data/processed/transfermarkt_merged/transfermarkt_comprehensive_master.csv
+Data/processed/transfermarkt_merged/transfer_club_context.csv
+Data/processed/transfermarkt_merged/transfer_appearance_features.csv
+Data/processed/transfermarkt_merged/transfer_valuation_features.csv
+Data/processed/transfermarkt_merged/transfer_lineup_features.csv
+Data/processed/transfermarkt_merged/transfer_event_features.csv
+
+# Large StatsBomb extracts; retain catalogs, crosswalk candidates, checks, and summaries
+Data/processed/statsbomb_case_studies/events_case_study.csv.gz
+Data/processed/statsbomb_case_studies/three_sixty_event_context.csv.gz
+Data/processed/statsbomb_case_studies/player_match_features.csv
+Data/processed/statsbomb_case_studies/player_period_features.csv
+Data/processed/statsbomb_case_studies/lineups_case_study.csv
+Data/processed/statsbomb_case_studies/team_match_features.csv
+
+# Generated workbook inspection and preview artifacts
+outputs/**/work/
+outputs/**/.build/
+outputs/**/workbook_build/
+outputs/**/node_modules/
+outputs/**/previews/
+outputs/**/*.ndjson
+outputs/**/*.png
+outputs/**/*.mjs
+
+# Local assistant settings
+.claude/
+
+# Temporary analytical databases
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+node_modules/
 
 # Python and notebook artifacts
 __pycache__/

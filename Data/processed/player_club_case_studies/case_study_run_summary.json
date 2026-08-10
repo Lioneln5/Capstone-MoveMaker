@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "mature_dual_target_cohort": 124,
+  "selected_cases": 12,
+  "case_categories": {
+    "confirmed_warning": 3,
+    "false_warning": 3,
+    "confirmed_positive": 2,
+    "validated_tradeoff": 2,
+    "false_positive": 2
+  },
+  "target_prediction_rows": 24,
+  "player_style_rows": 96,
+  "context_preference_rows": 72,
+  "statsbomb_supplement_cases": 3,
+  "blocking_checks": 11,
+  "blocking_failures": 0
+}

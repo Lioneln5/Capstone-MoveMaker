@@ -1,0 +1,38 @@
+﻿table,action,affected_rows_or_cells,details
+countries,Retain all source rows,124,"No natural-key duplicates existed, so no rows were removed."
+countries,Canonicalize physical types,124,"Dates, nullable integers, decimals, and text were parsed using the declared table schema; blanks remain missing."
+countries,Add source provenance,124,Added source_file and physical source_row_number without replacing source keys.
+competitions,Retain all source rows,65,"No natural-key duplicates existed, so no rows were removed."
+competitions,Canonicalize physical types,65,"Dates, nullable integers, decimals, and text were parsed using the declared table schema; blanks remain missing."
+competitions,Add source provenance,65,Added source_file and physical source_row_number without replacing source keys.
+national_teams,Retain all source rows,124,"No natural-key duplicates existed, so no rows were removed."
+national_teams,Canonicalize physical types,124,"Dates, nullable integers, decimals, and text were parsed using the declared table schema; blanks remain missing."
+national_teams,Add source provenance,124,Added source_file and physical source_row_number without replacing source keys.
+players,Retain all source rows,50149,"No natural-key duplicates existed, so no rows were removed."
+players,Canonicalize physical types,50149,"Dates, nullable integers, decimals, and text were parsed using the declared table schema; blanks remain missing."
+players,Add source provenance,50149,Added source_file and physical source_row_number without replacing source keys.
+clubs,Retain all source rows,796,"No natural-key duplicates existed, so no rows were removed."
+clubs,Canonicalize physical types,796,"Dates, nullable integers, decimals, and text were parsed using the declared table schema; blanks remain missing."
+clubs,Add source provenance,796,Added source_file and physical source_row_number without replacing source keys.
+transfers,Retain all source rows,35139,"No natural-key duplicates existed, so no rows were removed."
+transfers,Canonicalize physical types,35139,"Dates, nullable integers, decimals, and text were parsed using the declared table schema; blanks remain missing."
+transfers,Add source provenance,35139,Added source_file and physical source_row_number without replacing source keys.
+player_valuations,Retain all source rows,507815,"No natural-key duplicates existed, so no rows were removed."
+player_valuations,Canonicalize physical types,507815,"Dates, nullable integers, decimals, and text were parsed using the declared table schema; blanks remain missing."
+player_valuations,Add source provenance,507815,Added source_file and physical source_row_number without replacing source keys.
+games,Retain all source rows,88958,"No natural-key duplicates existed, so no rows were removed."
+games,Canonicalize physical types,88958,"Dates, nullable integers, decimals, and text were parsed using the declared table schema; blanks remain missing."
+games,Add source provenance,88958,Added source_file and physical source_row_number without replacing source keys.
+club_games,Retain all source rows,177916,"No natural-key duplicates existed, so no rows were removed."
+club_games,Canonicalize physical types,177916,"Dates, nullable integers, decimals, and text were parsed using the declared table schema; blanks remain missing."
+club_games,Add source provenance,177916,Added source_file and physical source_row_number without replacing source keys.
+appearances,Retain all source rows,1894350,"No natural-key duplicates existed, so no rows were removed."
+appearances,Canonicalize physical types,1894350,"Dates, nullable integers, decimals, and text were parsed using the declared table schema; blanks remain missing."
+appearances,Add source provenance,1894350,Added source_file and physical source_row_number without replacing source keys.
+game_lineups,Retain all source rows,3179016,"No natural-key duplicates existed, so no rows were removed."
+game_lineups,Canonicalize physical types,3179016,"Dates, nullable integers, decimals, and text were parsed using the declared table schema; blanks remain missing."
+game_lineups,Add source provenance,3179016,Added source_file and physical source_row_number without replacing source keys.
+game_events,Retain all source rows,1274469,"No natural-key duplicates existed, so no rows were removed."
+game_events,Canonicalize physical types,1274469,"Dates, nullable integers, decimals, and text were parsed using the declared table schema; blanks remain missing."
+game_events,Add source provenance,1274469,Added source_file and physical source_row_number without replacing source keys.
+game_events,Convert unavailable minute sentinel to missing,17575,Source -1 values are retained in minute_raw; minute is null and event_minute_available is false.

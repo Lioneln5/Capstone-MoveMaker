@@ -1,0 +1,22 @@
+{
+  "generated_on": "2026-08-07",
+  "tables": 11,
+  "source_rows": 5605055,
+  "clean_rows": 5605055,
+  "source_bytes": 363634524,
+  "clean_bytes": 1452056210,
+  "tables_with_missing_keys": [
+    "player_injuries",
+    "transfer_history"
+  ],
+  "tables_with_duplicate_keys": [
+    "player_injuries",
+    "player_national_performances",
+    "team_competitions_seasons",
+    "transfer_history"
+  ],
+  "mojibake_flagged_rows": 8281,
+  "blocking_checks": 33,
+  "blocking_failures": 0,
+  "status": "pass"
+}

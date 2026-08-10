@@ -1,0 +1,18 @@
+check,severity,passed,observed,expected,detail
+required_outputs_exist,blocking,True,,all present,Every declared diagnostic and audit artifact must exist.
+matrix_grain_unique,blocking,True,0,0,The frozen strict matrix remains one row per destination performance record.
+declared_condition_target_grid_complete,blocking,True,15,15,Every condition-target combination must appear exactly once.
+all_build_checks_pass,blocking,True,0,0,Independent verification starts only from a passing diagnostic build.
+source_hashes_unchanged,blocking,True,,none,Every source file must still match its recorded pre-run and post-run SHA-256 hash.
+funnel_counts_independently_recomputed,blocking,True,,none,Every funnel stage is independently reconstructed from the frozen matrix.
+final_membership_independently_recomputed,blocking,True,,none,Every reported final cohort exactly matches independent policy reconstruction.
+primary_flags_exactly_reproduced,blocking,True,,none,Primary reconstructed membership must equal the frozen eligibility flags.
+relaxed_funnel_stages_are_primary_supersets,blocking,True,,none,Every relaxed stage must retain all IDs surviving the corresponding primary stage.
+relaxed_final_cohorts_are_primary_supersets,blocking,True,,none,Every relaxed final cohort must retain every frozen primary row.
+only_ridge_selected,blocking,True,ridge,ridge,The diagnostic cannot contain elastic-net or boosted-tree fits.
+only_declared_feature_sets_selected,blocking,True,full_explicit_fit;player_history_baseline,full_explicit_fit;player_history_baseline,The diagnostic must score exactly two declared feature sets.
+selected_spec_grid_complete,blocking,True,120,120,"Each condition, target, origin, and feature set needs one selected ridge specification."
+all_scored_rows_use_preseason_sources,blocking,True,,none,"All player, preference, and destination-context source seasons precede outcomes."
+no_post_outcome_or_eligibility_predictors,blocking,True,,none,"No target, eligibility, exclusion, or roster field enters scoring."
+pooled_metrics_and_labels_recomputed,blocking,True,,none,"All pooled effects, intervals, win rates, variance, and labels are recomputed from pairs."
+published_primary_ridge_effects_match,blocking,True,,none,"The diagnostic primary row must reproduce all published ridge point, interval, origin, and stability fields."

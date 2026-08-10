@@ -1,0 +1,32 @@
+﻿check,status,observed,expected,detail
+required_outputs,pass,17,17,missing=[]
+canonical_player_union,pass,190592,190592,Player dimension equals identity-crosswalk plus valuation/transfer ID union.
+canonical_player_unique,pass,190592,190592,One row per canonical player ID.
+fact_only_stub_accounting,pass,19601,19601,Only IDs absent from the identity crosswalk are labeled fact-only stubs.
+canonical_club_union,pass,46490,46490,Club dimension exactly retains the comprehensive club identity crosswalk.
+canonical_club_unique,pass,46490,46490,One row per canonical club ID.
+valuation_source_rows,pass,"{'supplemental_datalake': 901429, 'current_transfermarkt': 507815}","{'supplemental_datalake': 901429, 'current_transfermarkt': 507815}",Every cleaned valuation source row is retained.
+valuation_source_record_unique,pass,0,0,Source record provenance is unique within each source.
+valuation_spine_unique,pass,1408834,1408834,One row per canonical player-date key.
+valuation_evidence_accounting,pass,1409244,1409244,Spine evidence counts reconcile to the row-preserving evidence table.
+valuation_overlap_reconciliation,pass,410,410,Cross-source player-date overlap matches the source audit.
+valuation_conflict_reconciliation,pass,187,187,Conflicting player-date values match the source audit.
+valuation_conflicts_unresolved,pass,0,0,No canonical value is invented for conflicting evidence.
+valuation_review_queue,pass,187,187,"Valuation review exactly contains conflicts, within-source duplicates, and incomplete keys."
+valuation_player_references,pass,78022,78022,Every valuation player resolves to the canonical dimension.
+latest_player_unique,pass,78022,78022,One latest row per player.
+latest_derived_from_history,pass,78022,78022,Latest valuations use each player's maximum canonical history date.
+transfer_source_rows,pass,"{'supplemental_datalake': 1101440, 'current_transfermarkt': 35139}","{'supplemental_datalake': 1101440, 'current_transfermarkt': 35139}",Every cleaned transfer source row is retained.
+transfer_source_record_unique,pass,0,0,Source record provenance is unique within each source.
+transfer_spine_unique,pass,1106278,1106278,One row per canonical complete event; incomplete records retain source-specific IDs.
+transfer_evidence_accounting,pass,1136579,1136579,Spine evidence counts reconcile to the row-preserving evidence table.
+transfer_overlap_accounting,pass,"{'shared_datalake_rows': 30180, 'canonical_shared_events': 30178, 'duplicate_shared_rows': 2}","{'shared_datalake_rows': 30180, 'canonical_shared_events': 30178, 'duplicate_shared_rows': 2}",The source audit counted rows; two duplicated datalake rows collapse into their canonical shared events.
+transfer_fee_conflict_reconciliation,pass,38,38,Fee conflicts match the source audit.
+transfer_value_conflict_reconciliation,pass,175,175,Market-value-at-transfer conflicts match the source audit.
+transfer_fee_conflicts_unresolved,pass,0,0,Conflicting transfer fees do not receive an invented canonical value.
+zero_fee_semantics,pass,0,0,Literal zeros remain unclassified rather than inferred free transfers.
+transfer_review_queue,pass,893,893,"Conflict review exactly contains conflicts, within-source duplicates, and incomplete keys."
+transfer_player_references,pass,118635,118635,Every transfer player resolves to the canonical dimension.
+transfer_from_club_references,pass,42543,42543,Every origin club resolves to the canonical club dimension.
+transfer_to_club_references,pass,38547,38547,Every destination club resolves to the canonical club dimension.
+source_manifest_hashes,pass,1,1,Independent SHA-256 recomputation matches every recorded source.

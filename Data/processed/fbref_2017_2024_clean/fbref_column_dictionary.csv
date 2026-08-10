@@ -1,0 +1,82 @@
+﻿column_order,column,definition,role,dtype,non_null_count,missing_count,missing_pct,distinct_count,transformation
+1,fbref_row_id,Deterministic SHA-256 identifier derived from the canonical player-squad-season key.,Identity/provenance,str,18243,0,0.0,18243,Renamed to canonical snake_case; source values otherwise retained.
+2,player_squad_season_key,"Readable natural key: normalized player, birth year, normalized squad, competition ID, and season.",Identity/provenance,string,18243,0,0.0,18243,Renamed to canonical snake_case; source values otherwise retained.
+3,player_identity_key,"Normalized player name plus reported birth year; helper for identity resolution, not a universal ID.",Identity/provenance,string,18243,0,0.0,5967,Renamed to canonical snake_case; source values otherwise retained.
+4,source_file,Original seasonal CSV filename.,Identity/provenance,string,18243,0,0.0,7,Renamed to canonical snake_case; source values otherwise retained.
+5,source_row_number,One-based physical CSV row number including the header row.,Identity/provenance,Int64,18243,0,0.0,2689,Renamed to canonical snake_case; source values otherwise retained.
+6,source_rank,Rank value retained from the source; excluded from modeling.,Identity/provenance,Int64,18243,0,0.0,2918,Renamed to canonical snake_case; source values otherwise retained.
+7,player_name,Player display name retained with accents and original spelling.,Identity/provenance,string,18243,0,0.0,5926,Renamed to canonical snake_case; source values otherwise retained.
+8,player_name_normalized,Lowercase accent-free alphanumeric player name for controlled matching.,Identity/provenance,string,18243,0,0.0,5923,Renamed to canonical snake_case; source values otherwise retained.
+9,nationality,Cleaned nationality display; code-like source values expanded to country/territory names.,Identity/provenance,string,18243,0,0.0,132,Known code-like values expanded; original retained in nationality_raw.
+10,nationality_raw,Nationality exactly as supplied by the source.,Identity/provenance,string,18243,0,0.0,132,Renamed to canonical snake_case; source values otherwise retained.
+11,position,"Broad source position: GK, DF, MF, or FW.",Identity/provenance,string,18243,0,0.0,4,Renamed to canonical snake_case; source values otherwise retained.
+12,is_goalkeeper,True when the source position is GK.,Identity/provenance,boolean,18243,0,0.0,2,Renamed to canonical snake_case; source values otherwise retained.
+13,squad_name,Squad display name retained from the source.,Identity/provenance,string,18243,0,0.0,145,Renamed to canonical snake_case; source values otherwise retained.
+14,squad_name_normalized,Lowercase accent-free alphanumeric squad name for controlled matching.,Identity/provenance,string,18243,0,0.0,145,Renamed to canonical snake_case; source values otherwise retained.
+15,competition_name,Big Five domestic league name.,Identity/provenance,string,18243,0,0.0,5,Renamed to canonical snake_case; source values otherwise retained.
+16,competition_id,Transfermarkt domestic competition identifier mapped from competition_name.,Identity/provenance,string,18243,0,0.0,5,Renamed to canonical snake_case; source values otherwise retained.
+17,season,Season label in YYYY-YYYY format.,Identity/provenance,string,18243,0,0.0,7,Renamed to canonical snake_case; source values otherwise retained.
+18,season_start_year,First calendar year in season.,Identity/provenance,Int64,18243,0,0.0,7,Renamed to canonical snake_case; source values otherwise retained.
+19,season_end_year,Second calendar year in season.,Identity/provenance,Int64,18243,0,0.0,7,Renamed to canonical snake_case; source values otherwise retained.
+20,season_end_date,Standardized season completion date used for leakage-safe joins (June 30).,Identity/provenance,datetime64[us],18243,0,0.0,7,Renamed to canonical snake_case; source values otherwise retained.
+21,age,Source-reported player age for the season.,Identity/provenance,Int64,18243,0,0.0,29,Renamed to canonical snake_case; source values otherwise retained.
+22,birth_year,Source-reported birth year.,Identity/provenance,Int64,18243,0,0.0,31,Renamed to canonical snake_case; source values otherwise retained.
+23,age_birth_year_consistent,Whether age is within the two plausible integer ages implied by season start year and birth year.,Identity/provenance,boolean,18243,0,0.0,1,Renamed to canonical snake_case; source values otherwise retained.
+24,matches_played,Cleaned FBref player-season field: matches played.,Seasonal performance feature,Int64,18243,0,0.0,38,Renamed to canonical snake_case; source values otherwise retained.
+25,total_minutes,Total league minutes. Renamed from the misleading source label 'Avg Mins per Match'.,Seasonal performance feature,int64,18243,0,0.0,3270,Renamed; values unchanged.
+26,minutes_per_appearance,Derived total_minutes divided by matches_played.,Seasonal performance feature,float64,18243,0,0.0,9487,Derived with safe division.
+27,nineties,Derived total_minutes divided by 90.,Seasonal performance feature,float64,18243,0,0.0,3270,Derived with safe division.
+28,goals,Cleaned FBref player-season field: goals.,Seasonal performance feature,Int64,18243,0,0.0,38,Renamed to canonical snake_case; source values otherwise retained.
+29,assists,Cleaned FBref player-season field: assists.,Seasonal performance feature,Int64,18243,0,0.0,22,Renamed to canonical snake_case; source values otherwise retained.
+30,goals_and_assists,Cleaned FBref player-season field: goals and assists.,Seasonal performance feature,Int64,18243,0,0.0,47,Renamed to canonical snake_case; source values otherwise retained.
+31,non_penalty_goals,Cleaned FBref player-season field: non penalty goals.,Seasonal performance feature,Int64,18243,0,0.0,34,Renamed to canonical snake_case; source values otherwise retained.
+32,penalty_kicks_made,Cleaned FBref player-season field: penalty kicks made.,Seasonal performance feature,Int64,18243,0,0.0,14,Renamed to canonical snake_case; source values otherwise retained.
+33,expected_goals,Cleaned FBref player-season field: expected goals.,Seasonal performance feature,float64,18243,0,0.0,240,Renamed to canonical snake_case; source values otherwise retained.
+34,non_penalty_expected_goals,Cleaned FBref player-season field: non penalty expected goals.,Seasonal performance feature,float64,18243,0,0.0,202,Renamed to canonical snake_case; source values otherwise retained.
+35,progressive_carries,Cleaned FBref player-season field: progressive carries.,Seasonal performance feature,Int64,18243,0,0.0,201,Renamed to canonical snake_case; source values otherwise retained.
+36,progressive_passes,Cleaned FBref player-season field: progressive passes.,Seasonal performance feature,Int64,18243,0,0.0,323,Renamed to canonical snake_case; source values otherwise retained.
+37,goals_per90,Cleaned FBref player-season field: goals per90.,Seasonal performance feature,float64,18243,0,0.0,154,Renamed to canonical snake_case; source values otherwise retained.
+38,assists_per90,Cleaned FBref player-season field: assists per90.,Seasonal performance feature,float64,18243,0,0.0,131,Renamed to canonical snake_case; source values otherwise retained.
+39,tackles_attempted,Cleaned FBref player-season field: tackles attempted.,Seasonal performance feature,Int64,18243,0,0.0,135,Renamed to canonical snake_case; source values otherwise retained.
+40,tackles_won,Cleaned FBref player-season field: tackles won.,Seasonal performance feature,Int64,18243,0,0.0,87,Renamed to canonical snake_case; source values otherwise retained.
+41,dribbles_tackled_pct,Cleaned FBref player-season field: dribbles tackled pct.,Seasonal performance feature,float64,15694,2549,0.13972482596064245,602,Set missing for 2017-18 because the entire source column is zero; other seasons unchanged.
+42,shots_blocked,Cleaned FBref player-season field: shots blocked.,Seasonal performance feature,Int64,18243,0,0.0,55,Renamed to canonical snake_case; source values otherwise retained.
+43,passes_blocked,Cleaned FBref player-season field: passes blocked.,Seasonal performance feature,Int64,18243,0,0.0,65,Renamed to canonical snake_case; source values otherwise retained.
+44,interceptions,Cleaned FBref player-season field: interceptions.,Seasonal performance feature,Int64,18243,0,0.0,96,Renamed to canonical snake_case; source values otherwise retained.
+45,clearances,Cleaned FBref player-season field: clearances.,Seasonal performance feature,Int64,18243,0,0.0,231,Renamed to canonical snake_case; source values otherwise retained.
+46,errors_made,Cleaned FBref player-season field: errors made.,Seasonal performance feature,Int64,18243,0,0.0,10,Renamed to canonical snake_case; source values otherwise retained.
+47,goals_against,Cleaned FBref player-season field: goals against.,Seasonal performance feature,Int64,1190,17053,0.9347695006303788,78,Set missing for non-goalkeepers; also set missing for all 2017-18 rows because the source column is entirely zero.
+48,goals_against_per90,Cleaned FBref player-season field: goals against per90.,Seasonal performance feature,float64,1190,17053,0.9347695006303788,214,Set missing for non-goalkeepers; also set missing for all 2017-18 rows because the source column is entirely zero.
+49,saves,Cleaned FBref player-season field: saves.,Seasonal performance feature,Int64,1190,17053,0.9347695006303788,152,Set missing for non-goalkeepers; also set missing for all 2017-18 rows because the source column is entirely zero.
+50,saves_pct,Cleaned FBref player-season field: saves pct.,Seasonal performance feature,float64,1190,17053,0.9347695006303788,282,Set missing for non-goalkeepers; also set missing for all 2017-18 rows because the source column is entirely zero.
+51,clean_sheets,Cleaned FBref player-season field: clean sheets.,Seasonal performance feature,Int64,1190,17053,0.9347695006303788,23,Set missing for non-goalkeepers; also set missing for all 2017-18 rows because the source column is entirely zero.
+52,clean_sheets_pct,Cleaned FBref player-season field: clean sheets pct.,Seasonal performance feature,float64,1190,17053,0.9347695006303788,192,Set missing for non-goalkeepers; also set missing for all 2017-18 rows because the source column is entirely zero.
+53,penalty_saves_pct,Cleaned FBref player-season field: penalty saves pct.,Seasonal performance feature,float64,1190,17053,0.9347695006303788,27,Set missing for non-goalkeepers; also set missing for all 2017-18 rows because the source column is entirely zero.
+54,passes_completed,Cleaned FBref player-season field: passes completed.,Seasonal performance feature,Int64,18243,0,0.0,2000,Renamed to canonical snake_case; source values otherwise retained.
+55,passes_attempted,Cleaned FBref player-season field: passes attempted.,Seasonal performance feature,Int64,18243,0,0.0,2308,Renamed to canonical snake_case; source values otherwise retained.
+56,pass_completion_pct,Cleaned FBref player-season field: pass completion pct.,Seasonal performance feature,float64,18243,0,0.0,548,Renamed to canonical snake_case; source values otherwise retained.
+57,progressive_pass_distance,Cleaned FBref player-season field: progressive pass distance.,Seasonal performance feature,Int64,18243,0,0.0,7829,Renamed to canonical snake_case; source values otherwise retained.
+58,short_pass_completion_pct,Cleaned FBref player-season field: short pass completion pct.,Seasonal performance feature,float64,18243,0,0.0,449,Renamed to canonical snake_case; source values otherwise retained.
+59,medium_pass_completion_pct,Cleaned FBref player-season field: medium pass completion pct.,Seasonal performance feature,float64,18243,0,0.0,554,Renamed to canonical snake_case; source values otherwise retained.
+60,long_pass_completion_pct,Cleaned FBref player-season field: long pass completion pct.,Seasonal performance feature,float64,18243,0,0.0,689,Renamed to canonical snake_case; source values otherwise retained.
+61,key_passes,Cleaned FBref player-season field: key passes.,Seasonal performance feature,Int64,18243,0,0.0,116,Renamed to canonical snake_case; source values otherwise retained.
+62,passes_into_final_third,Cleaned FBref player-season field: passes into final third.,Seasonal performance feature,Int64,18243,0,0.0,289,Renamed to canonical snake_case; source values otherwise retained.
+63,passes_into_penalty_area,Cleaned FBref player-season field: passes into penalty area.,Seasonal performance feature,Int64,18243,0,0.0,104,Renamed to canonical snake_case; source values otherwise retained.
+64,touches_defensive_penalty_area,Cleaned FBref player-season field: touches defensive penalty area.,Seasonal performance feature,Int64,18243,0,0.0,888,Renamed to canonical snake_case; source values otherwise retained.
+65,take_ons_attempted,Cleaned FBref player-season field: take ons attempted.,Seasonal performance feature,Int64,18243,0,0.0,205,Renamed to canonical snake_case; source values otherwise retained.
+66,successful_take_ons_pct,Cleaned FBref player-season field: successful take ons pct.,Seasonal performance feature,float64,18243,0,0.0,620,Renamed to canonical snake_case; source values otherwise retained.
+67,tackled_during_take_on_pct,Percentage of take-on attempts in which the player was tackled; corrected from a misleading count-style source label.,Seasonal performance feature,float64,18243,0,0.0,577,Renamed to reflect percentage semantics; decimal values unchanged.
+68,carries_into_final_third,Cleaned FBref player-season field: carries into final third.,Seasonal performance feature,Int64,18243,0,0.0,147,Renamed to canonical snake_case; source values otherwise retained.
+69,carries_into_penalty_area,Cleaned FBref player-season field: carries into penalty area.,Seasonal performance feature,Int64,18243,0,0.0,101,Renamed to canonical snake_case; source values otherwise retained.
+70,possessions_lost,Cleaned FBref player-season field: possessions lost.,Seasonal performance feature,Int64,18243,0,0.0,106,Renamed to canonical snake_case; source values otherwise retained.
+71,total_shots,Cleaned FBref player-season field: total shots.,Seasonal performance feature,Int64,18243,0,0.0,153,Renamed to canonical snake_case; source values otherwise retained.
+72,shots_on_target_pct,Cleaned FBref player-season field: shots on target pct.,Seasonal performance feature,float64,18243,0,0.0,446,Renamed to canonical snake_case; source values otherwise retained.
+73,shots_per90,Cleaned FBref player-season field: shots per90.,Seasonal performance feature,float64,18243,0,0.0,278,Renamed to canonical snake_case; source values otherwise retained.
+74,goals_per_shot,Cleaned FBref player-season field: goals per shot.,Seasonal performance feature,float64,18243,0,0.0,48,Renamed to canonical snake_case; source values otherwise retained.
+75,goals_per_shot_on_target,Cleaned FBref player-season field: goals per shot on target.,Seasonal performance feature,float64,18243,0,0.0,76,Renamed to canonical snake_case; source values otherwise retained.
+76,aerial_duels_won_pct,Cleaned FBref player-season field: aerial duels won pct.,Seasonal performance feature,float64,18243,0,0.0,695,Renamed to canonical snake_case; source values otherwise retained.
+77,shot_creating_actions_per90,Cleaned FBref player-season field: shot creating actions per90.,Seasonal performance feature,float64,18243,0,0.0,749,Renamed to canonical snake_case; source values otherwise retained.
+78,goal_creating_actions_per90,Cleaned FBref player-season field: goal creating actions per90.,Seasonal performance feature,float64,18243,0,0.0,199,Renamed to canonical snake_case; source values otherwise retained.
+79,crosses_stopped_pct,Goalkeeper percentage of opponent crosses stopped; corrected from an incomplete source label.,Seasonal performance feature,float64,1190,17053,0.9347695006303788,128,Set missing for non-goalkeepers; also set missing for all 2017-18 rows because the source column is entirely zero.
+80,goalkeeper_metrics_available,"True for goalkeeper rows outside 2017-18, where goalkeeper values are present.",Identity/provenance,boolean,18243,0,0.0,2,Renamed to canonical snake_case; source values otherwise retained.
+81,dribbles_tackled_pct_available,False in 2017-18 because the entire source field is zero/unavailable.,Identity/provenance,boolean,18243,0,0.0,2,Renamed to canonical snake_case; source values otherwise retained.

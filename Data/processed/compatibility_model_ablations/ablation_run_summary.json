@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "targets": 3,
+  "feature_sets": {
+    "player_history_baseline": 81,
+    "plus_club_context": 133,
+    "plus_player_preferences": 121,
+    "context_and_preferences": 173,
+    "full_explicit_fit": 202
+  },
+  "model_families": [
+    "ridge",
+    "elastic_net",
+    "gradient_boosted_trees"
+  ],
+  "selection_policy": "minimum 2022 validation MAE; 2023 scored after selection",
+  "candidate_tuning_rows": 420,
+  "selected_specifications": 45,
+  "prediction_rows": 12585,
+  "blocking_checks": 20,
+  "blocking_failures": 0,
+  "random_seed": 20260809
+}

@@ -1,0 +1,20 @@
+﻿check,observed,expected,passed,notes
+Source files,7,7,True,One file per season.
+Source rows,18243,18243,True,All source rows retained.
+Source natural-key duplicates,0,0,True,player+squad+comp+season
+Common 65-column source schema,65,65,True,Trace columns excluded.
+Duplicate equality: Goals Scored,True,True,True,Required before dropping duplicate of Goals.
+Duplicate equality: carries_prgc,True,True,True,Required before dropping duplicate of Progressive Carries.
+Clean rows equal source rows,18243,18243,True,No row deletion or expansion.
+Clean natural-key duplicates,0,0,True,player_name+birth_year+squad_name+competition_id+season
+fbref_row_id uniqueness,18243,18243,True,SHA-256 canonical key.
+Competition mapping completeness,0,0,True,All five leagues mapped.
+Season parsing completeness,0,0,True,YYYY-YYYY to June 30.
+Age/birth-year consistency,0,0,True,Age equals start-year minus birth-year or one less.
+Goals and assists identity,18243,18243,True,goals_and_assists = goals + assists
+Non-penalty goals identity,18243,18243,True,non_penalty_goals = goals - penalty_kicks_made
+Non-goalkeeper goalkeeper fields missing,0,0,True,"Structural not-applicable values are null, not zero."
+2017-18 goalkeeper fields missing,0,0,True,Entire source fields were zero/unavailable.
+2017-18 dribble-tackle percentage missing,0,0,True,Entire source field was zero/unavailable.
+Negative minutes,0,0,True,Sign validation.
+Backup hashes match,7,7,True,Exact binary backup verification.

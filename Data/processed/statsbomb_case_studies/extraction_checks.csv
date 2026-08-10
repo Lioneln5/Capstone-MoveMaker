@@ -1,0 +1,11 @@
+﻿check_name,status,blocking,observed,expectation
+selected_match_count_positive,PASS,True,642,> 0
+selected_matches_unique,PASS,True,642,unique match_id
+selected_event_parse_errors,PASS,True,0,0
+selected_event_ids_unique,PASS,True,0,0 duplicates
+team_match_two_rows_per_match,PASS,True,1284,1284
+player_match_key_unique,PASS,True,0,0 duplicates
+selected_event_row_reconciliation,PASS,True,2298900,2298900
+pass_reconciliation,PASS,True,650722,650722
+selected_360_json_valid,PASS,True,0,0 selected invalid files
+repository_360_json_valid,FAIL,False,1,0 invalid files

@@ -1,0 +1,5 @@
+target_key,design_role,feature_set,model_family,design_source,design_selection_year,design_evaluation_year_used_in_choice,interpretation
+opportunity,baseline,player_history_baseline,ridge,validation_selected_baseline,2022,False,retrospective design stress test; hyperparameters retuned within each origin
+opportunity,candidate,plus_player_preferences,ridge,validation_selected_overall,2022,False,retrospective design stress test; hyperparameters retuned within each origin
+performance,baseline,player_history_baseline,ridge,validation_selected_baseline,2022,False,retrospective design stress test; hyperparameters retuned within each origin
+performance,candidate,full_explicit_fit,gradient_boosted_trees,validation_selected_overall,2022,False,retrospective design stress test; hyperparameters retuned within each origin

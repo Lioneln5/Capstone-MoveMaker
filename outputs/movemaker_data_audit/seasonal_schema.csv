@@ -1,0 +1,8 @@
+﻿table,rows,columns,schema_matches_first_file,missing_vs_canonical,extra_vs_canonical,season_values
+cleaned_2017-18,2549,65,True,,,2017-2018
+cleaned_2018-19,2503,65,True,,,2018-2019
+cleaned_2019-20,2558,65,True,,,2019-2020
+cleaned_2020-21,2634,65,True,,,2020-2021
+cleaned_2021-22,2689,65,True,,,2021-2022
+cleaned_2022-23,2687,65,True,,,2022-2023
+cleaned_2023-24,2623,65,True,,,2023-2024

@@ -1,0 +1,12 @@
+﻿check,status,detail
+required_outputs,pass,All required cleaning artifacts exist.
+table_cardinality,pass,"manifest=11, summaries=11"
+source_backup_hashes,pass,Every live source and immutable backup matches the recorded SHA-256.
+row_count_preservation,pass,"All tables reconcile; total clean rows=5,605,055"
+source_record_sequence,pass,Every clean row retains the expected source row number and stable source record ID.
+required_helper_columns,pass,Every clean table contains provenance and key/encoding flags.
+clean_output_hashes,pass,Every clean CSV matches its recorded SHA-256.
+key_flag_reconciliation,pass,Row-level missing and duplicate flags match the table summary.
+transfer_fee_states,pass,"Recomputed fee states={'unclassified_zero': 1061443, 'positive_reported': 39997}"
+latest_snapshot_flags,pass,Every latest-value row is marked derived and leakage-sensitive.
+blocking_checks,pass,All blocking cleaning checks pass.

@@ -1,0 +1,9 @@
+table,grain,purpose
+canonical_player_team_season_performance,One canonical player-club-competition-season row.,Source-preserving canonical spine and selected basic performance metrics.
+modeling_scope_2017_2024,One canonical player-club-competition-season row for season starts 2017 through 2023.,Compact modeling view aligned to the seven FBref seasons; includes all available competitions.
+fbref_advanced_performance_features,One accepted FBref canonical player-club-competition-season row.,Dense FBref advanced metrics keyed back to the canonical spine.
+performance_difference_review,One canonical row with at least one differing comparable basic metric.,Cross-source review queue; differences are not silently resolved.
+unresolved_fbref_performance_review,One FBref row excluded from the canonical spine.,Identity-resolution queue preserving all unmapped FBref evidence.
+coverage_by_season,One canonical season.,Season-level coverage and source-presence audit.
+coverage_by_competition,One canonical competition.,Competition-level coverage and source-presence audit.
+source_agreement_summary,One metric-agreement-status row.,Exact agreement rates for comparable basic metrics.

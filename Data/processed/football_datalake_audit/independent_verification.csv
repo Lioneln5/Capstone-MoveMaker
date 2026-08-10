@@ -1,0 +1,10 @@
+﻿check,status,detail
+required_outputs,pass,All required audit artifacts exist.
+table_cardinality,pass,"manifest=11, summaries=11, key checks=11"
+row_total_reconciliation,pass,"Total=5,605,055"
+lfs_resolution,pass,No audited source remains a Git LFS pointer.
+source_row_recount,pass,Independent CSV recount matches every manifest.
+key_math,pass,rows - null-key rows - unique keys equals duplicate-key rows for every table.
+valuation_conflict_reconciliation,pass,Conflicts=187
+performance_metric_reconciliation,pass,All six metrics use one shared-key population.
+performance_summary_reconciliation,pass,Shared keys=159101

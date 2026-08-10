@@ -1,0 +1,28 @@
+check,severity,passed,observed,expected,detail
+required_target_outputs_exist,blocking,True,all present,"targets, strict features, strict model matrix",Confirms the first-version target family was fully materialized.
+target_row_count,blocking,True,936,936,One selected inbound event per unique destination player-season.
+target_performance_ids_unique,blocking,True,0,0,Destination performance grain must not be overweighted by repeated transfer events.
+keys_match_across_target_outputs,blocking,True,0,0,"Targets, strict predictors, and labeled model matrix must share the identical key set."
+source_join_candidate_count,blocking,True,944,944,Independently rebuilds transfer events matching destination FBref player-seasons.
+earliest_inbound_event_selection,blocking,True,0,0,The earliest inbound event is independently selected for every destination player-season.
+later_event_collapse_counts,blocking,True,0,0,All repeated inbound events are counted and reconciled rather than silently dropped.
+target_season_assignment_from_date,blocking,True,0,0,June–December map to that season start; January–May map to the preceding start year.
+transfer_window_assignment,blocking,True,0,0,June–October are primary summer arrivals; January–February are winter arrivals.
+canonical_transfer_type_join,blocking,True,0,0,"Transfer, loan, and loan-return classifications are independently matched from canonical history."
+club_opportunity_denominator,blocking,True,0,0,Club match opportunities and ×90 denominator are rebuilt from the full advanced matrix.
+destination_minutes_target_exact,blocking,True,0,0,Destination minutes are copied from the accepted destination FBref player-season.
+destination_minutes_share_exact,blocking,True,mismatches=0; max_abs_difference=1.1102230246251565e-16,0,Every opportunity target is independently divided by the club-season denominator.
+role_performance_target_exact,blocking,True,0,0,Current role-performance targets exactly match the advanced destination outcomes.
+prior3_performance_baseline_exact,blocking,True,0,0,Minutes-weighted t-1/t-2/t-3 role-performance baseline is independently rebuilt.
+performance_change_target_exact,blocking,True,mismatches=0; max_abs_difference=2.220446049250313e-16,0,Adaptation target equals current role performance minus the rebuilt prior3 baseline.
+opportunity_primary_eligibility_exact,blocking,True,0,0,"Primary opportunity cohort requires summer transfer/loan, outfield role, and strict features."
+performance_primary_eligibility_exact,blocking,True,0,0,Performance cohort additionally requires 450 target minutes and a role-performance outcome.
+adaptation_primary_eligibility_exact,blocking,True,0,0,Adaptation cohort additionally requires 450 prior-baseline minutes and a change outcome.
+eligibility_reasons_reconcile,blocking,True,0,0,A row is eligible if and only if its model-specific exclusion reason is blank.
+partial_season_moves_excluded_from_primary,blocking,True,0,0,Winter/off-window moves remain available for sensitivity analysis but are excluded from primary targets.
+loan_returns_excluded_from_primary,blocking,True,0,0,Returning loan players are not treated as new external recruitment decisions in the primary cohort.
+feature_only_separates_targets,blocking,True,0,0,Strict scoring features contain no target-season outcomes.
+strict_outputs_exclude_roster_scenarios,blocking,True,0,0,Scenario-only target-roster membership is absent from both strict transfer matrices.
+model_matrix_targets_match_target_table,blocking,True,0,0,The three labeled model-matrix outcomes exactly match the canonical target table.
+predictor_timing_cutoffs,blocking,True,0,0,"Lagged player, preference, and strict club context sources all precede the destination target season."
+source_manifest_hashes,blocking,True,0,0,All declared source files match the hashes used to construct the target layer.

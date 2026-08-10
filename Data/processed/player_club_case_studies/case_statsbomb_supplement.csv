@@ -1,0 +1,13 @@
+case_id,canonical_performance_id,transfer_event_id,canonical_player_name,from_club_name,canonical_club_name,statsbomb_player_id,statsbomb_origin_team_id,statsbomb_destination_team_id,player_matches_pre365,player_matches_post365,origin_matches_pre365,destination_matches_pre365,case_study_score,recommended_case_study_use,player_identity_country_agreement,player_link_method,manual_review_status,statsbomb_supplement_available,statsbomb_evidence_policy
+case_01,pts:121477:379:GB1:2021,121477_20210701_1010_379,Craig Dawson,Watford,West Ham United,,,,,,,,,,,,,False,not_available_for_case
+case_02,pts:284884:940:ES1:2022,284884_20220708_368_940,Óscar Rodríguez Arnaiz,Sevilla FC,Celta de Vigo,,,,,,,,,,,,,False,not_available_for_case
+case_03,pts:286779:2687:ES1:2023,286779_20230731_3631_2687,Jorge Meré,América,Cádiz CF,,,,,,,,,,,,,False,not_available_for_case
+case_04,pts:238752:1390:IT1:2021,238752_20210831_162_1390,Keita Baldé,Monaco,Cagliari Calcio,,,,,,,,,,,,,False,not_available_for_case
+case_05,pts:80444:405:GB1:2022,80444_20220701_131_405,Philippe Coutinho,Barcelona,Aston Villa,,,,,,,,,,,,,False,not_available_for_case
+case_06,pts:456492:3:L1:2023,456492_20230821_24_3,Faride Alidou,Frankfurt,1.FC Köln,134880.0,184.0,,0.0,2.0,0.0,0.0,4.0,club_context_only,True,exact_normalized_name_only,required,True,supplementary_only_manual_identity_review_required
+case_07,pts:66100:131:ES1:2023,66100_20230719_12321_131,Oriol Romeu,Girona,FC Barcelona,,,,,,,,,,,,,False,not_available_for_case
+case_08,pts:82503:367:ES1:2023,82503_20230705_331_367,Aridane Hernández,CA Osasuna,Rayo Vallecano,,,,,,,,,,,,,False,not_available_for_case
+case_09,pts:623040:276:IT1:2022,623040_20220826_252_276,Yayah Kallon,Genoa,Hellas Verona,,,,,,,,,,,,,False,not_available_for_case
+case_10,pts:352392:667:FR1:2021,352392_20210714_244_667,Lucas Perrin,Marseille,RC Strasbourg Alsace,32028.0,,,0.0,1.0,0.0,0.0,2.0,club_context_only,True,exact_normalized_name_only,required,True,supplementary_only_manual_identity_review_required
+case_11,pts:181378:417:FR1:2022,181378_20220901_273_417,Gaëtan Laborde,Stade Rennais,OGC Nice,3190.0,,136.0,2.0,2.0,0.0,2.0,12.0,pre_transfer_player_snapshot,True,exact_normalized_name_only,required,True,supplementary_only_manual_identity_review_required
+case_12,pts:25488:380:IT1:2023,25488_20230701_1038_380,Antonio Candreva,Sampdoria,US Salernitana 1919,,,,,,,,,,,,,False,not_available_for_case

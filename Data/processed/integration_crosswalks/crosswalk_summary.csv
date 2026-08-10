@@ -1,0 +1,15 @@
+﻿crosswalk,metric,value
+native_player_identity,canonical_ids,170991
+native_player_identity,shared_current_and_datalake,44775
+fbref_player,identities,5967
+fbref_player,accepted,5735
+fbref_player,manual_review,232
+native_club_identity,canonical_ids,46490
+fbref_club_season,rows,684
+fbref_club_season,accepted,684
+fbref_club,squad_names,145
+fbref_club,accepted,145
+competition,canonical_ids,1684
+competition,fbref_codes,5
+season,source_representations,510
+season,unmatched,1

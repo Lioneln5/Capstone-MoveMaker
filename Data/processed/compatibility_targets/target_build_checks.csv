@@ -1,0 +1,8 @@
+check,severity,passed,observed,expected,detail
+target_rows_unique_by_destination_performance,blocking,True,0,0,Earliest inbound event selection must produce one target row per destination player-season.
+matched_event_collapse_reconciles,blocking,True,8,8,All extra same-destination events are explicitly recorded as collapsed later events.
+destination_minutes_share_bounds,blocking,True,1.0,0 to 1.05,Small tolerance permits source minute conventions; independent verifier recomputes every row.
+performance_change_reconciles,blocking,True,recomputed,target index minus prior3 baseline,"Adaptation target is an arithmetic difference, not a separate opaque score."
+feature_only_has_no_target_columns,blocking,True,0,0,Scoring features remain physically separate from current-season outcomes.
+strict_tables_have_no_roster_columns,blocking,True,0,0,Primary transfer matrices exclude scenario-only target-roster membership features.
+strict_feature_and_model_rows_preserved,blocking,True,features=936; model=936; targets=936,equal row counts,Targets and predictors remain one-to-one on canonical_performance_id.

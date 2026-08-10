@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-08-05T11:27:19.918667-04:00",
+  "scope_start": "2017-07-01",
+  "scope_end": "2024-06-30",
+  "cataloged_matches": 3961,
+  "selected_matches": 642,
+  "selected_events": 2298900,
+  "selected_lineup_rows": 27702,
+  "player_match_rows": 27702,
+  "team_match_rows": 1284,
+  "player_period_rows": 6192,
+  "team_period_rows": 309,
+  "selected_360_context_rows": 963072,
+  "valid_repository_360_files": 425,
+  "invalid_repository_360_files": 1,
+  "orphan_event_files_excluded": 274,
+  "transfer_case_study_candidates": 612,
+  "blocking_checks_failed": 0,
+  "selection_rule": "Cataloged male matches dated 2017-07-01 through 2024-06-30 inclusive."
+}

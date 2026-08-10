@@ -1,0 +1,13 @@
+﻿action,scope,affected_rows_or_cells,details
+Preserve source files,7 CSV files,0,Sources were read-only; exact SHA-256-verified copies were created under Data/source_backups.
+Retain all source rows,Combined dataset,18243,"No duplicate natural-key rows existed, so no rows were removed."
+Drop duplicate field,Goals Scored,18243,Exactly equal to Goals in all rows.
+Drop duplicate field,carries_prgc,18243,Exactly equal to Progressive Carries in all rows.
+Correct misleading label,Avg Mins per Match -> total_minutes,18243,Values behave as season total minutes; values were not altered.
+Correct misleading label,Times tackled during take-on -> tackled_during_take_on_pct,18243,Decimal values behave as percentages; values were not altered.
+Correct incomplete label,Crosses Stopped -> crosses_stopped_pct,18243,Goalkeeper decimal values behave as stopped-cross percentage; values were not altered.
+Expand code-like nationalities,nationality,49,Original values retained in nationality_raw.
+Convert structural zero to missing,Goalkeeper fields for non-goalkeepers,134920,Eight goalkeeper-only metrics are not applicable to outfield rows.
+Convert unavailable zero to missing,2017-18 goalkeeper fields,1504,All eight source fields were zero for the entire season.
+Convert unavailable zero to missing,2017-18 dribbles_tackled_pct,2549,The entire source field was zero; later-season legitimate zeros were retained.
+Add traceable keys and helpers,All rows,18243,"Added source provenance, normalized names, natural keys, SHA-256 row IDs, season dates, nineties, and availability flags."

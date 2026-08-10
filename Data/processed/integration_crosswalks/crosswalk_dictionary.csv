@@ -1,0 +1,9 @@
+﻿file,grain
+player_identity_crosswalk.csv,One row per native Transfermarkt player ID across current and datalake collections.
+fbref_player_crosswalk.csv,One row per FBref name-plus-birth-year identity mapped to a canonical Transfermarkt player ID when evidence is sufficient.
+fbref_player_candidate_review.csv,"Ranked candidate evidence for player identities, including accepted and unresolved cases."
+club_identity_crosswalk.csv,One row per native Transfermarkt club ID across all observed current and datalake tables.
+fbref_club_season_crosswalk.csv,Season-aware mapping from an FBref squad to a canonical Transfermarkt club ID.
+fbref_club_crosswalk.csv,Stable roll-up of the season-aware FBref squad mapping.
+competition_crosswalk.csv,"Competition codes reconciled across current Transfermarkt, datalake Transfermarkt, and FBref."
+season_crosswalk.csv,Every observed season representation mapped to a canonical start/end season key.

@@ -1,0 +1,16 @@
+check,severity,passed,observed,expected,detail
+upstream_rolling_verification_passes,blocking,True,pass,pass,Subgroup tests start from independently verified rolling predictions.
+candidate_definitions_are_frozen,blocking,True,"[{'target_key': 'opportunity', 'candidate_feature_set': 'full_explicit_fit', 'candidate_model_family': 'elastic_net'}, {'target_key': 'performance', 'candidate_feature_set': 'full_explicit_fit', 'candidate_model_family': 'gradient_boosted_trees'}]",opportunity=elastic_net/full;performance=gradient_boosted_trees/full,"Subgroup outcomes never select a feature set, family, or hyperparameter."
+paired_prediction_rows_complete,blocking,True,758,758,Each frozen candidate is paired with both references on every rolling evaluation row.
+paired_values_finite,blocking,True,0,0,All subgroup pair values are finite.
+subgroup_fields_complete,blocking,True,0,0,Every paired row has a mapped role and competition.
+expected_roles_and_competitions_only,blocking,True,"roles=['DF', 'FW', 'MF'];competitions=['ES1', 'FR1', 'GB1', 'IT1', 'L1']","roles=DF,FW,MF;competitions=ES1,FR1,GB1,IT1,L1",Subgroup scope is the three outfield roles and five modeled Big Five leagues.
+coverage_grid_complete,blocking,True,16,16,Every target has one coverage row for each role and competition.
+origin_result_grid_complete,blocking,True,128,128,"Every target, reference, subgroup, and origin has a paired result."
+aggregate_result_grid_complete,blocking,True,96,96,"All, mature, and terminal summaries cover every declared subgroup comparison."
+primary_result_grid_complete,blocking,True,16,16,Primary reporting contains all mature same-family role and competition cells.
+heterogeneity_grid_complete,blocking,True,24,24,"Role and competition heterogeneity is tested for every target, reference, and origin subset."
+fdr_values_valid,blocking,True,"{""heterogeneity_count"": 4, ""heterogeneity_max"": 0.3059388122375525, ""heterogeneity_min"": 0.2298207025261614, ""heterogeneity_missing"": 0, ""subgroup_count"": 11, ""subgroup_max"": 0.9402119576084783, ""subgroup_min"": 0.03959208158368326, ""subgroup_missing"": 0}","all confirmatory q-values present and within [0,1]",Confirmatory subgroup and heterogeneity q-values are bounded.
+candidate_predictions_identical_across_references,blocking,True,True,True,Changing the benchmark never changes the frozen candidate prediction.
+subgroup_partitions_reconcile_to_overall,blocking,True,,none,Role and competition weighted improvements each reconcile to the full paired cohort.
+mature_overall_effects_reconcile_to_rolling_phase,blocking,True,,none,Frozen candidate mature effects exactly match the prior rolling sensitivity analysis.

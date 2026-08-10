@@ -1,0 +1,68 @@
+{
+  "grain": "One cleaned Transfermarkt transfer event.",
+  "primary_key": "transfer_event_id",
+  "rows": 35139,
+  "columns": 577,
+  "unique_players": 4345,
+  "unique_origin_clubs": 6508,
+  "unique_destination_clubs": 5413,
+  "transfer_date_min": "1993-07-01",
+  "transfer_date_max": "2030-06-30",
+  "eligible_sporting_12m_provisional": 5430,
+  "eligible_sporting_24m_provisional": 5274,
+  "eligible_financial_12m_provisional": 1999,
+  "eligible_financial_24m_provisional": 1790,
+  "eligible_combined_24m_provisional": 847,
+  "transfers_before_first_club_game": 482,
+  "transfers_after_latest_club_game": 15,
+  "transfers_after_latest_valuation": 332,
+  "checks_passed": 22,
+  "checks_failed": 0,
+  "source_metadata": {
+    "valuation_min_date": "2000-01-20",
+    "valuation_max_date": "2026-02-27",
+    "relevant_valuation_rows": null,
+    "appearance_min_date": "2012-07-05",
+    "appearance_max_date": "2026-01-06",
+    "relevant_appearance_rows": null,
+    "lineup_min_date": "2013-07-04",
+    "lineup_max_date": "2026-04-25",
+    "relevant_lineup_rows": null,
+    "event_min_date": "2006-06-13",
+    "event_max_date": "2026-04-25",
+    "source_event_rows": null,
+    "relevant_player_event_ledger_rows": null,
+    "club_game_min_date": "2006-06-09",
+    "club_game_max_date": "2026-07-06",
+    "club_game_rows": 177916
+  },
+  "component_files": {
+    "transfer_valuation_features.csv": {
+      "rows": 35139,
+      "columns": 71,
+      "sha256": "aa71e2beaec94e787c63c0d340d749b8292c9b01f125ba68796dc901a904021e"
+    },
+    "transfer_appearance_features.csv": {
+      "rows": 35139,
+      "columns": 127,
+      "sha256": "cde705727316cd0720b93ce31d6c3464fb4a95e907dfa6652ccb342e74e3894b"
+    },
+    "transfer_lineup_features.csv": {
+      "rows": 35139,
+      "columns": 78,
+      "sha256": "88dfea54b4e65be40baba0d08a7101f98c9f00f74a5e1f4956a9057bb1e26d5c"
+    },
+    "transfer_event_features.csv": {
+      "rows": 35139,
+      "columns": 78,
+      "sha256": "84c6e3403a5c83ebe4cf44736bef9a83d05ad8b6a0b99be438bf4cfb7703dd6f"
+    },
+    "transfer_club_context.csv": {
+      "rows": 35139,
+      "columns": 139,
+      "sha256": "1347ca7f20efbde5b198fbdcc9f3f7f58a81f2a9ab35ac7db563c15d4c27d0c7"
+    }
+  },
+  "master_sha256": "e8e9a778cedc2a1dfb6f063a6adbf3c12d52e25d944c0f4741e56db07db466c4",
+  "master_bytes": 96465583
+}

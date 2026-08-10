@@ -1,0 +1,127 @@
+table,column_order,column,definition
+canonical_player_team_season_performance,1,canonical_performance_id,Canonical key used for stable joins across the integrated MoveMaker layer.
+canonical_player_team_season_performance,2,canonical_player_id,Canonical key used for stable joins across the integrated MoveMaker layer.
+canonical_player_team_season_performance,3,canonical_player_name,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,4,canonical_club_id,Canonical key used for stable joins across the integrated MoveMaker layer.
+canonical_player_team_season_performance,5,canonical_club_name,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,6,canonical_competition_id,Canonical key used for stable joins across the integrated MoveMaker layer.
+canonical_player_team_season_performance,7,canonical_competition_name,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,8,competition_country_name,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,9,competition_type,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,10,canonical_season_key,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,11,season_start_year,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,12,season_end_year,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,13,present_in_fbref,Coverage flag showing whether this canonical grain exists in the named source.
+canonical_player_team_season_performance,14,present_in_current_appearances,Coverage flag showing whether this canonical grain exists in the named source.
+canonical_player_team_season_performance,15,present_in_current_lineups,Coverage flag showing whether this canonical grain exists in the named source.
+canonical_player_team_season_performance,16,present_in_supplemental_performances,Coverage flag showing whether this canonical grain exists in the named source.
+canonical_player_team_season_performance,17,source_system_count,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,18,data_coverage_tier,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,19,advanced_features_available,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,20,basic_model_eligible_450_minutes,Convenience screen: at least 450 selected canonical minutes and five matches; not a quality label.
+canonical_player_team_season_performance,21,canonical_matches_played,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,22,canonical_minutes_played,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,23,canonical_goals,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,24,canonical_assists,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,25,canonical_yellow_cards,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,26,canonical_red_cards,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,27,canonical_goals_per90,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,28,canonical_assists_per90,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,29,canonical_matches_source,Source selected by the documented canonical precedence policy.
+canonical_player_team_season_performance,30,canonical_minutes_source,Source selected by the documented canonical precedence policy.
+canonical_player_team_season_performance,31,canonical_goals_source,Source selected by the documented canonical precedence policy.
+canonical_player_team_season_performance,32,canonical_assists_source,Source selected by the documented canonical precedence policy.
+canonical_player_team_season_performance,33,canonical_cards_source,Source selected by the documented canonical precedence policy.
+canonical_player_team_season_performance,34,fbref_row_id,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,35,fbref_player_identity_key,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,36,fbref_player_name,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,37,fbref_squad_name,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,38,fbref_competition_name,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,39,fbref_position,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,40,fbref_is_goalkeeper,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,41,fbref_age,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,42,fbref_matches_played,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,43,fbref_total_minutes,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,44,fbref_goals,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,45,fbref_assists,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,46,fbref_expected_goals,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,47,fbref_non_penalty_expected_goals,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,48,fbref_progressive_carries,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,49,fbref_progressive_passes,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,50,fbref_goals_per90,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,51,fbref_assists_per90,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,52,fbref_player_match_method,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,53,fbref_club_match_method,FBref source-specific value; never silently overwrites another source.
+canonical_player_team_season_performance,54,current_appearance_records,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,55,current_matches_played,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,56,current_goals,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,57,current_assists,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,58,current_yellow_cards,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,59,current_red_cards,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,60,current_minutes_played,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,61,current_first_appearance_date,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,62,current_last_appearance_date,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,63,current_lineup_records,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,64,current_lineup_games,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,65,current_starts,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,66,current_substitute_selections,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,67,current_captain_selections,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,68,current_start_pct,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,69,current_distinct_positions,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,70,current_primary_position,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,71,current_positions,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,72,current_first_lineup_date,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,73,current_last_lineup_date,Current Transfermarkt match-log or lineup aggregate.
+canonical_player_team_season_performance,74,datalake_source_record_id,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,75,datalake_season_name,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,76,datalake_competition_name,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,77,datalake_team_name,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,78,datalake_nb_in_group,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,79,datalake_nb_on_pitch,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,80,datalake_goals,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,81,datalake_assists,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,82,datalake_own_goals,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,83,datalake_subbed_in,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,84,datalake_subbed_out,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,85,datalake_yellow_cards,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,86,datalake_second_yellow_cards,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,87,datalake_direct_red_cards,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,88,datalake_red_cards,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,89,datalake_penalty_goals,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,90,datalake_minutes_played,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,91,datalake_goals_conceded,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,92,datalake_clean_sheets,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,93,datalake_minutes_available,Supplemental Transfermarkt seasonal-summary value.
+canonical_player_team_season_performance,94,matches_source_values_compared,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,95,matches_cross_source_min,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,96,matches_cross_source_max,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,97,matches_cross_source_range,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,98,matches_agreement_status,Whether two or more available source values agree exactly.
+canonical_player_team_season_performance,99,minutes_source_values_compared,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,100,minutes_cross_source_min,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,101,minutes_cross_source_max,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,102,minutes_cross_source_range,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,103,minutes_agreement_status,Whether two or more available source values agree exactly.
+canonical_player_team_season_performance,104,goals_source_values_compared,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,105,goals_cross_source_min,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,106,goals_cross_source_max,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,107,goals_cross_source_range,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,108,goals_agreement_status,Whether two or more available source values agree exactly.
+canonical_player_team_season_performance,109,assists_source_values_compared,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,110,assists_cross_source_min,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,111,assists_cross_source_max,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,112,assists_cross_source_range,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,113,assists_agreement_status,Whether two or more available source values agree exactly.
+canonical_player_team_season_performance,114,yellow_cards_source_values_compared,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,115,yellow_cards_cross_source_min,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,116,yellow_cards_cross_source_max,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,117,yellow_cards_cross_source_range,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,118,yellow_cards_agreement_status,Whether two or more available source values agree exactly.
+canonical_player_team_season_performance,119,red_cards_source_values_compared,Canonical performance field; see README policies and table dictionary.
+canonical_player_team_season_performance,120,red_cards_cross_source_min,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,121,red_cards_cross_source_max,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,122,red_cards_cross_source_range,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,123,red_cards_agreement_status,Whether two or more available source values agree exactly.
+canonical_player_team_season_performance,124,difference_metric_count,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,125,any_basic_cross_source_difference,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."
+canonical_player_team_season_performance,126,difference_review_priority,"Cross-source reconciliation diagnostic; a difference is retained, not overwritten."

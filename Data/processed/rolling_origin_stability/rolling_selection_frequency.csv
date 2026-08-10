@@ -1,0 +1,27 @@
+target_key,selection_type,feature_set,model_family,selected_spec,origin_selections,mean_validation_mae,mean_evaluation_mae,origin_selection_rate
+adaptation,rolling_selected_baseline,player_history_baseline,elastic_net,player_history_baseline | elastic_net,3,0.1785848560520923,0.19291906646277793,0.75
+adaptation,rolling_selected_baseline,player_history_baseline,ridge,player_history_baseline | ridge,1,0.19519343507485043,0.5486579495192486,0.25
+adaptation,rolling_selected_full,full_explicit_fit,elastic_net,full_explicit_fit | elastic_net,2,0.18862000381384747,0.1992763374782511,0.5
+adaptation,rolling_selected_full,full_explicit_fit,gradient_boosted_trees,full_explicit_fit | gradient_boosted_trees,2,0.17963886941783463,0.19366398513051722,0.5
+adaptation,rolling_selected_overall,context_and_preferences,elastic_net,context_and_preferences | elastic_net,1,0.17728850015304853,0.20411176250218876,0.25
+adaptation,rolling_selected_overall,context_and_preferences,gradient_boosted_trees,context_and_preferences | gradient_boosted_trees,1,0.18230754017496367,0.17657927308597388,0.25
+adaptation,rolling_selected_overall,player_history_baseline,elastic_net,player_history_baseline | elastic_net,1,0.17816930410644077,0.20426137488089033,0.25
+adaptation,rolling_selected_overall,plus_club_context,elastic_net,plus_club_context | elastic_net,1,0.16203682714725096,0.22910708962171725,0.25
+opportunity,rolling_selected_baseline,player_history_baseline,elastic_net,player_history_baseline | elastic_net,2,0.1976141890172744,0.21685051763321928,0.5
+opportunity,rolling_selected_baseline,player_history_baseline,gradient_boosted_trees,player_history_baseline | gradient_boosted_trees,1,0.1824017735753741,0.22827730592619355,0.25
+opportunity,rolling_selected_baseline,player_history_baseline,ridge,player_history_baseline | ridge,1,0.2010843981005219,0.2203869291318722,0.25
+opportunity,rolling_selected_full,full_explicit_fit,elastic_net,full_explicit_fit | elastic_net,2,0.19987531688704546,0.20342671259271727,0.5
+opportunity,rolling_selected_full,full_explicit_fit,gradient_boosted_trees,full_explicit_fit | gradient_boosted_trees,1,0.18474809009419027,0.2385832369532241,0.25
+opportunity,rolling_selected_full,full_explicit_fit,ridge,full_explicit_fit | ridge,1,0.2182706195186675,0.20597703718247903,0.25
+opportunity,rolling_selected_overall,context_and_preferences,elastic_net,context_and_preferences | elastic_net,1,0.1940423011624598,0.18899476980155996,0.25
+opportunity,rolling_selected_overall,context_and_preferences,gradient_boosted_trees,context_and_preferences | gradient_boosted_trees,1,0.1776887425266754,0.24322036863464536,0.25
+opportunity,rolling_selected_overall,player_history_baseline,elastic_net,player_history_baseline | elastic_net,1,0.19986265480803958,0.2109428360537273,0.25
+opportunity,rolling_selected_overall,plus_player_preferences,ridge,plus_player_preferences | ridge,1,0.19609672297285632,0.2106475107648678,0.25
+performance,rolling_selected_baseline,player_history_baseline,elastic_net,player_history_baseline | elastic_net,2,0.16732380783546183,0.18335641351255294,0.5
+performance,rolling_selected_baseline,player_history_baseline,gradient_boosted_trees,player_history_baseline | gradient_boosted_trees,1,0.18604594010904438,0.17431761305448734,0.25
+performance,rolling_selected_baseline,player_history_baseline,ridge,player_history_baseline | ridge,1,0.1761749792783501,0.19404453691259016,0.25
+performance,rolling_selected_full,full_explicit_fit,elastic_net,full_explicit_fit | elastic_net,1,0.1619917199163945,0.21590205110059144,0.25
+performance,rolling_selected_full,full_explicit_fit,gradient_boosted_trees,full_explicit_fit | gradient_boosted_trees,3,0.17654247460567496,0.18078055243905666,0.75
+performance,rolling_selected_overall,full_explicit_fit,gradient_boosted_trees,full_explicit_fit | gradient_boosted_trees,2,0.170510596528061,0.1809721237044631,0.5
+performance,rolling_selected_overall,plus_club_context,elastic_net,plus_club_context | elastic_net,1,0.14576992258404328,0.18649640656885147,0.25
+performance,rolling_selected_overall,plus_club_context,ridge,plus_club_context | ridge,1,0.1803894359107399,0.18292996881346923,0.25

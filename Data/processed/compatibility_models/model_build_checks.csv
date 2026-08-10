@@ -1,0 +1,33 @@
+check,severity,passed,observed,expected,detail
+upstream_target_verification_passes,blocking,True,pass,pass,The benchmark only runs from an independently verified target layer.
+baseline_is_subset_of_compatibility,blocking,True,0,0,The compatibility comparison changes only the added compatibility feature block.
+compatibility_has_incremental_features,blocking,True,121,>0,Historical teammate preferences and destination prior-season style must add information.
+no_forbidden_predictor_prefixes,blocking,True,,none,"Targets, eligibility controls, exclusion reasons, and roster scenarios are not predictors."
+opportunity_train_nonempty,blocking,True,202,>0,Every target needs a nonempty chronological split.
+opportunity_validation_nonempty,blocking,True,52,>0,Every target needs a nonempty chronological split.
+opportunity_test_nonempty,blocking,True,58,>0,Every target needs a nonempty chronological split.
+opportunity_split_ids_disjoint,blocking,True,0,0,A destination player-season appears in exactly one chronological split.
+performance_train_nonempty,blocking,True,186,>0,Every target needs a nonempty chronological split.
+performance_validation_nonempty,blocking,True,46,>0,Every target needs a nonempty chronological split.
+performance_test_nonempty,blocking,True,39,>0,Every target needs a nonempty chronological split.
+performance_split_ids_disjoint,blocking,True,0,0,A destination player-season appears in exactly one chronological split.
+adaptation_train_nonempty,blocking,True,175,>0,Every target needs a nonempty chronological split.
+adaptation_validation_nonempty,blocking,True,44,>0,Every target needs a nonempty chronological split.
+adaptation_test_nonempty,blocking,True,37,>0,Every target needs a nonempty chronological split.
+adaptation_split_ids_disjoint,blocking,True,0,0,A destination player-season appears in exactly one chronological split.
+opportunity_train_prediction_keys_match,blocking,True,mean_only:202;player_history_baseline:202;strict_compatibility:202,"identical across mean, baseline, compatibility",Every model is scored on the identical destination player-season cohort.
+opportunity_validation_prediction_keys_match,blocking,True,mean_only:52;player_history_baseline:52;strict_compatibility:52,"identical across mean, baseline, compatibility",Every model is scored on the identical destination player-season cohort.
+opportunity_test_prediction_keys_match,blocking,True,mean_only:58;player_history_baseline:58;strict_compatibility:58,"identical across mean, baseline, compatibility",Every model is scored on the identical destination player-season cohort.
+opportunity_actual_is_unique_by_key,blocking,True,0,0,All variants share one canonical actual outcome per destination player-season.
+performance_train_prediction_keys_match,blocking,True,mean_only:186;player_history_baseline:186;strict_compatibility:186,"identical across mean, baseline, compatibility",Every model is scored on the identical destination player-season cohort.
+performance_validation_prediction_keys_match,blocking,True,mean_only:46;player_history_baseline:46;strict_compatibility:46,"identical across mean, baseline, compatibility",Every model is scored on the identical destination player-season cohort.
+performance_test_prediction_keys_match,blocking,True,mean_only:39;player_history_baseline:39;strict_compatibility:39,"identical across mean, baseline, compatibility",Every model is scored on the identical destination player-season cohort.
+performance_actual_is_unique_by_key,blocking,True,0,0,All variants share one canonical actual outcome per destination player-season.
+adaptation_train_prediction_keys_match,blocking,True,mean_only:175;player_history_baseline:175;strict_compatibility:175,"identical across mean, baseline, compatibility",Every model is scored on the identical destination player-season cohort.
+adaptation_validation_prediction_keys_match,blocking,True,mean_only:44;player_history_baseline:44;strict_compatibility:44,"identical across mean, baseline, compatibility",Every model is scored on the identical destination player-season cohort.
+adaptation_test_prediction_keys_match,blocking,True,mean_only:37;player_history_baseline:37;strict_compatibility:37,"identical across mean, baseline, compatibility",Every model is scored on the identical destination player-season cohort.
+adaptation_actual_is_unique_by_key,blocking,True,0,0,All variants share one canonical actual outcome per destination player-season.
+all_predictions_finite,blocking,True,0,0,The exported scoring rows contain no NaN or infinite values.
+opportunity_predictions_bounded,blocking,True,min=0.279754;max=0.724281,"within [0,1]",Opportunity predictions are clipped only after fitting to respect the target support.
+selected_alphas_from_declared_grid,blocking,True,1.0;10.0;100.0,0.0001;0.001;0.01;0.1;1.0;10.0;100.0,Hyperparameters are selected only from the declared grid using 2022 validation MAE.
+test_rows_not_in_tuning_table,blocking,True,target_key;target_column;model_variant;alpha;train_rows;validation_rows;raw_feature_count;encoded_feature_count;n;mae;rmse;r2;pearson;spearman;actual_mean;predicted_mean;actual_std,no test fields,The tuning artifact contains only train and validation sample sizes and metrics.

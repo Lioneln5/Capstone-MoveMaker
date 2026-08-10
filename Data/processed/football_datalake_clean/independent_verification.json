@@ -1,0 +1,60 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "check": "required_outputs",
+      "status": "pass",
+      "detail": "All required cleaning artifacts exist."
+    },
+    {
+      "check": "table_cardinality",
+      "status": "pass",
+      "detail": "manifest=11, summaries=11"
+    },
+    {
+      "check": "source_backup_hashes",
+      "status": "pass",
+      "detail": "Every live source and immutable backup matches the recorded SHA-256."
+    },
+    {
+      "check": "row_count_preservation",
+      "status": "pass",
+      "detail": "All tables reconcile; total clean rows=5,605,055"
+    },
+    {
+      "check": "source_record_sequence",
+      "status": "pass",
+      "detail": "Every clean row retains the expected source row number and stable source record ID."
+    },
+    {
+      "check": "required_helper_columns",
+      "status": "pass",
+      "detail": "Every clean table contains provenance and key/encoding flags."
+    },
+    {
+      "check": "clean_output_hashes",
+      "status": "pass",
+      "detail": "Every clean CSV matches its recorded SHA-256."
+    },
+    {
+      "check": "key_flag_reconciliation",
+      "status": "pass",
+      "detail": "Row-level missing and duplicate flags match the table summary."
+    },
+    {
+      "check": "transfer_fee_states",
+      "status": "pass",
+      "detail": "Recomputed fee states={'unclassified_zero': 1061443, 'positive_reported': 39997}"
+    },
+    {
+      "check": "latest_snapshot_flags",
+      "status": "pass",
+      "detail": "Every latest-value row is marked derived and leakage-sensitive."
+    },
+    {
+      "check": "blocking_checks",
+      "status": "pass",
+      "detail": "All blocking cleaning checks pass."
+    }
+  ]
+}

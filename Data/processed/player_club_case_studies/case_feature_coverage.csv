@@ -1,0 +1,13 @@
+case_id,canonical_performance_id,player_name,destination_club,advanced_rolling3_seasons_observed,preference_history_seasons,preference_history_minutes,destination_prior_team_distinct_players,destination_prior_team_minutes,advanced_max_source_season_used,preference_max_source_season,strict_context_source_season,target_season_start_year,timing_safe
+case_01,pts:121477:379:GB1:2021,Craig Dawson,West Ham United,2,3,6796.0,20.0,34126.0,2020.0,2020.0,2020,2021,True
+case_04,pts:238752:1390:IT1:2021,Keita Baldé,Cagliari Calcio,3,4,4417.0,29.0,34141.0,2020.0,2020.0,2020,2021,True
+case_10,pts:352392:667:FR1:2021,Lucas Perrin,RC Strasbourg Alsace,2,2,668.0,21.0,33923.0,2020.0,2020.0,2020,2021,True
+case_11,pts:181378:417:FR1:2022,Gaëtan Laborde,OGC Nice,3,5,12505.0,24.0,33961.0,2021.0,2021.0,2021,2022,True
+case_05,pts:80444:405:GB1:2022,Philippe Coutinho,Aston Villa,3,5,8320.0,23.0,34018.0,2021.0,2021.0,2021,2022,True
+case_09,pts:623040:276:IT1:2022,Yayah Kallon,Hellas Verona,1,1,636.0,24.0,33946.0,2021.0,2021.0,2021,2022,True
+case_02,pts:284884:940:ES1:2022,Óscar Rodríguez Arnaiz,Celta de Vigo,3,4,6289.0,22.0,34148.0,2021.0,2021.0,2021,2022,True
+case_12,pts:25488:380:IT1:2023,Antonio Candreva,US Salernitana 1919,3,6,13382.0,24.0,34118.0,2022.0,2022.0,2022,2023,True
+case_08,pts:82503:367:ES1:2023,Aridane Hernández,Rayo Vallecano,3,4,7588.0,19.0,27443.0,2022.0,2022.0,2022,2023,True
+case_06,pts:456492:3:L1:2023,Faride Alidou,1.FC Köln,1,1,182.0,24.0,28660.0,2022.0,2022.0,2022,2023,True
+case_03,pts:286779:2687:ES1:2023,Jorge Meré,Cádiz CF,3,5,4900.0,31.0,32506.0,2022.0,2022.0,2022,2023,True
+case_07,pts:66100:131:ES1:2023,Oriol Romeu,FC Barcelona,3,6,14569.0,22.0,33936.0,2022.0,2022.0,2022,2023,True

@@ -1,0 +1,32 @@
+check,severity,passed,observed,expected,detail
+required_model_outputs_exist,blocking,True,all present,all present,All auditable model artifacts must exist before result verification.
+build_checks_all_pass,blocking,True,0,0,The training-time assertions all passed.
+source_manifest_hashes_match,blocking,True,all match,all match,The verifier is reading the exact target matrix and dictionaries used by training.
+baseline_features_subset_compatibility,blocking,True,0,0,The compatibility model is a nested incremental comparison.
+incremental_features_are_compatibility_only,blocking,True,,preference_ or strict_ only,Only teammate-preference and destination-context features distinguish the full model.
+no_forbidden_features,blocking,True,,none,"No outcome, eligibility, exclusion, or target-roster feature is used."
+declared_timing_is_pretransfer,blocking,True,available_at_transfer;strict_preseason_safe,available_at_transfer;strict_preseason_safe,Every declared raw predictor is available by the transfer decision point.
+opportunity_train_cohort_count_reconciles,blocking,True,202,202,Model summary rows reconcile to the independently filtered primary target cohort.
+opportunity_validation_cohort_count_reconciles,blocking,True,52,52,Model summary rows reconcile to the independently filtered primary target cohort.
+opportunity_test_cohort_count_reconciles,blocking,True,58,58,Model summary rows reconcile to the independently filtered primary target cohort.
+opportunity_paired_bootstrap_exact,blocking,True,match,match,The paired test-error uncertainty interval is independently regenerated from predictions.
+performance_train_cohort_count_reconciles,blocking,True,186,186,Model summary rows reconcile to the independently filtered primary target cohort.
+performance_validation_cohort_count_reconciles,blocking,True,46,46,Model summary rows reconcile to the independently filtered primary target cohort.
+performance_test_cohort_count_reconciles,blocking,True,39,39,Model summary rows reconcile to the independently filtered primary target cohort.
+performance_paired_bootstrap_exact,blocking,True,match,match,The paired test-error uncertainty interval is independently regenerated from predictions.
+adaptation_train_cohort_count_reconciles,blocking,True,175,175,Model summary rows reconcile to the independently filtered primary target cohort.
+adaptation_validation_cohort_count_reconciles,blocking,True,44,44,Model summary rows reconcile to the independently filtered primary target cohort.
+adaptation_test_cohort_count_reconciles,blocking,True,37,37,Model summary rows reconcile to the independently filtered primary target cohort.
+adaptation_paired_bootstrap_exact,blocking,True,match,match,The paired test-error uncertainty interval is independently regenerated from predictions.
+prediction_keys_match_across_models,blocking,True,,none,"Mean, baseline, and compatibility variants score identical rows in every split."
+prediction_actuals_match_source_targets,blocking,True,,none,Every exported actual outcome matches the verified target matrix by canonical key.
+prediction_fit_scopes_are_chronological,blocking,True,,none,Train/validation predictions use train fits; test predictions use train+validation fits.
+all_reported_metrics_recompute,blocking,True,,none,"All sample sizes, errors, R-squared values, and correlations are rebuilt from row predictions."
+validation_alpha_selection_recomputes,blocking,True,,none,Selected shrinkage minimizes 2022 validation MAE with declared tie-breaking.
+tuning_contains_no_test_fields,blocking,True,target_key;target_column;model_variant;alpha;train_rows;validation_rows;raw_feature_count;encoded_feature_count;n;mae;rmse;r2;pearson;spearman;actual_mean;predicted_mean;actual_std,no test columns,The hyperparameter-selection table has no test-set metrics or sample fields.
+test_comparison_reconciles,blocking,True,,none,The compact held-out comparison exactly reconciles to reported test metrics.
+coefficient_features_are_declared,blocking,True,,none,Every encoded coefficient traces back to a declared raw feature.
+coefficients_are_final_fit_only,blocking,True,train_plus_validation,train_plus_validation,Attribution values correspond to the models used for the 2023 test predictions.
+wide_test_predictions_reconcile,blocking,True,,none,The analyst-friendly paired test table reconciles to long-form predictions and errors.
+top_features_trace_to_coefficients,blocking,True,0,0,Every published top compatibility signal is a final-fit standardized coefficient.
+opportunity_predictions_bounded,blocking,True,within bounds,"within [0,1]",The bounded opportunity target is scored on its valid support.

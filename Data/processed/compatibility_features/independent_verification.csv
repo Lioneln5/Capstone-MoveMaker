@@ -1,0 +1,32 @@
+check,severity,passed,observed,expected,detail
+required_outputs_exist,blocking,True,all present,all six modeling tables,Confirms the complete feature family was materialized.
+broad_row_count,blocking,True,905269,905269,One row must remain for every canonical modeling-scope performance row.
+broad_unique_performance_ids,blocking,True,0,0,Canonical performance IDs must remain unique after lag attachment.
+broad_feature_cutoff,blocking,True,0,0,Every broad cutoff must equal target season minus one.
+broad_max_source_before_target,blocking,True,0,0,No broad feature may report a source season at or after its target.
+broad_max_source_exact,blocking,True,0,0,The reported maximum source season must match the newest available exact lag.
+broad_time_split,blocking,True,0,0,Train/validation/test labels must follow the documented season split.
+broad_rolling_reconciliation,blocking,True,0,0,Rolling two- and three-season totals are independently recomputed from exact lag columns.
+broad_per90_reconciliation,blocking,True,0,0,Lagged and rolling goal/assist rates are independently recomputed.
+broad_new_club_logic,blocking,True,0,0,"For rows with lag1, new-club and same-club flags must be exact opposites."
+broad_ids_match_modeling_scope,blocking,True,0,0,The broad output key set must exactly match the canonical modeling scope.
+broad_source_sample_exact,blocking,True,0,0,Rebuilt all nine lag metrics from canonical source for 700 deterministic target rows.
+broad_continuity_sample_exact,blocking,True,0,0,Same-club and same-competition flags were rebuilt from canonical source relationships.
+advanced_row_counts,blocking,True,"{""advanced_lag"": 17790, ""compatibility"": 17790, ""model_matrix"": 17790, ""roster"": 17790, ""strict"": 17790}",17790,Every advanced table must retain the full accepted FBref row set.
+advanced_unique_performance_ids,blocking,True,0,0,Each advanced table must remain one row per canonical performance ID.
+advanced_ids_match_source,blocking,True,0,0,Advanced lagged rows must exactly preserve the accepted FBref source keys.
+advanced_ids_match_across_outputs,blocking,True,0,0,All advanced outputs must describe the identical key universe.
+advanced_lag_cutoff,blocking,True,0,0,Advanced player styles may only use seasons before the target.
+strict_context_exact_t_minus_1,blocking,True,0,0,Strict club context is tied to the immediately preceding club season.
+preference_history_cutoff,blocking,True,0,0,Historical preference estimates must use only seasons before the target.
+roster_performance_cutoff,blocking,True,0,0,Roster-conditioned teammate performance must still come from t-1 or earlier.
+roster_membership_disclosure,blocking,True,"[""target_season_roster_membership_scenario_only""]",target_season_roster_membership_scenario_only,Target-roster membership is explicitly separated from strict preseason-safe features.
+feature_only_table_has_no_targets,blocking,True,0,0,The reusable feature table contains no current-season outcomes.
+model_matrix_targets_explicit,blocking,True,14,>=10 prefixed outcomes,The model matrix retains outcomes only under an explicit target_ prefix.
+strict_minimum_teammate_rule,blocking,True,0,0,Strict eligibility requires at least five outfield teammates.
+roster_minimum_teammate_rule,blocking,True,0,0,Roster scenario eligibility requires at least five lagged teammates.
+strict_focal_player_exclusion,blocking,True,0,0,Prior-club player counts were independently rebuilt and the focal player removed when present.
+roster_focal_player_exclusion,blocking,True,0,0,Target-roster lag contributors were independently counted and the focal player removed.
+preference_shrinkage_exact,blocking,True,0,0,All six context slopes reconcile to raw_slope * n/(n+3).
+dribble_midfield_interaction_exact,blocking,True,0,0,The focal-player dribble style × teammate-midfield aggression feature is exactly reproducible.
+source_manifest_hashes,blocking,True,0,0,All declared source files still match the hashes used for this build.

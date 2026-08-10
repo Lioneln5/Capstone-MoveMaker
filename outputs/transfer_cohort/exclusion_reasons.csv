@@ -1,0 +1,7 @@
+﻿exclusion_reason,records,pct_of_cohort
+no_completed_seasonal_features,15170,0.8892145369284877
+insufficient_destination_game_coverage_24m,10855,0.6362837045720985
+fee_zero_or_unclassified_movement,9752,0.5716295427901524
+no_pre_valuation_within_365d,6766,0.3966002344665885
+no_post24_valuation_within_90d,6444,0.377725674091442
+fee_missing,6055,0.3549237983587339

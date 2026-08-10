@@ -1,0 +1,81 @@
+﻿country_name,competition_name,competition_gender,competition_international,season_name,competition_id,season_id,cataloged_matches,selected_matches,selected_events,selected_360_matches,selection_share
+India,Indian Super league,male,False,2021/2022,1238,108,115,115,344667,0,1.0
+International,FIFA World Cup,male,True,2018,43,3,64,64,227825,0,1.0
+International,FIFA World Cup,male,True,2022,43,106,64,64,234637,64,1.0
+Africa,African Cup of Nations,male,True,2023,1267,107,52,52,162903,1,1.0
+Europe,UEFA Euro,male,True,2020,55,43,51,51,192664,51,1.0
+Europe,UEFA Euro,male,True,2024,55,282,51,40,144936,40,0.7843137254901961
+Spain,La Liga,male,False,2017/2018,11,1,36,36,136538,0,1.0
+Spain,La Liga,male,False,2020/2021,11,90,35,35,139030,35,1.0
+Germany,1. Bundesliga,male,False,2023/2024,9,281,34,34,137765,34,1.0
+Spain,La Liga,male,False,2018/2019,11,4,34,34,131702,0,1.0
+Spain,La Liga,male,False,2019/2020,11,42,33,33,129058,0,1.0
+France,Ligue 1,male,False,2022/2023,7,235,32,32,129490,32,1.0
+France,Ligue 1,male,False,2021/2022,7,108,26,26,101766,26,1.0
+South America,Copa America,male,True,2024,223,282,32,18,57471,0,0.5625
+United States of America,Major League Soccer,male,False,2023,44,107,6,6,21786,6,1.0
+Europe,Champions League,male,False,2017/2018,16,1,1,1,3497,0,1.0
+Europe,Champions League,male,False,2018/2019,16,4,1,1,3165,0,1.0
+Germany,1. Bundesliga,male,False,2015/2016,9,27,34,0,0,0,0.0
+Europe,Champions League,male,False,1970/1971,16,276,1,0,0,0,0.0
+Europe,Champions League,male,False,1971/1972,16,71,1,0,0,0,0.0
+Europe,Champions League,male,False,1972/1973,16,277,1,0,0,0,0.0
+Europe,Champions League,male,False,1999/2000,16,76,1,0,0,0,0.0
+Europe,Champions League,male,False,2003/2004,16,44,1,0,0,0,0.0
+Europe,Champions League,male,False,2004/2005,16,37,1,0,0,0,0.0
+Europe,Champions League,male,False,2006/2007,16,39,1,0,0,0,0.0
+Europe,Champions League,male,False,2008/2009,16,41,1,0,0,0,0.0
+Europe,Champions League,male,False,2009/2010,16,21,1,0,0,0,0.0
+Europe,Champions League,male,False,2010/2011,16,22,1,0,0,0,0.0
+Europe,Champions League,male,False,2011/2012,16,23,1,0,0,0,0.0
+Europe,Champions League,male,False,2012/2013,16,24,1,0,0,0,0.0
+Europe,Champions League,male,False,2013/2014,16,25,1,0,0,0,0.0
+Europe,Champions League,male,False,2014/2015,16,26,1,0,0,0,0.0
+Europe,Champions League,male,False,2015/2016,16,27,1,0,0,0,0.0
+Europe,Champions League,male,False,2016/2017,16,2,1,0,0,0,0.0
+Spain,Copa del Rey,male,False,1977/1978,87,279,1,0,0,0,0.0
+Spain,Copa del Rey,male,False,1982/1983,87,268,1,0,0,0,0.0
+Spain,Copa del Rey,male,False,1983/1984,87,84,1,0,0,0,0.0
+England,FA Women's Super League,female,False,2018/2019,37,4,107,0,0,0,0.0
+England,FA Women's Super League,female,False,2019/2020,37,42,87,0,0,0,0.0
+England,FA Women's Super League,female,False,2020/2021,37,90,131,0,0,0,0.0
+England,FA Women's Super League,female,False,2023/2024,37,281,132,0,0,0,0.0
+International,FIFA U20 World Cup,male,True,1979,1470,274,1,0,0,0,0.0
+International,FIFA World Cup,male,True,1958,43,269,2,0,0,0,0.0
+International,FIFA World Cup,male,True,1962,43,270,1,0,0,0,0.0
+International,FIFA World Cup,male,True,1970,43,272,6,0,0,0,0.0
+International,FIFA World Cup,male,True,1974,43,51,6,0,0,0,0.0
+International,FIFA World Cup,male,True,1986,43,54,3,0,0,0,0.0
+International,FIFA World Cup,male,True,1990,43,55,1,0,0,0,0.0
+Germany,Frauen Bundesliga,female,False,2023/2024,135,281,132,0,0,0,0.0
+Spain,La Liga,male,False,1973/1974,11,278,1,0,0,0,0.0
+Spain,La Liga,male,False,2004/2005,11,37,7,0,0,0,0.0
+Spain,La Liga,male,False,2005/2006,11,38,17,0,0,0,0.0
+Spain,La Liga,male,False,2006/2007,11,39,26,0,0,0,0.0
+Spain,La Liga,male,False,2007/2008,11,40,27,0,0,0,0.0
+Spain,La Liga,male,False,2008/2009,11,41,31,0,0,0,0.0
+Spain,La Liga,male,False,2009/2010,11,21,35,0,0,0,0.0
+Spain,La Liga,male,False,2010/2011,11,22,33,0,0,0,0.0
+Spain,La Liga,male,False,2011/2012,11,23,37,0,0,0,0.0
+Spain,La Liga,male,False,2012/2013,11,24,32,0,0,0,0.0
+Spain,La Liga,male,False,2013/2014,11,25,31,0,0,0,0.0
+Spain,La Liga,male,False,2014/2015,11,26,38,0,0,0,0.0
+Spain,La Liga,male,False,2015/2016,11,27,380,0,0,0,0.0
+Spain,La Liga,male,False,2016/2017,11,2,34,0,0,0,0.0
+Spain,Liga F,female,False,2023/2024,182,281,240,0,0,0,0.0
+Argentina,Liga Profesional,male,False,1981,81,275,1,0,0,0,0.0
+Argentina,Liga Profesional,male,False,1997/1998,81,48,1,0,0,0,0.0
+France,Ligue 1,male,False,2015/2016,7,27,377,0,0,0,0.0
+United States of America,NWSL,female,False,2018,49,3,36,0,0,0,0.0
+United States of America,NWSL,female,False,2023,49,107,137,0,0,0,0.0
+North and Central America,North American League,male,False,1977,116,68,1,0,0,0,0.0
+England,Premier League,male,False,2003/2004,2,44,38,0,0,0,0.0
+England,Premier League,male,False,2015/2016,2,27,380,0,0,0,0.0
+Italy,Serie A,male,False,1986/1987,12,86,1,0,0,0,0.0
+Italy,Serie A,male,False,2015/2016,12,27,380,0,0,0,0.0
+Italy,Serie A Women,female,False,2023/2024,131,281,130,0,0,0,0.0
+Europe,UEFA Europa League,male,False,1988/1989,35,75,3,0,0,0,0.0
+Europe,UEFA Women's Euro,female,True,2022,53,106,31,0,0,0,0.0
+Europe,UEFA Women's Euro,female,True,2025,53,315,31,0,0,0,0.0
+International,Women's World Cup,female,True,2019,72,30,52,0,0,0,0.0
+International,Women's World Cup,female,True,2023,72,107,64,0,0,0,0.0

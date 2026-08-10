@@ -1,0 +1,22 @@
+{
+  "source_files": 12,
+  "source_rows": 7208921,
+  "clean_rows": 7208921,
+  "source_backup_directory": "Data/source_backups/transfermarkt_original",
+  "clean_table_directory": "Data/processed/transfermarkt_clean/tables",
+  "all_backup_hashes_match": true,
+  "blocking_checks": 83,
+  "blocking_checks_passed": 83,
+  "blocking_failures": 0,
+  "warning_checks": 2,
+  "warning_checks_passed": 0,
+  "historical_club_ids": 8784,
+  "club_ids_missing_from_snapshot": 7988,
+  "historical_player_ids": 123095,
+  "player_ids_missing_from_snapshot": 72946,
+  "transfer_season_date_mismatches": 233,
+  "game_season_july_boundary_differences": 1940,
+  "event_minute_unavailable_sentinel_rows": 17575,
+  "invalid_typed_values": 0,
+  "trimmed_text_cells": 9411
+}

@@ -1,0 +1,56 @@
+﻿table,check,observed,expected,passed,severity,detail
+player_injuries,source_backup_sha256_match,True,True,True,blocking,Source and immutable backup must match exactly.
+player_injuries,git_lfs_object_resolved,True,True,True,blocking,No source may remain a Git LFS pointer.
+player_latest_market_value,source_backup_sha256_match,True,True,True,blocking,Source and immutable backup must match exactly.
+player_latest_market_value,git_lfs_object_resolved,True,True,True,blocking,No source may remain a Git LFS pointer.
+player_market_value,source_backup_sha256_match,True,True,True,blocking,Source and immutable backup must match exactly.
+player_market_value,git_lfs_object_resolved,True,True,True,blocking,No source may remain a Git LFS pointer.
+player_national_performances,source_backup_sha256_match,True,True,True,blocking,Source and immutable backup must match exactly.
+player_national_performances,git_lfs_object_resolved,True,True,True,blocking,No source may remain a Git LFS pointer.
+player_performances,source_backup_sha256_match,True,True,True,blocking,Source and immutable backup must match exactly.
+player_performances,git_lfs_object_resolved,True,True,True,blocking,No source may remain a Git LFS pointer.
+player_profiles,source_backup_sha256_match,True,True,True,blocking,Source and immutable backup must match exactly.
+player_profiles,git_lfs_object_resolved,True,True,True,blocking,No source may remain a Git LFS pointer.
+player_teammates_played_with,source_backup_sha256_match,True,True,True,blocking,Source and immutable backup must match exactly.
+player_teammates_played_with,git_lfs_object_resolved,True,True,True,blocking,No source may remain a Git LFS pointer.
+team_children,source_backup_sha256_match,True,True,True,blocking,Source and immutable backup must match exactly.
+team_children,git_lfs_object_resolved,True,True,True,blocking,No source may remain a Git LFS pointer.
+team_competitions_seasons,source_backup_sha256_match,True,True,True,blocking,Source and immutable backup must match exactly.
+team_competitions_seasons,git_lfs_object_resolved,True,True,True,blocking,No source may remain a Git LFS pointer.
+team_details,source_backup_sha256_match,True,True,True,blocking,Source and immutable backup must match exactly.
+team_details,git_lfs_object_resolved,True,True,True,blocking,No source may remain a Git LFS pointer.
+transfer_history,source_backup_sha256_match,True,True,True,blocking,Source and immutable backup must match exactly.
+transfer_history,git_lfs_object_resolved,True,True,True,blocking,No source may remain a Git LFS pointer.
+player_injuries,row_count_preserved,143195,143195,True,blocking,Cleaning must not add or remove source rows.
+player_injuries,natural_key_missing_rows,1545,0,False,warning,Rows are retained and flagged for later merge policy.
+player_injuries,natural_key_duplicate_rows,213,0,False,warning,Rows are retained and flagged; canonical joins remain blocked until resolved.
+player_latest_market_value,row_count_preserved,69441,69441,True,blocking,Cleaning must not add or remove source rows.
+player_latest_market_value,natural_key_missing_rows,0,0,True,warning,Rows are retained and flagged for later merge policy.
+player_latest_market_value,natural_key_duplicate_rows,0,0,True,warning,Rows are retained and flagged; canonical joins remain blocked until resolved.
+player_market_value,row_count_preserved,901429,901429,True,blocking,Cleaning must not add or remove source rows.
+player_market_value,natural_key_missing_rows,0,0,True,warning,Rows are retained and flagged for later merge policy.
+player_market_value,natural_key_duplicate_rows,0,0,True,warning,Rows are retained and flagged; canonical joins remain blocked until resolved.
+player_national_performances,row_count_preserved,92701,92701,True,blocking,Cleaning must not add or remove source rows.
+player_national_performances,natural_key_missing_rows,0,0,True,warning,Rows are retained and flagged for later merge policy.
+player_national_performances,natural_key_duplicate_rows,113,0,False,warning,Rows are retained and flagged; canonical joins remain blocked until resolved.
+player_performances,row_count_preserved,1878719,1878719,True,blocking,Cleaning must not add or remove source rows.
+player_performances,natural_key_missing_rows,0,0,True,warning,Rows are retained and flagged for later merge policy.
+player_performances,natural_key_duplicate_rows,0,0,True,warning,Rows are retained and flagged; canonical joins remain blocked until resolved.
+player_profiles,row_count_preserved,92671,92671,True,blocking,Cleaning must not add or remove source rows.
+player_profiles,natural_key_missing_rows,0,0,True,warning,Rows are retained and flagged for later merge policy.
+player_profiles,natural_key_duplicate_rows,0,0,True,warning,Rows are retained and flagged; canonical joins remain blocked until resolved.
+player_teammates_played_with,row_count_preserved,1257342,1257342,True,blocking,Cleaning must not add or remove source rows.
+player_teammates_played_with,natural_key_missing_rows,0,0,True,warning,Rows are retained and flagged for later merge policy.
+player_teammates_played_with,natural_key_duplicate_rows,0,0,True,warning,Rows are retained and flagged; canonical joins remain blocked until resolved.
+team_children,row_count_preserved,7695,7695,True,blocking,Cleaning must not add or remove source rows.
+team_children,natural_key_missing_rows,0,0,True,warning,Rows are retained and flagged for later merge policy.
+team_children,natural_key_duplicate_rows,0,0,True,warning,Rows are retained and flagged; canonical joins remain blocked until resolved.
+team_competitions_seasons,row_count_preserved,58247,58247,True,blocking,Cleaning must not add or remove source rows.
+team_competitions_seasons,natural_key_missing_rows,0,0,True,warning,Rows are retained and flagged for later merge policy.
+team_competitions_seasons,natural_key_duplicate_rows,646,0,False,warning,Rows are retained and flagged; canonical joins remain blocked until resolved.
+team_details,row_count_preserved,2175,2175,True,blocking,Cleaning must not add or remove source rows.
+team_details,natural_key_missing_rows,0,0,True,warning,Rows are retained and flagged for later merge policy.
+team_details,natural_key_duplicate_rows,0,0,True,warning,Rows are retained and flagged; canonical joins remain blocked until resolved.
+transfer_history,row_count_preserved,1101440,1101440,True,blocking,Cleaning must not add or remove source rows.
+transfer_history,natural_key_missing_rows,580,0,False,warning,Rows are retained and flagged for later merge policy.
+transfer_history,natural_key_duplicate_rows,223,0,False,warning,Rows are retained and flagged; canonical joins remain blocked until resolved.

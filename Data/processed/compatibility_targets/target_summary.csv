@@ -1,0 +1,13 @@
+area,metric,value
+cohort,source_transfer_events,17060.0
+cohort,matched_transfer_event_rows,944.0
+cohort,unique_destination_player_seasons,936.0
+cohort,later_same_destination_events_collapsed,8.0
+target,destination_minutes_share_available,936.0
+target,role_performance_index_available,878.0
+target,performance_change_rolling3_available,607.0
+primary_model,opportunity_eligible,312.0
+primary_model,performance_eligible,271.0
+primary_model,adaptation_eligible,256.0
+policy,minimum_target_minutes,450.0
+policy,minimum_prior3_baseline_minutes,450.0

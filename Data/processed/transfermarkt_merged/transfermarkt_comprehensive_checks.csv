@@ -1,0 +1,23 @@
+check,actual,expected,status,notes
+valuation row preservation,35139,35139,OK,Every component must contain one row per transfer event.
+valuation transfer_event_id uniqueness,35139,35139,OK,Component key must be unique before joining.
+appearance row preservation,35139,35139,OK,Every component must contain one row per transfer event.
+appearance transfer_event_id uniqueness,35139,35139,OK,Component key must be unique before joining.
+lineup row preservation,35139,35139,OK,Every component must contain one row per transfer event.
+lineup transfer_event_id uniqueness,35139,35139,OK,Component key must be unique before joining.
+event row preservation,35139,35139,OK,Every component must contain one row per transfer event.
+event transfer_event_id uniqueness,35139,35139,OK,Component key must be unique before joining.
+club_context row preservation,35139,35139,OK,Every component must contain one row per transfer event.
+club_context transfer_event_id uniqueness,35139,35139,OK,Component key must be unique before joining.
+Master row preservation,35139,35139,OK,No transfer may be filtered or duplicated.
+Master transfer_event_id uniqueness,35139,35139,OK,Final master grain is one transfer event.
+Transfer core fields preserved,True,True,OK,All transfer-core values and row order must remain unchanged.
+Pre-valuation occurs after transfer,0,0,OK,Blocking temporal-leakage check.
+Pre-appearance window ends on/after transfer,0,0,OK,Blocking temporal-leakage check.
+Pre-lineup window ends on/after transfer,0,0,OK,Blocking temporal-leakage check.
+Pre-event window ends on/after transfer,0,0,OK,Blocking temporal-leakage check.
+Origin club pre-window ends on/after transfer,0,0,OK,Blocking temporal-leakage check.
+Destination club pre-window ends on/after transfer,0,0,OK,Blocking temporal-leakage check.
+Negative count or activity metrics,0,0,OK,"Counts, minutes, goals, and records cannot be negative."
+Combined sample subset of sporting,0,0,OK,Eligibility reconciliation.
+Combined sample subset of financial,0,0,OK,Eligibility reconciliation.

@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "checks": 11,
+  "blocking_checks": 11,
+  "blocking_failures": 0,
+  "verified_pair_rows": 758,
+  "verified_origin_results": 128,
+  "verified_aggregate_results": 96,
+  "verified_heterogeneity_results": 24,
+  "bootstrap_repetitions": 5000,
+  "permutation_repetitions": 5000
+}

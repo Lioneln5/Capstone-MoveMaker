@@ -1,0 +1,17 @@
+assumption,value,rationale
+master_grain,one row per transfer_event_id,No source fact is directly joined at a lower grain.
+master_population,all cleaned transfer events,"Missing features create flags, not row filters."
+pretransfer_window_days,365,Days -365 through -1 relative to transfer.
+medium_term_window_days,730,Days -730 through -1 retain two seasons of medium-term history.
+career_pre_window,all observations before transfer,Career-to-date history is retained once available; the 365-day rule remains a recency/eligibility gate.
+post12_window,days 0 through 364,Twelve-month sporting outcome window.
+post24_window,days 0 through 729,Twenty-four-month sporting outcome window.
+pretransfer_valuation,latest on or before transfer,As-of join prevents temporal leakage.
+valuation_target_12m,transfer date + 365 days,Nearest observation retained with gap.
+valuation_target_24m,transfer date + 730 days,Nearest observation retained with gap.
+primary_valuation_tolerance_days,90,Qualified post-transfer value must fall within +/-90 days.
+additional_valuation_tolerances,60 | 120 | 180,Sensitivity flags retained for later narrowing.
+destination_game_coverage_12m,10,Provisional floor before interpreting no player appearances.
+destination_game_coverage_24m,20,Provisional floor before interpreting no player appearances.
+movement_type,unresolved,Reported zero is not automatically classified as free or loan.
+posttransfer_columns,outcome_or_diagnostic_only,Never use post-transfer fields as prediction features.

@@ -1,0 +1,166 @@
+﻿team_id,team_name,normalized_name,transfermarkt_candidate_ids,transfermarkt_candidate_count,transfermarkt_club_id,match_status,match_method,manual_review_status
+158,AC Ajaccio,acajaccio,1147,1,1147,candidate_review_required,exact_normalized_alias_only,required
+129,AS Monaco,asmonaco,162,1,162,candidate_review_required,exact_normalized_alias_only,required
+906,Albania,albania,3561,1,3561,candidate_review_required,exact_normalized_alias_only,required
+4898,Algeria,algeria,3614,1,3614,candidate_review_required,exact_normalized_alias_only,required
+4901,Angola,angola,3585,1,3585,candidate_review_required,exact_normalized_alias_only,required
+779,Argentina,argentina,3437,1,3437,candidate_review_required,exact_normalized_alias_only,required
+215,Athletic Club,athleticclub,621,1,621,candidate_review_required,exact_normalized_alias_only,required
+212,Atlético Madrid,atleticomadrid,13,1,13,candidate_review_required,exact_normalized_alias_only,required
+172,Augsburg,augsburg,167,1,167,candidate_review_required,exact_normalized_alias_only,required
+792,Australia,australia,3433,1,3433,candidate_review_required,exact_normalized_alias_only,required
+915,Austria,austria,3383,1,3383,candidate_review_required,exact_normalized_alias_only,required
+217,Barcelona,barcelona,131,1,131,candidate_review_required,exact_normalized_alias_only,required
+169,Bayern Munich,bayernmunich,27,1,27,candidate_review_required,exact_normalized_alias_only,required
+782,Belgium,belgium,3382,1,3382,candidate_review_required,exact_normalized_alias_only,required
+3564,Bolivia,bolivia,5233,1,5233,candidate_review_required,exact_normalized_alias_only,required
+180,Borussia Dortmund,borussiadortmund,16,1,16,candidate_review_required,exact_normalized_alias_only,required
+185,Borussia Mönchengladbach,borussiamonchengladbach,18,1,18,candidate_review_required,exact_normalized_alias_only,required
+781,Brazil,brazil,3439,1,3439,candidate_review_required,exact_normalized_alias_only,required
+4921,Burkina Faso,burkinafaso,5872,1,5872,candidate_review_required,exact_normalized_alias_only,required
+2722,Cameroon,cameroon,3434,1,3434,candidate_review_required,exact_normalized_alias_only,required
+1833,Canada,canada,3510,1,3510,candidate_review_required,exact_normalized_alias_only,required
+8070,Charlotte,charlotte,78435,1,78435,candidate_review_required,exact_normalized_alias_only,required
+3562,Chile,chile,3700,1,3700,candidate_review_required,exact_normalized_alias_only,required
+489,Cincinnati,cincinnati,51772,1,51772,candidate_review_required,exact_normalized_alias_only,required
+152,Clermont Foot,clermontfoot,3524,1,3524,candidate_review_required,exact_normalized_alias_only,required
+769,Colombia,colombia,3816,1,3816,candidate_review_required,exact_normalized_alias_only,required
+795,Costa Rica,costarica,8497,1,8497,candidate_review_required,exact_normalized_alias_only,required
+785,Croatia,croatia,3556,1,3556,candidate_review_required,exact_normalized_alias_only,required
+912,Czech Republic,czechrepublic,3445,1,3445,candidate_review_required,exact_normalized_alias_only,required
+872,Darmstadt 98,darmstadt98,105,1,105,candidate_review_required,exact_normalized_alias_only,required
+776,Denmark,denmark,3436,1,3436,candidate_review_required,exact_normalized_alias_only,required
+206,Deportivo Alavés,deportivoalaves,1108,1,1108,candidate_review_required,exact_normalized_alias_only,required
+3565,Ecuador,ecuador,5750,1,5750,candidate_review_required,exact_normalized_alias_only,required
+774,Egypt,egypt,3672,1,3672,candidate_review_required,exact_normalized_alias_only,required
+184,Eintracht Frankfurt,eintrachtfrankfurt,24,1,24,candidate_review_required,exact_normalized_alias_only,required
+768,England,england,3299,1,3299,candidate_review_required,exact_normalized_alias_only,required
+4992,Equatorial Guinea,equatorialguinea,13485,1,13485,candidate_review_required,exact_normalized_alias_only,required
+214,Espanyol,espanyol,714,1,714,candidate_review_required,exact_normalized_alias_only,required
+1835,Finland,finland,3443,1,3443,candidate_review_required,exact_normalized_alias_only,required
+771,France,france,3377,1,3377,candidate_review_required,exact_normalized_alias_only,required
+183,Freiburg,freiburg,60,1,60,candidate_review_required,exact_normalized_alias_only,required
+2138,Georgia,georgia,3669,1,3669,candidate_review_required,exact_normalized_alias_only,required
+770,Germany,germany,3262,1,3262,candidate_review_required,exact_normalized_alias_only,required
+216,Getafe,getafe,3709,1,3709,candidate_review_required,exact_normalized_alias_only,required
+4885,Ghana,ghana,3441,1,3441,candidate_review_required,exact_normalized_alias_only,required
+211,Girona,girona,12321,1,12321,candidate_review_required,exact_normalized_alias_only,required
+175,Hoffenheim,hoffenheim,533,1,533,candidate_review_required,exact_normalized_alias_only,required
+916,Hungary,hungary,3468,1,3468,candidate_review_required,exact_normalized_alias_only,required
+793,Iceland,iceland,3574,1,3574,candidate_review_required,exact_normalized_alias_only,required
+797,Iran,iran,3582,1,3582,candidate_review_required,exact_normalized_alias_only,required
+914,Italy,italy,3376,1,3376,candidate_review_required,exact_normalized_alias_only,required
+2305,Jamaica,jamaica,3671,1,3671,candidate_review_required,exact_normalized_alias_only,required
+778,Japan,japan,3435,1,3435,candidate_review_required,exact_normalized_alias_only,required
+919,LAFC,lafc,51828,1,51828,candidate_review_required,exact_normalized_alias_only,required
+168,Lens,lens,826,1,826,candidate_review_required,exact_normalized_alias_only,required
+221,Levante UD,levanteud,3368,1,3368,candidate_review_required,exact_normalized_alias_only,required
+143,Lille,lille,1082,1,1082,candidate_review_required,exact_normalized_alias_only,required
+24,Liverpool,liverpool,31,1,31,candidate_review_required,exact_normalized_alias_only,required
+137,Lyon,lyon,1041,1,1041,candidate_review_required,exact_normalized_alias_only,required
+4930,Mali,mali,3674,1,3674,candidate_review_required,exact_normalized_alias_only,required
+794,Mexico,mexico,6303,1,6303,candidate_review_required,exact_normalized_alias_only,required
+139,Montpellier,montpellier,969,1,969,candidate_review_required,exact_normalized_alias_only,required
+788,Morocco,morocco,3575,1,3575,candidate_review_required,exact_normalized_alias_only,required
+4978,Mozambique,mozambique,5129,1,5129,candidate_review_required,exact_normalized_alias_only,required
+7287,Mumbai City,mumbaicity,45274,1,45274,candidate_review_required,exact_normalized_alias_only,required
+1938,Nashville SC,nashvillesc,63966,1,63966,candidate_review_required,exact_normalized_alias_only,required
+941,Netherlands,netherlands,3379,1,3379,candidate_review_required,exact_normalized_alias_only,required
+775,Nigeria,nigeria,3444,1,3444,candidate_review_required,exact_normalized_alias_only,required
+2358,North Macedonia,northmacedonia,5148,1,5148,candidate_review_required,exact_normalized_alias_only,required
+136,OGC Nice,ogcnice,417,1,417,candidate_review_required,exact_normalized_alias_only,required
+798,Panama,panama,3577,1,3577,candidate_review_required,exact_normalized_alias_only,required
+3567,Paraguay,paraguay,3581,1,3581,candidate_review_required,exact_normalized_alias_only,required
+131,Paris Saint-Germain,parissaintgermain,583,1,583,candidate_review_required,exact_normalized_alias_only,required
+784,Peru,peru,3584,1,3584,candidate_review_required,exact_normalized_alias_only,required
+789,Poland,poland,3442,1,3442,candidate_review_required,exact_normalized_alias_only,required
+780,Portugal,portugal,3300,1,3300,candidate_review_required,exact_normalized_alias_only,required
+3566,Qatar,qatar,14162,1,14162,candidate_review_required,exact_normalized_alias_only,required
+182,RB Leipzig,rbleipzig,23826,1,23826,candidate_review_required,exact_normalized_alias_only,required
+218,Real Betis,realbetis,150,1,150,candidate_review_required,exact_normalized_alias_only,required
+220,Real Madrid,realmadrid,418,1,418,candidate_review_required,exact_normalized_alias_only,required
+210,Real Sociedad,realsociedad,681,1,681,candidate_review_required,exact_normalized_alias_only,required
+901,Real Valladolid,realvalladolid,366,1,366,candidate_review_required,exact_normalized_alias_only,required
+905,Romania,romania,3447,1,3447,candidate_review_required,exact_normalized_alias_only,required
+796,Russia,russia,3448,1,3448,candidate_review_required,exact_normalized_alias_only,required
+135,Saint-Étienne,saintetienne,618,1,618,candidate_review_required,exact_normalized_alias_only,required
+799,Saudi Arabia,saudiarabia,3807,1,3807,candidate_review_required,exact_normalized_alias_only,required
+942,Scotland,scotland,3380,1,3380,candidate_review_required,exact_normalized_alias_only,required
+787,Senegal,senegal,3499,1,3499,candidate_review_required,exact_normalized_alias_only,required
+786,Serbia,serbia,3438,1,3438,candidate_review_required,exact_normalized_alias_only,required
+908,Slovakia,slovakia,3503,1,3503,candidate_review_required,exact_normalized_alias_only,required
+944,Slovenia,slovenia,3588,1,3588,candidate_review_required,exact_normalized_alias_only,required
+4976,South Africa,southafrica,3806,1,3806,candidate_review_required,exact_normalized_alias_only,required
+791,South Korea,southkorea,3589,1,3589,candidate_review_required,exact_normalized_alias_only,required
+772,Spain,spain,3375,1,3375,candidate_review_required,exact_normalized_alias_only,required
+153,Stade Brestois,stadebrestois,3911,1,3911,candidate_review_required,exact_normalized_alias_only,required
+790,Sweden,sweden,3557,1,3557,candidate_review_required,exact_normalized_alias_only,required
+773,Switzerland,switzerland,3384,1,3384,candidate_review_required,exact_normalized_alias_only,required
+4953,Tanzania,tanzania,14666,1,14666,candidate_review_required,exact_normalized_alias_only,required
+575,Toronto FC,torontofc,11141,1,11141,candidate_review_required,exact_normalized_alias_only,required
+38,Tottenham Hotspur,tottenhamhotspur,148,1,148,candidate_review_required,exact_normalized_alias_only,required
+130,Toulouse,toulouse,415,1,415,candidate_review_required,exact_normalized_alias_only,required
+133,Troyes,troyes,1095,1,1095,candidate_review_required,exact_normalized_alias_only,required
+777,Tunisia,tunisia,3670,1,3670,candidate_review_required,exact_normalized_alias_only,required
+911,Ukraine,ukraine,3699,1,3699,candidate_review_required,exact_normalized_alias_only,required
+190,Union Berlin,unionberlin,89,1,89,candidate_review_required,exact_normalized_alias_only,required
+1839,United States,unitedstates,3505,1,3505,candidate_review_required,exact_normalized_alias_only,required
+783,Uruguay,uruguay,3449,1,3449,candidate_review_required,exact_normalized_alias_only,required
+207,Valencia,valencia,1049,1,1049,candidate_review_required,exact_normalized_alias_only,required
+3563,Venezuela,venezuela,3504,1,3504,candidate_review_required,exact_normalized_alias_only,required
+174,VfB Stuttgart,vfbstuttgart,79,1,79,candidate_review_required,exact_normalized_alias_only,required
+222,Villarreal,villarreal,1050,1,1050,candidate_review_required,exact_normalized_alias_only,required
+907,Wales,wales,3864,1,3864,candidate_review_required,exact_normalized_alias_only,required
+176,Werder Bremen,werderbremen,86,1,86,candidate_review_required,exact_normalized_alias_only,required
+179,Wolfsburg,wolfsburg,82,1,82,candidate_review_required,exact_normalized_alias_only,required
+4963,Zambia,zambia,3703,1,3703,candidate_review_required,exact_normalized_alias_only,required
+145,Angers,angers,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+167,Auxerre,auxerre,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+904,Bayer Leverkusen,bayerleverkusen,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+7284,Bengaluru,bengaluru,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+868,Bochum,bochum,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+146,Bordeaux,bordeaux,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+4924,Cape Verde Islands,capeverdeislands,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+209,Celta Vigo,celtavigo,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+7290,Chennaiyin,chennaiyin,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+4881,Congo DR,congodr,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+552,Cádiz,cadiz,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+3374,Côte d'Ivoire,cotedivoire,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+7286,East Bengal,eastbengal,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+322,Eibar,eibar,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+1042,Elche,elche,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+201,FC Heidenheim,fcheidenheim,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+186,FC Köln,fckoln,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+177,FSV Mainz 05,fsvmainz05,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+4934,Gambia,gambia,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+7288,Goa,goa,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+1049,Granada,granada,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+4892,Guinea,guinea,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+4894,Guinea-Bissau,guineabissau,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+902,Huesca,huesca,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+1975,Inter Miami,intermiami,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+2021,Jamshedpur,jamshedpur,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+7283,Kerala Blasters,keralablasters,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+208,Las Palmas,laspalmas,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+205,Leganés,leganes,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+165,Lorient,lorient,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+1043,Mallorca,mallorca,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+4932,Mauritania,mauritania,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+141,Metz,metz,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+7282,Mohun Bagan Super Giant,mohunbagansupergiant,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+223,Málaga,malaga,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+4980,Namibia,namibia,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+144,Nantes,nantes,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+387,New York Red Bulls,newyorkredbulls,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+7285,NorthEast United,northeastunited,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+7291,Odisha,odisha,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+147,Olympique de Marseille,olympiquedemarseille,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+422,Osasuna,osasuna,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+219,RC Deportivo La Coruña,rcdeportivolacoruna,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+360,Rayo Vallecano,rayovallecano,367 | 40421,2,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+134,Rennes,rennes,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+7289,SC Delhi,scdelhi,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+213,Sevilla,sevilla,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+156,Stade de Reims,stadedereims,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+138,Strasbourg,strasbourg,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required
+909,Turkey,turkey,,0,,unmatched_or_ambiguous,exact_normalized_alias_only,required

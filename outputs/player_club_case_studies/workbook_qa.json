@@ -1,0 +1,84 @@
+{
+  "status": "pass",
+  "workbook": "C:\\Users\\Lione\\Downloads\\Capstone-MoveMaker\\outputs\\player_club_case_studies\\MoveMaker_Player_Club_Case_Studies.xlsx",
+  "sheet_count": 12,
+  "sheets": [
+    "Executive Summary",
+    "Case Explorer",
+    "Case Portfolio",
+    "Predictions",
+    "Fit Summary",
+    "Style Profiles",
+    "Context Preferences",
+    "Feature Coverage",
+    "StatsBomb Supplement",
+    "Category Summary",
+    "Verification",
+    "Methodology"
+  ],
+  "formula_errors": [],
+  "imported_formula_errors": [],
+  "key_inspection_available": true,
+  "rendered_sheets": [
+    {
+      "sheet": "Executive Summary",
+      "preview": "C:\\Users\\Lione\\Downloads\\Capstone-MoveMaker\\outputs\\player_club_case_studies\\previews\\Executive_Summary.png",
+      "bytes": 135808
+    },
+    {
+      "sheet": "Case Explorer",
+      "preview": "C:\\Users\\Lione\\Downloads\\Capstone-MoveMaker\\outputs\\player_club_case_studies\\previews\\Case_Explorer.png",
+      "bytes": 120568
+    },
+    {
+      "sheet": "Case Portfolio",
+      "preview": "C:\\Users\\Lione\\Downloads\\Capstone-MoveMaker\\outputs\\player_club_case_studies\\previews\\Case_Portfolio.png",
+      "bytes": 160736
+    },
+    {
+      "sheet": "Predictions",
+      "preview": "C:\\Users\\Lione\\Downloads\\Capstone-MoveMaker\\outputs\\player_club_case_studies\\previews\\Predictions.png",
+      "bytes": 198108
+    },
+    {
+      "sheet": "Fit Summary",
+      "preview": "C:\\Users\\Lione\\Downloads\\Capstone-MoveMaker\\outputs\\player_club_case_studies\\previews\\Fit_Summary.png",
+      "bytes": 199293
+    },
+    {
+      "sheet": "Style Profiles",
+      "preview": "C:\\Users\\Lione\\Downloads\\Capstone-MoveMaker\\outputs\\player_club_case_studies\\previews\\Style_Profiles.png",
+      "bytes": 495749
+    },
+    {
+      "sheet": "Context Preferences",
+      "preview": "C:\\Users\\Lione\\Downloads\\Capstone-MoveMaker\\outputs\\player_club_case_studies\\previews\\Context_Preferences.png",
+      "bytes": 445421
+    },
+    {
+      "sheet": "Feature Coverage",
+      "preview": "C:\\Users\\Lione\\Downloads\\Capstone-MoveMaker\\outputs\\player_club_case_studies\\previews\\Feature_Coverage.png",
+      "bytes": 80631
+    },
+    {
+      "sheet": "StatsBomb Supplement",
+      "preview": "C:\\Users\\Lione\\Downloads\\Capstone-MoveMaker\\outputs\\player_club_case_studies\\previews\\StatsBomb_Supplement.png",
+      "bytes": 80093
+    },
+    {
+      "sheet": "Category Summary",
+      "preview": "C:\\Users\\Lione\\Downloads\\Capstone-MoveMaker\\outputs\\player_club_case_studies\\previews\\Category_Summary.png",
+      "bytes": 34212
+    },
+    {
+      "sheet": "Verification",
+      "preview": "C:\\Users\\Lione\\Downloads\\Capstone-MoveMaker\\outputs\\player_club_case_studies\\previews\\Verification.png",
+      "bytes": 82473
+    },
+    {
+      "sheet": "Methodology",
+      "preview": "C:\\Users\\Lione\\Downloads\\Capstone-MoveMaker\\outputs\\player_club_case_studies\\previews\\Methodology.png",
+      "bytes": 86395
+    }
+  ]
+}

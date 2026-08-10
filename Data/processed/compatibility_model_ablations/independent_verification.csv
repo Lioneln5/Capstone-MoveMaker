@@ -1,0 +1,25 @@
+check,severity,passed,observed,expected,detail
+required_outputs_exist,blocking,True,all present,all present,Every auditable ablation artifact exists.
+build_checks_all_pass,blocking,True,0,0,All training-time invariants passed.
+source_manifest_hashes_match,blocking,True,all match,all match,Verification uses the exact source artifacts used for training.
+baseline_nested_in_all_feature_sets,blocking,True,nested,nested,Every comparison retains the same player/market-history controls.
+feature_set_counts_exact,blocking,True,"{""context_and_preferences"": 173, ""full_explicit_fit"": 202, ""player_history_baseline"": 81, ""plus_club_context"": 133, ""plus_player_preferences"": 121}",81;133;121;173;202,The declared feature blocks have exact reproducible sizes.
+feature_blocks_are_declared,blocking,True,destination_club_context;explicit_player_club_fit;historical_teammate_preference;lagged_player_history;transfer_and_market,declared blocks only,Every raw feature belongs to one documented ablation block.
+tuning_candidate_count_exact,blocking,True,420,420,"The validation grid contains all declared ridge, elastic-net, and boosted-tree candidates."
+tuning_contains_no_test_fields,blocking,True,target_key;target_column;feature_set;model_family;alpha;l1_ratio;learning_rate;max_depth;min_samples_leaf;max_features;n_estimators;train_rows;validation_rows;raw_feature_count;encoded_feature_count;n;mae;rmse;r2;pearson;spearman;actual_mean;predicted_mean;actual_std;hyperparameters;iterations;nonzero_coefficients,no test fields,2023 never appears in model or hyperparameter selection artifacts.
+cohort_counts_match_all_specs,blocking,True,,none,Every specification scores the full eligible chronological cohort.
+prediction_keys_match_all_specs,blocking,True,,none,Feature and model changes never alter scoring rows.
+actual_targets_match_source,blocking,True,,none,Every prediction row maps to the verified canonical target by key.
+all_metrics_recompute,blocking,True,,none,"All errors, correlations, and R-squared values are rebuilt from row predictions."
+validation_hyperparameter_selection_exact,blocking,True,,none,Every selected model minimizes 2022 MAE with declared tie-breaking.
+selected_validation_metrics_match_tuning,blocking,True,,none,The reported validation metrics correspond to the exact selected candidate.
+test_results_reconcile_to_metrics,blocking,True,,none,The compact result grid reconciles to full validation and test metrics.
+feature_block_effects_recompute,blocking,True,,none,Every block improvement is an exact same-family difference from the baseline.
+within_family_bootstrap_exact,blocking,True,,none,All paired full-versus-baseline uncertainty estimates regenerate exactly.
+validation_model_selection_recomputes,blocking,True,,none,"Baseline, full, and overall specifications are selected strictly by 2022 validation metrics."
+selected_bootstrap_exact,blocking,True,,none,Validation-selected baseline/full uncertainty regenerates from their 2023 predictions.
+selected_pair_predictions_reconcile,blocking,True,,none,Analyst-friendly paired predictions exactly match selected model rows.
+importance_features_are_declared,blocking,True,0,0,Every attribution traces to a declared strict feature.
+top_features_trace_to_importance,blocking,True,0,0,Published top signals are a subset of final-fit model importance rows.
+all_predictions_finite,blocking,True,0,0,No scored row contains a missing or infinite value.
+opportunity_predictions_bounded,blocking,True,within bounds,"within [0,1]",All opportunity models respect the valid target range.

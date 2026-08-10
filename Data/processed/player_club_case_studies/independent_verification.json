@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "checks": 12,
+  "blocking_checks": 12,
+  "blocking_failures": 0,
+  "verified_mature_cases": 124,
+  "verified_selected_cases": 12,
+  "verified_target_predictions": 24,
+  "verified_style_rows": 96,
+  "verified_context_rows": 72
+}

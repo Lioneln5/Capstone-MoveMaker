@@ -1,0 +1,86 @@
+﻿table,check,observed,expected,passed,severity,notes
+countries,Source schema,country_id | country_name | country_code | confederation | total_clubs | total_players | average_age | url,country_id | country_name | country_code | confederation | total_clubs | total_players | average_age | url,True,blocking,Exact ordered schema expected by the cleaner.
+countries,Rows retained,124,124,True,blocking,No source rows deleted or expanded.
+countries,Natural-key null rows,0,0,True,blocking,All candidate-key fields must be present.
+countries,Natural-key duplicate rows,0,0,True,blocking,Exact source audit previously found no duplicates; checked here with deterministic 64-bit row hashes.
+countries,Typed-value parse failures,0,0,True,blocking,Nonblank source values must parse to their declared date/numeric type.
+countries,Negative constrained values,0,0,True,blocking,"Counts, minutes, fees, values, and attendance cannot be negative."
+competitions,Source schema,competition_id | competition_code | name | sub_type | type | country_id | country_name | domestic_league_code | confederation | total_clubs | url,competition_id | competition_code | name | sub_type | type | country_id | country_name | domestic_league_code | confederation | total_clubs | url,True,blocking,Exact ordered schema expected by the cleaner.
+competitions,Rows retained,65,65,True,blocking,No source rows deleted or expanded.
+competitions,Natural-key null rows,0,0,True,blocking,All candidate-key fields must be present.
+competitions,Natural-key duplicate rows,0,0,True,blocking,Exact source audit previously found no duplicates; checked here with deterministic 64-bit row hashes.
+competitions,Typed-value parse failures,0,0,True,blocking,Nonblank source values must parse to their declared date/numeric type.
+competitions,Negative constrained values,0,0,True,blocking,"Counts, minutes, fees, values, and attendance cannot be negative."
+national_teams,Source schema,national_team_id | name | team_code | country_id | country_name | country_code | confederation | team_image_url | squad_size | average_age | foreigners_number | foreigners_percentage | total_market_value | coach_name | fifa_ranking | last_season | url,national_team_id | name | team_code | country_id | country_name | country_code | confederation | team_image_url | squad_size | average_age | foreigners_number | foreigners_percentage | total_market_value | coach_name | fifa_ranking | last_season | url,True,blocking,Exact ordered schema expected by the cleaner.
+national_teams,Rows retained,124,124,True,blocking,No source rows deleted or expanded.
+national_teams,Natural-key null rows,0,0,True,blocking,All candidate-key fields must be present.
+national_teams,Natural-key duplicate rows,0,0,True,blocking,Exact source audit previously found no duplicates; checked here with deterministic 64-bit row hashes.
+national_teams,Typed-value parse failures,0,0,True,blocking,Nonblank source values must parse to their declared date/numeric type.
+national_teams,Negative constrained values,0,0,True,blocking,"Counts, minutes, fees, values, and attendance cannot be negative."
+players,Source schema,player_id | first_name | last_name | name | last_season | current_club_id | player_code | country_of_birth | city_of_birth | country_of_citizenship | date_of_birth | sub_position | position | foot | height_in_cm | contract_expiration_date | agent_name | image_url | international_caps | international_goals | current_national_team_id | url | current_club_domestic_competition_id | current_club_name | market_value_in_eur | highest_market_value_in_eur,player_id | first_name | last_name | name | last_season | current_club_id | player_code | country_of_birth | city_of_birth | country_of_citizenship | date_of_birth | sub_position | position | foot | height_in_cm | contract_expiration_date | agent_name | image_url | international_caps | international_goals | current_national_team_id | url | current_club_domestic_competition_id | current_club_name | market_value_in_eur | highest_market_value_in_eur,True,blocking,Exact ordered schema expected by the cleaner.
+players,Rows retained,50149,50149,True,blocking,No source rows deleted or expanded.
+players,Natural-key null rows,0,0,True,blocking,All candidate-key fields must be present.
+players,Natural-key duplicate rows,0,0,True,blocking,Exact source audit previously found no duplicates; checked here with deterministic 64-bit row hashes.
+players,Typed-value parse failures,0,0,True,blocking,Nonblank source values must parse to their declared date/numeric type.
+players,Negative constrained values,0,0,True,blocking,"Counts, minutes, fees, values, and attendance cannot be negative."
+clubs,Source schema,club_id | club_code | name | domestic_competition_id | total_market_value | squad_size | average_age | foreigners_number | foreigners_percentage | national_team_players | stadium_name | stadium_seats | net_transfer_record | coach_name | last_season | filename | url,club_id | club_code | name | domestic_competition_id | total_market_value | squad_size | average_age | foreigners_number | foreigners_percentage | national_team_players | stadium_name | stadium_seats | net_transfer_record | coach_name | last_season | filename | url,True,blocking,Exact ordered schema expected by the cleaner.
+clubs,Rows retained,796,796,True,blocking,No source rows deleted or expanded.
+clubs,Natural-key null rows,0,0,True,blocking,All candidate-key fields must be present.
+clubs,Natural-key duplicate rows,0,0,True,blocking,Exact source audit previously found no duplicates; checked here with deterministic 64-bit row hashes.
+clubs,Typed-value parse failures,0,0,True,blocking,Nonblank source values must parse to their declared date/numeric type.
+clubs,Negative constrained values,0,0,True,blocking,"Counts, minutes, fees, values, and attendance cannot be negative."
+transfers,Source schema,player_id | transfer_date | transfer_season | from_club_id | to_club_id | from_club_name | to_club_name | transfer_fee | market_value_in_eur | player_name,player_id | transfer_date | transfer_season | from_club_id | to_club_id | from_club_name | to_club_name | transfer_fee | market_value_in_eur | player_name,True,blocking,Exact ordered schema expected by the cleaner.
+transfers,Rows retained,35139,35139,True,blocking,No source rows deleted or expanded.
+transfers,Natural-key null rows,0,0,True,blocking,All candidate-key fields must be present.
+transfers,Natural-key duplicate rows,0,0,True,blocking,Exact source audit previously found no duplicates; checked here with deterministic 64-bit row hashes.
+transfers,Typed-value parse failures,0,0,True,blocking,Nonblank source values must parse to their declared date/numeric type.
+transfers,Negative constrained values,0,0,True,blocking,"Counts, minutes, fees, values, and attendance cannot be negative."
+player_valuations,Source schema,player_id | date | market_value_in_eur | current_club_name | current_club_id | player_club_domestic_competition_id,player_id | date | market_value_in_eur | current_club_name | current_club_id | player_club_domestic_competition_id,True,blocking,Exact ordered schema expected by the cleaner.
+player_valuations,Rows retained,507815,507815,True,blocking,No source rows deleted or expanded.
+player_valuations,Natural-key null rows,0,0,True,blocking,All candidate-key fields must be present.
+player_valuations,Natural-key duplicate rows,0,0,True,blocking,Exact source audit previously found no duplicates; checked here with deterministic 64-bit row hashes.
+player_valuations,Typed-value parse failures,0,0,True,blocking,Nonblank source values must parse to their declared date/numeric type.
+player_valuations,Negative constrained values,0,0,True,blocking,"Counts, minutes, fees, values, and attendance cannot be negative."
+games,Source schema,game_id | competition_id | season | round | date | home_club_id | away_club_id | home_club_goals | away_club_goals | home_club_position | away_club_position | home_club_manager_name | away_club_manager_name | stadium | attendance | referee | url | home_club_formation | away_club_formation | home_club_name | away_club_name | aggregate | competition_type,game_id | competition_id | season | round | date | home_club_id | away_club_id | home_club_goals | away_club_goals | home_club_position | away_club_position | home_club_manager_name | away_club_manager_name | stadium | attendance | referee | url | home_club_formation | away_club_formation | home_club_name | away_club_name | aggregate | competition_type,True,blocking,Exact ordered schema expected by the cleaner.
+games,Rows retained,88958,88958,True,blocking,No source rows deleted or expanded.
+games,Natural-key null rows,0,0,True,blocking,All candidate-key fields must be present.
+games,Natural-key duplicate rows,0,0,True,blocking,Exact source audit previously found no duplicates; checked here with deterministic 64-bit row hashes.
+games,Typed-value parse failures,0,0,True,blocking,Nonblank source values must parse to their declared date/numeric type.
+games,Negative constrained values,0,0,True,blocking,"Counts, minutes, fees, values, and attendance cannot be negative."
+club_games,Source schema,game_id | club_id | own_goals | own_position | own_manager_name | opponent_id | opponent_goals | opponent_position | opponent_manager_name | hosting | is_win,game_id | club_id | own_goals | own_position | own_manager_name | opponent_id | opponent_goals | opponent_position | opponent_manager_name | hosting | is_win,True,blocking,Exact ordered schema expected by the cleaner.
+club_games,Rows retained,177916,177916,True,blocking,No source rows deleted or expanded.
+club_games,Natural-key null rows,0,0,True,blocking,All candidate-key fields must be present.
+club_games,Natural-key duplicate rows,0,0,True,blocking,Exact source audit previously found no duplicates; checked here with deterministic 64-bit row hashes.
+club_games,Typed-value parse failures,0,0,True,blocking,Nonblank source values must parse to their declared date/numeric type.
+club_games,Negative constrained values,0,0,True,blocking,"Counts, minutes, fees, values, and attendance cannot be negative."
+appearances,Source schema,appearance_id | game_id | player_id | player_club_id | player_current_club_id | date | player_name | competition_id | yellow_cards | red_cards | goals | assists | minutes_played,appearance_id | game_id | player_id | player_club_id | player_current_club_id | date | player_name | competition_id | yellow_cards | red_cards | goals | assists | minutes_played,True,blocking,Exact ordered schema expected by the cleaner.
+appearances,Rows retained,1894350,1894350,True,blocking,No source rows deleted or expanded.
+appearances,Natural-key null rows,0,0,True,blocking,All candidate-key fields must be present.
+appearances,Natural-key duplicate rows,0,0,True,blocking,Exact source audit previously found no duplicates; checked here with deterministic 64-bit row hashes.
+appearances,Typed-value parse failures,0,0,True,blocking,Nonblank source values must parse to their declared date/numeric type.
+appearances,Negative constrained values,0,0,True,blocking,"Counts, minutes, fees, values, and attendance cannot be negative."
+game_lineups,Source schema,game_lineups_id | date | game_id | player_id | club_id | player_name | type | position | number | team_captain,game_lineups_id | date | game_id | player_id | club_id | player_name | type | position | number | team_captain,True,blocking,Exact ordered schema expected by the cleaner.
+game_lineups,Rows retained,3179016,3179016,True,blocking,No source rows deleted or expanded.
+game_lineups,Natural-key null rows,0,0,True,blocking,All candidate-key fields must be present.
+game_lineups,Natural-key duplicate rows,0,0,True,blocking,Exact source audit previously found no duplicates; checked here with deterministic 64-bit row hashes.
+game_lineups,Typed-value parse failures,0,0,True,blocking,Nonblank source values must parse to their declared date/numeric type.
+game_lineups,Negative constrained values,0,0,True,blocking,"Counts, minutes, fees, values, and attendance cannot be negative."
+game_events,Source schema,game_event_id | date | game_id | minute | type | club_id | club_name | player_id | description | player_in_id | player_assist_id,game_event_id | date | game_id | minute | type | club_id | club_name | player_id | description | player_in_id | player_assist_id,True,blocking,Exact ordered schema expected by the cleaner.
+game_events,Rows retained,1274469,1274469,True,blocking,No source rows deleted or expanded.
+game_events,Natural-key null rows,0,0,True,blocking,All candidate-key fields must be present.
+game_events,Natural-key duplicate rows,0,0,True,blocking,Exact source audit previously found no duplicates; checked here with deterministic 64-bit row hashes.
+game_events,Typed-value parse failures,0,0,True,blocking,Nonblank source values must parse to their declared date/numeric type.
+game_events,Negative constrained values,0,0,True,blocking,"Counts, minutes, fees, values, and attendance cannot be negative."
+appearances,Dates agree with games,0,0,True,blocking,appearance date must equal the joined game date.
+game_lineups,Dates agree with games,0,0,True,blocking,lineup date must equal the joined game date.
+game_events,Dates agree with games,0,0,True,blocking,event date must equal the joined game date.
+appearances,Club participates in joined game,0,0,True,blocking,"Historical club IDs are checked against home and away IDs, not clubs.csv coverage."
+game_lineups,Club participates in joined game,0,0,True,blocking,"Historical club IDs are checked against home and away IDs, not clubs.csv coverage."
+game_events,Club participates in joined game,0,0,True,blocking,"Historical club IDs are checked against home and away IDs, not clubs.csv coverage."
+appearances,Competition agrees with games,0,0,True,blocking,appearance competition must equal joined game competition.
+club_games,Exactly two club perspectives per game,0,0,True,blocking,Every game should have one home and one away club_games row.
+club_games,Club-game rows reconcile to games,0,0,True,blocking,"Club IDs, opponent IDs, goals, and hosting must agree with games.csv."
+transfers,Transfer season/date mismatches,233,0,False,warning,"Preserve the supplied label, but use transfer_date as the authoritative time anchor."
+transfers,Unique transfer_event_id,35139,35139,True,blocking,SHA-256 of the natural transfer key.
+games,Game season differs from July-boundary calculation,1940,0,False,warning,Expected for calendar-season leagues and some tournaments; preserve the source season and use competition-aware season logic downstream.
+game_events,Unavailable minute sentinel handled,0,0,True,blocking,Source minute -1 is retained in minute_raw and represented as missing in analytical minute.

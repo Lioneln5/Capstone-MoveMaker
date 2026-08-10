@@ -1,0 +1,12 @@
+﻿table,grain,merge_policy
+canonical_player_dimension,"One row per canonical Transfermarkt player ID, including flagged fact-only stubs.","Stable identity attributes only; current club, contracts, and agents remain snapshot evidence."
+player_snapshot_evidence,One source snapshot per profiled player and source.,Never use as historical predictors without an explicit as-of cutoff.
+canonical_club_dimension,One row per canonical Transfermarkt club ID.,Shared native club ID; country conflicts flagged.
+club_snapshot_evidence,One source snapshot per club and source.,Snapshot fields remain source-specific and leakage-sensitive.
+valuation_source_evidence,One received valuation source row.,Row-preserving evidence with canonical player-date key.
+canonical_valuation_history,One canonical player-date valuation key.,Exact values collapse; conflicting values remain source-specific and canonical value is blank.
+canonical_latest_valuation,One maximum-date valuation row per player.,Derived from canonical history; not an independent fact source.
+valuation_conflict_review,One canonical valuation key requiring conflict or duplicate review.,Review queue; conflicting values remain unresolved.
+transfer_source_evidence,One received transfer source row.,Row-preserving evidence with canonical event key.
+canonical_transfer_history,One complete player-date-origin-destination event; incomplete keys remain source-row-specific.,"Exact/consistent evidence collapses; fee, value, or type conflicts stay unresolved."
+transfer_conflict_review,One canonical event requiring review or documenting within-source duplicates.,Review queue; never silently overwrite conflicting evidence.
