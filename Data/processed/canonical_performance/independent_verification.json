@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "checks": 20,
+  "failures": 0,
+  "canonical_rows_scanned": 2084606,
+  "modeling_rows_scanned": 905269
+}

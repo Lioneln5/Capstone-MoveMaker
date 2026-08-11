@@ -1,0 +1,39 @@
+check,passed,observed,expected,note
+required_outputs_exist,True,,none,All promised outputs exist.
+upstream_model_verified,True,pass,pass,Frozen source model independently verified.
+compact_feature_counts,True,"{""C1_paid_deal_market_profile"": 11, ""C2_plus_prior_opportunity"": 19, ""C3_plus_compact_destination_context"": 28}","{""C1_paid_deal_market_profile"": 11, ""C2_plus_prior_opportunity"": 19, ""C3_plus_compact_destination_context"": 28}",Compact dimensions exact.
+feature_sets_nested,True,True,True,Each compact block only adds fields.
+compact_context_nine_fields,True,club_destination_pre365_domestic_cup_game_share;club_destination_pre365_domestic_league_game_share;club_destination_pre365_games;club_destination_pre365_goal_difference_per_game;club_destination_pre365_goals_against_per_game;club_destination_pre365_goals_for_per_game;club_destination_pre365_international_game_share;club_destination_pre365_points_per_game;club_destination_pre365_win_pct,nine destination pre365 fields,No two-year/origin context reintroduced.
+no_outcome_predictors,True,,none,All refined predictors are pre-transfer.
+feature_timing_complete,True,58,58,Timing declared for every field.
+tuning_rows,True,288,288,Ten regression and seven classification candidates across compact blocks and origins.
+raw_selection_rows,True,36,36,Three endpoints by four origins by three blocks.
+nested_temporal_order,True,True,True,"Raw tuning, calibration selection, and evaluation strictly ordered."
+raw_candidate_selection_exact,True,True,True,Internal selector minimum reproduced.
+raw_prediction_key_unique,True,0,0,Raw prediction grain unique.
+raw_split_set,True,evaluation;validation,evaluation;validation,Both temporal forecast layers retained.
+raw_endpoint_set,True,opportunity_share_24m;underutilization_10pct;underutilization_25pct,opportunity_share_24m;underutilization_10pct;underutilization_25pct,All endpoints refined.
+calibration_candidates,True,60,60,Three blocks by five strategies by four origins.
+one_joint_policy_per_origin,True,4,4,One joint block/calibrator selected per origin.
+selected_compact_context_all_origins,True,C3_plus_compact_destination_context;C3_plus_compact_destination_context;C3_plus_compact_destination_context;C3_plus_compact_destination_context,C3_plus_compact_destination_context,Compact destination block selected four times.
+calibration_policy_selection_exact,True,True,True,Joint selector minimum reproduced.
+classification_key_unique,True,0,0,Final probability grain unique.
+probability_bounds,True,1e-06..0.999999,0..1,All probabilities valid.
+calibrated_evaluation_rows,True,584;1168,584;1168,Two thresholds for every event.
+calibrated_probability_order,True,0,0,Threshold probabilities logically nested.
+consistency_audit_exact,True,0,0,Stored order audit recomputed.
+origin_brier_recomputed,True,True,True,Every origin Brier exact.
+classification_comparisons_recomputed,True,True,True,All pooled Brier comparisons exact.
+continuous_key_unique,True,0,0,Continuous forecast grain unique.
+continuous_comparisons_recomputed,True,True,True,All pooled MAE comparisons exact.
+continuous_replacement_supported,True,0.0074256077405585;0.0023210958175507;3,positive improvement/CI; >=3 wins,Fixed compact context beats existing continuous policy.
+context_under25_supported,True,0.005264965357222,>0 with 4 wins,Compact destination context adds supported under-25 signal.
+context_under10_not_overclaimed,True,-0.0090960266958966,<=0,Severe-risk context gain remains uncertain.
+decision_recommendations,True,"{""opportunity_share_24m"": ""replace_existing_continuous_policy_with_fixed_compact_context"", ""underutilization_10pct"": ""retain_existing_ordered_ranking_and_use_risk_bands_not_absolute_probabilities"", ""underutilization_25pct"": ""use_compact_calibrated_policy_for_probabilities_retain_existing_as_ranking_reference""}","{""opportunity_share_24m"": ""replace_existing_continuous_policy_with_fixed_compact_context"", ""underutilization_10pct"": ""retain_existing_ordered_ranking_and_use_risk_bands_not_absolute_probabilities"", ""underutilization_25pct"": ""use_compact_calibrated_policy_for_probabilities_retain_existing_as_ranking_reference""}",Asymmetric replacement policy preserved.
+subgroup_negative_counts,True,"{""underutilization_10pct"": 3}","{""underutilization_10pct"": 3}",Under-10 calibration subgroup failures block replacement.
+risk_band_counts,True,"{('existing_ordered_policy', 'underutilization_10pct'): 584, ('existing_ordered_policy', 'underutilization_25pct'): 584, ('selected_compact_calibrated', 'underutilization_10pct'): 584, ('selected_compact_calibrated', 'underutilization_25pct'): 584}",584 each,Every displayed policy/event assigned a band.
+builder_checks_pass,True,10,10,All builder checks pass.
+source_manifest_hashes,True,True,True,All source artifacts unchanged.
+output_manifest_hashes,True,True,True,All modeled artifacts hash-match.
+summary_counts,True,"{""cohort_rows"": 1074, ""evaluation_rows"": 584, ""policy_order_violations"": 0}",1074;584;0,Run summary reconciles.
+protected_outputs_unchanged,True,True,True,Runner reports protected output identity.

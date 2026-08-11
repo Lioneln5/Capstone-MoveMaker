@@ -1,0 +1,12 @@
+check,severity,passed,observed,expected,detail
+upstream_verifications_pass,blocking,True,"{'subgroup': 'pass', 'targets': 'pass', 'features': 'pass'}","{'subgroup': 'pass', 'targets': 'pass', 'features': 'pass'}","Case studies start from independently verified targets, features, and rolling predictions."
+mature_dual_target_cohort_exact,blocking,True,124,124,Every mature performance case has an opportunity and performance comparison.
+portfolio_case_count_exact,blocking,True,12,12,The deterministic portfolio contains twelve cases.
+portfolio_case_ids_unique,blocking,True,case_ids=12;performance_ids=12,12 unique case and performance ids,No transfer case is duplicated.
+portfolio_category_quota_exact,blocking,True,"{'confirmed_warning': 3, 'false_warning': 3, 'confirmed_positive': 2, 'validated_tradeoff': 2, 'false_positive': 2}","{'confirmed_positive': 2, 'confirmed_warning': 3, 'validated_tradeoff': 2, 'false_positive': 2, 'false_warning': 3}","The portfolio balances validated fits, warnings, trade-offs, and failures."
+target_predictions_complete,blocking,True,24,24,Every selected transfer has both frozen predictions and realized outcomes.
+selected_transfers_primary_eligible,blocking,True,12,12,All cases belong to both primary model populations.
+feature_profiles_complete,blocking,True,style=96;context=72;summary=12,style=96;context=72;summary=12,Every case has all declared descriptive compatibility axes.
+feature_timing_is_strictly_prior,blocking,True,0,0,"Player history, preferences, and destination context precede the target season."
+statsbomb_not_required_for_selection,blocking,True,2,supplementary only,Sparse StatsBomb coverage is reported but never determines selection or primary conclusions.
+case_arithmetic_reconciles,blocking,True,all reconcile,all reconcile,Compatibility lifts and paired error improvements recompute exactly.

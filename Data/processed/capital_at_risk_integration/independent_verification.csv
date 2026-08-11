@@ -1,0 +1,38 @@
+check,passed,observed,expected,note
+required_outputs_exist,True,,none,All promised integration artifacts exist.
+upstream_verifications_pass,True,pass;pass;pass;pass;pass,pass;pass;pass;pass;pass,Only independently passing component artifacts are integrated.
+strict_cohort_rows,True,827,827,Frozen dual-eligible cohort reproduced from the audit.
+strict_severe_events,True,110,110,Severe joint outcome independently reproduced.
+strict_meaningful_events,True,197,197,Meaningful joint outcome independently reproduced.
+target_rows_and_keys,True,827;827,827;827,One target row per audited deal.
+target_ids_exact,True,0,0,No audited IDs added or lost.
+targets_recomputed_exact,True,True,True,All five binary outcomes match the frozen thresholds.
+card_rows_and_keys,True,446;446,446;446,One fully out-of-season integration card per deal.
+evaluation_year_counts,True,"{""2020"": 95, ""2021"": 135, ""2022"": 141, ""2023"": 75}","{""2020"": 95, ""2021"": 135, ""2022"": 141, ""2023"": 75}",Four rolling-origin evaluation counts exact.
+evaluation_players,True,397,397,Player-cluster count exact.
+evaluation_event_counts,True,78;128,78;128,Evaluation outcome counts exact.
+card_outcomes_exact,True,True,True,Cards retain audited outcomes exactly.
+component_values_exact,True,True,True,All frozen component values and fees match their verified sources.
+within_origin_ranks_exact,True,True,True,Percentile normalization uses only each evaluation origin.
+rank_bounds,True,0.0070921985815602..1.0,"(0,1]",All component ranks are bounded.
+geometric_scores_exact,True,True,True,Frozen geometric integration formula exact.
+capital_indices_exact,True,True,True,Euro fields are explicitly fee-weighted rank indices.
+no_unsupported_financial_claim_columns,True,,none,"No joint probability, expected loss, or ROI is emitted."
+all_score_metrics_recomputed,True,True,True,"Every pooled, window, and origin AUC/AP is exact."
+comparison_point_estimates_recomputed,True,True,True,All AUC changes and origin wins are exact.
+comparison_bootstrap_complete,True,4;5000;397,4;5000;397,Four player-cluster bootstrap comparisons retained.
+severe_joint_beats_underuse_only,True,0.0008923023160452;4,>0;4,Joint ranking improves over the weaker opportunity-only severe rank.
+severe_joint_increment_vs_value_uncertain,True,-0.0333738032532237;0.1240685800002242,CI crosses zero,Primary incremental claim remains unsupported.
+matrix_cells_recomputed,True,True;18,true;18,Both complete 3x3 matrices reconcile.
+quadrants_recomputed,True,True;8,true;8,Both median-cut matrices reconcile.
+severe_high_high_concentration,True,59;0.288135593220339;0.17488789237668162,59;high-high > overall,High/high quadrant concentrates severe outcomes.
+quintile_totals,True,"10;{'dual_meaningful': 446, 'dual_severe': 446}",10;446 each,Every card assigned to one origin-relative priority quintile.
+severe_quintiles_not_strictly_monotonic,True,"[0.1111111111111111, 0.1348314606741573, 0.146067415730337, 0.2584269662921348, 0.2247191011235955]",not strictly monotonic,Known ranking limitation explicitly verified.
+subgroups_are_diagnostic,True,82,>0,Subgroup AUCs are gated by minimum support.
+decision_status_conservative,True,useful_matrix_but_incremental_gain_uncertain,useful_matrix_but_incremental_gain_uncertain,Decision follows the primary CI result.
+decision_rejects_probability_claim,True,False,False,Combined score is not presented as a probability.
+decision_numbers_reconcile,True,True,True,Decision summary matches evaluated cards.
+builder_checks_pass,True,13,13,All builder integrity checks pass.
+source_manifest_hashes,True,True,True,All verified upstream inputs hash-match.
+output_manifest_hashes,True,True,True,All integration outputs hash-match.
+run_summary_reconciles,True,"{""bootstrap_repetitions"": 5000, ""build_checks"": 13, ""build_checks_passed"": 13, ""decision"": ""useful_matrix_but_incremental_gain_uncertain"", ""evaluation_dual_severe_events"": 78, ""evaluation_rows"": 446, ""evaluation_unique_players"": 397, ""protected_outputs_unchanged"": true, ""strict_cohort_rows"": 827, ""strict_dual_severe_events"": 110}",827;446;78;conservative decision;protected,Run summary and protection status exact.

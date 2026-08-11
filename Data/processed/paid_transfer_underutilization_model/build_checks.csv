@@ -1,0 +1,13 @@
+check,passed,observed,expected,note
+cohort_rows,True,1074,1074,Matches audited paid-transfer cohort.
+cohort_key_unique,True,1074,1074,One row per transfer.
+continuous_target_complete,True,1074,1074,All targets observed.
+continuous_target_bounds,True,0.0..0.9545098039215686,0..1.05,Club-capacity share bounds.
+under10_count,True,355,355,Matches audit.
+under25_count,True,553,553,Matches audit.
+targets_nested,True,True,True,Severe class is nested.
+no_posttransfer_predictors,True,,none,No outcome fields are predictors.
+prediction_key_unique,True,0,0,One forecast per key.
+probability_bounds,True,0.00012959688988854406..0.9998749747373913,0..1,Valid probabilities.
+ordered_probabilities,True,0,0,Logical nesting enforced.
+ordered_rows,True,584,584,One policy row per evaluated transfer.

@@ -1,0 +1,26 @@
+check,severity,passed,observed,expected,detail
+required_outputs_exist,blocking,True,all present,all present,Every declared rolling-origin artifact exists.
+build_checks_all_pass,blocking,True,0,0,All construction-time rolling invariants passed.
+source_manifest_hashes_match,blocking,True,all match,all match,Verification uses the exact source artifacts recorded by the rolling run.
+origin_definitions_exact,blocking,True,"{""origin_2019"": [2018, 2018, 2019, 2020], ""origin_2020"": [2018, 2019, 2020, 2021], ""origin_2021"": [2018, 2020, 2021, 2022], ""origin_2022"": [2018, 2021, 2022, 2023]}","{""origin_2019"": [2018, 2018, 2019, 2020], ""origin_2020"": [2018, 2019, 2020, 2021], ""origin_2021"": [2018, 2020, 2021, 2022], ""origin_2022"": [2018, 2021, 2022, 2023]}",The four expanding windows are exact and chronological.
+no_origin_time_overlap,blocking,True,strict chronology,train_end < validation < evaluation,No origin trains or validates on its evaluation season.
+feature_set_counts_exact,blocking,True,"{""context_and_preferences"": 173, ""full_explicit_fit"": 202, ""player_history_baseline"": 81, ""plus_club_context"": 133, ""plus_player_preferences"": 121}","{""context_and_preferences"": 173, ""full_explicit_fit"": 202, ""player_history_baseline"": 81, ""plus_club_context"": 133, ""plus_player_preferences"": 121}",The rolling run uses the same five fixed feature designs as the prior phase.
+baseline_nested_in_all_feature_sets,blocking,True,nested,nested,Every compatibility comparison retains the common player-history baseline.
+origin_cohort_counts_recomputed,blocking,True,,none,Every target-origin cohort count matches the source eligibility rules.
+evaluation_actuals_match_source,blocking,True,0,0,Every held-out actual value maps back to the target matrix.
+evaluation_keys_match_all_specs,blocking,True,,none,Every specification scores identical rows within target and origin.
+selected_spec_metrics_recomputed,blocking,True,0,0,All 180 reported evaluation metric rows recompute from predictions.
+hyperparameter_selection_recomputed,blocking,True,,none,Every selected hyperparameter set is the declared validation-only minimum.
+candidate_and_spec_counts_exact,blocking,True,tuning=1680;selected=180;predictions=8115,tuning=1680;selected=180;predictions=8115,The full rolling model grid and evaluation predictions are complete.
+opportunity_predictions_bounded,blocking,True,within bounds,"within [0,1]",All rolling opportunity predictions respect their natural support.
+terminal_origin_reproduces_prior_ablation,blocking,True,45,45,The 2022-validation/2023-evaluation origin exactly reproduces the preceding phase.
+rolling_policy_selections_recomputed,blocking,True,,none across 36 selections,"Baseline, full, and overall policies select only from each origin's validation results."
+policy_predictions_map_to_selected_specs,blocking,True,,none,Every policy prediction row comes from its selected target-origin specification.
+locked_designs_match_prior_validation_choices,blocking,True,,none,Locked opportunity and performance designs match the preceding validation-selected choices.
+locked_design_outputs_complete,blocking,True,metrics=16;bootstraps=8,metrics=16;bootstraps=8,Both locked designs are evaluated at all four origins; paused adaptation remains excluded.
+origin_bootstraps_recomputed,blocking,True,0,0,"All 56 family, policy, and locked-design paired origin bootstraps reproduce."
+aggregate_stability_summaries_recomputed,blocking,True,0,0,"All family, rolling-policy, and locked-design pooled summaries reproduce from paired predictions."
+feature_effects_recomputed,blocking,True,0,0,Every origin-specific feature-block MAE effect reconciles to selected metrics.
+selection_frequencies_reconcile,blocking,True,"{('adaptation', 'rolling_selected_baseline'): 4, ('adaptation', 'rolling_selected_full'): 4, ('adaptation', 'rolling_selected_overall'): 4, ('opportunity', 'rolling_selected_baseline'): 4, ('opportunity', 'rolling_selected_full'): 4, ('opportunity', 'rolling_selected_overall'): 4, ('performance', 'rolling_selected_baseline'): 4, ('performance', 'rolling_selected_full'): 4, ('performance', 'rolling_selected_overall'): 4}",4 selections for each of 9 target-policy groups,Selection-frequency reporting reconciles to the four rolling origins.
+mature_origin_sensitivity_recomputed,blocking,True,0,0,All mature-three and terminal-two sensitivity cohorts and pooled MAEs reconcile.
+policy_stability_and_frequency_outputs_complete,blocking,True,policy_stability=9;frequency_rows=25,policy_stability=9;frequency_rows>0,Every target-policy combination has a pooled performance and selection-stability record.

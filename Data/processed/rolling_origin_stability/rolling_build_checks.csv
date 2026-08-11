@@ -1,0 +1,30 @@
+check,severity,passed,observed,expected,detail
+upstream_ablation_verification_passes,blocking,True,pass,pass,Rolling tests begin from the independently verified ablation phase.
+four_declared_expanding_origins,blocking,True,"[[2019, 2020], [2020, 2021], [2021, 2022], [2022, 2023]]","[[2019,2020],[2020,2021],[2021,2022],[2022,2023]]",Every origin validates on one season and evaluates on the immediately following season.
+feature_sets_match_prior_ablation,blocking,True,player_history_baseline;plus_club_context;plus_player_preferences;context_and_preferences;full_explicit_fit,player_history_baseline;plus_club_context;plus_player_preferences;context_and_preferences;full_explicit_fit,The rolling grid holds the previously declared five feature designs fixed.
+no_forbidden_predictors,blocking,True,,none,"Targets, eligibility flags, target diagnostics, and roster scenarios are excluded."
+opportunity_origin_2019_cohorts_nonempty,blocking,True,train=56;validation=49;evaluation=50,all >0,"Every rolling origin has train, validation, and evaluation observations."
+opportunity_origin_2020_cohorts_nonempty,blocking,True,train=105;validation=50;evaluation=47,all >0,"Every rolling origin has train, validation, and evaluation observations."
+opportunity_origin_2021_cohorts_nonempty,blocking,True,train=155;validation=47;evaluation=52,all >0,"Every rolling origin has train, validation, and evaluation observations."
+opportunity_origin_2022_cohorts_nonempty,blocking,True,train=202;validation=52;evaluation=58,all >0,"Every rolling origin has train, validation, and evaluation observations."
+performance_origin_2019_cohorts_nonempty,blocking,True,train=54;validation=45;evaluation=48,all >0,"Every rolling origin has train, validation, and evaluation observations."
+performance_origin_2020_cohorts_nonempty,blocking,True,train=99;validation=48;evaluation=39,all >0,"Every rolling origin has train, validation, and evaluation observations."
+performance_origin_2021_cohorts_nonempty,blocking,True,train=147;validation=39;evaluation=46,all >0,"Every rolling origin has train, validation, and evaluation observations."
+performance_origin_2022_cohorts_nonempty,blocking,True,train=186;validation=46;evaluation=39,all >0,"Every rolling origin has train, validation, and evaluation observations."
+adaptation_origin_2019_cohorts_nonempty,blocking,True,train=50;validation=44;evaluation=42,all >0,"Every rolling origin has train, validation, and evaluation observations."
+adaptation_origin_2020_cohorts_nonempty,blocking,True,train=94;validation=42;evaluation=39,all >0,"Every rolling origin has train, validation, and evaluation observations."
+adaptation_origin_2021_cohorts_nonempty,blocking,True,train=136;validation=39;evaluation=44,all >0,"Every rolling origin has train, validation, and evaluation observations."
+adaptation_origin_2022_cohorts_nonempty,blocking,True,train=175;validation=44;evaluation=37,all >0,"Every rolling origin has train, validation, and evaluation observations."
+tuning_grid_complete,blocking,True,1680,1680,Every origin evaluates all declared hyperparameter candidates using validation data only.
+selected_spec_grid_complete,blocking,True,180,180,"Every target, origin, feature set, and model family has one past-only selected specification."
+all_hyperparameters_selected_from_origin_validation,blocking,True,,none,No evaluation metric participates in hyperparameter selection.
+tuning_has_no_evaluation_metrics,blocking,True,,none,Tuning artifacts contain validation diagnostics only.
+prediction_row_count_complete,blocking,True,8115,8115,Every selected specification scores every eligible evaluation row.
+all_predictions_finite,blocking,True,0,0,Every rolling evaluation prediction is finite.
+opportunity_predictions_bounded,blocking,True,min=0.000000;max=0.833754,"within [0,1]",Opportunity predictions respect their natural support at every origin.
+evaluation_keys_match_all_specs,blocking,True,0,0,Model and feature choices never change a target-origin evaluation cohort.
+origin_2022_exactly_reproduces_prior_ablation,blocking,True,matched_rows=45,45 exact specifications,The terminal rolling origin is an exact extension of the prior one-shot experiment.
+policy_selection_grid_complete,blocking,True,36,36,"Every origin has baseline-only, full-only, and all-grid validation policies."
+locked_designs_exclude_paused_adaptation,blocking,True,opportunity;performance,opportunity;performance,Only opportunity and performance receive current-candidate stability decisions.
+locked_design_metric_grid_complete,blocking,True,16,16,Each locked baseline and candidate design is evaluated at every origin.
+comparison_bootstrap_grid_complete,blocking,True,family=36;policy=12;locked=8,family=36;policy=12;locked=8,All declared paired comparisons have origin-level uncertainty estimates.

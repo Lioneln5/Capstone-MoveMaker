@@ -1,0 +1,9 @@
+check,severity,passed,observed,expected,detail
+broad_target_rows_preserved,blocking,True,905269,905269,One lagged feature row per modeling-scope canonical performance row.
+advanced_rows_preserved,blocking,True,17790,17790,One advanced compatibility row per accepted FBref performance row.
+broad_lag_cutoff,blocking,True,lag1=t-1; lag2=t-2; lag3=t-3,all source seasons < target,Construction uses exact prior-season joins; independent verifier scans the written output.
+advanced_lag_cutoff,blocking,True,max source field emitted,all source seasons < target,Advanced player styles use exact previous seasons only.
+strict_context_cutoff,blocking,True,target season - 1,target season - 1,Strict club context uses prior-season observed teammates and removes the focal player when present.
+roster_context_disclosure,blocking,True,target_season_roster_membership_scenario_only,explicit leakage disclosure,Roster-conditioned context is separated from strict features and labeled scenario-only.
+preference_shrinkage_documented,blocking,True,3.0,3.0,Player-specific context slopes shrink by effective_n/(effective_n+3).
+minimum_teammate_context,blocking,True,5,5,Eligibility requires at least five outfield teammates with usable context.

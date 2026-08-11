@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "targets": [
+    "opportunity",
+    "performance"
+  ],
+  "references": [
+    "same_family_baseline",
+    "rolling_selected_baseline"
+  ],
+  "subgroup_dimensions": [
+    "role",
+    "competition"
+  ],
+  "origin_subsets": [
+    "all_four_origins",
+    "mature_three_origins",
+    "terminal_two_origins"
+  ],
+  "paired_prediction_rows": 758,
+  "origin_result_rows": 128,
+  "aggregate_result_rows": 96,
+  "primary_result_rows": 16,
+  "heterogeneity_rows": 24,
+  "bootstrap_repetitions": 5000,
+  "permutation_repetitions": 5000,
+  "minimum_pooled_n": 15,
+  "minimum_origin_n": 5,
+  "fdr_alpha": 0.1,
+  "blocking_checks": 15,
+  "blocking_failures": 0,
+  "random_seed": 20260810
+}

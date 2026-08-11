@@ -1,0 +1,33 @@
+check,passed,observed,expected,notes
+required_outputs_exist,True,,,All declared outputs exist.
+primary_target_rows,True,1471,1471,Permanent arrivals after three conflicting arrivals are excluded.
+target_key_unique,True,1471,1471,One target row per source arrival.
+permanent_only,True,transfer,transfer,Loans and loan returns are not modeled.
+sporting_target_observed,True,1432,1432,Rows have positive year-two club-game denominators.
+sporting_target_positive,True,743,743,Primary 10% threshold positives.
+sporting_target_recomputed,True,743,743,Binary target exactly follows the frozen threshold.
+year2_nested_windows_nonnegative,True,minutes_min=0.0;games_min=0,>=0,Cumulative 24-month fields never fall below 12-month fields.
+spell_retained_365_count,True,1093,1093,One-year uninterrupted-spell count.
+spell_retained_730_count,True,628,628,Two-year uninterrupted-spell count.
+spell_retention_monotone,True,628,<= 1093,A two-year retained spell must also survive one year.
+administrative_target_recomputed,True,628,628,Two-year spell target exactly matches first outbound timing.
+survival_days_frozen,True,90;180;365;545;730,90;180;365;545;730,Fixed descriptive checkpoints are present.
+survival_monotone,True,0.961931;0.916383;0.743032;0.562882;0.426920,nonincreasing,Uninterrupted-spell survival cannot increase with time.
+broad_cohort_audit,True,3134.0,3134,Frozen broad context cohort is unchanged.
+arrival_type_accounting,True,"{""blank_unclassified"": 84, ""loan"": 712, ""loan_return"": 864, ""transfer"": 1474}","{""blank_unclassified"": 84, ""loan"": 712, ""loan_return"": 864, ""transfer"": 1474}",Canonical movement types reconcile before primary restriction.
+thresholds_frozen,True,0.05;0.1;0.25;0.5,0.05;0.10;0.25;0.50,Threshold sensitivity includes the declared alternatives.
+threshold_positive_monotone,True,806;743;606;395,nonincreasing,Higher sporting thresholds cannot create positives.
+prediction_row_count,True,9558,9558,All endpoint/origin/model predictions are present.
+prediction_key_unique,True,0,0,No duplicate evaluation prediction.
+prediction_probability_bounds,True,0.074193..0.959708,"[0,1]",Every prediction is a valid probability.
+prediction_actual_binary,True,0;1,0;1,Every evaluated target is binary.
+paired_evaluation_rows,True,True,True,Every model for an endpoint/origin uses identical rows.
+comparison_brier_recomputed,True,True,True,Every reported Brier improvement recomputes from row-level predictions.
+weighted_origin_auc_recomputed,True,True,True,Reported AUC respects chronological-origin strata.
+landmark_features_isolated,True,6,6,Post-transfer involvement fields occur only in the landmark model.
+at_transfer_features_leakage_safe,True,False,False,At-transfer feature sets contain no post-transfer evidence.
+mixed_type_preprocessor_order,True,"['n1', 'cat==a', 'cat==b', 'n2']","['n1', 'cat==a', 'cat==b', 'n2']",Transform order matches fit order for interleaved numeric and categorical features.
+source_master_hash,True,e8e9a778cedc2a1dfb6f063a6adbf3c12d52e25d944c0f4741e56db07db466c4,e8e9a778cedc2a1dfb6f063a6adbf3c12d52e25d944c0f4741e56db07db466c4,Comprehensive master matches the run input.
+canonical_transfer_hash,True,dea89519352c4c92a7d8a9b005e1fa910e6f23d7e6777d02d7af1899ad58e934,dea89519352c4c92a7d8a9b005e1fa910e6f23d7e6777d02d7af1899ad58e934,Canonical transfers match the run input.
+protected_outputs_unchanged,True,True,True,Existing verified output trees were not changed by the run.
+output_manifest_hashes,True,True,True,Every runner-produced output matches its manifest hash.

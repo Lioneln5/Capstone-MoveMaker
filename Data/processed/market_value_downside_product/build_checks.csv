@@ -1,0 +1,10 @@
+check,passed,observed,expected,note
+decision_card_rows,True,2686,2686,Every pooled out-of-season transfer has one card.
+decision_card_key_unique,True,2686,2686,One card per event.
+probabilities_nested,True,True,True,Calibrated thresholds are logically ordered.
+risk_bands_complete,True,1;2;3;4;5,1;2;3;4;5,Five risk bands are present.
+exposure_index_formula,True,0.0,0,Exposure index is formulaic and labeled.
+case_portfolio_rows,True,12,12,Three cases in four outcome categories.
+case_category_balance,True,"{'correct_low_risk': 3, 'correct_warning': 3, 'false_alarm': 3, 'missed_downside': 3}",3 each,Case types are balanced.
+contract_input_count,True,11,11,Frozen M1 inputs only.
+guardrail_complete,True,2686,2686,Every card carries the claim guardrail.

@@ -1,0 +1,11 @@
+﻿check,passed,severity,observed,expected
+native_player_ids_unique,True,blocking,170991,170991
+fbref_player_keys_unique,True,blocking,5967,5967
+accepted_player_ids_exist,True,blocking,5735,5735
+native_club_ids_unique,True,blocking,46490,46490
+fbref_club_season_keys_unique,True,blocking,684,684
+accepted_club_ids_exist,True,blocking,684,684
+fbref_competitions_covered,True,blocking,5,5
+fbref_seasons_parse,True,blocking,7,7
+unresolved_players_retained_for_review,True,control,232,232
+unresolved_clubs_retained_for_review,True,control,0,0

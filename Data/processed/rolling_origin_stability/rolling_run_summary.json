@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "origins": 4,
+  "targets": 3,
+  "locked_targets": [
+    "opportunity",
+    "performance"
+  ],
+  "feature_sets": {
+    "player_history_baseline": 81,
+    "plus_club_context": 133,
+    "plus_player_preferences": 121,
+    "context_and_preferences": 173,
+    "full_explicit_fit": 202
+  },
+  "model_families": [
+    "ridge",
+    "elastic_net",
+    "gradient_boosted_trees"
+  ],
+  "tuning_candidates": 1680,
+  "selected_specifications": 180,
+  "evaluation_prediction_rows": 8115,
+  "selection_policy": "expanding training window; minimum origin validation MAE; next season evaluated after selection",
+  "blocking_checks": 29,
+  "blocking_failures": 0,
+  "random_seed": 20260809
+}

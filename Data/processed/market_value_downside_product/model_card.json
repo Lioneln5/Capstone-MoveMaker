@@ -1,0 +1,21 @@
+{
+  "allowed_claim": "Estimated market-value downside screening and ranking.",
+  "forbidden_claims": [
+    "realized sale proceeds",
+    "profit",
+    "ROI",
+    "causal club effect",
+    "universal tactical compatibility"
+  ],
+  "live_deployment_status": "historically validated; live scoring package not yet frozen",
+  "model_name": "MoveMaker calibrated 24-month market-value downside",
+  "primary_calibrated_brier": 0.152309386428655,
+  "primary_endpoint": "downside_25pct",
+  "primary_high_risk_band_observed_rate": 0.8566108007448789,
+  "primary_low_risk_band_observed_rate": 0.07050092764378478,
+  "primary_raw_brier": 0.1584393740304067,
+  "primary_weighted_origin_auc": 0.8512622436431436,
+  "validated_evaluation_rows": 2686,
+  "validated_population": "Clean permanent 2017+ transfers with recent positive pre-value and strict 24-month valuation outcome.",
+  "version": "1.0-historical-validation"
+}

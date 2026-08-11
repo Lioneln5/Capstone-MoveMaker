@@ -1,0 +1,33 @@
+check,passed,observed,expected,note
+required_outputs_exist,True,,,All runner outputs exist.
+target_rows,True,4371,4371,Strict audited cohort is frozen.
+target_key_unique,True,4371,4371,One row per transfer.
+continuous_target_recomputed,True,4.440892098500626e-16,0,Continuous target is exact log value ratio.
+percentage_target_recomputed,True,1.4210854715202004e-14,0,Interpretive percentage target is exact.
+downside_10pct_recomputed,True,1900,1900,Binary threshold is exact.
+downside_25pct_recomputed,True,1550,1550,Binary threshold is exact.
+downside_50pct_recomputed,True,902,902,Binary threshold is exact.
+thresholds_nested,True,True,True,Severe downside is nested.
+audit_membership_exact,True,4371,4371,Model cohort exactly matches feasibility gate.
+feature_sets_complete,True,M0_chronological_constant;M1_market_profile;M2_plus_valuation_trajectory;M3_plus_sporting_history;M4_plus_destination_context;M5_plus_origin_transition_context,M0_chronological_constant;M1_market_profile;M2_plus_valuation_trajectory;M3_plus_sporting_history;M4_plus_destination_context;M5_plus_origin_transition_context,All nested blocks are documented.
+feature_sets_nested,True,True,True,Each block only adds fields.
+feature_manifest_leakage_safe,True,,none,No post-transfer or target predictors.
+feature_timing_safe,True,0,0,Every modeled feature is transfer-time safe.
+prediction_key_unique,True,0,0,No duplicate forecast.
+endpoint_set,True,downside_10pct;downside_25pct;downside_50pct;value_log_ratio_24m,downside_10pct;downside_25pct;downside_50pct;value_log_ratio_24m,All declared targets are modeled.
+model_set,True,M0_chronological_constant;M1_market_profile;M2_plus_valuation_trajectory;M3_plus_sporting_history;M4_plus_destination_context;M5_plus_origin_transition_context,M0_chronological_constant;M1_market_profile;M2_plus_valuation_trajectory;M3_plus_sporting_history;M4_plus_destination_context;M5_plus_origin_transition_context,All feature blocks are evaluated.
+origin_evaluation_years,True,True,True,Rolling origins map to the next season.
+paired_rows,True,True,True,Every model sees identical evaluation transfers.
+probability_bounds,True,0.0001879850474034..0.9999980028880804,0..1,All classifier outputs are probabilities.
+chronological_baselines_constant,True,True,True,Baseline uses only fit-window outcome distribution.
+validation_selection_exact,True,True,True,Family and hyperparameters minimize prior-season loss with deterministic tie-breaks.
+origin_metrics_recomputed,True,True,True,Every origin metric recomputes from predictions.
+comparison_losses_recomputed,True,True,True,All paired improvements are exact.
+cluster_interval_validity,True,True,True,Cluster intervals and probabilities are valid.
+decision_rules_recomputed,True,True,True,Endpoint status follows frozen CI/origin rule.
+risk_band_counts,True,"{'downside_10pct': 2686, 'downside_25pct': 2686, 'downside_50pct': 2686, 'value_log_ratio_24m': 2686}","{'downside_10pct': 2686, 'downside_25pct': 2686, 'downside_50pct': 2686, 'value_log_ratio_24m': 2686}",Risk bands cover every full-model forecast once.
+risk_band_levels,True,1;2;3;4;5,1;2;3;4;5,Five within-origin bands are present.
+runner_checks_pass,True,9,9,All runner invariants passed.
+source_manifest_hashes,True,True,True,Inputs match the model run.
+output_manifest_hashes,True,True,True,Runner outputs match their hashes.
+protected_outputs_unchanged,True,True,True,Existing verified outputs were not altered.

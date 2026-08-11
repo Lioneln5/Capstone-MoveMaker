@@ -1,0 +1,37 @@
+{
+  "bootstrap_repetitions": 5000,
+  "build_checks": 10,
+  "build_checks_passed": 10,
+  "cohort_rows": 1074,
+  "compact_feature_counts": {
+    "C1_paid_deal_market_profile": 11,
+    "C2_plus_prior_opportunity": 19,
+    "C3_plus_compact_destination_context": 28
+  },
+  "evaluation_rows": 584,
+  "policy_order_violations": 0,
+  "protected_outputs_unchanged": true,
+  "recommendations": {
+    "opportunity_share_24m": "replace_existing_continuous_policy_with_fixed_compact_context",
+    "underutilization_10pct": "retain_existing_ordered_ranking_and_use_risk_bands_not_absolute_probabilities",
+    "underutilization_25pct": "use_compact_calibrated_policy_for_probabilities_retain_existing_as_ranking_reference"
+  },
+  "selected_joint_policies": {
+    "origin_2019": {
+      "calibration_strategy": "isotonic_projected",
+      "compact_model": "C3_plus_compact_destination_context"
+    },
+    "origin_2020": {
+      "calibration_strategy": "platt_projected",
+      "compact_model": "C3_plus_compact_destination_context"
+    },
+    "origin_2021": {
+      "calibration_strategy": "empirical_distributional",
+      "compact_model": "C3_plus_compact_destination_context"
+    },
+    "origin_2022": {
+      "calibration_strategy": "platt_projected",
+      "compact_model": "C3_plus_compact_destination_context"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "build_checks": 9,
+  "build_checks_passed": 9,
+  "case_studies": 12,
+  "decision_cards": 2686,
+  "primary_high_risk_observed_rate": 0.8566108007448789,
+  "primary_low_risk_observed_rate": 0.07050092764378478,
+  "protected_outputs_unchanged": true
+}

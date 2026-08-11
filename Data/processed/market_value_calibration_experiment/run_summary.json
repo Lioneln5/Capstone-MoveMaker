@@ -1,0 +1,36 @@
+{
+  "build_checks": 8,
+  "build_checks_passed": 8,
+  "evaluation_rows": 2686,
+  "origins": [
+    "origin_2019",
+    "origin_2020",
+    "origin_2021",
+    "origin_2022"
+  ],
+  "policy_monotonic_violations": 0,
+  "protected_outputs_unchanged": true,
+  "raw_monotonic_violations": 157,
+  "replacement_decisions": {
+    "downside_10pct": true,
+    "downside_25pct": true,
+    "downside_50pct": true
+  },
+  "selected_strategies": {
+    "origin_2019": "raw_projected",
+    "origin_2020": "raw_projected",
+    "origin_2021": "platt_projected",
+    "origin_2022": "empirical_distributional"
+  },
+  "strategies": [
+    "raw_independent",
+    "raw_projected",
+    "platt_independent",
+    "platt_projected",
+    "isotonic_independent",
+    "isotonic_projected",
+    "gaussian_distributional",
+    "empirical_distributional",
+    "policy_selected"
+  ]
+}

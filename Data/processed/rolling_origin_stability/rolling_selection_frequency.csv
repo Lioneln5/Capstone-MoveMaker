@@ -1,0 +1,26 @@
+target_key,selection_type,feature_set,model_family,selected_spec,origin_selections,mean_validation_mae,mean_evaluation_mae,origin_selection_rate
+adaptation,rolling_selected_baseline,player_history_baseline,gradient_boosted_trees,player_history_baseline | gradient_boosted_trees,2,0.19121227808568975,0.17244358483482802,0.5
+adaptation,rolling_selected_baseline,player_history_baseline,ridge,player_history_baseline | ridge,2,0.17756603725746334,0.19766542782524396,0.5
+adaptation,rolling_selected_full,full_explicit_fit,elastic_net,full_explicit_fit | elastic_net,1,0.19139426122703965,0.17611905704171243,0.25
+adaptation,rolling_selected_full,full_explicit_fit,ridge,full_explicit_fit | ridge,3,0.1813979418316791,0.18913352352337257,0.75
+adaptation,rolling_selected_overall,context_and_preferences,elastic_net,context_and_preferences | elastic_net,1,0.19007492673478452,0.18252231560137888,0.25
+adaptation,rolling_selected_overall,full_explicit_fit,ridge,full_explicit_fit | ridge,1,0.15904728477700855,0.19460343994488793,0.25
+adaptation,rolling_selected_overall,plus_club_context,ridge,plus_club_context | ridge,1,0.19121191289416778,0.20097138724616706,0.25
+adaptation,rolling_selected_overall,plus_player_preferences,gradient_boosted_trees,plus_player_preferences | gradient_boosted_trees,1,0.1845521898525642,0.17441558481554725,0.25
+opportunity,rolling_selected_baseline,player_history_baseline,elastic_net,player_history_baseline | elastic_net,1,0.17878054061064508,0.23908272090706736,0.25
+opportunity,rolling_selected_baseline,player_history_baseline,gradient_boosted_trees,player_history_baseline | gradient_boosted_trees,2,0.20553943868330196,0.20302757919695377,0.5
+opportunity,rolling_selected_baseline,player_history_baseline,ridge,player_history_baseline | ridge,1,0.22328591720074853,0.2182402658577556,0.25
+opportunity,rolling_selected_full,full_explicit_fit,elastic_net,full_explicit_fit | elastic_net,2,0.1943598475418668,0.20927913348698096,0.5
+opportunity,rolling_selected_full,full_explicit_fit,gradient_boosted_trees,full_explicit_fit | gradient_boosted_trees,2,0.2215191879372616,0.21805944646976594,0.5
+opportunity,rolling_selected_overall,player_history_baseline,elastic_net,player_history_baseline | elastic_net,1,0.17878054061064508,0.23908272090706736,0.25
+opportunity,rolling_selected_overall,player_history_baseline,ridge,player_history_baseline | ridge,1,0.22328591720074853,0.2182402658577556,0.25
+opportunity,rolling_selected_overall,plus_player_preferences,elastic_net,plus_player_preferences | elastic_net,1,0.19158210048254307,0.22700249455962393,0.25
+opportunity,rolling_selected_overall,plus_player_preferences,gradient_boosted_trees,plus_player_preferences | gradient_boosted_trees,1,0.20226205720091534,0.2274058193090357,0.25
+performance,rolling_selected_baseline,player_history_baseline,gradient_boosted_trees,player_history_baseline | gradient_boosted_trees,3,0.1768231152184915,0.19117510642669985,0.75
+performance,rolling_selected_baseline,player_history_baseline,ridge,player_history_baseline | ridge,1,0.17275115022032544,0.1756704640295165,0.25
+performance,rolling_selected_full,full_explicit_fit,gradient_boosted_trees,full_explicit_fit | gradient_boosted_trees,3,0.17444215265413213,0.1715135591475815,0.75
+performance,rolling_selected_full,full_explicit_fit,ridge,full_explicit_fit | ridge,1,0.162861612654813,0.1849874057842568,0.25
+performance,rolling_selected_overall,context_and_preferences,gradient_boosted_trees,context_and_preferences | gradient_boosted_trees,1,0.16390350670665185,0.17761732508530123,0.25
+performance,rolling_selected_overall,full_explicit_fit,gradient_boosted_trees,full_explicit_fit | gradient_boosted_trees,1,0.18138191561868405,0.16117232909431922,0.25
+performance,rolling_selected_overall,player_history_baseline,gradient_boosted_trees,player_history_baseline | gradient_boosted_trees,1,0.1573594846437756,0.20007825424415515,0.25
+performance,rolling_selected_overall,player_history_baseline,ridge,player_history_baseline | ridge,1,0.17275115022032544,0.1756704640295165,0.25

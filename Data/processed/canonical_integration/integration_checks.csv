@@ -1,0 +1,15 @@
+﻿check,passed,severity,observed,expected
+canonical_player_ids_unique,True,blocking,190592,190592
+canonical_club_ids_unique,True,blocking,46490,46490
+valuation_evidence_row_preserved,True,blocking,1409244,1409244
+valuation_spine_unique,True,blocking,1408834,1408834
+valuation_player_references,True,blocking,78022,78022
+valuation_conflicts_not_resolved,True,blocking,0,0
+latest_valuation_one_per_player,True,blocking,78022,78022
+transfer_evidence_row_preserved,True,blocking,1136579,1136579
+transfer_spine_unique,True,blocking,1106278,1106278
+transfer_player_references,True,blocking,118635,118635
+transfer_from_club_references,True,blocking,42543,42543
+transfer_to_club_references,True,blocking,38547,38547
+transfer_fee_conflicts_not_resolved,True,blocking,0,0
+zero_fees_not_called_free,True,blocking,0,0

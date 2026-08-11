@@ -1,0 +1,12 @@
+check,severity,passed,observed,expected,detail
+required_outputs_exist,blocking,True,all present,all present,Every declared subgroup artifact exists.
+build_checks_all_pass,blocking,True,0,0,All construction-time invariants passed.
+source_manifest_hashes_match,blocking,True,all match,all match,Verification uses exactly the recorded source files.
+paired_predictions_reconstructed,blocking,True,758 rows; maximum numeric difference 9.9e-17,758 exact paired rows,Candidate and both benchmark predictions independently map back to rolling outputs.
+coverage_recomputed,blocking,True,16 rows; maximum numeric difference 0,16 exact cells,Role and competition sample sizes are independently counted.
+origin_bootstraps_recomputed,blocking,True,128 rows; maximum numeric difference 1.11e-16,128 exact results,"All origin-level metrics and 5,000-draw paired bootstraps reproduce."
+aggregate_bootstraps_recomputed,blocking,True,96 rows; maximum numeric difference 1.11e-16,96 exact results,"All pooled metrics, sample flags, and stratified bootstraps reproduce."
+subgroup_fdr_recomputed,blocking,True,11,11,Benjamini-Hochberg q-values reproduce across the declared confirmatory family.
+heterogeneity_permutations_recomputed,blocking,True,24 rows; maximum numeric difference 9.71e-17,24 exact results,"All stratified 5,000-permutation heterogeneity tests reproduce."
+heterogeneity_fdr_recomputed,blocking,True,4,4,Heterogeneity q-values reproduce across the four primary tests.
+primary_extract_reconciles,blocking,True,16 rows; maximum numeric difference 0,16 exact rows,The primary table is an exact mature same-family extract.

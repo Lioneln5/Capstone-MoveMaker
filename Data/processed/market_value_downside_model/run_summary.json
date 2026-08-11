@@ -1,0 +1,36 @@
+{
+  "bootstrap_repetitions": 5000,
+  "build_checks": 9,
+  "build_checks_passed": 9,
+  "cohort_rows": 4371,
+  "date_max": "2024-02-28",
+  "date_min": "2017-07-01",
+  "decisions": {
+    "downside_10pct": "validated_predictive_signal",
+    "downside_25pct": "validated_predictive_signal",
+    "downside_50pct": "validated_predictive_signal",
+    "value_log_ratio_24m": "validated_predictive_signal"
+  },
+  "endpoints": [
+    "value_log_ratio_24m",
+    "downside_10pct",
+    "downside_25pct",
+    "downside_50pct"
+  ],
+  "feature_counts": {
+    "M0_chronological_constant": 0,
+    "M1_market_profile": 11,
+    "M2_plus_valuation_trajectory": 24,
+    "M3_plus_sporting_history": 48,
+    "M4_plus_destination_context": 92,
+    "M5_plus_origin_transition_context": 152
+  },
+  "origins": [
+    "origin_2019",
+    "origin_2020",
+    "origin_2021",
+    "origin_2022"
+  ],
+  "protected_outputs_unchanged": true,
+  "unique_players": 2076
+}

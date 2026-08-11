@@ -1,0 +1,21 @@
+check,severity,passed,observed,expected,detail
+required_outputs,blocking,True,16,16,missing=[]
+core_row_count,blocking,True,2084606,2084606,Independent chunk scan matches build summary.
+core_unique_ids,blocking,True,0,0,Canonical performance IDs are unique.
+canonical_id_structure,blocking,True,0,0,"ID text exactly encodes player, club, competition, and season start."
+season_consistency,blocking,True,0,0,Every season end equals season start plus one.
+player_foreign_keys,blocking,True,0,0,Every player resolves to canonical player dimension.
+club_foreign_keys,blocking,True,0,0,Every club resolves to canonical club dimension.
+competition_foreign_keys,blocking,True,0,0,Every competition resolves to canonical competition crosswalk.
+source_presence,blocking,True,"{'empty': 0, 'count_errors': 0}","{'empty': 0, 'count_errors': 0}",Every spine row has evidence and its system count reconciles.
+source_presence_counts,blocking,True,"{'fbref': 17790, 'current_appearances': 195365, 'current_lineups': 472821, 'datalake': 1878719}","{'fbref': 17790, 'current_appearances': 195365, 'current_lineups': 472821, 'datalake': 1878719}",Source-presence counts reconcile to independently aggregated facts.
+metric_precedence,blocking,True,"{'matches': 0, 'minutes': 0, 'goals': 0, 'assists': 0, 'yellow_cards': 0, 'red_cards': 0}","{'matches': 0, 'minutes': 0, 'goals': 0, 'assists': 0, 'yellow_cards': 0, 'red_cards': 0}",Canonical metrics follow the documented source precedence exactly.
+source_labels,blocking,True,"{'matches': 0, 'minutes': 0, 'goals': 0, 'assists': 0, 'cards': 0}","{'matches': 0, 'minutes': 0, 'goals': 0, 'assists': 0, 'cards': 0}",Selected-source labels match selected values.
+per90_recalculation,blocking,True,0,0,Canonical per-90 values recompute from selected counts and minutes.
+model_eligibility_rule,blocking,True,0,0,The convenience screen is exactly 450 minutes and five matches.
+difference_flags,blocking,True,0,0,Difference count and boolean exactly match per-metric statuses.
+modeling_view_exact,blocking,True,"{'rows': 905269, 'ids': 905269, 'invalid_seasons': 0}","{'rows': 905269, 'ids': 905269, 'invalid_seasons': 0}",Model view is the exact 2017-18 through 2023-24 subset.
+difference_review_exact,blocking,True,"{'rows': 49595, 'ids': 49595}","{'rows': 49595, 'ids': 49595}",Review queue exactly contains all rows with one or more differing comparable metrics.
+fbref_advanced_exact,blocking,True,"{'rows': 17790, 'ids': 17790}","{'rows': 17790, 'ids': 17790}",Advanced companion exactly covers accepted FBref spine rows.
+unresolved_fbref_accounting,blocking,True,"{'unresolved': 453, 'accepted': 17790}","{'unresolved': 453, 'source_total': 18243}",All FBref source rows are accepted or retained for review.
+source_manifest_hashes,blocking,True,0,0,mismatches=[]

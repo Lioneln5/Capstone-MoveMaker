@@ -1,0 +1,11 @@
+check,passed,observed,expected,note
+compact_feature_counts,True,"{""C1_paid_deal_market_profile"": 11, ""C2_plus_prior_opportunity"": 19, ""C3_plus_compact_destination_context"": 28}",11;19;28,Frozen compact blocks.
+raw_prediction_key_unique,True,0,0,Raw forecast grain unique.
+nested_temporal_layers,True,True,True,"Model tuning, calibration, and evaluation strictly ordered."
+one_policy_per_origin,True,4,4,Joint compact/calibration selection unique.
+selection_candidates_complete,True,60,60,Every compact block/strategy tested in each origin.
+classification_key_unique,True,0,0,Final forecast grain unique.
+probability_bounds,True,1e-06..0.999999,0..1,All probabilities bounded.
+calibrated_policy_ordered,True,0,0,Joint policy probabilities nested.
+evaluation_rows,True,584,584,All frozen evaluation events scored.
+no_outcome_predictors,True,,none,Compact predictors are pre-transfer only.

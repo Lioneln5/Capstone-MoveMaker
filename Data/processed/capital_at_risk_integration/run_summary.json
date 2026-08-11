@@ -1,0 +1,12 @@
+{
+  "bootstrap_repetitions": 5000,
+  "build_checks": 13,
+  "build_checks_passed": 13,
+  "decision": "useful_matrix_but_incremental_gain_uncertain",
+  "evaluation_dual_severe_events": 78,
+  "evaluation_rows": 446,
+  "evaluation_unique_players": 397,
+  "protected_outputs_unchanged": true,
+  "strict_cohort_rows": 827,
+  "strict_dual_severe_events": 110
+}

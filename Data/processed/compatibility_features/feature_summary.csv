@@ -1,0 +1,16 @@
+area,metric,value
+broad,source_player_seasons_2014_2023,532634.0
+broad,target_rows_2017_2024,905269.0
+broad,lag1_available_rows,771656.0
+broad,lag2_available_rows,690469.0
+broad,lag3_available_rows,610097.0
+broad,new_club_rows_with_lag1,346533.0
+advanced,target_rows,17790.0
+advanced,outfield_rows,16433.0
+advanced,lag1_available_rows,11006.0
+advanced,strict_context_available_rows,13177.0
+advanced,strict_model_eligible_rows,10540.0
+advanced,roster_model_eligible_rows,10069.0
+advanced,preference_model_eligible_rows,7378.0
+policy,preference_shrinkage_k,3.0
+policy,minimum_context_teammates,5.0

@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "checks": 25,
+  "blocking_checks": 25,
+  "blocking_failures": 0,
+  "verified_origins": 4,
+  "verified_tuning_candidates": 1680,
+  "verified_selected_specs": 180,
+  "verified_prediction_rows": 8115,
+  "verified_sensitivity_rows": 28
+}

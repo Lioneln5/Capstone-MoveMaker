@@ -1,0 +1,9 @@
+check,passed,observed,expected,note
+validation_rows_present,True,11708,>0,Frozen base model reconstructed validation forecasts.
+prediction_key_unique,True,0,0,One forecast per strategy/endpoint/origin/event.
+probability_bounds,True,1e-06..0.999999,0..1,All forecasts are probabilities.
+strategies_complete,True,empirical_distributional;gaussian_distributional;isotonic_independent;isotonic_projected;platt_independent;platt_projected;policy_selected;raw_independent;raw_projected,empirical_distributional;gaussian_distributional;isotonic_independent;isotonic_projected;platt_independent;platt_projected;policy_selected;raw_independent;raw_projected,All predeclared strategies are evaluated.
+one_strategy_per_origin,True,"{'origin_2019': 1, 'origin_2020': 1, 'origin_2021': 1, 'origin_2022': 1}",one each,Policy selection is unique.
+selected_strategies_consistent,True,empirical_distributional;platt_projected;raw_projected,raw_projected;platt_projected;isotonic_projected;gaussian_distributional;empirical_distributional,Policy candidates guarantee nesting.
+policy_zero_monotonic_violations,True,0,0,Selected probabilities obey nested thresholds.
+paired_evaluation_rows,True,True,True,All strategies score identical rows.

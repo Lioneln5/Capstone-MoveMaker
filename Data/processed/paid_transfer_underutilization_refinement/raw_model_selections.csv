@@ -1,0 +1,37 @@
+endpoint,origin_id,internal_model_train_end_year,internal_model_selector_year,calibration_validation_year,evaluation_year,compact_model,selected_family,selected_hyperparameters,validation_encoded_feature_count,evaluation_encoded_feature_count
+opportunity_share_24m,origin_2019,2017,2018,2019,2020,C1_paid_deal_market_profile,ridge,"{""alpha"": 1.0}",42,42
+opportunity_share_24m,origin_2019,2017,2018,2019,2020,C2_plus_prior_opportunity,ridge,"{""alpha"": 1.0}",58,58
+opportunity_share_24m,origin_2019,2017,2018,2019,2020,C3_plus_compact_destination_context,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 2, ""min_samples_leaf"": 20, ""n_estimators"": 100}",74,74
+underutilization_10pct,origin_2019,2017,2018,2019,2020,C1_paid_deal_market_profile,logistic,"{""C"": 0.1}",42,42
+underutilization_10pct,origin_2019,2017,2018,2019,2020,C2_plus_prior_opportunity,logistic,"{""C"": 0.01}",58,58
+underutilization_10pct,origin_2019,2017,2018,2019,2020,C3_plus_compact_destination_context,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 2, ""min_samples_leaf"": 20, ""n_estimators"": 100}",74,74
+underutilization_25pct,origin_2019,2017,2018,2019,2020,C1_paid_deal_market_profile,logistic,"{""C"": 0.01}",42,42
+underutilization_25pct,origin_2019,2017,2018,2019,2020,C2_plus_prior_opportunity,logistic,"{""C"": 0.01}",58,58
+underutilization_25pct,origin_2019,2017,2018,2019,2020,C3_plus_compact_destination_context,logistic,"{""C"": 0.01}",74,74
+opportunity_share_24m,origin_2020,2018,2019,2020,2021,C1_paid_deal_market_profile,ridge,"{""alpha"": 0.1}",42,42
+opportunity_share_24m,origin_2020,2018,2019,2020,2021,C2_plus_prior_opportunity,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 3, ""min_samples_leaf"": 20, ""n_estimators"": 150}",58,58
+opportunity_share_24m,origin_2020,2018,2019,2020,2021,C3_plus_compact_destination_context,ridge,"{""alpha"": 0.1}",74,74
+underutilization_10pct,origin_2020,2018,2019,2020,2021,C1_paid_deal_market_profile,logistic,"{""C"": 0.1}",42,42
+underutilization_10pct,origin_2020,2018,2019,2020,2021,C2_plus_prior_opportunity,gradient_boosted_trees,"{""learning_rate"": 0.05, ""max_depth"": 2, ""min_samples_leaf"": 15, ""n_estimators"": 150}",58,58
+underutilization_10pct,origin_2020,2018,2019,2020,2021,C3_plus_compact_destination_context,logistic,"{""C"": 0.1}",74,74
+underutilization_25pct,origin_2020,2018,2019,2020,2021,C1_paid_deal_market_profile,logistic,"{""C"": 0.1}",42,42
+underutilization_25pct,origin_2020,2018,2019,2020,2021,C2_plus_prior_opportunity,logistic,"{""C"": 0.01}",58,58
+underutilization_25pct,origin_2020,2018,2019,2020,2021,C3_plus_compact_destination_context,gradient_boosted_trees,"{""learning_rate"": 0.05, ""max_depth"": 2, ""min_samples_leaf"": 15, ""n_estimators"": 150}",74,74
+opportunity_share_24m,origin_2021,2019,2020,2021,2022,C1_paid_deal_market_profile,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 3, ""min_samples_leaf"": 20, ""n_estimators"": 150}",42,45
+opportunity_share_24m,origin_2021,2019,2020,2021,2022,C2_plus_prior_opportunity,ridge,"{""alpha"": 0.01}",58,61
+opportunity_share_24m,origin_2021,2019,2020,2021,2022,C3_plus_compact_destination_context,ridge,"{""alpha"": 0.001}",74,77
+underutilization_10pct,origin_2021,2019,2020,2021,2022,C1_paid_deal_market_profile,gradient_boosted_trees,"{""learning_rate"": 0.05, ""max_depth"": 2, ""min_samples_leaf"": 15, ""n_estimators"": 150}",42,45
+underutilization_10pct,origin_2021,2019,2020,2021,2022,C2_plus_prior_opportunity,gradient_boosted_trees,"{""learning_rate"": 0.05, ""max_depth"": 2, ""min_samples_leaf"": 15, ""n_estimators"": 150}",58,61
+underutilization_10pct,origin_2021,2019,2020,2021,2022,C3_plus_compact_destination_context,logistic,"{""C"": 0.1}",74,77
+underutilization_25pct,origin_2021,2019,2020,2021,2022,C1_paid_deal_market_profile,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 2, ""min_samples_leaf"": 20, ""n_estimators"": 100}",42,45
+underutilization_25pct,origin_2021,2019,2020,2021,2022,C2_plus_prior_opportunity,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 2, ""min_samples_leaf"": 20, ""n_estimators"": 100}",58,61
+underutilization_25pct,origin_2021,2019,2020,2021,2022,C3_plus_compact_destination_context,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 2, ""min_samples_leaf"": 20, ""n_estimators"": 100}",74,77
+opportunity_share_24m,origin_2022,2020,2021,2022,2023,C1_paid_deal_market_profile,ridge,"{""alpha"": 0.01}",45,46
+opportunity_share_24m,origin_2022,2020,2021,2022,2023,C2_plus_prior_opportunity,ridge,"{""alpha"": 0.1}",61,62
+opportunity_share_24m,origin_2022,2020,2021,2022,2023,C3_plus_compact_destination_context,ridge,"{""alpha"": 0.1}",77,78
+underutilization_10pct,origin_2022,2020,2021,2022,2023,C1_paid_deal_market_profile,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 2, ""min_samples_leaf"": 20, ""n_estimators"": 100}",45,46
+underutilization_10pct,origin_2022,2020,2021,2022,2023,C2_plus_prior_opportunity,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 2, ""min_samples_leaf"": 20, ""n_estimators"": 100}",61,62
+underutilization_10pct,origin_2022,2020,2021,2022,2023,C3_plus_compact_destination_context,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 2, ""min_samples_leaf"": 20, ""n_estimators"": 100}",77,78
+underutilization_25pct,origin_2022,2020,2021,2022,2023,C1_paid_deal_market_profile,logistic,"{""C"": 0.01}",45,46
+underutilization_25pct,origin_2022,2020,2021,2022,2023,C2_plus_prior_opportunity,logistic,"{""C"": 0.1}",61,62
+underutilization_25pct,origin_2022,2020,2021,2022,2023,C3_plus_compact_destination_context,logistic,"{""C"": 0.1}",77,78

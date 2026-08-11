@@ -1,0 +1,23 @@
+﻿check,status,observed,expected,detail
+required_outputs,pass,13,13,missing=[]
+native_player_union,pass,170991,170991,Canonical player IDs equal the independent union of native profile IDs.
+native_player_unique,pass,170991,170991,One row per native Transfermarkt player ID.
+fbref_player_cardinality,pass,5967,5967,One row per FBref player identity key.
+fbref_player_unique,pass,5967,5967,No duplicated FBref identity keys.
+accepted_player_references,pass,5735,5735,Every accepted link resolves to the native player identity map.
+player_review_flags,pass,232,232,Only accepted rows bypass manual review.
+accepted_player_many_to_one,pass,0,0,No two FBref identity keys were silently collapsed onto one canonical player.
+fuzzy_multi_evidence_threshold,pass,104,104,Accepted lower-similarity names require at least two club-season agreements.
+fuzzy_high_evidence_threshold,pass,50,50,High-similarity links retain the score margin and club-season evidence rule.
+review_candidates_retained,pass,222,222,Every unresolved identity with candidates has ranked review evidence.
+native_club_union,pass,46490,46490,Canonical club IDs equal the independent union across all native club-role fields.
+native_club_unique,pass,46490,46490,One row per native Transfermarkt club ID.
+fbref_club_season_cardinality,pass,684,684,One row per FBref squad-competition-season.
+fbref_club_season_unique,pass,684,684,No duplicated squad-season keys.
+accepted_club_references,pass,684,684,Every accepted club-season link resolves to the native club identity map.
+club_roster_evidence_threshold,pass,185,185,Roster-only club links retain minimum overlap and winning-margin rules.
+stable_fbref_club_unique,pass,145,145,One stable row per normalized FBref squad name.
+fbref_competition_coverage,pass,5,5,All FBref competition codes map through the shared Transfermarkt code.
+fbref_season_coverage,pass,7,7,All FBref season labels parse to start/end years.
+nonblank_season_coverage,pass,509,509,Every nonblank source season representation maps to a canonical key.
+source_manifest_hashes,pass,1,1,Independent SHA-256 recomputation matches every recorded source.

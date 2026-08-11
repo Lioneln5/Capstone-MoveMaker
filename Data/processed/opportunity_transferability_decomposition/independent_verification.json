@@ -1,0 +1,164 @@
+{
+  "blocking_checks": 19,
+  "blocking_checks_failed": 0,
+  "blocking_checks_passed": 19,
+  "checks": [
+    {
+      "check": "declared_runner_outputs_exist",
+      "detail": "All declared runner artifacts exist before independent verification.",
+      "expected": "README.md;opportunity_persistence_summary.csv;opportunity_transferability_feature_manifest.csv;opportunity_transferability_origin_results.csv;opportunity_transferability_predictions.csv;opportunity_transferability_results.csv",
+      "observed": "README.md;independent_verification.csv;independent_verification.json;opportunity_persistence_summary.csv;opportunity_transferability_feature_manifest.csv;opportunity_transferability_origin_results.csv;opportunity_transferability_predictions.csv;opportunity_transferability_results.csv",
+      "passed": true,
+      "severity": "blocking"
+    },
+    {
+      "check": "master_hash_matches_verified_upstream",
+      "detail": "The source master is byte-identical to its verified summary.",
+      "expected": "e8e9a778cedc2a1dfb6f063a6adbf3c12d52e25d944c0f4741e56db07db466c4",
+      "observed": "e8e9a778cedc2a1dfb6f063a6adbf3c12d52e25d944c0f4741e56db07db466c4",
+      "passed": true,
+      "severity": "blocking"
+    },
+    {
+      "check": "cohort_reconstructs_exactly",
+      "detail": "The verifier independently applies the frozen cohort rules.",
+      "expected": "rows=3134;players=1072;dates=2012-12-31..2024-07-05",
+      "observed": "rows=3134;players=1072;dates=2012-12-31..2024-07-05",
+      "passed": true,
+      "severity": "blocking"
+    },
+    {
+      "check": "destination_target_reconstructs_and_matches_coarse_diagnostic",
+      "detail": "The destination target is independently reconstructed and agrees with the protected prior diagnostic.",
+      "expected": "complete bounded exact match",
+      "observed": "target_ok=True;coarse_match=True;min=0.0;max=1.0044444444444445",
+      "passed": true,
+      "severity": "blocking"
+    },
+    {
+      "check": "prior_opportunity_measures_reconstruct_exactly",
+      "detail": "All eight prior-opportunity measures are independently rebuilt from raw pre-transfer inputs.",
+      "expected": "all 3134 bounded plus declared zero/max expectations",
+      "observed": "origin_opportunity_share_pre365:n=3134,min=0.0,max=1.0277777777777777;origin_opportunity_share_pre730:n=3134,min=0.0,max=1.0044444444444445;origin_appearance_rate_pre365:n=3134,min=0.0,max=1.0;origin_appearance_rate_pre730:n=3134,min=0.0,max=1.0;origin_start_rate_pre365:n=3134,min=0.0,max=1.0;origin_start_rate_pre730:n=3134,min=0.0,max=1.0;origin_substitute_selection_rate_pre365:n=3134,min=0.0,max=0.9795918367346939;origin_substitute_selection_rate_pre730:n=3134,min=0.0,max=0.9523809523809523;expectations=True",
+      "passed": true,
+      "severity": "blocking"
+    },
+    {
+      "check": "feature_manifest_matches_frozen_counts",
+      "detail": "The manifest matches the exact six predeclared feature sets.",
+      "expected": "{'M0_mean_only': 0, 'M1_market_profile': 5, 'M2_plus_prior_opportunity': 13, 'M3_plus_player_performance': 29, 'M4_plus_destination_context': 73, 'M5_plus_origin_transition_context': 133}",
+      "observed": "manifest_exact=True;counts={'M0_mean_only': 0, 'M1_market_profile': 5, 'M2_plus_prior_opportunity': 13, 'M3_plus_player_performance': 29, 'M4_plus_destination_context': 73, 'M5_plus_origin_transition_context': 133}",
+      "passed": true,
+      "severity": "blocking"
+    },
+    {
+      "check": "six_feature_sets_are_nested",
+      "detail": "Each stage adds only its declared information block.",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "severity": "blocking"
+    },
+    {
+      "check": "no_forbidden_predictor_fields",
+      "detail": "No post-outcome, target, eligibility, snapshot, identity, name, URL, or raw-date field is modeled.",
+      "expected": "none",
+      "observed": "",
+      "passed": true,
+      "severity": "blocking"
+    },
+    {
+      "check": "feature_lineage_exists_and_is_pretransfer",
+      "detail": "Every modeled/derived input has complete raw lineage available by the transfer date.",
+      "expected": "none",
+      "observed": "missing=[];post=[];invalid=[]",
+      "passed": true,
+      "severity": "blocking"
+    },
+    {
+      "check": "evaluation_rows_identical_across_all_models",
+      "detail": "No missing candidate feature removes an evaluation row.",
+      "expected": "identical;prediction_rows=8910",
+      "observed": "origin_2019=340:True;origin_2020=357:True;origin_2021=391:True;origin_2022=397:True;prediction_rows=8910",
+      "passed": true,
+      "severity": "blocking"
+    },
+    {
+      "check": "mean_only_and_ridge_only",
+      "detail": "No undeclared family or model specification was fit.",
+      "expected": "M0 mean-only; M1-M5 ridge",
+      "observed": "families=['mean_only', 'ridge'];models=['M0_mean_only', 'M1_market_profile', 'M2_plus_prior_opportunity', 'M3_plus_player_performance', 'M4_plus_destination_context', 'M5_plus_origin_transition_context']",
+      "passed": true,
+      "severity": "blocking"
+    },
+    {
+      "check": "chronology_and_fold_fitted_preprocessing",
+      "detail": "Recorded years and implementation markers enforce the declared leakage-safe procedure.",
+      "expected": "train-only preprocessing/tuning; train+validation refit; evaluation untouched",
+      "observed": "chronology=True;markers=True",
+      "passed": true,
+      "severity": "blocking"
+    },
+    {
+      "check": "origin_metrics_reconstruct_from_predictions",
+      "detail": "Evaluation MAE and RMSE are independently reconstructed for every origin/model.",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "severity": "blocking"
+    },
+    {
+      "check": "pooled_window_metrics_reconstruct",
+      "detail": "All nested comparison/window effects reconstruct from paired saved predictions.",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "severity": "blocking"
+    },
+    {
+      "check": "paired_bootstraps_reconstruct",
+      "detail": "Player-clustered and origin-stratified row bootstrap outputs reconstruct deterministically.",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "severity": "blocking"
+    },
+    {
+      "check": "stability_labels_reconstruct",
+      "detail": "All stability labels reconstruct from the declared rules.",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "severity": "blocking"
+    },
+    {
+      "check": "persistence_diagnostics_reconstruct",
+      "detail": "Pooled, sensitivity-window, and four origin persistence diagnostics reconstruct independently.",
+      "expected": "true;rows=7",
+      "observed": "reconstruct=True;rows=7",
+      "passed": true,
+      "severity": "blocking"
+    },
+    {
+      "check": "source_hash_unchanged_before_and_after",
+      "detail": "The comprehensive master was not altered.",
+      "expected": "all verified master hash",
+      "observed": "before={'e8e9a778cedc2a1dfb6f063a6adbf3c12d52e25d944c0f4741e56db07db466c4'};after={'e8e9a778cedc2a1dfb6f063a6adbf3c12d52e25d944c0f4741e56db07db466c4'};current=e8e9a778cedc2a1dfb6f063a6adbf3c12d52e25d944c0f4741e56db07db466c4",
+      "passed": true,
+      "severity": "blocking"
+    },
+    {
+      "check": "all_protected_outputs_unchanged",
+      "detail": "Compatibility, rolling, subgroup, case-study, and coarse-diagnostic trees remain byte-identical.",
+      "expected": "all identical",
+      "observed": "before={'3db43ac7423dc2af1427309e4c5433d13fa52236aeda0fcc44bdb9f8776d9646'};after={'3db43ac7423dc2af1427309e4c5433d13fa52236aeda0fcc44bdb9f8776d9646'};current=3db43ac7423dc2af1427309e4c5433d13fa52236aeda0fcc44bdb9f8776d9646",
+      "passed": true,
+      "severity": "blocking"
+    }
+  ],
+  "cohort_rows": 3134,
+  "cohort_unique_players": 1072,
+  "master_sha256": "e8e9a778cedc2a1dfb6f063a6adbf3c12d52e25d944c0f4741e56db07db466c4",
+  "protected_tree_sha256": "3db43ac7423dc2af1427309e4c5433d13fa52236aeda0fcc44bdb9f8776d9646",
+  "status": "pass"
+}

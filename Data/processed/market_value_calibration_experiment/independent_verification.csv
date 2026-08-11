@@ -1,0 +1,33 @@
+check,passed,observed,expected,note
+required_outputs_exist,True,,,All runner outputs exist.
+validation_key_unique,True,0,0,One reconstructed validation forecast per target/event.
+validation_endpoint_set,True,downside_10pct;downside_25pct;downside_50pct;value_log_ratio_24m,downside_10pct;downside_25pct;downside_50pct;value_log_ratio_24m,Continuous and threshold validation forecasts exist.
+validation_counts,True,"{('downside_10pct', 'origin_2019'): 611, ('downside_10pct', 'origin_2020'): 636, ('downside_10pct', 'origin_2021'): 866, ('downside_10pct', 'origin_2022'): 814, ('downside_25pct', 'origin_2019'): 611, ('downside_25pct', 'origin_2020'): 636, ('downside_25pct', 'origin_2021'): 866, ('downside_25pct', 'origin_2022'): 814, ('downside_50pct', 'origin_2019'): 611, ('downside_50pct', 'origin_2020'): 636, ('downside_50pct', 'origin_2021'): 866, ('downside_50pct', 'origin_2022'): 814, ('value_log_ratio_24m', 'origin_2019'): 611, ('value_log_ratio_24m', 'origin_2020'): 636, ('value_log_ratio_24m', 'origin_2021'): 866, ('value_log_ratio_24m', 'origin_2022'): 814}","{('downside_10pct', 'origin_2019'): 611, ('downside_10pct', 'origin_2020'): 636, ('downside_10pct', 'origin_2021'): 866, ('downside_10pct', 'origin_2022'): 814, ('downside_25pct', 'origin_2019'): 611, ('downside_25pct', 'origin_2020'): 636, ('downside_25pct', 'origin_2021'): 866, ('downside_25pct', 'origin_2022'): 814, ('downside_50pct', 'origin_2019'): 611, ('downside_50pct', 'origin_2020'): 636, ('downside_50pct', 'origin_2021'): 866, ('downside_50pct', 'origin_2022'): 814, ('value_log_ratio_24m', 'origin_2019'): 611, ('value_log_ratio_24m', 'origin_2020'): 636, ('value_log_ratio_24m', 'origin_2021'): 866, ('value_log_ratio_24m', 'origin_2022'): 814}",Reconstructed rows match the frozen model split.
+prediction_key_unique,True,0,0,One probability per strategy/target/origin/event.
+strategy_set,True,empirical_distributional;gaussian_distributional;isotonic_independent;isotonic_projected;platt_independent;platt_projected;policy_selected;raw_independent;raw_projected,empirical_distributional;gaussian_distributional;isotonic_independent;isotonic_projected;platt_independent;platt_projected;policy_selected;raw_independent;raw_projected,All predeclared strategies are present.
+threshold_set,True,downside_10pct;downside_25pct;downside_50pct,downside_10pct;downside_25pct;downside_50pct,Only binary downside targets are calibrated.
+probability_bounds,True,1e-06..0.999999,0..1,Every challenger output is a probability.
+paired_rows,True,True,True,All strategies score identical evaluation rows.
+raw_benchmark_frozen,True,0.0,0,Calibration does not refit or alter the benchmark.
+raw_probability_column,True,True,True,Every challenger retains its paired raw probability.
+one_selected_per_origin,True,"{'origin_2019': 1, 'origin_2020': 1, 'origin_2021': 1, 'origin_2022': 1}",one each,Policy choice is unique.
+selected_policy_eligible,True,empirical_distributional;platt_projected;raw_projected,empirical_distributional;gaussian_distributional;isotonic_projected;platt_projected;raw_projected,Selected methods guarantee ordering.
+selection_rule_exact,True,True,True,Policy minimizes selector Brier with declared tie-breaks.
+calibration_selector_split_nonempty,True,True,True,Each validation season has separate calibration and selection portions.
+policy_matches_selected_strategy,True,True,True,Evaluation policy copies only prior-season-selected strategy.
+consistency_recomputed,True,True,True,Every threshold-order count recomputes.
+raw_violation_count,True,157,157,Frozen independent classifiers contain the audited contradictions.
+policy_zero_violations,True,0,0,Selected policy is logically nested.
+ordered_strategies_zero_violations,True,True,True,Every constrained strategy is nested.
+risk_band_counts,True,"{('policy_selected', 'downside_10pct'): 2686, ('policy_selected', 'downside_25pct'): 2686, ('policy_selected', 'downside_50pct'): 2686, ('raw_independent', 'downside_10pct'): 2686, ('raw_independent', 'downside_25pct'): 2686, ('raw_independent', 'downside_50pct'): 2686}","{('policy_selected', 'downside_10pct'): 2686, ('policy_selected', 'downside_25pct'): 2686, ('policy_selected', 'downside_50pct'): 2686, ('raw_independent', 'downside_10pct'): 2686, ('raw_independent', 'downside_25pct'): 2686, ('raw_independent', 'downside_50pct'): 2686}",Risk bands cover each raw and policy forecast once.
+risk_band_levels,True,1;2;3;4;5,1;2;3;4;5,Five within-origin risk bands are present.
+origin_metrics_recomputed,True,True,True,"Brier, log loss, discrimination and calibration metrics are exact."
+comparison_brier_recomputed,True,True,True,Every paired Brier improvement is exact.
+cluster_intervals_valid,True,True,True,Bootstrap intervals and probabilities are valid.
+replacement_decisions_recomputed,True,True,True,"Replacement gate follows Brier, origins, AUC, ECE, consistency and subgroup rules."
+primary_no_supported_negative_subgroup,True,0,0,No adequate subgroup is reliably harmed.
+subgroup_metric_bounds,True,True,True,Subgroup Brier scores are valid.
+runner_checks_pass,True,8,8,All runner invariants passed.
+source_manifest_hashes,True,True,True,All frozen inputs match.
+output_manifest_hashes,True,True,True,All runner outputs match.
+protected_outputs_unchanged,True,True,True,Frozen upstream outputs were not modified.

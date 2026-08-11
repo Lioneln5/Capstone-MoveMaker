@@ -1,0 +1,19 @@
+{
+  "as_of_date": "2026-08-10",
+  "build_checks": 15,
+  "build_checks_passed": 15,
+  "clean_permanent_rows": 19570,
+  "master_rows": 35139,
+  "modeling_era_clean_permanent_rows": 13024,
+  "modeling_era_start": "2017-07-01",
+  "module_rows": {
+    "dual_capital_at_risk_24m": 827,
+    "fee_benchmarking": 1486,
+    "fee_only_resale_return_4y": 337,
+    "full_accounting_roi": 0,
+    "market_value_downside_24m": 4371,
+    "paid_transfer_underutilization_24m": 1074
+  },
+  "observed_canonical_transfer_max_date": "2026-08-01",
+  "protected_outputs_unchanged": true
+}

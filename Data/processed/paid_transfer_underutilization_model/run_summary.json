@@ -1,0 +1,36 @@
+{
+  "bootstrap_repetitions": 5000,
+  "build_checks": 12,
+  "build_checks_passed": 12,
+  "cohort_rows": 1074,
+  "date_max": "2025-08-05",
+  "date_min": "2017-07-01",
+  "decisions": {
+    "opportunity_share_24m": "validated_predictive_signal",
+    "underutilization_10pct": "validated_predictive_signal",
+    "underutilization_25pct": "validated_predictive_signal"
+  },
+  "evaluation_rows": 584,
+  "feature_counts": {
+    "M0_chronological_constant": 0,
+    "M1_paid_deal_market_profile": 11,
+    "M2_plus_prior_opportunity": 19,
+    "M3_plus_player_performance": 35,
+    "M4_plus_destination_context": 79,
+    "M5_plus_origin_transition_context": 139
+  },
+  "ordered_probability_order_violations": 0,
+  "origins": [
+    "origin_2019",
+    "origin_2020",
+    "origin_2021",
+    "origin_2022"
+  ],
+  "protected_outputs_unchanged": true,
+  "raw_probability_order_violations": 48,
+  "target_counts": {
+    "under10": 355,
+    "under25": 553
+  },
+  "unique_players": 811
+}

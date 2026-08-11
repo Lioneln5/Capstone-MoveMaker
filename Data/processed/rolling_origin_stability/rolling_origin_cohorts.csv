@@ -1,0 +1,13 @@
+origin_id,target_key,target_column,train_start_year,train_end_year,validation_year,evaluation_year,train_rows,validation_rows,evaluation_rows
+origin_2019,opportunity,target_destination_minutes_share,2018,2018,2019,2020,56,49,50
+origin_2020,opportunity,target_destination_minutes_share,2018,2019,2020,2021,105,50,47
+origin_2021,opportunity,target_destination_minutes_share,2018,2020,2021,2022,155,47,52
+origin_2022,opportunity,target_destination_minutes_share,2018,2021,2022,2023,202,52,58
+origin_2019,performance,target_role_performance_index,2018,2018,2019,2020,54,45,48
+origin_2020,performance,target_role_performance_index,2018,2019,2020,2021,99,48,39
+origin_2021,performance,target_role_performance_index,2018,2020,2021,2022,147,39,46
+origin_2022,performance,target_role_performance_index,2018,2021,2022,2023,186,46,39
+origin_2019,adaptation,target_performance_change_rolling3,2018,2018,2019,2020,50,44,42
+origin_2020,adaptation,target_performance_change_rolling3,2018,2019,2020,2021,94,42,39
+origin_2021,adaptation,target_performance_change_rolling3,2018,2020,2021,2022,136,39,44
+origin_2022,adaptation,target_performance_change_rolling3,2018,2021,2022,2023,175,44,37

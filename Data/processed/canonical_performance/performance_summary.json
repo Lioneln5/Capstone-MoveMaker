@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "canonical_performance_rows": 2084606,
+  "modeling_scope_2017_2024_rows": 905269,
+  "accepted_fbref_rows": 17790,
+  "unresolved_fbref_rows": 453,
+  "current_appearance_keys": 195365,
+  "current_lineup_keys": 472821,
+  "supplemental_performance_keys": 1878719,
+  "difference_review_rows": 49595,
+  "blocking_checks": 12,
+  "blocking_failures": 0
+}

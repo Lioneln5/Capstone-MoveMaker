@@ -1,0 +1,15 @@
+check,severity,passed,observed,expected,detail
+canonical_spine_unique,blocking,True,2084606,2084606,One output row per unioned player-club-competition-season key.
+datalake_rows_preserved,blocking,True,1878719,1878719,Every clean supplemental seasonal row enters the canonical spine.
+fbref_rows_reconciled,blocking,True,18243,18243,Every FBref row is accepted or placed in the unresolved review queue.
+fbref_advanced_rows,blocking,True,17790,17790,Advanced feature companion contains every accepted FBref row.
+canonical_player_references,blocking,True,0,0,"All player IDs must resolve within 190,592 canonical players."
+canonical_club_references,blocking,True,0,0,"All club IDs must resolve within 46,490 canonical clubs."
+canonical_competition_references,blocking,True,0,0,"All competition IDs must resolve within 1,684 canonical competitions."
+current_appearance_games_resolve,blocking,True,0,0,Every current appearance must resolve to game season and competition metadata.
+current_lineup_games_resolve,blocking,True,0,0,Every current lineup row must resolve to game season and competition metadata.
+national_team_games_excluded,blocking,True,13036,explicitly flagged rows excluded,National-team game facts are outside the club/team compatibility grain.
+modeling_scope_seasons,blocking,True,905269,905269,Modeling view contains all and only 2017-18 through 2023-24 canonical rows.
+difference_review_reconciles,blocking,True,49595,all rows with one or more differing metrics,Difference review is emitted from the same row-level diagnostic as the master during the same streaming pass.
+appearance_competition_mismatches,warning,True,0,0,Game competition is authoritative when an appearance label differs.
+fbref_unresolved_rows,warning,False,453,0,Unresolved FBref identities are excluded from the canonical spine and retained for review.

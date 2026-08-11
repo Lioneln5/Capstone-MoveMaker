@@ -2,9 +2,13 @@
 Data/source_backups/
 Data/TransferMarkt/
 Data/2017-2024/
+Data/Open-Data-Master/
+football-datasets-main/
 
-# Large cleaned Transfermarkt relational tables
-Data/processed/transfermarkt_clean/tables/
+# Generated data/model artifacts are local by default. Small verified summaries
+# are force-added deliberately after review.
+Data/processed/**
+outputs/
 
 # Python and notebook artifacts
 __pycache__/
@@ -17,7 +21,14 @@ __pycache__/
 venv/
 .vscode/
 .idea/
+.claude/
+claude/
 
 # Operating-system artifacts
 .DS_Store
 Thumbs.db
+
+# Local copied repositories and inspection/runtime artifacts
+git/
+*.inspect.ndjson
+*.download

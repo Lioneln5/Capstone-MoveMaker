@@ -1,0 +1,20 @@
+module_id,step,stage,records,note,previous_records,retention_from_previous,starting_records,retention_from_start
+market_value_downside_24m,0,Clean permanent arrivals in 2017+ era,13024,Primary financial audit universe,,,13024,1.0
+market_value_downside_24m,1,Positive pre-transfer valuation within 365d,7683,At-transfer baseline,13024.0,0.5899109336609336,13024,0.5899109336609336
+market_value_downside_24m,2,24m horizon globally observable,5719,No future target date,7683.0,0.744370688533125,13024,0.43911240786240785
+market_value_downside_24m,3,Positive 24m valuation within +/-90d,4371,Strict target cohort,5719.0,0.7642944570729149,13024,0.33561117936117935
+paid_transfer_underutilization_24m,0,Clean permanent arrivals in 2017+ era,13024,Primary financial audit universe,,,13024,1.0
+paid_transfer_underutilization_24m,1,Reliable positive inbound fee,1587,Zero is not inferred to mean free,13024.0,0.12185196560196561,13024,0.12185196560196561
+paid_transfer_underutilization_24m,2,At least 20 destination club games by 24m,1074,Makes zero player minutes interpretable,1587.0,0.6767485822306238,13024,0.08246314496314497
+fee_benchmarking,0,Clean permanent arrivals in 2017+ era,13024,Primary financial audit universe,,,13024,1.0
+fee_benchmarking,1,Reliable positive reported fee,1587,"Target is disclosed fee, not total deal cost",13024.0,0.12185196560196561,13024,0.12185196560196561
+fee_benchmarking,2,Positive pre-transfer valuation within 365d,1486,Strict benchmark cohort,1587.0,0.9363579080025205,13024,0.1140970515970516
+dual_capital_at_risk_24m,0,Reliable positive reported fee,1587,Capital placed in scope,,,1587,1.0
+dual_capital_at_risk_24m,1,Strict 24m value outcome,1079,Value-risk label,1587.0,0.6798991808443604,1587,0.6798991808443604
+dual_capital_at_risk_24m,2,Also has 24m opportunity outcome,827,Joint commercial/sporting cohort,1079.0,0.7664504170528267,1587,0.5211090107120353
+fee_only_resale_return_4y,0,Reliable positive inbound fee,1587,Acquisitions with disclosed spend,,,1587,1.0
+fee_only_resale_return_4y,1,Full four-year transfer follow-up,1044,Avoids right-censoring,1587.0,0.6578449905482041,1587,0.6578449905482041
+fee_only_resale_return_4y,2,Permanent disposal observed within four years,802,First later permanent outbound from destination,1044.0,0.7681992337164751,1587,0.5053560176433523
+fee_only_resale_return_4y,3,Reliable positive outbound fee,337,Conditional fee-only return sample,802.0,0.42019950124688277,1587,0.2123503465658475
+full_accounting_roi,0,Fee-only resale sample,337,Still omits major costs,,,337,1.0
+full_accounting_roi,1,"Wages, bonuses, agent fees, amortization and book value available",0,Structurally unavailable in current public data,337.0,0.0,337,0.0

@@ -1,0 +1,21 @@
+check,severity,passed,observed,expected,detail
+upstream_model_verification_passes,blocking,True,pass,pass,Ablations start from a fully verified first benchmark.
+feature_set_order_declared,blocking,True,player_history_baseline;plus_club_context;plus_player_preferences;context_and_preferences;full_explicit_fit,player_history_baseline;plus_club_context;plus_player_preferences;context_and_preferences;full_explicit_fit,Feature sets have one declared comparison order.
+baseline_nested_in_all_sets,blocking,True,nested,nested,Every ablation holds the common player-history controls fixed.
+full_set_has_expected_features,blocking,True,202,202,The terminal ablation exactly equals the prior strict compatibility model.
+no_forbidden_features,blocking,True,,none,"Targets, target diagnostics, eligibility fields, and roster scenarios remain excluded."
+opportunity_train_nonempty,blocking,True,202,>0,Every target retains all three chronological partitions.
+opportunity_validation_nonempty,blocking,True,52,>0,Every target retains all three chronological partitions.
+opportunity_test_nonempty,blocking,True,58,>0,Every target retains all three chronological partitions.
+performance_train_nonempty,blocking,True,186,>0,Every target retains all three chronological partitions.
+performance_validation_nonempty,blocking,True,46,>0,Every target retains all three chronological partitions.
+performance_test_nonempty,blocking,True,39,>0,Every target retains all three chronological partitions.
+adaptation_train_nonempty,blocking,True,175,>0,Every target retains all three chronological partitions.
+adaptation_validation_nonempty,blocking,True,44,>0,Every target retains all three chronological partitions.
+adaptation_test_nonempty,blocking,True,37,>0,Every target retains all three chronological partitions.
+selected_specs_cover_all_target_feature_family_combinations,blocking,True,45,45,"Every declared target, feature set, and model family has one validation-selected specification."
+all_predictions_finite,blocking,True,0,0,Every scored row is finite.
+opportunity_predictions_bounded,blocking,True,min=0.159300;max=0.849531,"within [0,1]",All opportunity predictions respect the target support.
+tuning_contains_no_test_fields,blocking,True,target_key;target_column;feature_set;model_family;alpha;l1_ratio;learning_rate;max_depth;min_samples_leaf;max_features;n_estimators;train_rows;validation_rows;raw_feature_count;encoded_feature_count;n;mae;rmse;r2;pearson;spearman;actual_mean;predicted_mean;actual_std;hyperparameters;iterations;nonzero_coefficients,no test columns,Model and hyperparameter selection uses train and validation data only.
+prediction_keys_match_all_specs,blocking,True,0,0,All model and feature variants score identical rows within each target and split.
+selected_pair_keys_match,blocking,True,134,all eligible test rows,Validation-selected baseline and full models are paired on identical held-out rows.

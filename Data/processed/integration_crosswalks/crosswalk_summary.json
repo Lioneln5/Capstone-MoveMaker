@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "player_identity_rows": 170991,
+  "fbref_player_rows": 5967,
+  "fbref_players_accepted": 5735,
+  "fbref_players_manual_review": 232,
+  "club_identity_rows": 46490,
+  "fbref_club_season_rows": 684,
+  "fbref_club_seasons_accepted": 684,
+  "fbref_club_rows": 145,
+  "fbref_clubs_accepted": 145,
+  "competition_rows": 1684,
+  "season_rows": 510,
+  "blocking_failures": 0
+}

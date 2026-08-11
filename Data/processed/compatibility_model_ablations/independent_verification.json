@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "checks": 24,
+  "blocking_checks": 24,
+  "blocking_failures": 0,
+  "verified_prediction_rows": 12585,
+  "verified_selected_specs": 45,
+  "verified_tuning_candidates": 420
+}
