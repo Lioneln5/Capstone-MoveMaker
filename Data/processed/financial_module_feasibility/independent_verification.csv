@@ -1,0 +1,65 @@
+check,passed,observed,expected,notes
+required_outputs_exist,True,,,Every declared runner output exists.
+event_key_unique,True,19570,19570,One row per clean permanent event.
+permanent_only,True,transfer,transfer,Loans and returns are excluded.
+cross_club_only,True,0,0,Administrative same-club events are excluded.
+no_type_conflicts,True,0,0,Canonical type is unambiguous.
+no_event_conflicts,True,0,0,Canonical event is unambiguous.
+reliable_inbound_fee_recomputed,True,2403,2403,Paid-fee eligibility is exact.
+zero_not_called_free,True,0,0,Literal zero remains unclassified.
+value_change_12m_recomputed,True,1.7763568394002505e-15,0,Percentage target recomputes from dated valuations.
+value_12m_90d_rules,True,0,0,Every eligible event satisfies timing/value rules.
+value_12m_180d_rules,True,0,0,Every eligible event satisfies timing/value rules.
+value_change_24m_recomputed,True,1.4210854715202004e-14,0,Percentage target recomputes from dated valuations.
+value_24m_90d_rules,True,0,0,Every eligible event satisfies timing/value rules.
+value_24m_180d_rules,True,0,0,Every eligible event satisfies timing/value rules.
+opportunity_recomputed,True,1.1102230246251565e-16,0,Opportunity share uses destination capacity.
+opportunity_denominator_floor,True,20,>=20,Zero minutes are interpretable.
+module_flags_complete,True,dual_capital_at_risk_24m;fee_benchmarking;fee_only_resale_return_4y;full_accounting_roi;market_value_downside_24m;paid_transfer_underutilization_24m,dual_capital_at_risk_24m;fee_benchmarking;fee_only_resale_return_4y;full_accounting_roi;market_value_downside_24m;paid_transfer_underutilization_24m,Each summary module has a row-level flag.
+module_count_dual_capital_at_risk_24m,True,827,827,Summary count matches event flags.
+module_count_fee_benchmarking,True,1486,1486,Summary count matches event flags.
+module_count_fee_only_resale_return_4y,True,337,337,Summary count matches event flags.
+module_count_full_accounting_roi,True,0,0,Summary count matches event flags.
+module_count_market_value_downside_24m,True,4371,4371,Summary count matches event flags.
+module_count_paid_transfer_underutilization_24m,True,1074,1074,Summary count matches event flags.
+dual_subset_value,True,0,0,Dual cohort is nested.
+dual_subset_opportunity,True,0,0,Dual cohort is nested.
+full_roi_zero,True,0,0,The audit never invents accounting ROI.
+full_roi_decision,True,not_feasible,not_feasible,Structural gap is explicit.
+resale_decision_cautious,True,exploratory_only,exploratory_only,Conditional resale is not presented as universal ROI.
+year_count_dual_capital_at_risk_24m_2020,True,100,100,Temporal coverage is exact.
+year_count_dual_capital_at_risk_24m_2021,True,120,120,Temporal coverage is exact.
+year_count_dual_capital_at_risk_24m_2022,True,155,155,Temporal coverage is exact.
+year_count_dual_capital_at_risk_24m_2023,True,81,81,Temporal coverage is exact.
+year_count_paid_transfer_underutilization_24m_2020,True,110,110,Temporal coverage is exact.
+year_count_paid_transfer_underutilization_24m_2021,True,123,123,Temporal coverage is exact.
+year_count_paid_transfer_underutilization_24m_2022,True,166,166,Temporal coverage is exact.
+year_count_paid_transfer_underutilization_24m_2023,True,173,173,Temporal coverage is exact.
+year_count_fee_benchmarking_2020,True,155,155,Temporal coverage is exact.
+year_count_fee_benchmarking_2021,True,155,155,Temporal coverage is exact.
+year_count_fee_benchmarking_2022,True,204,204,Temporal coverage is exact.
+year_count_fee_benchmarking_2023,True,199,199,Temporal coverage is exact.
+year_count_market_value_downside_24m_2020,True,625,625,Temporal coverage is exact.
+year_count_market_value_downside_24m_2021,True,778,778,Temporal coverage is exact.
+year_count_market_value_downside_24m_2022,True,966,966,Temporal coverage is exact.
+year_count_market_value_downside_24m_2023,True,416,416,Temporal coverage is exact.
+year_count_full_accounting_roi_2020,True,0,0,Temporal coverage is exact.
+year_count_full_accounting_roi_2021,True,0,0,Temporal coverage is exact.
+year_count_full_accounting_roi_2022,True,0,0,Temporal coverage is exact.
+year_count_full_accounting_roi_2023,True,0,0,Temporal coverage is exact.
+year_count_fee_only_resale_return_4y_2020,True,44,44,Temporal coverage is exact.
+year_count_fee_only_resale_return_4y_2021,True,64,64,Temporal coverage is exact.
+year_count_fee_only_resale_return_4y_2022,True,55,55,Temporal coverage is exact.
+year_count_fee_only_resale_return_4y_2023,True,0,0,Temporal coverage is exact.
+strict_sensitivity_matches_module,True,4371,4371,Timing table and module definition reconcile.
+overlap_diagonal,True,True,True,Overlap matrix diagonal equals module size.
+funnel_final_counts,True,True,True,Every funnel terminates at its module cohort.
+year_coverage_totals,True,True,True,Annual counts reconcile to summary.
+evidence_overlap_bounds,True,True,True,Evidence overlaps never exceed module size.
+rich_performance_overlap_recomputed,True,193,193,"Rich performance joins through canonical event ID, not incompatible legacy event keys."
+retention_overlap_recomputed,True,1471,1471,Retention overlap joins through the shared master event ID.
+outcome_balance_bounds,True,True,True,Threshold counts and rates are valid.
+runner_build_checks_pass,True,15,15,All internal invariants passed before output.
+source_manifest_hashes,True,True,True,Every source matches the audited run.
+output_manifest_hashes,True,True,True,Every runner output matches its hash.
+protected_outputs_unchanged,True,True,True,Existing verified model outputs were not modified.

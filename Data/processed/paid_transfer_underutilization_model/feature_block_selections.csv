@@ -1,0 +1,13 @@
+endpoint,origin_id,validation_year,evaluation_year,selected_feature_set,selected_family,selected_hyperparameters,validation_primary_loss
+opportunity_share_24m,origin_2019,2019,2020,M2_plus_prior_opportunity,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 3, ""min_samples_leaf"": 20, ""n_estimators"": 150}",0.19236006478755016
+opportunity_share_24m,origin_2020,2020,2021,M4_plus_destination_context,ridge,"{""alpha"": 0.01}",0.18099600738354893
+opportunity_share_24m,origin_2021,2021,2022,M1_paid_deal_market_profile,ridge,"{""alpha"": 0.01}",0.18941442729253322
+opportunity_share_24m,origin_2022,2022,2023,M2_plus_prior_opportunity,ridge,"{""alpha"": 0.1}",0.16413810428486295
+underutilization_10pct,origin_2019,2019,2020,M5_plus_origin_transition_context,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 2, ""min_samples_leaf"": 20, ""n_estimators"": 100}",0.12155106854966419
+underutilization_10pct,origin_2020,2020,2021,M5_plus_origin_transition_context,gradient_boosted_trees,"{""learning_rate"": 0.05, ""max_depth"": 2, ""min_samples_leaf"": 15, ""n_estimators"": 150}",0.17091330920964434
+underutilization_10pct,origin_2021,2021,2022,M4_plus_destination_context,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 2, ""min_samples_leaf"": 20, ""n_estimators"": 100}",0.18928117010975232
+underutilization_10pct,origin_2022,2022,2023,M5_plus_origin_transition_context,gradient_boosted_trees,"{""learning_rate"": 0.05, ""max_depth"": 2, ""min_samples_leaf"": 15, ""n_estimators"": 150}",0.17366831306465952
+underutilization_25pct,origin_2019,2019,2020,M5_plus_origin_transition_context,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 3, ""min_samples_leaf"": 20, ""n_estimators"": 150}",0.20503755353972294
+underutilization_25pct,origin_2020,2020,2021,M4_plus_destination_context,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 3, ""min_samples_leaf"": 20, ""n_estimators"": 150}",0.20631694163458542
+underutilization_25pct,origin_2021,2021,2022,M4_plus_destination_context,gradient_boosted_trees,"{""learning_rate"": 0.05, ""max_depth"": 2, ""min_samples_leaf"": 15, ""n_estimators"": 150}",0.20784847275300025
+underutilization_25pct,origin_2022,2022,2023,M2_plus_prior_opportunity,logistic,"{""C"": 0.1}",0.2275109072072302

@@ -1,0 +1,12 @@
+check,passed,observed,expected,note
+cohort_rows,True,1486,1486,Matches financial audit.
+cohort_key_unique,True,1486,1486,One row per deal.
+positive_fee_target,True,5000.0,>0,Every target is a reliable positive fee.
+feature_counts,True,"{""M1_market_profile"": 10, ""M2_plus_valuation_trajectory"": 22, ""M3_plus_prior_opportunity"": 30, ""M4_plus_player_performance"": 46, ""M5_plus_compact_club_context"": 72}","{""M1_market_profile"": 10, ""M2_plus_valuation_trajectory"": 22, ""M3_plus_prior_opportunity"": 30, ""M4_plus_player_performance"": 46, ""M5_plus_compact_club_context"": 72}",Frozen nested blocks.
+no_fee_or_outcome_predictors,True,,none,Target fee and downstream fields excluded.
+prediction_key_unique,True,0,0,One prediction per split/origin/model/deal.
+one_policy_model_per_origin,True,4,4,Validation selection unique.
+evaluation_rows,True,738,738,Four evaluation seasons complete.
+positive_predictions,True,31047.38277003486,>0,Log model yields positive fee benchmark.
+intervals_nested,True,True,True,90% range contains 80% range and point benchmark.
+interval_rows,True,80pct;90pct,80pct;90pct,Both empirical ranges audited.

@@ -1,0 +1,23 @@
+{
+  "bootstrap_repetitions": 5000,
+  "build_checks": 11,
+  "build_checks_passed": 11,
+  "cohort_rows": 1486,
+  "decision": "validated_fee_benchmark",
+  "evaluation_rows": 738,
+  "feature_counts": {
+    "M1_market_profile": 10,
+    "M2_plus_valuation_trajectory": 22,
+    "M3_plus_prior_opportunity": 30,
+    "M4_plus_player_performance": 46,
+    "M5_plus_compact_club_context": 72
+  },
+  "protected_outputs_unchanged": true,
+  "selected_models": {
+    "origin_2019": "M5_plus_compact_club_context",
+    "origin_2020": "M1_market_profile",
+    "origin_2021": "M2_plus_valuation_trajectory",
+    "origin_2022": "M2_plus_valuation_trajectory"
+  },
+  "unique_players": 1025
+}

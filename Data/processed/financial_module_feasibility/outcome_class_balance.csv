@@ -1,0 +1,18 @@
+module_id,cohort_rule,threshold,threshold_definition,eligible_rows,positive_rows,positive_rate
+market_value_downside_12m,post_tolerance_90d,0.1,change <= -0.10,5406,2339,0.43266740658527564
+market_value_downside_12m,post_tolerance_90d,0.25,change <= -0.25,5406,1722,0.31853496115427304
+market_value_downside_12m,post_tolerance_90d,0.5,change <= -0.50,5406,718,0.1328153903070662
+market_value_downside_12m,post_tolerance_180d,0.1,change <= -0.10,5839,2561,0.4386025004281555
+market_value_downside_12m,post_tolerance_180d,0.25,change <= -0.25,5839,1894,0.32437061140606266
+market_value_downside_12m,post_tolerance_180d,0.5,change <= -0.50,5839,784,0.13426956670662785
+market_value_downside_24m,post_tolerance_90d,0.1,change <= -0.10,4371,1900,0.43468313886982385
+market_value_downside_24m,post_tolerance_90d,0.25,change <= -0.25,4371,1550,0.3546099290780142
+market_value_downside_24m,post_tolerance_90d,0.5,change <= -0.50,4371,902,0.20636010066346375
+market_value_downside_24m,post_tolerance_180d,0.1,change <= -0.10,4669,2043,0.4375669308203041
+market_value_downside_24m,post_tolerance_180d,0.25,change <= -0.25,4669,1673,0.3583208395802099
+market_value_downside_24m,post_tolerance_180d,0.5,change <= -0.50,4669,982,0.21032340972370958
+paid_transfer_underutilization_24m,paid_permanent_and_20_destination_games,0.1,opportunity_share < 0.10,1074,355,0.33054003724394787
+paid_transfer_underutilization_24m,paid_permanent_and_20_destination_games,0.25,opportunity_share < 0.25,1074,553,0.5148975791433892
+paid_transfer_underutilization_24m,paid_permanent_and_20_destination_games,0.5,opportunity_share < 0.50,1074,833,0.7756052141527002
+dual_capital_at_risk_24m,strict_value_and_paid_opportunity_overlap,,value decline >=25% AND opportunity share <10%,827,110,0.13301088270858524
+fee_only_resale_return_4y,full_followup_and_positive_disclosed_sale,1.0,outbound fee >= inbound fee,337,180,0.5341246290801187

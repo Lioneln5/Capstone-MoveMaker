@@ -1,0 +1,16 @@
+check,passed,observed,expected,notes
+master_key_unique,True,35139,35139,One row per comprehensive-master event.
+canonical_match_complete,True,35139,35139,Every master event has canonical movement evidence.
+clean_permanent_has_no_type_conflicts,True,0,0,No ambiguous movement types enter financial modules.
+reliable_inbound_fee_positive,True,500.0,>0,Paid cohorts use only positive canonical fees.
+reliable_inbound_fee_no_conflict,True,0,0,Conflicting fees are not used.
+value_12m_pretransfer_timing,True,365.0,0..365,Pre-transfer valuation is leakage-safe.
+value_12m_post_tolerance,True,90.0,<=90,Strict outcome timing is enforced.
+value_24m_pretransfer_timing,True,364.0,0..365,Pre-transfer valuation is leakage-safe.
+value_24m_post_tolerance,True,90.0,<=90,Strict outcome timing is enforced.
+opportunity_bounds,True,0.0..1.0277777777777777,0..1.05,Opportunity share uses club match-minute capacity.
+resale_days_within_horizon,True,1460.0,1..1460,Disposal timing follows the declared horizon.
+full_roi_unavailable,True,0,0,No row is labeled as full accounting ROI.
+dual_subset_value,True,0,0,Dual-risk cohort is a strict subset.
+dual_subset_opportunity,True,0,0,Dual-risk cohort is a strict subset.
+source_canonical_key_unique,True,0,0,Canonical source key remains unique.

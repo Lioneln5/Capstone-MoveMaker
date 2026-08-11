@@ -1,0 +1,14 @@
+check,passed,observed,expected,note
+strict_cohort_rows,True,827,827,Matches financial audit overlap.
+strict_cohort_severe_events,True,110,110,Frozen dual definition exact.
+evaluation_overlap_rows,True,446,446,All four component forecasts overlap.
+evaluation_key_unique,True,446,446,One row per evaluated transfer.
+evaluation_years,True,"[np.int64(2020), np.int64(2021), np.int64(2022), np.int64(2023)]","[2020, 2021, 2022, 2023]",Four rolling origins represented.
+evaluation_severe_events,True,78,78,Evaluation outcome count exact.
+rank_score_bounds,True,0.0070921985815602835..1.0,0..1,All rank scores bounded.
+geometric_score_exact,True,True,True,Frozen formula exact.
+reported_fee_reconciles,True,True,True,Fee input agrees across modules.
+comparison_rows,True,4,4,Four predeclared component comparisons.
+matrix_rows,True,18,18,Two complete 3x3 matrices.
+matrix_counts,True,"{'dual_meaningful': 446, 'dual_severe': 446}",446 each,Every deal assigned once per matrix.
+no_joint_probability,True,transfer_event_id;canonical_transfer_event_id;player_id;transfer_date;season_start_year;from_club_name;to_club_name;position_group;destination_competition;canonical_transfer_fee_eur;fee_band;valuation_pre_eur;valuation_post24_nearest_eur;market_value_change_24m_pct;destination_opportunity_share_24m;eligible_dual_capital_at_risk_24m;target_value_downside_25pct;target_underutilization_10pct;target_underutilization_25pct;target_dual_severe;target_dual_meaningful;origin_id;evaluation_year;market_value_downside_probability_25pct;severe_underutilization_risk_score;meaningful_underutilization_probability_25pct;reported_fee_eur;fee_benchmark_eur;fee_benchmark_80_lower_eur;fee_benchmark_80_upper_eur;fee_benchmark_90_lower_eur;fee_benchmark_90_upper_eur;value_downside_rank;severe_underutilization_rank;meaningful_underutilization_rank;severe_joint_priority_score;meaningful_joint_priority_score;severe_joint_min_score;meaningful_joint_min_score;reported_fee_to_benchmark_ratio;fee_benchmark_assessment;value_downside_tier;severe_underutilization_tier;meaningful_underutilization_tier;severe_high_high_flag;meaningful_high_high_flag;value_downside_exposure_index_eur;severe_capital_priority_index_eur;meaningful_capital_priority_index_eur,none,Unvalidated score is not labeled probability.

@@ -1,0 +1,31 @@
+check,passed,observed,expected,note
+required_outputs_exist,True,,,Every declared artifact exists.
+card_rows,True,2686,2686,Complete pooled out-of-season population.
+card_key_unique,True,2686,2686,One card per historical event.
+probability_bounds,True,0.0004860887633104..0.9796847084938513,0..1,Every product probability is valid.
+probabilities_nested,True,True,True,Threshold probabilities are logically ordered.
+calibrated_probabilities_exact,True,True,True,Cards reproduce the independently verified calibrated outputs.
+source_membership_exact,True,2686,2686,No evaluated event is added or omitted.
+outcomes_exact,True,True,True,Historical outcomes match the verified target layer.
+risk_bands_recomputed,True,"{1: 539, 2: 537, 3: 536, 4: 537, 5: 537}","{1: 539, 2: 537, 3: 536, 4: 537, 5: 537}",Bands are within-origin quintiles.
+risk_band_labels,True,True,True,Band names match numbers.
+risk_separation,True,0.070501..0.856611,high > low,Product bands preserve strong observed separation.
+exposure_index_exact,True,True,True,Exposure index uses only positive reported fees and is formulaic.
+card_guardrails,True,True,True,Every card forbids cash-return interpretation.
+case_rows,True,12,12,Balanced twelve-case portfolio.
+case_categories,True,"{'correct_low_risk': 3, 'correct_warning': 3, 'false_alarm': 3, 'missed_downside': 3}",3 each,Successes and failures are balanced.
+case_membership,True,0,0,Cases come only from evaluated cards.
+case_outcome_rules,True,True,True,Case labels match realized outcomes.
+profile_dimensions,True,age_band;destination_competition_id;evaluation_year;fee_evidence;historical_position_group;pre_value_band,age_band;destination_competition_id;evaluation_year;fee_evidence;historical_position_group;pre_value_band,Declared descriptive slices exist.
+profile_totals,True,"{'age_band': 2686, 'destination_competition_id': 2686, 'evaluation_year': 2686, 'fee_evidence': 2686, 'historical_position_group': 2686, 'pre_value_band': 2686}",2686,Each dimension partitions the full card population.
+profile_guardrails,True,True,True,Profiles are not mislabeled feature importance.
+contract_inputs_frozen,True,age_at_transfer;canonical_transfer_fee_status;destination_competition_id;fee_reported_positive;historical_position_group;log_fee_to_pre_value;log_inbound_fee_eur;log_pre_value_eur;transfer_month_cos;transfer_month_sin;valuation_pre_staleness_days,age_at_transfer;canonical_transfer_fee_status;destination_competition_id;fee_reported_positive;historical_position_group;log_fee_to_pre_value;log_inbound_fee_eur;log_pre_value_eur;transfer_month_cos;transfer_month_sin;valuation_pre_staleness_days,Contract exposes exactly the validated M1 fields.
+contract_outputs,True,5,5,"Probabilities, band, and exposure index are documented."
+contract_forbids_roi,True,True,True,Every product output blocks ROI claims.
+model_card_population,True,2686,2686,Model card population is exact.
+model_card_not_live,True,historically validated; live scoring package not yet frozen,historically validated; live scoring package not yet frozen,Historical validation is not mislabeled deployment.
+model_card_band_rates,True,0.07050092764378478;0.8566108007448789,0.07050092764378478;0.8566108007448789,Headline separation recomputes.
+runner_checks_pass,True,9,9,All builder invariants passed.
+source_manifest_hashes,True,True,True,Every frozen input matches.
+output_manifest_hashes,True,True,True,Every builder output matches.
+protected_outputs_unchanged,True,True,True,Verified upstream outputs were not modified.

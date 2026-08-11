@@ -1,0 +1,44 @@
+{
+  "as_of_date": "2026-08-10",
+  "audit_rows": 20,
+  "canonical_transfer_sha256": "dea89519352c4c92a7d8a9b005e1fa910e6f23d7e6777d02d7af1899ad58e934",
+  "headline": {
+    "landmark_first_year_increment": {
+      "brier_improvement": 0.030728843669978745,
+      "cluster_ci_lower_95": 0.017148003519595133,
+      "cluster_ci_upper_95": 0.044994252738622,
+      "pooled_n": 474,
+      "relative_brier_improvement": 0.12951326721341105,
+      "stability_label": "stable_positive",
+      "weighted_origin_candidate_roc_auc": 0.7126776141896715
+    },
+    "spell_at_transfer_all_features_vs_prevalence": {
+      "brier_improvement": 0.00898042596743942,
+      "cluster_ci_lower_95": 0.0033427229069709534,
+      "cluster_ci_upper_95": 0.014710578691537251,
+      "pooled_n": 690,
+      "relative_brier_improvement": 0.03678257591746454,
+      "stability_label": "stable_positive",
+      "weighted_origin_candidate_roc_auc": 0.5770439530526456
+    },
+    "sporting_at_transfer_all_features_vs_prevalence": {
+      "brier_improvement": 0.019281087164306543,
+      "cluster_ci_lower_95": 0.009728762711499871,
+      "cluster_ci_upper_95": 0.028615746016000695,
+      "pooled_n": 666,
+      "relative_brier_improvement": 0.07244614141055915,
+      "stability_label": "stable_positive",
+      "weighted_origin_candidate_roc_auc": 0.5862675876332254
+    }
+  },
+  "landmark_rows": 1074,
+  "master_sha256": "e8e9a778cedc2a1dfb6f063a6adbf3c12d52e25d944c0f4741e56db07db466c4",
+  "prediction_rows": 9558,
+  "primary_permanent_arrivals": 1471,
+  "protected_outputs_unchanged": true,
+  "spell_retained_365d_rate": 0.743031951053705,
+  "spell_retained_730d_rate": 0.42692046227056424,
+  "sporting_target_observed_rows": 1432,
+  "sporting_target_positive_rate": 0.5188547486033519,
+  "sporting_threshold": 0.1
+}

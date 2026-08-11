@@ -1,0 +1,21 @@
+origin_id,internal_train_end_year,internal_selector_year,validation_year,evaluation_year,model_variant,selected_family,selected_hyperparameters,validation_encoded_feature_count,evaluation_encoded_feature_count
+origin_2019,2017,2018,2019,2020,M1_market_profile,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 2, ""min_samples_leaf"": 20, ""n_estimators"": 100}",66,67
+origin_2019,2017,2018,2019,2020,M2_plus_valuation_trajectory,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 2, ""min_samples_leaf"": 20, ""n_estimators"": 100}",78,79
+origin_2019,2017,2018,2019,2020,M3_plus_prior_opportunity,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 2, ""min_samples_leaf"": 20, ""n_estimators"": 100}",94,95
+origin_2019,2017,2018,2019,2020,M4_plus_player_performance,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 2, ""min_samples_leaf"": 20, ""n_estimators"": 100}",126,127
+origin_2019,2017,2018,2019,2020,M5_plus_compact_club_context,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 3, ""min_samples_leaf"": 20, ""n_estimators"": 150}",173,174
+origin_2020,2018,2019,2020,2021,M1_market_profile,ridge,"{""alpha"": 0.1}",67,67
+origin_2020,2018,2019,2020,2021,M2_plus_valuation_trajectory,ridge,"{""alpha"": 0.1}",79,79
+origin_2020,2018,2019,2020,2021,M3_plus_prior_opportunity,ridge,"{""alpha"": 0.1}",95,95
+origin_2020,2018,2019,2020,2021,M4_plus_player_performance,gradient_boosted_trees,"{""learning_rate"": 0.05, ""max_depth"": 2, ""min_samples_leaf"": 15, ""n_estimators"": 150}",127,127
+origin_2020,2018,2019,2020,2021,M5_plus_compact_club_context,ridge,"{""alpha"": 0.1}",174,174
+origin_2021,2019,2020,2021,2022,M1_market_profile,ridge,"{""alpha"": 0.0001}",67,72
+origin_2021,2019,2020,2021,2022,M2_plus_valuation_trajectory,ridge,"{""alpha"": 0.01}",79,84
+origin_2021,2019,2020,2021,2022,M3_plus_prior_opportunity,ridge,"{""alpha"": 0.01}",95,100
+origin_2021,2019,2020,2021,2022,M4_plus_player_performance,ridge,"{""alpha"": 0.01}",127,132
+origin_2021,2019,2020,2021,2022,M5_plus_compact_club_context,gradient_boosted_trees,"{""learning_rate"": 0.03, ""max_depth"": 3, ""min_samples_leaf"": 20, ""n_estimators"": 150}",174,179
+origin_2022,2020,2021,2022,2023,M1_market_profile,ridge,"{""alpha"": 0.0001}",72,75
+origin_2022,2020,2021,2022,2023,M2_plus_valuation_trajectory,ridge,"{""alpha"": 0.0001}",84,87
+origin_2022,2020,2021,2022,2023,M3_plus_prior_opportunity,ridge,"{""alpha"": 0.0001}",100,103
+origin_2022,2020,2021,2022,2023,M4_plus_player_performance,ridge,"{""alpha"": 0.001}",132,135
+origin_2022,2020,2021,2022,2023,M5_plus_compact_club_context,ridge,"{""alpha"": 0.01}",179,182

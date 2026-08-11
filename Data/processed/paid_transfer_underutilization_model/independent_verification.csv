@@ -1,0 +1,39 @@
+check,passed,observed,expected,note
+required_outputs_exist,True,,none,All promised artifacts exist.
+audit_cohort_count,True,1074,1074,Audit independently yields frozen cohort.
+target_cohort_count,True,1074,1074,Target artifact retains every eligible row.
+target_key_unique,True,1074,1074,One target row per event.
+cohort_ids_exact,True,0,0,No eligible IDs lost or added.
+continuous_target_exact,True,True,True,Target equals audited opportunity share.
+under10_target_exact,True,355,355,Strict under-10 threshold recomputed.
+under25_target_exact,True,553,553,Strict under-25 threshold recomputed.
+target_nesting,True,True,True,Severe target nested in meaningful target.
+feature_counts,True,"{""M0_chronological_constant"": 0, ""M1_paid_deal_market_profile"": 11, ""M2_plus_prior_opportunity"": 19, ""M3_plus_player_performance"": 35, ""M4_plus_destination_context"": 79, ""M5_plus_origin_transition_context"": 139}","{""M0_chronological_constant"": 0, ""M1_paid_deal_market_profile"": 11, ""M2_plus_prior_opportunity"": 19, ""M3_plus_player_performance"": 35, ""M4_plus_destination_context"": 79, ""M5_plus_origin_transition_context"": 139}",Frozen block sizes exact.
+feature_timing_no_outcomes,True,,none,No post-transfer or target fields in manifest.
+feature_timing_declared,True,284,284,Every feature has timing classification.
+prediction_key_unique,True,0,0,Prediction grain unique.
+endpoint_set,True,opportunity_share_24m;underutilization_10pct;underutilization_25pct,opportunity_share_24m;underutilization_10pct;underutilization_25pct,Exactly three endpoints.
+evaluation_years,True,"[np.int64(2020), np.int64(2021), np.int64(2022), np.int64(2023)]","[2020, 2021, 2022, 2023]",Four frozen seasons.
+evaluation_counts,True,"{""2020"": 105, ""2021"": 136, ""2022"": 174, ""2023"": 169}","{""2020"": 105, ""2021"": 136, ""2022"": 174, ""2023"": 169}",Rolling evaluation row counts exact.
+policy_rows,True,1752,1752,One selected forecast per endpoint and event.
+ordered_prediction_rows,True,1168,1168,Ordered rows exist for both binary endpoints.
+probability_bounds,True,0.0001295968898885..0.9998749747373912,0..1,All classification predictions bounded.
+ordered_table_rows,True,584,584,One paired threshold row per evaluation event.
+ordered_table_nesting,True,0,0,Ordered probabilities logically nested.
+raw_violation_count,True,48,48,Pre-projection violations preserved for audit.
+ordering_projection_exact,True,True,True,Violations use Euclidean midpoint projection.
+feature_block_selection_exact,True,1,1,Lowest validation loss selects block.
+selection_rows,True,12,12,Three endpoints by four origins.
+tuning_rows_present,True,480,480,Ten regression and seven classification candidates per nonconstant block/origin.
+origin_primary_metrics_recomputed,True,True,True,MAE/Brier independently recomputed.
+pooled_comparisons_recomputed,True,True,True,Primary pooled losses exact.
+all_primary_signals_supported,True,"min_ci=0.0106903488821455;wins=[4, 4, 4]",positive CI; 4 wins,All primary endpoints repeat out of season.
+decision_status_consistent,True,validated_predictive_signal;validated_predictive_signal;validated_predictive_signal,all validated_predictive_signal,Decision labels follow primary evidence.
+risk_band_row_totals,True,"{""opportunity_share_24m"": 584, ""underutilization_10pct"": 584, ""underutilization_25pct"": 584}",584 each,Every recommended forecast assigned once.
+binary_risk_band_separation,True,True,True,Highest-risk quintiles have more under-use.
+subgroup_dimensions,True,age_band;destination_competition_id;evaluation_year;fee_band;historical_position_group,five frozen dimensions,Descriptive audit coverage complete.
+build_checks_pass,True,12,12,Builder checks all pass.
+source_manifest_hashes,True,True,True,Input files unchanged and hash-matched.
+output_manifest_hashes,True,True,True,Every listed artifact hash-matched.
+summary_counts,True,"{""cohort_rows"": 1074, ""evaluation_rows"": 584, ""target_counts"": {""under10"": 355, ""under25"": 553}}",1074;584;355;553,Run summary reconciles.
+protected_outputs_unchanged,True,True,True,Runner reports protected-tree identity.

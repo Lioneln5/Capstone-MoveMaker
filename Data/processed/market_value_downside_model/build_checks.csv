@@ -1,0 +1,10 @@
+check,passed,observed,expected,note
+cohort_rows,True,4371,4371,Matches strict financial audit cohort.
+cohort_key_unique,True,4371,4371,One row per transfer.
+continuous_target_complete,True,4371,4371,Positive values imply finite log ratios.
+thresholds_nested,True,True,True,Severe downside classes are nested.
+feature_sets_nested,True,True,True,Each block only adds predictors.
+no_posttransfer_predictors,True,,none,No outcome or eligibility fields are predictors.
+prediction_key_unique,True,0,0,One prediction per endpoint/origin/model/event.
+probability_bounds,True,0.00018798504740349353..0.9999980028880803,0..1,All downside forecasts are probabilities.
+paired_evaluation_rows,True,True,True,All models share evaluation rows.

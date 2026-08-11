@@ -1,0 +1,42 @@
+check,passed,observed,expected,note
+required_outputs_exist,True,,none,All promised artifacts exist.
+audit_cohort_count,True,1486,1486,Frozen audit cohort independently reproduced.
+target_cohort_count,True,1486,1486,Every audited deal retained.
+target_key_unique,True,1486,1486,One target row per deal.
+cohort_ids_exact,True,0,0,No target IDs added or lost.
+fee_target_exact,True,True,True,Reported fee and log target exactly recomputed.
+positive_fee_and_value,True,5000.0;25000.0,>0;>0,Cohort semantics preserved.
+feature_counts,True,"{""M1_market_profile"": 10, ""M2_plus_valuation_trajectory"": 22, ""M3_plus_prior_opportunity"": 30, ""M4_plus_player_performance"": 46, ""M5_plus_compact_club_context"": 72}","{""M1_market_profile"": 10, ""M2_plus_valuation_trajectory"": 22, ""M3_plus_prior_opportunity"": 30, ""M4_plus_player_performance"": 46, ""M5_plus_compact_club_context"": 72}",Frozen feature counts exact.
+feature_sets_nested,True,True,True,Every block only adds predictors.
+no_fee_or_outcome_predictors,True,,none,Target and downstream fields excluded.
+feature_timing_complete,True,180,180,Every feature timing classified.
+tuning_rows,True,200,200,Ten candidates per model/origin.
+raw_selection_rows,True,20,20,Five learned blocks by four origins.
+nested_temporal_order,True,True,True,"Model selection, outer validation, evaluation ordered."
+raw_model_selection_exact,True,True,True,Internal minimum family/hyperparameters reproduced.
+policy_selection_rows,True,24,24,Six block/anchor candidates by four origins.
+one_policy_per_origin,True,4,4,Outer validation selection unique.
+policy_selection_exact,True,"[{'candidate_model_stored': 'M5_plus_compact_club_context', 'candidate_model_minimum': 'M5_plus_compact_club_context'}, {'candidate_model_stored': 'M1_market_profile', 'candidate_model_minimum': 'M1_market_profile'}, {'candidate_model_stored': 'M2_plus_valuation_trajectory', 'candidate_model_minimum': 'M2_plus_valuation_trajectory'}, {'candidate_model_stored': 'M2_plus_valuation_trajectory', 'candidate_model_minimum': 'M2_plus_valuation_trajectory'}]",equal,Validation MAE minimum reproduced.
+prediction_key_unique,True,0,0,Prediction grain unique.
+prediction_splits,True,evaluation;validation,evaluation;validation,Both forecast layers retained.
+evaluation_counts,True,"{""2020"": 152, ""2021"": 176, ""2022"": 205, ""2023"": 205}","{""2020"": 152, ""2021"": 176, ""2022"": 205, ""2023"": 205}",Four origin counts exact.
+evaluation_rows,True,738,738,Complete benchmark evaluation.
+positive_point_estimates,True,31047.38277003486,>0,Log predictions back-transform positively.
+euro_back_transforms,True,True,True,Log/euro fields reconcile.
+origin_mae_recomputed,True,True,True,Every origin/model MAE-log exact.
+pooled_comparisons_recomputed,True,True,True,Every pooled comparison exact.
+compact_model_beats_value_anchor,True,0.0639333989414047;0.026540863516734;3,positive CI; >=3 wins,Commercial hurdle passed.
+richer_policy_not_overclaimed,True,-0.0044258991817085,<=0,Richer increment unsupported.
+interval_metrics_recomputed,True,True,True,Coverage and multiplicative widths exact.
+intervals_nested,True,True,True,90% contains 80% contains point estimate.
+interval_coverage_valid_but_wide,True,0.7926829268292683;0.902439024390244;8.491473931734607;19.67578420198193,coverage adequate; widths broad,Uncertainty limitation preserved.
+card_rows,True,738;738,738;738,One historical card per evaluation deal.
+card_premium_ratio_exact,True,True,True,Historical premium diagnostic exact.
+no_supported_negative_subgroups,True,0,0,Compact benchmark not reliably worse in any adequate group.
+decision_status,True,validated_fee_benchmark;M1_market_profile,validated_fee_benchmark;M1_market_profile,Decision matches supported compact scope.
+decision_range_guardrail,True,True;False,true;false,Coverage and precision separated.
+builder_checks_pass,True,11,11,All builder checks pass.
+source_manifest_hashes,True,True,True,Inputs unchanged and hash-matched.
+output_manifest_hashes,True,True,True,All modeled artifacts hash-match.
+summary_counts,True,"{""cohort_rows"": 1486, ""decision"": ""validated_fee_benchmark"", ""evaluation_rows"": 738}",1486;738;validated,Run summary reconciles.
+protected_outputs_unchanged,True,True,True,Runner reports protected output identity.
