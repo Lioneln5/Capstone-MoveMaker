@@ -17,7 +17,8 @@ if str(MODELS_DIR) not in sys.path:
     sys.path.insert(0, str(MODELS_DIR))
 
 import run_retention_diagnostic as retention
-from train_compatibility_models import fit_preprocessor, sha256_file
+from mixed_type_preprocessor import fit_preprocessor
+from train_compatibility_models import sha256_file
 
 
 OUTPUT_DIR = retention.OUTPUT_DIR

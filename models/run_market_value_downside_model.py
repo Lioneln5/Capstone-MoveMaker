@@ -34,9 +34,9 @@ for dependency_dir in [ROOT / "models", ROOT / "scripts"]:
 
 import run_coarse_club_context_diagnostic as coarse
 import run_opportunity_transferability_decomposition as opportunity
+from mixed_type_preprocessor import fit_preprocessor
 from train_compatibility_models import (
     ALPHA_GRID,
-    fit_preprocessor,
     fit_ridge,
     metrics as regression_metrics,
     predict_ridge,

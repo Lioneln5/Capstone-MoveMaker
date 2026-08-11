@@ -1,0 +1,10 @@
+{
+  "checks": 76,
+  "passed": 76,
+  "failed": 0,
+  "all_passed": true,
+  "raw_rows_reconciled": 7208921,
+  "observed_club_ids": 8784,
+  "observed_player_ids": 123095,
+  "event_minute_sentinel_rows": 17575
+}

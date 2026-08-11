@@ -1,0 +1,289 @@
+﻿table,column_order,column,definition
+canonical_player_dimension,1,canonical_player_id,Canonical integration identifier used for downstream joins.
+canonical_player_dimension,2,canonical_player_key,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,3,identity_record_type,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,4,present_in_identity_crosswalk,Source-presence flag for coverage auditing.
+canonical_player_dimension,5,canonical_name,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,6,canonical_name_normalized,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,7,name_aliases,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,8,canonical_date_of_birth,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,9,canonical_birth_year,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,10,canonical_country_of_birth,"Row, source, or distinct-value count used for reconciliation."
+canonical_player_dimension,11,canonical_citizenship,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,12,canonical_position,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,13,canonical_sub_position,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,14,canonical_foot,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,15,canonical_height_cm,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,16,current_date_of_birth,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,17,datalake_date_of_birth,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,18,date_of_birth_conflict,Conflict diagnostic; unresolved conflicts are retained for review.
+canonical_player_dimension,19,current_country_of_birth,"Row, source, or distinct-value count used for reconciliation."
+canonical_player_dimension,20,datalake_country_of_birth,"Row, source, or distinct-value count used for reconciliation."
+canonical_player_dimension,21,country_of_birth_conflict,Conflict diagnostic; unresolved conflicts are retained for review.
+canonical_player_dimension,22,current_country_of_citizenship,"Row, source, or distinct-value count used for reconciliation."
+canonical_player_dimension,23,datalake_citizenship,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,24,citizenship_conflict,Conflict diagnostic; unresolved conflicts are retained for review.
+canonical_player_dimension,25,current_foot,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,26,datalake_foot,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,27,foot_conflict,Conflict diagnostic; unresolved conflicts are retained for review.
+canonical_player_dimension,28,current_height_cm,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,29,datalake_height_cm,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,30,height_conflict,Conflict diagnostic; unresolved conflicts are retained for review.
+canonical_player_dimension,31,stable_attribute_conflict,Conflict diagnostic; unresolved conflicts are retained for review.
+canonical_player_dimension,32,stable_attribute_resolution_status,Documented integration or resolution state.
+canonical_player_dimension,33,present_in_current_player_profile,Source-presence flag for coverage auditing.
+canonical_player_dimension,34,present_in_datalake_player_profile,Source-presence flag for coverage auditing.
+canonical_player_dimension,35,present_in_current_valuations,Source-presence flag for coverage auditing.
+canonical_player_dimension,36,present_in_datalake_valuations,Source-presence flag for coverage auditing.
+canonical_player_dimension,37,present_in_current_transfers,Source-presence flag for coverage auditing.
+canonical_player_dimension,38,present_in_datalake_transfers,Source-presence flag for coverage auditing.
+canonical_player_dimension,39,fbref_player_identity_key,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,40,fbref_player_name,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,41,fbref_match_method,Canonical integration field; see the table grain and README policy.
+canonical_player_dimension,42,snapshot_fields_excluded_from_stable_dimension,Canonical integration field; see the table grain and README policy.
+player_snapshot_evidence,1,canonical_player_id,Canonical integration identifier used for downstream joins.
+player_snapshot_evidence,2,source_dataset,Source-specific evidence retained without overwriting other sources.
+player_snapshot_evidence,3,source_record_id,Source-specific evidence retained without overwriting other sources.
+player_snapshot_evidence,4,snapshot_as_of_date,Canonical integration field; see the table grain and README policy.
+player_snapshot_evidence,5,source_season_reference,Source-specific evidence retained without overwriting other sources.
+player_snapshot_evidence,6,source_current_club_id,Source-specific evidence retained without overwriting other sources.
+player_snapshot_evidence,7,source_current_club_name,Source-specific evidence retained without overwriting other sources.
+player_snapshot_evidence,8,contract_expiration_date,Canonical integration field; see the table grain and README policy.
+player_snapshot_evidence,9,agent_name,Canonical integration field; see the table grain and README policy.
+player_snapshot_evidence,10,joined_date,Canonical integration field; see the table grain and README policy.
+player_snapshot_evidence,11,on_loan_from_club_id,Canonical integration field; see the table grain and README policy.
+player_snapshot_evidence,12,snapshot_leakage_risk,Canonical integration field; see the table grain and README policy.
+canonical_club_dimension,1,canonical_club_id,Canonical integration identifier used for downstream joins.
+canonical_club_dimension,2,canonical_club_key,Canonical integration field; see the table grain and README policy.
+canonical_club_dimension,3,identity_record_type,Canonical integration field; see the table grain and README policy.
+canonical_club_dimension,4,canonical_club_name,Canonical integration field; see the table grain and README policy.
+canonical_club_dimension,5,canonical_club_name_normalized,Canonical integration field; see the table grain and README policy.
+canonical_club_dimension,6,name_aliases,Canonical integration field; see the table grain and README policy.
+canonical_club_dimension,7,canonical_country_name,"Row, source, or distinct-value count used for reconciliation."
+canonical_club_dimension,8,current_country_name,"Row, source, or distinct-value count used for reconciliation."
+canonical_club_dimension,9,datalake_country_name,"Row, source, or distinct-value count used for reconciliation."
+canonical_club_dimension,10,country_conflict,Conflict diagnostic; unresolved conflicts are retained for review.
+canonical_club_dimension,11,present_in_current_transfermarkt,Source-presence flag for coverage auditing.
+canonical_club_dimension,12,present_in_datalake,Source-presence flag for coverage auditing.
+canonical_club_dimension,13,fbref_squad_names,Canonical integration field; see the table grain and README policy.
+canonical_club_dimension,14,fbref_squad_identity_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_club_dimension,15,identity_resolution_status,Documented integration or resolution state.
+club_snapshot_evidence,1,canonical_club_id,Canonical integration identifier used for downstream joins.
+club_snapshot_evidence,2,source_dataset,Source-specific evidence retained without overwriting other sources.
+club_snapshot_evidence,3,source_record_id,Source-specific evidence retained without overwriting other sources.
+club_snapshot_evidence,4,snapshot_as_of_date,Canonical integration field; see the table grain and README policy.
+club_snapshot_evidence,5,source_season_reference,Source-specific evidence retained without overwriting other sources.
+club_snapshot_evidence,6,source_domestic_competition_id,Source-specific evidence retained without overwriting other sources.
+club_snapshot_evidence,7,source_club_name,Source-specific evidence retained without overwriting other sources.
+club_snapshot_evidence,8,total_market_value,Canonical integration field; see the table grain and README policy.
+club_snapshot_evidence,9,squad_size,Canonical integration field; see the table grain and README policy.
+club_snapshot_evidence,10,stadium_name,Canonical integration field; see the table grain and README policy.
+club_snapshot_evidence,11,coach_name,Canonical integration field; see the table grain and README policy.
+club_snapshot_evidence,12,snapshot_leakage_risk,Canonical integration field; see the table grain and README policy.
+valuation_source_evidence,1,source_dataset,Source-specific evidence retained without overwriting other sources.
+valuation_source_evidence,2,source_table,Source-specific evidence retained without overwriting other sources.
+valuation_source_evidence,3,source_record_id,Source-specific evidence retained without overwriting other sources.
+valuation_source_evidence,4,canonical_player_id,Canonical integration identifier used for downstream joins.
+valuation_source_evidence,5,valuation_date,Canonical integration field; see the table grain and README policy.
+valuation_source_evidence,6,market_value_eur,Canonical integration field; see the table grain and README policy.
+valuation_source_evidence,7,source_current_club_id,Source-specific evidence retained without overwriting other sources.
+valuation_source_evidence,8,source_current_club_name,Source-specific evidence retained without overwriting other sources.
+valuation_source_evidence,9,source_competition_id,Source-specific evidence retained without overwriting other sources.
+valuation_source_evidence,10,source_value_status,Source-specific evidence retained without overwriting other sources.
+valuation_source_evidence,11,source_natural_key_missing,Source-specific evidence retained without overwriting other sources.
+valuation_source_evidence,12,source_natural_key_duplicate,Source-specific evidence retained without overwriting other sources.
+valuation_source_evidence,13,canonical_valuation_id,Canonical integration identifier used for downstream joins.
+valuation_source_evidence,14,exact_key_value_duplicate,Canonical integration field; see the table grain and README policy.
+valuation_source_evidence,15,cross_source_exact_match,Canonical integration field; see the table grain and README policy.
+canonical_valuation_history,1,canonical_valuation_id,Canonical integration identifier used for downstream joins.
+canonical_valuation_history,2,canonical_player_id,Canonical integration identifier used for downstream joins.
+canonical_valuation_history,3,valuation_date,Canonical integration field; see the table grain and README policy.
+canonical_valuation_history,4,evidence_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_valuation_history,5,source_count,Source-specific evidence retained without overwriting other sources.
+canonical_valuation_history,6,current_evidence_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_valuation_history,7,datalake_evidence_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_valuation_history,8,distinct_value_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_valuation_history,9,minimum_reported_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_valuation_history,10,maximum_reported_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_valuation_history,11,natural_key_missing,Canonical integration field; see the table grain and README policy.
+canonical_valuation_history,12,current_value_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_valuation_history,13,current_minimum_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_valuation_history,14,current_maximum_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_valuation_history,15,datalake_value_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_valuation_history,16,datalake_minimum_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_valuation_history,17,datalake_maximum_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_valuation_history,18,canonical_market_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_valuation_history,19,value_conflict,Conflict diagnostic; unresolved conflicts are retained for review.
+canonical_valuation_history,20,value_difference_eur,Canonical integration field; see the table grain and README policy.
+canonical_valuation_history,21,cross_source_overlap,Canonical integration field; see the table grain and README policy.
+canonical_valuation_history,22,within_source_duplicate,Canonical integration field; see the table grain and README policy.
+canonical_valuation_history,23,value_resolution_status,Documented integration or resolution state.
+canonical_valuation_history,24,valuation_date_valid,Canonical integration field; see the table grain and README policy.
+canonical_latest_valuation,1,canonical_latest_valuation_id,Canonical integration identifier used for downstream joins.
+canonical_latest_valuation,2,canonical_valuation_id,Canonical integration identifier used for downstream joins.
+canonical_latest_valuation,3,canonical_player_id,Canonical integration identifier used for downstream joins.
+canonical_latest_valuation,4,valuation_date,Canonical integration field; see the table grain and README policy.
+canonical_latest_valuation,5,evidence_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_latest_valuation,6,source_count,Source-specific evidence retained without overwriting other sources.
+canonical_latest_valuation,7,current_evidence_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_latest_valuation,8,datalake_evidence_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_latest_valuation,9,distinct_value_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_latest_valuation,10,minimum_reported_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_latest_valuation,11,maximum_reported_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_latest_valuation,12,natural_key_missing,Canonical integration field; see the table grain and README policy.
+canonical_latest_valuation,13,current_value_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_latest_valuation,14,current_minimum_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_latest_valuation,15,current_maximum_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_latest_valuation,16,datalake_value_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_latest_valuation,17,datalake_minimum_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_latest_valuation,18,datalake_maximum_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_latest_valuation,19,canonical_market_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_latest_valuation,20,value_conflict,Conflict diagnostic; unresolved conflicts are retained for review.
+canonical_latest_valuation,21,value_difference_eur,Canonical integration field; see the table grain and README policy.
+canonical_latest_valuation,22,cross_source_overlap,Canonical integration field; see the table grain and README policy.
+canonical_latest_valuation,23,within_source_duplicate,Canonical integration field; see the table grain and README policy.
+canonical_latest_valuation,24,value_resolution_status,Documented integration or resolution state.
+canonical_latest_valuation,25,valuation_date_valid,Canonical integration field; see the table grain and README policy.
+canonical_latest_valuation,26,latest_value_available,Canonical integration field; see the table grain and README policy.
+canonical_latest_valuation,27,derived_from_canonical_history,Canonical integration field; see the table grain and README policy.
+valuation_conflict_review,1,canonical_valuation_id,Canonical integration identifier used for downstream joins.
+valuation_conflict_review,2,canonical_player_id,Canonical integration identifier used for downstream joins.
+valuation_conflict_review,3,valuation_date,Canonical integration field; see the table grain and README policy.
+valuation_conflict_review,4,evidence_count,"Row, source, or distinct-value count used for reconciliation."
+valuation_conflict_review,5,source_count,Source-specific evidence retained without overwriting other sources.
+valuation_conflict_review,6,current_evidence_count,"Row, source, or distinct-value count used for reconciliation."
+valuation_conflict_review,7,datalake_evidence_count,"Row, source, or distinct-value count used for reconciliation."
+valuation_conflict_review,8,distinct_value_count,"Row, source, or distinct-value count used for reconciliation."
+valuation_conflict_review,9,minimum_reported_value_eur,Canonical integration field; see the table grain and README policy.
+valuation_conflict_review,10,maximum_reported_value_eur,Canonical integration field; see the table grain and README policy.
+valuation_conflict_review,11,natural_key_missing,Canonical integration field; see the table grain and README policy.
+valuation_conflict_review,12,current_value_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+valuation_conflict_review,13,current_minimum_value_eur,Canonical integration field; see the table grain and README policy.
+valuation_conflict_review,14,current_maximum_value_eur,Canonical integration field; see the table grain and README policy.
+valuation_conflict_review,15,datalake_value_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+valuation_conflict_review,16,datalake_minimum_value_eur,Canonical integration field; see the table grain and README policy.
+valuation_conflict_review,17,datalake_maximum_value_eur,Canonical integration field; see the table grain and README policy.
+valuation_conflict_review,18,canonical_market_value_eur,Canonical integration field; see the table grain and README policy.
+valuation_conflict_review,19,value_conflict,Conflict diagnostic; unresolved conflicts are retained for review.
+valuation_conflict_review,20,value_difference_eur,Canonical integration field; see the table grain and README policy.
+valuation_conflict_review,21,cross_source_overlap,Canonical integration field; see the table grain and README policy.
+valuation_conflict_review,22,within_source_duplicate,Canonical integration field; see the table grain and README policy.
+valuation_conflict_review,23,value_resolution_status,Documented integration or resolution state.
+valuation_conflict_review,24,valuation_date_valid,Canonical integration field; see the table grain and README policy.
+transfer_source_evidence,1,source_dataset,Source-specific evidence retained without overwriting other sources.
+transfer_source_evidence,2,source_table,Source-specific evidence retained without overwriting other sources.
+transfer_source_evidence,3,source_record_id,Source-specific evidence retained without overwriting other sources.
+transfer_source_evidence,4,canonical_player_id,Canonical integration identifier used for downstream joins.
+transfer_source_evidence,5,transfer_date,Canonical integration field; see the table grain and README policy.
+transfer_source_evidence,6,from_club_id,Canonical integration field; see the table grain and README policy.
+transfer_source_evidence,7,to_club_id,Canonical integration field; see the table grain and README policy.
+transfer_source_evidence,8,source_from_club_name,Source-specific evidence retained without overwriting other sources.
+transfer_source_evidence,9,source_to_club_name,Source-specific evidence retained without overwriting other sources.
+transfer_source_evidence,10,source_transfer_type,Source-specific evidence retained without overwriting other sources.
+transfer_source_evidence,11,source_transfer_fee_eur,Source-specific evidence retained without overwriting other sources.
+transfer_source_evidence,12,source_market_value_eur,Source-specific evidence retained without overwriting other sources.
+transfer_source_evidence,13,source_transfer_season,Source-specific evidence retained without overwriting other sources.
+transfer_source_evidence,14,canonical_season_key,Canonical integration field; see the table grain and README policy.
+transfer_source_evidence,15,source_transfer_fee_status,Source-specific evidence retained without overwriting other sources.
+transfer_source_evidence,16,source_market_value_status,Source-specific evidence retained without overwriting other sources.
+transfer_source_evidence,17,source_natural_key_missing,Source-specific evidence retained without overwriting other sources.
+transfer_source_evidence,18,source_natural_key_duplicate,Source-specific evidence retained without overwriting other sources.
+transfer_source_evidence,19,canonical_transfer_event_id,Canonical integration identifier used for downstream joins.
+transfer_source_evidence,20,exact_key_fee_value_duplicate,Canonical integration field; see the table grain and README policy.
+transfer_source_evidence,21,cross_source_exact_fee_value,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,1,canonical_transfer_event_id,Canonical integration identifier used for downstream joins.
+canonical_transfer_history,2,canonical_player_id,Canonical integration identifier used for downstream joins.
+canonical_transfer_history,3,transfer_date,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,4,canonical_season_key,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,5,from_club_id,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,6,to_club_id,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,7,source_from_club_name_sample,Source-specific evidence retained without overwriting other sources.
+canonical_transfer_history,8,source_to_club_name_sample,Source-specific evidence retained without overwriting other sources.
+canonical_transfer_history,9,evidence_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_transfer_history,10,source_count,Source-specific evidence retained without overwriting other sources.
+canonical_transfer_history,11,current_evidence_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_transfer_history,12,datalake_evidence_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_transfer_history,13,transfer_type_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_transfer_history,14,canonical_transfer_type,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,15,transfer_fee_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_transfer_history,16,minimum_reported_transfer_fee_eur,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,17,maximum_reported_transfer_fee_eur,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,18,market_value_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_transfer_history,19,minimum_reported_market_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,20,maximum_reported_market_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,21,natural_key_missing,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,22,current_fee_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_transfer_history,23,current_minimum_fee_eur,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,24,current_maximum_fee_eur,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,25,current_market_value_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_transfer_history,26,current_minimum_market_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,27,current_maximum_market_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,28,datalake_fee_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_transfer_history,29,datalake_minimum_fee_eur,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,30,datalake_maximum_fee_eur,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,31,datalake_market_value_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+canonical_transfer_history,32,datalake_minimum_market_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,33,datalake_maximum_market_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,34,canonical_transfer_fee_eur,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,35,transfer_fee_conflict,Conflict diagnostic; unresolved conflicts are retained for review.
+canonical_transfer_history,36,transfer_fee_difference_eur,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,37,canonical_market_value_eur,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,38,market_value_conflict,Conflict diagnostic; unresolved conflicts are retained for review.
+canonical_transfer_history,39,market_value_difference_eur,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,40,transfer_type_conflict,Conflict diagnostic; unresolved conflicts are retained for review.
+canonical_transfer_history,41,cross_source_overlap,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,42,within_source_duplicate,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,43,duplicate_evidence_rows_collapsed,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,44,canonical_transfer_fee_status,Documented integration or resolution state.
+canonical_transfer_history,45,event_conflict,Conflict diagnostic; unresolved conflicts are retained for review.
+canonical_transfer_history,46,event_resolution_status,Documented integration or resolution state.
+canonical_transfer_history,47,canonical_from_club_name,Canonical integration field; see the table grain and README policy.
+canonical_transfer_history,48,canonical_to_club_name,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,1,canonical_transfer_event_id,Canonical integration identifier used for downstream joins.
+transfer_conflict_review,2,canonical_player_id,Canonical integration identifier used for downstream joins.
+transfer_conflict_review,3,transfer_date,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,4,canonical_season_key,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,5,from_club_id,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,6,to_club_id,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,7,source_from_club_name_sample,Source-specific evidence retained without overwriting other sources.
+transfer_conflict_review,8,source_to_club_name_sample,Source-specific evidence retained without overwriting other sources.
+transfer_conflict_review,9,evidence_count,"Row, source, or distinct-value count used for reconciliation."
+transfer_conflict_review,10,source_count,Source-specific evidence retained without overwriting other sources.
+transfer_conflict_review,11,current_evidence_count,"Row, source, or distinct-value count used for reconciliation."
+transfer_conflict_review,12,datalake_evidence_count,"Row, source, or distinct-value count used for reconciliation."
+transfer_conflict_review,13,transfer_type_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+transfer_conflict_review,14,canonical_transfer_type,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,15,transfer_fee_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+transfer_conflict_review,16,minimum_reported_transfer_fee_eur,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,17,maximum_reported_transfer_fee_eur,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,18,market_value_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+transfer_conflict_review,19,minimum_reported_market_value_eur,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,20,maximum_reported_market_value_eur,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,21,natural_key_missing,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,22,current_fee_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+transfer_conflict_review,23,current_minimum_fee_eur,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,24,current_maximum_fee_eur,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,25,current_market_value_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+transfer_conflict_review,26,current_minimum_market_value_eur,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,27,current_maximum_market_value_eur,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,28,datalake_fee_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+transfer_conflict_review,29,datalake_minimum_fee_eur,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,30,datalake_maximum_fee_eur,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,31,datalake_market_value_distinct_count,"Row, source, or distinct-value count used for reconciliation."
+transfer_conflict_review,32,datalake_minimum_market_value_eur,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,33,datalake_maximum_market_value_eur,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,34,canonical_transfer_fee_eur,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,35,transfer_fee_conflict,Conflict diagnostic; unresolved conflicts are retained for review.
+transfer_conflict_review,36,transfer_fee_difference_eur,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,37,canonical_market_value_eur,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,38,market_value_conflict,Conflict diagnostic; unresolved conflicts are retained for review.
+transfer_conflict_review,39,market_value_difference_eur,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,40,transfer_type_conflict,Conflict diagnostic; unresolved conflicts are retained for review.
+transfer_conflict_review,41,cross_source_overlap,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,42,within_source_duplicate,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,43,duplicate_evidence_rows_collapsed,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,44,canonical_transfer_fee_status,Documented integration or resolution state.
+transfer_conflict_review,45,event_conflict,Conflict diagnostic; unresolved conflicts are retained for review.
+transfer_conflict_review,46,event_resolution_status,Documented integration or resolution state.
+transfer_conflict_review,47,canonical_from_club_name,Canonical integration field; see the table grain and README policy.
+transfer_conflict_review,48,canonical_to_club_name,Canonical integration field; see the table grain and README policy.

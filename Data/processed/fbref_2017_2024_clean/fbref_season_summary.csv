@@ -1,0 +1,8 @@
+﻿season,rows,output_file
+2017-2018,2549,Data/processed/fbref_2017_2024_clean/by_season/fbref_2017_2018_clean.csv
+2018-2019,2503,Data/processed/fbref_2017_2024_clean/by_season/fbref_2018_2019_clean.csv
+2019-2020,2558,Data/processed/fbref_2017_2024_clean/by_season/fbref_2019_2020_clean.csv
+2020-2021,2634,Data/processed/fbref_2017_2024_clean/by_season/fbref_2020_2021_clean.csv
+2021-2022,2689,Data/processed/fbref_2017_2024_clean/by_season/fbref_2021_2022_clean.csv
+2022-2023,2687,Data/processed/fbref_2017_2024_clean/by_season/fbref_2022_2023_clean.csv
+2023-2024,2623,Data/processed/fbref_2017_2024_clean/by_season/fbref_2023_2024_clean.csv

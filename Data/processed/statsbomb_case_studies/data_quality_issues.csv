@@ -1,0 +1,5 @@
+﻿issue_type,source_file,match_id,severity,details
+orphan_event_and_lineup_files,data/events + data/lineups,,warning,"274 event files (831,915,763 bytes) lack current match metadata and were excluded."
+invalid_json,data/three-sixty/3845506.json,3845506,warning,"Expecting ',' delimiter: line 92794 column 3 (char 2637824)"
+sample_selection_bias,data/competitions.json + data/matches,,warning,"Modern Big Five data centers on Barcelona, PSG, and Bayer Leverkusen; extracted rows are not a complete league panel."
+identity_crosswalk_review,generated crosswalk candidates,,warning,StatsBomb-to-Transfermarkt links use exact normalized names/aliases without StatsBomb birth dates and require manual review.

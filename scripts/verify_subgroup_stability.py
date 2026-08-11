@@ -24,7 +24,7 @@ MIN_POOLED_N = 15
 MIN_ORIGIN_N = 5
 
 CANDIDATES = {
-    "opportunity": ("full_explicit_fit", "gradient_boosted_trees"),
+    "opportunity": ("full_explicit_fit", "elastic_net"),
     "performance": ("full_explicit_fit", "gradient_boosted_trees"),
 }
 SUBSETS = {

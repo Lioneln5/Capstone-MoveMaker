@@ -1,6 +1,6 @@
 # MoveMaker frozen-candidate subgroup stability
 
-This phase uses the already-scored rolling-origin predictions and does not retrain from subgroup outcomes. After correcting the shared encoder and rerunning the 2022 validation selection, both opportunity and performance are frozen as full compatibility plus gradient-boosted trees.
+This phase uses the already-scored rolling-origin predictions and does not retrain from subgroup outcomes. Opportunity is frozen as full compatibility plus elastic net; performance is frozen as full compatibility plus gradient-boosted trees.
 
 The primary comparison is the candidate versus the same model family using only player-history baseline features. This isolates compatibility information from learner choice. A secondary comparison uses the best baseline family selected on each origin validation season.
 

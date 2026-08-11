@@ -35,7 +35,7 @@ FDR_ALPHA = 0.10
 CANDIDATES = {
     "opportunity": {
         "feature_set": "full_explicit_fit",
-        "model_family": "gradient_boosted_trees",
+        "model_family": "elastic_net",
         "target_label": "Opportunity",
     },
     "performance": {
@@ -702,11 +702,11 @@ def run() -> None:
         len(candidate_definitions) == 2
         and not candidate_definitions["subgroup_retuning_permitted"].any()
         and set(candidate_definitions["candidate_model_family"])
-        == {"gradient_boosted_trees"},
+        == {"elastic_net", "gradient_boosted_trees"},
         candidate_definitions[
             ["target_key", "candidate_feature_set", "candidate_model_family"]
         ].to_dict("records"),
-        "opportunity=gradient_boosted_trees/full;performance=gradient_boosted_trees/full",
+        "opportunity=elastic_net/full;performance=gradient_boosted_trees/full",
         "Subgroup outcomes never select a feature set, family, or hyperparameter.",
     )
     expected_pair_rows = 2 * (207 + 172)
@@ -1006,7 +1006,7 @@ def run() -> None:
 
     readme = """# MoveMaker frozen-candidate subgroup stability
 
-This phase uses the already-scored rolling-origin predictions and does not retrain from subgroup outcomes. After correcting the shared encoder and rerunning the 2022 validation selection, both opportunity and performance are frozen as full compatibility plus gradient-boosted trees.
+This phase uses the already-scored rolling-origin predictions and does not retrain from subgroup outcomes. Opportunity is frozen as full compatibility plus elastic net; performance is frozen as full compatibility plus gradient-boosted trees.
 
 The primary comparison is the candidate versus the same model family using only player-history baseline features. This isolates compatibility information from learner choice. A secondary comparison uses the best baseline family selected on each origin validation season.
 

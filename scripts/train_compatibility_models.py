@@ -167,26 +167,18 @@ class Preprocessor:
 
     def transform(self, frame: pd.DataFrame) -> np.ndarray:
         blocks: list[np.ndarray] = []
-        numeric = set(self.numeric_features)
-        # Preserve raw feature order. fit_preprocessor builds its means, scales,
-        # encoded names, and keep mask in this order; regrouping numeric and
-        # categorical fields here would apply those statistics to the wrong
-        # transformed columns whenever a feature set mixes types.
-        for feature in self.raw_features:
-            if feature in numeric:
-                values = pd.to_numeric(frame[feature], errors="coerce").replace(
-                    [np.inf, -np.inf], np.nan
-                )
-                missing = values.isna().to_numpy(dtype=float)
-                blocks.append(values.fillna(self.medians[feature]).to_numpy(dtype=float).reshape(-1, 1))
-                if feature in self.numeric_missing_indicators:
-                    blocks.append(missing.reshape(-1, 1))
-            else:
-                values = frame[feature].astype("string").fillna("__MISSING__").astype(str)
-                known = set(self.categories[feature]) - {"__OTHER__"}
-                values = values.where(values.isin(known), "__OTHER__")
-                for category in self.categories[feature]:
-                    blocks.append(values.eq(category).to_numpy(dtype=float).reshape(-1, 1))
+        for feature in self.numeric_features:
+            values = pd.to_numeric(frame[feature], errors="coerce").replace([np.inf, -np.inf], np.nan)
+            missing = values.isna().to_numpy(dtype=float)
+            blocks.append(values.fillna(self.medians[feature]).to_numpy(dtype=float).reshape(-1, 1))
+            if feature in self.numeric_missing_indicators:
+                blocks.append(missing.reshape(-1, 1))
+        for feature in self.categorical_features:
+            values = frame[feature].fillna("__MISSING__").astype(str)
+            known = set(self.categories[feature]) - {"__OTHER__"}
+            values = values.where(values.isin(known), "__OTHER__")
+            for category in self.categories[feature]:
+                blocks.append(values.eq(category).to_numpy(dtype=float).reshape(-1, 1))
         if not blocks:
             return np.zeros((len(frame), 0), dtype=float)
         encoded = np.concatenate(blocks, axis=1)
@@ -223,7 +215,7 @@ def fit_preprocessor(frame: pd.DataFrame, raw_features: list[str]) -> Preprocess
                 encoded_raw.append(feature)
         else:
             categorical_features.append(feature)
-            values = series.astype("string").fillna("__MISSING__").astype(str)
+            values = series.fillna("__MISSING__").astype(str)
             feature_categories = sorted(values.unique().tolist())
             if "__OTHER__" not in feature_categories:
                 feature_categories.append("__OTHER__")

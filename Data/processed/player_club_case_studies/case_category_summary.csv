@@ -1,6 +1,6 @@
 case_category_order,case_category,case_category_label,case_count,opportunity_hits,performance_hits,mean_opportunity_lift,mean_performance_lift,mean_two_target_mae_improvement
-1,confirmed_positive,Confirmed positive fit,2,2,2,0.010435212708987535,0.08526036209846116,0.04784778740372433
-2,confirmed_warning,Confirmed compatibility warning,3,3,3,-0.08839309572195832,-0.09757205860060651,0.0929825771612824
-3,validated_tradeoff,Validated target trade-off,2,2,2,-0.004322845060934805,0.021356650505690702,0.10627560936946143
-4,false_positive,False-positive compatibility signal,2,0,0,0.041594977871836636,0.10425137927449216,-0.07292317857316433
-5,false_warning,False-negative compatibility warning,3,0,0,-0.04010377117808909,-0.06831701436893008,-0.045275052538912286
+1,confirmed_positive,Confirmed positive fit,2,2,2,0.011966865650897274,0.04458038317171385,0.028273624411305525
+2,confirmed_warning,Confirmed compatibility warning,3,3,3,-0.080728869998532,-0.11720642471378113,0.09896764735615653
+3,validated_tradeoff,Validated target trade-off,2,2,2,-0.008130322791206485,0.0333809832662118,0.08011360577905415
+4,false_positive,False-positive compatibility signal,2,0,0,0.07892966210681823,0.10356765198481455,-0.07176563281084196
+5,false_warning,False-negative compatibility warning,3,0,0,-0.06181280877842873,-0.07843713252164075,-0.06863913931899344

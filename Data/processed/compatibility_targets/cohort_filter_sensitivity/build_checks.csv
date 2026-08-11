@@ -19,7 +19,7 @@ all_roles_adaptation_funnel_matches_eligibility,blocking,True,eligibility=256;fu
 fully_relaxed_opportunity_funnel_matches_eligibility,blocking,True,eligibility=424;funnel=424,equal,Sequential funnel and imported exclusion logic must select identical rows.
 fully_relaxed_performance_funnel_matches_eligibility,blocking,True,eligibility=398;funnel=398,equal,Sequential funnel and imported exclusion logic must select identical rows.
 fully_relaxed_adaptation_funnel_matches_eligibility,blocking,True,eligibility=373;funnel=373,equal,Sequential funnel and imported exclusion logic must select identical rows.
-primary_ridge_rolling_effect_reproduced,blocking,True,6.418476861114186e-17,<1e-12,The diagnostic primary row must reproduce the published rolling ridge result.
+primary_ridge_rolling_effect_reproduced,blocking,True,5.551115123125783e-17,<1e-12,The diagnostic primary row must reproduce the published rolling ridge result.
 all_season_arrivals_opportunity_final_superset,blocking,True,0,0,Every relaxed final cohort must retain every primary-cohort row.
 all_season_arrivals_opportunity_all_target_rows_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.
 all_season_arrivals_opportunity_target_available_stage_superset,blocking,True,0,0,The relaxed funnel must contain the primary funnel at the same stage.

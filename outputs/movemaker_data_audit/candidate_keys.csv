@@ -1,0 +1,20 @@
+﻿table,logical_table,candidate_key,row_count,distinct_key_count,duplicate_key_rows,key_unique
+cleaned_2017-18,cleaned_season,player + squad + comp + season,2549,2549,0,True
+cleaned_2018-19,cleaned_season,player + squad + comp + season,2503,2503,0,True
+cleaned_2019-20,cleaned_season,player + squad + comp + season,2558,2558,0,True
+cleaned_2020-21,cleaned_season,player + squad + comp + season,2634,2634,0,True
+cleaned_2021-22,cleaned_season,player + squad + comp + season,2689,2689,0,True
+cleaned_2022-23,cleaned_season,player + squad + comp + season,2687,2687,0,True
+cleaned_2023-24,cleaned_season,player + squad + comp + season,2623,2623,0,True
+appearances,appearances,appearance_id,1894350,1894350,0,True
+club_games,club_games,game_id + club_id,177916,177916,0,True
+clubs,clubs,club_id,796,796,0,True
+competitions,competitions,competition_id,65,65,0,True
+countries,countries,country_id,124,124,0,True
+game_events,game_events,game_event_id,1274469,1274469,0,True
+game_lineups,game_lineups,game_lineups_id,3179016,3179016,0,True
+games,games,game_id,88958,88958,0,True
+national_teams,national_teams,national_team_id,124,124,0,True
+player_valuations,player_valuations,player_id + date,507815,507815,0,True
+players,players,player_id,50149,50149,0,True
+transfers,transfers,player_id + transfer_date + from_club_id + to_club_id,35139,35139,0,True

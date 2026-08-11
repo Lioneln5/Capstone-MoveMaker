@@ -1,0 +1,36 @@
+﻿area,metric,value,interpretation
+valuations,current_valuation_players,31507,
+valuations,new_valuation_players,69441,
+valuations,shared_valuation_players,22926,
+valuations,current_valuation_rows,507815,
+valuations,new_valuation_rows,901429,
+valuations,shared_player_date_keys,410,
+valuations,matching_player_date_values,223,
+valuations,differing_player_date_values,187,
+valuations,latest_rows,69441,
+valuations,latest_exact_vs_history,69441,
+valuations,latest_date_mismatch,0,
+valuations,latest_value_mismatch,0,
+transfers,current_transfer_rows,35139,
+transfers,new_transfer_rows,1101440,
+transfers,current_transfer_players,4345,
+transfers,new_transfer_players,117944,
+transfers,shared_transfer_players,3654,
+transfers,shared_transfer_event_keys,30180,
+transfers,matching_fees_on_shared_keys,19728,
+transfers,differing_fees_on_shared_keys,38,
+transfers,matching_values_on_shared_keys,18867,
+transfers,differing_values_on_shared_keys,175,
+player_profiles.player_id,unique_ids_overlapping_current_player_snapshot,30361,92671 source IDs; 50149 reference IDs
+player_profiles.player_id,unique_ids_overlapping_current_player_identity_union,44775,92671 source IDs; 123095 reference IDs
+player_profiles.player_id,unique_ids_overlapping_fbref_unique_mapped_players,5247,92671 source IDs; 5483 reference IDs
+player_injuries.player_id,unique_ids_overlapping_fbref_unique_mapped_players,4855,34561 source IDs; 5483 reference IDs
+player_market_value.player_id,unique_ids_overlapping_fbref_unique_mapped_players,5245,69441 source IDs; 5483 reference IDs
+player_performances.player_id,unique_ids_overlapping_fbref_unique_mapped_players,5247,88375 source IDs; 5483 reference IDs
+player_teammates_played_with.player_id,unique_ids_overlapping_fbref_unique_mapped_players,5244,84401 source IDs; 5483 reference IDs
+team_details.club_id,unique_ids_overlapping_current_club_union,1661,2175 source IDs; 8784 reference IDs
+team_competitions_seasons.club_id,unique_ids_overlapping_current_club_union,1660,2162 source IDs; 8784 reference IDs
+performances,current_aggregated_performance_keys,196566,
+performances,new_performance_rows,1878719,
+performances,shared_performance_keys,159101,
+performances,new_performance_players,88375,

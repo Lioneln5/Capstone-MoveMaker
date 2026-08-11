@@ -1,0 +1,9 @@
+﻿field,both_nonblank,matches,differs,match_pct,one_or_both_missing,interpretation
+date_of_birth,30319,30230,89,0.9970645469837396,42,stable_identity_attribute
+country_of_birth,27990,22915,5075,0.8186852447302608,2371,stable_identity_attribute
+citizenship,30145,20778,9367,0.6892685354121745,216,stable_identity_attribute
+foot,27989,27688,301,0.9892457751259424,2372,stable_identity_attribute
+height,28855,26704,2151,0.9254548605094438,1506,stable_identity_attribute
+current_club_id,30361,11038,19323,0.3635585125654623,0,snapshot_sensitive
+contract_expires,17338,8347,8991,0.4814280770561772,13023,snapshot_sensitive
+agent_name,16541,13068,3473,0.7900368780605768,13820,snapshot_sensitive

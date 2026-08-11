@@ -1,0 +1,578 @@
+column_order,column,group,source,definition,timing_or_leakage_rule,missing_count,non_null_count
+1,source_file,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+2,source_row_number,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+3,player_id,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+4,transfer_date,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+5,transfer_season,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+6,from_club_id,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+7,to_club_id,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+8,from_club_name,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+9,to_club_name,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+10,transfer_fee,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,12491,22648
+11,market_value_in_eur,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,13658,21481
+12,player_name,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+13,player_name_normalized,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+14,from_club_name_normalized,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+15,to_club_name_normalized,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+16,transfer_season_derived,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+17,transfer_season_matches_date,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+18,transfer_fee_status,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+19,has_reported_market_value,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+20,transfer_event_id,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+21,player_canonical_name,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+22,player_canonical_name_normalized,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+23,player_canonical_name_source,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+24,player_present_in_snapshot,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+25,player_first_observed_date,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+26,player_last_observed_date,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+27,player_observation_count,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+28,player_name_variant_count,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+29,player_source_table_count,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+30,player_date_of_birth,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,27,35112
+31,player_birth_year,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,27,35112
+32,player_country_of_birth,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,2034,33105
+33,player_country_of_citizenship,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+34,player_snapshot_position,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+35,player_snapshot_sub_position,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,18,35121
+36,player_preferred_foot,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,1590,33549
+37,player_height_in_cm,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,1645,33494
+38,player_code,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+39,player_snapshot_url,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+40,from_club_canonical_name,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+41,from_club_canonical_name_normalized,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,26,35113
+42,from_club_canonical_name_source,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+43,from_club_present_in_snapshot,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+44,from_club_first_observed_date,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+45,from_club_last_observed_date,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+46,from_club_observation_count,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+47,from_club_name_variant_count,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+48,from_club_source_table_count,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+49,to_club_canonical_name,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+50,to_club_canonical_name_normalized,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,28,35111
+51,to_club_canonical_name_source,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+52,to_club_present_in_snapshot,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+53,to_club_first_observed_date,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+54,to_club_last_observed_date,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+55,to_club_observation_count,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+56,to_club_name_variant_count,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+57,to_club_source_table_count,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+58,player_identity_joined,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+59,from_club_identity_joined,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+60,to_club_identity_joined,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+61,from_club_canonical_name_available,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+62,to_club_canonical_name_available,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+63,is_same_club_id,transfer_core,transfer_core.csv,Preserved transfer-core field.,Review the transfer-core dictionary.,0,35139
+64,valuation_post12_target_date,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,0,35139
+65,valuation_post24_target_date,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,0,35139
+66,valuation_post12_horizon_observable,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,0,35139
+67,valuation_post24_horizon_observable,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,0,35139
+68,valuation_history_available,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+69,valuation_observations_all,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,1682,33457
+70,valuation_observations_before_transfer,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,1682,33457
+71,valuation_pre_date,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+72,valuation_pre_eur,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+73,valuation_pre_staleness_days,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+74,valuation_pre_current_club_id,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+75,valuation_pre_competition_id,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,21534,13605
+76,valuation_pre_is_origin_club,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+77,valuation_pre_within_90d,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+78,valuation_pre_within_180d,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+79,valuation_pre_within_365d,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+80,valuation_prior_peak_eur,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,13148,21991
+81,valuation_pre365_observations,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+82,valuation_pre730_observations,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+83,valuation_career_pre_observations,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+84,valuation_career_pre_first_date,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+85,valuation_career_pre_first_eur,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+86,valuation_career_pre_last_date,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+87,valuation_career_pre_last_eur,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+88,valuation_career_pre_mean_eur,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+89,valuation_career_pre_min_eur,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+90,valuation_career_pre_max_eur,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+91,valuation_career_pre_change_eur,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+92,valuation_career_pre_change_pct,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+93,valuation_career_pre_observation_span_days,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13148,21991
+94,valuation_post12_nearest_date,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,1682,33457
+95,valuation_post12_nearest_eur,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,1682,33457
+96,valuation_post12_gap_days,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,1682,33457
+97,valuation_post12_within_60d,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,1682,33457
+98,valuation_post12_within_90d,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,1682,33457
+99,valuation_post12_within_120d,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,1682,33457
+100,valuation_post12_within_180d,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,1682,33457
+101,valuation_post24_nearest_date,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,1682,33457
+102,valuation_post24_nearest_eur,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,1682,33457
+103,valuation_post24_gap_days,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,1682,33457
+104,valuation_post24_within_60d,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,1682,33457
+105,valuation_post24_within_90d,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,1682,33457
+106,valuation_post24_within_120d,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,1682,33457
+107,valuation_post24_within_180d,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,1682,33457
+108,valuation_pre730_first_date,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13560,21579
+109,valuation_pre730_first_eur,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13560,21579
+110,valuation_pre730_last_date,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13560,21579
+111,valuation_pre730_last_eur,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13560,21579
+112,valuation_pre730_mean_eur,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13560,21579
+113,valuation_pre730_min_eur,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13560,21579
+114,valuation_pre730_max_eur,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13560,21579
+115,valuation_pre730_change_eur,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13560,21579
+116,valuation_pre730_change_pct,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13560,21579
+117,valuation_pre730_observation_span_days,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,13560,21579
+118,valuation_pre365_first_date,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,14592,20547
+119,valuation_pre365_first_eur,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,14592,20547
+120,valuation_pre365_last_date,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,14592,20547
+121,valuation_pre365_last_eur,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,14592,20547
+122,valuation_pre365_mean_eur,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,14592,20547
+123,valuation_pre365_min_eur,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,14592,20547
+124,valuation_pre365_max_eur,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,14592,20547
+125,valuation_pre365_change_eur,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,14592,20547
+126,valuation_pre365_change_pct,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,14592,20547
+127,valuation_pre365_observation_span_days,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,14592,20547
+128,valuation_post12_90d_eur,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,16531,18608
+129,valuation_post24_90d_eur,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,17275,17864
+130,valuation_post12_change_eur,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,20130,15009
+131,valuation_post12_change_pct,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,20130,15009
+132,valuation_post24_change_eur,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,22234,12905
+133,valuation_post24_change_pct,posttransfer_valuation,player_valuations_clean.csv,Valuation information centered on a post-transfer target date.,Outcome/diagnostic only; never a prediction feature.,22234,12905
+134,appearance_career_pre_has_records,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+135,appearance_career_pre_records,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+136,appearance_career_pre_games,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+137,appearance_career_pre_minutes,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+138,appearance_career_pre_goals,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+139,appearance_career_pre_assists,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+140,appearance_career_pre_yellow_cards,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+141,appearance_career_pre_red_cards,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+142,appearance_career_pre_clubs,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+143,appearance_career_pre_competitions,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+144,appearance_career_pre_first_date,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,21320,13819
+145,appearance_career_pre_last_date,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,21320,13819
+146,appearance_pre365_all_has_records,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+147,appearance_pre365_all_records,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+148,appearance_pre365_all_games,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+149,appearance_pre365_all_minutes,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+150,appearance_pre365_all_goals,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+151,appearance_pre365_all_assists,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+152,appearance_pre365_all_yellow_cards,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+153,appearance_pre365_all_red_cards,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+154,appearance_pre365_all_clubs,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+155,appearance_pre365_all_competitions,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+156,appearance_pre365_all_first_date,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,24839,10300
+157,appearance_pre365_all_last_date,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,24839,10300
+158,appearance_pre365_origin_has_records,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+159,appearance_pre365_origin_records,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+160,appearance_pre365_origin_games,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+161,appearance_pre365_origin_minutes,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+162,appearance_pre365_origin_goals,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+163,appearance_pre365_origin_assists,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+164,appearance_pre365_origin_yellow_cards,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+165,appearance_pre365_origin_red_cards,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+166,appearance_pre365_origin_clubs,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+167,appearance_pre365_origin_competitions,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+168,appearance_pre365_origin_first_date,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,27793,7346
+169,appearance_pre365_origin_last_date,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,27793,7346
+170,appearance_pre730_all_has_records,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+171,appearance_pre730_all_records,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+172,appearance_pre730_all_games,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+173,appearance_pre730_all_minutes,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+174,appearance_pre730_all_goals,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+175,appearance_pre730_all_assists,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+176,appearance_pre730_all_yellow_cards,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+177,appearance_pre730_all_red_cards,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+178,appearance_pre730_all_clubs,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+179,appearance_pre730_all_competitions,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+180,appearance_pre730_all_first_date,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,22786,12353
+181,appearance_pre730_all_last_date,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,22786,12353
+182,appearance_pre730_origin_has_records,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+183,appearance_pre730_origin_records,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+184,appearance_pre730_origin_games,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+185,appearance_pre730_origin_minutes,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+186,appearance_pre730_origin_goals,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+187,appearance_pre730_origin_assists,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+188,appearance_pre730_origin_yellow_cards,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+189,appearance_pre730_origin_red_cards,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+190,appearance_pre730_origin_clubs,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+191,appearance_pre730_origin_competitions,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+192,appearance_pre730_origin_first_date,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,26877,8262
+193,appearance_pre730_origin_last_date,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,26877,8262
+194,appearance_post12_all_has_records,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+195,appearance_post12_all_records,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+196,appearance_post12_all_games,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+197,appearance_post12_all_minutes,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+198,appearance_post12_all_goals,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+199,appearance_post12_all_assists,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+200,appearance_post12_all_yellow_cards,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+201,appearance_post12_all_red_cards,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+202,appearance_post12_all_clubs,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+203,appearance_post12_all_competitions,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+204,appearance_post12_all_first_date,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,25038,10101
+205,appearance_post12_all_last_date,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,25038,10101
+206,appearance_post12_destination_has_records,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+207,appearance_post12_destination_records,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+208,appearance_post12_destination_games,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+209,appearance_post12_destination_minutes,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+210,appearance_post12_destination_goals,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+211,appearance_post12_destination_assists,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+212,appearance_post12_destination_yellow_cards,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+213,appearance_post12_destination_red_cards,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+214,appearance_post12_destination_clubs,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+215,appearance_post12_destination_competitions,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+216,appearance_post12_destination_first_date,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,28237,6902
+217,appearance_post12_destination_last_date,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,28237,6902
+218,appearance_post24_all_has_records,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+219,appearance_post24_all_records,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+220,appearance_post24_all_games,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+221,appearance_post24_all_minutes,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+222,appearance_post24_all_goals,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+223,appearance_post24_all_assists,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+224,appearance_post24_all_yellow_cards,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+225,appearance_post24_all_red_cards,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+226,appearance_post24_all_clubs,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+227,appearance_post24_all_competitions,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+228,appearance_post24_all_first_date,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,21429,13710
+229,appearance_post24_all_last_date,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,21429,13710
+230,appearance_post24_destination_has_records,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+231,appearance_post24_destination_records,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+232,appearance_post24_destination_games,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+233,appearance_post24_destination_minutes,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+234,appearance_post24_destination_goals,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+235,appearance_post24_destination_assists,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+236,appearance_post24_destination_yellow_cards,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+237,appearance_post24_destination_red_cards,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+238,appearance_post24_destination_clubs,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+239,appearance_post24_destination_competitions,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,0,35139
+240,appearance_post24_destination_first_date,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,27397,7742
+241,appearance_post24_destination_last_date,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,27397,7742
+242,appearance_career_pre_goals_per90,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,21320,13819
+243,appearance_career_pre_assists_per90,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,21320,13819
+244,appearance_pre365_all_goals_per90,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,24839,10300
+245,appearance_pre365_all_assists_per90,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,24839,10300
+246,appearance_pre365_origin_goals_per90,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,27793,7346
+247,appearance_pre365_origin_assists_per90,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,27793,7346
+248,appearance_pre730_all_goals_per90,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,22786,12353
+249,appearance_pre730_all_assists_per90,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,22786,12353
+250,appearance_pre730_origin_goals_per90,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,26877,8262
+251,appearance_pre730_origin_assists_per90,pretransfer_player_activity,appearances_clean.csv,Player appearance aggregate before transfer.,Permitted pre-transfer feature.,26877,8262
+252,appearance_post12_all_goals_per90,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,25038,10101
+253,appearance_post12_all_assists_per90,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,25038,10101
+254,appearance_post12_destination_goals_per90,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,28237,6902
+255,appearance_post12_destination_assists_per90,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,28237,6902
+256,appearance_post24_all_goals_per90,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,21429,13710
+257,appearance_post24_all_assists_per90,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,21429,13710
+258,appearance_post24_destination_goals_per90,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,27397,7742
+259,appearance_post24_destination_assists_per90,posttransfer_player_outcome,appearances_clean.csv,Player appearance aggregate after transfer.,Outcome/diagnostic only.,27397,7742
+260,lineup_career_pre_has_records,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+261,lineup_career_pre_records,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+262,lineup_career_pre_games,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+263,lineup_career_pre_starts,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+264,lineup_career_pre_substitute_selections,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+265,lineup_career_pre_captain_selections,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+266,lineup_career_pre_start_pct,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,16534,18605
+267,lineup_career_pre_distinct_positions,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+268,lineup_career_pre_primary_position,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,16534,18605
+269,lineup_career_pre_first_date,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,16534,18605
+270,lineup_career_pre_last_date,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,16534,18605
+271,lineup_pre365_all_has_records,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+272,lineup_pre365_all_records,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+273,lineup_pre365_all_games,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+274,lineup_pre365_all_starts,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+275,lineup_pre365_all_substitute_selections,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+276,lineup_pre365_all_captain_selections,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+277,lineup_pre365_all_start_pct,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,19582,15557
+278,lineup_pre365_all_distinct_positions,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+279,lineup_pre365_all_primary_position,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,19582,15557
+280,lineup_pre365_all_first_date,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,19582,15557
+281,lineup_pre365_all_last_date,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,19582,15557
+282,lineup_pre365_origin_has_records,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+283,lineup_pre365_origin_records,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+284,lineup_pre365_origin_games,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+285,lineup_pre365_origin_starts,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+286,lineup_pre365_origin_substitute_selections,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+287,lineup_pre365_origin_captain_selections,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+288,lineup_pre365_origin_start_pct,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,24688,10451
+289,lineup_pre365_origin_distinct_positions,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+290,lineup_pre365_origin_primary_position,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,24688,10451
+291,lineup_pre365_origin_first_date,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,24688,10451
+292,lineup_pre365_origin_last_date,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,24688,10451
+293,lineup_pre730_all_has_records,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+294,lineup_pre730_all_records,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+295,lineup_pre730_all_games,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+296,lineup_pre730_all_starts,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+297,lineup_pre730_all_substitute_selections,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+298,lineup_pre730_all_captain_selections,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+299,lineup_pre730_all_start_pct,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,17475,17664
+300,lineup_pre730_all_distinct_positions,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+301,lineup_pre730_all_primary_position,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,17475,17664
+302,lineup_pre730_all_first_date,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,17475,17664
+303,lineup_pre730_all_last_date,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,17475,17664
+304,lineup_pre730_origin_has_records,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+305,lineup_pre730_origin_records,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+306,lineup_pre730_origin_games,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+307,lineup_pre730_origin_starts,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+308,lineup_pre730_origin_substitute_selections,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+309,lineup_pre730_origin_captain_selections,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+310,lineup_pre730_origin_start_pct,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,23638,11501
+311,lineup_pre730_origin_distinct_positions,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,0,35139
+312,lineup_pre730_origin_primary_position,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,23638,11501
+313,lineup_pre730_origin_first_date,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,23638,11501
+314,lineup_pre730_origin_last_date,pretransfer_selection,game_lineups_clean.csv,Lineup-selection aggregate before transfer.,Permitted pre-transfer feature.,23638,11501
+315,lineup_post12_destination_has_records,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,0,35139
+316,lineup_post12_destination_records,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,0,35139
+317,lineup_post12_destination_games,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,0,35139
+318,lineup_post12_destination_starts,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,0,35139
+319,lineup_post12_destination_substitute_selections,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,0,35139
+320,lineup_post12_destination_captain_selections,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,0,35139
+321,lineup_post12_destination_start_pct,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,24415,10724
+322,lineup_post12_destination_distinct_positions,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,0,35139
+323,lineup_post12_destination_primary_position,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,24415,10724
+324,lineup_post12_destination_first_date,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,24415,10724
+325,lineup_post12_destination_last_date,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,24415,10724
+326,lineup_post24_destination_has_records,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,0,35139
+327,lineup_post24_destination_records,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,0,35139
+328,lineup_post24_destination_games,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,0,35139
+329,lineup_post24_destination_starts,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,0,35139
+330,lineup_post24_destination_substitute_selections,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,0,35139
+331,lineup_post24_destination_captain_selections,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,0,35139
+332,lineup_post24_destination_start_pct,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,23545,11594
+333,lineup_post24_destination_distinct_positions,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,0,35139
+334,lineup_post24_destination_primary_position,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,23545,11594
+335,lineup_post24_destination_first_date,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,23545,11594
+336,lineup_post24_destination_last_date,posttransfer_selection_outcome,game_lineups_clean.csv,Destination lineup-selection aggregate after transfer.,Outcome/diagnostic only.,23545,11594
+337,event_career_pre_has_records,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+338,event_career_pre_games,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+339,event_career_pre_primary_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+340,event_career_pre_goal_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+341,event_career_pre_card_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+342,event_career_pre_shootout_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+343,event_career_pre_substitution_out_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+344,event_career_pre_substitution_in_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+345,event_career_pre_assist_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+346,event_career_pre_first_date,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,19032,16107
+347,event_career_pre_last_date,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,19032,16107
+348,event_pre365_all_has_records,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+349,event_pre365_all_games,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+350,event_pre365_all_primary_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+351,event_pre365_all_goal_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+352,event_pre365_all_card_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+353,event_pre365_all_shootout_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+354,event_pre365_all_substitution_out_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+355,event_pre365_all_substitution_in_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+356,event_pre365_all_assist_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+357,event_pre365_all_first_date,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,22784,12355
+358,event_pre365_all_last_date,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,22784,12355
+359,event_pre365_origin_has_records,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+360,event_pre365_origin_games,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+361,event_pre365_origin_primary_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+362,event_pre365_origin_goal_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+363,event_pre365_origin_card_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+364,event_pre365_origin_shootout_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+365,event_pre365_origin_substitution_out_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+366,event_pre365_origin_substitution_in_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+367,event_pre365_origin_assist_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+368,event_pre365_origin_first_date,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,26404,8735
+369,event_pre365_origin_last_date,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,26404,8735
+370,event_pre730_all_has_records,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+371,event_pre730_all_games,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+372,event_pre730_all_primary_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+373,event_pre730_all_goal_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+374,event_pre730_all_card_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+375,event_pre730_all_shootout_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+376,event_pre730_all_substitution_out_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+377,event_pre730_all_substitution_in_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+378,event_pre730_all_assist_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+379,event_pre730_all_first_date,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,20395,14744
+380,event_pre730_all_last_date,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,20395,14744
+381,event_pre730_origin_has_records,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+382,event_pre730_origin_games,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+383,event_pre730_origin_primary_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+384,event_pre730_origin_goal_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+385,event_pre730_origin_card_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+386,event_pre730_origin_shootout_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+387,event_pre730_origin_substitution_out_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+388,event_pre730_origin_substitution_in_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+389,event_pre730_origin_assist_events,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,0,35139
+390,event_pre730_origin_first_date,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,25180,9959
+391,event_pre730_origin_last_date,pretransfer_event_activity,game_events_clean.csv,Recorded player-event aggregate before transfer.,Permitted feature with event-coverage flag.,25180,9959
+392,event_post12_destination_has_records,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,0,35139
+393,event_post12_destination_games,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,0,35139
+394,event_post12_destination_primary_events,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,0,35139
+395,event_post12_destination_goal_events,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,0,35139
+396,event_post12_destination_card_events,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,0,35139
+397,event_post12_destination_shootout_events,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,0,35139
+398,event_post12_destination_substitution_out_events,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,0,35139
+399,event_post12_destination_substitution_in_events,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,0,35139
+400,event_post12_destination_assist_events,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,0,35139
+401,event_post12_destination_first_date,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,26174,8965
+402,event_post12_destination_last_date,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,26174,8965
+403,event_post24_destination_has_records,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,0,35139
+404,event_post24_destination_games,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,0,35139
+405,event_post24_destination_primary_events,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,0,35139
+406,event_post24_destination_goal_events,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,0,35139
+407,event_post24_destination_card_events,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,0,35139
+408,event_post24_destination_shootout_events,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,0,35139
+409,event_post24_destination_substitution_out_events,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,0,35139
+410,event_post24_destination_substitution_in_events,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,0,35139
+411,event_post24_destination_assist_events,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,0,35139
+412,event_post24_destination_first_date,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,25191,9948
+413,event_post24_destination_last_date,posttransfer_event_outcome,game_events_clean.csv,Destination player-event aggregate after transfer.,Outcome/diagnostic only.,25191,9948
+414,club_origin_pre365_has_records,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+415,club_origin_pre365_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+416,club_origin_pre365_wins,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+417,club_origin_pre365_draws,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+418,club_origin_pre365_losses,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+419,club_origin_pre365_goals_for,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+420,club_origin_pre365_goals_against,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+421,club_origin_pre365_goal_difference,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+422,club_origin_pre365_points,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+423,club_origin_pre365_win_pct,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,20715,14424
+424,club_origin_pre365_points_per_game,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,20715,14424
+425,club_origin_pre365_avg_recorded_position,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,25653,9486
+426,club_origin_pre365_home_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+427,club_origin_pre365_away_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+428,club_origin_pre365_competitions,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+429,club_origin_pre365_domestic_league_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+430,club_origin_pre365_domestic_cup_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+431,club_origin_pre365_international_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+432,club_origin_pre365_dominant_competition_id,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,20715,14424
+433,club_origin_pre365_dominant_competition_name,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,21064,14075
+434,club_origin_pre365_dominant_competition_type,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,21064,14075
+435,club_origin_pre365_first_date,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,20715,14424
+436,club_origin_pre365_last_date,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,20715,14424
+437,club_origin_pre730_has_records,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+438,club_origin_pre730_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+439,club_origin_pre730_wins,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+440,club_origin_pre730_draws,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+441,club_origin_pre730_losses,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+442,club_origin_pre730_goals_for,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+443,club_origin_pre730_goals_against,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+444,club_origin_pre730_goal_difference,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+445,club_origin_pre730_points,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+446,club_origin_pre730_win_pct,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,20192,14947
+447,club_origin_pre730_points_per_game,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,20192,14947
+448,club_origin_pre730_avg_recorded_position,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,25159,9980
+449,club_origin_pre730_home_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+450,club_origin_pre730_away_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+451,club_origin_pre730_competitions,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+452,club_origin_pre730_domestic_league_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+453,club_origin_pre730_domestic_cup_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+454,club_origin_pre730_international_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+455,club_origin_pre730_dominant_competition_id,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,20192,14947
+456,club_origin_pre730_dominant_competition_name,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,20475,14664
+457,club_origin_pre730_dominant_competition_type,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,20475,14664
+458,club_origin_pre730_first_date,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,20192,14947
+459,club_origin_pre730_last_date,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,20192,14947
+460,club_destination_pre365_has_records,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+461,club_destination_pre365_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+462,club_destination_pre365_wins,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+463,club_destination_pre365_draws,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+464,club_destination_pre365_losses,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+465,club_destination_pre365_goals_for,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+466,club_destination_pre365_goals_against,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+467,club_destination_pre365_goal_difference,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+468,club_destination_pre365_points,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+469,club_destination_pre365_win_pct,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,19533,15606
+470,club_destination_pre365_points_per_game,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,19533,15606
+471,club_destination_pre365_avg_recorded_position,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,25554,9585
+472,club_destination_pre365_home_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+473,club_destination_pre365_away_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+474,club_destination_pre365_competitions,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+475,club_destination_pre365_domestic_league_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+476,club_destination_pre365_domestic_cup_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+477,club_destination_pre365_international_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+478,club_destination_pre365_dominant_competition_id,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,19533,15606
+479,club_destination_pre365_dominant_competition_name,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,19994,15145
+480,club_destination_pre365_dominant_competition_type,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,19994,15145
+481,club_destination_pre365_first_date,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,19533,15606
+482,club_destination_pre365_last_date,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,19533,15606
+483,club_destination_pre730_has_records,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+484,club_destination_pre730_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+485,club_destination_pre730_wins,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+486,club_destination_pre730_draws,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+487,club_destination_pre730_losses,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+488,club_destination_pre730_goals_for,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+489,club_destination_pre730_goals_against,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+490,club_destination_pre730_goal_difference,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+491,club_destination_pre730_points,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+492,club_destination_pre730_win_pct,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,18883,16256
+493,club_destination_pre730_points_per_game,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,18883,16256
+494,club_destination_pre730_avg_recorded_position,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,24878,10261
+495,club_destination_pre730_home_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+496,club_destination_pre730_away_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+497,club_destination_pre730_competitions,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+498,club_destination_pre730_domestic_league_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+499,club_destination_pre730_domestic_cup_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+500,club_destination_pre730_international_games,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,0,35139
+501,club_destination_pre730_dominant_competition_id,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,18883,16256
+502,club_destination_pre730_dominant_competition_name,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,19271,15868
+503,club_destination_pre730_dominant_competition_type,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,19271,15868
+504,club_destination_pre730_first_date,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,18883,16256
+505,club_destination_pre730_last_date,pretransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Club-match aggregate strictly before transfer.,Permitted pre-transfer feature.,18883,16256
+506,club_destination_post12_has_records,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+507,club_destination_post12_games,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+508,club_destination_post12_wins,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+509,club_destination_post12_draws,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+510,club_destination_post12_losses,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+511,club_destination_post12_goals_for,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+512,club_destination_post12_goals_against,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+513,club_destination_post12_goal_difference,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+514,club_destination_post12_points,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+515,club_destination_post12_win_pct,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,19396,15743
+516,club_destination_post12_points_per_game,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,19396,15743
+517,club_destination_post12_avg_recorded_position,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,25280,9859
+518,club_destination_post12_home_games,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+519,club_destination_post12_away_games,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+520,club_destination_post12_competitions,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+521,club_destination_post12_domestic_league_games,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+522,club_destination_post12_domestic_cup_games,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+523,club_destination_post12_international_games,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+524,club_destination_post12_dominant_competition_id,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,19396,15743
+525,club_destination_post12_dominant_competition_name,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,19808,15331
+526,club_destination_post12_dominant_competition_type,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,19808,15331
+527,club_destination_post12_first_date,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,19396,15743
+528,club_destination_post12_last_date,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,19396,15743
+529,club_destination_post24_has_records,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+530,club_destination_post24_games,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+531,club_destination_post24_wins,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+532,club_destination_post24_draws,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+533,club_destination_post24_losses,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+534,club_destination_post24_goals_for,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+535,club_destination_post24_goals_against,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+536,club_destination_post24_goal_difference,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+537,club_destination_post24_points,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+538,club_destination_post24_win_pct,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,18364,16775
+539,club_destination_post24_points_per_game,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,18364,16775
+540,club_destination_post24_avg_recorded_position,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,24140,10999
+541,club_destination_post24_home_games,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+542,club_destination_post24_away_games,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+543,club_destination_post24_competitions,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+544,club_destination_post24_domestic_league_games,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+545,club_destination_post24_domestic_cup_games,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+546,club_destination_post24_international_games,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,0,35139
+547,club_destination_post24_dominant_competition_id,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,18364,16775
+548,club_destination_post24_dominant_competition_name,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,18745,16394
+549,club_destination_post24_dominant_competition_type,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,18745,16394
+550,club_destination_post24_first_date,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,18364,16775
+551,club_destination_post24_last_date,posttransfer_club_context,games_clean.csv + club_games_clean.csv + competitions_clean.csv,Destination-club match aggregate after transfer.,Coverage/outcome only.,18364,16775
+552,component_valuation_joined,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+553,component_appearance_joined,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+554,component_lineup_joined,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+555,component_event_joined,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+556,component_club_context_joined,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+557,player_age_at_transfer,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,27,35112
+558,player_age_at_transfer_plausible_15_45,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+559,has_positive_reported_fee,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+560,movement_type_unresolved,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+561,transfer_date_before_first_club_game,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+562,transfer_date_after_latest_club_game,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+563,transfer_date_after_latest_valuation,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+564,sporting_post12_horizon_observable,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+565,sporting_post24_horizon_observable,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+566,has_pretransfer_valuation_365d,pretransfer_valuation,player_valuations_clean.csv,Valuation information dated on or before transfer.,Permitted feature subject to staleness flag.,0,35139
+567,has_post12_valuation_90d,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+568,has_post24_valuation_90d,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+569,has_pre365_appearance_records,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+570,has_destination_game_coverage_12m,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+571,has_destination_game_coverage_24m,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+572,eligible_sporting_12m_provisional,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+573,eligible_sporting_24m_provisional,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+574,eligible_financial_12m_provisional,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+575,eligible_financial_24m_provisional,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+576,eligible_combined_24m_provisional,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139
+577,provisional_exclusion_reasons,derived_flag_or_metric,derived,"Derived timing, coverage, eligibility, or quality-control field.",Follow field name and timing prefix; provisional flags are not predictors.,0,35139

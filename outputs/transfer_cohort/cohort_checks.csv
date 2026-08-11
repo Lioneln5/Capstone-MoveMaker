@@ -1,0 +1,12 @@
+﻿check,actual,expected,status,notes
+Transfer event ID uniqueness,17060,17060,OK,One row per source transfer key
+Cohort start boundary,2018-07-01,>= 2018-07-01,OK,No early records
+Cohort end boundary,2024-02-27,<= 2024-02-27,OK,Full 24m valuation horizon
+Pre-valuations do not occur after transfer,0,0,OK,As-of join leakage check
+Eligible 24m valuations meet tolerance,0,0,OK,Outcome timing check
+Negative transfer fees,0,0,OK,Sign check
+Negative appearance minutes,0,0,OK,Sporting metric sign check
+Combined sample subset of sporting,0,0,OK,Eligibility reconciliation
+Combined sample subset of financial,0,0,OK,Eligibility reconciliation
+Transfer-season label/date mismatches,174,0,WARNING,Transfer date remains the authoritative time field; review mismatched labels
+Ages outside 15-45,317,0,WARNING,Retained as a review flag rather than silently filtered

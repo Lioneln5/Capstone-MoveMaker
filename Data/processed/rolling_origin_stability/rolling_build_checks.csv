@@ -21,7 +21,7 @@ all_hyperparameters_selected_from_origin_validation,blocking,True,,none,No evalu
 tuning_has_no_evaluation_metrics,blocking,True,,none,Tuning artifacts contain validation diagnostics only.
 prediction_row_count_complete,blocking,True,8115,8115,Every selected specification scores every eligible evaluation row.
 all_predictions_finite,blocking,True,0,0,Every rolling evaluation prediction is finite.
-opportunity_predictions_bounded,blocking,True,min=0.000000;max=0.833754,"within [0,1]",Opportunity predictions respect their natural support at every origin.
+opportunity_predictions_bounded,blocking,True,min=0.069784;max=1.000000,"within [0,1]",Opportunity predictions respect their natural support at every origin.
 evaluation_keys_match_all_specs,blocking,True,0,0,Model and feature choices never change a target-origin evaluation cohort.
 origin_2022_exactly_reproduces_prior_ablation,blocking,True,matched_rows=45,45 exact specifications,The terminal rolling origin is an exact extension of the prior one-shot experiment.
 policy_selection_grid_complete,blocking,True,36,36,"Every origin has baseline-only, full-only, and all-grid validation policies."

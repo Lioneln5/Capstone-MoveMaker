@@ -35,7 +35,8 @@ for dependency_dir in [ROOT / "models", ROOT / "scripts"]:
 
 import run_coarse_club_context_diagnostic as coarse
 import run_opportunity_transferability_decomposition as opportunity
-from train_compatibility_models import fit_preprocessor, sha256_file
+from mixed_type_preprocessor import fit_preprocessor
+from train_compatibility_models import sha256_file
 
 
 MASTER_PATH = coarse.MASTER_PATH

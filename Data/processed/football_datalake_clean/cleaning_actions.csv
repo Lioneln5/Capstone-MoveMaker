@@ -1,0 +1,11 @@
+﻿action_order,scope,action,detail
+1,all,exact_backup,Copied every received CSV byte-for-byte and verified SHA-256 equality.
+2,all,preserve_rows,Retained every source row; no deduplication or imputation.
+3,all,standardize_blank,Converted blank/whitespace-only strings to missing values.
+4,ids,canonical_id,Canonicalized numeric-looking IDs without changing alphanumeric competition IDs.
+5,dates_and_metrics,strict_parse,Strictly parsed configured dates and numeric metrics; invalid values became missing and were counted.
+6,natural_keys,flag_key_issues,Added missing-key and duplicate-key flags; problematic rows remain present.
+7,names,add_normalized_helpers,Added matching helpers while preserving original display strings and mojibake evidence.
+8,transfer_history,classify_fee_state,"Classified literal zero as unclassified_zero, never automatically free transfer."
+9,snapshot_tables,flag_leakage,Marked current/latest profile and latest-value fields as historical leakage risks.
+10,fact_tables,add_availability_and_consistency_flags,"Added metric availability, date consistency, standings arithmetic, and relationship diagnostics."

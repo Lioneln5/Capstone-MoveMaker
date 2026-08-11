@@ -248,23 +248,6 @@ def select_portfolio(cohort: pd.DataFrame) -> pd.DataFrame:
     warnings["selection_reason"] = warnings.apply(
         lambda row: selection_reason("confirmed_warning", row["role_name"]), axis=1
     )
-    # The corrected encoder can leave one role without any confirmed-warning
-    # example. Preserve the declared three-warning portfolio by filling from
-    # the strongest remaining warning instead of fabricating a missing role.
-    if len(warnings) < 3:
-        remaining_warnings = warning_candidates.loc[
-            ~warning_candidates["canonical_performance_id"].isin(
-                warnings["canonical_performance_id"]
-            )
-        ].sort_values(
-            ["mean_two_target_mae_improvement", "canonical_player_name"],
-            ascending=[False, True],
-        ).head(3 - len(warnings))
-        remaining_warnings["selection_reason"] = (
-            "Highest remaining confirmed warning because the corrected predictions "
-            "did not produce a confirmed-warning case in every role."
-        )
-        warnings = pd.concat([warnings, remaining_warnings], ignore_index=True)
     selections.append(warnings)
 
     tradeoffs = cohort.loc[
@@ -1105,7 +1088,7 @@ def run() -> None:
     pd.DataFrame(
         [
             {
-                "source_file": path.relative_to(ROOT).as_posix(),
+                "source_file": str(path.relative_to(ROOT)).replace("/", "\\"),
                 "sha256": sha256_file(path),
                 "bytes": path.stat().st_size,
             }
@@ -1121,7 +1104,7 @@ This layer converts the verified rolling-origin predictions into twelve leakage-
 
 - Mature rolling origins: origin_2020, origin_2021, and origin_2022.
 - A transfer must have both opportunity and performance predictions under the frozen subgroup-phase candidates and their same-family player-history baselines.
-- Opportunity candidate: full explicit fit plus gradient-boosted trees.
+- Opportunity candidate: full explicit fit plus elastic net.
 - Performance candidate: full explicit fit plus gradient-boosted trees.
 
 ## Case categories

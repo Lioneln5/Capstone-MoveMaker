@@ -1,0 +1,50 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "check": "required_outputs",
+      "status": "pass",
+      "detail": "All required audit artifacts exist."
+    },
+    {
+      "check": "table_cardinality",
+      "status": "pass",
+      "detail": "manifest=11, summaries=11, key checks=11"
+    },
+    {
+      "check": "row_total_reconciliation",
+      "status": "pass",
+      "detail": "Total=5,605,055"
+    },
+    {
+      "check": "lfs_resolution",
+      "status": "pass",
+      "detail": "No audited source remains a Git LFS pointer."
+    },
+    {
+      "check": "source_row_recount",
+      "status": "pass",
+      "detail": "Independent CSV recount matches every manifest."
+    },
+    {
+      "check": "key_math",
+      "status": "pass",
+      "detail": "rows - null-key rows - unique keys equals duplicate-key rows for every table."
+    },
+    {
+      "check": "valuation_conflict_reconciliation",
+      "status": "pass",
+      "detail": "Conflicts=187"
+    },
+    {
+      "check": "performance_metric_reconciliation",
+      "status": "pass",
+      "detail": "All six metrics use one shared-key population."
+    },
+    {
+      "check": "performance_summary_reconciliation",
+      "status": "pass",
+      "detail": "Shared keys=159101"
+    }
+  ]
+}

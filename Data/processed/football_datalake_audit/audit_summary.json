@@ -1,0 +1,51 @@
+{
+  "audit_date": "2026-08-07",
+  "tables": 11,
+  "source_rows": 5605055,
+  "all_lfs_objects_resolved": true,
+  "tables_with_duplicate_keys": [
+    "player_injuries",
+    "player_national_performances",
+    "team_competitions_seasons",
+    "transfer_history"
+  ],
+  "tables_with_row_count_variance": [
+    "player_market_value",
+    "team_competitions_seasons"
+  ],
+  "mojibake_cells": 8499,
+  "valuation_overlap": {
+    "current_valuation_players": 31507,
+    "new_valuation_players": 69441,
+    "shared_valuation_players": 22926,
+    "current_valuation_rows": 507815,
+    "new_valuation_rows": 901429,
+    "shared_player_date_keys": 410,
+    "matching_player_date_values": 223,
+    "differing_player_date_values": 187,
+    "latest_rows": 69441,
+    "latest_exact_vs_history": 69441,
+    "latest_date_mismatch": 0,
+    "latest_value_mismatch": 0
+  },
+  "transfer_overlap": {
+    "current_transfer_rows": 35139,
+    "new_transfer_rows": 1101440,
+    "current_transfer_players": 4345,
+    "new_transfer_players": 117944,
+    "shared_transfer_players": 3654,
+    "shared_transfer_event_keys": 30180,
+    "matching_fees_on_shared_keys": 19728,
+    "differing_fees_on_shared_keys": 38,
+    "matching_values_on_shared_keys": 18867,
+    "differing_values_on_shared_keys": 175
+  },
+  "performance_reconciliation": {
+    "current_aggregated_performance_keys": 196566,
+    "new_performance_rows": 1878719,
+    "shared_performance_keys": 159101,
+    "new_performance_players": 88375
+  },
+  "recommendation_count": 14,
+  "blocking_recommendation_count": 3
+}

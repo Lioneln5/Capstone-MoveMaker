@@ -28,6 +28,6 @@ adaptation_validation_prediction_keys_match,blocking,True,mean_only:44;player_hi
 adaptation_test_prediction_keys_match,blocking,True,mean_only:37;player_history_baseline:37;strict_compatibility:37,"identical across mean, baseline, compatibility",Every model is scored on the identical destination player-season cohort.
 adaptation_actual_is_unique_by_key,blocking,True,0,0,All variants share one canonical actual outcome per destination player-season.
 all_predictions_finite,blocking,True,0,0,The exported scoring rows contain no NaN or infinite values.
-opportunity_predictions_bounded,blocking,True,min=0.232471;max=0.831818,"within [0,1]",Opportunity predictions are clipped only after fitting to respect the target support.
-selected_alphas_from_declared_grid,blocking,True,1.0;10.0,0.0001;0.001;0.01;0.1;1.0;10.0;100.0,Hyperparameters are selected only from the declared grid using 2022 validation MAE.
+opportunity_predictions_bounded,blocking,True,min=0.279754;max=0.724281,"within [0,1]",Opportunity predictions are clipped only after fitting to respect the target support.
+selected_alphas_from_declared_grid,blocking,True,1.0;10.0;100.0,0.0001;0.001;0.01;0.1;1.0;10.0;100.0,Hyperparameters are selected only from the declared grid using 2022 validation MAE.
 test_rows_not_in_tuning_table,blocking,True,target_key;target_column;model_variant;alpha;train_rows;validation_rows;raw_feature_count;encoded_feature_count;n;mae;rmse;r2;pearson;spearman;actual_mean;predicted_mean;actual_std,no test fields,The tuning artifact contains only train and validation sample sizes and metrics.

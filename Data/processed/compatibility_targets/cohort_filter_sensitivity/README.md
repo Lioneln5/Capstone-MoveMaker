@@ -10,37 +10,37 @@ Effect changes within +/-0.001 MAE are described as approximately unchanged. A c
 
 ### Opportunity
 
-Primary ridge compatibility improvement: 0.002999, 95% CI [-0.007879, 0.014107], pooled evaluation n=207.
+Primary ridge compatibility improvement: 0.044804, 95% CI [0.029543, 0.060442], pooled evaluation n=207.
 
-- `all_season_arrivals`: eligible cohort 398 (+86); pooled n 262 (+55); improvement 0.001039, which decreased the point effect; CI [-0.006799, 0.009145] was meaningfully tighter.
-- `no_destination_minutes_threshold`: eligible cohort 312 (+0); pooled n 207 (+0); improvement 0.002999, which left approximately unchanged the point effect; CI [-0.007879, 0.014107] was not meaningfully changed.
-- `all_roles`: eligible cohort 335 (+23); pooled n 222 (+15); improvement 0.000317, which decreased the point effect; CI [-0.007361, 0.008180] was meaningfully tighter.
-- `fully_relaxed`: eligible cohort 424 (+112); pooled n 279 (+72); improvement 0.001245, which decreased the point effect; CI [-0.006682, 0.009434] was meaningfully tighter.
+- `all_season_arrivals`: eligible cohort 398 (+86); pooled n 262 (+55); improvement 0.005769, which decreased the point effect; CI [-0.001541, 0.013376] was meaningfully tighter.
+- `no_destination_minutes_threshold`: eligible cohort 312 (+0); pooled n 207 (+0); improvement 0.044804, which left approximately unchanged the point effect; CI [0.029543, 0.060442] was not meaningfully changed.
+- `all_roles`: eligible cohort 335 (+23); pooled n 222 (+15); improvement -0.000509, which decreased the point effect; CI [-0.007834, 0.007282] was meaningfully tighter.
+- `fully_relaxed`: eligible cohort 424 (+112); pooled n 279 (+72); improvement 0.010270, which decreased the point effect; CI [-0.001053, 0.021817] was meaningfully tighter.
 
 ### Performance
 
-Primary ridge compatibility improvement: 0.013405, 95% CI [0.005459, 0.020917], pooled evaluation n=172.
+Primary ridge compatibility improvement: 0.158404, 95% CI [0.119592, 0.197163], pooled evaluation n=172.
 
-- `all_season_arrivals`: eligible cohort 332 (+61); pooled n 212 (+40); improvement 0.000666, which decreased the point effect; CI [-0.007851, 0.009336] was meaningfully wider.
-- `no_destination_minutes_threshold`: eligible cohort 312 (+41); pooled n 207 (+35); improvement 0.007005, which decreased the point effect; CI [-0.001017, 0.015122] was not meaningfully changed.
-- `all_roles`: eligible cohort 271 (+0); pooled n 172 (+0); improvement 0.013405, which left approximately unchanged the point effect; CI [0.005459, 0.020917] was not meaningfully changed.
-- `fully_relaxed`: eligible cohort 398 (+127); pooled n 262 (+90); improvement 0.016972, which increased the point effect; CI [0.007666, 0.026296] was meaningfully wider.
+- `all_season_arrivals`: eligible cohort 332 (+61); pooled n 212 (+40); improvement 0.720830, which increased the point effect; CI [0.575832, 0.865559] was meaningfully wider.
+- `no_destination_minutes_threshold`: eligible cohort 312 (+41); pooled n 207 (+35); improvement 0.162194, which increased the point effect; CI [0.122869, 0.200710] was not meaningfully changed.
+- `all_roles`: eligible cohort 271 (+0); pooled n 172 (+0); improvement 0.158404, which left approximately unchanged the point effect; CI [0.119592, 0.197163] was not meaningfully changed.
+- `fully_relaxed`: eligible cohort 398 (+127); pooled n 262 (+90); improvement 0.013098, which decreased the point effect; CI [0.006053, 0.019779] was meaningfully tighter.
 
 ### Adaptation
 
-Primary ridge compatibility improvement: -0.003910, 95% CI [-0.012700, 0.005108], pooled evaluation n=162.
+Primary ridge compatibility improvement: 0.047997, 95% CI [0.031995, 0.063763], pooled evaluation n=162.
 
-- `all_season_arrivals`: eligible cohort 317 (+61); pooled n 202 (+40); improvement -0.002609, which increased the point effect; CI [-0.013469, 0.008401] was meaningfully wider.
-- `no_destination_minutes_threshold`: eligible cohort 289 (+33); pooled n 189 (+27); improvement 0.001028, which increased the point effect; CI [-0.003451, 0.005510] was meaningfully tighter.
-- `all_roles`: eligible cohort 256 (+0); pooled n 162 (+0); improvement -0.003910, which left approximately unchanged the point effect; CI [-0.012700, 0.005108] was not meaningfully changed.
-- `fully_relaxed`: eligible cohort 373 (+117); pooled n 243 (+81); improvement 0.002977, which increased the point effect; CI [-0.006575, 0.012237] was not meaningfully changed.
+- `all_season_arrivals`: eligible cohort 317 (+61); pooled n 202 (+40); improvement 0.450833, which increased the point effect; CI [0.365421, 0.534800] was meaningfully wider.
+- `no_destination_minutes_threshold`: eligible cohort 289 (+33); pooled n 189 (+27); improvement 0.052886, which increased the point effect; CI [0.037168, 0.066960] was not meaningfully changed.
+- `all_roles`: eligible cohort 256 (+0); pooled n 162 (+0); improvement 0.047997, which left approximately unchanged the point effect; CI [0.031995, 0.063763] was not meaningfully changed.
+- `fully_relaxed`: eligible cohort 373 (+117); pooled n 243 (+81); improvement -1.327447, which decreased the point effect; CI [-1.560764, -1.084178] was meaningfully wider.
 
 ## Plain pattern
 
-- Opportunity does not strengthen with more rows. The primary improvement is 0.002999; it falls to 0.001039 with all-season arrivals, 0.000317 with all roles, and 0.001245 when fully relaxed. Those broader intervals are tighter because n grows, but they center much closer to zero.
-- Removing only the destination-minute threshold changes performance from 0.013405 to 0.007005 and adaptation from -0.003910 to 0.001028; neither confidence interval tightens meaningfully. That filter is not the main sample-size limiter.
-- The all-season performance and adaptation jumps are instability warnings, not clean strengthening. Their first-origin improvements are -0.022290 and -0.008476, respectively, while later-origin changes are near zero and the pooled intervals widen. Fully relaxed adaptation reverses sharply because its first-origin improvement is -0.007764.
-- The fully relaxed performance cohort is the largest performance comparison and has a much smaller effect (0.016972) with a tighter interval. Fully relaxed adaptation becomes highly unstable (0.002977). Across targets, cohort composition and early-origin ridge extrapolation matter more than raw row count alone.
+- Opportunity does not strengthen with more rows. The primary improvement is 0.044804; it falls to 0.005769 with all-season arrivals, -0.000509 with all roles, and 0.010270 when fully relaxed. Those broader intervals are tighter because n grows, but they center much closer to zero.
+- Removing only the destination-minute threshold changes performance from 0.158404 to 0.162194 and adaptation from 0.047997 to 0.052886; neither confidence interval tightens meaningfully. That filter is not the main sample-size limiter.
+- The all-season performance and adaptation jumps are instability warnings, not clean strengthening. Their first-origin improvements are 2.708946 and 1.829156, respectively, while later-origin changes are near zero and the pooled intervals widen. Fully relaxed adaptation reverses sharply because its first-origin improvement is -5.754830.
+- The fully relaxed performance cohort is the largest performance comparison and has a much smaller effect (0.013098) with a tighter interval. Fully relaxed adaptation becomes highly unstable (-1.327447). Across targets, cohort composition and early-origin ridge extrapolation matter more than raw row count alone.
 
 ## Interpretation boundary
 

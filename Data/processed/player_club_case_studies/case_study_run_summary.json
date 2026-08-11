@@ -12,7 +12,7 @@
   "target_prediction_rows": 24,
   "player_style_rows": 96,
   "context_preference_rows": 72,
-  "statsbomb_supplement_cases": 2,
+  "statsbomb_supplement_cases": 3,
   "blocking_checks": 11,
   "blocking_failures": 0
 }

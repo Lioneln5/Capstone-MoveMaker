@@ -6,7 +6,7 @@ This layer converts the verified rolling-origin predictions into twelve leakage-
 
 - Mature rolling origins: origin_2020, origin_2021, and origin_2022.
 - A transfer must have both opportunity and performance predictions under the frozen subgroup-phase candidates and their same-family player-history baselines.
-- Opportunity candidate: full explicit fit plus gradient-boosted trees.
+- Opportunity candidate: full explicit fit plus elastic net.
 - Performance candidate: full explicit fit plus gradient-boosted trees.
 
 ## Case categories

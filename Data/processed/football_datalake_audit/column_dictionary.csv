@@ -1,0 +1,139 @@
+﻿table,column,expected_type,rows,nonblank_count,missing_count,missing_pct,zero_literal_count,invalid_typed_values,min_value,max_value,mojibake_cells,sample_values
+player_injuries,player_id,numeric,143195,143195,0,0.0,0,0,2.0,1396965.0,0,10 | 70950 | 7095 | 70953 | 709500
+player_injuries,season_name,text,143195,143195,0,0.0,0,0,,,0,15/16 | 14/15 | 13/14 | 12/13 | 09/10
+player_injuries,injury_reason,text,143195,143195,0,0.0,0,0,,,0,Hand injury | Thigh problems | Capsular injury | Rest | Hamstring injury
+player_injuries,from_date,date,143195,143173,22,0.00015363664932434792,0,0,1973-09-02T00:00:00,2025-12-22T00:00:00,0,2016-04-19 | 2015-12-18 | 2015-11-11 | 2015-11-04 | 2015-08-20
+player_injuries,end_date,date,143195,141672,1523,0.010635846223680995,0,0,1973-09-06T00:00:00,2026-09-01T00:00:00,0,2016-04-29 | 2015-12-31 | 2015-11-21 | 2015-11-06 | 2015-10-08
+player_injuries,days_missed,numeric,143195,143173,22,0.00015363664932434792,0,0,1.0,8655.0,0,11.0 | 14.0 | 3.0 | 50.0 | 28.0
+player_injuries,games_missed,numeric,143195,143195,0,0.0,6479,0,0.0,208.0,0,2 | 1 | 0 | 10 | 4
+player_latest_market_value,player_id,numeric,69441,69441,0,0.0,0,0,1.0,1407924.0,0,1 | 6 | 8 | 10 | 11
+player_latest_market_value,date_unix,date,69441,69441,0,0.0,0,0,2004-10-03T00:00:00,2025-09-11T00:00:00,0,2009-04-22 | 2010-08-01 | 2010-01-01 | 2016-06-30 | 2009-03-18
+player_latest_market_value,value,numeric,69441,69441,0,0.0,35851,0,0.0,200000000.0,0,0.0
+player_market_value,player_id,numeric,901429,901429,0,0.0,0,0,1.0,1407924.0,0,1000135 | 10 | 163222 | 267382 | 267411
+player_market_value,date_unix,date,901429,901429,0,0.0,0,0,2003-12-14T00:00:00,2025-09-11T00:00:00,0,2023-12-19 | 2024-06-23 | 2005-01-06 | 2008-06-03 | 2009-08-29
+player_market_value,value,numeric,901429,901429,0,0.0,48009,0,0.0,200000000.0,0,100000.0 | 9000000.0 | 20000000.0 | 12000000.0 | 5000000.0
+player_national_performances,player_id,numeric,92701,92701,0,0.0,0,0,1.0,1428280.0,0,1 | 10001 | 10 | 10000
+player_national_performances,team_id,numeric,92701,92701,0,0.0,0,0,3262.0,134572.0,0,9067 | 17368 | 17662 | 3509 | 21103
+player_national_performances,matches,numeric,92701,92701,0,0.0,12062,0,0.0,223.0,0,1 | 8 | 14 | 11 | 2
+player_national_performances,goals,numeric,92701,92701,0,0.0,65322,0,0.0,141.0,0,0 | 3 | 8 | 71
+player_national_performances,shirt_number,numeric,92701,92701,0,0.0,52915,0,0.0,255.0,0,0 | 18 | 11
+player_national_performances,debut,date,92701,0,92701,1.0,0,0,,,0,
+player_national_performances,coach_id,numeric,92701,55779,36922,0.39829128056871016,0,0,2.0,147663.0,0,4275.0 | 2693.0 | 680.0 | 461.0 | 7817.0
+player_national_performances,debut_game_id,numeric,92701,62354,30347,0.3273643218519757,0,0,263.0,4729550.0,0,2633677.0 | 2359032.0 | 3540763.0 | 2974213.0 | 972849.0
+player_national_performances,career_state,text,92701,92701,0,0.0,0,0,,,0,FORMER_NATIONAL_PLAYER
+player_performances,player_id,numeric,1878719,1878719,0,0.0,0,0,1.0,1453181.0,0,1 | 121391 | 14820 | 148204 | 184526
+player_performances,season_name,text,1878719,1878719,0,0.0,0,0,,,0,08/09 | 07/08 | 06/07 | 05/06 | 04/05
+player_performances,competition_id,text,1878719,1878719,0,0.0,0,0,,,0,OBLG | RS | L2 | DFB | OL0
+player_performances,competition_name,text,1878719,1878719,0,0.0,0,0,,,0,NOFV-Oberliga Süd | Regionalliga Süd | 2. Bundesliga | DFB-Pokal | Oberliga Bayern
+player_performances,team_id,numeric,1878719,1878719,0,0.0,0,0,1.0,134550.0,0,4825 | 1526 | 996 | 66 | 67
+player_performances,team_name,text,1878719,1878719,0,0.0,0,0,,,3867,FC Eilenburg | FSV Ludwigshafen Oggersheim | TuS Koblenz | SpVgg Unterhaching | SpVgg Unterhaching II
+player_performances,nb_in_group,numeric,1878719,1878719,0,0.0,0,0,1.0,51.0,0,9 | 22 | 10 | 1 | 26
+player_performances,nb_on_pitch,numeric,1878719,1878719,0,0.0,182507,0,0.0,51.0,0,9 | 22 | 4 | 0 | 14
+player_performances,goals,numeric,1878719,1740517,138202,0.07356182590371418,1170451,0,0.0,50.0,0,0.0 | 1.0 | 2.0 | 3.0 | 4.0
+player_performances,assists,numeric,1878719,1878719,0,0.0,1497089,0,0.0,29.0,0,0 | 1 | 6 | 3 | 2
+player_performances,own_goals,numeric,1878719,1878719,0,0.0,1851414,0,0.0,9.0,0,0 | 1
+player_performances,subed_in,numeric,1878719,1878719,0,0.0,985788,0,0.0,38.0,0,0 | 3 | 4 | 12 | 2
+player_performances,subed_out,numeric,1878719,1878719,0,0.0,935339,0,0.0,40.0,0,2 | 8 | 0 | 1 | 6
+player_performances,yellow_cards,numeric,1878719,1878719,0,0.0,1087239,0,0.0,21.0,0,0 | 1 | 2 | 4 | 5
+player_performances,second_yellow_cards,numeric,1878719,1878719,0,0.0,1818879,0,0.0,5.0,0,0 | 1
+player_performances,direct_red_cards,numeric,1878719,1878719,0,0.0,1816205,0,0.0,4.0,0,1 | 0 | 2
+player_performances,penalty_goals,numeric,1878719,1878719,0,0.0,1796411,0,0.0,14.0,0,0 | 1 | 3
+player_performances,minutes_played,numeric,1878719,708161,1170558,0.6230617777325933,0,0,1.0,4590.0,0,1580.0 | 388.0 | 240.0 | 734.0 | 90.0
+player_performances,goals_conceded,numeric,1878719,1878719,0,0.0,1751248,0,-1.0,111.0,0,0 | 9 | 11 | 5 | 13
+player_performances,clean_sheets,numeric,1878719,1878719,0,0.0,1788524,0,0.0,29.0,0,0 | 2 | 1 | 5 | 13
+player_profiles,player_id,numeric,92671,92671,0,0.0,0,0,1.0,1459023.0,0,1 | 100011 | 10 | 10001 | 100001
+player_profiles,player_slug,text,92671,92671,0,0.0,0,0,,,0,silvio-adzic | everton-silva | miroslav-klose | john-thompson | carlos-auzqui
+player_profiles,player_name,text,92671,92151,520,0.005611248394859233,0,0,,,41,Silvio Adzic (1) | Éverton Silva (100011) | Miroslav Klose (10) | John Thompson (10001) | Carlos Auzqui (100001)
+player_profiles,player_image_url,text,92671,92671,0,0.0,0,0,,,0,https://img.a.transfermarkt.technology/portrait/header/1-1465832419.jpg | https://img.a.transfermarkt.technology/portrait/header/s_100011_15172_2010_1.jpg | https://img.a.transfermarkt.technology/portrait/header/10-1448468291.jpg | https://img.a.transfermarkt.technology/portrait/header/default.jpg | https://img.a.transfermarkt.technology/portrait/header/100001-1604497657.jpg
+player_profiles,name_in_home_country,text,92671,49653,43018,0.4642013143270279,0,0,,,75,Éverton José Modesto da Silva | Miroslav Josef Klose | John Paul Thompson | Carlos Daniel Auzqui | Matheo Manuel André Sánchez
+player_profiles,date_of_birth,date,92671,91665,1006,0.010855607471593054,0,0,1952-02-13T00:00:00,2010-10-12T00:00:00,0,1980-09-23 | 1988-08-04 | 1978-06-09 | 1981-10-12 | 1991-03-16
+player_profiles,place_of_birth,text,92671,76038,16633,0.1794844125994108,0,0,,,223,Grünstadt | São João de Meriti | Opole | Dublin | Longchamps
+player_profiles,country_of_birth,text,92671,76026,16645,0.17961390294698448,0,0,,,0,Germany | Brazil | Ireland | Argentina | France
+player_profiles,height,numeric,92671,92667,4,4.316344919122487e-05,18867,0,0.0,210.0,0,0.0 | 171.0 | 184.0 | 183.0 | 180.0
+player_profiles,citizenship,text,92671,92643,28,0.0003021441443385741,0,0,,,0,Germany | Brazil | Ireland | Argentina | France  Nigeria
+player_profiles,is_eu,text,92671,92671,0,0.0,0,0,,,0,True | False
+player_profiles,position,text,92671,92669,2,2.1581724595612436e-05,0,0,,,0,Attack - Right Winger | Defender - Right-Back | Attack - Centre-Forward | Midfield - Defensive Midfield | Attack - Left Winger
+player_profiles,main_position,text,92671,92669,2,2.1581724595612436e-05,0,0,,,0,Attack | Defender | Midfield
+player_profiles,foot,text,92671,70881,21790,0.23513288946919747,0,0,,,0,N/A | right | both
+player_profiles,current_club_id,numeric,92671,92671,0,0.0,0,0,1.0,134553.0,0,123 | 515 | 14554 | 75 | 42457
+player_profiles,current_club_name,text,92671,92671,0,0.0,0,0,,,167,Retired | Without Club | Club Atlético Tucumán | Unknown | Club Atlético Antoniano
+player_profiles,joined,date,92671,89289,3382,0.03649469629118063,0,0,1988-07-01T00:00:00,2025-09-13T00:00:00,0,2017-07-01 | 2025-03-01 | 2016-07-01 | 2013-07-01 | 2025-01-30
+player_profiles,contract_expires,date,92671,38666,54005,0.5827605183930248,0,0,2025-01-01T00:00:00,2035-06-30T00:00:00,0,2025-12-31 | 2026-06-30 | 2028-06-30 | 2026-12-31 | 2027-06-30
+player_profiles,outfitter,text,92671,5958,86713,0.9357080424296705,0,0,,,0,Nike | Puma | Mizuno | adidas
+player_profiles,social_media_url,text,92671,20337,72334,0.7805462334495149,0,0,,,0,http://miroslavklose.de/ | http://www.instagram.com/auzqui91/ | http://www.instagram.com/0fficial_nimfa/ | http://www.instagram.com/malcolm_rgn/ | http://www.instagram.com/jeddrew__/
+player_profiles,player_agent_id,numeric,92671,38057,54614,0.5893321535323888,0,0,1.0,15015.0,0,8373 | 1126 | 5240 | 1406 | 2759
+player_profiles,player_agent_name,text,92671,42880,49791,0.5372878246700694,0,0,,,4,RN Sports | ASBW Sport Marketing | OLLER GROUP | YOU FIRST | BESTWAY SOCCER ...
+player_profiles,contract_option,text,92671,3571,89100,0.961465830734534,0,0,,,0,club option 1 year | club option 2 years
+player_profiles,date_of_last_contract_extension,date,92671,8363,84308,0.9097560186034466,0,0,2015-07-31T00:00:00,2029-12-17T00:00:00,0,2025-01-25 | 2023-06-30 | 2025-07-06 | 2025-02-07 | 2025-01-16
+player_profiles,on_loan_from_club_id,numeric,92671,3758,88913,0.9594479394848442,0,0,2.0,132806.0,0,87 | 11141 | 40188 | 43049 | 698
+player_profiles,on_loan_from_club_name,text,92671,3758,88913,0.9594479394848442,0,0,,,3,SV Werder Bremen II | Toronto FC | Atlético de San Luis | York Lions (York University) | Bristol City
+player_profiles,contract_there_expires,date,92671,2506,90165,0.9729580990816976,0,0,2025-06-30T00:00:00,2033-06-30T00:00:00,0,2027-06-30 | 2027-12-31 | 2025-12-31 | 2030-06-30 | 2029-06-30
+player_profiles,second_club_url,text,92671,978,91693,0.9894465366727455,0,0,,,0,/sc-braga-b/startseite/verein/10789 | /juventus-turin-uefa-u19/startseite/verein/41592 | /ac-pisa-1909-u19/startseite/verein/14821 | /ea-guingamp/startseite/verein/855 | /club-athletico-paranaense/startseite/verein/679
+player_profiles,second_club_name,text,92671,978,91693,0.9894465366727455,0,0,,,2,SC Braga B (#51) | Juventus FC UEFA U19 (#21) | Pisa Primavera | EA Guingamp (#40) | Club Athletico Paranaense (#53)
+player_profiles,third_club_url,text,92671,42,92629,0.9995467837834922,0,0,,,0,/inter-mailand-uefa-u19/startseite/verein/62104 | /krc-genk-uefa-u19/startseite/verein/76579 | /wuhan-three-towns-b/startseite/verein/125741 | /zaglebie-lubin-u19/startseite/verein/15535 | /ac-mailand-uefa-u19/startseite/verein/41579
+player_profiles,third_club_name,text,92671,42,92629,0.9995467837834922,0,0,,,0,Inter Milan UEFA U19 (#11) | KRC Genk UEFA U19 | Wuhan Three Towns B (#41) | Zaglebie Lubin U19 | AC Milan UEFA U19 (#8)
+player_profiles,fourth_club_url,text,92671,1,92670,0.9999892091377022,0,0,,,0,/benfica-lissabon-u23/startseite/verein/68780
+player_profiles,fourth_club_name,text,92671,1,92670,0.9999892091377022,0,0,,,0,SL Benfica U23
+player_profiles,date_of_death,date,92671,272,92399,0.9970648854549967,0,272,,,0,02.07.2022 (58) | 15.08.2009 (26) | 04.02.2021 (30) | 19.03.2025 (43) | 25.10.2024 (55)
+player_teammates_played_with,player_id,numeric,1257342,1257342,0,0.0,0,0,5.0,1458683.0,0,100001 | 1166516 | 1166534 | 166317 | 166281
+player_teammates_played_with,teammate_player_id,numeric,1257342,1257342,0,0.0,0,0,45.0,1458255.0,0,116163 | 184672 | 222052 | 117874 | 533568
+player_teammates_played_with,teammate_player_name,text,1257342,1257342,0,0.0,0,0,,,428,Leonardo Jara | Guido Carrillo | Gastón Gil Romero | Rafael Pérez | Nahuel Tenaglia
+player_teammates_played_with,ppg_played_with,numeric,1257342,1220262,37080,0.029490782937339245,0,0,0.02,3.0,0,1.69 | 1.74 | 1.64 | 1.65 | 1.77
+player_teammates_played_with,joint_goal_participation,numeric,1257342,222165,1035177,0.8233058308717914,0,0,1.0,80.0,0,2.0 | 4.0 | 1.0 | 5.0 | 19.0
+player_teammates_played_with,minutes_played_with,numeric,1257342,453189,804153,0.6395658460466603,2991,0,0.0,999.0,0,888.0 | 916.0 | 868.0 | 849.0 | 635.0
+team_children,parent_team_id,numeric,7695,7695,0,0.0,0,0,1.0,132806.0,0,10370 | 1060 | 1055
+team_children,parent_team_name,text,7695,7695,0,0.0,0,0,,,38,Racing Club Harelbeke | Colchester United | Enköpings SK
+team_children,child_team_id,numeric,7695,7695,0,0.0,0,0,1.0,134550.0,0,10370 | 81362 | 78589 | 1060 | 45633
+team_children,child_team_name,text,7695,7695,0,0.0,0,0,,,34,Racing Club Harelbeke | Racing Harelbeke U21 | Racing Harelbeke Jugend | Colchester United | Colchester United U21
+team_children,_last_modified_at,date,7695,7695,0,0.0,0,0,2025-09-11T18:16:45,2025-09-13T13:38:39,0,2025-09-13 13:11:27 | 2025-09-13 10:18:58 | 2025-09-13 11:13:00
+team_competitions_seasons,club_division,text,58247,58247,0,0.0,0,0,,,0,Third Tier | Fourth Tier
+team_competitions_seasons,club_id,numeric,58247,58247,0,0.0,0,0,1.0,133273.0,0,1
+team_competitions_seasons,competition_id,text,58247,58247,0,0.0,0,0,,,0,L3 | RLSW
+team_competitions_seasons,competition_name,text,58247,58247,0,0.0,0,0,,,0,3. Liga | Regionalliga Südwest
+team_competitions_seasons,season_draws,numeric,58247,58247,0,0.0,1257,0,0.0,26.0,0,4 | 11 | 15 | 9 | 1
+team_competitions_seasons,season_goal_difference,numeric,58247,58247,0,0.0,1686,0,-148.0,196.0,0,5 | 12 | 17 | 25 | 6
+team_competitions_seasons,season_goals_against,numeric,58247,58247,0,0.0,154,0,0.0,153.0,0,16 | 47 | 43 | 39 | 44
+team_competitions_seasons,season_goals_for,numeric,58247,58247,0,0.0,141,0,0.0,213.0,0,21 | 59 | 60 | 64 | 50
+team_competitions_seasons,season_id,numeric,58247,58247,0,0.0,0,0,1888.0,2025.0,0,2025 | 2024 | 2023 | 2022 | 2021
+team_competitions_seasons,season_is_two_point_system,text,58247,58247,0,0.0,0,0,,,0,False
+team_competitions_seasons,season_league_competition_id,text,58247,58247,0,0.0,0,0,,,0,L3 | RLSW
+team_competitions_seasons,season_league_league_name,text,58247,58247,0,0.0,0,0,,,0,3. Liga | Regionalliga Südwest
+team_competitions_seasons,season_league_league_slug,text,58247,58247,0,0.0,0,0,,,0,3-liga | regionalliga-sudwest
+team_competitions_seasons,season_league_level_level_name,text,58247,58247,0,0.0,0,0,,,0,Third Tier | Fourth Tier
+team_competitions_seasons,season_league_level_level_number,numeric,58247,55992,2255,0.038714440228681306,0,0,1.0,5.0,0,3 | 4
+team_competitions_seasons,season_league_season_id,numeric,58247,58247,0,0.0,0,0,1888.0,2025.0,0,2025 | 2024 | 2023 | 2022 | 2021
+team_competitions_seasons,season_losses,numeric,58247,58247,0,0.0,608,0,0.0,38.0,0,2 | 9 | 8 | 11 | 4
+team_competitions_seasons,season_manager,numeric,58247,0,58247,1.0,0,0,,,0,
+team_competitions_seasons,season_manager_manager_id,numeric,58247,47686,10561,0.1813140590931722,0,0,2.0,149038.0,0,19170 | 26513 | 4688 | 25375 | 44
+team_competitions_seasons,season_manager_manager_name,text,58247,47686,10561,0.1813140590931722,0,0,,,9,Alois Schwartz | Rüdiger Ziehl | Uwe Koschinat | Lukas Kwasniok | Dirk Lottner
+team_competitions_seasons,season_manager_manager_slug,text,58247,47686,10561,0.1813140590931722,0,0,,,0,alois-schwartz | rudiger-ziehl | uwe-koschinat | lukas-kwasniok | dirk-lottner
+team_competitions_seasons,season_points,numeric,58247,40820,17427,0.2991913746630728,147,0,0.0,111.0,0,19 | 65 | 60 | 69 | 53
+team_competitions_seasons,season_points_against,numeric,58247,17427,40820,0.7008086253369272,67,0,0.0,71.0,0,33 | 39 | 45 | 17 | 32
+team_competitions_seasons,season_points_for,numeric,58247,17427,40820,0.7008086253369272,63,0,0.0,69.0,0,35 | 37 | 23 | 27 | 44
+team_competitions_seasons,season_rank,numeric,58247,58247,0,0.0,0,0,1.0,37.0,0,3 | 5 | 7 | 1 | 2
+team_competitions_seasons,season_season,text,58247,58247,0,0.0,0,0,,,0,25/26 | 24/25 | 23/24 | 22/23 | 21/22
+team_competitions_seasons,season_total_matches,numeric,58247,58247,0,0.0,47,0,0.0,51.0,0,11 | 38 | 36 | 23 | 34
+team_competitions_seasons,season_wins,numeric,58247,58247,0,0.0,479,0,0.0,34.0,0,5 | 18 | 15 | 20 | 14
+team_competitions_seasons,team_name,text,58247,58247,0,0.0,0,0,,,135,1.FC Saarbrücken
+team_details,club_id,numeric,2175,2175,0,0.0,0,0,1.0,133273.0,0,100335 | 100431 | 101416 | 100461 | 10010
+team_details,club_slug,text,2175,2175,0,0.0,0,0,,,0,cd-mafra-sub-23 | napoli-under-18 | venezia-under-18 | lecce-under-18 | esporte-clube-bahia
+team_details,club_name,text,2175,2175,0,0.0,0,0,,,7,CD Mafra U23 (100335) | Napoli Under 18 (100431) | Venezia Under 18 (101416) | Lecce Under 18 (100461) | Esporte Clube Bahia (10010)
+team_details,logo_url,text,2175,2175,0,0.0,0,0,,,0,https://tmssl.akamaized.net//images/wappen/head/100335.png?lm=1724075828 | https://tmssl.akamaized.net//images/wappen/head/100431.png?lm=1753167643 | https://tmssl.akamaized.net//images/wappen/head/101416.png?lm=1660032623 | https://tmssl.akamaized.net//images/wappen/head/100461.png?lm=1689169528 | https://tmssl.akamaized.net//images/wappen/head/10010.png?lm=1412879423
+team_details,country_name,text,2175,2175,0,0.0,0,0,,,0,Portugal | Italy | Brazil | United States | Germany
+team_details,season_id,numeric,2175,2175,0,0.0,0,0,2000.0,2025.0,0,2023 | 2021 | 2022 | 2015 | 2006
+team_details,competition_id,text,2175,1669,506,0.23264367816091955,0,0,,,0,ITJ7 | BRA1 | MNP3 | L3 | L2
+team_details,competition_slug,text,2175,1669,506,0.23264367816091955,0,0,,,0,campionato-nazionale-under-18 | campeonato-brasileiro-serie-a | mls-next-pro | 3-liga | 2-bundesliga
+team_details,competition_name,text,2175,1669,506,0.23264367816091955,0,0,,,0,Campionato Under 18 | Campeonato Brasileiro Série A | MLS Next Pro | 3. Liga | 2. Bundesliga
+team_details,club_division,text,2175,1669,506,0.23264367816091955,0,0,,,0,Campionato Under 18 | Campeonato Brasileiro Série A | MLS Next Pro | 3. Liga | 2. Bundesliga
+team_details,source_url,text,2175,2175,0,0.0,0,0,,,0,https://www.transfermarkt.com/cd-mafra-sub-23/startseite/verein/100335/saison_id/2023 | https://www.transfermarkt.com/napoli-under-18/startseite/verein/100431/saison_id/2021 | https://www.transfermarkt.com/venezia-under-18/startseite/verein/101416/saison_id/2022 | https://www.transfermarkt.com/lecce-under-18/startseite/verein/100461/saison_id/2015 | https://www.transfermarkt.com/esporte-clube-bahia/startseite/verein/10010/saison_id/2006
+team_details,_last_modified_at,date,2175,2175,0,0.0,0,0,2025-09-11T18:16:40,2025-09-13T13:38:39,0,2025-09-11 20:20:19 | 2025-09-13 09:55:03 | 2025-09-13 09:37:05 | 2025-09-13 09:52:59 | 2025-09-13 11:59:31
+transfer_history,player_id,numeric,1101440,1101440,0,0.0,0,0,1.0,1459023.0,0,1000 | 1 | 134609 | 193051 | 26429
+transfer_history,season_name,text,1101440,1101438,2,1.8158047646717026e-06,0,0,,,0,11/12 | 10/11 | 07/08 | 00/01 | 17/18
+transfer_history,transfer_date,date,1101440,1100860,580,0.0005265833817547937,0,0,1900-07-01T00:00:00,3026-06-30T00:00:00,0,2011-07-01 | 2011-01-01 | 2007-07-01 | 2000-07-01 | 2017-07-01
+transfer_history,from_team_id,numeric,1101440,1101440,0,0.0,0,0,1.0,134587.0,0,3496 | 85 | 1 | 726 | 58701
+transfer_history,from_team_name,text,1101440,1101440,0,0.0,0,0,,,1739,A. Ludwigshafen | W. Mannheim | Saarbrücken | FK Pirmasens | TuS Niederkir.
+transfer_history,to_team_id,numeric,1101440,1101440,0,0.0,0,0,1.0,134587.0,0,123 | 3496 | 85 | 1 | 58701
+transfer_history,to_team_name,text,1101440,1101440,0,0.0,0,0,,,1727,Retired | A. Ludwigshafen | W. Mannheim | Saarbrücken | TuS Niederkir.
+transfer_history,transfer_type,text,1101440,1101440,0,0.0,0,0,,,0,Transfer | Return from loan | Loan
+transfer_history,value_at_transfer,numeric,1101440,1101440,0,0.0,598500,0,0.0,180000000.0,0,200000 | 125000 | 0 | 300000 | 50000
+transfer_history,transfer_fee,numeric,1101440,1101440,0,0.0,1061443,0,0.0,222000000.0,0,0 | 200000

@@ -1,0 +1,14 @@
+check,actual,expected,status,notes
+Master row count,35139,35139,OK,Independent CSV reload.
+Master key uniqueness,35139,35139,OK,One row per transfer event.
+Transfer core byte-level values preserved,True,True,OK,String reload comparison for every core field.
+valuation component values preserved,0,0,OK,Semantic comparison tolerates equivalent ID formatting and floating-point CSV precision.
+appearance component values preserved,0,0,OK,Semantic comparison tolerates equivalent ID formatting and floating-point CSV precision.
+lineup component values preserved,0,0,OK,Semantic comparison tolerates equivalent ID formatting and floating-point CSV precision.
+event component values preserved,0,0,OK,Semantic comparison tolerates equivalent ID formatting and floating-point CSV precision.
+club_context component values preserved,0,0,OK,Semantic comparison tolerates equivalent ID formatting and floating-point CSV precision.
+Sample valuation as-of and horizon selections,0,0,OK,Recomputed 60 deterministic transfer samples from cleaned valuation rows.
+Sample appearance aggregates,0,0,OK,Recomputed pre-365 and destination 12/24-month metrics.
+Sample lineup aggregates,0,0,OK,Recomputed pre-transfer and destination-selection metrics.
+Sample event aggregates,0,0,OK,Recomputed goal and assist event counts.
+Sample club-context aggregates,0,0,OK,Recomputed origin/destination dated game windows.

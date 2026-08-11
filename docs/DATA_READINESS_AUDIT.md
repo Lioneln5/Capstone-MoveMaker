@@ -1,6 +1,6 @@
 # MoveMaker Data Readiness Audit
 
-**Audit date:** 2026-08-06  
+**Audit date:** 2026-08-06
 **Question:** What data do we actually have, how much is model-worthy under the project rules, what is not ready, and what should we acquire next?
 
 ## Executive verdict

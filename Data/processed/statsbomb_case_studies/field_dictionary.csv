@@ -1,0 +1,441 @@
+﻿table_name,column_name,dtype,definition,modeling_role,timing_rule
+match_catalog,match_id,str,Match id.,Identifier/join key,"Use for linkage and provenance, not as a numeric predictor."
+match_catalog,match_date,str,Match date.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,kick_off,str,Kick off.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,competition_id,int64,Competition id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,season_id,int64,Season id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,country_name,str,Country name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,competition_name,str,Competition name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,competition_gender,str,Competition gender.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,competition_international,bool,Competition international.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,season_name,str,Season name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,match_week,int64,Match week.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,competition_stage,str,Competition stage.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,home_team_id,int64,Home team id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,home_team_name,str,Home team name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,away_team_id,int64,Away team id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,away_team_name,str,Away team name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,home_score,int64,Home score.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,away_score,int64,Away score.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,stadium_name,str,Stadium name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,referee_name,str,Referee name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,selected_for_case_studies,bool,Selected for case studies.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,scope_tier,str,"Case-study tier: primary Big Five club, secondary other club, or secondary international.",Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,event_file_available,bool,Event file available.,Quality/control,Review or filter field; not a substantive predictor.
+match_catalog,lineup_file_available,bool,Lineup file available.,Quality/control,Review or filter field; not a substantive predictor.
+match_catalog,three_sixty_file_available,bool,Three sixty file available.,Quality/control,Review or filter field; not a substantive predictor.
+match_catalog,match_source_file,str,Match source file.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+match_catalog,selected_event_count,int64,Selected event count.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+competition_coverage,country_name,str,Country name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+competition_coverage,competition_name,str,Competition name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+competition_coverage,competition_gender,str,Competition gender.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+competition_coverage,competition_international,bool,Competition international.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+competition_coverage,season_name,str,Season name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+competition_coverage,competition_id,int64,Competition id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+competition_coverage,season_id,int64,Season id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+competition_coverage,cataloged_matches,int64,Cataloged matches.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+competition_coverage,selected_matches,int64,Selected matches.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+competition_coverage,selected_events,int64,Selected events.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+competition_coverage,selected_360_matches,int64,Selected 360 matches.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+competition_coverage,selection_share,float64,Selection share.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+lineups_case_study,match_id,str,Match id.,Identifier/join key,"Use for linkage and provenance, not as a numeric predictor."
+lineups_case_study,team_id,int64,Team id.,Identifier/join key,"Use for linkage and provenance, not as a numeric predictor."
+lineups_case_study,team_name,str,Team name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+lineups_case_study,statsbomb_player_id,int64,Statsbomb player id.,Identifier/join key,"Use for linkage and provenance, not as a numeric predictor."
+lineups_case_study,player_name,str,Player name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+lineups_case_study,player_nickname,str,Player nickname.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+lineups_case_study,jersey_number,int64,Jersey number.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+lineups_case_study,country_name,str,Country name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+lineups_case_study,appeared,bool,Appeared.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+lineups_case_study,started,bool,Started.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+lineups_case_study,minutes_played_estimate,float64,Estimated minutes from lineup position intervals; final-whistle intervals use the final event time.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+lineups_case_study,primary_position,str,Primary position.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+lineups_case_study,positions_played,str,Positions played.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+lineups_case_study,yellow_cards,int64,Yellow cards.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+lineups_case_study,second_yellow_cards,int64,Second yellow cards.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+lineups_case_study,red_cards,int64,Red cards.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+lineups_case_study,lineup_source_file,str,Lineup source file.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,total_events,float64,Total events.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,events_under_pressure,float64,Events under pressure.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,passes,float64,Passes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,passes_completed,float64,Passes completed.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,forward_passes,float64,Forward passes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,progressive_passes,float64,Passes advancing at least 10 StatsBomb x-coordinate units.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,passes_into_final_third,float64,Passes into final third.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,passes_into_penalty_area,float64,Passes into penalty area.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,crosses,float64,Crosses.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,switches,float64,Switches.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,shot_assists,float64,Shot assists.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,goal_assists,float64,Goal assists.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,carries,float64,Carries.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,progressive_carries,float64,Carries advancing at least 10 StatsBomb x-coordinate units.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,carries_into_final_third,float64,Carries into final third.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,carries_into_penalty_area,float64,Carries into penalty area.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,shots,float64,Shots.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,shots_on_target,float64,Shots on target.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,goals,float64,Goals.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,pressures,float64,Pressures.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,counterpressures,float64,Counterpressures.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,ball_recoveries,float64,Ball recoveries.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,interceptions,float64,Interceptions.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,clearances,float64,Clearances.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,blocks,float64,Blocks.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,duels,float64,Duels.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,duels_won,float64,Duels won.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,tackles,float64,Tackles.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,tackles_won,float64,Tackles won.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,dribbles,float64,Dribbles.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,successful_dribbles,float64,Successful dribbles.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,dispossessed,float64,Dispossessed.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,miscontrols,float64,Miscontrols.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,fouls_committed,float64,Fouls committed.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,fouls_won,float64,Fouls won.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,goalkeeper_events,float64,Goalkeeper events.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,saves,float64,Saves.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,counterattack_events,float64,Counterattack events.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,set_piece_events,float64,Set piece events.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,location_event_count,float64,Location event count.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,pass_distance,float64,Pass distance.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,pass_forward_distance,float64,Pass forward distance.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,carry_distance,float64,Carry distance.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,carry_forward_distance,float64,Carry forward distance.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,shot_xg,float64,Sum of StatsBomb shot xG.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,xg_assisted,float64,StatsBomb xG of shots linked back to the player's key passes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,location_x_sum,float64,Location x sum.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,location_y_sum,float64,Location y sum.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,match_id,str,Match id.,Identifier/join key,"Use for linkage and provenance, not as a numeric predictor."
+player_match_features,team_id,int64,Team id.,Identifier/join key,"Use for linkage and provenance, not as a numeric predictor."
+player_match_features,team_name,str,Team name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,statsbomb_player_id,int64,Statsbomb player id.,Identifier/join key,"Use for linkage and provenance, not as a numeric predictor."
+player_match_features,player_name,str,Player name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,player_nickname,str,Player nickname.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,jersey_number,int64,Jersey number.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,country_name,str,Country name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,appeared,bool,Appeared.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,started,bool,Started.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,minutes_played_estimate,float64,Estimated minutes from lineup position intervals; final-whistle intervals use the final event time.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,primary_position,str,Primary position.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,positions_played,str,Positions played.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,yellow_cards,int64,Yellow cards.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,second_yellow_cards,int64,Second yellow cards.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,red_cards,int64,Red cards.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,lineup_source_file,str,Lineup source file.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,match_date,str,Match date.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,competition_id,int64,Competition id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,competition_name,str,Competition name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,season_id,int64,Season id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,season_name,str,Season name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,scope_tier,str,"Case-study tier: primary Big Five club, secondary other club, or secondary international.",Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,source_file,str,Relative immutable StatsBomb source JSON file.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,pass_completion_pct,float64,Pass Completion Pct as a 0-1 ratio.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,progressive_pass_share,float64,Progressive pass share.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,directness_ratio,float64,Directness ratio.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,xg_per_shot,float64,Xg per shot.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,under_pressure_event_share,float64,Under pressure event share.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,average_action_x,float64,Average action x.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,average_action_y,float64,Average action y.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,passes_per90,float64,Passes per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,progressive_passes_per90,float64,Progressive Passes per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,carries_per90,float64,Carries per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,progressive_carries_per90,float64,Progressive Carries per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,shots_per90,float64,Shots per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,shot_xg_per90,float64,Shot Xg per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,xg_assisted_per90,float64,Xg Assisted per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,pressures_per90,float64,Pressures per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,ball_recoveries_per90,float64,Ball Recoveries per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,interceptions_per90,float64,Interceptions per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,tackles_per90,float64,Tackles per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,successful_dribbles_per90,float64,Successful Dribbles per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_match_features,dispossessed_per90,float64,Dispossessed per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,total_events,float64,Total events.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,events_under_pressure,float64,Events under pressure.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,passes,float64,Passes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,passes_completed,float64,Passes completed.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,forward_passes,float64,Forward passes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,progressive_passes,float64,Passes advancing at least 10 StatsBomb x-coordinate units.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,passes_into_final_third,float64,Passes into final third.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,passes_into_penalty_area,float64,Passes into penalty area.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,crosses,float64,Crosses.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,switches,float64,Switches.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,shot_assists,float64,Shot assists.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,goal_assists,float64,Goal assists.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,carries,float64,Carries.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,progressive_carries,float64,Carries advancing at least 10 StatsBomb x-coordinate units.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,carries_into_final_third,float64,Carries into final third.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,carries_into_penalty_area,float64,Carries into penalty area.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,shots,float64,Shots.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,shots_on_target,float64,Shots on target.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,goals,float64,Goals.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,pressures,float64,Pressures.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,counterpressures,float64,Counterpressures.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,ball_recoveries,float64,Ball recoveries.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,interceptions,float64,Interceptions.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,clearances,float64,Clearances.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,blocks,float64,Blocks.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,duels,float64,Duels.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,duels_won,float64,Duels won.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,tackles,float64,Tackles.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,tackles_won,float64,Tackles won.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,dribbles,float64,Dribbles.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,successful_dribbles,float64,Successful dribbles.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,dispossessed,float64,Dispossessed.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,miscontrols,float64,Miscontrols.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,fouls_committed,float64,Fouls committed.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,fouls_won,float64,Fouls won.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,goalkeeper_events,float64,Goalkeeper events.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,saves,float64,Saves.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,counterattack_events,float64,Counterattack events.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,set_piece_events,float64,Set piece events.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,location_event_count,float64,Location event count.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,pass_distance,float64,Pass distance.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,pass_forward_distance,float64,Pass forward distance.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,carry_distance,float64,Carry distance.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,carry_forward_distance,float64,Carry forward distance.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,shot_xg,float64,Sum of StatsBomb shot xG.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,xg_assisted,float64,StatsBomb xG of shots linked back to the player's key passes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,location_x_sum,float64,Location x sum.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,location_y_sum,float64,Location y sum.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,team_id,int64,Team id.,Identifier/join key,"Use for linkage and provenance, not as a numeric predictor."
+team_match_features,team_name,str,Team name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,match_id,str,Match id.,Identifier/join key,"Use for linkage and provenance, not as a numeric predictor."
+team_match_features,match_date,str,Match date.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,competition_id,int64,Competition id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,competition_name,str,Competition name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,season_id,int64,Season id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,season_name,str,Season name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,scope_tier,str,"Case-study tier: primary Big Five club, secondary other club, or secondary international.",Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,is_home,bool,Is home.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,opponent_team_id,int64,Opponent team id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,opponent_team_name,str,Opponent team name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,goals_for,int64,Goals for.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,goals_against,int64,Goals against.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,result,str,Result.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,possession_sequences,int64,Distinct StatsBomb possession IDs attributed to the team.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,possession_sequence_share,float64,Share of distinct match possessions attributed to the team; not time-based possession percentage.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,opponent_passes,float64,Opponent passes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,pressures_per_100_opponent_passes,float64,Pressures per 100 opponent passes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,xg_difference,float64,Xg difference.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,source_file,str,Relative immutable StatsBomb source JSON file.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,pass_completion_pct,float64,Pass Completion Pct as a 0-1 ratio.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,progressive_pass_share,float64,Progressive pass share.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,directness_ratio,float64,Directness ratio.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,xg_per_shot,float64,Xg per shot.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,under_pressure_event_share,float64,Under pressure event share.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,average_action_x,float64,Average action x.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,average_action_y,float64,Average action y.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,passes_per_possession,float64,Passes per possession.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_match_features,shots_per_possession,float64,Shots per possession.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,statsbomb_player_id,int64,Statsbomb player id.,Identifier/join key,"Use for linkage and provenance, not as a numeric predictor."
+player_period_features,player_name,str,Player name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,country_name,str,Country name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,team_id,int64,Team id.,Identifier/join key,"Use for linkage and provenance, not as a numeric predictor."
+player_period_features,team_name,str,Team name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,competition_id,int64,Competition id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,competition_name,str,Competition name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,season_id,int64,Season id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,season_name,str,Season name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,scope_tier,str,"Case-study tier: primary Big Five club, secondary other club, or secondary international.",Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,appearances,int64,Appearances.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,starts,int64,Starts.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,minutes_played_estimate,float64,Estimated minutes from lineup position intervals; final-whistle intervals use the final event time.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,yellow_cards,int64,Yellow cards.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,second_yellow_cards,int64,Second yellow cards.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,red_cards,int64,Red cards.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,total_events,float64,Total events.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,events_under_pressure,float64,Events under pressure.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,passes,float64,Passes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,passes_completed,float64,Passes completed.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,forward_passes,float64,Forward passes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,progressive_passes,float64,Passes advancing at least 10 StatsBomb x-coordinate units.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,passes_into_final_third,float64,Passes into final third.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,passes_into_penalty_area,float64,Passes into penalty area.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,crosses,float64,Crosses.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,switches,float64,Switches.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,shot_assists,float64,Shot assists.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,goal_assists,float64,Goal assists.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,carries,float64,Carries.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,progressive_carries,float64,Carries advancing at least 10 StatsBomb x-coordinate units.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,carries_into_final_third,float64,Carries into final third.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,carries_into_penalty_area,float64,Carries into penalty area.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,shots,float64,Shots.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,shots_on_target,float64,Shots on target.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,goals,float64,Goals.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,pressures,float64,Pressures.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,counterpressures,float64,Counterpressures.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,ball_recoveries,float64,Ball recoveries.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,interceptions,float64,Interceptions.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,clearances,float64,Clearances.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,blocks,float64,Blocks.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,duels,float64,Duels.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,duels_won,float64,Duels won.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,tackles,float64,Tackles.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,tackles_won,float64,Tackles won.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,dribbles,float64,Dribbles.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,successful_dribbles,float64,Successful dribbles.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,dispossessed,float64,Dispossessed.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,miscontrols,float64,Miscontrols.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,fouls_committed,float64,Fouls committed.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,fouls_won,float64,Fouls won.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,goalkeeper_events,float64,Goalkeeper events.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,saves,float64,Saves.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,counterattack_events,float64,Counterattack events.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,set_piece_events,float64,Set piece events.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,location_event_count,float64,Location event count.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,pass_distance,float64,Pass distance.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,pass_forward_distance,float64,Pass forward distance.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,carry_distance,float64,Carry distance.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,carry_forward_distance,float64,Carry forward distance.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,shot_xg,float64,Sum of StatsBomb shot xG.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,xg_assisted,float64,StatsBomb xG of shots linked back to the player's key passes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,location_x_sum,float64,Location x sum.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,location_y_sum,float64,Location y sum.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,matches_in_lineup,int64,Matches in lineup.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,pass_completion_pct,float64,Pass Completion Pct as a 0-1 ratio.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,progressive_pass_share,float64,Progressive pass share.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,directness_ratio,float64,Directness ratio.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,xg_per_shot,float64,Xg per shot.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,under_pressure_event_share,float64,Under pressure event share.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,average_action_x,float64,Average action x.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,average_action_y,float64,Average action y.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,passes_per90,float64,Passes per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,progressive_passes_per90,float64,Progressive Passes per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,carries_per90,float64,Carries per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,progressive_carries_per90,float64,Progressive Carries per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,shots_per90,float64,Shots per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,shot_xg_per90,float64,Shot Xg per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,xg_assisted_per90,float64,Xg Assisted per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,pressures_per90,float64,Pressures per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,ball_recoveries_per90,float64,Ball Recoveries per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,interceptions_per90,float64,Interceptions per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,tackles_per90,float64,Tackles per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,successful_dribbles_per90,float64,Successful Dribbles per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+player_period_features,dispossessed_per90,float64,Dispossessed per 90 estimated minutes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,team_id,int64,Team id.,Identifier/join key,"Use for linkage and provenance, not as a numeric predictor."
+team_period_features,team_name,str,Team name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,competition_id,int64,Competition id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,competition_name,str,Competition name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,season_id,int64,Season id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,season_name,str,Season name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,scope_tier,str,"Case-study tier: primary Big Five club, secondary other club, or secondary international.",Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,total_events,float64,Total events.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,events_under_pressure,float64,Events under pressure.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,passes,float64,Passes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,passes_completed,float64,Passes completed.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,forward_passes,float64,Forward passes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,progressive_passes,float64,Passes advancing at least 10 StatsBomb x-coordinate units.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,passes_into_final_third,float64,Passes into final third.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,passes_into_penalty_area,float64,Passes into penalty area.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,crosses,float64,Crosses.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,switches,float64,Switches.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,shot_assists,float64,Shot assists.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,goal_assists,float64,Goal assists.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,carries,float64,Carries.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,progressive_carries,float64,Carries advancing at least 10 StatsBomb x-coordinate units.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,carries_into_final_third,float64,Carries into final third.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,carries_into_penalty_area,float64,Carries into penalty area.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,shots,float64,Shots.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,shots_on_target,float64,Shots on target.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,goals,float64,Goals.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,pressures,float64,Pressures.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,counterpressures,float64,Counterpressures.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,ball_recoveries,float64,Ball recoveries.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,interceptions,float64,Interceptions.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,clearances,float64,Clearances.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,blocks,float64,Blocks.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,duels,float64,Duels.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,duels_won,float64,Duels won.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,tackles,float64,Tackles.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,tackles_won,float64,Tackles won.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,dribbles,float64,Dribbles.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,successful_dribbles,float64,Successful dribbles.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,dispossessed,float64,Dispossessed.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,miscontrols,float64,Miscontrols.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,fouls_committed,float64,Fouls committed.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,fouls_won,float64,Fouls won.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,goalkeeper_events,float64,Goalkeeper events.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,saves,float64,Saves.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,counterattack_events,float64,Counterattack events.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,set_piece_events,float64,Set piece events.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,location_event_count,float64,Location event count.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,pass_distance,float64,Pass distance.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,pass_forward_distance,float64,Pass forward distance.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,carry_distance,float64,Carry distance.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,carry_forward_distance,float64,Carry forward distance.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,shot_xg,float64,Sum of StatsBomb shot xG.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,xg_assisted,float64,StatsBomb xG of shots linked back to the player's key passes.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,location_x_sum,float64,Location x sum.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,location_y_sum,float64,Location y sum.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,possession_sequences,int64,Distinct StatsBomb possession IDs attributed to the team.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,goals_for,int64,Goals for.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,goals_against,int64,Goals against.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,matches,int64,Matches.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,pass_completion_pct,float64,Pass Completion Pct as a 0-1 ratio.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,progressive_pass_share,float64,Progressive pass share.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,directness_ratio,float64,Directness ratio.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,xg_per_shot,float64,Xg per shot.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,under_pressure_event_share,float64,Under pressure event share.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,average_action_x,float64,Average action x.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,average_action_y,float64,Average action y.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,passes_per_possession,float64,Passes per possession.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,shots_per_possession,float64,Shots per possession.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+team_period_features,goal_difference,int64,Goal difference.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+event_type_counts,event_type,str,Event type.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+event_type_counts,selected_event_count,int64,Selected event count.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+statsbomb_player_crosswalk_candidates,statsbomb_player_id,int64,Statsbomb player id.,Identifier/join key,"Use for linkage and provenance, not as a numeric predictor."
+statsbomb_player_crosswalk_candidates,player_name,str,Player name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+statsbomb_player_crosswalk_candidates,country_name,str,Country name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+statsbomb_player_crosswalk_candidates,normalized_name,str,Normalized name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+statsbomb_player_crosswalk_candidates,transfermarkt_candidate_count,int64,Transfermarkt candidate count.,Quality/control,Review or filter field; not a substantive predictor.
+statsbomb_player_crosswalk_candidates,transfermarkt_player_id,str,Transfermarkt player id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+statsbomb_player_crosswalk_candidates,transfermarkt_player_name,str,Transfermarkt player name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+statsbomb_player_crosswalk_candidates,transfermarkt_country,str,Transfermarkt country.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+statsbomb_player_crosswalk_candidates,country_agreement,bool,Country agreement.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+statsbomb_player_crosswalk_candidates,match_status,str,Match status.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+statsbomb_player_crosswalk_candidates,match_method,str,Match method.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+statsbomb_player_crosswalk_candidates,confidence_tier,str,Confidence tier.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+statsbomb_player_crosswalk_candidates,manual_review_status,str,Identity mappings are candidates and must be reviewed before analytical use.,Quality/control,Review or filter field; not a substantive predictor.
+statsbomb_club_crosswalk_candidates,team_id,int64,Team id.,Identifier/join key,"Use for linkage and provenance, not as a numeric predictor."
+statsbomb_club_crosswalk_candidates,team_name,str,Team name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+statsbomb_club_crosswalk_candidates,normalized_name,str,Normalized name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+statsbomb_club_crosswalk_candidates,transfermarkt_candidate_ids,str,Transfermarkt candidate ids.,Quality/control,Review or filter field; not a substantive predictor.
+statsbomb_club_crosswalk_candidates,transfermarkt_candidate_count,int64,Transfermarkt candidate count.,Quality/control,Review or filter field; not a substantive predictor.
+statsbomb_club_crosswalk_candidates,transfermarkt_club_id,str,Transfermarkt club id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+statsbomb_club_crosswalk_candidates,match_status,str,Match status.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+statsbomb_club_crosswalk_candidates,match_method,str,Match method.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+statsbomb_club_crosswalk_candidates,manual_review_status,str,Identity mappings are candidates and must be reviewed before analytical use.,Quality/control,Review or filter field; not a substantive predictor.
+transfer_case_study_candidates,transfer_event_id,str,Transfer event id.,Identifier/join key,"Use for linkage and provenance, not as a numeric predictor."
+transfer_case_study_candidates,transfermarkt_player_id,str,Transfermarkt player id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+transfer_case_study_candidates,player_name,str,Player name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+transfer_case_study_candidates,transfer_date,str,Transfer date.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+transfer_case_study_candidates,from_club_id,str,From club id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+transfer_case_study_candidates,from_club_name,str,From club name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+transfer_case_study_candidates,to_club_id,str,To club id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+transfer_case_study_candidates,to_club_name,str,To club name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+transfer_case_study_candidates,statsbomb_player_id,float64,Statsbomb player id.,Identifier/join key,"Use for linkage and provenance, not as a numeric predictor."
+transfer_case_study_candidates,statsbomb_origin_team_id,float64,Statsbomb origin team id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+transfer_case_study_candidates,statsbomb_destination_team_id,float64,Statsbomb destination team id.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+transfer_case_study_candidates,player_matches_pre365,int64,Player matches pre365.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+transfer_case_study_candidates,player_matches_post365,int64,Player matches post365.,Target/diagnostic,Post-transfer; never use as a prediction feature.
+transfer_case_study_candidates,origin_matches_pre365,int64,Origin matches pre365.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+transfer_case_study_candidates,destination_matches_pre365,int64,Destination matches pre365.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+transfer_case_study_candidates,case_study_score,int64,Selection score only: weighted capped counts of pre/post player and club matches; not a model target.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+transfer_case_study_candidates,recommended_case_study_use,str,Recommended case study use.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+transfer_case_study_candidates,player_identity_country_agreement,object,Player identity country agreement.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+transfer_case_study_candidates,player_link_method,str,Player link method.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+transfer_case_study_candidates,manual_review_status,str,Identity mappings are candidates and must be reviewed before analytical use.,Quality/control,Review or filter field; not a substantive predictor.
+transfer_case_study_candidates,eligible_sporting_24m,str,Eligible sporting 24m.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+transfer_case_study_candidates,eligible_financial_24m_provisional,str,Eligible financial 24m provisional.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+transfer_case_study_candidates,eligible_combined_24m_provisional,str,Eligible combined 24m provisional.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+transfer_case_study_candidates,post24_dest_minutes,str,Post24 dest minutes.,Target/diagnostic,Post-transfer; never use as a prediction feature.
+transfer_case_study_candidates,fee_value_roi_proxy_24m,str,Fee value roi proxy 24m.,Target/diagnostic,Post-transfer; never use as a prediction feature.
+transfer_case_study_candidates,timing_note,str,Timing note.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+data_quality_issues,issue_type,str,Issue type.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+data_quality_issues,source_file,str,Relative immutable StatsBomb source JSON file.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+data_quality_issues,match_id,str,Match id.,Identifier/join key,"Use for linkage and provenance, not as a numeric predictor."
+data_quality_issues,severity,str,Severity.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+data_quality_issues,details,str,Details.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+extraction_checks,check_name,str,Check name.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+extraction_checks,status,str,Status.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+extraction_checks,blocking,bool,Blocking.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+extraction_checks,observed,int64,Observed.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.
+extraction_checks,expectation,str,Expectation.,Feature/context,Safe only when the record date is strictly before the modeled transfer date.

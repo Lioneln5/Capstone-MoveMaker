@@ -91,17 +91,6 @@ def independently_select(cohort: pd.DataFrame) -> pd.DataFrame:
         )
         if limit is not None:
             group = group.sort_values(["mean_two_target_mae_improvement", "canonical_player_name"]).head(limit)
-        elif category == "confirmed_warning" and len(group) < 3:
-            remaining = cohort.loc[
-                cohort["case_category"].eq(category)
-                & ~cohort["canonical_performance_id"].isin(
-                    group["canonical_performance_id"]
-                )
-            ].sort_values(
-                ["mean_two_target_mae_improvement", "canonical_player_name"],
-                ascending=[False, True],
-            ).head(3 - len(group))
-            group = pd.concat([group, remaining], ignore_index=True)
         selected.append(group)
     tradeoffs = cohort.loc[cohort["case_category"].eq("validated_tradeoff")].copy()
     tradeoffs["pattern"] = np.where(
@@ -147,7 +136,7 @@ def run() -> None:
     source_manifest = pd.read_csv(OUTPUT / "source_manifest.csv")
     bad_hashes = []
     for row in source_manifest.itertuples(index=False):
-        source = ROOT / str(row.source_file).replace("\\", "/")
+        source = ROOT / str(row.source_file)
         if not source.exists() or sha256(source) != str(row.sha256):
             bad_hashes.append(str(row.source_file))
     add("source_manifest_hashes_match", not bad_hashes, ";".join(bad_hashes) or "all match", "all match", "Verification uses the exact recorded source artifacts.")

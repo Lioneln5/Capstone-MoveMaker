@@ -1,12 +1,9 @@
 import fs from "node:fs/promises";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-import { FileBlob, SpreadsheetFile } from "@oai/artifact-tool";
+import { FileBlob, SpreadsheetFile } from "file:///C:/Users/Lione/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/@oai/artifact-tool/dist/artifact_tool.mjs";
 
 
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const workbookPath = path.join(root, "outputs/subgroup_stability/MoveMaker_Subgroup_Stability.xlsx");
-const outputPath = path.join(root, "outputs/subgroup_stability/workbook_verification.json");
+const workbookPath = "C:/Users/Lione/Downloads/Capstone-MoveMaker/outputs/subgroup_stability/MoveMaker_Subgroup_Stability.xlsx";
+const outputPath = "C:/Users/Lione/Downloads/Capstone-MoveMaker/outputs/subgroup_stability/workbook_verification.json";
 const expectedSheets = [
   "Executive Summary", "Decision Summary", "Primary Results", "Role Results",
   "Competition Results", "Heterogeneity", "Origin Results", "Coverage",

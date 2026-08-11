@@ -8,5 +8,5 @@ target_predictions_complete,blocking,True,24,24,Every selected transfer has both
 selected_transfers_primary_eligible,blocking,True,12,12,All cases belong to both primary model populations.
 feature_profiles_complete,blocking,True,style=96;context=72;summary=12,style=96;context=72;summary=12,Every case has all declared descriptive compatibility axes.
 feature_timing_is_strictly_prior,blocking,True,0,0,"Player history, preferences, and destination context precede the target season."
-statsbomb_not_required_for_selection,blocking,True,2,supplementary only,Sparse StatsBomb coverage is reported but never determines selection or primary conclusions.
+statsbomb_not_required_for_selection,blocking,True,3,supplementary only,Sparse StatsBomb coverage is reported but never determines selection or primary conclusions.
 case_arithmetic_reconciles,blocking,True,all reconcile,all reconcile,Compatibility lifts and paired error improvements recompute exactly.

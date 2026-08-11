@@ -1,0 +1,7 @@
+table,grain,purpose,leakage_class
+broad_lagged_player_features_2017_2024,One modeling-scope player-club-competition-season row.,Exact lag1/lag2/lag3 and rolling basic player performance features across the full canonical universe.,strict_preseason_safe
+advanced_lagged_player_styles,One accepted FBref player-club-competition-season row.,Role-season-standardized advanced player styles using only prior seasons.,strict_preseason_safe
+strict_prior_club_style_context,One accepted FBref player-club-competition-season row.,Prior-season club teammate style with focal player removed when present.,strict_preseason_safe
+roster_conditioned_teammate_style_context,One accepted FBref player-club-competition-season row.,"Target-roster teammates represented only by their lag1 styles, excluding the focal player.",scenario_only_target_roster_membership
+teammate_style_compatibility_features,One accepted FBref player-club-competition-season row.,"Lagged player styles, teammate contexts, historical preference slopes, distances, and interactions; no current outcomes.",mixed_columns_use_field_dictionary
+advanced_compatibility_model_matrix,One accepted FBref player-club-competition-season row.,Compatibility features plus explicitly prefixed current-season targets for modeling.,targets_separate_never_predictors

@@ -27,18 +27,14 @@ dual_subset_opportunity,True,0,0,Dual cohort is nested.
 full_roi_zero,True,0,0,The audit never invents accounting ROI.
 full_roi_decision,True,not_feasible,not_feasible,Structural gap is explicit.
 resale_decision_cautious,True,exploratory_only,exploratory_only,Conditional resale is not presented as universal ROI.
-year_count_fee_only_resale_return_4y_2020,True,44,44,Temporal coverage is exact.
-year_count_fee_only_resale_return_4y_2021,True,64,64,Temporal coverage is exact.
-year_count_fee_only_resale_return_4y_2022,True,55,55,Temporal coverage is exact.
-year_count_fee_only_resale_return_4y_2023,True,0,0,Temporal coverage is exact.
-year_count_paid_transfer_underutilization_24m_2020,True,110,110,Temporal coverage is exact.
-year_count_paid_transfer_underutilization_24m_2021,True,123,123,Temporal coverage is exact.
-year_count_paid_transfer_underutilization_24m_2022,True,166,166,Temporal coverage is exact.
-year_count_paid_transfer_underutilization_24m_2023,True,173,173,Temporal coverage is exact.
 year_count_dual_capital_at_risk_24m_2020,True,100,100,Temporal coverage is exact.
 year_count_dual_capital_at_risk_24m_2021,True,120,120,Temporal coverage is exact.
 year_count_dual_capital_at_risk_24m_2022,True,155,155,Temporal coverage is exact.
 year_count_dual_capital_at_risk_24m_2023,True,81,81,Temporal coverage is exact.
+year_count_paid_transfer_underutilization_24m_2020,True,110,110,Temporal coverage is exact.
+year_count_paid_transfer_underutilization_24m_2021,True,123,123,Temporal coverage is exact.
+year_count_paid_transfer_underutilization_24m_2022,True,166,166,Temporal coverage is exact.
+year_count_paid_transfer_underutilization_24m_2023,True,173,173,Temporal coverage is exact.
 year_count_fee_benchmarking_2020,True,155,155,Temporal coverage is exact.
 year_count_fee_benchmarking_2021,True,155,155,Temporal coverage is exact.
 year_count_fee_benchmarking_2022,True,204,204,Temporal coverage is exact.
@@ -51,6 +47,10 @@ year_count_full_accounting_roi_2020,True,0,0,Temporal coverage is exact.
 year_count_full_accounting_roi_2021,True,0,0,Temporal coverage is exact.
 year_count_full_accounting_roi_2022,True,0,0,Temporal coverage is exact.
 year_count_full_accounting_roi_2023,True,0,0,Temporal coverage is exact.
+year_count_fee_only_resale_return_4y_2020,True,44,44,Temporal coverage is exact.
+year_count_fee_only_resale_return_4y_2021,True,64,64,Temporal coverage is exact.
+year_count_fee_only_resale_return_4y_2022,True,55,55,Temporal coverage is exact.
+year_count_fee_only_resale_return_4y_2023,True,0,0,Temporal coverage is exact.
 strict_sensitivity_matches_module,True,4371,4371,Timing table and module definition reconcile.
 overlap_diagonal,True,True,True,Overlap matrix diagonal equals module size.
 funnel_final_counts,True,True,True,Every funnel terminates at its module cohort.
