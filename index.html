@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MOVE MAKER — Transfer Risk Assessment</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root { --font-display: 'Poppins', 'Arial Black', 'Helvetica Neue', sans-serif; --font-body: 'Poppins', 'Helvetica Neue', Arial, sans-serif; }
+
+  :root{
+    --bg: #05080a;
+    --bg-grid: #0a120e;
+    --panel: #0c1512;
+    --panel-border: #1c3226;
+    --green: #39ff8f;
+    --green-dim: #1f7a4d;
+    --green-soft: rgba(57,255,143,0.12);
+    --text: #e9fbef;
+    --text-mute: #7fa88c;
+    --amber: #ffb347;
+    --red: #ff5c5c;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    min-height: 100vh;
+  }
+
+  body {
+    background-image:
+      linear-gradient(rgba(57,255,143,0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(57,255,143,0.035) 1px, transparent 1px);
+    background-size: 34px 34px;
+    padding: 14px 20px 16px;
+  }
+
+  .wrap { max-width: 1180px; margin: 0 auto; }
+
+  header { text-align: center; margin-bottom: 14px; }
+
+  .title {
+    font-family: var(--font-display); font-weight: 900;
+    font-size: 42px;
+    letter-spacing: 2px;
+    color: var(--text);
+    text-shadow: 0 0 6px var(--green), 0 0 22px rgba(57,255,143,0.55), 0 0 46px rgba(57,255,143,0.25);
+    margin: 0;
+  }
+
+  .subtitle {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: var(--text-mute);
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--green);
+    text-transform: uppercase;
+    margin: 0 0 8px 2px;
+    opacity: 0.85;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 300px 300px 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+
+  @media (max-width: 980px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+
+  .panel {
+    background: var(--panel);
+    border-radius: 10px;
+    padding: 14px;
+  }
+
+  .field-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-mute);
+    display: block;
+    margin: 10px 0 5px;
+  }
+  .field-label:first-child { margin-top: 0; }
+
+  .field-input {
+    width: 100%;
+    height: 40px;
+    background: #081410;
+    border: 1px solid var(--panel-border);
+    border-radius: 6px;
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 15px;
+    padding: 0 12px;
+    appearance: none;
+    -webkit-appearance: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    cursor: pointer;
+  }
+  .field-input[type="text"] { cursor: text; }
+
+  select.field-input {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2339ff8f' stroke-width='2'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 34px;
+  }
+
+  .field-input:focus {
+    outline: none;
+    border-color: var(--green);
+    box-shadow: 0 0 0 3px var(--green-soft);
+  }
+
+  .other-club-wrap { display: none; }
+  .other-club-wrap.show { display: block; }
+
+  /* ---------- Player render (borderless, crossfading turntable) ---------- */
+  .holo-pose {
+    position: relative;
+    height: 320px;
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .holo-img {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 4px var(--green)) drop-shadow(0 0 14px rgba(57,255,143,0.5));
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+  .holo-img.active { opacity: 1; }
+
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    92% { opacity: 1; }
+    93% { opacity: 0.75; }
+    94% { opacity: 1; }
+    97% { opacity: 0.85; }
+    98% { opacity: 1; }
+  }
+
+  .pose-path {
+    fill: none;
+    stroke: var(--green);
+    stroke-width: 2.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: d 0.4s ease;
+  }
+
+  .pose-fade { transition: opacity 0.35s ease; }
+
+  /* ---------- Results panel ---------- */
+  .results-panel { min-height: 100%; }
+
+  .player-summary {
+    font-family: var(--font-body);
+    font-size: 15.5px;
+    line-height: 1.45;
+    color: var(--text-mute);
+    margin-bottom: 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--panel-border);
+  }
+  .player-summary strong {
+    color: var(--green);
+    font-weight: 700;
+  }
+
+  .gauge-block { margin-bottom: 14px; }
+  .gauge-block:last-child { margin-bottom: 0; }
+
+  .gauge-title {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 15.5px;
+    color: var(--text);
+    margin-bottom: 2px;
+  }
+  .gauge-desc {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-mute);
+    margin-bottom: 6px;
+    line-height: 1.4;
+  }
+
+  .gauge-row { display: flex; align-items: center; gap: 18px; }
+
+  .gauge-value {
+    font-family: var(--font-display); font-weight: 900;
+    font-size: 44px;
+    letter-spacing: 1px;
+    min-width: 92px;
+  }
+  .gauge-value span { font-size: 18px; color: var(--text-mute); }
+
+  .run-btn {
+    width: 100%;
+    margin-top: 12px;
+    height: 46px;
+    background: var(--green);
+    color: #04140b;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: box-shadow 0.15s, transform 0.1s;
+    box-shadow: 0 0 18px rgba(57,255,143,0.35);
+  }
+  .run-btn:hover { box-shadow: 0 0 26px rgba(57,255,143,0.55); }
+  .run-btn:active { transform: scale(0.99); }
+
+  .model-status {
+    margin-top: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-mute);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--amber); flex: none; }
+  .dot.live { background: var(--green); box-shadow: 0 0 6px var(--green); }
+
+  /* ---------- Model connect ---------- */
+  .connect-panel { margin-top: 12px; }
+  .connect-toggle {
+    background: none;
+    border: 1px dashed var(--panel-border);
+    color: var(--text-mute);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: left;
+  }
+  .connect-toggle:hover { border-color: var(--green-dim); color: var(--text); }
+
+  .connect-body { display: none; margin-top: 10px; }
+  .connect-body.open { display: block; }
+
+  .connect-body p {
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--text-mute);
+    line-height: 1.6;
+    margin: 0 0 10px;
+  }
+  .connect-body code {
+    font-family: 'JetBrains Mono', monospace;
+    background: #081410;
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: var(--green);
+    font-size: 11px;
+  }
+
+  textarea.field-input {
+    height: 120px;
+    padding: 10px 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    resize: vertical;
+    cursor: text;
+  }
+
+  .connect-apply-row { display: flex; gap: 8px; margin-top: 8px; }
+  .connect-apply-row button {
+    flex: 1;
+    height: 36px;
+    border-radius: 6px;
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid var(--panel-border);
+    background: transparent;
+    color: var(--text);
+  }
+  .connect-apply-row button.primary {
+    background: var(--green-soft);
+    border-color: var(--green-dim);
+    color: var(--green);
+  }
+  .connect-note { font-size: 10.5px; margin-top: 8px; color: var(--text-mute); font-family: 'JetBrains Mono', monospace; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1 class="title">MOVE MAKER</h1>
+    <div class="subtitle">Transfer Risk Assessment</div>
+  </header>
+
+  <div class="grid">
+
+    <!-- COLUMN 1: identity -->
+    <div class="panel">
+      <div class="eyebrow">Player</div>
+
+      <label class="field-label" for="playerName">Player Name</label>
+      <input class="field-input" type="text" id="playerName" placeholder="e.g. Marcus Fields" />
+
+      <label class="field-label" for="club">Destination Club</label>
+      <select class="field-input" id="club"></select>
+
+      <div class="other-club-wrap" id="otherClubWrap">
+        <label class="field-label" for="otherClub">Enter Club Name</label>
+        <input class="field-input" type="text" id="otherClub" placeholder="Club name" />
+      </div>
+
+      <label class="field-label" for="position">Position</label>
+      <select class="field-input" id="position">
+        <option>Goalkeeper</option>
+        <option>Center Back</option>
+        <option>Full Back</option>
+        <option>Defensive Midfielder</option>
+        <option>Central Midfielder</option>
+        <option>Attacking Midfielder</option>
+        <option>Winger</option>
+        <option>Striker</option>
+      </select>
+
+      <div class="holo-pose" id="holoPose">
+        <img id="holoA" src="player-1.webp" alt="Player render" class="holo-img active" />
+        <img id="holoB" src="player-2.webp" alt="Player render" class="holo-img" />
+      </div>
+    </div>
+
+    <!-- COLUMN 2: contract factors -->
+    <div class="panel">
+      <div class="eyebrow">Contract Factors</div>
+      <div class="connect-note" style="margin-top:-6px; margin-bottom: 10px;">USD figures shown in parentheses, approx. €1 = $1.08</div>
+
+      <label class="field-label" for="age">Age</label>
+      <select class="field-input" id="age"></select>
+
+      <label class="field-label" for="injury">Injury History</label>
+      <select class="field-input" id="injury">
+        <option value="0">None on record</option>
+        <option value="1">Minor (single soft-tissue)</option>
+        <option value="2">Moderate (recurring)</option>
+        <option value="3">Major (long-term absence)</option>
+        <option value="4">Chronic</option>
+      </select>
+
+      <label class="field-label" for="marketValue">Market Value (EUR)</label>
+      <select class="field-input" id="marketValue">
+        <option value="2000000">&lt; €5M (≈ $5.4M)</option>
+        <option value="10000000">€5M – €15M (≈ $5.4M – $16.2M)</option>
+        <option value="25000000">€15M – €35M (≈ $16.2M – $37.8M)</option>
+        <option value="50000000">€35M – €60M (≈ $37.8M – $64.8M)</option>
+        <option value="80000000">€60M – €100M (≈ $64.8M – $108M)</option>
+        <option value="120000000">€100M+ (≈ $108M+)</option>
+      </select>
+
+      <label class="field-label" for="contractLength">Contract Length (New Deal)</label>
+      <select class="field-input" id="contractLength">
+        <option value="1">1 year</option>
+        <option value="2">2 years</option>
+        <option value="3" selected>3 years</option>
+        <option value="4">4 years</option>
+        <option value="5">5 years</option>
+        <option value="6">6+ years</option>
+      </select>
+
+      <label class="field-label" for="wage">Wage (USD / year)</label>
+      <select class="field-input" id="wage">
+        <option value="800000">&lt; $1M</option>
+        <option value="3000000">$1M – $5M</option>
+        <option value="8000000">$5M – $10M</option>
+        <option value="15000000">$10M – $20M</option>
+        <option value="30000000">$20M+</option>
+      </select>
+
+      <label class="field-label" for="fee">Transfer Fee (EUR)</label>
+      <select class="field-input" id="fee">
+        <option value="0">Free transfer ($0)</option>
+        <option value="5000000">&lt; €10M (≈ $10.8M)</option>
+        <option value="20000000">€10M – €30M (≈ $10.8M – $32.4M)</option>
+        <option value="50000000">€30M – €60M (≈ $32.4M – $64.8M)</option>
+        <option value="90000000">€60M – €100M (≈ $64.8M – $108M)</option>
+        <option value="130000000">€100M+ (≈ $108M+)</option>
+      </select>
+
+      <label class="field-label" for="extension">Club Extension Option</label>
+      <select class="field-input" id="extension">
+        <option value="yes">Yes, club option included</option>
+        <option value="no">No option included</option>
+        <option value="unknown">Undisclosed</option>
+      </select>
+
+      <div class="other-club-wrap show" id="extensionLengthWrap">
+        <label class="field-label" for="extensionLength">Extension Length (years)</label>
+        <input class="field-input" type="text" id="extensionLength" placeholder="e.g. 1" />
+      </div>
+    </div>
+
+    <!-- COLUMN 3: results -->
+    <div class="panel results-panel">
+      <div class="eyebrow">Risk Output</div>
+
+      <div class="player-summary" id="playerSummary">Fill in the player, club, and position to begin.</div>
+
+      <div class="gauge-block">
+        <div class="gauge-title">Value Downside Risk</div>
+        <div class="gauge-desc">Probability the player's public market value falls ~25%+ within 24 months.</div>
+        <div class="gauge-row">
+          <svg id="gaugeValue" width="120" height="70" viewBox="0 0 120 70"></svg>
+          <div class="gauge-value" id="gaugeValueNum">–<span>/100</span></div>
+        </div>
+      </div>
+
+      <div class="gauge-block">
+        <div class="gauge-title">Retention Score</div>
+        <div class="gauge-desc">Likelihood of sustained involvement at the destination club.</div>
+        <div class="gauge-row">
+          <svg id="gaugeRetention" width="120" height="70" viewBox="0 0 120 70"></svg>
+          <div class="gauge-value" id="gaugeRetentionNum">–<span>/100</span></div>
+        </div>
+      </div>
+
+      <button class="run-btn" id="runBtn">Run Assessment</button>
+      <div class="model-status">
+        <span class="dot" id="modelDot"></span>
+        <span id="modelStatusText">Placeholder scoring active — no trained model connected</span>
+      </div>
+
+      <div class="connect-panel">
+        <button class="connect-toggle" id="connectToggle">&gt; connect trained model</button>
+        <div class="connect-body" id="connectBody">
+          <p>Paste your exported model as JSON. Two linear weight sets are expected, one per score, using the field keys: <code>age, injury, marketValue, contractLength, wage, fee, extension</code>.</p>
+          <textarea class="field-input" id="modelJson" placeholder='{"valueDownside": {"intercept": 12, "age": 0.6, "injury": 8, "marketValue": -0.00000004, "contractLength": -2, "wage": 0.0000003, "fee": 0.00000015, "extension": -3}, "retention": {"intercept": 70, "age": -0.4, "injury": -6, "contractLength": 4, "extension": 5}}'></textarea>
+          <div class="connect-apply-row">
+            <button id="applyModel" class="primary">Apply Model</button>
+            <button id="clearModel">Use Placeholder</button>
+          </div>
+          <div class="connect-note">Team: replace the placeholder in <code>computeScores()</code> with your exported Python coefficients here, or hard-code them directly in the script once finalized.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  // ---------------- Big 5 club list ----------------
+  const BIG5 = {
+    "Premier League": ["Arsenal","Aston Villa","Bournemouth","Brentford","Brighton","Chelsea","Crystal Palace","Everton","Fulham","Liverpool","Manchester City","Manchester United","Newcastle United","Nottingham Forest","Tottenham Hotspur","West Ham United","Wolverhampton"],
+    "La Liga": ["Real Madrid","Barcelona","Atletico Madrid","Athletic Bilbao","Real Sociedad","Real Betis","Villarreal","Valencia","Sevilla","Girona","Celta Vigo","Osasuna","Rayo Vallecano","Getafe","Mallorca"],
+    "Bundesliga": ["Bayern Munich","Borussia Dortmund","RB Leipzig","Bayer Leverkusen","Eintracht Frankfurt","VfB Stuttgart","Borussia Monchengladbach","Wolfsburg","Union Berlin","Freiburg","Mainz 05","Hoffenheim"],
+    "Serie A": ["Juventus","Inter Milan","AC Milan","Napoli","AS Roma","Lazio","Atalanta","Fiorentina","Bologna","Torino","Udinese"],
+    "Ligue 1": ["Paris Saint-Germain","Marseille","Monaco","Lyon","Lille","Nice","Lens","Rennes","Strasbourg","Toulouse"]
+  };
+
+  const clubSelect = document.getElementById('club');
+  Object.entries(BIG5).forEach(([league, teams]) => {
+    const group = document.createElement('optgroup');
+    group.label = league;
+    teams.forEach(t => {
+      const opt = document.createElement('option');
+      opt.value = t; opt.textContent = t;
+      group.appendChild(opt);
+    });
+    clubSelect.appendChild(group);
+  });
+  const otherOpt = document.createElement('option');
+  otherOpt.value = "__other__"; otherOpt.textContent = "Other (not Big 5)";
+  clubSelect.appendChild(otherOpt);
+
+  clubSelect.addEventListener('change', () => {
+    document.getElementById('otherClubWrap').classList.toggle('show', clubSelect.value === "__other__");
+    updatePlayerSummary();
+  });
+
+  const extensionSelect = document.getElementById('extension');
+  extensionSelect.addEventListener('change', () => {
+    document.getElementById('extensionLengthWrap').classList.toggle('show', extensionSelect.value === "yes");
+  });
+
+  // ---------------- Age dropdown ----------------
+  const ageSelect = document.getElementById('age');
+  for (let a = 16; a <= 40; a++) {
+    const opt = document.createElement('option');
+    opt.value = a; opt.textContent = a;
+    if (a === 24) opt.selected = true;
+    ageSelect.appendChild(opt);
+  }
+
+  // ---------------- Silhouette poses ----------------
+  // Multi-point tapered limb: builds ONE continuous outline through a chain
+  // of joints (e.g. shoulder -> elbow -> hand) instead of stitching separate
+  // capsules together, so there's no circular seam artifact at each joint.
+  function norm(x, y) { const l = Math.hypot(x, y) || 1; return { x: x / l, y: y / l }; }
+  function dirAt(pts, i, n) {
+    if (i === 0) return norm(pts[1].x - pts[0].x, pts[1].y - pts[0].y);
+    if (i === n - 1) return norm(pts[i].x - pts[i - 1].x, pts[i].y - pts[i - 1].y);
+    const d1 = norm(pts[i].x - pts[i - 1].x, pts[i].y - pts[i - 1].y);
+    const d2 = norm(pts[i + 1].x - pts[i].x, pts[i + 1].y - pts[i].y);
+    return norm(d1.x + d2.x, d1.y + d2.y);
+  }
+  function limbPath(pts) {
+    const n = pts.length, left = [], right = [];
+    for (let i = 0; i < n; i++) {
+      const d = dirAt(pts, i, n);
+      const px = -d.y, py = d.x;
+      left.push({ x: pts[i].x + px * pts[i].r, y: pts[i].y + py * pts[i].r });
+      right.push({ x: pts[i].x - px * pts[i].r, y: pts[i].y - py * pts[i].r });
+    }
+    let s = `M ${left[0].x.toFixed(1)} ${left[0].y.toFixed(1)} `;
+    for (let i = 1; i < n; i++) s += `L ${left[i].x.toFixed(1)} ${left[i].y.toFixed(1)} `;
+    const endR = pts[n - 1].r;
+    s += `A ${endR} ${endR} 0 0 1 ${right[n - 1].x.toFixed(1)} ${right[n - 1].y.toFixed(1)} `;
+    for (let i = n - 2; i >= 0; i--) s += `L ${right[i].x.toFixed(1)} ${right[i].y.toFixed(1)} `;
+    const startR = pts[0].r;
+    s += `A ${startR} ${startR} 0 0 1 ${left[0].x.toFixed(1)} ${left[0].y.toFixed(1)} Z`;
+    return s;
+  }
+  function limbShape(d) {
+    return `<path d="${d}" fill="url(#bodyGlow)" stroke="#baffdd" stroke-width="0.9" opacity="0.95"/>`;
+  }
+
+  const TORSO = `
+    <path d="M58 44 C52 54,53 66,55 78 C57 90,60 96,65 102 C62 110,60 118,64 124
+      C67 129,73 131,80 131 C87 131,93 129,96 124 C100 118,98 110,95 102
+      C100 96,103 90,105 78 C107 66,108 54,102 44 C97 42,92 40,88 40 L72 40
+      C68 40,63 42,58 44 Z"
+      fill="url(#bodyGlow)" stroke="#baffdd" stroke-width="1" opacity="0.95"/>
+    <path d="M80 18 C88 18 93 25 93 34 C93 42 89 48 80 49 C71 48 67 42 67 34 C67 25 72 18 80 18 Z"
+      fill="url(#bodyGlow)" stroke="#baffdd" stroke-width="0.9" opacity="0.95"/>
+  `;
+
+  const FLOOR_GLOW = `<ellipse cx="80" cy="248" rx="34" ry="7" fill="#39ff8f" opacity="0.25"/>
+    <ellipse cx="80" cy="248" rx="52" ry="11" fill="#39ff8f" opacity="0.1"/>`;
+
+  // Legs are drawn first (so the rounded pelvis in TORSO overlaps their
+  // tops cleanly), then torso, then arms on top.
+  function bodySvg(legs, arms) {
+    return `<svg viewBox="0 0 160 260" width="180" height="260">${FLOOR_GLOW}${legs}${TORSO}${arms}</svg>`;
+  }
+
+  // Default standing pose — a plain, healthy stance used for every outfield
+  // position. Goalkeeper switches to an active blocking stance.
+  const STAND_POSE = bodySvg(`
+    ${limbShape(limbPath([{x:74,y:124,r:9},{x:71,y:180,r:7},{x:68,y:238,r:5}]))}
+    ${limbShape(limbPath([{x:86,y:124,r:9},{x:89,y:180,r:7},{x:92,y:238,r:5}]))}
+  `, `
+    ${limbShape(limbPath([{x:60,y:50,r:8},{x:48,y:92,r:6},{x:42,y:132,r:4}]))}
+    ${limbShape(limbPath([{x:100,y:50,r:8},{x:112,y:92,r:6},{x:118,y:132,r:4}]))}
+  `);
+
+  const RUN_POSE = bodySvg(`
+    ${limbShape(limbPath([{x:74,y:124,r:9},{x:56,y:160,r:7},{x:64,y:194,r:4.5}]))}
+    ${limbShape(limbPath([{x:86,y:124,r:9},{x:96,y:186,r:7},{x:108,y:220,r:4.5}]))}
+  `, `
+    ${limbShape(limbPath([{x:58,y:48,r:8},{x:36,y:64,r:6},{x:28,y:44,r:4}]))}
+    ${limbShape(limbPath([{x:102,y:48,r:8},{x:116,y:78,r:6},{x:108,y:102,r:4}]))}
+  `);
+
+  const GK_POSE = bodySvg(`
+    ${limbShape(limbPath([{x:72,y:124,r:9},{x:50,y:172,r:7.5},{x:44,y:212,r:5}]))}
+    ${limbShape(limbPath([{x:88,y:124,r:9},{x:110,y:172,r:7.5},{x:116,y:212,r:5}]))}
+  `, `
+    ${limbShape(limbPath([{x:56,y:48,r:8},{x:30,y:38,r:6},{x:6,y:22,r:4}]))}
+    ${limbShape(limbPath([{x:104,y:48,r:8},{x:130,y:38,r:6},{x:154,y:22,r:4}]))}
+  `);
+
+  // NOTE: the holo frame now shows a fixed player photo (see the <img>
+  // markup above), so the position select no longer swaps in a generated
+  // SVG pose. The pose-building functions above are left in place in case
+  // you want to switch back to the wireframe silhouette later.
+
+  // ---------------- Gauge rendering ----------------
+  function polar(cx, cy, r, angleDeg) {
+    const a = (angleDeg - 180) * Math.PI / 180;
+    return { x: cx + r * Math.cos(a), y: cy + r * Math.sin(a) };
+  }
+  function arcPath(cx, cy, r, startAngle, endAngle) {
+    const s = polar(cx, cy, r, startAngle);
+    const e = polar(cx, cy, r, endAngle);
+    const large = endAngle - startAngle > 180 ? 1 : 0;
+    return `M ${s.x} ${s.y} A ${r} ${r} 0 ${large} 1 ${e.x} ${e.y}`;
+  }
+
+  function drawGauge(svgId, value, colorFn) {
+    const svg = document.getElementById(svgId);
+    const cx = 60, cy = 62, r = 50;
+    const track = arcPath(cx, cy, r, 0, 180);
+    const fillEnd = (value / 100) * 180;
+    const fillArc = value > 0 ? arcPath(cx, cy, r, 0, fillEnd) : "";
+    svg.innerHTML = `
+      <path d="${track}" stroke="#173327" stroke-width="10" fill="none" stroke-linecap="round"/>
+      ${fillArc ? `<path d="${fillArc}" stroke="${colorFn(value)}" stroke-width="10" fill="none" stroke-linecap="round" style="filter:drop-shadow(0 0 4px ${colorFn(value)})"/>` : ""}
+    `;
+  }
+
+  function riskColor(v) {
+    if (v < 33) return "#39ff8f";
+    if (v < 66) return "#ffb347";
+    return "#ff5c5c";
+  }
+  function retentionColor(v) {
+    if (v > 66) return "#39ff8f";
+    if (v > 33) return "#ffb347";
+    return "#ff5c5c";
+  }
+
+  // ---------------- Scoring ----------------
+  // PLACEHOLDER MODEL — replace with the team's trained coefficients
+  // via the "connect trained model" panel, or hard-code them here once ready.
+  let activeModel = null; // null = placeholder heuristic in use
+
+  function placeholderScores(inputs) {
+    // Purely illustrative weighting so the gauges respond to inputs during
+    // live demos. NOT derived from real data. Swap for the trained model.
+    const ageFactor = Math.max(0, inputs.age - 29) * 2.2;
+    const injuryFactor = inputs.injury * 9;
+    const feeFactor = Math.min(inputs.fee / 2500000, 22);
+    const wageFactor = Math.min(inputs.wage / 1500000, 14);
+    let valueDownside = 18 + ageFactor + injuryFactor * 0.8 + feeFactor * 0.5;
+    valueDownside = Math.max(3, Math.min(96, valueDownside));
+
+    const contractBonus = inputs.contractLength * 6;
+    const extensionBonus = inputs.extension === 'yes' ? 8 : inputs.extension === 'no' ? -4 : 0;
+    let retention = 55 + contractBonus - injuryFactor * 0.9 - ageFactor * 0.7 + extensionBonus;
+    retention = Math.max(3, Math.min(97, retention));
+
+    return { valueDownside: Math.round(valueDownside), retention: Math.round(retention) };
+  }
+
+  function applyLinearModel(weights, inputs) {
+    let sum = weights.intercept || 0;
+    Object.keys(weights).forEach(k => {
+      if (k === 'intercept') return;
+      if (inputs[k] !== undefined) sum += weights[k] * inputs[k];
+    });
+    return Math.max(0, Math.min(100, Math.round(sum)));
+  }
+
+  function computeScores(inputs) {
+    if (activeModel && activeModel.valueDownside && activeModel.retention) {
+      return {
+        valueDownside: applyLinearModel(activeModel.valueDownside, inputs),
+        retention: applyLinearModel(activeModel.retention, inputs)
+      };
+    }
+    return placeholderScores(inputs);
+  }
+
+  function collectInputs() {
+    return {
+      age: Number(document.getElementById('age').value),
+      injury: Number(document.getElementById('injury').value),
+      marketValue: Number(document.getElementById('marketValue').value),
+      contractLength: Number(document.getElementById('contractLength').value),
+      wage: Number(document.getElementById('wage').value),
+      fee: Number(document.getElementById('fee').value),
+      extension: document.getElementById('extension').value
+    };
+  }
+
+  // ---------------- Player summary line ----------------
+  function escapeHtml(str) {
+    return str.replace(/[&<>"']/g, ch => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    }[ch]));
+  }
+
+  function getClubDisplay() {
+    if (clubSelect.value === '__other__') {
+      const other = document.getElementById('otherClub').value.trim();
+      return other || 'an unnamed club';
+    }
+    return clubSelect.value || 'an unnamed club';
+  }
+
+  function updatePlayerSummary() {
+    const nameRaw = document.getElementById('playerName').value.trim();
+    const name = nameRaw || 'This player';
+    const club = getClubDisplay();
+    const position = document.getElementById('position').value || 'player';
+    document.getElementById('playerSummary').innerHTML =
+      `<strong>${escapeHtml(name)}</strong> at <strong>${escapeHtml(club)}</strong> as a <strong>${escapeHtml(position)}</strong>`;
+  }
+
+  document.getElementById('playerName').addEventListener('input', updatePlayerSummary);
+  document.getElementById('otherClub').addEventListener('input', updatePlayerSummary);
+  document.getElementById('position').addEventListener('change', updatePlayerSummary);
+  updatePlayerSummary();
+
+  function runAssessment() {
+    const scores = computeScores(collectInputs());
+    drawGauge('gaugeValue', scores.valueDownside, riskColor);
+    drawGauge('gaugeRetention', scores.retention, retentionColor);
+    document.getElementById('gaugeValueNum').innerHTML = scores.valueDownside + '<span>/100</span>';
+    document.getElementById('gaugeRetentionNum').innerHTML = scores.retention + '<span>/100</span>';
+  }
+
+  document.getElementById('runBtn').addEventListener('click', runAssessment);
+
+  // init gauges empty
+  drawGauge('gaugeValue', 0, riskColor);
+  drawGauge('gaugeRetention', 0, retentionColor);
+
+  // ---------------- Model connect panel ----------------
+  const connectToggle = document.getElementById('connectToggle');
+  const connectBody = document.getElementById('connectBody');
+  connectToggle.addEventListener('click', () => connectBody.classList.toggle('open'));
+
+  document.getElementById('applyModel').addEventListener('click', () => {
+    const raw = document.getElementById('modelJson').value.trim();
+    const statusText = document.getElementById('modelStatusText');
+    const dot = document.getElementById('modelDot');
+    if (!raw) return;
+    try {
+      const parsed = JSON.parse(raw);
+      if (!parsed.valueDownside || !parsed.retention) throw new Error('missing keys');
+      activeModel = parsed;
+      statusText.textContent = 'Trained model connected';
+      dot.classList.add('live');
+      runAssessment();
+    } catch (e) {
+      statusText.textContent = 'Invalid model JSON — check format';
+      dot.classList.remove('live');
+    }
+  });
+
+  document.getElementById('clearModel').addEventListener('click', () => {
+    activeModel = null;
+    document.getElementById('modelStatusText').textContent = 'Placeholder scoring active — no trained model connected';
+    document.getElementById('modelDot').classList.remove('live');
+    runAssessment();
+  });
+
+  // ---------------- Player render turntable (crossfade) ----------------
+  // 8 frames captured at 45-degree steps around the vertical axis
+  // (player-1.webp = front ... player-8.webp = front-left 3/4). Two stacked
+  // <img> layers crossfade between consecutive frames so the spin reads as
+  // continuous motion instead of a hard cut between photos.
+  const FRAME_COUNT = 8;
+  const FRAME_MS = 320; // how long each frame holds before crossfading to the next
+  const framePaths = Array.from({ length: FRAME_COUNT }, (_, i) => `player-${i + 1}.webp`);
+
+  // Preload every frame so a crossfade never reveals an unloaded image.
+  framePaths.forEach(src => { const img = new Image(); img.src = src; });
+
+  let frontLayer = document.getElementById('holoA');
+  let backLayer = document.getElementById('holoB');
+  let frameIndex = 0;
+  backLayer.src = framePaths[1 % FRAME_COUNT];
+
+  setInterval(() => {
+    frameIndex = (frameIndex + 1) % FRAME_COUNT;
+    backLayer.src = framePaths[frameIndex];
+    requestAnimationFrame(() => {
+      frontLayer.classList.remove('active');
+      backLayer.classList.add('active');
+      const tmp = frontLayer; frontLayer = backLayer; backLayer = tmp;
+    });
+  }, FRAME_MS);
+</script>
+</body>
+</html>
