@@ -1,0 +1,93 @@
+{
+  "checks_passed": 29,
+  "checks_total": 29,
+  "all_checks_passed": true,
+  "held_out_definition": "signed_year > 2023, never part of deployment training",
+  "total_unique_held_out_events_scored": 547,
+  "endpoint_results": {
+    "year2_opportunity_share": {
+      "n": 80,
+      "metric": "Spearman",
+      "value": 0.5420212948496131,
+      "published_reference": 0.512
+    },
+    "sustained_contribution_probability_24m": {
+      "n": 80,
+      "metric": "AUC",
+      "value": 0.793233082706767,
+      "published_reference": 0.788
+    },
+    "any_outbound_24m": {
+      "n": 319,
+      "metric": "AUC",
+      "value": 0.6786007217847769,
+      "published_reference": 0.71
+    },
+    "any_outbound_36m": {
+      "n": 193,
+      "metric": "Brier",
+      "value": 0.09406216474690869,
+      "published_auc_reference": 0.699
+    },
+    "permanent_outbound_24m": {
+      "n": 289,
+      "metric": "AUC",
+      "value": 0.6522926829268293,
+      "published_reference": 0.696
+    },
+    "value_log_ratio_12m": {
+      "n": 381,
+      "metric": "Spearman",
+      "value": 0.5948719957507944,
+      "published_reference": 0.607
+    },
+    "value_log_ratio_24m": {
+      "n": 41,
+      "metric": "Spearman",
+      "value": 0.6289599397845174,
+      "published_reference": 0.663
+    },
+    "downside_25pct_12m": {
+      "n": 381,
+      "metric": "AUC",
+      "value": 0.7943861693861693,
+      "published_reference": 0.781
+    },
+    "downside_25pct_24m": {
+      "n": 41,
+      "metric": "AUC",
+      "value": 0.9009661835748793,
+      "published_reference": 0.821
+    },
+    "downside_50pct_24m": {
+      "n": 41,
+      "metric": "AUC",
+      "value": 0.7486772486772486,
+      "published_reference": 0.805
+    },
+    "annual_wage": {
+      "n": 541,
+      "metric": "Spearman",
+      "value": 0.8951985675072862,
+      "published_reference": 0.889
+    },
+    "contract_duration": {
+      "n": 541,
+      "metric": "Spearman",
+      "value": 0.6788961098446411,
+      "published_reference": 0.659
+    },
+    "fixed_wage_commitment": {
+      "n": 541,
+      "metric": "Spearman",
+      "value": 0.8396576692799415,
+      "published_reference": 0.832
+    },
+    "wage_to_market_value": {
+      "n": 541,
+      "metric": "Spearman",
+      "value": 0.8914332004920162,
+      "published_reference": 0.835
+    }
+  }
+}

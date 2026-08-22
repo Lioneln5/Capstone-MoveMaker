@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MOVE MAKER — Scope &amp; Limitations</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap');
+
+  :root {
+    --font: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+    --bg-deep: #133d08;
+    --cream: #efefe8;
+    --panel: #ffffff;
+    --soft-fill: #f2f6f0;
+    --rule: #133d08;
+    --rule-soft: rgba(19,61,8,.18);
+    --rule-mid: rgba(19,61,8,.25);
+    --rule-strong: rgba(19,61,8,.35);
+    --green: #1a5622;
+    --green-dim: #133d08;
+    --green-soft: rgba(26,86,34,.1);
+    --text: #23301f;
+    --text-mute: #5c6b55;
+    --text-faint: #8a9484;
+    --amber-line: #ffe85a;
+    --grass: url('assets/grass%20background/ChatGPT%20Image%20Aug%2017%2C%202026%2C%2002_27_08%20PM.png');
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  body {
+    background-color: var(--bg-deep);
+    background-image: linear-gradient(rgba(4,16,8,.35), rgba(4,16,8,.5)), var(--grass);
+    background-size: cover; background-position: center top;
+    padding: 20px; color: var(--text); font-family: var(--font); font-size: 15px; line-height: 1.55;
+  }
+  a { color: var(--green); text-decoration: none; }
+  a:hover { color: var(--green-dim); }
+
+  .wrap { max-width: 1320px; margin: 0 auto; background: var(--cream); }
+
+  header { position: relative; padding: 30px 34px 26px; background-color: var(--bg-deep); background-image: linear-gradient(180deg, rgba(4,16,8,.55), rgba(4,16,8,.72)), var(--grass); background-size: cover; background-position: center 42%; }
+  .header-frame { position: absolute; inset: 12px; border: 1px solid rgba(255,255,255,.35); pointer-events: none; }
+  .title { position: relative; margin: 0; font-size: 62px; font-weight: 900; letter-spacing: -0.03em; line-height: .95; color: #ffffff; }
+  .subtitle { position: relative; margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,.45); font-size: 15.5px; font-weight: 500; color: rgba(255,255,255,.9); }
+
+  .site-nav { display: flex; flex-wrap: wrap; background: var(--panel); border-bottom: 2px solid var(--rule); }
+  .site-nav a { padding: 14px 24px 12px; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; color: var(--text); border-right: 1px solid var(--rule-soft); }
+  .site-nav a:last-child { border-right: 0; }
+  .site-nav a:hover { color: var(--green); background: var(--soft-fill); }
+  .site-nav a.active { color: #ffffff; background: var(--green); }
+  .site-nav a.active:hover { color: #ffffff; }
+
+  .league-rail { display: grid; grid-template-columns: 170px repeat(5, 1fr); background: var(--panel); border-bottom: 2px solid var(--rule); }
+  .league-rail-side { padding: 18px 18px 18px 34px; font-size: 10.5px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--text-mute); line-height: 1.4; border-right: 1px solid var(--rule-soft); display: flex; flex-direction: column; justify-content: center; gap: 8px; }
+  .league-rail-note { font-size: 10.5px; font-weight: 500; letter-spacing: 0; text-transform: none; color: var(--text-faint); line-height: 1.5; }
+  .league-rail-item { display: grid; grid-template-rows: 1fr auto; gap: 12px; padding: 22px 16px 0; border-right: 1px solid var(--rule-soft); }
+  .league-rail-item:last-child { border-right: 0; }
+  .league-rail-logo-shell { display: grid; place-items: center; min-height: 64px; }
+  .league-rail-logo { max-height: 62px; max-width: 132px; object-fit: contain; }
+  .league-rail-status { padding: 8px 0 10px; border-top: 3px solid transparent; font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--text-faint); text-align: center; }
+
+  .page-content { padding: 34px; }
+  .page-content h2 { margin: 34px 0 14px; padding-bottom: 12px; border-bottom: 2px solid var(--rule-soft); font-size: 27px; font-weight: 800; letter-spacing: -0.02em; color: var(--bg-deep); }
+  .page-content h2:first-child { margin-top: 0; }
+  .page-content p { font-size: 15px; line-height: 1.7; color: var(--text-mute); margin: 0 0 14px; max-width: 780px; }
+  .page-content ul { margin: 0 0 16px; padding-left: 20px; }
+  .page-content li { font-size: 15px; line-height: 1.65; color: var(--text-mute); margin-bottom: 8px; }
+  .page-content strong { color: var(--text); }
+  .page-content a.inline-link { color: var(--green); font-weight: 700; }
+
+  footer { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 24px; padding: 20px 34px; background-color: var(--bg-deep); background-image: linear-gradient(180deg, rgba(4,16,8,.55), rgba(4,16,8,.78)), var(--grass); background-size: cover; background-position: center 75%; color: #fff; }
+  .footer-note { font-size: 11.5px; letter-spacing: .06em; color: rgba(255,255,255,.85); }
+  .footer-leagues { display: flex; align-items: center; gap: 16px; padding: 8px 14px; background: #fff; }
+  .footer-leagues img { height: 20px; object-fit: contain; }
+
+  @media (max-width: 980px) {
+    .league-rail { grid-template-columns: 1fr; }
+    .league-rail-side { border-right: 0; border-bottom: 1px solid var(--rule-soft); padding: 14px 18px; }
+    .league-rail-grid { display: grid; grid-template-columns: repeat(3,1fr); }
+    footer { grid-template-columns: 1fr; text-align: center; }
+    .footer-leagues { justify-content: center; flex-wrap: wrap; }
+  }
+  @media (max-width: 620px) {
+    body { padding: 8px; }
+    .title { font-size: 42px; }
+    .page-content { padding: 22px; }
+    .league-rail-grid { grid-template-columns: repeat(2,1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="header-frame"></div>
+    <h1 class="title">MOVE MAKER</h1>
+    <div class="subtitle">Scope &amp; Limitations</div>
+  </header>
+
+  <nav class="site-nav">
+    <a href="about.html">About</a>
+    <a href="index.html">Tool</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="scope.html" class="active">Scope &amp; Limitations</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="league-rail" aria-label="Data coverage across the Big Five leagues">
+    <div class="league-rail-side">
+      <div>European<br>coverage</div>
+      <div class="league-rail-note">Historical incumbent-club extension data spans Europe’s Big Five leagues.</div>
+    </div>
+    <div class="league-rail-grid" style="display:contents">
+      <div class="league-rail-item">
+        <div class="league-rail-logo-shell"><img class="league-rail-logo" src="assets/leagues/GB1.png" alt="Premier League logo" loading="lazy"></div>
+        <div class="league-rail-status">GB1 · England</div>
+      </div>
+      <div class="league-rail-item">
+        <div class="league-rail-logo-shell"><img class="league-rail-logo" src="assets/leagues/ES1.png" alt="La Liga logo" loading="lazy"></div>
+        <div class="league-rail-status">ES1 · Spain</div>
+      </div>
+      <div class="league-rail-item">
+        <div class="league-rail-logo-shell"><img class="league-rail-logo" src="assets/leagues/L1.png" alt="Bundesliga logo" loading="lazy"></div>
+        <div class="league-rail-status">L1 · Germany</div>
+      </div>
+      <div class="league-rail-item">
+        <div class="league-rail-logo-shell"><img class="league-rail-logo" src="assets/leagues/IT1.png" alt="Serie A logo" loading="lazy"></div>
+        <div class="league-rail-status">IT1 · Italy</div>
+      </div>
+      <div class="league-rail-item">
+        <div class="league-rail-logo-shell"><img class="league-rail-logo" src="assets/leagues/FR1.png" alt="Ligue 1 logo" loading="lazy"></div>
+        <div class="league-rail-status">FR1 · France</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-content">
+
+    <h2>Supported decision</h2>
+    <p>Move Maker is an <strong>incumbent-club contract-extension decision profile</strong>. It evaluates proposed fixed wage and contract length for a player who already belongs to the selected club. The current player, club and league combination is verified and locked by the application.</p>
+    <p>The profile separates four questions: sustained playing involvement through Year 2, continuous club involvement through 24 and 36 months, public market-value downside within 24 months, and how the proposed fixed-wage commitment compares with historical extension peers.</p>
+
+    <h2>Modeled coverage</h2>
+    <p>The live models are limited to the Premier League, La Liga, Bundesliga, Serie A and Ligue 1. They were evaluated chronologically on historical extensions rather than random train/test splits, and the production package was independently checked on post-2023 extension events.</p>
+    <p>Outputs are probabilities, broad historical reference ranges and transparent calculations. They are screening evidence for human review—not guarantees, causal explanations or automated contract recommendations.</p>
+
+    <h2>Claims the tool does not support</h2>
+    <ul>
+      <li>An overall good-deal, bad-deal, compatibility or “success” score.</li>
+      <li>Evaluating a player for a new or hypothetical destination club.</li>
+      <li>Tactical or cultural fit, injury risk, motivation or manager preference.</li>
+      <li>Exact future minutes, tenure, departure date, transfer fee or sale proceeds.</li>
+      <li>An optimal wage, optimal contract length, accounting loss, expected profit, expected loss or return on investment.</li>
+      <li>Complete contract cost: bonuses, taxes, agent fees, release clauses, club options and other negotiated terms are not consistently observed.</li>
+      <li>Betting advice or individual financial advice.</li>
+    </ul>
+
+    <h2>Data limitations</h2>
+    <p>Market value is a public estimate, not an audited asset value or guaranteed transfer price. Wage figures are public gross fixed-salary estimates and may lag the current season; the interface labels stale sources and keeps them editable. Missing financial terms are treated as unknown, not zero.</p>
+    <p>Recent sporting data can also lag the current decision date. For unusually valuable players or other profiles outside the dense part of the historical sample, the models are extrapolating. The application displays a data-density warning because those estimates should be treated as directional only.</p>
+    <p>The peer benchmark's 80% range is a historical reference range, not a formal individualized prediction interval. A proposal inside that range is not automatically fair, affordable or advisable.</p>
+
+    <h2>Appropriate use</h2>
+    <p>Move Maker is best used to identify which part of an extension deserves additional scouting, financial, medical, legal or negotiation review. The club remains responsible for the final decision and for information unavailable in public data.</p>
+
+  </div>
+
+  <footer>
+    <div class="footer-note">Big Five leagues · historical incumbent-club extension data</div>
+    <div class="footer-leagues">
+      <img src="assets/leagues/GB1.png" alt="Premier League" />
+      <img src="assets/leagues/ES1.png" alt="La Liga" />
+      <img src="assets/leagues/L1.png" alt="Bundesliga" />
+      <img src="assets/leagues/IT1.png" alt="Serie A" />
+      <img src="assets/leagues/FR1.png" alt="Ligue 1" />
+    </div>
+  </footer>
+</div>
+</body>
+</html>

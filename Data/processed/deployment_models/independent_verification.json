@@ -1,0 +1,9 @@
+{
+  "checks_passed": 13,
+  "checks_total": 13,
+  "all_checks_passed": true,
+  "model_vintage": "deployment_v1_cutoff_2023",
+  "sample_size": 200,
+  "in_sample_auc_sustained_contribution": 0.7860712733594089,
+  "in_sample_n": 196
+}

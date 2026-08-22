@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MOVE MAKER — How It Works</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap');
+
+  :root {
+    --font: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+    --bg-deep: #133d08;
+    --cream: #efefe8;
+    --panel: #ffffff;
+    --soft-fill: #f2f6f0;
+    --rule: #133d08;
+    --rule-soft: rgba(19,61,8,.18);
+    --rule-mid: rgba(19,61,8,.25);
+    --rule-strong: rgba(19,61,8,.35);
+    --green: #1a5622;
+    --green-dim: #133d08;
+    --green-soft: rgba(26,86,34,.1);
+    --text: #23301f;
+    --text-mute: #5c6b55;
+    --text-faint: #8a9484;
+    --amber-line: #ffe85a;
+    --grass: url('assets/grass%20background/ChatGPT%20Image%20Aug%2017%2C%202026%2C%2002_27_08%20PM.png');
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  body {
+    background-color: var(--bg-deep);
+    background-image: linear-gradient(rgba(4,16,8,.35), rgba(4,16,8,.5)), var(--grass);
+    background-size: cover; background-position: center top;
+    padding: 20px; color: var(--text); font-family: var(--font); font-size: 15px; line-height: 1.55;
+  }
+  a { color: var(--green); text-decoration: none; }
+  a:hover { color: var(--green-dim); }
+
+  .wrap { max-width: 1320px; margin: 0 auto; background: var(--cream); }
+
+  header { position: relative; padding: 30px 34px 26px; background-color: var(--bg-deep); background-image: linear-gradient(180deg, rgba(4,16,8,.55), rgba(4,16,8,.72)), var(--grass); background-size: cover; background-position: center 42%; }
+  .header-frame { position: absolute; inset: 12px; border: 1px solid rgba(255,255,255,.35); pointer-events: none; }
+  .title { position: relative; margin: 0; font-size: 62px; font-weight: 900; letter-spacing: -0.03em; line-height: .95; color: #ffffff; }
+  .subtitle { position: relative; margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,.45); font-size: 15.5px; font-weight: 500; color: rgba(255,255,255,.9); }
+
+  .site-nav { display: flex; flex-wrap: wrap; background: var(--panel); border-bottom: 2px solid var(--rule); }
+  .site-nav a { padding: 14px 24px 12px; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; color: var(--text); border-right: 1px solid var(--rule-soft); }
+  .site-nav a:last-child { border-right: 0; }
+  .site-nav a:hover { color: var(--green); background: var(--soft-fill); }
+  .site-nav a.active { color: #ffffff; background: var(--green); }
+  .site-nav a.active:hover { color: #ffffff; }
+
+  .league-rail { display: grid; grid-template-columns: 170px repeat(5, 1fr); background: var(--panel); border-bottom: 2px solid var(--rule); }
+  .league-rail-side { padding: 18px 18px 18px 34px; font-size: 10.5px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--text-mute); line-height: 1.4; border-right: 1px solid var(--rule-soft); display: flex; flex-direction: column; justify-content: center; gap: 8px; }
+  .league-rail-note { font-size: 10.5px; font-weight: 500; letter-spacing: 0; text-transform: none; color: var(--text-faint); line-height: 1.5; }
+  .league-rail-item { display: grid; grid-template-rows: 1fr auto; gap: 12px; padding: 22px 16px 0; border-right: 1px solid var(--rule-soft); }
+  .league-rail-item:last-child { border-right: 0; }
+  .league-rail-logo-shell { display: grid; place-items: center; min-height: 64px; }
+  .league-rail-logo { max-height: 62px; max-width: 132px; object-fit: contain; }
+  .league-rail-status { padding: 8px 0 10px; border-top: 3px solid transparent; font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--text-faint); text-align: center; }
+
+  .page-content { padding: 34px; }
+  .page-content h2 { margin: 34px 0 14px; padding-bottom: 12px; border-bottom: 2px solid var(--rule-soft); font-size: 27px; font-weight: 800; letter-spacing: -0.02em; color: var(--bg-deep); }
+  .page-content h2:first-child { margin-top: 0; }
+  .page-content p { font-size: 15px; line-height: 1.7; color: var(--text-mute); margin: 0 0 14px; max-width: 780px; }
+  .page-content ul { margin: 0 0 16px; padding-left: 20px; }
+  .page-content li { font-size: 15px; line-height: 1.65; color: var(--text-mute); margin-bottom: 8px; }
+  .page-content strong { color: var(--text); }
+  .page-content a.inline-link { color: var(--green); font-weight: 700; }
+
+  footer { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 24px; padding: 20px 34px; background-color: var(--bg-deep); background-image: linear-gradient(180deg, rgba(4,16,8,.55), rgba(4,16,8,.78)), var(--grass); background-size: cover; background-position: center 75%; color: #fff; }
+  .footer-note { font-size: 11.5px; letter-spacing: .06em; color: rgba(255,255,255,.85); }
+  .footer-leagues { display: flex; align-items: center; gap: 16px; padding: 8px 14px; background: #fff; }
+  .footer-leagues img { height: 20px; object-fit: contain; }
+
+  @media (max-width: 980px) {
+    .league-rail { grid-template-columns: 1fr; }
+    .league-rail-side { border-right: 0; border-bottom: 1px solid var(--rule-soft); padding: 14px 18px; }
+    .league-rail-grid { display: grid; grid-template-columns: repeat(3,1fr); }
+    footer { grid-template-columns: 1fr; text-align: center; }
+    .footer-leagues { justify-content: center; flex-wrap: wrap; }
+  }
+  @media (max-width: 620px) {
+    body { padding: 8px; }
+    .title { font-size: 42px; }
+    .page-content { padding: 22px; }
+    .league-rail-grid { grid-template-columns: repeat(2,1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="header-frame"></div>
+    <h1 class="title">MOVE MAKER</h1>
+    <div class="subtitle">How It Works</div>
+  </header>
+
+  <nav class="site-nav">
+    <a href="about.html">About</a>
+    <a href="index.html">Tool</a>
+    <a href="how-it-works.html" class="active">How It Works</a>
+    <a href="scope.html">Scope &amp; Limitations</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="league-rail" aria-label="Data coverage across the Big Five leagues">
+    <div class="league-rail-side">
+      <div>European<br>coverage</div>
+      <div class="league-rail-note">Historical incumbent-club extension data spans Europe’s Big Five leagues.</div>
+    </div>
+    <div class="league-rail-grid" style="display:contents">
+      <div class="league-rail-item">
+        <div class="league-rail-logo-shell"><img class="league-rail-logo" src="assets/leagues/GB1.png" alt="Premier League logo" loading="lazy"></div>
+        <div class="league-rail-status">GB1 · England</div>
+      </div>
+      <div class="league-rail-item">
+        <div class="league-rail-logo-shell"><img class="league-rail-logo" src="assets/leagues/ES1.png" alt="La Liga logo" loading="lazy"></div>
+        <div class="league-rail-status">ES1 · Spain</div>
+      </div>
+      <div class="league-rail-item">
+        <div class="league-rail-logo-shell"><img class="league-rail-logo" src="assets/leagues/L1.png" alt="Bundesliga logo" loading="lazy"></div>
+        <div class="league-rail-status">L1 · Germany</div>
+      </div>
+      <div class="league-rail-item">
+        <div class="league-rail-logo-shell"><img class="league-rail-logo" src="assets/leagues/IT1.png" alt="Serie A logo" loading="lazy"></div>
+        <div class="league-rail-status">IT1 · Italy</div>
+      </div>
+      <div class="league-rail-item">
+        <div class="league-rail-logo-shell"><img class="league-rail-logo" src="assets/leagues/FR1.png" alt="Ligue 1 logo" loading="lazy"></div>
+        <div class="league-rail-status">FR1 · France</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-content">
+
+    <h2>1. Select the current player</h2>
+    <p>Search for a player and select the verified result. The tool automatically locks the player's current club and league because the models evaluate <strong>incumbent-club contract extensions</strong>, not hypothetical transfers to another club.</p>
+
+    <h2>2. Review and edit the proposed terms</h2>
+    <p>The assessment uses three financial inputs:</p>
+    <ul>
+      <li><strong>Current public market value (€)</strong> — auto-filled from the latest dated public valuation available to the system and editable.</li>
+      <li><strong>Proposed annual gross fixed wage (€)</strong> — pre-filled from the latest matched same-club wage estimate when available, but always editable. A historical wage is context, not a recommendation.</li>
+      <li><strong>Proposed contract length</strong> — two years or longer because the contribution outcome requires both Year 1 and Year 2 to be covered.</li>
+    </ul>
+    <p>Total fixed-wage commitment is annual gross fixed wage multiplied by contract years. Bonuses, taxes, agent fees, clauses and transfer fees are not included.</p>
+
+    <h2>3. Read four separate decision signals</h2>
+    <p>The profile deliberately avoids an overall “success score.” Each card answers a different question:</p>
+    <ul>
+      <li><strong>Year-2 Contribution Outlook</strong> — the probability that the player reaches at least 25% of available club minutes in both Year 1 and Year 2. The accompanying wage-exposure figure is a screening proxy, not expected loss.</li>
+      <li><strong>Contract-Horizon Stability</strong> — the probability of remaining continuously at the current club through 24 and 36 months. A loan counts as an interruption; permanent-club relationship at 24 months is shown separately.</li>
+      <li><strong>Asset-Value Risk</strong> — the probability that the public market-value estimate declines by at least 25% or 50% within 24 months. The euro threshold is a scenario translation, not a predicted transfer loss.</li>
+      <li><strong>Historical Wage Commitment Benchmark</strong> — proposed total fixed wages compared with a historical peer estimate and broad 80% reference range. It describes historical context, not a fair or optimal wage.</li>
+    </ul>
+
+    <h2>4. Open the explanations and warnings</h2>
+    <p>Use the downside selector to compare the verified 25% and 50% value scenarios. Open “What this means &amp; how it is calculated” beneath a card for its definition, intended decision use, caveats, and the player-specific features that most influenced supported linear-model probabilities. Feature influence is not proof of causation.</p>
+    <p>Contract facts and supporting model signals remain collapsed by default. Data-freshness and extrapolation warnings should be read before using any result—especially for unusually valuable players or profiles with sparse recent data.</p>
+
+    <h2>When the tool refuses or withholds an output</h2>
+    <p>The tool refuses requests outside the modeled Big-Five leagues or outside the current-club extension scope. If a required field cannot be reconstructed reliably, the affected result is marked unavailable rather than silently replaced with zero. See <a class="inline-link" href="scope.html">Scope &amp; Limitations</a> for the full boundary.</p>
+
+  </div>
+
+  <footer>
+    <div class="footer-note">Big Five leagues · historical incumbent-club extension data</div>
+    <div class="footer-leagues">
+      <img src="assets/leagues/GB1.png" alt="Premier League" />
+      <img src="assets/leagues/ES1.png" alt="La Liga" />
+      <img src="assets/leagues/L1.png" alt="Bundesliga" />
+      <img src="assets/leagues/IT1.png" alt="Serie A" />
+      <img src="assets/leagues/FR1.png" alt="Ligue 1" />
+    </div>
+  </footer>
+</div>
+</body>
+</html>

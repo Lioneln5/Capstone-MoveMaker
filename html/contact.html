@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MOVE MAKER — Contact</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap');
+
+  :root {
+    --font: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+    --bg-deep: #133d08;
+    --cream: #efefe8;
+    --panel: #ffffff;
+    --soft-fill: #f2f6f0;
+    --rule: #133d08;
+    --rule-soft: rgba(19,61,8,.18);
+    --rule-mid: rgba(19,61,8,.25);
+    --rule-strong: rgba(19,61,8,.35);
+    --green: #1a5622;
+    --green-dim: #133d08;
+    --green-soft: rgba(26,86,34,.1);
+    --text: #23301f;
+    --text-mute: #5c6b55;
+    --text-faint: #8a9484;
+    --amber-line: #ffe85a;
+    --grass: url('assets/grass%20background/ChatGPT%20Image%20Aug%2017%2C%202026%2C%2002_27_08%20PM.png');
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  body {
+    background-color: var(--bg-deep);
+    background-image: linear-gradient(rgba(4,16,8,.35), rgba(4,16,8,.5)), var(--grass);
+    background-size: cover; background-position: center top;
+    padding: 20px; color: var(--text); font-family: var(--font); font-size: 15px; line-height: 1.55;
+  }
+  a { color: var(--green); text-decoration: none; }
+  a:hover { color: var(--green-dim); }
+
+  .wrap { max-width: 1320px; margin: 0 auto; background: var(--cream); }
+
+  header { position: relative; padding: 30px 34px 26px; background-color: var(--bg-deep); background-image: linear-gradient(180deg, rgba(4,16,8,.55), rgba(4,16,8,.72)), var(--grass); background-size: cover; background-position: center 42%; }
+  .header-frame { position: absolute; inset: 12px; border: 1px solid rgba(255,255,255,.35); pointer-events: none; }
+  .title { position: relative; margin: 0; font-size: 62px; font-weight: 900; letter-spacing: -0.03em; line-height: .95; color: #ffffff; }
+  .subtitle { position: relative; margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,.45); font-size: 15.5px; font-weight: 500; color: rgba(255,255,255,.9); }
+
+  .site-nav { display: flex; flex-wrap: wrap; background: var(--panel); border-bottom: 2px solid var(--rule); }
+  .site-nav a { padding: 14px 24px 12px; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; color: var(--text); border-right: 1px solid var(--rule-soft); }
+  .site-nav a:last-child { border-right: 0; }
+  .site-nav a:hover { color: var(--green); background: var(--soft-fill); }
+  .site-nav a.active { color: #ffffff; background: var(--green); }
+  .site-nav a.active:hover { color: #ffffff; }
+
+  .page-content { padding: 34px; }
+  .page-content h2 { margin: 0 0 14px; padding-bottom: 12px; border-bottom: 2px solid var(--rule-soft); font-size: 27px; font-weight: 800; letter-spacing: -0.02em; color: var(--bg-deep); }
+  .page-content p { font-size: 15px; line-height: 1.7; color: var(--text-mute); margin: 0 0 14px; max-width: 780px; }
+
+  .team-contact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; margin-top: 20px; background: var(--rule-soft); border: 1px solid var(--rule-mid); }
+  @media (max-width: 620px) { .team-contact-grid { grid-template-columns: 1fr; } }
+  .team-contact-card { background: var(--panel); padding: 20px 22px; }
+  .tc-name { font-weight: 800; font-size: 18px; color: var(--text); margin-bottom: 10px; }
+  .tc-role-tag { display: inline-block; font-weight: 700; font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--green); background: var(--soft-fill); border: 1px solid var(--green); padding: 4px 9px; margin-left: 10px; vertical-align: middle; }
+  .tc-row { font-size: 13.5px; margin-bottom: 6px; }
+  .tc-row a { color: var(--green); font-weight: 600; word-break: break-all; }
+  .tc-row a:hover { text-decoration: underline; }
+
+  footer { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 24px; padding: 20px 34px; background-color: var(--bg-deep); background-image: linear-gradient(180deg, rgba(4,16,8,.55), rgba(4,16,8,.78)), var(--grass); background-size: cover; background-position: center 75%; color: #fff; }
+  .footer-note { font-size: 11.5px; letter-spacing: .06em; color: rgba(255,255,255,.85); }
+  .footer-leagues { display: flex; align-items: center; gap: 16px; padding: 8px 14px; background: #fff; }
+  .footer-leagues img { height: 20px; object-fit: contain; }
+
+  @media (max-width: 980px) {
+    footer { grid-template-columns: 1fr; text-align: center; }
+    .footer-leagues { justify-content: center; flex-wrap: wrap; }
+  }
+  @media (max-width: 620px) {
+    body { padding: 8px; }
+    .title { font-size: 42px; }
+    .page-content { padding: 22px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="header-frame"></div>
+    <h1 class="title">MOVE MAKER</h1>
+    <div class="subtitle">Contact</div>
+  </header>
+
+  <nav class="site-nav">
+    <a href="about.html">About</a>
+    <a href="index.html">Tool</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="scope.html">Scope &amp; Limitations</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <div class="page-content">
+
+    <h2>Get in touch</h2>
+    <p>Happy to talk about the project, walk through how it works, or answer any questions — feel free to reach out to any of us.</p>
+
+    <div class="team-contact-grid">
+      <div class="team-contact-card">
+        <div class="tc-name">Lionel Nash<span class="tc-role-tag">Project Coordinator</span></div>
+        <div class="tc-row"><a href="mailto:lionel.nash19@login.cuny.edu">lionel.nash19@login.cuny.edu</a></div>
+        <div class="tc-row"><a href="https://www.linkedin.com/in/lionel-nash/" target="_blank" rel="noopener">linkedin.com/in/lionel-nash</a></div>
+      </div>
+      <div class="team-contact-card">
+        <div class="tc-name">Derick Taverne<span class="tc-role-tag">Deliverable Architect</span></div>
+        <div class="tc-row"><a href="mailto:derick.taverne98@login.cuny.edu">derick.taverne98@login.cuny.edu</a></div>
+        <div class="tc-row"><a href="https://www.linkedin.com/in/derick-taverne/" target="_blank" rel="noopener">linkedin.com/in/derick-taverne</a></div>
+      </div>
+      <div class="team-contact-card">
+        <div class="tc-name">Evelyn (Gyuhyoun) Kim<span class="tc-role-tag">Scrum Master</span></div>
+        <div class="tc-row"><a href="mailto:gyuhyoun.kim77@login.cuny.edu">gyuhyoun.kim77@login.cuny.edu</a></div>
+        <div class="tc-row"><a href="https://www.linkedin.com/in/gyuhyoun-evelyn-kim" target="_blank" rel="noopener">linkedin.com/in/gyuhyoun-evelyn-kim</a></div>
+      </div>
+      <div class="team-contact-card">
+        <div class="tc-name">Rene Navarrete Toro<span class="tc-role-tag">Tech Auditor</span></div>
+        <div class="tc-row"><a href="mailto:rene.navarretetoro66@login.cuny.edu">rene.navarretetoro66@login.cuny.edu</a></div>
+        <div class="tc-row"><a href="https://www.linkedin.com/in/rene-navarrete-44a342265/" target="_blank" rel="noopener">linkedin.com/in/rene-navarrete-44a342265</a></div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-note">MoveMaker — a data analytics capstone project</div>
+    <div class="footer-leagues">
+      <img src="assets/leagues/GB1.png" alt="Premier League" />
+      <img src="assets/leagues/ES1.png" alt="La Liga" />
+      <img src="assets/leagues/L1.png" alt="Bundesliga" />
+      <img src="assets/leagues/IT1.png" alt="Serie A" />
+      <img src="assets/leagues/FR1.png" alt="Ligue 1" />
+    </div>
+  </footer>
+</div>
+</body>
+</html>
