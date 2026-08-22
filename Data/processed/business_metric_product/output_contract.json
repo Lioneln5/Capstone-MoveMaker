@@ -1,0 +1,82 @@
+{
+  "metric_version": "business_metrics_v1_2026-08-12",
+  "profile_scope": "incumbent_club_extension",
+  "product_status": "verified_translation_prototype_pending_decision_utility_review",
+  "overall_score": {
+    "status": "rejected",
+    "required_value": null
+  },
+  "cards": [
+    {
+      "card": "capital_commitment",
+      "headline_metrics": [
+        "fixed_wage_commitment_eur",
+        "fixed_commitment_to_public_value"
+      ],
+      "detail_metrics": [
+        "age_at_expiration",
+        "proposed_wage_change_pct"
+      ]
+    },
+    {
+      "card": "offer_context",
+      "headline_metrics": [
+        "fixed_commitment_peer_difference_eur",
+        "offer_aggressiveness_percentile"
+      ],
+      "detail_metrics": []
+    },
+    {
+      "card": "contribution_exposure",
+      "headline_metrics": [
+        "low_contribution_wage_exposure_eur"
+      ],
+      "detail_metrics": [
+        "fixed_wages_through_24m_eur",
+        "low_contribution_probability_24m"
+      ]
+    },
+    {
+      "card": "asset_value",
+      "headline_metrics": [
+        "public_value_downside_25pct_scenario"
+      ],
+      "detail_metrics": [
+        "public_value_downside_50pct_scenario"
+      ]
+    },
+    {
+      "card": "continuity",
+      "headline_metrics": [
+        "contract_continuity_horizon"
+      ],
+      "detail_metrics": [
+        "scheduled_fixed_wages_after_36m_eur"
+      ]
+    },
+    {
+      "card": "salary_structure",
+      "headline_metrics": [],
+      "detail_metrics": [
+        "club_salary_percentile",
+        "club_known_payroll_share"
+      ]
+    }
+  ],
+  "evidence_classes": [
+    "exact_calculation",
+    "exact_ratio_proxy",
+    "historical_benchmark_translation",
+    "historical_oos_reference",
+    "probability_weighted_proxy",
+    "paired_probability_scenario",
+    "observed_context",
+    "unavailable"
+  ],
+  "required_behavior": [
+    "Return unavailable rather than imputing a missing optional input.",
+    "Show probability-weighted exposure components alongside the euro proxy.",
+    "Never multiply paired public-value or continuity scenarios into an expected-loss number.",
+    "Never emit an overall contract score or approve/reject recommendation."
+  ]
+}

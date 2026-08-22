@@ -4,6 +4,13 @@ Data/TransferMarkt/
 Data/2017-2024/
 Data/Open-Data-Master/
 football-datasets-main/
+Data/leagues/
+Data/2024-2026/
+Data/injury/
+Data/slides/
+
+# Superseded local application copy; html/ is the maintained web application
+Data/app-html/
 
 # Large cleaned Transfermarkt relational tables
 Data/processed/transfermarkt_clean/tables/
@@ -39,6 +46,50 @@ Data/processed/transfermarkt_merged/transfer_valuation_features.csv
 Data/processed/transfermarkt_merged/transfer_lineup_features.csv
 Data/processed/transfermarkt_merged/transfer_event_features.csv
 
+# Capology raw-derived and row-level contract tables; publish only compact
+# summaries, schemas, checks, and verification artifacts.
+Data/processed/capology_contracts/canonical_salary_panel.csv
+Data/processed/capology_contracts/canonical_extension_events.csv
+Data/processed/capology_contracts/unresolved_player_matches.csv
+Data/processed/capology_contracts/unresolved_club_matches.csv
+Data/processed/contract_extension_integration/extension_modeling_master.csv
+Data/processed/contract_extension_integration/extension_seasonal_performance_long.csv
+Data/processed/contract_extension_integration/extension_exact_sporting_windows.csv
+Data/processed/contract_extension_integration/extension_valuation_landmarks.csv
+Data/processed/contract_extension_integration/extension_departure_outcomes.csv
+Data/processed/frozen_contract_sources/
+
+# Contract diagnostics: retain compact evidence, exclude row-level model inputs
+# and predictions that can be regenerated from the local source data.
+Data/processed/extension_opportunity_diagnostic/opportunity_model_matrix.csv
+Data/processed/extension_opportunity_diagnostic/model_predictions.csv
+Data/processed/extension_survival_diagnostic/survival_model_matrix.csv
+Data/processed/extension_survival_diagnostic/survival_predictions.csv
+Data/processed/extension_value_preservation_diagnostic/value_preservation_model_matrix.csv
+Data/processed/extension_value_preservation_diagnostic/value_predictions.csv
+Data/processed/contract_financial_exposure_benchmark/financial_exposure_model_matrix.csv
+Data/processed/contract_financial_exposure_benchmark/benchmark_predictions.csv
+Data/processed/integrated_contract_profile/integration_evaluation_cohort.csv
+Data/processed/integrated_contract_profile/historical_integrated_profiles.csv
+Data/processed/business_metric_translation_audit/translated_historical_profiles.csv
+Data/processed/business_metric_translation_audit/low_contribution_exposure_predictions.csv
+Data/processed/landmark_monitoring_experiment/landmark_predictions.csv
+Data/processed/landmark_monitoring_experiment/market_value_landmark_targets.csv
+Data/processed/landmark_monitoring_experiment/utilization_landmark_targets.csv
+Data/processed/landmark_monitoring_experiment/validation_tuning_results.csv
+
+# Later diagnostics: keep compact evidence, exclude reproducible row-level
+# predictions, live overlays, experimental binaries, and rollback backups.
+Data/processed/**/*_predictions.csv
+Data/processed/**/*_targets.csv
+Data/processed/**/model_predictions.csv
+Data/processed/**/candidate_model_artifact.joblib
+Data/processed/**/candidate_artifacts/
+Data/processed/deployment_models/_backups/
+Data/processed/live_input_refresh/canonical_performance_overlay.csv
+Data/processed/live_input_refresh/canonical_salary_overlay.csv
+Data/processed/financial_module_feasibility/financial_event_audit.csv
+
 # Large StatsBomb extracts; retain catalogs, crosswalk candidates, checks, and summaries
 Data/processed/statsbomb_case_studies/events_case_study.csv.gz
 Data/processed/statsbomb_case_studies/three_sixty_event_context.csv.gz
@@ -57,8 +108,28 @@ outputs/**/*.ndjson
 outputs/**/*.png
 outputs/**/*.mjs
 
+# Local presentation scratch files and superseded deck iterations. The curated
+# final export and script live under slides/final/.
+.tmp/
+*.inspect.ndjson
+slides/*.pptx
+slides/*.pdf
+slides/*.png
+slides/updated slides (8:16)/
+Project guidelines and templates/
+
+# Redundant local asset backups and superseded design export
+html/assets/**/*_original_backup.*
+html/MOVE MAKER - Extension Profile v2.dc.html
+
 # Local assistant settings
 .claude/
+claude/
+/CODEX.md
+/CLAUDE.md
+
+# Accidental copy of repository metadata (the real repository is .git/)
+git/
 
 # Temporary analytical databases
 *.sqlite

@@ -1,0 +1,14 @@
+{
+  "checks_passed": 33,
+  "checks_total": 33,
+  "all_checks_passed": true,
+  "source_extension_events": 2425,
+  "survival_primary_cohort": 2358,
+  "prediction_rows_verified": 99072,
+  "decisions_verified": {
+    "any_outbound_24m": "advance_survival_probability_candidate",
+    "any_outbound_36m": "advance_survival_probability_candidate",
+    "permanent_outbound_24m": "advance_survival_probability_candidate",
+    "permanent_outbound_36m": "descriptive_or_exploratory_only"
+  }
+}

@@ -1,0 +1,11 @@
+﻿check,observed,expected,passed,notes
+extension_rows_preserved,2805,2805,True,One output row per clean extension event.
+extension_ids_unique,0,0,True,No join multiplied events.
+seasonal_long_rows,16830,16830,True,Three pre and three post full-season slots per event.
+sporting_long_rows,11220,11220,True,Pre-365 and three non-overlapping post-year windows per event.
+valuation_long_rows,11220,11220,True,At-signing plus 12/24/36-month landmarks per event.
+pre_season_no_date_leakage,0,0,True,No attached pre-season ends after signing.
+sporting_observability_monotone,2805,2805,True,Longer horizons cannot be observable when shorter ones are not.
+retention_horizons_monotone,2805,2805,True,An uninterrupted longer spell implies the shorter spell.
+salary_context_no_multiplication,2805,2805,True,Capology source-name join remains one-to-one.
+modeling_funnel_monotone,1,1,True,Every cumulative eligibility stage is a subset of the preceding stage.

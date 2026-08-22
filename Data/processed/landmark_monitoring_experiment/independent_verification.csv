@@ -1,0 +1,17 @@
+check,passed,observed,expected,note
+output_manifest_file_set,True,14,14,The runner declared every expected primary artifact.
+output_hashes,True,,none,Every declared output matches its recorded SHA-256.
+source_hashes,True,,none,The experiment still points to the exact audited source files it used.
+runner_build_checks,True,13,13,"All runner-side leakage, cohort, and pairing checks passed."
+utilization_cohort_exact,True,667 rows; 551 players,667 rows; 551 players,Exact frozen landmark utilization cohort.
+market_value_cohort_exact,True,2632 rows; 1730 players,2632 rows; 1730 players,Exact frozen landmark market-value cohort.
+cohort_keys_unique,True,667;2632,667;2632,One row per transfer in both target tables.
+landmark_dates_exact,True,True,True,Every monitoring date is exactly 365 days after the transfer.
+day365_at_risk_independent,True,True,True,No player had a known outbound event on or before the scoring landmark.
+utilization_targets_recomputed,True,True,True,Continuous and threshold targets reproduce from year-two minutes and club games.
+valuation_asof_timing_independent,True,0,0,Landmark value predictors never use a later valuation.
+market_value_targets_recomputed,True,True,True,All day365-to-24m continuous and threshold targets reproduce exactly.
+feature_manifest_no_outcomes,True,,none,No 24-month outcome or target appears in the predictor manifest.
+prediction_integrity,True,29365 rows; 0 duplicates; consistency audited=True,"unique, bounded, evaluation years 2020-2023, raw ordering audited","Prediction keys, probability bounds, chronology, and known raw threshold-order violations are intact."
+pooled_comparisons_recomputed,True,,none,Every pooled MAE/Brier improvement and classification AUC reproduces from row predictions.
+decision_set_exact,True,"validated=['year2_opportunity_share', 'year2_underutilization_10pct', 'year2_underutilization_25pct', 'year2_value_downside_10pct', 'year2_value_downside_25pct', 'year2_value_log_ratio']; 50pct=promising_but_uncertain",six validated; 50pct promising_but_uncertain,Decision labels match the predeclared CI and origin-win rule.

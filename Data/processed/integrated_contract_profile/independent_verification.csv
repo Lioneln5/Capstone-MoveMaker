@@ -1,0 +1,34 @@
+﻿check,observed,expected,passed,notes
+required_outputs,0,0,True,All declared Phase-5 outputs exist.
+upstream_verifications,0,0,True,Failures: none
+source_row_count,2425,2425,True,Verified extension master remains unchanged in row count.
+profile_row_count,1560,1560,True,Historical profile coverage matches the Phase-2 evaluation anchor.
+profile_event_grain,0,0,True,One profile per extension event.
+profile_source_subset,0,0,True,Every profile traces to the verified extension master.
+profile_scope,1,1,True,Every modeled profile is explicitly extension-only.
+deterministic_formula_recomputation,0,0,True,"Age, fixed commitment, and market-value ratios reproduce from source inputs."
+coverage_recomputation,0,0,True,Saved module coverage matches row-level flags.
+coverage_counts,"{'opportunity_module_available': 929, 'survival_24m_module_available': 1560, 'survival_36m_module_available': 1560, 'value_12m_module_available': 1432, 'value_24m_module_available': 1367, 'financial_peer_module_available': 1504, 'complete_three_risk_module_profile': 839}","{'opportunity_module_available': 929, 'survival_24m_module_available': 1560, 'survival_36m_module_available': 1560, 'value_12m_module_available': 1432, 'value_24m_module_available': 1367, 'financial_peer_module_available': 1504, 'complete_three_risk_module_profile': 839}",True,Phase-specific availability counts are fixed.
+reference_interval_recomputation,0,0,True,Evaluation-derived 80% reference widths and coverage reproduce from out-of-time predictions.
+integration_cohort_count,839,839,True,Complete three-domain cohort is fixed.
+integration_year_counts,"{2020: 205, 2021: 211, 2022: 212, 2023: 211}","{2020: 205, 2021: 211, 2022: 212, 2023: 211}",True,All evaluation origins have stable overlap.
+integration_target_recomputation,1,1,True,Multi-domain outcome is exactly two or more adverse component outcomes.
+integration_target_rate,0.42550655542312277,0.42550655542312277,True,Observed multi-domain rate is reproduced.
+integration_rank_recomputation,0,0,True,Within-year component and combined ranks reproduce.
+integration_score_recomputation,0,0,True,"AUCs, origin ranges, and top-quintile concentrations reproduce."
+integration_comparison_recomputation,0,0,True,Cluster-bootstrap uncertainty and no-composite decisions reproduce.
+value_ordering_recomputation,0,0,True,"PAVA ordering, violations, and Brier changes reproduce from Phase-3 predictions."
+output_specification_scope,0,0,True,The web specification contains all required product sections.
+headline_composite_not_exposed,1,1,True,The rejected headline score is explicitly unavailable.
+extension_scope_warning,1,1,True,New-club extrapolation is prohibited in the app contract.
+input_contract_scope,0,0,True,User and backend requirements are explicit.
+prohibited_claims_scope,1,1,True,Core unsupported commercial and causal claims are frozen.
+deployment_readiness_boundaries,1,1,True,Offline validation is not mislabeled as live production readiness.
+case_study_count,12,12,True,Twelve historical cases exist.
+case_study_categories,"{'aligned_high_multidomain': 2, 'aligned_low_multidomain': 2, 'high_alert_without_multidomain': 2, 'missed_multidomain': 2, 'value_only_divergence': 2, 'sporting_continuity_only': 2}",six categories × two,True,"Cases include successes, failures, and cross-domain divergence."
+case_study_traceability,1,1,True,Every unique case traces to the complete out-of-time cohort.
+sample_profile_boundary,1,1,True,Sample profile is historical and does not expose a composite score.
+source_manifest_scope,14,14,True,"Master plus exact Phase 1-4 predictions, decisions, catalogs, and verifications are pinned."
+source_hashes,0,0,True,Failures: none
+builder_output_hashes,0,0,True,Failures: none
+builder_checks,1,1,True,All builder checks pass.

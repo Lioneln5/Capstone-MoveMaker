@@ -1,0 +1,13 @@
+﻿input_field,source,used_for,requirement,validation_rule
+player,user_selection,all sections,required,Resolve to canonical player ID.
+current_club,user_selection,all modeled sections,required,Must be the incumbent club for extension-mode predictions.
+proposed_annual_fixed_wage,user_input,contract facts and peer context,required,Positive gross annual amount with currency normalized to EUR.
+proposed_contract_years,user_input,contract facts and peer context,required,Positive term; disclose whether options are included.
+proposed_transfer_fee,user_input,acquisition-only arithmetic,optional,Does not authorize use of extension outcome models for a transfer.
+current_market_value,backend_or_user_input,financial ratios and value models,required,Positive dated public estimate.
+date_of_birth,backend,age features,required,Validated player identity match.
+position,backend,all benchmark models,required,Canonical position category.
+league,backend,all benchmark models,required,Validated only for modeled Big-Five scope.
+prior_season_wage,backend,financial peer benchmarks,recommended,Missingness is modeled; do not substitute zero.
+prior_opportunity_and_performance,backend,"opportunity, survival, value",required_for_models,"Retrieved from the canonical pre-extension history, not manually entered."
+club_salary_panel,backend,relative financial context,optional,Known panel may be incomplete.

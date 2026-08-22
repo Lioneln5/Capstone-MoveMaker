@@ -1,0 +1,5 @@
+﻿horizon,model_variant,rows,down25_gt_down10_violations,down50_gt_down25_violations,any_order_violation_rows
+12m,M5_plus_relative_financial_context,1432,50,69,118
+12m,M6_compact_nonlinear,1432,71,7,78
+24m,M5_plus_relative_financial_context,1367,57,77,129
+24m,M6_compact_nonlinear,1367,143,35,170

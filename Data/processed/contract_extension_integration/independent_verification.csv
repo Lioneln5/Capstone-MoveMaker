@@ -1,0 +1,24 @@
+﻿check,observed,expected,passed,notes
+required_outputs,0,0,True,All expected builder outputs exist.
+anchor_row_count,2805,2805,True,Every clean extension is preserved once.
+anchor_id_set,2805,2805,True,Output anchor IDs exactly match source IDs.
+anchor_id_unique,0,0,True,No join multiplication.
+pre_season_boundary,1,1,True,January-May excludes the unfinished domestic season.
+post_full_season_boundary,1,1,True,First full post season follows the July 1 convention.
+seasonal_long_grain,16830,16830,True,Six unique seasonal slots per event.
+sporting_long_grain,11220,11220,True,Four unique exact-date windows per event.
+valuation_long_grain,11220,11220,True,Four unique valuation landmarks per event.
+departure_grain,2805,2805,True,One departure record per event.
+modeling_funnel_monotone,1,1,True,Cumulative funnel counts never increase.
+information_roles,1,1,True,Pre and post blocks are labeled consistently.
+pre_season_date_leakage,0,0,True,No pre-signing seasonal record ends after signing.
+sporting_nonnegative,1,1,True,Minutes are nonnegative.
+opportunity_share_bounds,1,1,True,Shares are capped at the documented 1.05 tolerance.
+sporting_eligibility_rule,1,1,True,Eligibility requires observability and at least 10 club games.
+sporting_horizon_observability,1,1,True,Longer observable windows imply shorter observable windows.
+valuation_timing_rule,1,1,True,Eligible landmarks satisfy horizon and timing tolerances.
+departure_dates_after_signing,1,1,True,All selected departures occur strictly after signing.
+retention_monotone,1,1,True,Longer uninterrupted spells imply shorter spells.
+source_hashes,0,0,True,Failures: none
+builder_output_hashes,0,0,True,Failures: none
+builder_checks,1,1,True,All builder checks passed.

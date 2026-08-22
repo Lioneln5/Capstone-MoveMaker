@@ -1,0 +1,16 @@
+{
+  "checks": 16,
+  "checks_passed": 16,
+  "market_value_cohort_rows": 2632,
+  "status": "pass",
+  "uncertain_endpoint": "year2_value_downside_50pct",
+  "utilization_cohort_rows": 667,
+  "validated_monitoring_endpoints": [
+    "year2_opportunity_share",
+    "year2_underutilization_10pct",
+    "year2_underutilization_25pct",
+    "year2_value_downside_10pct",
+    "year2_value_downside_25pct",
+    "year2_value_log_ratio"
+  ]
+}

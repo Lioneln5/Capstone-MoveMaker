@@ -1,0 +1,9 @@
+module,model_variant,rule,rows,raw_violations,raw_violation_rate,maximum_violation,policy_status
+utilization,U1_transfer_time_profile,P(under10) <= P(under25),365,18,0.049315068493150684,0.29595166419671226,requires_ordering_before_live_probability_use
+utilization,U2_plus_first_year_involvement,P(under10) <= P(under25),365,12,0.03287671232876712,0.05679238579150042,requires_ordering_before_live_probability_use
+market_value,V1_transfer_time_profile,P(down25) <= P(down10),1630,9,0.005521472392638037,0.0537108301085365,requires_ordering_before_live_probability_use
+market_value,V2_plus_day365_value_state,P(down25) <= P(down10),1630,14,0.008588957055214725,0.109979524486012,requires_ordering_before_live_probability_use
+market_value,V3_plus_first_year_involvement,P(down25) <= P(down10),1630,34,0.020858895705521473,0.14854035811302269,requires_ordering_before_live_probability_use
+market_value,V1_transfer_time_profile,P(down50) <= P(down25),1630,13,0.007975460122699387,0.03213565345595926,requires_ordering_before_live_probability_use
+market_value,V2_plus_day365_value_state,P(down50) <= P(down25),1630,19,0.011656441717791411,0.06817107169262426,requires_ordering_before_live_probability_use
+market_value,V3_plus_first_year_involvement,P(down50) <= P(down25),1630,21,0.012883435582822086,0.2436143246643833,requires_ordering_before_live_probability_use

@@ -1,0 +1,14 @@
+﻿check,observed,expected,passed,notes
+salary_source_file_count,35.0,35,True,Five leagues by seven salary seasons.
+extension_source_file_count,34.0,34,True,Five new 2024-25 pages added; no 2017-18 pages and Premier League 2022-23 remains unavailable.
+salary_source_rows,19770.0,19770,True,Raw salary rows parsed.
+extension_source_rows,2811.0,2811,True,"Raw extension rows parsed, including 380 from the five 2024-25 pages."
+extension_canonical_events,2805.0,2805,True,Six repeated adjacent-page events collapsed.
+source_backup_hashes,69.0,69,True,Every exact backup matches its source.
+salary_key_unique,0.0,0,True,One row per canonical player-club-season key.
+extension_key_unique,0.0,0,True,One row per player-club-signing-date event.
+extension_positive_duration,2805.0,2805,True,All expiration dates follow signing dates.
+extension_club_link_complete,2805.0,2805,True,Every extension club has an accepted or reviewed exact mapping.
+extension_player_link_rate,0.9718,>=0.95,True,Unresolved names are preserved rather than forced.
+extension_contract_total_arithmetic,2708.0,2708,True,Reported contract total equals total annual gross times reported years within EUR 100.
+no_zero_salary_values_retained,0.0,0,True,Literal zero compensation values were flagged and converted to missing.

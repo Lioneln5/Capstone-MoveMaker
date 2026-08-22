@@ -1,0 +1,20 @@
+{
+  "salary_source_files": 35,
+  "extension_source_files": 34,
+  "salary_source_rows": 19770,
+  "canonical_salary_rows": 19770,
+  "salary_duplicate_rows_collapsed": 0,
+  "extension_source_rows": 2811,
+  "canonical_extension_events": 2805,
+  "extension_duplicate_rows_collapsed": 6,
+  "extension_player_links": 2726,
+  "extension_player_link_rate": 0.971836,
+  "extension_club_links": 2805,
+  "extension_club_link_rate": 1.0,
+  "salary_annual_gross_coverage": 0.960293,
+  "extension_annual_gross_coverage": 0.965419,
+  "extension_bonus_coverage": 0.406061,
+  "checks_passed": 13,
+  "checks_total": 13,
+  "all_checks_passed": true
+}

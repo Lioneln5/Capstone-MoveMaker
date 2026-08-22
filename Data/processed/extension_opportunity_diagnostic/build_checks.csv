@@ -1,0 +1,10 @@
+﻿check,observed,expected,passed,notes
+source_event_ids_unique,0,0,True,One row per extension event.
+primary_y2_cohort_size,1385,1385,True,"Contract-covered, linked, exact pre/post evidence cohort."
+initial_role_cohort_size,922,922,True,Primary cohort with pre-extension share >=25%.
+contract_coverage_enforced,1385,1385,True,Every primary event was scheduled through day 730.
+primary_target_complete,1385,1385,True,No missing continuous targets.
+prediction_key_unique,0,0,True,One out-of-time prediction per endpoint/origin/model/event.
+rolling_evaluation_years,2020 | 2021 | 2022 | 2023,2020 | 2021 | 2022 | 2023,True,Four declared historical origins.
+predictions_bounded,23730,23730,True,All continuous and probability predictions fall in valid declared bounds.
+feature_timing_safe,106,106,True,No post-signing feature in model ladder.

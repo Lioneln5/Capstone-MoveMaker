@@ -1,0 +1,10 @@
+﻿claim_id,classification,claim,evidence_boundary
+C01,approved,"MoveMaker provides separate opportunity, continuity, public-value, and contract-cost context for incumbent-club extension decisions.",Every displayed module passed its own out-of-time evidence gate.
+C02,qualified,An offer is above or below historical extension peers.,Peer deviation is descriptive and uncertain; it is not optimality or causation.
+C03,qualified,The model estimates horizon-specific probabilities and broad ranges.,"Do not convert them into exact dates, minutes, sale proceeds, or guarantees."
+C04,prohibited,The overall contract score predicts whether the deal will succeed.,The three-module composite did not establish incremental value over the best component.
+C05,prohibited,The model recommends the optimal wage or contract length.,"Historical peer benchmarks do not observe club utility, negotiation leverage, or causal contract effects."
+C06,prohibited,Fee plus wages equals total acquisition cost.,"Taxes, agent fees, signing fees, add-ons, options, clauses, and financing are missing."
+C07,prohibited,Market-value preservation equals resale profit or ROI.,Public estimates are not realized proceeds or accounting values.
+C08,prohibited,Extension-model probabilities apply to a player joining a new club.,Phases 1-4 were evaluated on incumbent-club extension events.
+C09,prohibited,A low probability means the player is tactically incompatible.,"The models predict outcomes, not causal tactical compatibility."

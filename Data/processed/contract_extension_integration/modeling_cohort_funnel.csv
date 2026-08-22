@@ -1,0 +1,8 @@
+﻿step,stage,records,retention_from_start,retention_from_previous
+0,All unique extension events,2805,1.0,
+1,Canonical player identity linked,2726,0.9718360071301247,0.9718360071301247
+2,Salary context and exact pre-365 sporting evidence,1989,0.7090909090909091,0.7296404988994865
+3,Also positive at-signing valuation within 365 days,1942,0.6923351158645277,0.9763700351935646
+4,Also eligible year-one sporting outcome (>=10 club games),1898,0.6766488413547237,0.9773429454170958
+5,Also eligible year-two sporting outcome (>=10 club games),1728,0.6160427807486631,0.9104320337197049
+6,Also eligible year-three sporting outcome (>=10 club games),1269,0.45240641711229945,0.734375

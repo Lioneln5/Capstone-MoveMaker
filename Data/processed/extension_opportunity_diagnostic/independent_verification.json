@@ -1,0 +1,15 @@
+{
+  "checks_passed": 32,
+  "checks_total": 32,
+  "all_checks_passed": true,
+  "source_extension_events": 2425,
+  "primary_y2_cohort": 1385,
+  "initial_role_y2_cohort": 922,
+  "prediction_rows_verified": 23730,
+  "decisions_verified": {
+    "year2_opportunity_share": "advance_predictive_candidate",
+    "major_role_decline": "descriptive_only_no_validated_incremental_signal",
+    "sustained_meaningful_contribution": "advance_predictive_candidate",
+    "contract_covered_minimal_involvement": "exploratory_signal_calibration_or_ranking_failed"
+  }
+}

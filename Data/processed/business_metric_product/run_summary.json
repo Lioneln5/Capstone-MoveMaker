@@ -1,0 +1,12 @@
+{
+  "metric_version": "business_metrics_v1_2026-08-12",
+  "profile_scope": "incumbent_club_extension",
+  "product_status": "verified_translation_prototype_pending_decision_utility_review",
+  "offer_reference_rows": 1504,
+  "historical_profiles_replayed": 1476,
+  "historical_examples": 12,
+  "builder_checks_passed": 23,
+  "builder_checks_total": 23,
+  "all_builder_checks_passed": true,
+  "overall_contract_score": "rejected"
+}

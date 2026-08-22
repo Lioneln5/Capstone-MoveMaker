@@ -2,7 +2,7 @@
 
 Read these files before doing anything:
 
-- `CODEX.md`, especially section 0A;
+- `docs/journal/2026-08-11_scope_pivot_journal.md`;
 - `docs/COARSE_CLUB_CONTEXT_DIAGNOSTIC_PROMPT.md`;
 - `Data/processed/coarse_club_context_diagnostic/README.md`;
 - `Data/processed/coarse_club_context_diagnostic/independent_verification.json`;

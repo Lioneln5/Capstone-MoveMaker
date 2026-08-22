@@ -1,0 +1,28 @@
+﻿section,output_key,display_label,data_class,source_phase,status,display_format,plain_language_warning
+Identity,profile_scope,Decision scope,context,Phase 5,supported,Incumbent-club extension,Models are not validated for a new-club acquisition.
+Contract facts,age_at_expiration,Age at expiration,factual_calculation,Phase 4,supported,0.0 years,Requires proposed term.
+Contract facts,fixed_wage_commitment_eur,Fixed-wage commitment,factual_calculation,Phase 4,supported_proxy,"€#,##0",Annual fixed wage × proposed years; not total contract cost.
+Contract facts,wage_to_market_value,Annual wage / market value,factual_calculation,Phase 4,supported,0.0%,Market value is a public estimate.
+Contract facts,fixed_commitment_to_market_value,Fixed commitment / market value,factual_calculation,Phase 4,supported_proxy,0.0%,Not an ROI measure.
+Acquisition-only arithmetic,transfer_premium,Transfer premium,factual_calculation,Phase 4,supported_when_fee_entered,0.0%,Fee relative to public market value; not proof of overpayment.
+Acquisition-only arithmetic,estimated_acquisition_commitment,Fee + fixed wages,factual_calculation,Phase 4,supported_proxy_when_fee_entered,"€#,##0","Excludes taxes, agents, signing fees, add-ons, clauses, and financing."
+Peer context,annual_wage_peer_range,Historical annual-wage peer range,historical_peer_benchmark,Phase 4,supported_broad_range,"€#,##0–€#,##0","Historical extensions, not an optimal wage recommendation."
+Peer context,annual_wage_peer_premium,Wage versus historical peers,historical_peer_benchmark,Phase 4,supported,+0%;−0%,Unusual does not mean overpriced.
+Peer context,contract_duration_peer_range,Historical term peer range,historical_peer_benchmark,Phase 4,supported_broad_range,0.0–0.0 years,Not an optimal term recommendation.
+Peer context,contract_duration_peer_delta,Term versus historical peers,historical_peer_benchmark,Phase 4,supported,+0.0;−0.0 years,Historical deviation only.
+Peer context,fixed_commitment_peer_range,Historical fixed-commitment range,historical_peer_benchmark,Phase 4,supported_broad_range,"€#,##0–€#,##0",Partial fixed-wage commitment only.
+Opportunity,year2_opportunity_reference_range,Expected Year-2 opportunity range,model_reference_range,Phase 1,supported_broad_range,0%–0%,Evaluation-derived reference range; not exact minutes.
+Opportunity,sustained_contribution_probability,Meaningful contributor through Year 2,model_probability,Phase 1,supported_candidate,0%,"Predictive association, not tactical compatibility."
+Continuity,continuous_stay_probability_24m,Continuous-club stay through 24 months,model_probability,Phase 2,supported_candidate,0%,Loan or permanent outbound ends continuous stay.
+Continuity,continuous_stay_probability_36m,Continuous-club stay through 36 months,model_probability,Phase 2,supported_candidate,0%,Not an exact departure-date prediction.
+Continuity,permanent_relationship_probability_24m,Permanent-club relationship through 24 months,model_probability,Phase 2,supported_candidate,0%,An intervening loan does not end the permanent relationship.
+Asset value,value_multiplier_reference_range_12m,12-month public-value range,model_reference_range,Phase 3,supported_broad_range,0.0×–0.0×,Not realized resale proceeds.
+Asset value,value_preservation_probability_12m,Preserve at least 90% of value at 12 months,ordered_model_probability,Phase 3,supported_candidate,0%,Threshold probabilities are order-constrained for display.
+Asset value,value_downside_25pct_probability_12m,Lose at least 25% of value at 12 months,ordered_model_probability,Phase 3,supported_candidate,0%,"Public-value downside, not accounting loss."
+Asset value,value_multiplier_reference_range_24m,24-month public-value range,model_reference_range,Phase 3,supported_broad_range,0.0×–0.0×,Not realized resale proceeds.
+Asset value,value_preservation_probability_24m,Preserve at least 90% of value at 24 months,ordered_model_probability,Phase 3,supported_candidate,0%,Threshold probabilities are order-constrained for display.
+Asset value,value_downside_25pct_probability_24m,Lose at least 25% of value at 24 months,ordered_model_probability,Phase 3,supported_candidate,0%,"Public-value downside, not accounting loss."
+Asset value,value_downside_50pct_probability_24m,Lose at least 50% of value at 24 months,ordered_model_probability,Phase 3,supported_candidate,0%,"Public-value downside, not accounting loss."
+Salary context,club_salary_percentile,Club salary percentile,observed_context,Phase 4,supported_when_matched,0th percentile,Known salary panel may be incomplete.
+Salary context,club_salary_share_known,Share of known club payroll,observed_context,Phase 4,supported_when_matched,0.0%,Denominator is not audited total payroll.
+Overall,headline_composite_score,Overall contract score,unsupported,Phase 5,rejected,Do not display,Integration did not validate a headline all-domain score.

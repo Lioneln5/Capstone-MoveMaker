@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "movemaker.extension-business-input.v1",
+  "title": "MoveMaker incumbent-extension business metric input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile_scope",
+    "age_at_decision",
+    "proposed_annual_fixed_wage_eur",
+    "proposed_contract_years",
+    "current_public_market_value_eur"
+  ],
+  "properties": {
+    "profile_scope": {
+      "const": "incumbent_club_extension"
+    },
+    "player": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "current_club": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "decision_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "age_at_decision": {
+      "type": "number",
+      "minimum": 15,
+      "maximum": 50
+    },
+    "proposed_annual_fixed_wage_eur": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "proposed_contract_years": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 10.5
+    },
+    "current_public_market_value_eur": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "prior_annual_fixed_wage_eur": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "peer_fixed_commitment_estimate_eur": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "peer_fixed_commitment_lower_eur": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "peer_fixed_commitment_upper_eur": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "sustained_contribution_probability_24m": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "continuous_stay_probability_24m": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "continuous_stay_probability_36m": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "public_value_downside_25pct_probability_24m": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "public_value_downside_50pct_probability_24m": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "club_salary_percentile": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "club_known_payroll_share": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "club_known_annual_fixed_wages_excluding_player_eur": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "minItems": 1,
+      "items": {
+        "type": "number",
+        "exclusiveMinimum": 0
+      }
+    }
+  },
+  "x_model_output_note": "Probability and peer fields are backend model outputs, not ordinary user-entered fields."
+}

@@ -223,6 +223,37 @@ Fully out-of-sample overlap: 446 transfers, 397 players, and 78 severe joint eve
 
 The joint score improved AUC over value by 0.047, but the player-clustered CI [-0.033, 0.124] crossed zero. It improved over under-use by 0.075 with CI [0.001, 0.146]. The high/high median quadrant had a 28.8% severe-event rate compared with 17.5% overall, but joint quintiles were not strictly monotonic. The final status was `useful_matrix_but_incremental_gain_uncertain`, and probability claims were prohibited.
 
+### 8. Day-365 landmark monitoring extension
+
+The v2 landmark experiment scored only players with no recorded outbound event
+by day 365. Utilization targets covered days 366-730. Market-value targets used
+the latest positive valuation observed on or before day 365 as their starting
+point, excluding valuations more than 180 days stale. This prevents the update
+from using a departure or valuation that was not known at the scoring date.
+
+| Endpoint | Monitoring comparison | Loss improvement | Relative improvement | 95% CI | Wins | AUC |
+|---|---|---:|---:|---|---:|---:|
+| Year-two opportunity share | First-year involvement vs transfer profile | MAE +0.027959 | 12.1% | [+0.015882, +0.040028] | 4/4 | — |
+| Year-two under 10% opportunity | First-year involvement vs transfer profile | Brier +0.030663 | 12.4% | [+0.015675, +0.045668] | 4/4 | 0.727 |
+| Year-two under 25% opportunity | First-year involvement vs transfer profile | Brier +0.036186 | 14.5% | [+0.019723, +0.051920] | 4/4 | 0.737 |
+| Day365-to-24m log value ratio | Full update vs transfer profile | MAE +0.005437 | 1.4% | [+0.001111, +0.009578] | 3/4 | — |
+| Value decline at least 10% | Full update vs transfer profile | Brier +0.005641 | 2.6% | [+0.002141, +0.009086] | 4/4 | 0.752 |
+| Value decline at least 25% | Full update vs transfer profile | Brier +0.004827 | 2.2% | [+0.001785, +0.007886] | 4/4 | 0.729 |
+| Value decline at least 50% | Full update vs transfer profile | Brier +0.002065 | 1.8% | [-0.000238, +0.004420] | 2/4 | 0.724 |
+
+The utilization cohort contained 667 transfers and 551 players; the market-
+value cohort contained 2,632 transfers and 1,730 players. The first six
+increments were independently verified as supported. The 50% value-collapse
+increment remained promising but uncertain because its confidence interval
+crossed zero.
+
+The endpoint-specific classifiers were fit independently for this signal test.
+The recommended utilization update produced 12/365 raw under-10/under-25
+probability-order violations; the recommended value update produced 34/1,630
+down-25/down-10 and 21/1,630 down-50/down-25 violations. These forecasts require
+validation-only calibration and monotone ordering before live probability use.
+The violations do not alter the reported endpoint-specific Brier comparisons.
+
 ## Cross-model findings
 
 ### Finding 1: the strongest signal was financial-market risk, not tactical compatibility
@@ -239,7 +270,14 @@ Destination and transition context added repeatable opportunity information in t
 
 ### Finding 4: post-transfer monitoring can be more informative than transfer-time prediction
 
-Retention AUC improved from 0.586 at transfer to 0.713 when first-year involvement became available. MoveMaker can create value not only before signing but also as a portfolio-monitoring system.
+The retention landmark model had already shown AUC 0.713 after first-year
+involvement became available. The dedicated monitoring extension then validated
+the same product logic on distinct second-year targets: opportunity-share MAE
+improved by 0.027959, under-10 and under-25 Brier scores improved by 0.030663 and
+0.036186, and moderate value-downside Brier scores improved by approximately
+0.005. MoveMaker can therefore create value both before signing and as a
+portfolio-monitoring system. The transfer-time and landmark AUCs are not a
+like-for-like model comparison because their cohorts and information sets differ.
 
 ### Finding 5: integration improved usability more than raw predictive power
 
@@ -259,7 +297,8 @@ MoveMaker is a pre-transfer due-diligence and post-transfer monitoring system th
 4. Compare the proposed fee with historical comparable deals and broad uncertainty.
 5. Place the deal in a value-risk versus opportunity-risk matrix.
 6. Escalate high-capital or high/high-risk deals for scouting, medical, tactical, contract, and negotiation review.
-7. Update retention and involvement risk after the player’s first season.
+7. Update retention, utilization, and estimated market-value risk after the
+   player’s first season.
 
 ### User value
 
@@ -398,7 +437,7 @@ Use these local artifacts for project-method and result citations:
 - Fee benchmark: `Data/processed/fee_benchmarking_model/fee_benchmark_decision_summary.csv`
 - Capital-risk integration: `Data/processed/capital_at_risk_integration/integration_decision_summary.csv`
 - Verification status: each corresponding `independent_verification.json`
-- Full project history and claim guardrails: `CODEX.md`
+- Full project history and claim guardrails: `docs/journal/2026-08-11_scope_pivot_journal.md`
 
 ## Verification-status summary
 
@@ -418,6 +457,89 @@ Use these local artifacts for project-method and result citations:
 | Under-utilization refinement | 38/38 |
 | Fee benchmark | 41/41 |
 | Capital-at-risk integration | 37/37 |
+| Day-365 landmark monitoring | 16/16 |
+| Contract Phase 1: opportunity | 32/32 |
+| Contract Phase 2: survival | 33/33 |
+| Contract Phase 3: value preservation | 32/32 |
+| Contract Phase 4: financial exposure | 33/33 |
+| Contract Phase 5: integrated profile | 33/33 |
+
+## Follow-on evidence: incumbent-club contract extension product
+
+After the transfer-risk scope pivot, Capology salary and extension data enabled
+a second, more tightly scoped product question: can public information support
+an incumbent club's extension decision? Five chronological evidence gates
+tested future opportunity, time to outbound movement, public market-value
+preservation, contract financial context, and final product integration. The
+result is an extension decision profile, not a new-club compatibility model.
+
+The final profile contains separate cards for opportunity, continuity, asset
+value, contract facts, and historical peer context. The historical product
+layer covers 1,560 unique out-of-time extension events; 839 have complete
+opportunity, 24-month survival, and 24-month value evidence. An adverse result
+in at least two of those domains occurred in 42.6% of the complete cohort.
+
+A headline composite was explicitly tested and rejected. Opportunity risk
+alone achieved AUC 0.6885 on the multi-domain triage target. The equal-weight
+three-module rank achieved 0.6830, a difference of -0.00543 with 95% clustered
+CI [-0.03947, +0.02849]. Opportunity plus outbound risk reached 0.6986, but its
++0.01019 increment also remained uncertain, CI [-0.00953, +0.02991]. The app
+therefore presents modules separately rather than converting distinct concerns
+into an unsupported overall score.
+
+Contract financial context is commercially interpretable but broad. The
+historical annual-wage benchmark achieved R² 0.729 and Spearman 0.889; contract
+duration achieved R² 0.427 and Spearman 0.659; fixed-wage commitment achieved
+R² 0.644 and Spearman 0.832; and wage-to-market-value achieved R² 0.663 and
+Spearman 0.835. These support peer ranges and offer-relative deviation, not an
+optimal salary, optimal term, fair value, total cost, profit, or ROI claim.
+
+The product specification also records a deployment distinction. Factual
+calculations and guarded salary-panel lookups are ready for application logic.
+The personalized outcome and peer models remain offline-validated until their
+preprocessors and final full-history fits are serialized behind a canonical
+feature-retrieval service. Historical profiles and case studies demonstrate
+behavior and failure modes; they are not yet a live scoring API.
+
+Additional evidence ledger:
+
+- Contract Phase 1: `Data/processed/extension_opportunity_diagnostic/`
+- Contract Phase 2: `Data/processed/extension_survival_diagnostic/`
+- Contract Phase 3: `Data/processed/extension_value_preservation_diagnostic/`
+- Contract Phase 4: `Data/processed/contract_financial_exposure_benchmark/`
+- Contract Phase 5: `Data/processed/integrated_contract_profile/`
+
+## Production and post-presentation evidence addendum
+
+The offline extension profile was later productionized as a local FastAPI and
+HTML application with 16 separate endpoints. The production architecture does
+not change the research claims: it operationalizes the independently validated
+signals and continues to reject a composite score.
+
+The sustained-contribution artifact was later replaced by the C6 compact model
+after a bounded repair experiment and formal deployment verification. C6
+removed global `pre365_goals_per90` and `pre365_assists_per90`; it did not use a
+star-player bonus or score floor. Against C0, pooled Brier improvement was
++0.002246 with 95% CI [-0.000896, +0.005349], 2/4 origin wins, improved ECE by
+0.0058, and mean missing-input dependence fell from 16.39% to 3.77%. The result
+supports compact non-inferiority, not superiority. Deployment parity and smoke
+tests passed 25/25 checks.
+
+A later role-contextualization diagnostic found that 12 of 16 deployed
+endpoints used global goals/assists-per-90 terms. Broad-position interactions
+did not produce a universal improvement; removal was better supported for key
+continuity endpoints and results varied elsewhere. The diagnostic passed 34/34
+checks but deployed no candidate. It is evidence of a current limitation and a
+future endpoint-specific review, not evidence that production is role-aware.
+
+The final financial-impact analysis used 908 out-of-time extension profiles
+with €5.22B in scheduled two-year fixed wages. €1.82B, or 34.8%, was associated
+with players who did not sustain meaningful contribution through Year 2. At a
+fixed capacity of 182 reviews, choosing the largest contracts found 54 such
+historical outcomes (29.7%), whereas MoveMaker risk-weighted screening found 79
+(43.4%), a 46% increase, while selecting €2.88B rather than €3.37B in wage
+capital. This supports historical prioritization efficiency. It must not be
+reported as €1.82B of confirmed waste, causal loss, or recoverable savings.
 
 ## Final writing guardrail
 

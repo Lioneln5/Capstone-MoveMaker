@@ -1,0 +1,3 @@
+﻿candidate,baseline_best_component,pooled_auc_difference,origin_wins,origin_count,cluster_count,bootstrap_repetitions,auc_difference_ci_lower_95,auc_difference_ci_upper_95,probability_candidate_better,decision
+equal_weight_three_module,opportunity_component,-0.005433708753210809,3,4,758,5000,-0.03947152826442901,0.028487276456280554,0.383,reject_headline_composite_keep_modules_separate
+opportunity_plus_outbound,opportunity_component,0.010187477480618878,3,4,758,5000,-0.009533444048125598,0.0299082580566665,0.835,reject_headline_composite_keep_modules_separate

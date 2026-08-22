@@ -1,0 +1,33 @@
+﻿check,observed,expected,passed,notes
+required_outputs,0,0,True,All declared artifacts exist.
+upstream_verification,True,True,True,The contract integration passed independent verification.
+source_row_count,2425,2425,True,Clean extension source is unchanged.
+matrix_event_grain,0,0,True,One matrix row per extension event.
+matrix_source_ids,2425,2425,True,Matrix preserves the exact source ID set.
+base_cohort_recomputation,2285,2285,True,Linked strict positive signing valuations are reproduced.
+cohort_12m_recomputation,2162,2162,True,Strict positive post-extension valuation cohort is reproduced.
+cohort_24m_recomputation,1944,1944,True,Strict positive post-extension valuation cohort is reproduced.
+target_recomputation,0,0,True,"Cohorts, ratios, log ratios, and ordered downside targets reproduce from source values."
+target_ordering,1,1,True,Observed downside targets are correctly nested.
+valuation_timing,1,1,True,Every eligible landmark satisfies the declared timing tolerance.
+feature_timing,1,1,True,No future valuation or post-signing performance feature is modeled.
+prediction_grain,0,0,True,One prediction per endpoint/origin/model/event.
+prediction_row_count,78372,78372,True,"Prediction count matches fixed cohorts, origins, endpoints, and models."
+probability_bounds,1,1,True,All downside forecasts are probabilities.
+preservation_probability_complements,1,1,True,Value-preservation probability is exactly one minus 10% downside probability.
+prediction_actual_values,0,0,True,Saved actuals match independently reconstructed event targets.
+origin_metric_grain,0,0,True,One metric row per endpoint/origin/model.
+origin_metric_row_count,224,224,True,Eight endpoints by four origins by seven model variants.
+origin_metric_recomputation,0,0,True,All evaluation metrics reproduce from row-level predictions.
+comparison_row_count,192,192,True,All endpoint/window/comparison combinations exist.
+comparison_recomputation,0,0,True,"Paired improvements, row counts, and origin wins reproduce."
+risk_band_row_count,40,40,True,Five M5 bands exist for every endpoint.
+risk_band_flags,0,0,True,Monotonicity flags match observed band outcomes.
+ordering_audit_rows,4,4,True,M5 and M6 ordering are audited at both horizons.
+ordering_recomputation,0,0,True,Every raw threshold-order violation is reproduced from predictions.
+decision_set,8,8,True,All four endpoints are adjudicated at 12 and 24 months.
+decision_results,"{'value_log_ratio_12m': 'advance_broad_value_range_candidate', 'downside_10pct_12m': 'advance_downside_probability_candidate', 'downside_25pct_12m': 'advance_downside_probability_candidate', 'downside_50pct_12m': 'descriptive_or_exploratory_only', 'value_log_ratio_24m': 'advance_broad_value_range_candidate', 'downside_10pct_24m': 'advance_downside_probability_candidate', 'downside_25pct_24m': 'advance_downside_probability_candidate', 'downside_50pct_24m': 'advance_downside_probability_candidate'}","{'value_log_ratio_12m': 'advance_broad_value_range_candidate', 'downside_10pct_12m': 'advance_downside_probability_candidate', 'downside_25pct_12m': 'advance_downside_probability_candidate', 'downside_50pct_12m': 'descriptive_or_exploratory_only', 'value_log_ratio_24m': 'advance_broad_value_range_candidate', 'downside_10pct_24m': 'advance_downside_probability_candidate', 'downside_25pct_24m': 'advance_downside_probability_candidate', 'downside_50pct_24m': 'advance_downside_probability_candidate'}",True,Statuses match the pre-registered evidence gates.
+decision_traceability,0,0,True,Decision metrics trace to pooled comparisons.
+source_hashes,0,0,True,Failures: none
+builder_output_hashes,0,0,True,Failures: none
+builder_checks,1,1,True,All builder checks passed.

@@ -1,0 +1,10 @@
+{
+  "checks_passed": 20,
+  "checks_total": 20,
+  "all_checks_passed": true,
+  "offer_reference_rows": 1504,
+  "historical_examples": 12,
+  "metric_version": "business_metrics_v1_2026-08-12",
+  "profile_scope": "incumbent_club_extension",
+  "overall_contract_score": "rejected"
+}

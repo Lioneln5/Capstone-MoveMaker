@@ -1,0 +1,3485 @@
+[
+  {
+    "profile_scope": "incumbent_club_extension",
+    "metric_version": "business_metrics_v1_2026-08-12",
+    "player": "Daniele Padelli",
+    "current_club": "Udinese",
+    "decision_date": "2023-06-09",
+    "cards": {
+      "capital_commitment": [
+        {
+          "metric_key": "fixed_wage_commitment_eur",
+          "display_label": "Fixed-wage commitment",
+          "value": 761779.603011636,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Total fixed wages scheduled by the proposed term.",
+          "warning": "Partial commitment only; excludes bonuses, taxes, agent fees, options, clauses, and other costs.",
+          "components": {
+            "annual_fixed_wage_eur": 370000.0,
+            "contract_years": 2.0588637919233403
+          }
+        },
+        {
+          "metric_key": "fixed_commitment_to_public_value",
+          "display_label": "Commitment / public value",
+          "value": 2.53926534337212,
+          "unit": "ratio",
+          "evidence_class": "exact_ratio_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Scale of proposed fixed wages relative to the dated public market-value estimate.",
+          "warning": "Not ROI, accounting exposure, book value, or expected loss.",
+          "components": {
+            "fixed_wage_commitment_eur": 761779.603011636,
+            "current_public_market_value_eur": 300000.0
+          }
+        },
+        {
+          "metric_key": "age_at_expiration",
+          "display_label": "Age at expiration",
+          "value": 39.67967145790555,
+          "unit": "years",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Player age when the proposed fixed term ends.",
+          "warning": "Does not incorporate an unentered unilateral or conditional option.",
+          "components": {
+            "age_at_decision": 37.620807665982205,
+            "contract_years": 2.0588637919233403
+          }
+        },
+        {
+          "metric_key": "proposed_wage_change_pct",
+          "display_label": "Proposed wage increase",
+          "value": 0.0,
+          "unit": "ratio",
+          "evidence_class": "exact_calculation",
+          "status": "supported_when_prior_wage_known",
+          "interpretation": "Change from the known prior annual fixed wage.",
+          "warning": "Public wage figures may be estimates and do not include unreported compensation.",
+          "components": {
+            "proposed_annual_fixed_wage_eur": 370000.0,
+            "prior_annual_fixed_wage_eur": 370000.0
+          }
+        }
+      ],
+      "offer_context": [
+        {
+          "metric_key": "fixed_commitment_peer_difference_eur",
+          "display_label": "Commitment versus historical peers",
+          "value": 58557.03366169019,
+          "unit": "EUR",
+          "evidence_class": "historical_benchmark_translation",
+          "status": "supported",
+          "interpretation": "Euro difference from the modeled historical peer commitment.",
+          "warning": "Historical deviation is not proof of overpayment or an optimal offer.",
+          "components": {
+            "proposed_fixed_commitment_eur": 761779.603011636,
+            "peer_estimate_eur": 703222.5693499458,
+            "peer_lower_eur": 256813.12877271711,
+            "peer_upper_eur": 1925610.2069485611,
+            "range_position": "within_historical_80pct_range"
+          }
+        },
+        {
+          "metric_key": "offer_aggressiveness_percentile",
+          "display_label": "Offer aggressiveness percentile",
+          "value": 0.4507978723404255,
+          "unit": "percentile",
+          "evidence_class": "historical_oos_reference",
+          "status": "supported_with_frozen_reference",
+          "interpretation": "Position of the proposal's peer-adjusted commitment in the frozen out-of-time extension distribution.",
+          "warning": "Not fairness, optimality, expected return, or a recommendation.",
+          "components": {
+            "peer_adjusted_log_residual": 0.07998383789382899,
+            "reference_rows": 1504
+          }
+        },
+        {
+          "metric_key": "contract_duration_peer_delta_years",
+          "display_label": "Term versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 duration peer estimate is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "wage_to_market_value_peer_comparison",
+          "display_label": "Wage/value versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 wage-to-value peer estimate is unavailable.",
+          "components": {}
+        }
+      ],
+      "contribution_exposure": [
+        {
+          "metric_key": "low_contribution_wage_exposure_eur",
+          "display_label": "Low-contribution wage exposure",
+          "value": 634513.9218717637,
+          "unit": "EUR",
+          "evidence_class": "probability_weighted_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Two-year fixed commitment weighted by modeled risk of not remaining a meaningful contributor through Year 2.",
+          "warning": "Not expected accounting loss, cash loss, or wasted wages.",
+          "components": {
+            "fixed_wages_through_24m_eur": 740000.0,
+            "low_contribution_probability_24m": 0.8574512457726536,
+            "sustained_contribution_probability_24m": 0.1425487542273464
+          }
+        }
+      ],
+      "asset_value": [
+        {
+          "metric_key": "value_preservation_probability_12m",
+          "display_label": "12-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 12-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "value_preservation_probability_24m",
+          "display_label": "24-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 24-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "public_value_downside_25pct_scenario",
+          "display_label": "24-month public-value downside scenario",
+          "value": {
+            "probability": 0.9269734567283864,
+            "minimum_threshold_eur": 75000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Probability and minimum euro threshold defining a 25% public-value decline.",
+          "warning": "Do not multiply into expected loss; public market value is not sale proceeds, impairment, or book value.",
+          "components": {
+            "current_public_market_value_eur": 300000.0,
+            "downside_threshold_pct": 0.25
+          }
+        },
+        {
+          "metric_key": "public_value_downside_50pct_scenario",
+          "display_label": "Severe 24-month public-value downside scenario",
+          "value": {
+            "probability": 0.7822930879711217,
+            "minimum_threshold_eur": 150000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display_detail",
+          "interpretation": "Probability and minimum euro threshold defining a 50% public-value decline.",
+          "warning": "Do not multiply into expected loss; this is a public-value threshold scenario.",
+          "components": {
+            "current_public_market_value_eur": 300000.0,
+            "downside_threshold_pct": 0.5
+          }
+        }
+      ],
+      "continuity": [
+        {
+          "metric_key": "scheduled_fixed_wages_after_36m_eur",
+          "display_label": "Fixed wages scheduled after month 36",
+          "value": 0.0,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Fixed wages scheduled beyond the model's 36-month continuity horizon.",
+          "warning": "This amount is scheduled commitment, not expected loss.",
+          "components": {
+            "annual_fixed_wage_eur": 370000.0,
+            "contract_years_beyond_36m": 0
+          }
+        },
+        {
+          "metric_key": "contract_continuity_horizon",
+          "display_label": "Contract-continuity horizon",
+          "value": {
+            "continuous_stay_probability_36m": 0.1891949919188404,
+            "scheduled_fixed_wages_after_36m_eur": 0.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Thirty-six-month continuous-stay probability shown beside scheduled fixed wages beyond that horizon.",
+          "warning": "Do not multiply into expected wage loss; outbound movement can stop wages or produce a fee.",
+          "components": {
+            "continuous_stay_probability_24m": 0.3746330555883062,
+            "scheduled_fixed_wages_after_24m_eur": 21779.60301163593
+          }
+        },
+        {
+          "metric_key": "permanent_relationship_probability_24m",
+          "display_label": "Permanent-relationship probability (24m)",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-2 permanent-outbound model output is unavailable.",
+          "components": {}
+        }
+      ],
+      "salary_structure": [
+        {
+          "metric_key": "club_salary_percentile",
+          "display_label": "Club salary position",
+          "value": 0.3448275862068966,
+          "unit": "percentile",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Position within the known same-club salary panel.",
+          "warning": "The public salary panel may be incomplete and excludes some compensation.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        },
+        {
+          "metric_key": "club_known_payroll_share",
+          "display_label": "Share of known club payroll",
+          "value": 0.0169865026168395,
+          "unit": "ratio",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Player annual fixed wage as a share of known public club fixed wages.",
+          "warning": "The denominator is not audited total payroll.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        }
+      ]
+    },
+    "availability": {
+      "available_metrics": 13,
+      "unavailable_metrics": 5
+    },
+    "overall_contract_score": null,
+    "overall_contract_score_status": "rejected_show_separate_business_metrics",
+    "global_warnings": [
+      "Validated for incumbent-club extension decisions in the modeled Big-Five scope only.",
+      "No displayed metric is an approve/reject recommendation.",
+      "Public market value is not realized sale proceeds or accounting value.",
+      "Missing inputs remain unavailable and are never silently replaced with zero."
+    ],
+    "historical_case": {
+      "capology_extension_event_id": "c55cfe915036933eca143dd400a6525b2cc3036284c8635197cf8d3e0c2744eb",
+      "case_category": "aligned_high_multidomain",
+      "case_interpretation": "High modeled concern aligned with adverse outcomes in at least two domains.",
+      "actual_low_contribution": 1.0,
+      "actual_outbound_24m": 0.0,
+      "actual_value_downside_25pct_24m": 1.0
+    }
+  },
+  {
+    "profile_scope": "incumbent_club_extension",
+    "metric_version": "business_metrics_v1_2026-08-12",
+    "player": "Patrick Herrmann",
+    "current_club": "Monchengladbach",
+    "decision_date": "2022-05-11",
+    "cards": {
+      "capital_commitment": [
+        {
+          "metric_key": "fixed_wage_commitment_eur",
+          "display_label": "Fixed-wage commitment",
+          "value": 3635044.490075291,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Total fixed wages scheduled by the proposed term.",
+          "warning": "Partial commitment only; excludes bonuses, taxes, agent fees, options, clauses, and other costs.",
+          "components": {
+            "annual_fixed_wage_eur": 1700000.0,
+            "contract_years": 2.138261464750171
+          }
+        },
+        {
+          "metric_key": "fixed_commitment_to_public_value",
+          "display_label": "Commitment / public value",
+          "value": 1.4540177960301164,
+          "unit": "ratio",
+          "evidence_class": "exact_ratio_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Scale of proposed fixed wages relative to the dated public market-value estimate.",
+          "warning": "Not ROI, accounting exposure, book value, or expected loss.",
+          "components": {
+            "fixed_wage_commitment_eur": 3635044.490075291,
+            "current_public_market_value_eur": 2500000.0
+          }
+        },
+        {
+          "metric_key": "age_at_expiration",
+          "display_label": "Age at expiration",
+          "value": 33.379876796714576,
+          "unit": "years",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Player age when the proposed fixed term ends.",
+          "warning": "Does not incorporate an unentered unilateral or conditional option.",
+          "components": {
+            "age_at_decision": 31.241615331964407,
+            "contract_years": 2.138261464750171
+          }
+        },
+        {
+          "metric_key": "proposed_wage_change_pct",
+          "display_label": "Proposed wage increase",
+          "value": -0.15000000000000002,
+          "unit": "ratio",
+          "evidence_class": "exact_calculation",
+          "status": "supported_when_prior_wage_known",
+          "interpretation": "Change from the known prior annual fixed wage.",
+          "warning": "Public wage figures may be estimates and do not include unreported compensation.",
+          "components": {
+            "proposed_annual_fixed_wage_eur": 1700000.0,
+            "prior_annual_fixed_wage_eur": 2000000.0
+          }
+        }
+      ],
+      "offer_context": [
+        {
+          "metric_key": "fixed_commitment_peer_difference_eur",
+          "display_label": "Commitment versus historical peers",
+          "value": 650615.8732380667,
+          "unit": "EUR",
+          "evidence_class": "historical_benchmark_translation",
+          "status": "supported",
+          "interpretation": "Euro difference from the modeled historical peer commitment.",
+          "warning": "Historical deviation is not proof of overpayment or an optimal offer.",
+          "components": {
+            "proposed_fixed_commitment_eur": 3635044.490075291,
+            "peer_estimate_eur": 2984428.6168372245,
+            "peer_lower_eur": 1065093.3859001058,
+            "peer_upper_eur": 8362472.518285181,
+            "range_position": "within_historical_80pct_range"
+          }
+        },
+        {
+          "metric_key": "offer_aggressiveness_percentile",
+          "display_label": "Offer aggressiveness percentile",
+          "value": 0.5146276595744681,
+          "unit": "percentile",
+          "evidence_class": "historical_oos_reference",
+          "status": "supported_with_frozen_reference",
+          "interpretation": "Position of the proposal's peer-adjusted commitment in the frozen out-of-time extension distribution.",
+          "warning": "Not fairness, optimality, expected return, or a recommendation.",
+          "components": {
+            "peer_adjusted_log_residual": 0.19721303989425687,
+            "reference_rows": 1504
+          }
+        },
+        {
+          "metric_key": "contract_duration_peer_delta_years",
+          "display_label": "Term versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 duration peer estimate is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "wage_to_market_value_peer_comparison",
+          "display_label": "Wage/value versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 wage-to-value peer estimate is unavailable.",
+          "components": {}
+        }
+      ],
+      "contribution_exposure": [
+        {
+          "metric_key": "low_contribution_wage_exposure_eur",
+          "display_label": "Low-contribution wage exposure",
+          "value": 2573185.208042137,
+          "unit": "EUR",
+          "evidence_class": "probability_weighted_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Two-year fixed commitment weighted by modeled risk of not remaining a meaningful contributor through Year 2.",
+          "warning": "Not expected accounting loss, cash loss, or wasted wages.",
+          "components": {
+            "fixed_wages_through_24m_eur": 3400000.0,
+            "low_contribution_probability_24m": 0.7568191788359226,
+            "sustained_contribution_probability_24m": 0.2431808211640773
+          }
+        }
+      ],
+      "asset_value": [
+        {
+          "metric_key": "value_preservation_probability_12m",
+          "display_label": "12-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 12-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "value_preservation_probability_24m",
+          "display_label": "24-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 24-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "public_value_downside_25pct_scenario",
+          "display_label": "24-month public-value downside scenario",
+          "value": {
+            "probability": 0.8592726209966975,
+            "minimum_threshold_eur": 625000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Probability and minimum euro threshold defining a 25% public-value decline.",
+          "warning": "Do not multiply into expected loss; public market value is not sale proceeds, impairment, or book value.",
+          "components": {
+            "current_public_market_value_eur": 2500000.0,
+            "downside_threshold_pct": 0.25
+          }
+        },
+        {
+          "metric_key": "public_value_downside_50pct_scenario",
+          "display_label": "Severe 24-month public-value downside scenario",
+          "value": {
+            "probability": 0.645509569588598,
+            "minimum_threshold_eur": 1250000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display_detail",
+          "interpretation": "Probability and minimum euro threshold defining a 50% public-value decline.",
+          "warning": "Do not multiply into expected loss; this is a public-value threshold scenario.",
+          "components": {
+            "current_public_market_value_eur": 2500000.0,
+            "downside_threshold_pct": 0.5
+          }
+        }
+      ],
+      "continuity": [
+        {
+          "metric_key": "scheduled_fixed_wages_after_36m_eur",
+          "display_label": "Fixed wages scheduled after month 36",
+          "value": 0.0,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Fixed wages scheduled beyond the model's 36-month continuity horizon.",
+          "warning": "This amount is scheduled commitment, not expected loss.",
+          "components": {
+            "annual_fixed_wage_eur": 1700000.0,
+            "contract_years_beyond_36m": 0
+          }
+        },
+        {
+          "metric_key": "contract_continuity_horizon",
+          "display_label": "Contract-continuity horizon",
+          "value": {
+            "continuous_stay_probability_36m": 0.3149150079725509,
+            "scheduled_fixed_wages_after_36m_eur": 0.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Thirty-six-month continuous-stay probability shown beside scheduled fixed wages beyond that horizon.",
+          "warning": "Do not multiply into expected wage loss; outbound movement can stop wages or produce a fee.",
+          "components": {
+            "continuous_stay_probability_24m": 0.5161561811526941,
+            "scheduled_fixed_wages_after_24m_eur": 235044.49007529105
+          }
+        },
+        {
+          "metric_key": "permanent_relationship_probability_24m",
+          "display_label": "Permanent-relationship probability (24m)",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-2 permanent-outbound model output is unavailable.",
+          "components": {}
+        }
+      ],
+      "salary_structure": [
+        {
+          "metric_key": "club_salary_percentile",
+          "display_label": "Club salary position",
+          "value": 0.4230769230769231,
+          "unit": "percentile",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Position within the known same-club salary panel.",
+          "warning": "The public salary panel may be incomplete and excludes some compensation.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        },
+        {
+          "metric_key": "club_known_payroll_share",
+          "display_label": "Share of known club payroll",
+          "value": 0.0349147668925857,
+          "unit": "ratio",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Player annual fixed wage as a share of known public club fixed wages.",
+          "warning": "The denominator is not audited total payroll.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        }
+      ]
+    },
+    "availability": {
+      "available_metrics": 13,
+      "unavailable_metrics": 5
+    },
+    "overall_contract_score": null,
+    "overall_contract_score_status": "rejected_show_separate_business_metrics",
+    "global_warnings": [
+      "Validated for incumbent-club extension decisions in the modeled Big-Five scope only.",
+      "No displayed metric is an approve/reject recommendation.",
+      "Public market value is not realized sale proceeds or accounting value.",
+      "Missing inputs remain unavailable and are never silently replaced with zero."
+    ],
+    "historical_case": {
+      "capology_extension_event_id": "d73c86bf65a3414e1c6d80dc160cef0e2bb3f9d63e9053de95b424c0c507ffd7",
+      "case_category": "aligned_high_multidomain",
+      "case_interpretation": "High modeled concern aligned with adverse outcomes in at least two domains.",
+      "actual_low_contribution": 1.0,
+      "actual_outbound_24m": 0.0,
+      "actual_value_downside_25pct_24m": 1.0
+    }
+  },
+  {
+    "profile_scope": "incumbent_club_extension",
+    "metric_version": "business_metrics_v1_2026-08-12",
+    "player": "Vinicius Junior",
+    "current_club": "Real Madrid",
+    "decision_date": "2022-07-10",
+    "cards": {
+      "capital_commitment": [
+        {
+          "metric_key": "fixed_wage_commitment_eur",
+          "display_label": "Fixed-wage commitment",
+          "value": 124298425.73579739,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Total fixed wages scheduled by the proposed term.",
+          "warning": "Partial commitment only; excludes bonuses, taxes, agent fees, options, clauses, and other costs.",
+          "components": {
+            "annual_fixed_wage_eur": 25000000.0,
+            "contract_years": 4.971937029431896
+          }
+        },
+        {
+          "metric_key": "fixed_commitment_to_public_value",
+          "display_label": "Commitment / public value",
+          "value": 1.242984257357974,
+          "unit": "ratio",
+          "evidence_class": "exact_ratio_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Scale of proposed fixed wages relative to the dated public market-value estimate.",
+          "warning": "Not ROI, accounting exposure, book value, or expected loss.",
+          "components": {
+            "fixed_wage_commitment_eur": 124298425.73579739,
+            "current_public_market_value_eur": 100000000.0
+          }
+        },
+        {
+          "metric_key": "age_at_expiration",
+          "display_label": "Age at expiration",
+          "value": 26.965092402464066,
+          "unit": "years",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Player age when the proposed fixed term ends.",
+          "warning": "Does not incorporate an unentered unilateral or conditional option.",
+          "components": {
+            "age_at_decision": 21.99315537303217,
+            "contract_years": 4.971937029431896
+          }
+        },
+        {
+          "metric_key": "proposed_wage_change_pct",
+          "display_label": "Proposed wage increase",
+          "value": 2.7481259370314843,
+          "unit": "ratio",
+          "evidence_class": "exact_calculation",
+          "status": "supported_when_prior_wage_known",
+          "interpretation": "Change from the known prior annual fixed wage.",
+          "warning": "Public wage figures may be estimates and do not include unreported compensation.",
+          "components": {
+            "proposed_annual_fixed_wage_eur": 25000000.0,
+            "prior_annual_fixed_wage_eur": 6670000.0
+          }
+        }
+      ],
+      "offer_context": [
+        {
+          "metric_key": "fixed_commitment_peer_difference_eur",
+          "display_label": "Commitment versus historical peers",
+          "value": 74069794.333566,
+          "unit": "EUR",
+          "evidence_class": "historical_benchmark_translation",
+          "status": "supported",
+          "interpretation": "Euro difference from the modeled historical peer commitment.",
+          "warning": "Historical deviation is not proof of overpayment or an optimal offer.",
+          "components": {
+            "proposed_fixed_commitment_eur": 124298425.73579739,
+            "peer_estimate_eur": 50228631.402231395,
+            "peer_lower_eur": 17925770.711187627,
+            "peer_upper_eur": 140742367.68891907,
+            "range_position": "within_historical_80pct_range"
+          }
+        },
+        {
+          "metric_key": "offer_aggressiveness_percentile",
+          "display_label": "Offer aggressiveness percentile",
+          "value": 0.8503989361702128,
+          "unit": "percentile",
+          "evidence_class": "historical_oos_reference",
+          "status": "supported_with_frozen_reference",
+          "interpretation": "Position of the proposal's peer-adjusted commitment in the frozen out-of-time extension distribution.",
+          "warning": "Not fairness, optimality, expected return, or a recommendation.",
+          "components": {
+            "peer_adjusted_log_residual": 0.9061001226287889,
+            "reference_rows": 1504
+          }
+        },
+        {
+          "metric_key": "contract_duration_peer_delta_years",
+          "display_label": "Term versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 duration peer estimate is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "wage_to_market_value_peer_comparison",
+          "display_label": "Wage/value versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 wage-to-value peer estimate is unavailable.",
+          "components": {}
+        }
+      ],
+      "contribution_exposure": [
+        {
+          "metric_key": "low_contribution_wage_exposure_eur",
+          "display_label": "Low-contribution wage exposure",
+          "value": 2364828.0166969514,
+          "unit": "EUR",
+          "evidence_class": "probability_weighted_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Two-year fixed commitment weighted by modeled risk of not remaining a meaningful contributor through Year 2.",
+          "warning": "Not expected accounting loss, cash loss, or wasted wages.",
+          "components": {
+            "fixed_wages_through_24m_eur": 50000000.0,
+            "low_contribution_probability_24m": 0.04729656033393903,
+            "sustained_contribution_probability_24m": 0.952703439666061
+          }
+        }
+      ],
+      "asset_value": [
+        {
+          "metric_key": "value_preservation_probability_12m",
+          "display_label": "12-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 12-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "value_preservation_probability_24m",
+          "display_label": "24-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 24-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "public_value_downside_25pct_scenario",
+          "display_label": "24-month public-value downside scenario",
+          "value": {
+            "probability": 0.1514394136527725,
+            "minimum_threshold_eur": 25000000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Probability and minimum euro threshold defining a 25% public-value decline.",
+          "warning": "Do not multiply into expected loss; public market value is not sale proceeds, impairment, or book value.",
+          "components": {
+            "current_public_market_value_eur": 100000000.0,
+            "downside_threshold_pct": 0.25
+          }
+        },
+        {
+          "metric_key": "public_value_downside_50pct_scenario",
+          "display_label": "Severe 24-month public-value downside scenario",
+          "value": {
+            "probability": 0.1514394136527725,
+            "minimum_threshold_eur": 50000000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display_detail",
+          "interpretation": "Probability and minimum euro threshold defining a 50% public-value decline.",
+          "warning": "Do not multiply into expected loss; this is a public-value threshold scenario.",
+          "components": {
+            "current_public_market_value_eur": 100000000.0,
+            "downside_threshold_pct": 0.5
+          }
+        }
+      ],
+      "continuity": [
+        {
+          "metric_key": "scheduled_fixed_wages_after_36m_eur",
+          "display_label": "Fixed wages scheduled after month 36",
+          "value": 49298425.73579739,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Fixed wages scheduled beyond the model's 36-month continuity horizon.",
+          "warning": "This amount is scheduled commitment, not expected loss.",
+          "components": {
+            "annual_fixed_wage_eur": 25000000.0,
+            "contract_years_beyond_36m": 1.9719370294318956
+          }
+        },
+        {
+          "metric_key": "contract_continuity_horizon",
+          "display_label": "Contract-continuity horizon",
+          "value": {
+            "continuous_stay_probability_36m": 0.7578084771529604,
+            "scheduled_fixed_wages_after_36m_eur": 49298425.73579739
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Thirty-six-month continuous-stay probability shown beside scheduled fixed wages beyond that horizon.",
+          "warning": "Do not multiply into expected wage loss; outbound movement can stop wages or produce a fee.",
+          "components": {
+            "continuous_stay_probability_24m": 0.8545092028619266,
+            "scheduled_fixed_wages_after_24m_eur": 74298425.73579739
+          }
+        },
+        {
+          "metric_key": "permanent_relationship_probability_24m",
+          "display_label": "Permanent-relationship probability (24m)",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-2 permanent-outbound model output is unavailable.",
+          "components": {}
+        }
+      ],
+      "salary_structure": [
+        {
+          "metric_key": "club_salary_percentile",
+          "display_label": "Club salary position",
+          "value": 0.9565217391304348,
+          "unit": "percentile",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Position within the known same-club salary panel.",
+          "warning": "The public salary panel may be incomplete and excludes some compensation.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        },
+        {
+          "metric_key": "club_known_payroll_share",
+          "display_label": "Share of known club payroll",
+          "value": 0.0818786231290734,
+          "unit": "ratio",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Player annual fixed wage as a share of known public club fixed wages.",
+          "warning": "The denominator is not audited total payroll.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        }
+      ]
+    },
+    "availability": {
+      "available_metrics": 13,
+      "unavailable_metrics": 5
+    },
+    "overall_contract_score": null,
+    "overall_contract_score_status": "rejected_show_separate_business_metrics",
+    "global_warnings": [
+      "Validated for incumbent-club extension decisions in the modeled Big-Five scope only.",
+      "No displayed metric is an approve/reject recommendation.",
+      "Public market value is not realized sale proceeds or accounting value.",
+      "Missing inputs remain unavailable and are never silently replaced with zero."
+    ],
+    "historical_case": {
+      "capology_extension_event_id": "1c8c055c917804cfca95bdbabc68c99d3ed7ff1596435fb3ff3da439f87213ee",
+      "case_category": "aligned_low_multidomain",
+      "case_interpretation": "Low modeled concern aligned with fewer than two adverse domains.",
+      "actual_low_contribution": 0.0,
+      "actual_outbound_24m": 0.0,
+      "actual_value_downside_25pct_24m": 0.0
+    }
+  },
+  {
+    "profile_scope": "incumbent_club_extension",
+    "metric_version": "business_metrics_v1_2026-08-12",
+    "player": "Lucas Robertone",
+    "current_club": "Almeria",
+    "decision_date": "2022-12-23",
+    "cards": {
+      "capital_commitment": [
+        {
+          "metric_key": "fixed_wage_commitment_eur",
+          "display_label": "Fixed-wage commitment",
+          "value": 6071457.905544148,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Total fixed wages scheduled by the proposed term.",
+          "warning": "Partial commitment only; excludes bonuses, taxes, agent fees, options, clauses, and other costs.",
+          "components": {
+            "annual_fixed_wage_eur": 1100000.0,
+            "contract_years": 5.519507186858316
+          }
+        },
+        {
+          "metric_key": "fixed_commitment_to_public_value",
+          "display_label": "Commitment / public value",
+          "value": 1.0119096509240246,
+          "unit": "ratio",
+          "evidence_class": "exact_ratio_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Scale of proposed fixed wages relative to the dated public market-value estimate.",
+          "warning": "Not ROI, accounting exposure, book value, or expected loss.",
+          "components": {
+            "fixed_wage_commitment_eur": 6071457.905544148,
+            "current_public_market_value_eur": 6000000.0
+          }
+        },
+        {
+          "metric_key": "age_at_expiration",
+          "display_label": "Age at expiration",
+          "value": 31.28542094455852,
+          "unit": "years",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Player age when the proposed fixed term ends.",
+          "warning": "Does not incorporate an unentered unilateral or conditional option.",
+          "components": {
+            "age_at_decision": 25.765913757700204,
+            "contract_years": 5.519507186858316
+          }
+        },
+        {
+          "metric_key": "proposed_wage_change_pct",
+          "display_label": "Proposed wage increase",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Prior annual fixed wage is unavailable; it was not imputed as zero.",
+          "components": {}
+        }
+      ],
+      "offer_context": [
+        {
+          "metric_key": "fixed_commitment_peer_difference_eur",
+          "display_label": "Commitment versus historical peers",
+          "value": 3797994.29044394,
+          "unit": "EUR",
+          "evidence_class": "historical_benchmark_translation",
+          "status": "supported",
+          "interpretation": "Euro difference from the modeled historical peer commitment.",
+          "warning": "Historical deviation is not proof of overpayment or an optimal offer.",
+          "components": {
+            "proposed_fixed_commitment_eur": 6071457.905544148,
+            "peer_estimate_eur": 2273463.6151002077,
+            "peer_lower_eur": 811361.694451895,
+            "peer_upper_eur": 6370323.919070536,
+            "range_position": "within_historical_80pct_range"
+          }
+        },
+        {
+          "metric_key": "offer_aggressiveness_percentile",
+          "display_label": "Offer aggressiveness percentile",
+          "value": 0.8736702127659575,
+          "unit": "percentile",
+          "evidence_class": "historical_oos_reference",
+          "status": "supported_with_frozen_reference",
+          "interpretation": "Position of the proposal's peer-adjusted commitment in the frozen out-of-time extension distribution.",
+          "warning": "Not fairness, optimality, expected return, or a recommendation.",
+          "components": {
+            "peer_adjusted_log_residual": 0.9822942681244886,
+            "reference_rows": 1504
+          }
+        },
+        {
+          "metric_key": "contract_duration_peer_delta_years",
+          "display_label": "Term versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 duration peer estimate is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "wage_to_market_value_peer_comparison",
+          "display_label": "Wage/value versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 wage-to-value peer estimate is unavailable.",
+          "components": {}
+        }
+      ],
+      "contribution_exposure": [
+        {
+          "metric_key": "low_contribution_wage_exposure_eur",
+          "display_label": "Low-contribution wage exposure",
+          "value": 67722.60005891435,
+          "unit": "EUR",
+          "evidence_class": "probability_weighted_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Two-year fixed commitment weighted by modeled risk of not remaining a meaningful contributor through Year 2.",
+          "warning": "Not expected accounting loss, cash loss, or wasted wages.",
+          "components": {
+            "fixed_wages_through_24m_eur": 2200000.0,
+            "low_contribution_probability_24m": 0.03078300002677925,
+            "sustained_contribution_probability_24m": 0.9692169999732207
+          }
+        }
+      ],
+      "asset_value": [
+        {
+          "metric_key": "value_preservation_probability_12m",
+          "display_label": "12-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 12-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "value_preservation_probability_24m",
+          "display_label": "24-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 24-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "public_value_downside_25pct_scenario",
+          "display_label": "24-month public-value downside scenario",
+          "value": {
+            "probability": 0.1848789564223572,
+            "minimum_threshold_eur": 1500000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Probability and minimum euro threshold defining a 25% public-value decline.",
+          "warning": "Do not multiply into expected loss; public market value is not sale proceeds, impairment, or book value.",
+          "components": {
+            "current_public_market_value_eur": 6000000.0,
+            "downside_threshold_pct": 0.25
+          }
+        },
+        {
+          "metric_key": "public_value_downside_50pct_scenario",
+          "display_label": "Severe 24-month public-value downside scenario",
+          "value": {
+            "probability": 0.1599232417670682,
+            "minimum_threshold_eur": 3000000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display_detail",
+          "interpretation": "Probability and minimum euro threshold defining a 50% public-value decline.",
+          "warning": "Do not multiply into expected loss; this is a public-value threshold scenario.",
+          "components": {
+            "current_public_market_value_eur": 6000000.0,
+            "downside_threshold_pct": 0.5
+          }
+        }
+      ],
+      "continuity": [
+        {
+          "metric_key": "scheduled_fixed_wages_after_36m_eur",
+          "display_label": "Fixed wages scheduled after month 36",
+          "value": 2771457.905544148,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Fixed wages scheduled beyond the model's 36-month continuity horizon.",
+          "warning": "This amount is scheduled commitment, not expected loss.",
+          "components": {
+            "annual_fixed_wage_eur": 1100000.0,
+            "contract_years_beyond_36m": 2.5195071868583163
+          }
+        },
+        {
+          "metric_key": "contract_continuity_horizon",
+          "display_label": "Contract-continuity horizon",
+          "value": {
+            "continuous_stay_probability_36m": 0.7552590320184301,
+            "scheduled_fixed_wages_after_36m_eur": 2771457.905544148
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Thirty-six-month continuous-stay probability shown beside scheduled fixed wages beyond that horizon.",
+          "warning": "Do not multiply into expected wage loss; outbound movement can stop wages or produce a fee.",
+          "components": {
+            "continuous_stay_probability_24m": 0.8528730099313351,
+            "scheduled_fixed_wages_after_24m_eur": 3871457.905544148
+          }
+        },
+        {
+          "metric_key": "permanent_relationship_probability_24m",
+          "display_label": "Permanent-relationship probability (24m)",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-2 permanent-outbound model output is unavailable.",
+          "components": {}
+        }
+      ],
+      "salary_structure": [
+        {
+          "metric_key": "club_salary_percentile",
+          "display_label": "Club salary position",
+          "value": 0.967741935483871,
+          "unit": "percentile",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Position within the known same-club salary panel.",
+          "warning": "The public salary panel may be incomplete and excludes some compensation.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        },
+        {
+          "metric_key": "club_known_payroll_share",
+          "display_label": "Share of known club payroll",
+          "value": 0.0762829403606102,
+          "unit": "ratio",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Player annual fixed wage as a share of known public club fixed wages.",
+          "warning": "The denominator is not audited total payroll.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        }
+      ]
+    },
+    "availability": {
+      "available_metrics": 12,
+      "unavailable_metrics": 6
+    },
+    "overall_contract_score": null,
+    "overall_contract_score_status": "rejected_show_separate_business_metrics",
+    "global_warnings": [
+      "Validated for incumbent-club extension decisions in the modeled Big-Five scope only.",
+      "No displayed metric is an approve/reject recommendation.",
+      "Public market value is not realized sale proceeds or accounting value.",
+      "Missing inputs remain unavailable and are never silently replaced with zero."
+    ],
+    "historical_case": {
+      "capology_extension_event_id": "36caa785c89bb57246e1c60440f7e3a8e8d5c79a91ce851125718c0686174e46",
+      "case_category": "aligned_low_multidomain",
+      "case_interpretation": "Low modeled concern aligned with fewer than two adverse domains.",
+      "actual_low_contribution": 0.0,
+      "actual_outbound_24m": 0.0,
+      "actual_value_downside_25pct_24m": 0.0
+    }
+  },
+  {
+    "profile_scope": "incumbent_club_extension",
+    "metric_version": "business_metrics_v1_2026-08-12",
+    "player": "Juan Jesus",
+    "current_club": "Napoli",
+    "decision_date": "2023-04-01",
+    "cards": {
+      "capital_commitment": [
+        {
+          "metric_key": "fixed_wage_commitment_eur",
+          "display_label": "Fixed-wage commitment",
+          "value": 4158384.6680355924,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Total fixed wages scheduled by the proposed term.",
+          "warning": "Partial commitment only; excludes bonuses, taxes, agent fees, options, clauses, and other costs.",
+          "components": {
+            "annual_fixed_wage_eur": 1850000.0,
+            "contract_years": 2.2477754962354553
+          }
+        },
+        {
+          "metric_key": "fixed_commitment_to_public_value",
+          "display_label": "Commitment / public value",
+          "value": 1.039596167008898,
+          "unit": "ratio",
+          "evidence_class": "exact_ratio_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Scale of proposed fixed wages relative to the dated public market-value estimate.",
+          "warning": "Not ROI, accounting exposure, book value, or expected loss.",
+          "components": {
+            "fixed_wage_commitment_eur": 4158384.6680355924,
+            "current_public_market_value_eur": 4000000.0
+          }
+        },
+        {
+          "metric_key": "age_at_expiration",
+          "display_label": "Age at expiration",
+          "value": 34.05612594113621,
+          "unit": "years",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Player age when the proposed fixed term ends.",
+          "warning": "Does not incorporate an unentered unilateral or conditional option.",
+          "components": {
+            "age_at_decision": 31.808350444900753,
+            "contract_years": 2.2477754962354553
+          }
+        },
+        {
+          "metric_key": "proposed_wage_change_pct",
+          "display_label": "Proposed wage increase",
+          "value": 0.0,
+          "unit": "ratio",
+          "evidence_class": "exact_calculation",
+          "status": "supported_when_prior_wage_known",
+          "interpretation": "Change from the known prior annual fixed wage.",
+          "warning": "Public wage figures may be estimates and do not include unreported compensation.",
+          "components": {
+            "proposed_annual_fixed_wage_eur": 1850000.0,
+            "prior_annual_fixed_wage_eur": 1850000.0
+          }
+        }
+      ],
+      "offer_context": [
+        {
+          "metric_key": "fixed_commitment_peer_difference_eur",
+          "display_label": "Commitment versus historical peers",
+          "value": -746478.8783119717,
+          "unit": "EUR",
+          "evidence_class": "historical_benchmark_translation",
+          "status": "supported",
+          "interpretation": "Euro difference from the modeled historical peer commitment.",
+          "warning": "Historical deviation is not proof of overpayment or an optimal offer.",
+          "components": {
+            "proposed_fixed_commitment_eur": 4158384.6680355924,
+            "peer_estimate_eur": 4904863.546347564,
+            "peer_lower_eur": 1791229.986695623,
+            "peer_upper_eur": 13430819.373825744,
+            "range_position": "within_historical_80pct_range"
+          }
+        },
+        {
+          "metric_key": "offer_aggressiveness_percentile",
+          "display_label": "Offer aggressiveness percentile",
+          "value": 0.32779255319148937,
+          "unit": "percentile",
+          "evidence_class": "historical_oos_reference",
+          "status": "supported_with_frozen_reference",
+          "interpretation": "Position of the proposal's peer-adjusted commitment in the frozen out-of-time extension distribution.",
+          "warning": "Not fairness, optimality, expected return, or a recommendation.",
+          "components": {
+            "peer_adjusted_log_residual": -0.165100575421377,
+            "reference_rows": 1504
+          }
+        },
+        {
+          "metric_key": "contract_duration_peer_delta_years",
+          "display_label": "Term versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 duration peer estimate is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "wage_to_market_value_peer_comparison",
+          "display_label": "Wage/value versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 wage-to-value peer estimate is unavailable.",
+          "components": {}
+        }
+      ],
+      "contribution_exposure": [
+        {
+          "metric_key": "low_contribution_wage_exposure_eur",
+          "display_label": "Low-contribution wage exposure",
+          "value": 2639481.3141482347,
+          "unit": "EUR",
+          "evidence_class": "probability_weighted_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Two-year fixed commitment weighted by modeled risk of not remaining a meaningful contributor through Year 2.",
+          "warning": "Not expected accounting loss, cash loss, or wasted wages.",
+          "components": {
+            "fixed_wages_through_24m_eur": 3700000.0,
+            "low_contribution_probability_24m": 0.7133733281481716,
+            "sustained_contribution_probability_24m": 0.2866266718518285
+          }
+        }
+      ],
+      "asset_value": [
+        {
+          "metric_key": "value_preservation_probability_12m",
+          "display_label": "12-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 12-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "value_preservation_probability_24m",
+          "display_label": "24-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 24-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "public_value_downside_25pct_scenario",
+          "display_label": "24-month public-value downside scenario",
+          "value": {
+            "probability": 0.8788126958774183,
+            "minimum_threshold_eur": 1000000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Probability and minimum euro threshold defining a 25% public-value decline.",
+          "warning": "Do not multiply into expected loss; public market value is not sale proceeds, impairment, or book value.",
+          "components": {
+            "current_public_market_value_eur": 4000000.0,
+            "downside_threshold_pct": 0.25
+          }
+        },
+        {
+          "metric_key": "public_value_downside_50pct_scenario",
+          "display_label": "Severe 24-month public-value downside scenario",
+          "value": {
+            "probability": 0.6957281957475585,
+            "minimum_threshold_eur": 2000000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display_detail",
+          "interpretation": "Probability and minimum euro threshold defining a 50% public-value decline.",
+          "warning": "Do not multiply into expected loss; this is a public-value threshold scenario.",
+          "components": {
+            "current_public_market_value_eur": 4000000.0,
+            "downside_threshold_pct": 0.5
+          }
+        }
+      ],
+      "continuity": [
+        {
+          "metric_key": "scheduled_fixed_wages_after_36m_eur",
+          "display_label": "Fixed wages scheduled after month 36",
+          "value": 0.0,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Fixed wages scheduled beyond the model's 36-month continuity horizon.",
+          "warning": "This amount is scheduled commitment, not expected loss.",
+          "components": {
+            "annual_fixed_wage_eur": 1850000.0,
+            "contract_years_beyond_36m": 0
+          }
+        },
+        {
+          "metric_key": "contract_continuity_horizon",
+          "display_label": "Contract-continuity horizon",
+          "value": {
+            "continuous_stay_probability_36m": 0.12215700319075,
+            "scheduled_fixed_wages_after_36m_eur": 0.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Thirty-six-month continuous-stay probability shown beside scheduled fixed wages beyond that horizon.",
+          "warning": "Do not multiply into expected wage loss; outbound movement can stop wages or produce a fee.",
+          "components": {
+            "continuous_stay_probability_24m": 0.2880970433833664,
+            "scheduled_fixed_wages_after_24m_eur": 458384.6680355922
+          }
+        },
+        {
+          "metric_key": "permanent_relationship_probability_24m",
+          "display_label": "Permanent-relationship probability (24m)",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-2 permanent-outbound model output is unavailable.",
+          "components": {}
+        }
+      ],
+      "salary_structure": [
+        {
+          "metric_key": "club_salary_percentile",
+          "display_label": "Club salary position",
+          "value": 0.3793103448275862,
+          "unit": "percentile",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Position within the known same-club salary panel.",
+          "warning": "The public salary panel may be incomplete and excludes some compensation.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        },
+        {
+          "metric_key": "club_known_payroll_share",
+          "display_label": "Share of known club payroll",
+          "value": 0.0247736890031603,
+          "unit": "ratio",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Player annual fixed wage as a share of known public club fixed wages.",
+          "warning": "The denominator is not audited total payroll.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        }
+      ]
+    },
+    "availability": {
+      "available_metrics": 13,
+      "unavailable_metrics": 5
+    },
+    "overall_contract_score": null,
+    "overall_contract_score_status": "rejected_show_separate_business_metrics",
+    "global_warnings": [
+      "Validated for incumbent-club extension decisions in the modeled Big-Five scope only.",
+      "No displayed metric is an approve/reject recommendation.",
+      "Public market value is not realized sale proceeds or accounting value.",
+      "Missing inputs remain unavailable and are never silently replaced with zero."
+    ],
+    "historical_case": {
+      "capology_extension_event_id": "7f4e1e4f96fb74262d7f44cd5e158492a6bd16d0acef8c8f97abe48b392a2d81",
+      "case_category": "high_alert_without_multidomain",
+      "case_interpretation": "False-positive stress case: high combined rank without multi-domain adversity.",
+      "actual_low_contribution": 0.0,
+      "actual_outbound_24m": 0.0,
+      "actual_value_downside_25pct_24m": 1.0
+    }
+  },
+  {
+    "profile_scope": "incumbent_club_extension",
+    "metric_version": "business_metrics_v1_2026-08-12",
+    "player": "Pietro Terracciano",
+    "current_club": "Fiorentina",
+    "decision_date": "2021-01-14",
+    "cards": {
+      "capital_commitment": [
+        {
+          "metric_key": "fixed_wage_commitment_eur",
+          "display_label": "Fixed-wage commitment",
+          "value": 1375277.2073921973,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Total fixed wages scheduled by the proposed term.",
+          "warning": "Partial commitment only; excludes bonuses, taxes, agent fees, options, clauses, and other costs.",
+          "components": {
+            "annual_fixed_wage_eur": 560000.0,
+            "contract_years": 2.455852156057495
+          }
+        },
+        {
+          "metric_key": "fixed_commitment_to_public_value",
+          "display_label": "Commitment / public value",
+          "value": 1.3752772073921973,
+          "unit": "ratio",
+          "evidence_class": "exact_ratio_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Scale of proposed fixed wages relative to the dated public market-value estimate.",
+          "warning": "Not ROI, accounting exposure, book value, or expected loss.",
+          "components": {
+            "fixed_wage_commitment_eur": 1375277.2073921973,
+            "current_public_market_value_eur": 1000000.0
+          }
+        },
+        {
+          "metric_key": "age_at_expiration",
+          "display_label": "Age at expiration",
+          "value": 33.31143052703628,
+          "unit": "years",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Player age when the proposed fixed term ends.",
+          "warning": "Does not incorporate an unentered unilateral or conditional option.",
+          "components": {
+            "age_at_decision": 30.855578370978783,
+            "contract_years": 2.455852156057495
+          }
+        },
+        {
+          "metric_key": "proposed_wage_change_pct",
+          "display_label": "Proposed wage increase",
+          "value": 0.0,
+          "unit": "ratio",
+          "evidence_class": "exact_calculation",
+          "status": "supported_when_prior_wage_known",
+          "interpretation": "Change from the known prior annual fixed wage.",
+          "warning": "Public wage figures may be estimates and do not include unreported compensation.",
+          "components": {
+            "proposed_annual_fixed_wage_eur": 560000.0,
+            "prior_annual_fixed_wage_eur": 560000.0
+          }
+        }
+      ],
+      "offer_context": [
+        {
+          "metric_key": "fixed_commitment_peer_difference_eur",
+          "display_label": "Commitment versus historical peers",
+          "value": -72150.83275366551,
+          "unit": "EUR",
+          "evidence_class": "historical_benchmark_translation",
+          "status": "supported",
+          "interpretation": "Euro difference from the modeled historical peer commitment.",
+          "warning": "Historical deviation is not proof of overpayment or an optimal offer.",
+          "components": {
+            "proposed_fixed_commitment_eur": 1375277.2073921973,
+            "peer_estimate_eur": 1447428.0401458628,
+            "peer_lower_eur": 401045.59848820226,
+            "peer_upper_eur": 5223964.405289769,
+            "range_position": "within_historical_80pct_range"
+          }
+        },
+        {
+          "metric_key": "offer_aggressiveness_percentile",
+          "display_label": "Offer aggressiveness percentile",
+          "value": 0.37632978723404253,
+          "unit": "percentile",
+          "evidence_class": "historical_oos_reference",
+          "status": "supported_with_frozen_reference",
+          "interpretation": "Position of the proposal's peer-adjusted commitment in the frozen out-of-time extension distribution.",
+          "warning": "Not fairness, optimality, expected return, or a recommendation.",
+          "components": {
+            "peer_adjusted_log_residual": -0.051132899856203826,
+            "reference_rows": 1504
+          }
+        },
+        {
+          "metric_key": "contract_duration_peer_delta_years",
+          "display_label": "Term versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 duration peer estimate is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "wage_to_market_value_peer_comparison",
+          "display_label": "Wage/value versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 wage-to-value peer estimate is unavailable.",
+          "components": {}
+        }
+      ],
+      "contribution_exposure": [
+        {
+          "metric_key": "low_contribution_wage_exposure_eur",
+          "display_label": "Low-contribution wage exposure",
+          "value": 766344.1166158719,
+          "unit": "EUR",
+          "evidence_class": "probability_weighted_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Two-year fixed commitment weighted by modeled risk of not remaining a meaningful contributor through Year 2.",
+          "warning": "Not expected accounting loss, cash loss, or wasted wages.",
+          "components": {
+            "fixed_wages_through_24m_eur": 1120000.0,
+            "low_contribution_probability_24m": 0.6842358184070285,
+            "sustained_contribution_probability_24m": 0.3157641815929715
+          }
+        }
+      ],
+      "asset_value": [
+        {
+          "metric_key": "value_preservation_probability_12m",
+          "display_label": "12-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 12-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "value_preservation_probability_24m",
+          "display_label": "24-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 24-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "public_value_downside_25pct_scenario",
+          "display_label": "24-month public-value downside scenario",
+          "value": {
+            "probability": 0.6174283893966058,
+            "minimum_threshold_eur": 250000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Probability and minimum euro threshold defining a 25% public-value decline.",
+          "warning": "Do not multiply into expected loss; public market value is not sale proceeds, impairment, or book value.",
+          "components": {
+            "current_public_market_value_eur": 1000000.0,
+            "downside_threshold_pct": 0.25
+          }
+        },
+        {
+          "metric_key": "public_value_downside_50pct_scenario",
+          "display_label": "Severe 24-month public-value downside scenario",
+          "value": {
+            "probability": 0.1802984433446279,
+            "minimum_threshold_eur": 500000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display_detail",
+          "interpretation": "Probability and minimum euro threshold defining a 50% public-value decline.",
+          "warning": "Do not multiply into expected loss; this is a public-value threshold scenario.",
+          "components": {
+            "current_public_market_value_eur": 1000000.0,
+            "downside_threshold_pct": 0.5
+          }
+        }
+      ],
+      "continuity": [
+        {
+          "metric_key": "scheduled_fixed_wages_after_36m_eur",
+          "display_label": "Fixed wages scheduled after month 36",
+          "value": 0.0,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Fixed wages scheduled beyond the model's 36-month continuity horizon.",
+          "warning": "This amount is scheduled commitment, not expected loss.",
+          "components": {
+            "annual_fixed_wage_eur": 560000.0,
+            "contract_years_beyond_36m": 0
+          }
+        },
+        {
+          "metric_key": "contract_continuity_horizon",
+          "display_label": "Contract-continuity horizon",
+          "value": {
+            "continuous_stay_probability_36m": 0.1952102021392514,
+            "scheduled_fixed_wages_after_36m_eur": 0.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Thirty-six-month continuous-stay probability shown beside scheduled fixed wages beyond that horizon.",
+          "warning": "Do not multiply into expected wage loss; outbound movement can stop wages or produce a fee.",
+          "components": {
+            "continuous_stay_probability_24m": 0.3774375128204287,
+            "scheduled_fixed_wages_after_24m_eur": 255277.20739219725
+          }
+        },
+        {
+          "metric_key": "permanent_relationship_probability_24m",
+          "display_label": "Permanent-relationship probability (24m)",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-2 permanent-outbound model output is unavailable.",
+          "components": {}
+        }
+      ],
+      "salary_structure": [
+        {
+          "metric_key": "club_salary_percentile",
+          "display_label": "Club salary position",
+          "value": 0.1538461538461538,
+          "unit": "percentile",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Position within the known same-club salary panel.",
+          "warning": "The public salary panel may be incomplete and excludes some compensation.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        },
+        {
+          "metric_key": "club_known_payroll_share",
+          "display_label": "Share of known club payroll",
+          "value": 0.0128125929484979,
+          "unit": "ratio",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Player annual fixed wage as a share of known public club fixed wages.",
+          "warning": "The denominator is not audited total payroll.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        }
+      ]
+    },
+    "availability": {
+      "available_metrics": 13,
+      "unavailable_metrics": 5
+    },
+    "overall_contract_score": null,
+    "overall_contract_score_status": "rejected_show_separate_business_metrics",
+    "global_warnings": [
+      "Validated for incumbent-club extension decisions in the modeled Big-Five scope only.",
+      "No displayed metric is an approve/reject recommendation.",
+      "Public market value is not realized sale proceeds or accounting value.",
+      "Missing inputs remain unavailable and are never silently replaced with zero."
+    ],
+    "historical_case": {
+      "capology_extension_event_id": "6224213f83b077061f483bb2e7b23239514ee84f6501aaa5d3e027060f2f9d12",
+      "case_category": "high_alert_without_multidomain",
+      "case_interpretation": "False-positive stress case: high combined rank without multi-domain adversity.",
+      "actual_low_contribution": 0.0,
+      "actual_outbound_24m": 0.0,
+      "actual_value_downside_25pct_24m": 0.0
+    }
+  },
+  {
+    "profile_scope": "incumbent_club_extension",
+    "metric_version": "business_metrics_v1_2026-08-12",
+    "player": "Unai Vencedor",
+    "current_club": "Athletic Club",
+    "decision_date": "2022-05-13",
+    "cards": {
+      "capital_commitment": [
+        {
+          "metric_key": "fixed_wage_commitment_eur",
+          "display_label": "Fixed-wage commitment",
+          "value": 7696098.562628337,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Total fixed wages scheduled by the proposed term.",
+          "warning": "Partial commitment only; excludes bonuses, taxes, agent fees, options, clauses, and other costs.",
+          "components": {
+            "annual_fixed_wage_eur": 1500000.0,
+            "contract_years": 5.130732375085558
+          }
+        },
+        {
+          "metric_key": "fixed_commitment_to_public_value",
+          "display_label": "Commitment / public value",
+          "value": 0.7696098562628337,
+          "unit": "ratio",
+          "evidence_class": "exact_ratio_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Scale of proposed fixed wages relative to the dated public market-value estimate.",
+          "warning": "Not ROI, accounting exposure, book value, or expected loss.",
+          "components": {
+            "fixed_wage_commitment_eur": 7696098.562628337,
+            "current_public_market_value_eur": 10000000.0
+          }
+        },
+        {
+          "metric_key": "age_at_expiration",
+          "display_label": "Age at expiration",
+          "value": 26.62012320328542,
+          "unit": "years",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Player age when the proposed fixed term ends.",
+          "warning": "Does not incorporate an unentered unilateral or conditional option.",
+          "components": {
+            "age_at_decision": 21.489390828199863,
+            "contract_years": 5.130732375085558
+          }
+        },
+        {
+          "metric_key": "proposed_wage_change_pct",
+          "display_label": "Proposed wage increase",
+          "value": 6.5,
+          "unit": "ratio",
+          "evidence_class": "exact_calculation",
+          "status": "supported_when_prior_wage_known",
+          "interpretation": "Change from the known prior annual fixed wage.",
+          "warning": "Public wage figures may be estimates and do not include unreported compensation.",
+          "components": {
+            "proposed_annual_fixed_wage_eur": 1500000.0,
+            "prior_annual_fixed_wage_eur": 200000.0
+          }
+        }
+      ],
+      "offer_context": [
+        {
+          "metric_key": "fixed_commitment_peer_difference_eur",
+          "display_label": "Commitment versus historical peers",
+          "value": 4831202.340290036,
+          "unit": "EUR",
+          "evidence_class": "historical_benchmark_translation",
+          "status": "supported",
+          "interpretation": "Euro difference from the modeled historical peer commitment.",
+          "warning": "Historical deviation is not proof of overpayment or an optimal offer.",
+          "components": {
+            "proposed_fixed_commitment_eur": 7696098.562628337,
+            "peer_estimate_eur": 2864896.222338301,
+            "peer_lower_eur": 1022434.2443601328,
+            "peer_upper_eur": 8027538.602157079,
+            "range_position": "within_historical_80pct_range"
+          }
+        },
+        {
+          "metric_key": "offer_aggressiveness_percentile",
+          "display_label": "Offer aggressiveness percentile",
+          "value": 0.875,
+          "unit": "percentile",
+          "evidence_class": "historical_oos_reference",
+          "status": "supported_with_frozen_reference",
+          "interpretation": "Position of the proposal's peer-adjusted commitment in the frozen out-of-time extension distribution.",
+          "warning": "Not fairness, optimality, expected return, or a recommendation.",
+          "components": {
+            "peer_adjusted_log_residual": 0.9881813933346018,
+            "reference_rows": 1504
+          }
+        },
+        {
+          "metric_key": "contract_duration_peer_delta_years",
+          "display_label": "Term versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 duration peer estimate is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "wage_to_market_value_peer_comparison",
+          "display_label": "Wage/value versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 wage-to-value peer estimate is unavailable.",
+          "components": {}
+        }
+      ],
+      "contribution_exposure": [
+        {
+          "metric_key": "low_contribution_wage_exposure_eur",
+          "display_label": "Low-contribution wage exposure",
+          "value": 421134.12512695114,
+          "unit": "EUR",
+          "evidence_class": "probability_weighted_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Two-year fixed commitment weighted by modeled risk of not remaining a meaningful contributor through Year 2.",
+          "warning": "Not expected accounting loss, cash loss, or wasted wages.",
+          "components": {
+            "fixed_wages_through_24m_eur": 3000000.0,
+            "low_contribution_probability_24m": 0.14037804170898371,
+            "sustained_contribution_probability_24m": 0.8596219582910163
+          }
+        }
+      ],
+      "asset_value": [
+        {
+          "metric_key": "value_preservation_probability_12m",
+          "display_label": "12-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 12-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "value_preservation_probability_24m",
+          "display_label": "24-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 24-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "public_value_downside_25pct_scenario",
+          "display_label": "24-month public-value downside scenario",
+          "value": {
+            "probability": 0.1154226781807842,
+            "minimum_threshold_eur": 2500000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Probability and minimum euro threshold defining a 25% public-value decline.",
+          "warning": "Do not multiply into expected loss; public market value is not sale proceeds, impairment, or book value.",
+          "components": {
+            "current_public_market_value_eur": 10000000.0,
+            "downside_threshold_pct": 0.25
+          }
+        },
+        {
+          "metric_key": "public_value_downside_50pct_scenario",
+          "display_label": "Severe 24-month public-value downside scenario",
+          "value": {
+            "probability": 0.1154226781807842,
+            "minimum_threshold_eur": 5000000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display_detail",
+          "interpretation": "Probability and minimum euro threshold defining a 50% public-value decline.",
+          "warning": "Do not multiply into expected loss; this is a public-value threshold scenario.",
+          "components": {
+            "current_public_market_value_eur": 10000000.0,
+            "downside_threshold_pct": 0.5
+          }
+        }
+      ],
+      "continuity": [
+        {
+          "metric_key": "scheduled_fixed_wages_after_36m_eur",
+          "display_label": "Fixed wages scheduled after month 36",
+          "value": 3196098.562628337,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Fixed wages scheduled beyond the model's 36-month continuity horizon.",
+          "warning": "This amount is scheduled commitment, not expected loss.",
+          "components": {
+            "annual_fixed_wage_eur": 1500000.0,
+            "contract_years_beyond_36m": 2.1307323750855582
+          }
+        },
+        {
+          "metric_key": "contract_continuity_horizon",
+          "display_label": "Contract-continuity horizon",
+          "value": {
+            "continuous_stay_probability_36m": 0.6369425058962765,
+            "scheduled_fixed_wages_after_36m_eur": 3196098.562628337
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Thirty-six-month continuous-stay probability shown beside scheduled fixed wages beyond that horizon.",
+          "warning": "Do not multiply into expected wage loss; outbound movement can stop wages or produce a fee.",
+          "components": {
+            "continuous_stay_probability_24m": 0.7739609498469079,
+            "scheduled_fixed_wages_after_24m_eur": 4696098.562628337
+          }
+        },
+        {
+          "metric_key": "permanent_relationship_probability_24m",
+          "display_label": "Permanent-relationship probability (24m)",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-2 permanent-outbound model output is unavailable.",
+          "components": {}
+        }
+      ],
+      "salary_structure": [
+        {
+          "metric_key": "club_salary_percentile",
+          "display_label": "Club salary position",
+          "value": 0.42,
+          "unit": "percentile",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Position within the known same-club salary panel.",
+          "warning": "The public salary panel may be incomplete and excludes some compensation.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        },
+        {
+          "metric_key": "club_known_payroll_share",
+          "display_label": "Share of known club payroll",
+          "value": 0.023988485526947,
+          "unit": "ratio",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Player annual fixed wage as a share of known public club fixed wages.",
+          "warning": "The denominator is not audited total payroll.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        }
+      ]
+    },
+    "availability": {
+      "available_metrics": 13,
+      "unavailable_metrics": 5
+    },
+    "overall_contract_score": null,
+    "overall_contract_score_status": "rejected_show_separate_business_metrics",
+    "global_warnings": [
+      "Validated for incumbent-club extension decisions in the modeled Big-Five scope only.",
+      "No displayed metric is an approve/reject recommendation.",
+      "Public market value is not realized sale proceeds or accounting value.",
+      "Missing inputs remain unavailable and are never silently replaced with zero."
+    ],
+    "historical_case": {
+      "capology_extension_event_id": "bc04cdb64cbad8f8866d1ff1a2b371a6c08c6fa1462de519e9eeb619e6a514c5",
+      "case_category": "missed_multidomain",
+      "case_interpretation": "False-negative stress case: multi-domain adversity despite a low combined rank.",
+      "actual_low_contribution": 1.0,
+      "actual_outbound_24m": 1.0,
+      "actual_value_downside_25pct_24m": 1.0
+    }
+  },
+  {
+    "profile_scope": "incumbent_club_extension",
+    "metric_version": "business_metrics_v1_2026-08-12",
+    "player": "Marcus Rashford",
+    "current_club": "Manchester United",
+    "decision_date": "2023-07-18",
+    "cards": {
+      "capital_commitment": [
+        {
+          "metric_key": "fixed_wage_commitment_eur",
+          "display_label": "Fixed-wage commitment",
+          "value": 91242329.61806981,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Total fixed wages scheduled by the proposed term.",
+          "warning": "Partial commitment only; excludes bonuses, taxes, agent fees, options, clauses, and other costs.",
+          "components": {
+            "annual_fixed_wage_eur": 18422477.0,
+            "contract_years": 4.952772073921971
+          }
+        },
+        {
+          "metric_key": "fixed_commitment_to_public_value",
+          "display_label": "Commitment / public value",
+          "value": 1.1405291202258727,
+          "unit": "ratio",
+          "evidence_class": "exact_ratio_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Scale of proposed fixed wages relative to the dated public market-value estimate.",
+          "warning": "Not ROI, accounting exposure, book value, or expected loss.",
+          "components": {
+            "fixed_wage_commitment_eur": 91242329.61806981,
+            "current_public_market_value_eur": 80000000.0
+          }
+        },
+        {
+          "metric_key": "age_at_expiration",
+          "display_label": "Age at expiration",
+          "value": 30.663928815879533,
+          "unit": "years",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Player age when the proposed fixed term ends.",
+          "warning": "Does not incorporate an unentered unilateral or conditional option.",
+          "components": {
+            "age_at_decision": 25.711156741957563,
+            "contract_years": 4.952772073921971
+          }
+        },
+        {
+          "metric_key": "proposed_wage_change_pct",
+          "display_label": "Proposed wage increase",
+          "value": 0.5413783524864144,
+          "unit": "ratio",
+          "evidence_class": "exact_calculation",
+          "status": "supported_when_prior_wage_known",
+          "interpretation": "Change from the known prior annual fixed wage.",
+          "warning": "Public wage figures may be estimates and do not include unreported compensation.",
+          "components": {
+            "proposed_annual_fixed_wage_eur": 18422477.0,
+            "prior_annual_fixed_wage_eur": 11951950.0
+          }
+        }
+      ],
+      "offer_context": [
+        {
+          "metric_key": "fixed_commitment_peer_difference_eur",
+          "display_label": "Commitment versus historical peers",
+          "value": 42533779.276345104,
+          "unit": "EUR",
+          "evidence_class": "historical_benchmark_translation",
+          "status": "supported",
+          "interpretation": "Euro difference from the modeled historical peer commitment.",
+          "warning": "Historical deviation is not proof of overpayment or an optimal offer.",
+          "components": {
+            "proposed_fixed_commitment_eur": 91242329.61806981,
+            "peer_estimate_eur": 48708550.34172471,
+            "peer_lower_eur": 17788102.59574708,
+            "peer_upper_eur": 133376950.33081111,
+            "range_position": "within_historical_80pct_range"
+          }
+        },
+        {
+          "metric_key": "offer_aggressiveness_percentile",
+          "display_label": "Offer aggressiveness percentile",
+          "value": 0.7579787234042553,
+          "unit": "percentile",
+          "evidence_class": "historical_oos_reference",
+          "status": "supported_with_frozen_reference",
+          "interpretation": "Position of the proposal's peer-adjusted commitment in the frozen out-of-time extension distribution.",
+          "warning": "Not fairness, optimality, expected return, or a recommendation.",
+          "components": {
+            "peer_adjusted_log_residual": 0.6276643435730934,
+            "reference_rows": 1504
+          }
+        },
+        {
+          "metric_key": "contract_duration_peer_delta_years",
+          "display_label": "Term versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 duration peer estimate is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "wage_to_market_value_peer_comparison",
+          "display_label": "Wage/value versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 wage-to-value peer estimate is unavailable.",
+          "components": {}
+        }
+      ],
+      "contribution_exposure": [
+        {
+          "metric_key": "low_contribution_wage_exposure_eur",
+          "display_label": "Low-contribution wage exposure",
+          "value": 5485977.542012876,
+          "unit": "EUR",
+          "evidence_class": "probability_weighted_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Two-year fixed commitment weighted by modeled risk of not remaining a meaningful contributor through Year 2.",
+          "warning": "Not expected accounting loss, cash loss, or wasted wages.",
+          "components": {
+            "fixed_wages_through_24m_eur": 36844954.0,
+            "low_contribution_probability_24m": 0.1488935918338472,
+            "sustained_contribution_probability_24m": 0.8511064081661528
+          }
+        }
+      ],
+      "asset_value": [
+        {
+          "metric_key": "value_preservation_probability_12m",
+          "display_label": "12-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 12-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "value_preservation_probability_24m",
+          "display_label": "24-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 24-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "public_value_downside_25pct_scenario",
+          "display_label": "24-month public-value downside scenario",
+          "value": {
+            "probability": 0.3096271722708074,
+            "minimum_threshold_eur": 20000000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Probability and minimum euro threshold defining a 25% public-value decline.",
+          "warning": "Do not multiply into expected loss; public market value is not sale proceeds, impairment, or book value.",
+          "components": {
+            "current_public_market_value_eur": 80000000.0,
+            "downside_threshold_pct": 0.25
+          }
+        },
+        {
+          "metric_key": "public_value_downside_50pct_scenario",
+          "display_label": "Severe 24-month public-value downside scenario",
+          "value": {
+            "probability": 0.2159953692325148,
+            "minimum_threshold_eur": 40000000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display_detail",
+          "interpretation": "Probability and minimum euro threshold defining a 50% public-value decline.",
+          "warning": "Do not multiply into expected loss; this is a public-value threshold scenario.",
+          "components": {
+            "current_public_market_value_eur": 80000000.0,
+            "downside_threshold_pct": 0.5
+          }
+        }
+      ],
+      "continuity": [
+        {
+          "metric_key": "scheduled_fixed_wages_after_36m_eur",
+          "display_label": "Fixed wages scheduled after month 36",
+          "value": 35974898.61806981,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Fixed wages scheduled beyond the model's 36-month continuity horizon.",
+          "warning": "This amount is scheduled commitment, not expected loss.",
+          "components": {
+            "annual_fixed_wage_eur": 18422477.0,
+            "contract_years_beyond_36m": 1.9527720739219712
+          }
+        },
+        {
+          "metric_key": "contract_continuity_horizon",
+          "display_label": "Contract-continuity horizon",
+          "value": {
+            "continuous_stay_probability_36m": 0.5708441448622946,
+            "scheduled_fixed_wages_after_36m_eur": 35974898.61806981
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Thirty-six-month continuous-stay probability shown beside scheduled fixed wages beyond that horizon.",
+          "warning": "Do not multiply into expected wage loss; outbound movement can stop wages or produce a fee.",
+          "components": {
+            "continuous_stay_probability_24m": 0.7209150583515027,
+            "scheduled_fixed_wages_after_24m_eur": 54397375.61806981
+          }
+        },
+        {
+          "metric_key": "permanent_relationship_probability_24m",
+          "display_label": "Permanent-relationship probability (24m)",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-2 permanent-outbound model output is unavailable.",
+          "components": {}
+        }
+      ],
+      "salary_structure": [
+        {
+          "metric_key": "club_salary_percentile",
+          "display_label": "Club salary position",
+          "value": 0.935483870967742,
+          "unit": "percentile",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Position within the known same-club salary panel.",
+          "warning": "The public salary panel may be incomplete and excludes some compensation.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        },
+        {
+          "metric_key": "club_known_payroll_share",
+          "display_label": "Share of known club payroll",
+          "value": 0.0810515926797533,
+          "unit": "ratio",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Player annual fixed wage as a share of known public club fixed wages.",
+          "warning": "The denominator is not audited total payroll.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        }
+      ]
+    },
+    "availability": {
+      "available_metrics": 13,
+      "unavailable_metrics": 5
+    },
+    "overall_contract_score": null,
+    "overall_contract_score_status": "rejected_show_separate_business_metrics",
+    "global_warnings": [
+      "Validated for incumbent-club extension decisions in the modeled Big-Five scope only.",
+      "No displayed metric is an approve/reject recommendation.",
+      "Public market value is not realized sale proceeds or accounting value.",
+      "Missing inputs remain unavailable and are never silently replaced with zero."
+    ],
+    "historical_case": {
+      "capology_extension_event_id": "8c72fa57faabfe06ea926f72c9d00272162ac413cab9cdde3e2adda1aa7fc3c9",
+      "case_category": "missed_multidomain",
+      "case_interpretation": "False-negative stress case: multi-domain adversity despite a low combined rank.",
+      "actual_low_contribution": 0.0,
+      "actual_outbound_24m": 1.0,
+      "actual_value_downside_25pct_24m": 1.0
+    }
+  },
+  {
+    "profile_scope": "incumbent_club_extension",
+    "metric_version": "business_metrics_v1_2026-08-12",
+    "player": "Virgil van Dijk",
+    "current_club": "Liverpool",
+    "decision_date": "2021-08-13",
+    "cards": {
+      "capital_commitment": [
+        {
+          "metric_key": "fixed_wage_commitment_eur",
+          "display_label": "Fixed-wage commitment",
+          "value": 52073033.30595484,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Total fixed wages scheduled by the proposed term.",
+          "warning": "Partial commitment only; excludes bonuses, taxes, agent fees, options, clauses, and other costs.",
+          "components": {
+            "annual_fixed_wage_eur": 13422495.0,
+            "contract_years": 3.879534565366188
+          }
+        },
+        {
+          "metric_key": "fixed_commitment_to_public_value",
+          "display_label": "Commitment / public value",
+          "value": 0.9467824237446334,
+          "unit": "ratio",
+          "evidence_class": "exact_ratio_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Scale of proposed fixed wages relative to the dated public market-value estimate.",
+          "warning": "Not ROI, accounting exposure, book value, or expected loss.",
+          "components": {
+            "fixed_wage_commitment_eur": 52073033.30595484,
+            "current_public_market_value_eur": 55000000.0
+          }
+        },
+        {
+          "metric_key": "age_at_expiration",
+          "display_label": "Age at expiration",
+          "value": 33.97946611909651,
+          "unit": "years",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Player age when the proposed fixed term ends.",
+          "warning": "Does not incorporate an unentered unilateral or conditional option.",
+          "components": {
+            "age_at_decision": 30.09993155373032,
+            "contract_years": 3.879534565366188
+          }
+        },
+        {
+          "metric_key": "proposed_wage_change_pct",
+          "display_label": "Proposed wage increase",
+          "value": 0.23304680582194903,
+          "unit": "ratio",
+          "evidence_class": "exact_calculation",
+          "status": "supported_when_prior_wage_known",
+          "interpretation": "Change from the known prior annual fixed wage.",
+          "warning": "Public wage figures may be estimates and do not include unreported compensation.",
+          "components": {
+            "proposed_annual_fixed_wage_eur": 13422495.0,
+            "prior_annual_fixed_wage_eur": 10885633.0
+          }
+        }
+      ],
+      "offer_context": [
+        {
+          "metric_key": "fixed_commitment_peer_difference_eur",
+          "display_label": "Commitment versus historical peers",
+          "value": 14884814.23945745,
+          "unit": "EUR",
+          "evidence_class": "historical_benchmark_translation",
+          "status": "supported",
+          "interpretation": "Euro difference from the modeled historical peer commitment.",
+          "warning": "Historical deviation is not proof of overpayment or an optimal offer.",
+          "components": {
+            "proposed_fixed_commitment_eur": 52073033.30595484,
+            "peer_estimate_eur": 37188219.066497386,
+            "peer_lower_eur": 10303912.29033454,
+            "peer_upper_eur": 134217333.99604651,
+            "range_position": "within_historical_80pct_range"
+          }
+        },
+        {
+          "metric_key": "offer_aggressiveness_percentile",
+          "display_label": "Offer aggressiveness percentile",
+          "value": 0.6003989361702128,
+          "unit": "percentile",
+          "evidence_class": "historical_oos_reference",
+          "status": "supported_with_frozen_reference",
+          "interpretation": "Position of the proposal's peer-adjusted commitment in the frozen out-of-time extension distribution.",
+          "warning": "Not fairness, optimality, expected return, or a recommendation.",
+          "components": {
+            "peer_adjusted_log_residual": 0.3366552005046905,
+            "reference_rows": 1504
+          }
+        },
+        {
+          "metric_key": "contract_duration_peer_delta_years",
+          "display_label": "Term versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 duration peer estimate is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "wage_to_market_value_peer_comparison",
+          "display_label": "Wage/value versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 wage-to-value peer estimate is unavailable.",
+          "components": {}
+        }
+      ],
+      "contribution_exposure": [
+        {
+          "metric_key": "low_contribution_wage_exposure_eur",
+          "display_label": "Low-contribution wage exposure",
+          "value": 11507533.856407732,
+          "unit": "EUR",
+          "evidence_class": "probability_weighted_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Two-year fixed commitment weighted by modeled risk of not remaining a meaningful contributor through Year 2.",
+          "warning": "Not expected accounting loss, cash loss, or wasted wages.",
+          "components": {
+            "fixed_wages_through_24m_eur": 26844990.0,
+            "low_contribution_probability_24m": 0.42866597664620965,
+            "sustained_contribution_probability_24m": 0.5713340233537904
+          }
+        }
+      ],
+      "asset_value": [
+        {
+          "metric_key": "value_preservation_probability_12m",
+          "display_label": "12-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 12-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "value_preservation_probability_24m",
+          "display_label": "24-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 24-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "public_value_downside_25pct_scenario",
+          "display_label": "24-month public-value downside scenario",
+          "value": {
+            "probability": 0.931893880575024,
+            "minimum_threshold_eur": 13750000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Probability and minimum euro threshold defining a 25% public-value decline.",
+          "warning": "Do not multiply into expected loss; public market value is not sale proceeds, impairment, or book value.",
+          "components": {
+            "current_public_market_value_eur": 55000000.0,
+            "downside_threshold_pct": 0.25
+          }
+        },
+        {
+          "metric_key": "public_value_downside_50pct_scenario",
+          "display_label": "Severe 24-month public-value downside scenario",
+          "value": {
+            "probability": 0.8190787451493962,
+            "minimum_threshold_eur": 27500000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display_detail",
+          "interpretation": "Probability and minimum euro threshold defining a 50% public-value decline.",
+          "warning": "Do not multiply into expected loss; this is a public-value threshold scenario.",
+          "components": {
+            "current_public_market_value_eur": 55000000.0,
+            "downside_threshold_pct": 0.5
+          }
+        }
+      ],
+      "continuity": [
+        {
+          "metric_key": "scheduled_fixed_wages_after_36m_eur",
+          "display_label": "Fixed wages scheduled after month 36",
+          "value": 11805548.305954833,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Fixed wages scheduled beyond the model's 36-month continuity horizon.",
+          "warning": "This amount is scheduled commitment, not expected loss.",
+          "components": {
+            "annual_fixed_wage_eur": 13422495.0,
+            "contract_years_beyond_36m": 0.8795345653661881
+          }
+        },
+        {
+          "metric_key": "contract_continuity_horizon",
+          "display_label": "Contract-continuity horizon",
+          "value": {
+            "continuous_stay_probability_36m": 0.4517669813174143,
+            "scheduled_fixed_wages_after_36m_eur": 11805548.305954833
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Thirty-six-month continuous-stay probability shown beside scheduled fixed wages beyond that horizon.",
+          "warning": "Do not multiply into expected wage loss; outbound movement can stop wages or produce a fee.",
+          "components": {
+            "continuous_stay_probability_24m": 0.6247719426826156,
+            "scheduled_fixed_wages_after_24m_eur": 25228043.305954833
+          }
+        },
+        {
+          "metric_key": "permanent_relationship_probability_24m",
+          "display_label": "Permanent-relationship probability (24m)",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-2 permanent-outbound model output is unavailable.",
+          "components": {}
+        }
+      ],
+      "salary_structure": [
+        {
+          "metric_key": "club_salary_percentile",
+          "display_label": "Club salary position",
+          "value": 1.0,
+          "unit": "percentile",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Position within the known same-club salary panel.",
+          "warning": "The public salary panel may be incomplete and excludes some compensation.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        },
+        {
+          "metric_key": "club_known_payroll_share",
+          "display_label": "Share of known club payroll",
+          "value": 0.0760982383068429,
+          "unit": "ratio",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Player annual fixed wage as a share of known public club fixed wages.",
+          "warning": "The denominator is not audited total payroll.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        }
+      ]
+    },
+    "availability": {
+      "available_metrics": 13,
+      "unavailable_metrics": 5
+    },
+    "overall_contract_score": null,
+    "overall_contract_score_status": "rejected_show_separate_business_metrics",
+    "global_warnings": [
+      "Validated for incumbent-club extension decisions in the modeled Big-Five scope only.",
+      "No displayed metric is an approve/reject recommendation.",
+      "Public market value is not realized sale proceeds or accounting value.",
+      "Missing inputs remain unavailable and are never silently replaced with zero."
+    ],
+    "historical_case": {
+      "capology_extension_event_id": "ef7175a3ffcbf15f7abb82f38f068b87119f7f3d53b677507dcb3d2e4d905e41",
+      "case_category": "value_only_divergence",
+      "case_interpretation": "Value downside occurred without low contribution or 24-month outbound movement.",
+      "actual_low_contribution": 0.0,
+      "actual_outbound_24m": 0.0,
+      "actual_value_downside_25pct_24m": 1.0
+    }
+  },
+  {
+    "profile_scope": "incumbent_club_extension",
+    "metric_version": "business_metrics_v1_2026-08-12",
+    "player": "Thomas M\u00fcller",
+    "current_club": "Bayern Munich",
+    "decision_date": "2022-05-03",
+    "cards": {
+      "capital_commitment": [
+        {
+          "metric_key": "fixed_wage_commitment_eur",
+          "display_label": "Fixed-wage commitment",
+          "value": 44283367.55646817,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Total fixed wages scheduled by the proposed term.",
+          "warning": "Partial commitment only; excludes bonuses, taxes, agent fees, options, clauses, and other costs.",
+          "components": {
+            "annual_fixed_wage_eur": 20500000.0,
+            "contract_years": 2.1601642710472277
+          }
+        },
+        {
+          "metric_key": "fixed_commitment_to_public_value",
+          "display_label": "Commitment / public value",
+          "value": 1.7713347022587267,
+          "unit": "ratio",
+          "evidence_class": "exact_ratio_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Scale of proposed fixed wages relative to the dated public market-value estimate.",
+          "warning": "Not ROI, accounting exposure, book value, or expected loss.",
+          "components": {
+            "fixed_wage_commitment_eur": 44283367.55646817,
+            "current_public_market_value_eur": 25000000.0
+          }
+        },
+        {
+          "metric_key": "age_at_expiration",
+          "display_label": "Age at expiration",
+          "value": 34.795345653661876,
+          "unit": "years",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Player age when the proposed fixed term ends.",
+          "warning": "Does not incorporate an unentered unilateral or conditional option.",
+          "components": {
+            "age_at_decision": 32.63518138261465,
+            "contract_years": 2.1601642710472277
+          }
+        },
+        {
+          "metric_key": "proposed_wage_change_pct",
+          "display_label": "Proposed wage increase",
+          "value": 0.02499999999999991,
+          "unit": "ratio",
+          "evidence_class": "exact_calculation",
+          "status": "supported_when_prior_wage_known",
+          "interpretation": "Change from the known prior annual fixed wage.",
+          "warning": "Public wage figures may be estimates and do not include unreported compensation.",
+          "components": {
+            "proposed_annual_fixed_wage_eur": 20500000.0,
+            "prior_annual_fixed_wage_eur": 20000000.0
+          }
+        }
+      ],
+      "offer_context": [
+        {
+          "metric_key": "fixed_commitment_peer_difference_eur",
+          "display_label": "Commitment versus historical peers",
+          "value": 13559563.702902097,
+          "unit": "EUR",
+          "evidence_class": "historical_benchmark_translation",
+          "status": "supported",
+          "interpretation": "Euro difference from the modeled historical peer commitment.",
+          "warning": "Historical deviation is not proof of overpayment or an optimal offer.",
+          "components": {
+            "proposed_fixed_commitment_eur": 44283367.55646817,
+            "peer_estimate_eur": 30723803.85356607,
+            "peer_lower_eur": 10964819.225197151,
+            "peer_upper_eur": 86089164.24843553,
+            "range_position": "within_historical_80pct_range"
+          }
+        },
+        {
+          "metric_key": "offer_aggressiveness_percentile",
+          "display_label": "Offer aggressiveness percentile",
+          "value": 0.617686170212766,
+          "unit": "percentile",
+          "evidence_class": "historical_oos_reference",
+          "status": "supported_with_frozen_reference",
+          "interpretation": "Position of the proposal's peer-adjusted commitment in the frozen out-of-time extension distribution.",
+          "warning": "Not fairness, optimality, expected return, or a recommendation.",
+          "components": {
+            "peer_adjusted_log_residual": 0.3655714323871651,
+            "reference_rows": 1504
+          }
+        },
+        {
+          "metric_key": "contract_duration_peer_delta_years",
+          "display_label": "Term versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 duration peer estimate is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "wage_to_market_value_peer_comparison",
+          "display_label": "Wage/value versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 wage-to-value peer estimate is unavailable.",
+          "components": {}
+        }
+      ],
+      "contribution_exposure": [
+        {
+          "metric_key": "low_contribution_wage_exposure_eur",
+          "display_label": "Low-contribution wage exposure",
+          "value": 8511759.772108201,
+          "unit": "EUR",
+          "evidence_class": "probability_weighted_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Two-year fixed commitment weighted by modeled risk of not remaining a meaningful contributor through Year 2.",
+          "warning": "Not expected accounting loss, cash loss, or wasted wages.",
+          "components": {
+            "fixed_wages_through_24m_eur": 41000000.0,
+            "low_contribution_probability_24m": 0.2076038968806878,
+            "sustained_contribution_probability_24m": 0.7923961031193122
+          }
+        }
+      ],
+      "asset_value": [
+        {
+          "metric_key": "value_preservation_probability_12m",
+          "display_label": "12-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 12-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "value_preservation_probability_24m",
+          "display_label": "24-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 24-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "public_value_downside_25pct_scenario",
+          "display_label": "24-month public-value downside scenario",
+          "value": {
+            "probability": 0.9121802911845686,
+            "minimum_threshold_eur": 6250000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Probability and minimum euro threshold defining a 25% public-value decline.",
+          "warning": "Do not multiply into expected loss; public market value is not sale proceeds, impairment, or book value.",
+          "components": {
+            "current_public_market_value_eur": 25000000.0,
+            "downside_threshold_pct": 0.25
+          }
+        },
+        {
+          "metric_key": "public_value_downside_50pct_scenario",
+          "display_label": "Severe 24-month public-value downside scenario",
+          "value": {
+            "probability": 0.712227899221925,
+            "minimum_threshold_eur": 12500000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display_detail",
+          "interpretation": "Probability and minimum euro threshold defining a 50% public-value decline.",
+          "warning": "Do not multiply into expected loss; this is a public-value threshold scenario.",
+          "components": {
+            "current_public_market_value_eur": 25000000.0,
+            "downside_threshold_pct": 0.5
+          }
+        }
+      ],
+      "continuity": [
+        {
+          "metric_key": "scheduled_fixed_wages_after_36m_eur",
+          "display_label": "Fixed wages scheduled after month 36",
+          "value": 0.0,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Fixed wages scheduled beyond the model's 36-month continuity horizon.",
+          "warning": "This amount is scheduled commitment, not expected loss.",
+          "components": {
+            "annual_fixed_wage_eur": 20500000.0,
+            "contract_years_beyond_36m": 0
+          }
+        },
+        {
+          "metric_key": "contract_continuity_horizon",
+          "display_label": "Contract-continuity horizon",
+          "value": {
+            "continuous_stay_probability_36m": 0.4113230942110231,
+            "scheduled_fixed_wages_after_36m_eur": 0.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Thirty-six-month continuous-stay probability shown beside scheduled fixed wages beyond that horizon.",
+          "warning": "Do not multiply into expected wage loss; outbound movement can stop wages or produce a fee.",
+          "components": {
+            "continuous_stay_probability_24m": 0.6022691753366031,
+            "scheduled_fixed_wages_after_24m_eur": 3283367.5564681687
+          }
+        },
+        {
+          "metric_key": "permanent_relationship_probability_24m",
+          "display_label": "Permanent-relationship probability (24m)",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-2 permanent-outbound model output is unavailable.",
+          "components": {}
+        }
+      ],
+      "salary_structure": [
+        {
+          "metric_key": "club_salary_percentile",
+          "display_label": "Club salary position",
+          "value": 0.925925925925926,
+          "unit": "percentile",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Position within the known same-club salary panel.",
+          "warning": "The public salary panel may be incomplete and excludes some compensation.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        },
+        {
+          "metric_key": "club_known_payroll_share",
+          "display_label": "Share of known club payroll",
+          "value": 0.090687900906879,
+          "unit": "ratio",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Player annual fixed wage as a share of known public club fixed wages.",
+          "warning": "The denominator is not audited total payroll.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        }
+      ]
+    },
+    "availability": {
+      "available_metrics": 13,
+      "unavailable_metrics": 5
+    },
+    "overall_contract_score": null,
+    "overall_contract_score_status": "rejected_show_separate_business_metrics",
+    "global_warnings": [
+      "Validated for incumbent-club extension decisions in the modeled Big-Five scope only.",
+      "No displayed metric is an approve/reject recommendation.",
+      "Public market value is not realized sale proceeds or accounting value.",
+      "Missing inputs remain unavailable and are never silently replaced with zero."
+    ],
+    "historical_case": {
+      "capology_extension_event_id": "e6506fe85a9fd95568b54bda1572cd8f2e351f463236ebf02b8401792fe25567",
+      "case_category": "value_only_divergence",
+      "case_interpretation": "Value downside occurred without low contribution or 24-month outbound movement.",
+      "actual_low_contribution": 0.0,
+      "actual_outbound_24m": 0.0,
+      "actual_value_downside_25pct_24m": 1.0
+    }
+  },
+  {
+    "profile_scope": "incumbent_club_extension",
+    "metric_version": "business_metrics_v1_2026-08-12",
+    "player": "Lenny Lacroix",
+    "current_club": "Metz",
+    "decision_date": "2021-02-08",
+    "cards": {
+      "capital_commitment": [
+        {
+          "metric_key": "fixed_wage_commitment_eur",
+          "display_label": "Fixed-wage commitment",
+          "value": 47748.11772758385,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Total fixed wages scheduled by the proposed term.",
+          "warning": "Partial commitment only; excludes bonuses, taxes, agent fees, options, clauses, and other costs.",
+          "components": {
+            "annual_fixed_wage_eur": 20000.0,
+            "contract_years": 2.3874058863791925
+          }
+        },
+        {
+          "metric_key": "fixed_commitment_to_public_value",
+          "display_label": "Commitment / public value",
+          "value": 0.0954962354551677,
+          "unit": "ratio",
+          "evidence_class": "exact_ratio_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Scale of proposed fixed wages relative to the dated public market-value estimate.",
+          "warning": "Not ROI, accounting exposure, book value, or expected loss.",
+          "components": {
+            "fixed_wage_commitment_eur": 47748.11772758385,
+            "current_public_market_value_eur": 500000.0
+          }
+        },
+        {
+          "metric_key": "age_at_expiration",
+          "display_label": "Age at expiration",
+          "value": 20.39425051334702,
+          "unit": "years",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Player age when the proposed fixed term ends.",
+          "warning": "Does not incorporate an unentered unilateral or conditional option.",
+          "components": {
+            "age_at_decision": 18.00684462696783,
+            "contract_years": 2.3874058863791925
+          }
+        },
+        {
+          "metric_key": "proposed_wage_change_pct",
+          "display_label": "Proposed wage increase",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Prior annual fixed wage is unavailable; it was not imputed as zero.",
+          "components": {}
+        }
+      ],
+      "offer_context": [
+        {
+          "metric_key": "fixed_commitment_peer_difference_eur",
+          "display_label": "Commitment versus historical peers",
+          "value": -368520.3004442435,
+          "unit": "EUR",
+          "evidence_class": "historical_benchmark_translation",
+          "status": "supported",
+          "interpretation": "Euro difference from the modeled historical peer commitment.",
+          "warning": "Historical deviation is not proof of overpayment or an optimal offer.",
+          "components": {
+            "proposed_fixed_commitment_eur": 47748.11772758385,
+            "peer_estimate_eur": 416268.41817182733,
+            "peer_lower_eur": 115337.420767829,
+            "peer_upper_eur": 1502369.2641443918,
+            "range_position": "below_historical_80pct_range"
+          }
+        },
+        {
+          "metric_key": "offer_aggressiveness_percentile",
+          "display_label": "Offer aggressiveness percentile",
+          "value": 0.023936170212765957,
+          "unit": "percentile",
+          "evidence_class": "historical_oos_reference",
+          "status": "supported_with_frozen_reference",
+          "interpretation": "Position of the proposal's peer-adjusted commitment in the frozen out-of-time extension distribution.",
+          "warning": "Not fairness, optimality, expected return, or a recommendation.",
+          "components": {
+            "peer_adjusted_log_residual": -2.16539064134383,
+            "reference_rows": 1504
+          }
+        },
+        {
+          "metric_key": "contract_duration_peer_delta_years",
+          "display_label": "Term versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 duration peer estimate is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "wage_to_market_value_peer_comparison",
+          "display_label": "Wage/value versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 wage-to-value peer estimate is unavailable.",
+          "components": {}
+        }
+      ],
+      "contribution_exposure": [
+        {
+          "metric_key": "low_contribution_wage_exposure_eur",
+          "display_label": "Low-contribution wage exposure",
+          "value": 35887.990279088815,
+          "unit": "EUR",
+          "evidence_class": "probability_weighted_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Two-year fixed commitment weighted by modeled risk of not remaining a meaningful contributor through Year 2.",
+          "warning": "Not expected accounting loss, cash loss, or wasted wages.",
+          "components": {
+            "fixed_wages_through_24m_eur": 40000.0,
+            "low_contribution_probability_24m": 0.8971997569772203,
+            "sustained_contribution_probability_24m": 0.1028002430227797
+          }
+        }
+      ],
+      "asset_value": [
+        {
+          "metric_key": "value_preservation_probability_12m",
+          "display_label": "12-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 12-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "value_preservation_probability_24m",
+          "display_label": "24-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 24-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "public_value_downside_25pct_scenario",
+          "display_label": "24-month public-value downside scenario",
+          "value": {
+            "probability": 0.0516998291358739,
+            "minimum_threshold_eur": 125000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Probability and minimum euro threshold defining a 25% public-value decline.",
+          "warning": "Do not multiply into expected loss; public market value is not sale proceeds, impairment, or book value.",
+          "components": {
+            "current_public_market_value_eur": 500000.0,
+            "downside_threshold_pct": 0.25
+          }
+        },
+        {
+          "metric_key": "public_value_downside_50pct_scenario",
+          "display_label": "Severe 24-month public-value downside scenario",
+          "value": {
+            "probability": 0.0083425325448443,
+            "minimum_threshold_eur": 250000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display_detail",
+          "interpretation": "Probability and minimum euro threshold defining a 50% public-value decline.",
+          "warning": "Do not multiply into expected loss; this is a public-value threshold scenario.",
+          "components": {
+            "current_public_market_value_eur": 500000.0,
+            "downside_threshold_pct": 0.5
+          }
+        }
+      ],
+      "continuity": [
+        {
+          "metric_key": "scheduled_fixed_wages_after_36m_eur",
+          "display_label": "Fixed wages scheduled after month 36",
+          "value": 0.0,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Fixed wages scheduled beyond the model's 36-month continuity horizon.",
+          "warning": "This amount is scheduled commitment, not expected loss.",
+          "components": {
+            "annual_fixed_wage_eur": 20000.0,
+            "contract_years_beyond_36m": 0
+          }
+        },
+        {
+          "metric_key": "contract_continuity_horizon",
+          "display_label": "Contract-continuity horizon",
+          "value": {
+            "continuous_stay_probability_36m": 0.1777255668653954,
+            "scheduled_fixed_wages_after_36m_eur": 0.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Thirty-six-month continuous-stay probability shown beside scheduled fixed wages beyond that horizon.",
+          "warning": "Do not multiply into expected wage loss; outbound movement can stop wages or produce a fee.",
+          "components": {
+            "continuous_stay_probability_24m": 0.3566015279938632,
+            "scheduled_fixed_wages_after_24m_eur": 7748.11772758385
+          }
+        },
+        {
+          "metric_key": "permanent_relationship_probability_24m",
+          "display_label": "Permanent-relationship probability (24m)",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-2 permanent-outbound model output is unavailable.",
+          "components": {}
+        }
+      ],
+      "salary_structure": [
+        {
+          "metric_key": "club_salary_percentile",
+          "display_label": "Club salary position",
+          "value": 0.0344827586206896,
+          "unit": "percentile",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Position within the known same-club salary panel.",
+          "warning": "The public salary panel may be incomplete and excludes some compensation.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        },
+        {
+          "metric_key": "club_known_payroll_share",
+          "display_label": "Share of known club payroll",
+          "value": 0.0018726591760299,
+          "unit": "ratio",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Player annual fixed wage as a share of known public club fixed wages.",
+          "warning": "The denominator is not audited total payroll.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        }
+      ]
+    },
+    "availability": {
+      "available_metrics": 12,
+      "unavailable_metrics": 6
+    },
+    "overall_contract_score": null,
+    "overall_contract_score_status": "rejected_show_separate_business_metrics",
+    "global_warnings": [
+      "Validated for incumbent-club extension decisions in the modeled Big-Five scope only.",
+      "No displayed metric is an approve/reject recommendation.",
+      "Public market value is not realized sale proceeds or accounting value.",
+      "Missing inputs remain unavailable and are never silently replaced with zero."
+    ],
+    "historical_case": {
+      "capology_extension_event_id": "678d6ded6873407fbfc38aaac66fb73e5f096fd79c3d1444d8c2ece22ef2bdaa",
+      "case_category": "sporting_continuity_only",
+      "case_interpretation": "Low contribution and outbound movement occurred without 25% public-value downside.",
+      "actual_low_contribution": 1.0,
+      "actual_outbound_24m": 1.0,
+      "actual_value_downside_25pct_24m": 0.0
+    }
+  },
+  {
+    "profile_scope": "incumbent_club_extension",
+    "metric_version": "business_metrics_v1_2026-08-12",
+    "player": "Malik Tillman",
+    "current_club": "Bayern Munich",
+    "decision_date": "2021-09-23",
+    "cards": {
+      "capital_commitment": [
+        {
+          "metric_key": "fixed_wage_commitment_eur",
+          "display_label": "Fixed-wage commitment",
+          "value": 830390.1437371663,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Total fixed wages scheduled by the proposed term.",
+          "warning": "Partial commitment only; excludes bonuses, taxes, agent fees, options, clauses, and other costs.",
+          "components": {
+            "annual_fixed_wage_eur": 300000.0,
+            "contract_years": 2.7679671457905544
+          }
+        },
+        {
+          "metric_key": "fixed_commitment_to_public_value",
+          "display_label": "Commitment / public value",
+          "value": 1.6607802874743327,
+          "unit": "ratio",
+          "evidence_class": "exact_ratio_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Scale of proposed fixed wages relative to the dated public market-value estimate.",
+          "warning": "Not ROI, accounting exposure, book value, or expected loss.",
+          "components": {
+            "fixed_wage_commitment_eur": 830390.1437371663,
+            "current_public_market_value_eur": 500000.0
+          }
+        },
+        {
+          "metric_key": "age_at_expiration",
+          "display_label": "Age at expiration",
+          "value": 22.091718001368925,
+          "unit": "years",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Player age when the proposed fixed term ends.",
+          "warning": "Does not incorporate an unentered unilateral or conditional option.",
+          "components": {
+            "age_at_decision": 19.32375085557837,
+            "contract_years": 2.7679671457905544
+          }
+        },
+        {
+          "metric_key": "proposed_wage_change_pct",
+          "display_label": "Proposed wage increase",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Prior annual fixed wage is unavailable; it was not imputed as zero.",
+          "components": {}
+        }
+      ],
+      "offer_context": [
+        {
+          "metric_key": "fixed_commitment_peer_difference_eur",
+          "display_label": "Commitment versus historical peers",
+          "value": 412789.03269737406,
+          "unit": "EUR",
+          "evidence_class": "historical_benchmark_translation",
+          "status": "supported",
+          "interpretation": "Euro difference from the modeled historical peer commitment.",
+          "warning": "Historical deviation is not proof of overpayment or an optimal offer.",
+          "components": {
+            "proposed_fixed_commitment_eur": 830390.1437371663,
+            "peer_estimate_eur": 417601.11103979225,
+            "peer_lower_eur": 115706.67616015927,
+            "peer_upper_eur": 1507179.133728462,
+            "range_position": "within_historical_80pct_range"
+          }
+        },
+        {
+          "metric_key": "offer_aggressiveness_percentile",
+          "display_label": "Offer aggressiveness percentile",
+          "value": 0.7839095744680851,
+          "unit": "percentile",
+          "evidence_class": "historical_oos_reference",
+          "status": "supported_with_frozen_reference",
+          "interpretation": "Position of the proposal's peer-adjusted commitment in the frozen out-of-time extension distribution.",
+          "warning": "Not fairness, optimality, expected return, or a recommendation.",
+          "components": {
+            "peer_adjusted_log_residual": 0.6873689459450729,
+            "reference_rows": 1504
+          }
+        },
+        {
+          "metric_key": "contract_duration_peer_delta_years",
+          "display_label": "Term versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 duration peer estimate is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "wage_to_market_value_peer_comparison",
+          "display_label": "Wage/value versus historical peers",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "Serialized Phase-4 wage-to-value peer estimate is unavailable.",
+          "components": {}
+        }
+      ],
+      "contribution_exposure": [
+        {
+          "metric_key": "low_contribution_wage_exposure_eur",
+          "display_label": "Low-contribution wage exposure",
+          "value": 469607.3350885946,
+          "unit": "EUR",
+          "evidence_class": "probability_weighted_proxy",
+          "status": "supported_proxy",
+          "interpretation": "Two-year fixed commitment weighted by modeled risk of not remaining a meaningful contributor through Year 2.",
+          "warning": "Not expected accounting loss, cash loss, or wasted wages.",
+          "components": {
+            "fixed_wages_through_24m_eur": 600000.0,
+            "low_contribution_probability_24m": 0.7826788918143243,
+            "sustained_contribution_probability_24m": 0.2173211081856757
+          }
+        }
+      ],
+      "asset_value": [
+        {
+          "metric_key": "value_preservation_probability_12m",
+          "display_label": "12-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 12-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "value_preservation_probability_24m",
+          "display_label": "24-month value preservation probability",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-3 24-month 10% downside probability is unavailable.",
+          "components": {}
+        },
+        {
+          "metric_key": "public_value_downside_25pct_scenario",
+          "display_label": "24-month public-value downside scenario",
+          "value": {
+            "probability": 0.0418723844893057,
+            "minimum_threshold_eur": 125000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Probability and minimum euro threshold defining a 25% public-value decline.",
+          "warning": "Do not multiply into expected loss; public market value is not sale proceeds, impairment, or book value.",
+          "components": {
+            "current_public_market_value_eur": 500000.0,
+            "downside_threshold_pct": 0.25
+          }
+        },
+        {
+          "metric_key": "public_value_downside_50pct_scenario",
+          "display_label": "Severe 24-month public-value downside scenario",
+          "value": {
+            "probability": 0.0007859454458487,
+            "minimum_threshold_eur": 250000.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display_detail",
+          "interpretation": "Probability and minimum euro threshold defining a 50% public-value decline.",
+          "warning": "Do not multiply into expected loss; this is a public-value threshold scenario.",
+          "components": {
+            "current_public_market_value_eur": 500000.0,
+            "downside_threshold_pct": 0.5
+          }
+        }
+      ],
+      "continuity": [
+        {
+          "metric_key": "scheduled_fixed_wages_after_36m_eur",
+          "display_label": "Fixed wages scheduled after month 36",
+          "value": 0.0,
+          "unit": "EUR",
+          "evidence_class": "exact_calculation",
+          "status": "supported",
+          "interpretation": "Fixed wages scheduled beyond the model's 36-month continuity horizon.",
+          "warning": "This amount is scheduled commitment, not expected loss.",
+          "components": {
+            "annual_fixed_wage_eur": 300000.0,
+            "contract_years_beyond_36m": 0
+          }
+        },
+        {
+          "metric_key": "contract_continuity_horizon",
+          "display_label": "Contract-continuity horizon",
+          "value": {
+            "continuous_stay_probability_36m": 0.0995368103206626,
+            "scheduled_fixed_wages_after_36m_eur": 0.0
+          },
+          "unit": "probability_and_EUR",
+          "evidence_class": "paired_probability_scenario",
+          "status": "supported_paired_display",
+          "interpretation": "Thirty-six-month continuous-stay probability shown beside scheduled fixed wages beyond that horizon.",
+          "warning": "Do not multiply into expected wage loss; outbound movement can stop wages or produce a fee.",
+          "components": {
+            "continuous_stay_probability_24m": 0.2506459115187447,
+            "scheduled_fixed_wages_after_24m_eur": 230390.1437371663
+          }
+        },
+        {
+          "metric_key": "permanent_relationship_probability_24m",
+          "display_label": "Permanent-relationship probability (24m)",
+          "value": null,
+          "unit": "unavailable",
+          "evidence_class": "unavailable",
+          "status": "unavailable",
+          "interpretation": "Metric not calculated.",
+          "warning": "The approved Phase-2 permanent-outbound model output is unavailable.",
+          "components": {}
+        }
+      ],
+      "salary_structure": [
+        {
+          "metric_key": "club_salary_percentile",
+          "display_label": "Club salary position",
+          "value": 0.1111111111111111,
+          "unit": "percentile",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Position within the known same-club salary panel.",
+          "warning": "The public salary panel may be incomplete and excludes some compensation.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        },
+        {
+          "metric_key": "club_known_payroll_share",
+          "display_label": "Share of known club payroll",
+          "value": 0.0013271400132714,
+          "unit": "ratio",
+          "evidence_class": "observed_context",
+          "status": "supported_when_matched",
+          "interpretation": "Player annual fixed wage as a share of known public club fixed wages.",
+          "warning": "The denominator is not audited total payroll.",
+          "components": {
+            "context_source": "precomputed_backend_context",
+            "known_panel_rows_including_proposal": null
+          }
+        }
+      ]
+    },
+    "availability": {
+      "available_metrics": 12,
+      "unavailable_metrics": 6
+    },
+    "overall_contract_score": null,
+    "overall_contract_score_status": "rejected_show_separate_business_metrics",
+    "global_warnings": [
+      "Validated for incumbent-club extension decisions in the modeled Big-Five scope only.",
+      "No displayed metric is an approve/reject recommendation.",
+      "Public market value is not realized sale proceeds or accounting value.",
+      "Missing inputs remain unavailable and are never silently replaced with zero."
+    ],
+    "historical_case": {
+      "capology_extension_event_id": "2066c0576555dc0d5c687f0f8db5d13a112accff1dd5e72b93e4e05a89f2c531",
+      "case_category": "sporting_continuity_only",
+      "case_interpretation": "Low contribution and outbound movement occurred without 25% public-value downside.",
+      "actual_low_contribution": 1.0,
+      "actual_outbound_24m": 1.0,
+      "actual_value_downside_25pct_24m": 0.0
+    }
+  }
+]

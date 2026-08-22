@@ -1,0 +1,9 @@
+﻿endpoint,horizon,horizon_days,records,observable_or_event_rows,events_by_horizon,event_rate_among_observable_or_event,administratively_complete_for_full_cohort
+any_outbound,12m,365,2358,2358,546,0.23155216284987276,True
+any_outbound,24m,730,2358,2358,1144,0.4851569126378287,True
+any_outbound,36m,1095,2358,2191,1491,0.6805111821086262,False
+any_outbound,48m,1460,2358,2086,1697,0.8135186960690316,False
+permanent_outbound,12m,365,2358,2358,267,0.11323155216284987,True
+permanent_outbound,24m,730,2358,2358,767,0.32527565733672603,True
+permanent_outbound,36m,1095,2358,2161,1191,0.5511337343822305,False
+permanent_outbound,48m,1460,2358,2019,1478,0.7320455671124318,False

@@ -1,0 +1,15 @@
+﻿check,observed,expected,passed,notes
+profile_rows,1560,1560,True,One Phase-5 out-of-time extension profile per event.
+profile_event_grain,0,0,True,No translated-profile duplication.
+fixed_commitment_formula,1,1,True,Annual wage × term reproduces Phase 5.
+two_year_commitment_formula,1,1,True,Two-year exposure never exceeds entered contract duration.
+low_contribution_exposure_formula,1,1,True,Probability-weighted proxy formula reproduces.
+value_threshold_formula,1,1,True,Euro severity is exactly 25% of dated public value.
+post_36m_commitment_formula,1,1,True,Post-horizon scheduled fixed wages reproduce.
+peer_percentile_bounds,1,1,True,"Historical reference percentiles remain within [0,1]."
+probability_bounds,1,1,True,All translated probabilities remain valid.
+value_event_semantics,1,1,True,25% scenario event matches the saved 24-month log-value target.
+exposure_evaluation_rows,908,908,True,All financially eligible Phase-1 out-of-time profiles enter the translation audit; missing wage rows remain unavailable.
+exposure_band_ordering,1,1,True,Realized low-contribution wage exposure increases across the five predicted euro-exposure bands.
+no_expected_loss_label,1,1,True,No proxy is labeled expected loss.
+overall_score_rejected,1,1,True,No unsupported headline score is restored.

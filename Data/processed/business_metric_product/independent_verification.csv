@@ -1,0 +1,21 @@
+﻿check,observed,expected,passed,notes
+audit_source_verified,1,1,True,The product consumes only the verified translation audit.
+offer_reference_recomputation,1504,1504,True,Frozen reference exactly reproduces the out-of-time peer residual distribution.
+offer_reference_sorted,1,1,True,Reference distribution is sorted.
+offer_reference_quantiles,0,0,True,Published reference quantiles reproduce.
+offer_reference_table,1,1,True,Human-readable CDF table reproduces.
+input_schema_scope,1,1,True,Required proposal fields and optional backend outputs are explicit.
+output_contract_scope,1,1,True,Six business cards are frozen and the overall score remains rejected.
+historical_example_count,12,12,True,Input/output examples are paired.
+historical_example_categories,6,6,True,Six success/failure/divergence categories are represented.
+historical_formula_recomputation,0,0,True,"Deterministic, peer, and qualified exposure formulas reproduce independently."
+historical_percentile_recomputation,0,0,True,Frozen empirical CDF scores reproduce independently.
+historical_scenario_recomputation,0,0,True,Paired value and continuity scenarios reproduce without multiplication.
+historical_evidence_classes,0,0,True,"Proxy, scenario, and rejected-composite classes remain distinct."
+missing_data_behavior,1,1,True,Optional missing inputs fail closed as unavailable.
+invalid_input_rejection,5,5,True,"Scope, financial, horizon, and threshold violations fail closed."
+salary_panel_recomputation,1,1,True,Proposed salary rank/share reproduce from a panel that explicitly excludes the player's prior wage.
+metric_registry_scope,1,1,True,Audited metrics map to stable engine keys and the composite is not emitted.
+source_hashes,0,0,True,Failures: none
+builder_output_hashes,0,0,True,Failures: none
+builder_checks,1,1,True,All product builder checks pass.

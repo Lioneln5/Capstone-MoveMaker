@@ -1,0 +1,109 @@
+﻿endpoint,window,comparison,baseline,candidate,evaluation_years,evaluation_rows,mean_mae_improvement,origin_wins,origin_count,cluster_count,cluster_ci_lower_95,cluster_ci_upper_95,cluster_probability_candidate_better
+annual_wage,pooled_four,B1_vs_B0_profile,B0_chronological_median,B1_player_market_profile,2020 | 2021 | 2022 | 2023,1504,0.5188011119991429,4,4,1284,0.47682078797998506,0.5612910934972185,1.0
+annual_wage,pooled_four,B2_vs_B1_prior_wage,B1_player_market_profile,B2_plus_prior_wage,2020 | 2021 | 2022 | 2023,1504,0.08059552919679068,4,4,1284,0.06257411144224118,0.09812681280255826,1.0
+annual_wage,pooled_four,B3_vs_B2_prior_opportunity,B2_plus_prior_wage,B3_plus_prior_opportunity,2020 | 2021 | 2022 | 2023,1504,-0.00023315117738394205,1,4,1284,-0.0050420737668809,0.004542353984289803,0.4656
+annual_wage,pooled_four,B4_vs_B3_sporting_history,B3_plus_prior_opportunity,B4_plus_sporting_history,2020 | 2021 | 2022 | 2023,1504,-0.001548324337054718,1,4,1284,-0.006335504688882346,0.00331341599467253,0.2676
+annual_wage,pooled_four,B4_vs_B2_all_sporting,B2_plus_prior_wage,B4_plus_sporting_history,2020 | 2021 | 2022 | 2023,1504,-0.0017814755144386599,2,4,1284,-0.008389692255842433,0.004619695112051077,0.3002
+annual_wage,pooled_four,B4_vs_B0_total,B0_chronological_median,B4_plus_sporting_history,2020 | 2021 | 2022 | 2023,1504,0.5976151656814949,4,4,1284,0.5543069117349118,0.6409437515236335,1.0
+annual_wage,pooled_four,B5_vs_B4_nonlinearity,B4_plus_sporting_history,B5_compact_nonlinear,2020 | 2021 | 2022 | 2023,1504,-0.0002455546836880011,3,4,1284,-0.015672136627977278,0.015059434845593373,0.4922
+annual_wage,pooled_four,B2_vs_B0_parsimonious_total,B0_chronological_median,B2_plus_prior_wage,2020 | 2021 | 2022 | 2023,1504,0.5993966411959335,4,4,1284,0.5556549331804341,0.6427449105075324,1.0
+annual_wage,pooled_four,B5_vs_B0_nonlinear_total,B0_chronological_median,B5_compact_nonlinear,2020 | 2021 | 2022 | 2023,1504,0.5973696109978068,4,4,1284,0.5573973048481455,0.6382769782274041,1.0
+annual_wage,mature_three,B1_vs_B0_profile,B0_chronological_median,B1_player_market_profile,2021 | 2022 | 2023,1121,0.5261914483723558,3,3,1004,0.4799601904045671,0.5736916755449586,1.0
+annual_wage,mature_three,B2_vs_B1_prior_wage,B1_player_market_profile,B2_plus_prior_wage,2021 | 2022 | 2023,1121,0.07405175476235404,3,3,1004,0.05301841571680529,0.09535599518549805,1.0
+annual_wage,mature_three,B3_vs_B2_prior_opportunity,B2_plus_prior_wage,B3_plus_prior_opportunity,2021 | 2022 | 2023,1121,0.001232088118639214,1,3,1004,-0.004573488138911096,0.006897033619682824,0.6566
+annual_wage,mature_three,B4_vs_B3_sporting_history,B3_plus_prior_opportunity,B4_plus_sporting_history,2021 | 2022 | 2023,1121,0.0018061249295398833,1,3,1004,-0.0034877225690843104,0.007041015221938171,0.7512
+annual_wage,mature_three,B4_vs_B2_all_sporting,B2_plus_prior_wage,B4_plus_sporting_history,2021 | 2022 | 2023,1121,0.003038213048179097,2,3,1004,-0.00452039471797881,0.010389188443436037,0.789
+annual_wage,mature_three,B4_vs_B0_total,B0_chronological_median,B4_plus_sporting_history,2021 | 2022 | 2023,1121,0.6032814161828889,3,3,1004,0.5547687507262903,0.6538055463613482,1.0
+annual_wage,mature_three,B5_vs_B4_nonlinearity,B4_plus_sporting_history,B5_compact_nonlinear,2021 | 2022 | 2023,1121,-0.00094792888202218,2,3,1004,-0.01852004300104107,0.01686492075830767,0.4688
+annual_wage,mature_three,B2_vs_B0_parsimonious_total,B0_chronological_median,B2_plus_prior_wage,2021 | 2022 | 2023,1121,0.6002432031347098,3,3,1004,0.5505480255629722,0.6505536632170926,1.0
+annual_wage,mature_three,B5_vs_B0_nonlinear_total,B0_chronological_median,B5_compact_nonlinear,2021 | 2022 | 2023,1121,0.6023334873008668,3,3,1004,0.5571532649565318,0.6502331024242582,1.0
+annual_wage,terminal_two,B1_vs_B0_profile,B0_chronological_median,B1_player_market_profile,2022 | 2023,750,0.4817778689772534,2,2,706,0.42938297287469346,0.5352823308519105,1.0
+annual_wage,terminal_two,B2_vs_B1_prior_wage,B1_player_market_profile,B2_plus_prior_wage,2022 | 2023,750,0.05751493924731322,2,2,706,0.030685451154367986,0.08366595705087065,1.0
+annual_wage,terminal_two,B3_vs_B2_prior_opportunity,B2_plus_prior_wage,B3_plus_prior_opportunity,2022 | 2023,750,-0.003867505659045764,0,2,706,-0.010759075969191002,0.0033018392362222774,0.1538
+annual_wage,terminal_two,B4_vs_B3_sporting_history,B3_plus_prior_opportunity,B4_plus_sporting_history,2022 | 2023,750,0.003540340647457967,1,2,706,-0.002157326386094114,0.009372619145409856,0.8908
+annual_wage,terminal_two,B4_vs_B2_all_sporting,B2_plus_prior_wage,B4_plus_sporting_history,2022 | 2023,750,-0.000327165011587797,1,2,706,-0.009199826812956963,0.008705806865588138,0.4586
+annual_wage,terminal_two,B4_vs_B0_total,B0_chronological_median,B4_plus_sporting_history,2022 | 2023,750,0.5389656432129788,2,2,706,0.4798037143985009,0.5988581391227178,1.0
+annual_wage,terminal_two,B5_vs_B4_nonlinearity,B4_plus_sporting_history,B5_compact_nonlinear,2022 | 2023,750,0.021643749773850647,2,2,706,0.0003102023788008447,0.0435531235924743,0.9778
+annual_wage,terminal_two,B2_vs_B0_parsimonious_total,B0_chronological_median,B2_plus_prior_wage,2022 | 2023,750,0.5392928082245666,2,2,706,0.4797737839029235,0.5987030453066797,1.0
+annual_wage,terminal_two,B5_vs_B0_nonlinear_total,B0_chronological_median,B5_compact_nonlinear,2022 | 2023,750,0.5606093929868294,2,2,706,0.504950412328475,0.6179984245489545,1.0
+contract_duration,pooled_four,B1_vs_B0_profile,B0_chronological_median,B1_player_market_profile,2020 | 2021 | 2022 | 2023,1560,0.3507110615045068,4,4,1330,0.30912860767881123,0.3915077165934705,1.0
+contract_duration,pooled_four,B2_vs_B1_prior_wage,B1_player_market_profile,B2_plus_prior_wage,2020 | 2021 | 2022 | 2023,1560,-0.003132854664760921,1,4,1330,-0.008010219876278563,0.0018106871545543843,0.1092
+contract_duration,pooled_four,B3_vs_B2_prior_opportunity,B2_plus_prior_wage,B3_plus_prior_opportunity,2020 | 2021 | 2022 | 2023,1560,0.021243480252435987,4,4,1330,0.009975491002156342,0.032804198251675167,0.9998
+contract_duration,pooled_four,B4_vs_B3_sporting_history,B3_plus_prior_opportunity,B4_plus_sporting_history,2020 | 2021 | 2022 | 2023,1560,-0.007916724088640706,1,4,1330,-0.015616943728072954,-0.00018502228537750496,0.0228
+contract_duration,pooled_four,B4_vs_B2_all_sporting,B2_plus_prior_wage,B4_plus_sporting_history,2020 | 2021 | 2022 | 2023,1560,0.013326756163795282,3,4,1330,0.0004732040571674406,0.02613743839102547,0.9796
+contract_duration,pooled_four,B4_vs_B0_total,B0_chronological_median,B4_plus_sporting_history,2020 | 2021 | 2022 | 2023,1560,0.36090496300354113,4,4,1330,0.3217816226027866,0.39977041644117167,1.0
+contract_duration,pooled_four,B5_vs_B4_nonlinearity,B4_plus_sporting_history,B5_compact_nonlinear,2020 | 2021 | 2022 | 2023,1560,0.024491121266163228,4,4,1330,0.007233928659613394,0.04163301075884645,0.9976
+contract_duration,pooled_four,B2_vs_B0_parsimonious_total,B0_chronological_median,B2_plus_prior_wage,2020 | 2021 | 2022 | 2023,1560,0.3475782068397459,4,4,1330,0.30616478650389994,0.3887246245928315,1.0
+contract_duration,pooled_four,B5_vs_B0_nonlinear_total,B0_chronological_median,B5_compact_nonlinear,2020 | 2021 | 2022 | 2023,1560,0.3853960842697044,4,4,1330,0.34602856481948246,0.42374398624346565,1.0
+contract_duration,mature_three,B1_vs_B0_profile,B0_chronological_median,B1_player_market_profile,2021 | 2022 | 2023,1139,0.3492971938158879,3,3,1020,0.30324246570055013,0.3946081078440304,1.0
+contract_duration,mature_three,B2_vs_B1_prior_wage,B1_player_market_profile,B2_plus_prior_wage,2021 | 2022 | 2023,1139,-0.00021805669091990676,1,3,1020,-0.005722691844166581,0.005317441470457135,0.4646
+contract_duration,mature_three,B3_vs_B2_prior_opportunity,B2_plus_prior_wage,B3_plus_prior_opportunity,2021 | 2022 | 2023,1139,0.023774042341218563,3,3,1020,0.010264964715486762,0.0370947721419998,0.9996
+contract_duration,mature_three,B4_vs_B3_sporting_history,B3_plus_prior_opportunity,B4_plus_sporting_history,2021 | 2022 | 2023,1139,-0.0013092088945313538,1,3,1020,-0.009276856895241345,0.006611251479627092,0.368
+contract_duration,mature_three,B4_vs_B2_all_sporting,B2_plus_prior_wage,B4_plus_sporting_history,2021 | 2022 | 2023,1139,0.022464833446687208,3,3,1020,0.007885268216343272,0.03747984899378668,0.998
+contract_duration,mature_three,B4_vs_B0_total,B0_chronological_median,B4_plus_sporting_history,2021 | 2022 | 2023,1139,0.37154397057165517,3,3,1020,0.3273018728350174,0.4173097633953228,1.0
+contract_duration,mature_three,B5_vs_B4_nonlinearity,B4_plus_sporting_history,B5_compact_nonlinear,2021 | 2022 | 2023,1139,0.030835494801786236,3,3,1020,0.010003233387292716,0.05130869936761856,0.9988
+contract_duration,mature_three,B2_vs_B0_parsimonious_total,B0_chronological_median,B2_plus_prior_wage,2021 | 2022 | 2023,1139,0.34907913712496796,3,3,1020,0.30217467267488707,0.3935389664919068,1.0
+contract_duration,mature_three,B5_vs_B0_nonlinear_total,B0_chronological_median,B5_compact_nonlinear,2021 | 2022 | 2023,1139,0.40237946537344144,3,3,1020,0.3552751809167222,0.4494633945799982,1.0
+contract_duration,terminal_two,B1_vs_B0_profile,B0_chronological_median,B1_player_market_profile,2022 | 2023,755,0.35510091801192023,2,2,711,0.29932495680058535,0.41168585203125935,1.0
+contract_duration,terminal_two,B2_vs_B1_prior_wage,B1_player_market_profile,B2_plus_prior_wage,2022 | 2023,755,9.256510004781926e-05,1,2,711,-0.0066515540938166424,0.0071133569020186615,0.5066
+contract_duration,terminal_two,B3_vs_B2_prior_opportunity,B2_plus_prior_wage,B3_plus_prior_opportunity,2022 | 2023,755,0.025617121138602195,2,2,711,0.009245659053904724,0.04119361000441201,0.9988
+contract_duration,terminal_two,B4_vs_B3_sporting_history,B3_plus_prior_opportunity,B4_plus_sporting_history,2022 | 2023,755,-0.0011804707387766166,1,2,711,-0.010452477278622897,0.008075453484126908,0.4066
+contract_duration,terminal_two,B4_vs_B2_all_sporting,B2_plus_prior_wage,B4_plus_sporting_history,2022 | 2023,755,0.024436650399825583,2,2,711,0.005189217323632424,0.043198533082786365,0.9934
+contract_duration,terminal_two,B4_vs_B0_total,B0_chronological_median,B4_plus_sporting_history,2022 | 2023,755,0.3796301335117937,2,2,711,0.3231998160028026,0.43194181423050715,1.0
+contract_duration,terminal_two,B5_vs_B4_nonlinearity,B4_plus_sporting_history,B5_compact_nonlinear,2022 | 2023,755,0.03522011344788367,2,2,711,0.010815841073934069,0.059598223076252226,0.9982
+contract_duration,terminal_two,B2_vs_B0_parsimonious_total,B0_chronological_median,B2_plus_prior_wage,2022 | 2023,755,0.35519348311196813,2,2,711,0.2989619730994098,0.41038112996858633,1.0
+contract_duration,terminal_two,B5_vs_B0_nonlinear_total,B0_chronological_median,B5_compact_nonlinear,2022 | 2023,755,0.4148502469596773,2,2,711,0.35749277171104277,0.470527993061819,1.0
+fixed_wage_commitment,pooled_four,B1_vs_B0_profile,B0_chronological_median,B1_player_market_profile,2020 | 2021 | 2022 | 2023,1504,0.5206637415655555,4,4,1284,0.46983025417747615,0.5719236514936299,1.0
+fixed_wage_commitment,pooled_four,B2_vs_B1_prior_wage,B1_player_market_profile,B2_plus_prior_wage,2020 | 2021 | 2022 | 2023,1504,0.07297418902077916,4,4,1284,0.05522266266003278,0.09015697251070838,1.0
+fixed_wage_commitment,pooled_four,B3_vs_B2_prior_opportunity,B2_plus_prior_wage,B3_plus_prior_opportunity,2020 | 2021 | 2022 | 2023,1504,-0.003428988797903199,2,4,1284,-0.007429248313078375,0.0006257919950173747,0.0458
+fixed_wage_commitment,pooled_four,B4_vs_B3_sporting_history,B3_plus_prior_opportunity,B4_plus_sporting_history,2020 | 2021 | 2022 | 2023,1504,-0.0014657659887815113,1,4,1284,-0.008115961482830399,0.004868931135139324,0.3218
+fixed_wage_commitment,pooled_four,B4_vs_B2_all_sporting,B2_plus_prior_wage,B4_plus_sporting_history,2020 | 2021 | 2022 | 2023,1504,-0.00489475478668471,1,4,1284,-0.012432182576525116,0.002353398341361904,0.0936
+fixed_wage_commitment,pooled_four,B4_vs_B0_total,B0_chronological_median,B4_plus_sporting_history,2020 | 2021 | 2022 | 2023,1504,0.5887431757996499,4,4,1284,0.5356059559908851,0.6421699608389219,1.0
+fixed_wage_commitment,pooled_four,B5_vs_B4_nonlinearity,B4_plus_sporting_history,B5_compact_nonlinear,2020 | 2021 | 2022 | 2023,1504,-0.0052726816830316135,3,4,1284,-0.020262812392616483,0.009896658643340429,0.2528
+fixed_wage_commitment,pooled_four,B2_vs_B0_parsimonious_total,B0_chronological_median,B2_plus_prior_wage,2020 | 2021 | 2022 | 2023,1504,0.5936379305863346,4,4,1284,0.542319419723504,0.6454562929403344,1.0
+fixed_wage_commitment,pooled_four,B5_vs_B0_nonlinear_total,B0_chronological_median,B5_compact_nonlinear,2020 | 2021 | 2022 | 2023,1504,0.5834704941166183,4,4,1284,0.537625763820802,0.633076156495087,1.0
+fixed_wage_commitment,mature_three,B1_vs_B0_profile,B0_chronological_median,B1_player_market_profile,2021 | 2022 | 2023,1121,0.5315635441663396,3,3,1004,0.4747179219413405,0.5885070881575575,1.0
+fixed_wage_commitment,mature_three,B2_vs_B1_prior_wage,B1_player_market_profile,B2_plus_prior_wage,2021 | 2022 | 2023,1121,0.06752574789332952,3,3,1004,0.04613639562418491,0.08916526434291197,1.0
+fixed_wage_commitment,mature_three,B3_vs_B2_prior_opportunity,B2_plus_prior_wage,B3_plus_prior_opportunity,2021 | 2022 | 2023,1121,-0.0021316984287473298,2,3,1004,-0.006600133617731982,0.002422419175418107,0.1796
+fixed_wage_commitment,mature_three,B4_vs_B3_sporting_history,B3_plus_prior_opportunity,B4_plus_sporting_history,2021 | 2022 | 2023,1121,-4.666737628823136e-05,1,3,1004,-0.007828908504216274,0.0075235963352317066,0.5058
+fixed_wage_commitment,mature_three,B4_vs_B2_all_sporting,B2_plus_prior_wage,B4_plus_sporting_history,2021 | 2022 | 2023,1121,-0.002178365805035561,1,3,1004,-0.01042927587748391,0.006298173704667619,0.3102
+fixed_wage_commitment,mature_three,B4_vs_B0_total,B0_chronological_median,B4_plus_sporting_history,2021 | 2022 | 2023,1121,0.5969109262546336,3,3,1004,0.53520898329788,0.658778497086822,1.0
+fixed_wage_commitment,mature_three,B5_vs_B4_nonlinearity,B4_plus_sporting_history,B5_compact_nonlinear,2021 | 2022 | 2023,1121,-0.009251697397816132,2,3,1004,-0.02640682305892387,0.007901464360704382,0.1416
+fixed_wage_commitment,mature_three,B2_vs_B0_parsimonious_total,B0_chronological_median,B2_plus_prior_wage,2021 | 2022 | 2023,1121,0.5990892920596691,3,3,1004,0.5419327761619617,0.6589601191211517,1.0
+fixed_wage_commitment,mature_three,B5_vs_B0_nonlinear_total,B0_chronological_median,B5_compact_nonlinear,2021 | 2022 | 2023,1121,0.5876592288568174,3,3,1004,0.533215753788705,0.6428693870633481,1.0
+fixed_wage_commitment,terminal_two,B1_vs_B0_profile,B0_chronological_median,B1_player_market_profile,2022 | 2023,750,0.5005815688857697,2,2,706,0.43356207030293165,0.5701120459955124,1.0
+fixed_wage_commitment,terminal_two,B2_vs_B1_prior_wage,B1_player_market_profile,B2_plus_prior_wage,2022 | 2023,750,0.05074852747825018,2,2,706,0.023052300428748795,0.07845824036167005,1.0
+fixed_wage_commitment,terminal_two,B3_vs_B2_prior_opportunity,B2_plus_prior_wage,B3_plus_prior_opportunity,2022 | 2023,750,0.002283911244539091,2,2,706,-0.00226033563978314,0.006707095521226609,0.8404
+fixed_wage_commitment,terminal_two,B4_vs_B3_sporting_history,B3_plus_prior_opportunity,B4_plus_sporting_history,2022 | 2023,750,0.0026721438664417266,1,2,706,-0.004928840538862859,0.010461622531935144,0.7506
+fixed_wage_commitment,terminal_two,B4_vs_B2_all_sporting,B2_plus_prior_wage,B4_plus_sporting_history,2022 | 2023,750,0.004956055110980817,1,2,706,-0.004105092882794836,0.014013589840985614,0.8522
+fixed_wage_commitment,terminal_two,B4_vs_B0_total,B0_chronological_median,B4_plus_sporting_history,2022 | 2023,750,0.5562861514750005,2,2,706,0.48452679002139604,0.6305361189859519,1.0
+fixed_wage_commitment,terminal_two,B5_vs_B4_nonlinearity,B4_plus_sporting_history,B5_compact_nonlinear,2022 | 2023,750,0.008280503029037871,2,2,706,-0.011573291458995565,0.028685869859004703,0.7894
+fixed_wage_commitment,terminal_two,B2_vs_B0_parsimonious_total,B0_chronological_median,B2_plus_prior_wage,2022 | 2023,750,0.5513300963640198,2,2,706,0.47999928979388173,0.6235346738477556,1.0
+fixed_wage_commitment,terminal_two,B5_vs_B0_nonlinear_total,B0_chronological_median,B5_compact_nonlinear,2022 | 2023,750,0.5645666545040384,2,2,706,0.4973112320742702,0.6315650833261053,1.0
+wage_to_market_value,pooled_four,B1_vs_B0_profile,B0_chronological_median,B1_player_market_profile,2020 | 2021 | 2022 | 2023,1476,0.361690837660217,4,4,1258,0.3209133556315264,0.4023124127998961,1.0
+wage_to_market_value,pooled_four,B2_vs_B1_prior_wage,B1_player_market_profile,B2_plus_prior_wage,2020 | 2021 | 2022 | 2023,1476,0.08247371613146223,4,4,1258,0.06456333305876322,0.10006485731972944,1.0
+wage_to_market_value,pooled_four,B3_vs_B2_prior_opportunity,B2_plus_prior_wage,B3_plus_prior_opportunity,2020 | 2021 | 2022 | 2023,1476,-0.0005250587575177118,1,4,1258,-0.005958738376072406,0.004717437024507281,0.4154
+wage_to_market_value,pooled_four,B4_vs_B3_sporting_history,B3_plus_prior_opportunity,B4_plus_sporting_history,2020 | 2021 | 2022 | 2023,1476,-0.0024560113987462375,1,4,1258,-0.007582769000183675,0.0025301649332869864,0.1718
+wage_to_market_value,pooled_four,B4_vs_B2_all_sporting,B2_plus_prior_wage,B4_plus_sporting_history,2020 | 2021 | 2022 | 2023,1476,-0.0029810701562639494,2,4,1258,-0.009940067362421685,0.004116360212118147,0.1988
+wage_to_market_value,pooled_four,B4_vs_B0_total,B0_chronological_median,B4_plus_sporting_history,2020 | 2021 | 2022 | 2023,1476,0.44118348363541526,4,4,1258,0.3992724325065521,0.4851195186992385,1.0
+wage_to_market_value,pooled_four,B5_vs_B4_nonlinearity,B4_plus_sporting_history,B5_compact_nonlinear,2020 | 2021 | 2022 | 2023,1476,-0.04641206494166741,0,4,1258,-0.06506935108928809,-0.02815886597719412,0.0
+wage_to_market_value,pooled_four,B2_vs_B0_parsimonious_total,B0_chronological_median,B2_plus_prior_wage,2020 | 2021 | 2022 | 2023,1476,0.4441645537916792,4,4,1258,0.4023565314320725,0.48700749878828276,1.0
+wage_to_market_value,pooled_four,B5_vs_B0_nonlinear_total,B0_chronological_median,B5_compact_nonlinear,2020 | 2021 | 2022 | 2023,1476,0.3947714186937479,4,4,1258,0.35905723769820624,0.42955068298810456,1.0
+wage_to_market_value,mature_three,B1_vs_B0_profile,B0_chronological_median,B1_player_market_profile,2021 | 2022 | 2023,1106,0.3617835953412198,3,3,991,0.3174780547792175,0.4062776345410843,1.0
+wage_to_market_value,mature_three,B2_vs_B1_prior_wage,B1_player_market_profile,B2_plus_prior_wage,2021 | 2022 | 2023,1106,0.075583256123262,3,3,991,0.054802364824164354,0.0972981969551852,1.0
+wage_to_market_value,mature_three,B3_vs_B2_prior_opportunity,B2_plus_prior_wage,B3_plus_prior_opportunity,2021 | 2022 | 2023,1106,0.0005475986960831564,1,3,991,-0.005552520522985621,0.0066751205463519816,0.5698
+wage_to_market_value,mature_three,B4_vs_B3_sporting_history,B3_plus_prior_opportunity,B4_plus_sporting_history,2021 | 2022 | 2023,1106,0.001054720357448055,1,3,991,-0.004230097785137094,0.006226621852054293,0.6532
+wage_to_market_value,mature_three,B4_vs_B2_all_sporting,B2_plus_prior_wage,B4_plus_sporting_history,2021 | 2022 | 2023,1106,0.00160231905353121,2,3,991,-0.006206977273763112,0.009107850914315069,0.6568
+wage_to_market_value,mature_three,B4_vs_B0_total,B0_chronological_median,B4_plus_sporting_history,2021 | 2022 | 2023,1106,0.438969170518013,3,3,991,0.3940475448309908,0.4868553842599219,1.0
+wage_to_market_value,mature_three,B5_vs_B4_nonlinearity,B4_plus_sporting_history,B5_compact_nonlinear,2021 | 2022 | 2023,1106,-0.03995427544703584,0,3,991,-0.061248052629558,-0.018148817629025503,0.0002
+wage_to_market_value,mature_three,B2_vs_B0_parsimonious_total,B0_chronological_median,B2_plus_prior_wage,2021 | 2022 | 2023,1106,0.4373668514644818,3,3,991,0.3913146210266556,0.4832560041632465,1.0
+wage_to_market_value,mature_three,B5_vs_B0_nonlinear_total,B0_chronological_median,B5_compact_nonlinear,2021 | 2022 | 2023,1106,0.39901489507097715,3,3,991,0.3606856086960849,0.43893684451347986,1.0
+wage_to_market_value,terminal_two,B1_vs_B0_profile,B0_chronological_median,B1_player_market_profile,2022 | 2023,744,0.3673672196687408,2,2,702,0.3141121115866691,0.42188825301646815,1.0
+wage_to_market_value,terminal_two,B2_vs_B1_prior_wage,B1_player_market_profile,B2_plus_prior_wage,2022 | 2023,744,0.0576894535033831,2,2,702,0.031212154366766193,0.08467243197654221,1.0
+wage_to_market_value,terminal_two,B3_vs_B2_prior_opportunity,B2_plus_prior_wage,B3_plus_prior_opportunity,2022 | 2023,744,-0.005014819740236,0,2,702,-0.012356580595264163,0.002293120196477068,0.0874
+wage_to_market_value,terminal_two,B4_vs_B3_sporting_history,B3_plus_prior_opportunity,B4_plus_sporting_history,2022 | 2023,744,0.0028726291705072956,1,2,702,-0.0028375847486110575,0.008514015348633188,0.8394
+wage_to_market_value,terminal_two,B4_vs_B2_all_sporting,B2_plus_prior_wage,B4_plus_sporting_history,2022 | 2023,744,-0.0021421905697287043,1,2,702,-0.01085167220618791,0.006641958987917152,0.3146
+wage_to_market_value,terminal_two,B4_vs_B0_total,B0_chronological_median,B4_plus_sporting_history,2022 | 2023,744,0.4229144826023952,2,2,702,0.3670251279049661,0.48277818795951566,1.0
+wage_to_market_value,terminal_two,B5_vs_B4_nonlinearity,B4_plus_sporting_history,B5_compact_nonlinear,2022 | 2023,744,-0.020306264753978766,0,2,702,-0.04661513119286975,0.006413360752434513,0.0708
+wage_to_market_value,terminal_two,B2_vs_B0_parsimonious_total,B0_chronological_median,B2_plus_prior_wage,2022 | 2023,744,0.4250566731721239,2,2,702,0.36881119630624737,0.48398983057876077,1.0
+wage_to_market_value,terminal_two,B5_vs_B0_nonlinear_total,B0_chronological_median,B5_compact_nonlinear,2022 | 2023,744,0.40260821784841644,2,2,702,0.3552115738994072,0.4494098489162245,1.0

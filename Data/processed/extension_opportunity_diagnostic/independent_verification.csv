@@ -1,0 +1,33 @@
+﻿check,observed,expected,passed,notes
+required_outputs,0,0,True,All declared diagnostic artifacts exist.
+upstream_verification,True,True,True,The contract integration passed its independent verifier.
+source_row_count,2425,2425,True,All clean extension events remain available to cohort construction.
+matrix_event_grain,0,0,True,One matrix row per extension event.
+matrix_source_id_set,2425,2425,True,The model matrix preserves the exact source ID set.
+target_recomputation,0,0,True,All cohorts and outcomes reproduce directly from independently loaded source fields.
+primary_cohort_size,1385,1385,True,Eligible Year-2 contract-covered cohort is fixed.
+initial_role_cohort_size,922,922,True,Major-decline cohort requires at least 25% pre-extension opportunity.
+major_decline_prevalence,0.354663774,0.354663774,True,The pre-registered decline event count is independently reproduced.
+sustained_contribution_prevalence,0.501083032,0.501083032,True,The pre-registered sustained-contribution count is independently reproduced.
+minimal_involvement_prevalence,0.086642599,0.086642599,True,The contract-covered minimal-involvement count is independently reproduced.
+feature_timing,1,1,True,All modeled features are declared available at signing and no post-signing feature appears.
+feature_variants,6,6,True,Feature manifest covers every non-empty feature set; M0 is intentionally featureless.
+prediction_grain,0,0,True,One prediction per endpoint/origin/model/event.
+prediction_row_count,23730,23730,True,Prediction count matches the locked evaluation cohorts and model ladder.
+evaluation_years,2020 | 2021 | 2022 | 2023,2020 | 2021 | 2022 | 2023,True,Only declared out-of-time years are evaluated.
+prediction_variants,7,7,True,Every endpoint/origin uses the fixed feature ladder.
+prediction_bounds,1,1,True,Probabilities and opportunity-share estimates obey declared bounds.
+prediction_actual_values,0,0,True,Saved actuals match the independently reconstructed event targets.
+origin_metric_grain,0,0,True,One metric record per endpoint/origin/model.
+origin_metric_row_count,112,112,True,Four endpoints by four origins by seven model variants.
+origin_metric_recomputation,0,0,True,All evaluation metrics reproduce from row-level predictions.
+comparison_row_count,96,96,True,All registered endpoint/window/comparison combinations exist.
+comparison_recomputation,0,0,True,"Paired loss improvements, origin wins, and row counts reproduce from predictions."
+risk_band_row_count,20,20,True,Five equal-frequency M5 bands are reported for every endpoint.
+risk_band_monotonicity_flags,0,0,True,Reported monotonicity flags agree with observed band outcomes.
+decision_endpoint_set,4,4,True,One decision exists for every pre-registered endpoint.
+decision_rule_results,"{'year2_opportunity_share': 'advance_predictive_candidate', 'major_role_decline': 'descriptive_only_no_validated_incremental_signal', 'sustained_meaningful_contribution': 'advance_predictive_candidate', 'contract_covered_minimal_involvement': 'exploratory_signal_calibration_or_ranking_failed'}","{'year2_opportunity_share': 'advance_predictive_candidate', 'major_role_decline': 'descriptive_only_no_validated_incremental_signal', 'sustained_meaningful_contribution': 'advance_predictive_candidate', 'contract_covered_minimal_involvement': 'exploratory_signal_calibration_or_ranking_failed'}",True,Statuses follow the documented evidence gates for this run.
+decision_metric_traceability,0,0,True,Decision metrics trace exactly to pooled comparison results.
+source_hashes,0,0,True,Failures: none
+builder_output_hashes,0,0,True,Failures: none
+builder_checks,1,1,True,All builder checks passed.

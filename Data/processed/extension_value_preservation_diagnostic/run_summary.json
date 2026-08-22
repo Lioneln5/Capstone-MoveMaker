@@ -1,0 +1,26 @@
+{
+  "source_extension_events": 2425,
+  "value_base_cohort": 2285,
+  "value_12m_cohort": 2162,
+  "value_24m_cohort": 1944,
+  "evaluation_years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "prediction_rows": 78372,
+  "checks_passed": 10,
+  "checks_total": 10,
+  "all_checks_passed": true,
+  "decisions": {
+    "value_log_ratio_12m": "advance_broad_value_range_candidate",
+    "downside_10pct_12m": "advance_downside_probability_candidate",
+    "downside_25pct_12m": "advance_downside_probability_candidate",
+    "downside_50pct_12m": "descriptive_or_exploratory_only",
+    "value_log_ratio_24m": "advance_broad_value_range_candidate",
+    "downside_10pct_24m": "advance_downside_probability_candidate",
+    "downside_25pct_24m": "advance_downside_probability_candidate",
+    "downside_50pct_24m": "advance_downside_probability_candidate"
+  }
+}

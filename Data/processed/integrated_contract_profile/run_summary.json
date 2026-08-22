@@ -1,0 +1,13 @@
+{
+  "profile_scope": "incumbent_club_extension",
+  "historical_profile_rows": 1560,
+  "complete_three_domain_evaluation_rows": 839,
+  "multi_domain_adverse_rate": 0.42550655542312277,
+  "best_evaluated_score": "opportunity_plus_outbound",
+  "best_evaluated_auc": 0.6986412822390368,
+  "headline_composite_decision": "rejected_keep_modules_separate",
+  "historical_case_studies": 12,
+  "checks_passed": 11,
+  "checks_total": 11,
+  "all_checks_passed": true
+}

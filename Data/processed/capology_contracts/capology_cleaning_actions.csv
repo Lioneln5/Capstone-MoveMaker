@@ -1,0 +1,11 @@
+﻿action,scope,affected_rows_or_cells,details
+Preserve raw sources,69 CSV files,69,Copied byte-for-byte into a relative-path backup and verified SHA-256 hashes.
+Parse HTML display cells,All raw rows,22581,"Extracted names, club names, hrefs, slugs, and URL suffixes without changing raw files."
+Standardize EUR money,EUR fields,192948,Removed currency symbols and separators; retained EUR as canonical currency.
+Convert reported salary zero to missing,Compensation fields,99,"Capology zero salaries represent unavailable estimates, not defensible evidence of free labor."
+Preserve absent bonuses as missing,Bonus fields,15607,A dash or blank remains missing and is never recoded to zero.
+Conservative player linkage,All raw rows,21864,"Accepted exact unique FBref-name links, then exact unique canonical-name links; unresolved names remain unresolved."
+Reviewed club linkage,All raw rows,22581,Used accepted FBref aliases plus a documented reviewed exact Capology alias table.
+Collapse same player-club-season salary rows,Salary source,0,"Selected active, non-loan, salary-available record deterministically and retained source-row counts and conflicts."
+Collapse repeated extension events,Extension source,6,Selected the page closest to the actual signing season and retained all contributing files and reported-years conflicts.
+Compute exact duration,Extension events,2805,Computed expiration minus signing date; retained Capology's reported season count separately.

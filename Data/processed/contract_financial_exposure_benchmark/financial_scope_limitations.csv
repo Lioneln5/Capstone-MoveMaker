@@ -1,0 +1,10 @@
+﻿item,availability,treatment
+employer_taxes,unavailable,Excluded from all commitment metrics.
+agent_and_intermediary_fees,unavailable,Excluded from all commitment metrics.
+signing_on_fees,unavailable,Excluded from all commitment metrics.
+release_clauses,unavailable,Cannot quantify downside from clause terms.
+club_extension_options,unavailable,Cannot price flexibility from unilateral options.
+performance_based_pay,partial,Reported bonuses exist for 759 events and are sparse before 2022; never assume missing means zero.
+contract_termination_or_renewal,not_modeled_in_formula,Fixed commitment assumes entered term for scale comparison; actual obligation may differ.
+market_value,public_estimate,Transfermarkt-style market value is not realized sale price or accounting carrying value.
+currency_and_tax_treatment,normalized_estimate,Gross estimates are normalized to EUR; local tax and FX terms are not modeled.

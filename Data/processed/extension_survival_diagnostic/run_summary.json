@@ -1,0 +1,22 @@
+{
+  "source_extension_events": 2425,
+  "survival_primary_cohort": 2358,
+  "any_outbound_events": 1848,
+  "permanent_outbound_events": 1690,
+  "evaluation_years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "prediction_rows": 99072,
+  "checks_passed": 12,
+  "checks_total": 12,
+  "all_checks_passed": true,
+  "decisions": {
+    "any_outbound_24m": "advance_survival_probability_candidate",
+    "any_outbound_36m": "advance_survival_probability_candidate",
+    "permanent_outbound_24m": "advance_survival_probability_candidate",
+    "permanent_outbound_36m": "descriptive_or_exploratory_only"
+  }
+}
