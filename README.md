@@ -68,7 +68,7 @@ html/                   user-facing extension profile
 models/                 research runners, production scoring, and feature retrieval
 scripts/                builders and independent verifiers
 docs/                   journal, report evidence, diagnostics, and publication policy
-Data/processed/         compact auditable evidence plus local-only generated artifacts
+Data/processed/         compact auditable evidence; large row-level artifacts stay local
 slides/final/           final presentation assets
 ```
 

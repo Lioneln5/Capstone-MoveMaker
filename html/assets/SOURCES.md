@@ -3,6 +3,12 @@
 These assets are stored locally so the classroom demonstration does not rely
 on external network requests.
 
+## Background texture
+
+`grass-texture.png` is a custom AI-generated decorative texture created for
+the MoveMaker classroom prototype. It does not reproduce third-party football
+photography or branding.
+
 ## Club crests
 
 The presentation-priority club PNGs under `clubs/` were downloaded from the
