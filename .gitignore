@@ -124,7 +124,14 @@ slides/*.pptx
 slides/*.pdf
 slides/*.png
 slides/updated slides (8:16)/
+slides/final/*
+!slides/final/README.md
+!slides/final/MoveMaker_Final_Presentation.html
+docs/presentation/
 Project guidelines and templates/
+
+# Retired dashboard export from the removed web-application dashboard.
+scripts/build_interactive_dashboard_data.py
 
 # Redundant local asset backups and superseded design export
 html/assets/**/*_original_backup.*
