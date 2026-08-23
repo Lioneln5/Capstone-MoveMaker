@@ -8,6 +8,7 @@ MoveMaker’s GitHub repository should make the research, product architecture, 
 - Research and production code under `models/`, `scripts/`, `api/`, and `html/`.
 - Documentation under `docs/`, including the scope-pivot journal, report evidence bank, diagnostic checklist, and application notes.
 - The final presentation and selected portfolio screenshots/assets, not every intermediate deck.
+- Public model and data documentation: `docs/MODEL_CARD.md` and `docs/DATA_PROVENANCE.md`.
 - Compact processed evidence needed to audit claims:
   - stage `README.md` files;
   - run/decision summaries;
@@ -62,3 +63,5 @@ Do not blanket-stage the working tree. Before every commit, inspect file sizes, 
 ## Reproduction
 
 The Git repository contains enough compact evidence to audit the reported decisions, not enough third-party data to rebuild the entire project from zero. Full reproduction requires separately obtaining the documented sources, preserving the expected local directory structure, running the upstream canonical builders, and then running each stage and its verifier in the order listed in `models/README.md`.
+
+The published final deck is `slides/final/MoveMaker_Final_Presentation.html`. No open-source license is currently granted; visibility of the repository does not imply permission to reuse the code, documentation, or third-party data.

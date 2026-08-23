@@ -1,9 +1,10 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import { SpreadsheetFile, Workbook } from "file:///C:/Users/Lione/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/@oai/artifact-tool/dist/artifact_tool.mjs";
+import { fileURLToPath } from "node:url";
+import { SpreadsheetFile, Workbook } from "@oai/artifact-tool";
 
 
-const root = "C:/Users/Lione/Downloads/Capstone-MoveMaker";
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const sourceDir = path.join(root, "Data/processed/subgroup_stability");
 const outputDir = path.join(root, "outputs/subgroup_stability");
 const previewDir = path.join(outputDir, "previews");

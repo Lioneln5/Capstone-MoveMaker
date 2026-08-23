@@ -90,6 +90,14 @@ Data/processed/live_input_refresh/canonical_performance_overlay.csv
 Data/processed/live_input_refresh/canonical_salary_overlay.csv
 Data/processed/financial_module_feasibility/financial_event_audit.csv
 
+# Earlier transfer-risk modules: retain aggregate audit summaries, but keep
+# row-level case cards and hyperparameter search grids local.
+Data/processed/capital_at_risk_integration/component_integration_cards.csv
+Data/processed/fee_benchmarking_model/historical_fee_benchmark_cards.csv
+Data/processed/fee_benchmarking_model/raw_model_tuning_results.csv
+Data/processed/market_value_downside_product/historical_decision_cards.csv
+Data/processed/paid_transfer_underutilization_refinement/raw_model_tuning_results.csv
+
 # Large StatsBomb extracts; retain catalogs, crosswalk candidates, checks, and summaries
 Data/processed/statsbomb_case_studies/events_case_study.csv.gz
 Data/processed/statsbomb_case_studies/three_sixty_event_context.csv.gz
@@ -116,7 +124,14 @@ slides/*.pptx
 slides/*.pdf
 slides/*.png
 slides/updated slides (8:16)/
+slides/final/*
+!slides/final/README.md
+!slides/final/MoveMaker_Final_Presentation.html
+docs/presentation/
 Project guidelines and templates/
+
+# Retired dashboard export from the removed web-application dashboard.
+scripts/build_interactive_dashboard_data.py
 
 # Redundant local asset backups and superseded design export
 html/assets/**/*_original_backup.*

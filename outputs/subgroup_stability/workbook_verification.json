@@ -1,6 +1,6 @@
 {
   "status": "pass",
-  "workbook": "C:/Users/Lione/Downloads/Capstone-MoveMaker/outputs/subgroup_stability/MoveMaker_Subgroup_Stability.xlsx",
+  "workbook": "outputs/subgroup_stability/MoveMaker_Subgroup_Stability.xlsx",
   "expected_sheet_count": 12,
   "observed_sheet_count": 12,
   "observed_sheets": [

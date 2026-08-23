@@ -10,6 +10,8 @@ MoveMaker is an explainable decision-support system for incumbent-club football 
 
 MoveMaker is a screening and prioritization tool. It does **not** produce one overall success score, recommend whether a club should extend a player, predict tactical compatibility, or estimate accounting loss or ROI.
 
+**Explore the project:** [final presentation](slides/final/MoveMaker_Final_Presentation.html) · [application](html/index.html) · [model card](docs/MODEL_CARD.md) · [data provenance](docs/DATA_PROVENANCE.md) · [analytical journal](docs/journal/2026-08-11_scope_pivot_journal.md)
+
 ## Why this product exists
 
 The project did not begin with contract extensions. Its scope changed twice because the evidence rejected broader claims:
@@ -82,6 +84,8 @@ Each finalized stage has:
 
 The compact Git evidence is intended to audit reported conclusions. Full raw data, large canonical tables, row-level training matrices, candidate artifacts, and predictions remain local because of size, licensing, and reviewability.
 
+This repository is therefore an **auditable publication baseline**, not a zero-data rebuild bundle. See the [data-provenance statement](docs/DATA_PROVENANCE.md) for source boundaries and the [model card](docs/MODEL_CARD.md) for intended use, evaluation, and limitations.
+
 ## Claim boundaries
 
 - Extension probabilities apply to incumbent-club extensions, not hypothetical destination-club transfers.
@@ -110,5 +114,10 @@ The presentation milestone is complete, but development is not. The next work sh
 - [Research-paper evidence bank](docs/research/2026-08-11_report_evidence_bank.md)
 - [Data-readiness audit](docs/DATA_READINESS_AUDIT.md)
 - [Contract diagnostic checklist](docs/diagnostics/contract_scope_diagnostic_checklist.md)
+- [Final presentation](slides/final/MoveMaker_Final_Presentation.html)
+
+## License and reuse
+
+No open-source license is currently granted for this repository. The code and documentation are visible for review, but reuse rights are not implied. Third-party football data is not redistributed and remains subject to its original providers' terms.
 
 MoveMaker’s core lesson is simple: the strongest product was not the broadest model. It was the one whose claims survived chronological testing and could be translated into a concrete financial decision.
