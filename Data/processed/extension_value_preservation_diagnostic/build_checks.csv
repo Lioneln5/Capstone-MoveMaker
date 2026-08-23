@@ -1,0 +1,11 @@
+﻿check,observed,expected,passed,notes
+source_event_ids_unique,0,0,True,One row per extension event.
+value_base_cohort,2285,2285,True,Linked event with strict positive signing valuation.
+value_12m_cohort,2162,2162,True,Strict positive 12-month valuation.
+value_24m_cohort,1944,1944,True,Strict positive 24-month valuation.
+target_thresholds_nested,1,1,True,Severe downside implies moderate downside.
+valuation_timing_tolerances,1,1,True,All eligible landmarks satisfy declared gap tolerances.
+prediction_key_unique,0,0,True,One prediction per endpoint/origin/model/event.
+probability_bounds,58779,58779,True,Every downside forecast is a valid probability.
+feature_timing_safe,1,1,True,No future valuation or post-extension performance feature enters the model.
+decision_rows,8,8,True,One 12- and 24-month decision per continuous/ordered downside endpoint.

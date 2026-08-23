@@ -1,46 +1,64 @@
 # GitHub publication manifest
 
-This repository publishes the MoveMaker analysis code, technical documentation,
-research narrative, and compact evidence needed to inspect the project's claims.
-It intentionally does not publish the full local data lake or row-level model
-outputs.
+MoveMaker’s GitHub repository should make the research, product architecture, and reported evidence reviewable without publishing the full local data lake or presenting third-party data as redistributable.
 
-## Included
+## Publish
 
-- `models/`: one implementation and one independent verifier for each finalized
-  commercial model.
-- `scripts/`: data preparation, compatibility diagnostics, case-study, and
-  verification code.
-- `docs/`: the scope-pivot journal, report evidence bank, and this manifest.
-- `CODEX.md`: current technical handoff and project guardrails.
-- `README.md` and `requirements.txt`: setup, project map, and reproducibility
-  metadata.
-- Selected `Data/processed/` evidence: decision summaries, aggregate metrics,
-  temporal-origin results, subgroup checks, feature manifests, build checks,
-  model/scoring contracts, source/output manifests, and independent-verification
-  reports.
+- Root documentation: `README.md` and `requirements.txt`.
+- Research and production code under `models/`, `scripts/`, `api/`, and `html/`.
+- Documentation under `docs/`, including the scope-pivot journal, report evidence bank, diagnostic checklist, and application notes.
+- The final presentation and selected portfolio screenshots/assets, not every intermediate deck.
+- Compact processed evidence needed to audit claims:
+  - stage `README.md` files;
+  - run/decision summaries;
+  - feature and metric manifests;
+  - chronological-origin aggregate metrics;
+  - calibration, subgroup, coverage, and sensitivity summaries;
+  - source/output manifests;
+  - build checks; and
+  - independent-verification CSV/JSON reports.
+- Small production model artifacts and their manifest when required for the application.
 
-## Excluded
+## Keep local or distribute separately
 
-- Raw and third-party source datasets (`Data/TransferMarkt/`,
-  `Data/2017-2024/`, `Data/Open-Data-Master/`, `football-datasets-main/`).
-- Large canonical and cleaned tables that can be rebuilt locally.
-- Row-level training targets, predictions, validation predictions, tuning grids,
-  and generated decision-card tables.
-- `outputs/`, caches, local environments, editor settings, and copied
-  repositories.
+- Raw or scraped third-party datasets, including Transfermarkt, FBref, Capology, injury, and copied football repositories.
+- Credentials, tokens, local environment files, editor settings, browser downloads, and machine-specific launch configurations.
+- Large canonical, clean, integrated, and training tables that builders can reproduce locally.
+- Row-level targets, model matrices, predictions, tuning grids, bootstrap samples, and generated case-card tables unless a specific compact example is needed.
+- Candidate/rejected serialized models, temporary backups, caches, `.DS_Store`, and copied `.git` directories.
+- Superseded PowerPoint/PDF drafts, render diagnostics, inspect logs, and temporary slide assets.
 
-The exclusions keep the repository reviewable and avoid treating locally
-collected third-party data as redistributable. They do not change the reported
-metrics: the included independent-verification reports check the compact
-evidence against the locally generated artifacts.
+## Evidence standard
 
-## Evidence policy
+A published quantitative claim must be traceable to:
 
-Published findings must be traceable to an included decision summary or metric
-table and to a passing independent-verification report. Exploratory discussion
-is labeled as such in the journal and is not promoted to a validated result.
+1. an included aggregate decision or metric artifact;
+2. a passing independent-verification report;
+3. a documented cohort, time horizon, and target definition; and
+4. language that respects the approved claim boundary.
 
-To reproduce the full pipeline, obtain the source datasets separately, preserve
-the documented local directory structure, and run the builders and models in
-the order described by `CODEX.md` and the module READMEs.
+Exploratory discussion must remain labeled exploratory. A builder check proves that code produced its declared artifact; it does not by itself establish business usefulness. A candidate passing a research gate is not deployed until the production artifact, manifest, parity, explainability, and smoke tests are updated.
+
+## Data-vintage policy
+
+Frozen out-of-time evidence and live application inputs serve different purposes:
+
+- frozen research snapshots support performance claims and must remain hash-stable;
+- later salary, extension, valuation, performance, or injury updates may support current scoring;
+- appended rows must not revise historical metrics until outcomes mature and a new evaluation is intentionally versioned.
+
+## Commit structure
+
+Prefer reviewable commits in this order:
+
+1. current documentation and verified contract-research pipeline;
+2. production API, HTML, feature retrieval, scoring code, and frozen deployed artifacts;
+3. C6 repair and live-input refresh;
+4. role-contextualization and other research-only diagnostics; and
+5. final presentation/portfolio assets.
+
+Do not blanket-stage the working tree. Before every commit, inspect file sizes, staged names, `git diff --cached --check`, and staged content for credentials or local paths.
+
+## Reproduction
+
+The Git repository contains enough compact evidence to audit the reported decisions, not enough third-party data to rebuild the entire project from zero. Full reproduction requires separately obtaining the documented sources, preserving the expected local directory structure, running the upstream canonical builders, and then running each stage and its verifier in the order listed in `models/README.md`.

@@ -1,0 +1,9 @@
+﻿component,deployment_status,next_engineering_requirement
+Deterministic contract calculations,ready_for_application_logic,Implement directly from validated formulas and guarded inputs.
+Observed salary-panel context,ready_when_backend_match_exists,Return unavailable when the player/club-season panel does not match.
+Historical static peer tables,ready_for_reference_display,Can support coarse lookup cards; retain sample size and range warnings.
+Personalized Phase-4 peer models,offline_validated_not_yet_serialized,Refit through the deployment cutoff and serialize preprocessing/model artifacts.
+Phase-1 opportunity models,offline_validated_not_yet_serialized,Build the canonical backend feature payload and production scoring test.
+Phase-2 survival models,offline_validated_not_yet_serialized,Preserve horizon coherence and the incumbent-club event definition.
+Phase-3 value models,offline_validated_not_yet_serialized,Apply probability ordering and retain public-value warnings.
+Headline composite score,rejected,Do not implement; show separate module cards.

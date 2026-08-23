@@ -1,0 +1,12 @@
+﻿check,observed,expected,passed,notes
+profile_event_grain,0,0,True,One out-of-time profile per extension event.
+profile_rows,1560,1560,True,Phase-2 24-month evaluation cohort anchors profile coverage.
+integration_cohort,839,839,True,Complete three-domain out-of-time overlap.
+integration_years,4,4,True,All four evaluation years are represented.
+probability_ordering,0,0,True,Displayed value-downside probabilities are coherent by threshold.
+probability_ordering_brier_change,-6.08700430439757e-05,<=0.001,True,Coherence projection does not materially degrade mean Brier score.
+commitment_formula,1,1,True,Fixed-wage commitment is exact wage × duration arithmetic.
+case_study_count,12,12,True,Two deterministic examples across six success/failure/divergence categories.
+headline_composite_rejected,1,1,True,No unsupported all-domain score is exposed.
+extension_scope_explicit,1,1,True,Transfer extrapolation is explicitly prohibited.
+integration_decisions,reject_headline_composite_keep_modules_separate | reject_headline_composite_keep_modules_separate,reject_headline_composite_keep_modules_separate,True,Neither tested integration score passes the incremental gate.

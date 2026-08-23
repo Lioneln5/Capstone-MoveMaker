@@ -1,0 +1,3 @@
+﻿endpoint,records,events,censored,event_rate,median_event_days,description
+any_outbound,2358,1848,510,0.7837150127226463,553.0,First outbound move after extension; loans and permanent moves both interrupt continuous club involvement.
+permanent_outbound,2358,1690,668,0.7167090754877015,763.5,First permanent outbound transfer after extension; intervening loans do not end the permanent relationship.

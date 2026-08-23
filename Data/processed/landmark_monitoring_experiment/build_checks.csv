@@ -1,0 +1,14 @@
+check,passed,observed,expected,note
+utilization_key_unique,True,667,667,One row per paid transfer.
+value_key_unique,True,2632,2632,One row per permanent transfer.
+all_players_at_risk_day365,True,True,True,No already-departed player is scored.
+year2_games_minimum,True,12,10,Stable year-two denominator.
+utilization_target_bounds,True,0.0..1.0,0..1.05,Valid opportunity shares.
+utilization_targets_nested,True,True,True,Severe under-use is nested.
+value_targets_nested,True,True,True,Severe value downside is nested.
+landmark_valuations_not_future,True,0,0,All predictor valuations existed by day 365.
+landmark_value_staleness,True,0..179,0..180,Current value is reasonably recent.
+no_outcome_predictors,True,,none,No year-two outcome field is a predictor.
+prediction_key_unique,True,0,0,One forecast per endpoint/origin/model/transfer.
+probability_bounds,True,1e-06..0.999999,0..1,Valid probabilities.
+paired_evaluation_rows,True,True,True,All variants share evaluation rows.

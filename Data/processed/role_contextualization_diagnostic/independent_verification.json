@@ -1,0 +1,246 @@
+{
+  "generated_at_utc": "2026-08-23T00:00:52.101184+00:00",
+  "checks_total": 34,
+  "checks_passed": 34,
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "check": "file_exists::README.md",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "notes": "required output file"
+    },
+    {
+      "check": "file_exists::run_summary.json",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "notes": "required output file"
+    },
+    {
+      "check": "file_exists::source_manifest.csv",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "notes": "required output file"
+    },
+    {
+      "check": "file_exists::production_scoring_feature_inventory.csv",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "notes": "required output file"
+    },
+    {
+      "check": "file_exists::role_coverage_audit.csv",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "notes": "required output file"
+    },
+    {
+      "check": "file_exists::role_scoring_distribution_audit.csv",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "notes": "required output file"
+    },
+    {
+      "check": "file_exists::role_origin_stability_audit.csv",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "notes": "required output file"
+    },
+    {
+      "check": "file_exists::candidate_feature_manifest.csv",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "notes": "required output file"
+    },
+    {
+      "check": "file_exists::origin_model_metrics.csv",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "notes": "required output file"
+    },
+    {
+      "check": "file_exists::pooled_model_comparison.csv",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "notes": "required output file"
+    },
+    {
+      "check": "file_exists::position_subgroup_metrics.csv",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "notes": "required output file"
+    },
+    {
+      "check": "file_exists::calibration_audit.csv",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "notes": "required output file"
+    },
+    {
+      "check": "file_exists::role_specific_perturbation_audit.csv",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "notes": "required output file"
+    },
+    {
+      "check": "file_exists::live_production_role_audit.csv",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "notes": "required output file"
+    },
+    {
+      "check": "file_exists::demo_player_role_comparison.csv",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "notes": "required output file"
+    },
+    {
+      "check": "file_exists::demo_player_role_contributions.csv",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "notes": "required output file"
+    },
+    {
+      "check": "file_exists::model_selection_decision.csv",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "notes": "required output file"
+    },
+    {
+      "check": "random_seed_matches_project_standard",
+      "observed": "20260811",
+      "expected": "20260811",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "check": "bootstrap_reps_match_project_standard",
+      "observed": "5000",
+      "expected": "5000",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "check": "c6_out_of_scope_confirmed_in_summary",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "check": "c6_excludes_all_scoring_features_independent_check",
+      "observed": "[]",
+      "expected": "[]",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "check": "affected_endpoint_set_matches_independent_rederivation",
+      "observed": "['any_outbound', 'contract_duration', 'downside_10pct_12m', 'downside_10pct_24m', 'downside_25pct_12m', 'downside_25pct_24m', 'downside_50pct_24m', 'permanent_outbound', 'value_log_ratio_12m', 'value_log_ratio_24m', 'year2_opportunity_share']",
+      "expected": "['any_outbound', 'contract_duration', 'downside_10pct_12m', 'downside_10pct_24m', 'downside_25pct_12m', 'downside_25pct_24m', 'downside_50pct_24m', 'permanent_outbound', 'value_log_ratio_12m', 'value_log_ratio_24m', 'year2_opportunity_share']",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "check": "R0_feature_lists_match_deployed_artifacts",
+      "observed": "[]",
+      "expected": "[]",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "check": "no_future_information_in_any_candidate_feature_list",
+      "observed": "[]",
+      "expected": "[]",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "check": "fallback_log_entries_are_genuinely_below_minimum_n",
+      "observed": "0",
+      "expected": "0",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "check": "bootstrap_ci_lower_le_upper",
+      "observed": "0",
+      "expected": "0",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "check": "bootstrap_probability_in_unit_interval",
+      "observed": "0",
+      "expected": "0",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "check": "origin_wins_le_n_origins",
+      "observed": "0",
+      "expected": "0",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "check": "all_three_headline_demo_players_present",
+      "observed": "['Erling Haaland', 'Jude Bellingham', 'Kylian Mbapp\u00e9']",
+      "expected": "['Erling Haaland', 'Jude Bellingham', 'Kylian Mbapp\u00e9']",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "check": "calibration_error_in_valid_range",
+      "observed": "0",
+      "expected": "0",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "check": "protected_artifacts_unchanged",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "notes": "byte-for-byte digest set comparison, before vs after the diagnostic run"
+    },
+    {
+      "check": "candidate_artifacts_confined_to_subfolder",
+      "observed": "[]",
+      "expected": "[]",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "check": "candidate_artifacts_correctly_labeled",
+      "observed": "0",
+      "expected": "0",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "check": "candidate_artifact_hashes_match_manifest",
+      "observed": "[]",
+      "expected": "[]",
+      "passed": true,
+      "notes": ""
+    }
+  ]
+}

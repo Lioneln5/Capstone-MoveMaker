@@ -1,0 +1,14 @@
+﻿check,passed,observed
+frozen research artifacts explicitly preserved,True,False
+performance seasons are 2024 and 2025,True,"[2024, 2025]"
+performance keys unique,True,0
+performance minutes nonnegative,True,0
+salary seasons are 2024 through 2026,True,"[2024, 2025, 2026]"
+salary keys unique,True,0
+reported zero wages remain missing,True,0
+Haaland has both new performance seasons,True,"[2024, 2025]"
+Haaland has a 2025-26 wage,True,"[2024, 2025, 2026]"
+Mbappe has both new performance seasons,True,"[2024, 2025]"
+Mbappe has a 2025-26 wage,True,"[2024, 2025, 2026]"
+Bellingham has both new performance seasons,True,"[2024, 2025]"
+Bellingham has a 2025-26 wage,True,"[2024, 2025, 2026]"

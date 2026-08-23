@@ -1,0 +1,3 @@
+﻿horizon,eligible_rows,at_signing_max_abs_gap_days,post_max_abs_gap_days,at_signing_tolerance_days,post_tolerance_days
+12m,2162,358.0,90.0,365,90
+24m,1944,358.0,90.0,365,90

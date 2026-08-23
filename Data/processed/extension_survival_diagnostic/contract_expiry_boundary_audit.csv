@@ -1,0 +1,3 @@
+﻿endpoint,events,events_before_or_on_expiry,events_after_expiry,expiration_used_as_censor,reason
+any_outbound,1848,1129,719,False,"Outcome is club stay, which can continue after a renewal; scheduled expiration is a signing-time predictor and audit boundary."
+permanent_outbound,1690,812,878,False,"Outcome is club stay, which can continue after a renewal; scheduled expiration is a signing-time predictor and audit boundary."

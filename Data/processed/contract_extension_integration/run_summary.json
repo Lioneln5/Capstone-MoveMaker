@@ -1,0 +1,21 @@
+{
+  "extension_events": 2805,
+  "linked_player_events": 2726,
+  "salary_context_matches": 2162,
+  "pre365_sporting_context_available": 2779,
+  "pre1_domestic_performance_available": 1922,
+  "pre1_advanced_performance_available": 1666,
+  "at_signing_valuation_eligible": 2647,
+  "post_y1_sporting_observable": 2755,
+  "post_y2_sporting_observable": 2379,
+  "post_y3_sporting_observable": 1944,
+  "post_y1_sporting_eligible_10_club_games": 2705,
+  "post_y2_sporting_eligible_10_club_games": 2115,
+  "post_y3_sporting_eligible_10_club_games": 1642,
+  "sporting_data_cutoff": "2026-05-24",
+  "valuation_data_cutoff": "2026-02-27",
+  "transfer_outcome_cutoff": "2026-08-10",
+  "checks_passed": 10,
+  "checks_total": 10,
+  "all_checks_passed": true
+}

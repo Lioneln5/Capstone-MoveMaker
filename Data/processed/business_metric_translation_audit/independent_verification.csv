@@ -1,0 +1,27 @@
+﻿check,observed,expected,passed,notes
+profile_row_count,1560,1560,True,Translated Phase-5 profile count is fixed.
+profile_event_grain,0,0,True,One row per extension event.
+profile_source_ids,0,0,True,No source profile is added or dropped.
+translated_formula_recomputation,0,0,True,All central financial translations reproduce independently.
+prior_wage_change_recomputation,0,0,True,Missing prior wage remains missing and is never replaced with zero.
+peer_percentile_recomputation,0,0,True,Frozen historical OOS residual percentile reproduces.
+exposure_row_recomputation,0,0,True,All financially eligible exposure rows and values reproduce from Phase 1.
+exposure_performance_recomputation,0,0,True,"Pooled and origin euro MAE, weighted Brier, calibration, and rank metrics reproduce."
+exposure_bootstrap_recomputation,0,0,True,Player-clustered uncertainty reproduces with the frozen seed.
+exposure_band_recomputation,0,0,True,Five predicted euro-exposure bands reproduce.
+exposure_realized_ordering,1,1,True,Realized euro exposure is monotonic across predicted bands.
+capital_targeting_recomputation,0,0,True,"Capital-only, baseline, and selected top-quintile exposure concentration reproduce."
+capital_targeting_gate,1,1,True,The selected proxy captures at least as much realized exposure using a smaller share of reviewed two-year capital than contract size alone.
+exposure_decision_recomputation,advance_risk_weighted_exposure_proxy,advance_risk_weighted_exposure_proxy,True,The predeclared business-metric gate reproduces.
+value_scenario_behavior,monotone=True; severity=True,both true,True,Risk bands separate outcomes and euro thresholds retain exact 25%/50% semantics.
+continuity_scenario_behavior,1,1,True,Observed outbound rates increase across saved risk bands at both supported horizons.
+metric_coverage_recomputation,0,0,True,Saved metric availability reproduces from translated profiles.
+catalog_status_boundaries,1,1,True,"Supported, paired, proxy, and rejected outputs remain distinct."
+catalog_claim_boundaries,1,1,True,Core financial non-claims are explicit.
+web_spec_no_composite,1,1,True,Rejected overall score is absent from the display specification.
+bettor_scope_rejected,1,1,True,No betting claim is inferred from extension outcomes.
+historical_case_count,12,12,True,"Twelve Phase-5 success, failure, and divergence cases are translated."
+historical_case_traceability,1,1,True,Every case traces to a unique out-of-time profile.
+source_hashes,0,0,True,Failures: none
+builder_output_hashes,0,0,True,Failures: none
+builder_checks,1,1,True,All builder checks pass.

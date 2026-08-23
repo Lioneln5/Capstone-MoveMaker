@@ -1,0 +1,13 @@
+﻿check,observed,expected,passed,notes
+source_event_ids_unique,0,0,True,One row per clean extension event.
+survival_primary_cohort,2358,2358,True,Canonical identity and valid follow-up required.
+any_outbound_events,1848,1848,True,Dated any-outbound events by the administrative cutoff.
+permanent_outbound_events,1690,1690,True,Dated permanent-outbound events by the cutoff.
+event_dates_after_signing,1,1,True,Every modeled event occurs after extension signing.
+horizon_targets_nested,1,1,True,Cumulative event targets never decrease over time.
+prediction_key_unique,0,0,True,One prediction per endpoint/origin/horizon/model/event.
+predictions_bounded,99072,99072,True,Every event probability is valid.
+event_survival_complements,1,1,True,Outbound risk and stay probability sum exactly to one.
+survival_horizon_ordering,1,1,True,Discrete hazards guarantee nondecreasing cumulative event probability.
+feature_timing_safe,1,1,True,No post-extension player information enters the model.
+decision_rows,4,4,True,Two endpoints at 24 and 36 months.

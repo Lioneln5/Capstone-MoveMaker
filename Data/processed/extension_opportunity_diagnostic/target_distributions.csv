@@ -1,0 +1,112 @@
+﻿endpoint,kind,group_type,group,records,mean,std,p10,p25,median,p75,p90,positive_rows,positive_rate
+year2_opportunity_share,continuous,overall,all,1385,0.35661009941420535,0.32461249076823306,0.0,0.0,0.3188208616780045,0.6429118773946361,0.8247619047619054,,
+year2_opportunity_share,continuous,signed_year,2018,144,0.40624968948609674,0.332848743193932,0.0,0.00016666666666665,0.4349027330230337,0.6984415449932692,0.8297734436564225,,
+year2_opportunity_share,continuous,signed_year,2019,231,0.369785432452054,0.3111863746136732,0.0,0.0527182539682539,0.3462962962962962,0.6385642135642136,0.8001792114695341,,
+year2_opportunity_share,continuous,signed_year,2020,225,0.3546605444713282,0.32770642039430037,0.0,0.000595238095238,0.2740740740740741,0.6418803418803419,0.8276388888888888,,
+year2_opportunity_share,continuous,signed_year,2021,236,0.3756100966863599,0.33748496001739176,0.0,0.0,0.37060027714789623,0.6872195640616693,0.8384007306626354,,
+year2_opportunity_share,continuous,signed_year,2022,223,0.343437682084092,0.3237004904907741,0.0,0.0,0.3024024024024024,0.6282163742690059,0.8126126126126129,,
+year2_opportunity_share,continuous,signed_year,2023,245,0.32395305015661785,0.3229768655539204,0.0,0.0,0.2647058823529412,0.6171075837742505,0.8231084656084654,,
+year2_opportunity_share,continuous,signed_year,2024,81,0.3158875529518312,0.3014668289081727,0.0,0.0,0.1863636363636363,0.575595238095238,0.7721280602636534,,
+year2_opportunity_share,continuous,league,Bundesliga,291,0.31888184489012195,0.33578598593265613,0.0,0.0,0.1881642512077294,0.6324074074074074,0.8373456790123457,,
+year2_opportunity_share,continuous,league,La Liga,239,0.40477051570988964,0.29009013129848893,0.0,0.13583576998050678,0.4094650205761317,0.6361210140621906,0.7999473684210526,,
+year2_opportunity_share,continuous,league,Ligue 1,283,0.3294723289337536,0.3300077081045287,0.0,0.0,0.2608333333333333,0.6423623714458561,0.8127104377104378,,
+year2_opportunity_share,continuous,league,Premier League,302,0.40474607835580234,0.3234794086220998,0.0,0.04327357881136945,0.3763054271528848,0.7071404837852207,0.8533677580019045,,
+year2_opportunity_share,continuous,league,Serie A,270,0.3292453067380766,0.3273399955002129,0.0,0.0,0.24801516503122212,0.619923154446964,0.8033625591157872,,
+year2_opportunity_share,continuous,position,Attack,319,0.32692001673832966,0.3066948251312371,0.0,0.0,0.2997863247863248,0.6162627192309659,0.772705586942875,,
+year2_opportunity_share,continuous,position,Defender,463,0.35997538414778013,0.3159011804150531,0.0,0.00053532524120755,0.3326241134751773,0.6231817448798581,0.816260162601626,,
+year2_opportunity_share,continuous,position,Goalkeeper,185,0.33131821902021685,0.3953401068695971,0.0,0.0,0.0816326530612244,0.7944444444444444,0.9467994310099574,,
+year2_opportunity_share,continuous,position,Midfield,417,0.38766193997598297,0.31058360361097775,0.0,0.0435897435897435,0.3995169082125603,0.6675736961451247,0.796018876018876,,
+year2_opportunity_share,continuous,position,Midfield - Central Midfield,1,0.0,,0.0,0.0,0.0,0.0,0.0,,
+year2_opportunity_share,continuous,age_band,<=21,292,0.20895767015049818,0.27155905018695936,0.0,0.0,0.04047364672364665,0.38659016007532954,0.6935362318840583,,
+year2_opportunity_share,continuous,age_band,22-25,405,0.35615621939566566,0.3291078010714706,0.0,0.0,0.3202020202020202,0.6549549549549549,0.8279166666666669,,
+year2_opportunity_share,continuous,age_band,26-29,380,0.43916603410550864,0.3277712584386392,0.0,0.08469387755102037,0.4765079365079365,0.7263430799220273,0.8797824074074074,,
+year2_opportunity_share,continuous,age_band,30-33,247,0.40442965969418493,0.3160898370350366,0.0,0.08820707070707065,0.4011299435028249,0.6543009037745879,0.839282072770445,,
+year2_opportunity_share,continuous,age_band,34+,61,0.35850590565454693,0.3109658772890647,0.0,0.0601010101010101,0.362330623306233,0.6418128654970761,0.775,,
+year2_opportunity_share,continuous,contract_length,<2y,4,0.26686270600744283,0.37915536755727125,0.0,0.0,0.13157894736842105,0.3984416533758639,0.6419524189261032,,
+year2_opportunity_share,continuous,contract_length,2-<3y,372,0.2785330206902947,0.3061055200343834,0.0,0.0,0.14046213306776684,0.5410218253968253,0.7601046943600138,,
+year2_opportunity_share,continuous,contract_length,3-<4y,465,0.3414718224470288,0.3279448087935846,0.0,0.0,0.2809523809523809,0.6418803418803419,0.8299845679012346,,
+year2_opportunity_share,continuous,contract_length,4-<5y,428,0.4088234776246266,0.32391451659528736,0.0,0.046412037037036974,0.4052626262626262,0.6949081476743774,0.855314598798162,,
+year2_opportunity_share,continuous,contract_length,5y+,116,0.4781242009193651,0.3043592958269786,0.0,0.2598126732941097,0.543189964157706,0.7104242234730039,0.8470065810491343,,
+major_role_decline,binary,overall,all,922,0.3546637744034707,,,,,,,327.0,0.3546637744034707
+major_role_decline,binary,signed_year,2018,108,0.3333333333333333,,,,,,,36.0,0.3333333333333333
+major_role_decline,binary,signed_year,2019,154,0.36363636363636365,,,,,,,56.0,0.36363636363636365
+major_role_decline,binary,signed_year,2020,132,0.3181818181818182,,,,,,,42.0,0.3181818181818182
+major_role_decline,binary,signed_year,2021,154,0.3051948051948052,,,,,,,47.0,0.3051948051948052
+major_role_decline,binary,signed_year,2022,150,0.36666666666666664,,,,,,,55.0,0.36666666666666664
+major_role_decline,binary,signed_year,2023,167,0.41916167664670656,,,,,,,70.0,0.41916167664670656
+major_role_decline,binary,signed_year,2024,57,0.3684210526315789,,,,,,,21.0,0.3684210526315789
+major_role_decline,binary,league,Bundesliga,173,0.3583815028901734,,,,,,,62.0,0.3583815028901734
+major_role_decline,binary,league,La Liga,181,0.32044198895027626,,,,,,,58.0,0.32044198895027626
+major_role_decline,binary,league,Ligue 1,170,0.4176470588235294,,,,,,,71.0,0.4176470588235294
+major_role_decline,binary,league,Premier League,222,0.2882882882882883,,,,,,,64.0,0.2882882882882883
+major_role_decline,binary,league,Serie A,176,0.4090909090909091,,,,,,,72.0,0.4090909090909091
+major_role_decline,binary,position,Attack,207,0.3526570048309179,,,,,,,73.0,0.3526570048309179
+major_role_decline,binary,position,Defender,335,0.3880597014925373,,,,,,,130.0,0.3880597014925373
+major_role_decline,binary,position,Goalkeeper,91,0.3516483516483517,,,,,,,32.0,0.3516483516483517
+major_role_decline,binary,position,Midfield,289,0.31833910034602075,,,,,,,92.0,0.31833910034602075
+major_role_decline,binary,age_band,<=21,64,0.421875,,,,,,,27.0,0.421875
+major_role_decline,binary,age_band,22-25,265,0.35471698113207545,,,,,,,94.0,0.35471698113207545
+major_role_decline,binary,age_band,26-29,328,0.31097560975609756,,,,,,,102.0,0.31097560975609756
+major_role_decline,binary,age_band,30-33,215,0.3953488372093023,,,,,,,85.0,0.3953488372093023
+major_role_decline,binary,age_band,34+,50,0.38,,,,,,,19.0,0.38
+major_role_decline,binary,contract_length,<2y,1,0.0,,,,,,,0.0,0.0
+major_role_decline,binary,contract_length,2-<3y,223,0.4439461883408072,,,,,,,99.0,0.4439461883408072
+major_role_decline,binary,contract_length,3-<4y,300,0.37666666666666665,,,,,,,113.0,0.37666666666666665
+major_role_decline,binary,contract_length,4-<5y,313,0.31309904153354634,,,,,,,98.0,0.31309904153354634
+major_role_decline,binary,contract_length,5y+,85,0.2,,,,,,,17.0,0.2
+sustained_meaningful_contribution,binary,overall,all,1385,0.5010830324909747,,,,,,,694.0,0.5010830324909747
+sustained_meaningful_contribution,binary,signed_year,2018,144,0.5694444444444444,,,,,,,82.0,0.5694444444444444
+sustained_meaningful_contribution,binary,signed_year,2019,231,0.5194805194805194,,,,,,,120.0,0.5194805194805194
+sustained_meaningful_contribution,binary,signed_year,2020,225,0.4711111111111111,,,,,,,106.0,0.4711111111111111
+sustained_meaningful_contribution,binary,signed_year,2021,236,0.5211864406779662,,,,,,,123.0,0.5211864406779662
+sustained_meaningful_contribution,binary,signed_year,2022,223,0.48878923766816146,,,,,,,109.0,0.48878923766816146
+sustained_meaningful_contribution,binary,signed_year,2023,245,0.47346938775510206,,,,,,,116.0,0.47346938775510206
+sustained_meaningful_contribution,binary,signed_year,2024,81,0.4691358024691358,,,,,,,38.0,0.4691358024691358
+sustained_meaningful_contribution,binary,league,Bundesliga,291,0.44329896907216493,,,,,,,129.0,0.44329896907216493
+sustained_meaningful_contribution,binary,league,La Liga,239,0.6150627615062761,,,,,,,147.0,0.6150627615062761
+sustained_meaningful_contribution,binary,league,Ligue 1,283,0.4381625441696113,,,,,,,124.0,0.4381625441696113
+sustained_meaningful_contribution,binary,league,Premier League,302,0.5596026490066225,,,,,,,169.0,0.5596026490066225
+sustained_meaningful_contribution,binary,league,Serie A,270,0.46296296296296297,,,,,,,125.0,0.46296296296296297
+sustained_meaningful_contribution,binary,position,Attack,319,0.4827586206896552,,,,,,,154.0,0.4827586206896552
+sustained_meaningful_contribution,binary,position,Defender,463,0.5226781857451404,,,,,,,242.0,0.5226781857451404
+sustained_meaningful_contribution,binary,position,Goalkeeper,185,0.3621621621621622,,,,,,,67.0,0.3621621621621622
+sustained_meaningful_contribution,binary,position,Midfield,417,0.5539568345323741,,,,,,,231.0,0.5539568345323741
+sustained_meaningful_contribution,binary,position,Midfield - Central Midfield,1,0.0,,,,,,,0.0,0.0
+sustained_meaningful_contribution,binary,age_band,<=21,292,0.2465753424657534,,,,,,,72.0,0.2465753424657534
+sustained_meaningful_contribution,binary,age_band,22-25,405,0.5185185185185185,,,,,,,210.0,0.5185185185185185
+sustained_meaningful_contribution,binary,age_band,26-29,380,0.6236842105263158,,,,,,,237.0,0.6236842105263158
+sustained_meaningful_contribution,binary,age_band,30-33,247,0.5789473684210527,,,,,,,143.0,0.5789473684210527
+sustained_meaningful_contribution,binary,age_band,34+,61,0.5245901639344263,,,,,,,32.0,0.5245901639344263
+sustained_meaningful_contribution,binary,contract_length,<2y,4,0.25,,,,,,,1.0,0.25
+sustained_meaningful_contribution,binary,contract_length,2-<3y,372,0.3736559139784946,,,,,,,139.0,0.3736559139784946
+sustained_meaningful_contribution,binary,contract_length,3-<4y,465,0.4860215053763441,,,,,,,226.0,0.4860215053763441
+sustained_meaningful_contribution,binary,contract_length,4-<5y,428,0.5794392523364486,,,,,,,248.0,0.5794392523364486
+sustained_meaningful_contribution,binary,contract_length,5y+,116,0.6896551724137931,,,,,,,80.0,0.6896551724137931
+contract_covered_minimal_involvement,binary,overall,all,1385,0.08664259927797834,,,,,,,120.0,0.08664259927797834
+contract_covered_minimal_involvement,binary,signed_year,2018,144,0.041666666666666664,,,,,,,6.0,0.041666666666666664
+contract_covered_minimal_involvement,binary,signed_year,2019,231,0.08658008658008658,,,,,,,20.0,0.08658008658008658
+contract_covered_minimal_involvement,binary,signed_year,2020,225,0.08888888888888889,,,,,,,20.0,0.08888888888888889
+contract_covered_minimal_involvement,binary,signed_year,2021,236,0.1016949152542373,,,,,,,24.0,0.1016949152542373
+contract_covered_minimal_involvement,binary,signed_year,2022,223,0.08968609865470852,,,,,,,20.0,0.08968609865470852
+contract_covered_minimal_involvement,binary,signed_year,2023,245,0.08163265306122448,,,,,,,20.0,0.08163265306122448
+contract_covered_minimal_involvement,binary,signed_year,2024,81,0.12345679012345678,,,,,,,10.0,0.12345679012345678
+contract_covered_minimal_involvement,binary,league,Bundesliga,291,0.140893470790378,,,,,,,41.0,0.140893470790378
+contract_covered_minimal_involvement,binary,league,La Liga,239,0.0502092050209205,,,,,,,12.0,0.0502092050209205
+contract_covered_minimal_involvement,binary,league,Ligue 1,283,0.08833922261484099,,,,,,,25.0,0.08833922261484099
+contract_covered_minimal_involvement,binary,league,Premier League,302,0.08278145695364239,,,,,,,25.0,0.08278145695364239
+contract_covered_minimal_involvement,binary,league,Serie A,270,0.06296296296296296,,,,,,,17.0,0.06296296296296296
+contract_covered_minimal_involvement,binary,position,Attack,319,0.047021943573667714,,,,,,,15.0,0.047021943573667714
+contract_covered_minimal_involvement,binary,position,Defender,463,0.06047516198704104,,,,,,,28.0,0.06047516198704104
+contract_covered_minimal_involvement,binary,position,Goalkeeper,185,0.23783783783783785,,,,,,,44.0,0.23783783783783785
+contract_covered_minimal_involvement,binary,position,Midfield,417,0.07673860911270983,,,,,,,32.0,0.07673860911270983
+contract_covered_minimal_involvement,binary,position,Midfield - Central Midfield,1,1.0,,,,,,,1.0,1.0
+contract_covered_minimal_involvement,binary,age_band,<=21,292,0.11643835616438356,,,,,,,34.0,0.11643835616438356
+contract_covered_minimal_involvement,binary,age_band,22-25,405,0.06172839506172839,,,,,,,25.0,0.06172839506172839
+contract_covered_minimal_involvement,binary,age_band,26-29,380,0.07105263157894737,,,,,,,27.0,0.07105263157894737
+contract_covered_minimal_involvement,binary,age_band,30-33,247,0.09716599190283401,,,,,,,24.0,0.09716599190283401
+contract_covered_minimal_involvement,binary,age_band,34+,61,0.16393442622950818,,,,,,,10.0,0.16393442622950818
+contract_covered_minimal_involvement,binary,contract_length,<2y,4,0.5,,,,,,,2.0,0.5
+contract_covered_minimal_involvement,binary,contract_length,2-<3y,372,0.13709677419354838,,,,,,,51.0,0.13709677419354838
+contract_covered_minimal_involvement,binary,contract_length,3-<4y,465,0.07741935483870968,,,,,,,36.0,0.07741935483870968
+contract_covered_minimal_involvement,binary,contract_length,4-<5y,428,0.06074766355140187,,,,,,,26.0,0.06074766355140187
+contract_covered_minimal_involvement,binary,contract_length,5y+,116,0.04310344827586207,,,,,,,5.0,0.04310344827586207

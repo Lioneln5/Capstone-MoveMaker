@@ -1,0 +1,5 @@
+﻿candidate,pooled_mean_loss_improvement,pooled_ci_lower_95,pooled_ci_upper_95,pooled_origin_wins,terminal_two_improvement,ece_delta_vs_baseline,majority_cohort_loss_improvement,improves_pooled_brier,origin_wins_at_least_3_of_4,cluster_bootstrap_ci_excludes_zero,terminal_two_not_materially_degraded,calibration_ece_not_worse_by_0.01,majority_cohort_not_degraded,advances
+R1_injury,-0.005213116208943679,-0.011937661099643414,0.0017094761858578653,2,0.003596474706067823,-0.01749498419930795,-0.0037927740780714712,False,False,False,True,True,True,False
+R2_elite,0.002189029393460027,-0.000998682222339448,0.005298553940440535,3,0.0043285712970700715,-0.010158757888599323,0.0025527076077869124,True,True,False,True,True,True,False
+R3_injury_elite,-0.004189017466223674,-0.010682806602066719,0.002328297964386871,3,0.0040446045940631245,-0.009965394149379678,-0.002573519837601183,False,True,False,True,True,True,False
+R4_compact,0.0021109065672308253,-0.003026791647464959,0.007351360675018123,3,0.005160821532721816,-0.010148404648733844,0.0033345301317228852,True,True,False,True,True,True,False

@@ -1,0 +1,80 @@
+module,model_variant,feature_order,feature,timing_classification,source_fields,rationale
+utilization,M0_chronological_constant,0,,not applicable,,Chronological median or prevalence benchmark.
+utilization,U1_transfer_time_profile,1,age_at_transfer,available at or strictly before transfer,age_at_transfer,Frozen compact transfer-time profile control.
+utilization,U1_transfer_time_profile,2,historical_position_group,available at or strictly before transfer,historical_position_group,Frozen compact transfer-time profile control.
+utilization,U1_transfer_time_profile,3,destination_competition_id,available at or strictly before transfer,destination_competition_id,Frozen compact transfer-time profile control.
+utilization,U1_transfer_time_profile,4,transfer_month_sin,available at or strictly before transfer,transfer_month_sin,Frozen compact transfer-time profile control.
+utilization,U1_transfer_time_profile,5,transfer_month_cos,available at or strictly before transfer,transfer_month_cos,Frozen compact transfer-time profile control.
+utilization,U1_transfer_time_profile,6,transfer_year_centered,available at or strictly before transfer,transfer_year_centered,Frozen compact transfer-time profile control.
+utilization,U1_transfer_time_profile,7,log_inbound_fee_eur,available at or strictly before transfer,log_inbound_fee_eur,Frozen compact transfer-time profile control.
+utilization,U1_transfer_time_profile,8,log_pre_value_eur,available at or strictly before transfer,log_pre_value_eur,Frozen compact transfer-time profile control.
+utilization,U1_transfer_time_profile,9,log_fee_to_pre_value,available at or strictly before transfer,log_fee_to_pre_value,Frozen compact transfer-time profile control.
+utilization,U1_transfer_time_profile,10,valuation_pre_staleness_days,available at or strictly before transfer,valuation_pre_staleness_days,Frozen compact transfer-time profile control.
+utilization,U1_transfer_time_profile,11,pre_value_available,available at or strictly before transfer,pre_value_available,Frozen compact transfer-time profile control.
+utilization,U2_plus_first_year_involvement,1,age_at_transfer,available at or strictly before transfer,age_at_transfer,Frozen compact transfer-time profile control.
+utilization,U2_plus_first_year_involvement,2,historical_position_group,available at or strictly before transfer,historical_position_group,Frozen compact transfer-time profile control.
+utilization,U2_plus_first_year_involvement,3,destination_competition_id,available at or strictly before transfer,destination_competition_id,Frozen compact transfer-time profile control.
+utilization,U2_plus_first_year_involvement,4,transfer_month_sin,available at or strictly before transfer,transfer_month_sin,Frozen compact transfer-time profile control.
+utilization,U2_plus_first_year_involvement,5,transfer_month_cos,available at or strictly before transfer,transfer_month_cos,Frozen compact transfer-time profile control.
+utilization,U2_plus_first_year_involvement,6,transfer_year_centered,available at or strictly before transfer,transfer_year_centered,Frozen compact transfer-time profile control.
+utilization,U2_plus_first_year_involvement,7,log_inbound_fee_eur,available at or strictly before transfer,log_inbound_fee_eur,Frozen compact transfer-time profile control.
+utilization,U2_plus_first_year_involvement,8,log_pre_value_eur,available at or strictly before transfer,log_pre_value_eur,Frozen compact transfer-time profile control.
+utilization,U2_plus_first_year_involvement,9,log_fee_to_pre_value,available at or strictly before transfer,log_fee_to_pre_value,Frozen compact transfer-time profile control.
+utilization,U2_plus_first_year_involvement,10,valuation_pre_staleness_days,available at or strictly before transfer,valuation_pre_staleness_days,Frozen compact transfer-time profile control.
+utilization,U2_plus_first_year_involvement,11,pre_value_available,available at or strictly before transfer,pre_value_available,Frozen compact transfer-time profile control.
+utilization,U2_plus_first_year_involvement,12,first_year_destination_opportunity_share,observed during days 0-365 after transfer,post12 destination appearance/lineup and club-game aggregates,First-year sporting evidence available at the day-365 monitoring update.
+utilization,U2_plus_first_year_involvement,13,first_year_destination_appearance_rate,observed during days 0-365 after transfer,post12 destination appearance/lineup and club-game aggregates,First-year sporting evidence available at the day-365 monitoring update.
+utilization,U2_plus_first_year_involvement,14,first_year_destination_start_rate,observed during days 0-365 after transfer,post12 destination appearance/lineup and club-game aggregates,First-year sporting evidence available at the day-365 monitoring update.
+utilization,U2_plus_first_year_involvement,15,first_year_destination_substitute_selection_rate,observed during days 0-365 after transfer,post12 destination appearance/lineup and club-game aggregates,First-year sporting evidence available at the day-365 monitoring update.
+utilization,U2_plus_first_year_involvement,16,first_year_destination_goals_per90,observed during days 0-365 after transfer,post12 destination appearance/lineup and club-game aggregates,First-year sporting evidence available at the day-365 monitoring update.
+utilization,U2_plus_first_year_involvement,17,first_year_destination_assists_per90,observed during days 0-365 after transfer,post12 destination appearance/lineup and club-game aggregates,First-year sporting evidence available at the day-365 monitoring update.
+market_value,M0_chronological_constant,0,,not applicable,,Chronological median or prevalence benchmark.
+market_value,V1_transfer_time_profile,1,age_at_transfer,available at or strictly before transfer,age_at_transfer,Frozen compact transfer-time profile control.
+market_value,V1_transfer_time_profile,2,historical_position_group,available at or strictly before transfer,historical_position_group,Frozen compact transfer-time profile control.
+market_value,V1_transfer_time_profile,3,destination_competition_id,available at or strictly before transfer,destination_competition_id,Frozen compact transfer-time profile control.
+market_value,V1_transfer_time_profile,4,transfer_month_sin,available at or strictly before transfer,transfer_month_sin,Frozen compact transfer-time profile control.
+market_value,V1_transfer_time_profile,5,transfer_month_cos,available at or strictly before transfer,transfer_month_cos,Frozen compact transfer-time profile control.
+market_value,V1_transfer_time_profile,6,log_pre_value_eur,available at or strictly before transfer,log_pre_value_eur,Frozen compact transfer-time profile control.
+market_value,V1_transfer_time_profile,7,log_inbound_fee_eur,available at or strictly before transfer,log_inbound_fee_eur,Frozen compact transfer-time profile control.
+market_value,V1_transfer_time_profile,8,fee_reported_positive,available at or strictly before transfer,fee_reported_positive,Frozen compact transfer-time profile control.
+market_value,V1_transfer_time_profile,9,canonical_transfer_fee_status,available at or strictly before transfer,canonical_transfer_fee_status,Frozen compact transfer-time profile control.
+market_value,V1_transfer_time_profile,10,log_fee_to_pre_value,available at or strictly before transfer,log_fee_to_pre_value,Frozen compact transfer-time profile control.
+market_value,V1_transfer_time_profile,11,valuation_pre_staleness_days,available at or strictly before transfer,valuation_pre_staleness_days,Frozen compact transfer-time profile control.
+market_value,V2_plus_day365_value_state,1,age_at_transfer,available at or strictly before transfer,age_at_transfer,Frozen compact transfer-time profile control.
+market_value,V2_plus_day365_value_state,2,historical_position_group,available at or strictly before transfer,historical_position_group,Frozen compact transfer-time profile control.
+market_value,V2_plus_day365_value_state,3,destination_competition_id,available at or strictly before transfer,destination_competition_id,Frozen compact transfer-time profile control.
+market_value,V2_plus_day365_value_state,4,transfer_month_sin,available at or strictly before transfer,transfer_month_sin,Frozen compact transfer-time profile control.
+market_value,V2_plus_day365_value_state,5,transfer_month_cos,available at or strictly before transfer,transfer_month_cos,Frozen compact transfer-time profile control.
+market_value,V2_plus_day365_value_state,6,log_pre_value_eur,available at or strictly before transfer,log_pre_value_eur,Frozen compact transfer-time profile control.
+market_value,V2_plus_day365_value_state,7,log_inbound_fee_eur,available at or strictly before transfer,log_inbound_fee_eur,Frozen compact transfer-time profile control.
+market_value,V2_plus_day365_value_state,8,fee_reported_positive,available at or strictly before transfer,fee_reported_positive,Frozen compact transfer-time profile control.
+market_value,V2_plus_day365_value_state,9,canonical_transfer_fee_status,available at or strictly before transfer,canonical_transfer_fee_status,Frozen compact transfer-time profile control.
+market_value,V2_plus_day365_value_state,10,log_fee_to_pre_value,available at or strictly before transfer,log_fee_to_pre_value,Frozen compact transfer-time profile control.
+market_value,V2_plus_day365_value_state,11,valuation_pre_staleness_days,available at or strictly before transfer,valuation_pre_staleness_days,Frozen compact transfer-time profile control.
+market_value,V2_plus_day365_value_state,12,age_at_landmark,available on day 365; valuation is strictly as-of the landmark,canonical valuation history on/before day 365,Current asset state known at the declared monitoring landmark.
+market_value,V2_plus_day365_value_state,13,log_landmark_value_eur,available on day 365; valuation is strictly as-of the landmark,canonical valuation history on/before day 365,Current asset state known at the declared monitoring landmark.
+market_value,V2_plus_day365_value_state,14,landmark_value_staleness_days,available on day 365; valuation is strictly as-of the landmark,canonical valuation history on/before day 365,Current asset state known at the declared monitoring landmark.
+market_value,V2_plus_day365_value_state,15,first_year_log_value_ratio,available on day 365; valuation is strictly as-of the landmark,canonical valuation history on/before day 365,Current asset state known at the declared monitoring landmark.
+market_value,V2_plus_day365_value_state,16,log_fee_to_landmark_value,available on day 365; valuation is strictly as-of the landmark,canonical valuation history on/before day 365,Current asset state known at the declared monitoring landmark.
+market_value,V3_plus_first_year_involvement,1,age_at_transfer,available at or strictly before transfer,age_at_transfer,Frozen compact transfer-time profile control.
+market_value,V3_plus_first_year_involvement,2,historical_position_group,available at or strictly before transfer,historical_position_group,Frozen compact transfer-time profile control.
+market_value,V3_plus_first_year_involvement,3,destination_competition_id,available at or strictly before transfer,destination_competition_id,Frozen compact transfer-time profile control.
+market_value,V3_plus_first_year_involvement,4,transfer_month_sin,available at or strictly before transfer,transfer_month_sin,Frozen compact transfer-time profile control.
+market_value,V3_plus_first_year_involvement,5,transfer_month_cos,available at or strictly before transfer,transfer_month_cos,Frozen compact transfer-time profile control.
+market_value,V3_plus_first_year_involvement,6,log_pre_value_eur,available at or strictly before transfer,log_pre_value_eur,Frozen compact transfer-time profile control.
+market_value,V3_plus_first_year_involvement,7,log_inbound_fee_eur,available at or strictly before transfer,log_inbound_fee_eur,Frozen compact transfer-time profile control.
+market_value,V3_plus_first_year_involvement,8,fee_reported_positive,available at or strictly before transfer,fee_reported_positive,Frozen compact transfer-time profile control.
+market_value,V3_plus_first_year_involvement,9,canonical_transfer_fee_status,available at or strictly before transfer,canonical_transfer_fee_status,Frozen compact transfer-time profile control.
+market_value,V3_plus_first_year_involvement,10,log_fee_to_pre_value,available at or strictly before transfer,log_fee_to_pre_value,Frozen compact transfer-time profile control.
+market_value,V3_plus_first_year_involvement,11,valuation_pre_staleness_days,available at or strictly before transfer,valuation_pre_staleness_days,Frozen compact transfer-time profile control.
+market_value,V3_plus_first_year_involvement,12,age_at_landmark,available on day 365; valuation is strictly as-of the landmark,canonical valuation history on/before day 365,Current asset state known at the declared monitoring landmark.
+market_value,V3_plus_first_year_involvement,13,log_landmark_value_eur,available on day 365; valuation is strictly as-of the landmark,canonical valuation history on/before day 365,Current asset state known at the declared monitoring landmark.
+market_value,V3_plus_first_year_involvement,14,landmark_value_staleness_days,available on day 365; valuation is strictly as-of the landmark,canonical valuation history on/before day 365,Current asset state known at the declared monitoring landmark.
+market_value,V3_plus_first_year_involvement,15,first_year_log_value_ratio,available on day 365; valuation is strictly as-of the landmark,canonical valuation history on/before day 365,Current asset state known at the declared monitoring landmark.
+market_value,V3_plus_first_year_involvement,16,log_fee_to_landmark_value,available on day 365; valuation is strictly as-of the landmark,canonical valuation history on/before day 365,Current asset state known at the declared monitoring landmark.
+market_value,V3_plus_first_year_involvement,17,first_year_destination_opportunity_share,observed during days 0-365 after transfer,post12 destination appearance/lineup and club-game aggregates,First-year sporting evidence available at the day-365 monitoring update.
+market_value,V3_plus_first_year_involvement,18,first_year_destination_appearance_rate,observed during days 0-365 after transfer,post12 destination appearance/lineup and club-game aggregates,First-year sporting evidence available at the day-365 monitoring update.
+market_value,V3_plus_first_year_involvement,19,first_year_destination_start_rate,observed during days 0-365 after transfer,post12 destination appearance/lineup and club-game aggregates,First-year sporting evidence available at the day-365 monitoring update.
+market_value,V3_plus_first_year_involvement,20,first_year_destination_substitute_selection_rate,observed during days 0-365 after transfer,post12 destination appearance/lineup and club-game aggregates,First-year sporting evidence available at the day-365 monitoring update.
+market_value,V3_plus_first_year_involvement,21,first_year_destination_goals_per90,observed during days 0-365 after transfer,post12 destination appearance/lineup and club-game aggregates,First-year sporting evidence available at the day-365 monitoring update.
+market_value,V3_plus_first_year_involvement,22,first_year_destination_assists_per90,observed during days 0-365 after transfer,post12 destination appearance/lineup and club-game aggregates,First-year sporting evidence available at the day-365 monitoring update.

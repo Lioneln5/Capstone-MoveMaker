@@ -1,0 +1,2 @@
+﻿raw_rows,unique_player_names,unique_players_linked,row_level_player_link_rate,unique_clubs,unique_clubs_linked,club_history_mismatches_excluded,duplicate_spells_dropped,clean_spell_rows,distinct_linked_players_with_spells,injury_source_min_from_date,injury_source_max_until_date,declared_coverage_start
+15603,4080,3982,0.9801320258924566,145,125,303,915,14075,3863,2020-02-01,2026-01-15,2020-07-01

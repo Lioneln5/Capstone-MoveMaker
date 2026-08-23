@@ -1,0 +1,15 @@
+{
+  "checks_passed": 25,
+  "checks_total": 25,
+  "all_checks_passed": true,
+  "r0_pooled_recomputed": {
+    "observed_rate": 0.48869752421959095,
+    "mean_predicted": 0.522668099754525,
+    "brier": 0.1868604144516412,
+    "auc": 0.7881428240204035,
+    "average_precision": 0.7323138059839359
+  },
+  "any_candidate_advanced": false,
+  "demo_audit_candidate_label": "R2_elite",
+  "demo_audit_candidate_adopted": false
+}

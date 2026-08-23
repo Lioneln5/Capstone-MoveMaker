@@ -1,0 +1,7 @@
+﻿step,stage,records,retention_from_start,retention_from_previous
+0,All extension events,2425,1.0,
+1,Canonical player linked,2358,0.9723711340206186,0.9723711340206186
+2,Pre-365 evidence >=10 club games,2218,0.914639175257732,0.9406276505513147
+3,Year-2 evidence >=10 club games,1987,0.8193814432989691,0.8958521190261497
+4,Contract scheduled to cover 730 days,1385,0.5711340206185567,0.6970306995470559
+5,Meaningful pre-extension role >=25%,922,0.3802061855670103,0.6657039711191336

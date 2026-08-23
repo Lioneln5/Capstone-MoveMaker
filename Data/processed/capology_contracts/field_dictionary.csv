@@ -1,0 +1,131 @@
+﻿dataset,field,dtype,non_null_rows,null_rows,definition
+salary,capology_salary_id,object,19770,0,Deterministic hash of the canonical player-club-season key.
+salary,salary_natural_key,object,19770,0,Salary natural key.
+salary,source_file,object,19770,0,Source file.
+salary,source_relative_path,object,19770,0,Source relative path.
+salary,source_row_number,int64,19770,0,Source row number.
+salary,source_page_season,object,19770,0,Source page season.
+salary,source_page_season_start_year,int64,19770,0,Source page season start year.
+salary,source_page_season_end_year,int64,19770,0,Source page season end year.
+salary,league,object,19770,0,League.
+salary,competition_id,object,19770,0,Competition id.
+salary,player_name,object,19770,0,Player name.
+salary,player_name_normalized,object,19770,0,Player name normalized.
+salary,capology_player_url,object,19770,0,Capology player url.
+salary,capology_player_url_suffix,object,19770,0,Numeric suffix parsed from Capology URL; provenance only and not a reliable identity key.
+salary,capology_suffix_name_conflict_in_file,bool,19770,0,Capology suffix name conflict in file.
+salary,club_name,object,19770,0,Club name.
+salary,club_name_normalized,object,19770,0,Club name normalized.
+salary,capology_club_slug,object,19770,0,Capology club slug.
+salary,capology_club_url,object,19770,0,Capology club url.
+salary,canonical_player_id,float64,19132,638,Conservatively linked canonical Transfermarkt player identity; missing when unresolved.
+salary,canonical_player_name,object,19132,638,Canonical player name.
+salary,player_link_method,object,19770,0,"Exact unique-name linkage method, or unresolved. No fuzzy links are forced."
+salary,date_of_birth,object,19127,643,Date of birth.
+salary,canonical_position,object,19128,642,Canonical position.
+salary,canonical_sub_position,object,19128,642,Canonical sub position.
+salary,canonical_club_id,int64,19770,0,Canonical Transfermarkt club identity from an accepted or reviewed exact alias.
+salary,canonical_club_name,object,19770,0,Canonical club name.
+salary,club_link_method,object,19770,0,Club link method.
+salary,weekly_gross_eur,float64,18985,785,Weekly gross eur.
+salary,annual_gross_eur,float64,18985,785,Annual gross eur.
+salary,weekly_net_eur,float64,18985,785,Weekly net eur.
+salary,annual_net_eur,float64,18985,785,Annual net eur.
+salary,bonus_gross_eur,float64,5835,13935,Bonus gross eur.
+salary,bonus_net_eur,float64,5835,13935,Bonus net eur.
+salary,total_gross_eur,float64,18985,785,Total gross eur.
+salary,total_net_eur,float64,18985,785,Total net eur.
+salary,adjusted_total_gross_eur,float64,18985,785,Adjusted total gross eur.
+salary,adjusted_total_net_eur,float64,18985,785,Adjusted total net eur.
+salary,reported_zero_salary,bool,19770,0,True where Capology literally reported zero; zero is converted to missing as unavailable salary.
+salary,zero_salary_fields,object,19770,0,Zero salary fields.
+salary,bonus_available,bool,19770,0,True when bonus compensation was reported; missing bonus never means zero bonus.
+salary,verification_badge,object,19770,0,Verification badge.
+salary,status,object,19770,0,Status.
+salary,position,object,19770,0,Position.
+salary,age,int64,19770,0,Age.
+salary,country,object,19770,0,Country.
+salary,active,bool,19770,0,Active.
+salary,loan,bool,19770,0,Loan.
+salary,capology_suffix_name_conflict,bool,19770,0,Capology suffix name conflict.
+salary,entity_key,object,19770,0,Entity key.
+salary,club_key,object,19770,0,Club key.
+salary,source_row_count,int64,19770,0,Number of raw rows represented by the canonical row.
+salary,source_files,object,19770,0,Source files.
+salary,source_rows,object,19770,0,Source rows.
+salary,observed_statuses,object,19770,0,Observed statuses.
+salary,observed_capology_suffixes,object,19770,0,Observed capology suffixes.
+salary,annual_gross_eur_min,float64,18985,785,Annual gross eur min.
+salary,annual_gross_eur_max,float64,18985,785,Annual gross eur max.
+salary,duplicate_source_rows_collapsed,bool,19770,0,Duplicate source rows collapsed.
+salary,annual_gross_conflict,bool,19770,0,Annual gross conflict.
+extension,capology_extension_event_id,object,2805,0,"Deterministic hash of canonical player, club, and exact signing date."
+extension,extension_natural_key,object,2805,0,Extension natural key.
+extension,source_file,object,2805,0,Source file.
+extension,source_relative_path,object,2805,0,Source relative path.
+extension,source_row_number,int64,2805,0,Source row number.
+extension,source_page_season,object,2805,0,Source page season.
+extension,source_page_season_start_year,int64,2805,0,Source page season start year.
+extension,source_page_season_end_year,int64,2805,0,Source page season end year.
+extension,league,object,2805,0,League.
+extension,competition_id,object,2805,0,Competition id.
+extension,player_name,object,2805,0,Player name.
+extension,player_name_normalized,object,2805,0,Player name normalized.
+extension,capology_player_url,object,2805,0,Capology player url.
+extension,capology_player_url_suffix,object,2805,0,Numeric suffix parsed from Capology URL; provenance only and not a reliable identity key.
+extension,capology_suffix_name_conflict_in_file,bool,2805,0,Capology suffix name conflict in file.
+extension,club_name,object,2805,0,Club name.
+extension,club_name_normalized,object,2805,0,Club name normalized.
+extension,capology_club_slug,object,2805,0,Capology club slug.
+extension,capology_club_url,object,2805,0,Capology club url.
+extension,canonical_player_id,float64,2726,79,Conservatively linked canonical Transfermarkt player identity; missing when unresolved.
+extension,canonical_player_name,object,2726,79,Canonical player name.
+extension,player_link_method,object,2805,0,"Exact unique-name linkage method, or unresolved. No fuzzy links are forced."
+extension,date_of_birth,object,2726,79,Date of birth.
+extension,canonical_position,object,2726,79,Canonical position.
+extension,canonical_sub_position,object,2726,79,Canonical sub position.
+extension,canonical_club_id,int64,2805,0,Canonical Transfermarkt club identity from an accepted or reviewed exact alias.
+extension,canonical_club_name,object,2805,0,Canonical club name.
+extension,club_link_method,object,2805,0,Club link method.
+extension,weekly_gross_eur,float64,2708,97,Weekly gross eur.
+extension,annual_gross_eur,float64,2708,97,Annual gross eur.
+extension,weekly_net_eur,float64,2708,97,Weekly net eur.
+extension,annual_net_eur,float64,2708,97,Annual net eur.
+extension,bonus_gross_eur,float64,1139,1666,Bonus gross eur.
+extension,bonus_net_eur,float64,1139,1666,Bonus net eur.
+extension,total_gross_eur,float64,2708,97,Total gross eur.
+extension,total_net_eur,float64,2708,97,Total net eur.
+extension,adjusted_total_gross_eur,float64,2708,97,Adjusted total gross eur.
+extension,adjusted_total_net_eur,float64,2708,97,Adjusted total net eur.
+extension,contract_total_gross_eur,float64,2708,97,Contract total gross eur.
+extension,contract_total_net_eur,float64,2708,97,Contract total net eur.
+extension,reported_zero_salary,bool,2805,0,True where Capology literally reported zero; zero is converted to missing as unavailable salary.
+extension,zero_salary_fields,object,2805,0,Zero salary fields.
+extension,bonus_available,bool,2805,0,True when bonus compensation was reported; missing bonus never means zero bonus.
+extension,signed_date,datetime64[ns],2805,0,Signed date.
+extension,expiration_date,datetime64[ns],2805,0,Expiration date.
+extension,reported_years,int64,2805,0,"Capology-reported season-count duration, retained separately from exact elapsed time."
+extension,exact_duration_days,int64,2805,0,Exact duration days.
+extension,exact_duration_years,float64,2805,0,Contract duration from expiration minus signing date divided by 365.25.
+extension,event_season_start_year,int64,2805,0,Event season start year.
+extension,event_season,object,2805,0,Event season.
+extension,pre_completed_season_start_year,int64,2805,0,Leakage-safe last completed season helper: signing calendar year minus one.
+extension,first_full_post_season_start_year,int64,2805,0,First full season beginning after the extension signing date.
+extension,age_at_signing,float64,2726,79,"Exact age at signing from the canonical date of birth, where player identity is resolved."
+extension,reported_minus_exact_years,float64,2805,0,Reported minus exact years.
+extension,contract_total_recomputed_eur,float64,2708,97,Contract total recomputed eur.
+extension,contract_total_arithmetic_difference_eur,float64,2708,97,Contract total arithmetic difference eur.
+extension,capology_suffix_name_conflict,bool,2805,0,Capology suffix name conflict.
+extension,entity_key,object,2805,0,Entity key.
+extension,club_key,object,2805,0,Club key.
+extension,signed_key,object,2805,0,Signed key.
+extension,source_row_count,int64,2805,0,Number of raw rows represented by the canonical row.
+extension,source_files,object,2805,0,Source files.
+extension,source_rows,object,2805,0,Source rows.
+extension,source_page_seasons,object,2805,0,Source page seasons.
+extension,observed_capology_suffixes,object,2805,0,Observed capology suffixes.
+extension,reported_years_min,int64,2805,0,Reported years min.
+extension,reported_years_max,int64,2805,0,Reported years max.
+extension,duplicate_event_rows_collapsed,bool,2805,0,Duplicate event rows collapsed.
+extension,reported_years_conflict,bool,2805,0,Reported years conflict.
+extension,event_outside_source_page_season,bool,2805,0,Event outside source page season.

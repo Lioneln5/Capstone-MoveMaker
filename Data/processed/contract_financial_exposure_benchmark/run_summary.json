@@ -1,0 +1,18 @@
+{
+  "source_extension_events": 2425,
+  "wage_cohort": 2265,
+  "duration_cohort": 2358,
+  "commitment_cohort": 2265,
+  "wage_value_cohort": 2222,
+  "bonus_available_events": 759,
+  "prediction_rows": 36264,
+  "checks_passed": 10,
+  "checks_total": 10,
+  "all_checks_passed": true,
+  "decisions": {
+    "annual_wage": "advance_historical_peer_benchmark",
+    "contract_duration": "advance_historical_peer_benchmark",
+    "fixed_wage_commitment": "advance_historical_peer_benchmark",
+    "wage_to_market_value": "advance_historical_peer_benchmark"
+  }
+}

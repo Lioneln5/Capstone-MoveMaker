@@ -1,0 +1,147 @@
+{
+  "objective": "Does pre-extension injury history and evidence-based elite-player interactions improve the frozen sustained_meaningful_contribution model?",
+  "target_definition_preserved": "target_sustained_meaningful_contribution = 1 iff pre365->Y1 and Y2 same-club opportunity share both >= 0.25 (unchanged from run_extension_opportunity_diagnostic.py)",
+  "baseline_reproduction": {
+    "pooled": {
+      "pooled_rows": 929,
+      "observed_rate": 0.48869752421959095,
+      "mean_predicted": 0.522668099754525,
+      "brier": 0.1868604144516412,
+      "auc": 0.7881428240204035,
+      "average_precision": 0.7323138059839359
+    },
+    "expected": {
+      "pooled_rows": 929,
+      "observed_rate": 0.4887,
+      "mean_predicted": 0.5227,
+      "brier": 0.1869,
+      "auc": 0.788,
+      "average_precision": 0.732
+    },
+    "high_value_75m_audit": {
+      "n": 22,
+      "observed": 0.8636363636363636,
+      "predicted": 0.8555515227222368
+    },
+    "cohort_rows": 1385
+  },
+  "injury_linkage": {
+    "raw_rows": 15603,
+    "unique_player_names": 4080,
+    "unique_players_linked": 3982,
+    "row_level_player_link_rate": 0.9801320258924566,
+    "unique_clubs": 145,
+    "unique_clubs_linked": 125,
+    "club_history_mismatches_excluded": 303,
+    "duplicate_spells_dropped": 915,
+    "clean_spell_rows": 14075,
+    "distinct_linked_players_with_spells": 3863,
+    "injury_source_min_from_date": "2020-02-01",
+    "injury_source_max_until_date": "2026-01-15",
+    "declared_coverage_start": "2020-07-01"
+  },
+  "candidate_variants": [
+    "R0_baseline_M5",
+    "R1_injury",
+    "R2_elite",
+    "R3_injury_elite",
+    "R4_compact"
+  ],
+  "r4_stable_injury_features": [
+    "injury_completed_spell_count_365",
+    "injury_calendar_days_365",
+    "injury_calendar_days_730",
+    "injury_completed_spell_games_missed_365",
+    "injury_completed_spell_games_missed_730",
+    "injury_active_at_signing_indicator",
+    "injury_burden_per_covered_day_365",
+    "injury_data_coverage_indicator"
+  ],
+  "r4_stable_elite_features": [
+    "elite_market_value_percentile",
+    "elite_top_5pct_indicator",
+    "log_market_value_hinge_k2",
+    "log_market_value_hinge_k3",
+    "elite_percentile_x_pre365_opportunity",
+    "elite_percentile_x_age",
+    "elite_percentile_x_contract_years",
+    "pre365_opportunity_x_age"
+  ],
+  "decision": [
+    {
+      "candidate": "R1_injury",
+      "pooled_mean_loss_improvement": -0.005213116208943679,
+      "pooled_ci_lower_95": -0.011937661099643414,
+      "pooled_ci_upper_95": 0.0017094761858578653,
+      "pooled_origin_wins": 2,
+      "terminal_two_improvement": 0.003596474706067823,
+      "ece_delta_vs_baseline": -0.01749498419930795,
+      "majority_cohort_loss_improvement": -0.0037927740780714712,
+      "improves_pooled_brier": false,
+      "origin_wins_at_least_3_of_4": false,
+      "cluster_bootstrap_ci_excludes_zero": false,
+      "terminal_two_not_materially_degraded": true,
+      "calibration_ece_not_worse_by_0.01": true,
+      "majority_cohort_not_degraded": true,
+      "advances": false
+    },
+    {
+      "candidate": "R2_elite",
+      "pooled_mean_loss_improvement": 0.002189029393460027,
+      "pooled_ci_lower_95": -0.000998682222339448,
+      "pooled_ci_upper_95": 0.005298553940440535,
+      "pooled_origin_wins": 3,
+      "terminal_two_improvement": 0.0043285712970700715,
+      "ece_delta_vs_baseline": -0.010158757888599323,
+      "majority_cohort_loss_improvement": 0.0025527076077869124,
+      "improves_pooled_brier": true,
+      "origin_wins_at_least_3_of_4": true,
+      "cluster_bootstrap_ci_excludes_zero": false,
+      "terminal_two_not_materially_degraded": true,
+      "calibration_ece_not_worse_by_0.01": true,
+      "majority_cohort_not_degraded": true,
+      "advances": false
+    },
+    {
+      "candidate": "R3_injury_elite",
+      "pooled_mean_loss_improvement": -0.004189017466223674,
+      "pooled_ci_lower_95": -0.010682806602066719,
+      "pooled_ci_upper_95": 0.002328297964386871,
+      "pooled_origin_wins": 3,
+      "terminal_two_improvement": 0.0040446045940631245,
+      "ece_delta_vs_baseline": -0.009965394149379678,
+      "majority_cohort_loss_improvement": -0.002573519837601183,
+      "improves_pooled_brier": false,
+      "origin_wins_at_least_3_of_4": true,
+      "cluster_bootstrap_ci_excludes_zero": false,
+      "terminal_two_not_materially_degraded": true,
+      "calibration_ece_not_worse_by_0.01": true,
+      "majority_cohort_not_degraded": true,
+      "advances": false
+    },
+    {
+      "candidate": "R4_compact",
+      "pooled_mean_loss_improvement": 0.0021109065672308253,
+      "pooled_ci_lower_95": -0.003026791647464959,
+      "pooled_ci_upper_95": 0.007351360675018123,
+      "pooled_origin_wins": 3,
+      "terminal_two_improvement": 0.005160821532721816,
+      "ece_delta_vs_baseline": -0.010148404648733844,
+      "majority_cohort_loss_improvement": 0.0033345301317228852,
+      "improves_pooled_brier": true,
+      "origin_wins_at_least_3_of_4": true,
+      "cluster_bootstrap_ci_excludes_zero": false,
+      "terminal_two_not_materially_degraded": true,
+      "calibration_ece_not_worse_by_0.01": true,
+      "majority_cohort_not_degraded": true,
+      "advances": false
+    }
+  ],
+  "any_candidate_advanced": false,
+  "advanced_candidates": [],
+  "demo_audit_candidate_label": "R2_elite",
+  "demo_audit_candidate_adopted": false,
+  "checks_passed": 15,
+  "checks_total": 15,
+  "all_checks_passed": true
+}

@@ -1,0 +1,12 @@
+{
+  "profile_scope": "incumbent_club_extension",
+  "historical_out_of_time_profiles": 1560,
+  "low_contribution_exposure_rows": 908,
+  "low_contribution_exposure_decision": "advance_risk_weighted_exposure_proxy",
+  "value_scenario_rows": 1367,
+  "continuity_scenario_rows": 1504,
+  "historical_case_studies": 12,
+  "builder_checks_passed": 14,
+  "builder_checks_total": 14,
+  "all_builder_checks_passed": true
+}

@@ -1,0 +1,14 @@
+﻿target_family,threshold,eligible_rows,positive_rows,positive_rate
+year2_below_threshold,0.05,1385,445,0.3212996389891697
+sustained_y1_y2_above_threshold,0.05,1385,914,0.6599277978339351
+year2_below_threshold,0.1,1385,502,0.3624548736462094
+sustained_y1_y2_above_threshold,0.1,1385,851,0.6144404332129964
+year2_below_threshold,0.2,1385,589,0.4252707581227437
+sustained_y1_y2_above_threshold,0.2,1385,737,0.532129963898917
+year2_below_threshold,0.25,1385,627,0.4527075812274368
+sustained_y1_y2_above_threshold,0.25,1385,694,0.5010830324909747
+year2_below_threshold,0.5,1385,869,0.6274368231046932
+sustained_y1_y2_above_threshold,0.5,1385,433,0.31263537906137184
+major_role_decline_absolute_floor,0.1,922,330,0.3579175704989154
+major_role_decline_absolute_floor,0.2,922,327,0.3546637744034707
+major_role_decline_absolute_floor,0.3,922,299,0.324295010845987

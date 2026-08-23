@@ -1,0 +1,16 @@
+﻿check,observed,expected,passed,notes
+step1_baseline_pooled_reproduction,"{""pooled_rows"": 929, ""observed_rate"": 0.48869752421959095, ""mean_predicted"": 0.522668099754525, ""brier"": 0.1868604144516412, ""auc"": 0.7881428240204035, ""average_precision"": 0.7323138059839359}","{""pooled_rows"": 929, ""observed_rate"": 0.4887, ""mean_predicted"": 0.5227, ""brier"": 0.1869, ""auc"": 0.788, ""average_precision"": 0.732}",True,reproduce_baseline() already raises RuntimeError on mismatch; reaching here means it passed within tolerance.
+step1_high_value_75m_audit,"{""n"": 22, ""observed"": 0.8636363636363636, ""predicted"": 0.8555515227222368}","n=22, observed~0.864, predicted~0.856",True,High-value audit reproduction already enforced inside reproduce_baseline().
+step2_injury_player_link_rate,0.976,>=0.90,True,Exact-unique-name crosswalk match rate across unique injury-source player names.
+step2_no_forced_ambiguous_matches,True,n/a,True,"Unresolved (ambiguous or unknown) names are left unlinked by build_player_map()/link_player(), never forced."
+step2_calendar_days_bounded_by_window,True,True,True,Intersected calendar injury days never exceed their declared window length -- structural leakage guard.
+step1_clone_matches_frozen_module_exactly,0.1868604145,0.1868604145,True,tune_predict_variant() with no fold features must reproduce run_extension_opportunity_diagnostic.tune_predict() bit-for-bit.
+prediction_key_unique,0,0,True,One prediction per variant/origin/event.
+predictions_bounded_0_1,4645,4645,True,"All probabilities in [0, 1]."
+step8_demo_baseline_matches_reference_Haaland,0.7109,0.7109,True,Live production sustained-contribution score for this player must match the prompt's given reference value.
+step8_demo_baseline_matches_reference_Mbappe,0.6428,0.6428,True,Live production sustained-contribution score for this player must match the prompt's given reference value.
+step8_demo_baseline_matches_reference_Bellingham,0.6947,0.6947,True,Live production sustained-contribution score for this player must match the prompt's given reference value.
+cohort_size_unchanged,1385,1385,True,Target definition and cohort gates were never modified.
+sustained_contribution_prevalence_unchanged,0.501083,0.501083,True,target_sustained_meaningful_contribution formula and prevalence are byte-identical to the frozen Phase-1 diagnostic.
+no_frozen_artifacts_overwritten,True,True,True,This script never opens Data/processed/extension_opportunity_diagnostic/ or Data/processed/deployment_models/ for writing; verified by code review -- only OUTPUT (a new directory) is written.
+no_git_operations_performed,True,True,True,This script performs no git add/commit/reset/push/clean; it only reads sources and writes new files under Data/processed/contribution_model_refinement/.

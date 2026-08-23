@@ -1,0 +1,9 @@
+﻿metric_group,eligible_rows,decision,evidence_and_boundary
+capital_commitment,1560,advance,Exact guarded contract arithmetic is ready for application logic.
+historical_offer_context,1504,advance_after_freezing_reference_cdf,"Show euro/percent deviation, range position, and a frozen historical offer-aggressiveness percentile; never call it fair price."
+low_contribution_wage_exposure,908,advance_risk_weighted_exposure_proxy,"Selected-vs-baseline exposure MAE improvement €761,630; 95% CI [€542,602, €1,006,194]; 4/4 origin wins."
+public_value_downside_scenario,1367,advance_probability_plus_threshold_amount,Show probability and threshold euro magnitude together; reject a probability-weighted expected-loss or ROI label.
+contract_continuity_horizon,1504,advance_probability_plus_scheduled_commitment,Show stay probability beside scheduled wages beyond 36 months; do not multiply them into expected wage loss.
+club_salary_structure,1395,advance_when_matched,Show known-panel percentile/share with a public-data completeness warning.
+overall_contract_score,0,reject,No single score passed Phase 5 and financially translated modules remain intentionally separate.
+bettor_use_case,0,reject_out_of_scope,"Multi-season extension outcomes are not match, odds, or betting-market predictions."

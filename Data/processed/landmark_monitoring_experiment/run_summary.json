@@ -1,0 +1,31 @@
+{
+  "bootstrap_repetitions": 5000,
+  "build_checks": 13,
+  "build_checks_passed": 13,
+  "decisions": {
+    "year2_opportunity_share": "validated_monitoring_increment",
+    "year2_underutilization_10pct": "validated_monitoring_increment",
+    "year2_underutilization_25pct": "validated_monitoring_increment",
+    "year2_value_downside_10pct": "validated_monitoring_increment",
+    "year2_value_downside_25pct": "validated_monitoring_increment",
+    "year2_value_downside_50pct": "promising_but_uncertain",
+    "year2_value_log_ratio": "validated_monitoring_increment"
+  },
+  "evaluation_years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "market_value_cohort_rows": 2632,
+  "market_value_unique_players": 1730,
+  "origins": [
+    "origin_2019",
+    "origin_2020",
+    "origin_2021",
+    "origin_2022"
+  ],
+  "protected_v1_outputs_unchanged": true,
+  "utilization_cohort_rows": 667,
+  "utilization_unique_players": 551
+}

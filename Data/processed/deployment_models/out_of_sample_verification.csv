@@ -1,0 +1,30 @@
+﻿check,observed,expected,passed,notes
+oos_eligible_rows_year2_opportunity_share,81.0,>0,True,"Rows with signed_year>2023, the diagnostic's own cohort filter, and (Phase 2) a matured horizon."
+oos_eligible_rows_sustained_contribution_probability_24m,81.0,>0,True,"Rows with signed_year>2023, the diagnostic's own cohort filter, and (Phase 2) a matured horizon."
+oos_eligible_rows_any_outbound_24m,323.0,>0,True,"Rows with signed_year>2023, the diagnostic's own cohort filter, and (Phase 2) a matured horizon."
+oos_eligible_rows_any_outbound_36m,196.0,>0,True,"Rows with signed_year>2023, the diagnostic's own cohort filter, and (Phase 2) a matured horizon."
+oos_eligible_rows_permanent_outbound_24m,291.0,>0,True,"Rows with signed_year>2023, the diagnostic's own cohort filter, and (Phase 2) a matured horizon."
+oos_eligible_rows_value_log_ratio_12m,381.0,>0,True,"Rows with signed_year>2023, the diagnostic's own cohort filter, and (Phase 2) a matured horizon."
+oos_eligible_rows_value_log_ratio_24m,41.0,>0,True,"Rows with signed_year>2023, the diagnostic's own cohort filter, and (Phase 2) a matured horizon."
+oos_eligible_rows_downside_25pct_12m,381.0,>0,True,"Rows with signed_year>2023, the diagnostic's own cohort filter, and (Phase 2) a matured horizon."
+oos_eligible_rows_downside_25pct_24m,41.0,>0,True,"Rows with signed_year>2023, the diagnostic's own cohort filter, and (Phase 2) a matured horizon."
+oos_eligible_rows_downside_50pct_24m,41.0,>0,True,"Rows with signed_year>2023, the diagnostic's own cohort filter, and (Phase 2) a matured horizon."
+oos_eligible_rows_annual_wage,547.0,>0,True,"Rows with signed_year>2023, the diagnostic's own cohort filter, and (Phase 2) a matured horizon."
+oos_eligible_rows_contract_duration,547.0,>0,True,"Rows with signed_year>2023, the diagnostic's own cohort filter, and (Phase 2) a matured horizon."
+oos_eligible_rows_fixed_wage_commitment,547.0,>0,True,"Rows with signed_year>2023, the diagnostic's own cohort filter, and (Phase 2) a matured horizon."
+oos_eligible_rows_wage_to_market_value,541.0,>0,True,"Rows with signed_year>2023, the diagnostic's own cohort filter, and (Phase 2) a matured horizon."
+oos_scoring_completed_without_exception,547.0,547,True,scored=547 refused=0 of 547.
+oos_signal_year2_opportunity_share,0.542,>=0.2 (published pooled reference: 0.512),True,n=80 genuinely unseen held-out extensions (signed_year>2023).
+oos_signal_sustained_contribution_probability_24m,0.7932,>=0.55 (published pooled reference: 0.788),True,n=80 genuinely unseen held-out extensions (signed_year>2023).
+oos_signal_any_outbound_24m,0.6786,>=0.55 (published pooled reference: 0.71),True,n=319 genuinely unseen held-out extensions (signed_year>2023).
+oos_coverage_any_outbound_36m,193.0,>=15,True,"n=193 but the held-out cohort has only one observed outcome class; AUC is undefined, reporting Brier only."
+oos_signal_permanent_outbound_24m,0.6523,>=0.55 (published pooled reference: 0.696),True,n=289 genuinely unseen held-out extensions (signed_year>2023).
+oos_signal_value_log_ratio_12m,0.5949,>=0.2 (published pooled reference: 0.607),True,n=381 genuinely unseen held-out extensions (signed_year>2023).
+oos_signal_value_log_ratio_24m,0.629,>=0.2 (published pooled reference: 0.663),True,n=41 genuinely unseen held-out extensions (signed_year>2023).
+oos_signal_downside_25pct_12m,0.7944,>=0.55 (published pooled reference: 0.781),True,n=381 genuinely unseen held-out extensions (signed_year>2023).
+oos_signal_downside_25pct_24m,0.901,>=0.55 (published pooled reference: 0.821),True,n=41 genuinely unseen held-out extensions (signed_year>2023).
+oos_signal_downside_50pct_24m,0.7487,>=0.55 (published pooled reference: 0.805),True,n=41 genuinely unseen held-out extensions (signed_year>2023).
+oos_signal_annual_wage,0.8952,>=0.2 (published pooled reference: 0.889),True,n=541 genuinely unseen held-out extensions (signed_year>2023).
+oos_signal_contract_duration,0.6789,>=0.2 (published pooled reference: 0.659),True,n=541 genuinely unseen held-out extensions (signed_year>2023).
+oos_signal_fixed_wage_commitment,0.8397,>=0.2 (published pooled reference: 0.832),True,n=541 genuinely unseen held-out extensions (signed_year>2023).
+oos_signal_wage_to_market_value,0.8914,>=0.2 (published pooled reference: 0.835),True,n=541 genuinely unseen held-out extensions (signed_year>2023).

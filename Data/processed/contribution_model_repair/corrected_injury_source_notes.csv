@@ -1,0 +1,2 @@
+﻿raw_rows,unique_player_names,unique_players_linked,row_level_player_link_rate,club_date_aware_mismatches_excluded,duplicate_spells_dropped,clean_spell_rows,declared_coverage_start,correction_note
+15603,4080,3982,0.9801320258924566,868,856,13569,2020-07-01,"coverage is now decided by independent Big-Five appearance history, never by injury-dataset membership; club consistency is now date-aware (+/-400 days), not whole-career."

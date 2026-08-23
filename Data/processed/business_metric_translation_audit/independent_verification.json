@@ -1,0 +1,10 @@
+{
+  "checks_passed": 26,
+  "checks_total": 26,
+  "all_checks_passed": true,
+  "historical_out_of_time_profiles": 1560,
+  "low_contribution_exposure_rows": 908,
+  "low_contribution_exposure_decision": "advance_risk_weighted_exposure_proxy",
+  "historical_business_cases": 12,
+  "profile_scope": "incumbent_club_extension"
+}

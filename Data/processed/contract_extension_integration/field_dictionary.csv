@@ -1,0 +1,393 @@
+﻿field,dtype,information_role,non_null_rows,definition
+capology_extension_event_id,object,identifier_or_provenance,2805,Unique extension anchor ID from the cleaned Capology layer.
+extension_natural_key,object,identifier_or_provenance,2805,Extension natural key.
+source_file,object,identifier_or_provenance,2805,Source file.
+source_relative_path,object,identifier_or_provenance,2805,Source relative path.
+source_row_number,int64,identifier_or_provenance,2805,Source row number.
+source_page_season_x,object,identifier_or_provenance,2805,Source page season x.
+source_page_season_start_year,int64,identifier_or_provenance,2805,Source page season start year.
+source_page_season_end_year,int64,identifier_or_provenance,2805,Source page season end year.
+league,object,identifier_or_provenance,2805,League.
+competition_id,object,identifier_or_provenance,2805,Competition id.
+player_name,object,identifier_or_provenance,2805,Player name.
+player_name_normalized_x,object,identifier_or_provenance,2805,Player name normalized x.
+capology_player_url,object,identifier_or_provenance,2805,Capology player url.
+capology_player_url_suffix,int64,identifier_or_provenance,2805,Capology player url suffix.
+capology_suffix_name_conflict_in_file,bool,identifier_or_provenance,2805,Capology suffix name conflict in file.
+club_name,object,identifier_or_provenance,2805,Club name.
+club_name_normalized,object,identifier_or_provenance,2805,Club name normalized.
+capology_club_slug,object,identifier_or_provenance,2805,Capology club slug.
+capology_club_url,object,identifier_or_provenance,2805,Capology club url.
+canonical_player_id,Int64,identifier_or_provenance,2726,Canonical player id.
+canonical_player_name,object,identifier_or_provenance,2726,Canonical player name.
+player_link_method,object,identifier_or_provenance,2805,Player link method.
+date_of_birth,object,identifier_or_provenance,2726,Date of birth.
+canonical_position,object,identifier_or_provenance,2726,Canonical position.
+canonical_sub_position,object,identifier_or_provenance,2726,Canonical sub position.
+canonical_club_id_x,Int64,identifier_or_provenance,2805,Canonical club id x.
+canonical_club_name,object,identifier_or_provenance,2805,Canonical club name.
+club_link_method,object,identifier_or_provenance,2805,Club link method.
+weekly_gross_eur,float64,identifier_or_provenance,2708,Weekly gross eur.
+annual_gross_eur,float64,available_at_signing_predictor,2708,Annual gross eur.
+weekly_net_eur,float64,identifier_or_provenance,2708,Weekly net eur.
+annual_net_eur,float64,identifier_or_provenance,2708,Annual net eur.
+bonus_gross_eur,float64,identifier_or_provenance,1139,Bonus gross eur.
+bonus_net_eur,float64,identifier_or_provenance,1139,Bonus net eur.
+total_gross_eur,float64,identifier_or_provenance,2708,Total gross eur.
+total_net_eur,float64,identifier_or_provenance,2708,Total net eur.
+adjusted_total_gross_eur,float64,identifier_or_provenance,2708,Adjusted total gross eur.
+adjusted_total_net_eur,float64,identifier_or_provenance,2708,Adjusted total net eur.
+contract_total_gross_eur,float64,available_at_signing_predictor,2708,Contract total gross eur.
+contract_total_net_eur,float64,available_at_signing_predictor,2708,Contract total net eur.
+reported_zero_salary,bool,identifier_or_provenance,2805,Reported zero salary.
+zero_salary_fields,object,identifier_or_provenance,97,Zero salary fields.
+bonus_available,bool,identifier_or_provenance,2805,Bonus available.
+signed_date,datetime64[ns],identifier_or_provenance,2805,Signed date.
+expiration_date,datetime64[ns],identifier_or_provenance,2805,Expiration date.
+reported_years,int64,available_at_signing_predictor,2805,Reported years.
+exact_duration_days,int64,available_at_signing_predictor,2805,Exact duration days.
+exact_duration_years,float64,available_at_signing_predictor,2805,Exact duration years.
+event_season_start_year,int64,identifier_or_provenance,2805,Event season start year.
+event_season,object,identifier_or_provenance,2805,Event season.
+pre_completed_season_start_year,Int64,available_at_signing_predictor,2805,Latest season whose standardized June 30 end is no later than signing date.
+first_full_post_season_start_year,Int64,post_signing_outcome_or_censoring,2805,First full season beginning on or after signing under a July 1 convention.
+age_at_signing,float64,available_at_signing_predictor,2726,Age at signing.
+reported_minus_exact_years,float64,identifier_or_provenance,2805,Reported minus exact years.
+contract_total_recomputed_eur,float64,available_at_signing_predictor,2708,Contract total recomputed eur.
+contract_total_arithmetic_difference_eur,float64,available_at_signing_predictor,2708,Contract total arithmetic difference eur.
+capology_suffix_name_conflict,bool,identifier_or_provenance,2805,Capology suffix name conflict.
+entity_key,object,identifier_or_provenance,2805,Entity key.
+club_key,object,identifier_or_provenance,2805,Club key.
+signed_key,object,identifier_or_provenance,2805,Signed key.
+source_row_count,int64,identifier_or_provenance,2805,Source row count.
+source_files,object,identifier_or_provenance,2805,Source files.
+source_rows,object,identifier_or_provenance,2805,Source rows.
+source_page_seasons,object,identifier_or_provenance,2805,Source page seasons.
+observed_capology_suffixes,int64,identifier_or_provenance,2805,Observed capology suffixes.
+reported_years_min,int64,available_at_signing_predictor,2805,Reported years min.
+reported_years_max,int64,available_at_signing_predictor,2805,Reported years max.
+duplicate_event_rows_collapsed,bool,identifier_or_provenance,2805,Duplicate event rows collapsed.
+reported_years_conflict,bool,available_at_signing_predictor,2805,Reported years conflict.
+event_outside_source_page_season,bool,identifier_or_provenance,2805,Event outside source page season.
+player_name_normalized_y,object,identifier_or_provenance,2805,Player name normalized y.
+canonical_club_id_y,Int64,identifier_or_provenance,2805,Canonical club id y.
+source_page_season_y,object,identifier_or_provenance,2805,Source page season y.
+capology_salary_id,object,identifier_or_provenance,2162,Capology salary id.
+salary_panel_annual_gross_eur,float64,available_at_signing_predictor,2148,Salary panel annual gross eur.
+salary_panel_total_gross_eur,float64,available_at_signing_predictor,2148,Salary panel total gross eur.
+club_salary_known_players,float64,available_at_signing_predictor,2162,Club salary known players.
+club_salary_total_known_eur,float64,available_at_signing_predictor,2162,Club salary total known eur.
+club_salary_median_eur,float64,available_at_signing_predictor,2162,Club salary median eur.
+club_salary_mean_eur,float64,available_at_signing_predictor,2162,Club salary mean eur.
+club_salary_percentile,float64,available_at_signing_predictor,2148,Player annual gross salary percentile within the Capology club-page-season roster.
+club_salary_share_known,float64,available_at_signing_predictor,2148,Club salary share known.
+salary_panel_active,object,available_at_signing_predictor,2162,Salary panel active.
+salary_panel_loan,object,available_at_signing_predictor,2162,Salary panel loan.
+salary_panel_verification_badge,object,available_at_signing_predictor,2162,Salary panel verification badge.
+salary_panel_match,bool,available_at_signing_predictor,2805,Salary panel match.
+extension_vs_panel_annual_difference_eur,float64,identifier_or_provenance,2137,Extension vs panel annual difference eur.
+prior_season_salary_annual_gross_eur,float64,identifier_or_provenance,1825,Prior season salary annual gross eur.
+salary_change_from_prior_pct,float64,available_at_signing_predictor,1808,Salary change from prior pct.
+pre1_canonical_performance_id,object,available_at_signing_predictor,1922,Pre1 canonical performance id.
+pre1_data_coverage_tier,object,available_at_signing_predictor,1922,Pre1 data coverage tier.
+pre1_advanced_features_available,object,available_at_signing_predictor,1922,Pre1 advanced features available.
+pre1_basic_model_eligible_450_minutes,object,available_at_signing_predictor,1922,Pre1 basic model eligible 450 minutes.
+pre1_canonical_matches_played,float64,available_at_signing_predictor,1922,Pre1 canonical matches played.
+pre1_canonical_minutes_played,float64,available_at_signing_predictor,1748,Pre1 canonical minutes played.
+pre1_canonical_goals,float64,available_at_signing_predictor,1916,Pre1 canonical goals.
+pre1_canonical_assists,float64,available_at_signing_predictor,1916,Pre1 canonical assists.
+pre1_canonical_yellow_cards,float64,available_at_signing_predictor,1915,Pre1 canonical yellow cards.
+pre1_canonical_red_cards,float64,available_at_signing_predictor,1915,Pre1 canonical red cards.
+pre1_canonical_goals_per90,float64,available_at_signing_predictor,1748,Pre1 canonical goals per90.
+pre1_canonical_assists_per90,float64,available_at_signing_predictor,1748,Pre1 canonical assists per90.
+pre1_current_starts,float64,available_at_signing_predictor,1921,Pre1 current starts.
+pre1_current_start_pct,float64,available_at_signing_predictor,1921,Pre1 current start pct.
+pre1_fbref_season_end_date,object,available_at_signing_predictor,1666,Pre1 fbref season end date.
+pre1_fbref_expected_goals,float64,available_at_signing_predictor,1666,Pre1 fbref expected goals.
+pre1_fbref_non_penalty_expected_goals,float64,available_at_signing_predictor,1666,Pre1 fbref non penalty expected goals.
+pre1_fbref_progressive_carries,float64,available_at_signing_predictor,1666,Pre1 fbref progressive carries.
+pre1_fbref_progressive_passes,float64,available_at_signing_predictor,1666,Pre1 fbref progressive passes.
+pre1_fbref_tackles_won,float64,available_at_signing_predictor,1666,Pre1 fbref tackles won.
+pre1_fbref_interceptions,float64,available_at_signing_predictor,1666,Pre1 fbref interceptions.
+pre1_fbref_clearances,float64,available_at_signing_predictor,1666,Pre1 fbref clearances.
+pre1_fbref_pass_completion_pct,float64,available_at_signing_predictor,1666,Pre1 fbref pass completion pct.
+pre1_fbref_key_passes,float64,available_at_signing_predictor,1666,Pre1 fbref key passes.
+pre1_fbref_total_shots,float64,available_at_signing_predictor,1666,Pre1 fbref total shots.
+pre1_fbref_aerial_duels_won_pct,float64,available_at_signing_predictor,1666,Pre1 fbref aerial duels won pct.
+pre1_fbref_shot_creating_actions_per90,float64,available_at_signing_predictor,1666,Pre1 fbref shot creating actions per90.
+pre1_fbref_goal_creating_actions_per90,float64,available_at_signing_predictor,1666,Pre1 fbref goal creating actions per90.
+pre1_same_club_domestic_performance_available,bool,available_at_signing_predictor,2805,Pre1 same club domestic performance available.
+pre1_basic_minutes_available,bool,available_at_signing_predictor,2805,Pre1 basic minutes available.
+pre1_advanced_features_available_flag,bool,available_at_signing_predictor,2805,Pre1 advanced features available flag.
+pre2_canonical_performance_id,object,available_at_signing_predictor,1355,Pre2 canonical performance id.
+pre2_data_coverage_tier,object,available_at_signing_predictor,1355,Pre2 data coverage tier.
+pre2_advanced_features_available,object,available_at_signing_predictor,1355,Pre2 advanced features available.
+pre2_basic_model_eligible_450_minutes,object,available_at_signing_predictor,1355,Pre2 basic model eligible 450 minutes.
+pre2_canonical_matches_played,float64,available_at_signing_predictor,1355,Pre2 canonical matches played.
+pre2_canonical_minutes_played,float64,available_at_signing_predictor,1207,Pre2 canonical minutes played.
+pre2_canonical_goals,float64,available_at_signing_predictor,1350,Pre2 canonical goals.
+pre2_canonical_assists,float64,available_at_signing_predictor,1351,Pre2 canonical assists.
+pre2_canonical_yellow_cards,float64,available_at_signing_predictor,1350,Pre2 canonical yellow cards.
+pre2_canonical_red_cards,float64,available_at_signing_predictor,1350,Pre2 canonical red cards.
+pre2_canonical_goals_per90,float64,available_at_signing_predictor,1206,Pre2 canonical goals per90.
+pre2_canonical_assists_per90,float64,available_at_signing_predictor,1207,Pre2 canonical assists per90.
+pre2_current_starts,float64,available_at_signing_predictor,1352,Pre2 current starts.
+pre2_current_start_pct,float64,available_at_signing_predictor,1352,Pre2 current start pct.
+pre2_fbref_season_end_date,object,available_at_signing_predictor,990,Pre2 fbref season end date.
+pre2_fbref_expected_goals,float64,available_at_signing_predictor,990,Pre2 fbref expected goals.
+pre2_fbref_non_penalty_expected_goals,float64,available_at_signing_predictor,990,Pre2 fbref non penalty expected goals.
+pre2_fbref_progressive_carries,float64,available_at_signing_predictor,990,Pre2 fbref progressive carries.
+pre2_fbref_progressive_passes,float64,available_at_signing_predictor,990,Pre2 fbref progressive passes.
+pre2_fbref_tackles_won,float64,available_at_signing_predictor,990,Pre2 fbref tackles won.
+pre2_fbref_interceptions,float64,available_at_signing_predictor,990,Pre2 fbref interceptions.
+pre2_fbref_clearances,float64,available_at_signing_predictor,990,Pre2 fbref clearances.
+pre2_fbref_pass_completion_pct,float64,available_at_signing_predictor,990,Pre2 fbref pass completion pct.
+pre2_fbref_key_passes,float64,available_at_signing_predictor,990,Pre2 fbref key passes.
+pre2_fbref_total_shots,float64,available_at_signing_predictor,990,Pre2 fbref total shots.
+pre2_fbref_aerial_duels_won_pct,float64,available_at_signing_predictor,990,Pre2 fbref aerial duels won pct.
+pre2_fbref_shot_creating_actions_per90,float64,available_at_signing_predictor,990,Pre2 fbref shot creating actions per90.
+pre2_fbref_goal_creating_actions_per90,float64,available_at_signing_predictor,990,Pre2 fbref goal creating actions per90.
+pre2_same_club_domestic_performance_available,bool,available_at_signing_predictor,2805,Pre2 same club domestic performance available.
+pre2_basic_minutes_available,bool,available_at_signing_predictor,2805,Pre2 basic minutes available.
+pre2_advanced_features_available_flag,bool,available_at_signing_predictor,2805,Pre2 advanced features available flag.
+pre3_canonical_performance_id,object,available_at_signing_predictor,976,Pre3 canonical performance id.
+pre3_data_coverage_tier,object,available_at_signing_predictor,976,Pre3 data coverage tier.
+pre3_advanced_features_available,object,available_at_signing_predictor,976,Pre3 advanced features available.
+pre3_basic_model_eligible_450_minutes,object,available_at_signing_predictor,976,Pre3 basic model eligible 450 minutes.
+pre3_canonical_matches_played,float64,available_at_signing_predictor,976,Pre3 canonical matches played.
+pre3_canonical_minutes_played,float64,available_at_signing_predictor,865,Pre3 canonical minutes played.
+pre3_canonical_goals,float64,available_at_signing_predictor,972,Pre3 canonical goals.
+pre3_canonical_assists,float64,available_at_signing_predictor,973,Pre3 canonical assists.
+pre3_canonical_yellow_cards,float64,available_at_signing_predictor,973,Pre3 canonical yellow cards.
+pre3_canonical_red_cards,float64,available_at_signing_predictor,973,Pre3 canonical red cards.
+pre3_canonical_goals_per90,float64,available_at_signing_predictor,864,Pre3 canonical goals per90.
+pre3_canonical_assists_per90,float64,available_at_signing_predictor,865,Pre3 canonical assists per90.
+pre3_current_starts,float64,available_at_signing_predictor,976,Pre3 current starts.
+pre3_current_start_pct,float64,available_at_signing_predictor,976,Pre3 current start pct.
+pre3_fbref_season_end_date,object,available_at_signing_predictor,610,Pre3 fbref season end date.
+pre3_fbref_expected_goals,float64,available_at_signing_predictor,610,Pre3 fbref expected goals.
+pre3_fbref_non_penalty_expected_goals,float64,available_at_signing_predictor,610,Pre3 fbref non penalty expected goals.
+pre3_fbref_progressive_carries,float64,available_at_signing_predictor,610,Pre3 fbref progressive carries.
+pre3_fbref_progressive_passes,float64,available_at_signing_predictor,610,Pre3 fbref progressive passes.
+pre3_fbref_tackles_won,float64,available_at_signing_predictor,610,Pre3 fbref tackles won.
+pre3_fbref_interceptions,float64,available_at_signing_predictor,610,Pre3 fbref interceptions.
+pre3_fbref_clearances,float64,available_at_signing_predictor,610,Pre3 fbref clearances.
+pre3_fbref_pass_completion_pct,float64,available_at_signing_predictor,610,Pre3 fbref pass completion pct.
+pre3_fbref_key_passes,float64,available_at_signing_predictor,610,Pre3 fbref key passes.
+pre3_fbref_total_shots,float64,available_at_signing_predictor,610,Pre3 fbref total shots.
+pre3_fbref_aerial_duels_won_pct,float64,available_at_signing_predictor,610,Pre3 fbref aerial duels won pct.
+pre3_fbref_shot_creating_actions_per90,float64,available_at_signing_predictor,610,Pre3 fbref shot creating actions per90.
+pre3_fbref_goal_creating_actions_per90,float64,available_at_signing_predictor,610,Pre3 fbref goal creating actions per90.
+pre3_same_club_domestic_performance_available,bool,available_at_signing_predictor,2805,Pre3 same club domestic performance available.
+pre3_basic_minutes_available,bool,available_at_signing_predictor,2805,Pre3 basic minutes available.
+pre3_advanced_features_available_flag,bool,available_at_signing_predictor,2805,Pre3 advanced features available flag.
+post_y1_canonical_performance_id,object,post_signing_outcome_or_censoring,1930,Post y1 canonical performance id.
+post_y1_data_coverage_tier,object,post_signing_outcome_or_censoring,1930,Post y1 data coverage tier.
+post_y1_advanced_features_available,object,post_signing_outcome_or_censoring,1930,Post y1 advanced features available.
+post_y1_basic_model_eligible_450_minutes,object,post_signing_outcome_or_censoring,1930,Post y1 basic model eligible 450 minutes.
+post_y1_canonical_matches_played,float64,post_signing_outcome_or_censoring,1930,Post y1 canonical matches played.
+post_y1_canonical_minutes_played,float64,post_signing_outcome_or_censoring,1777,Post y1 canonical minutes played.
+post_y1_canonical_goals,float64,post_signing_outcome_or_censoring,1921,Post y1 canonical goals.
+post_y1_canonical_assists,float64,post_signing_outcome_or_censoring,1921,Post y1 canonical assists.
+post_y1_canonical_yellow_cards,float64,post_signing_outcome_or_censoring,1920,Post y1 canonical yellow cards.
+post_y1_canonical_red_cards,float64,post_signing_outcome_or_censoring,1920,Post y1 canonical red cards.
+post_y1_canonical_goals_per90,float64,post_signing_outcome_or_censoring,1777,Post y1 canonical goals per90.
+post_y1_canonical_assists_per90,float64,post_signing_outcome_or_censoring,1777,Post y1 canonical assists per90.
+post_y1_current_starts,float64,post_signing_outcome_or_censoring,1929,Post y1 current starts.
+post_y1_current_start_pct,float64,post_signing_outcome_or_censoring,1929,Post y1 current start pct.
+post_y1_fbref_season_end_date,object,post_signing_outcome_or_censoring,1223,Post y1 fbref season end date.
+post_y1_fbref_expected_goals,float64,post_signing_outcome_or_censoring,1223,Post y1 fbref expected goals.
+post_y1_fbref_non_penalty_expected_goals,float64,post_signing_outcome_or_censoring,1223,Post y1 fbref non penalty expected goals.
+post_y1_fbref_progressive_carries,float64,post_signing_outcome_or_censoring,1223,Post y1 fbref progressive carries.
+post_y1_fbref_progressive_passes,float64,post_signing_outcome_or_censoring,1223,Post y1 fbref progressive passes.
+post_y1_fbref_tackles_won,float64,post_signing_outcome_or_censoring,1223,Post y1 fbref tackles won.
+post_y1_fbref_interceptions,float64,post_signing_outcome_or_censoring,1223,Post y1 fbref interceptions.
+post_y1_fbref_clearances,float64,post_signing_outcome_or_censoring,1223,Post y1 fbref clearances.
+post_y1_fbref_pass_completion_pct,float64,post_signing_outcome_or_censoring,1223,Post y1 fbref pass completion pct.
+post_y1_fbref_key_passes,float64,post_signing_outcome_or_censoring,1223,Post y1 fbref key passes.
+post_y1_fbref_total_shots,float64,post_signing_outcome_or_censoring,1223,Post y1 fbref total shots.
+post_y1_fbref_aerial_duels_won_pct,float64,post_signing_outcome_or_censoring,1223,Post y1 fbref aerial duels won pct.
+post_y1_fbref_shot_creating_actions_per90,float64,post_signing_outcome_or_censoring,1223,Post y1 fbref shot creating actions per90.
+post_y1_fbref_goal_creating_actions_per90,float64,post_signing_outcome_or_censoring,1223,Post y1 fbref goal creating actions per90.
+post_y1_same_club_domestic_performance_available,bool,post_signing_outcome_or_censoring,2805,Post y1 same club domestic performance available.
+post_y1_basic_minutes_available,bool,post_signing_outcome_or_censoring,2805,Post y1 basic minutes available.
+post_y1_advanced_features_available_flag,bool,post_signing_outcome_or_censoring,2805,Post y1 advanced features available flag.
+post_y2_canonical_performance_id,object,post_signing_outcome_or_censoring,1176,Post y2 canonical performance id.
+post_y2_data_coverage_tier,object,post_signing_outcome_or_censoring,1176,Post y2 data coverage tier.
+post_y2_advanced_features_available,object,post_signing_outcome_or_censoring,1176,Post y2 advanced features available.
+post_y2_basic_model_eligible_450_minutes,object,post_signing_outcome_or_censoring,1176,Post y2 basic model eligible 450 minutes.
+post_y2_canonical_matches_played,float64,post_signing_outcome_or_censoring,1176,Post y2 canonical matches played.
+post_y2_canonical_minutes_played,float64,post_signing_outcome_or_censoring,1071,Post y2 canonical minutes played.
+post_y2_canonical_goals,float64,post_signing_outcome_or_censoring,1166,Post y2 canonical goals.
+post_y2_canonical_assists,float64,post_signing_outcome_or_censoring,1166,Post y2 canonical assists.
+post_y2_canonical_yellow_cards,float64,post_signing_outcome_or_censoring,1166,Post y2 canonical yellow cards.
+post_y2_canonical_red_cards,float64,post_signing_outcome_or_censoring,1166,Post y2 canonical red cards.
+post_y2_canonical_goals_per90,float64,post_signing_outcome_or_censoring,1071,Post y2 canonical goals per90.
+post_y2_canonical_assists_per90,float64,post_signing_outcome_or_censoring,1071,Post y2 canonical assists per90.
+post_y2_current_starts,float64,post_signing_outcome_or_censoring,1176,Post y2 current starts.
+post_y2_current_start_pct,float64,post_signing_outcome_or_censoring,1176,Post y2 current start pct.
+post_y2_fbref_season_end_date,object,post_signing_outcome_or_censoring,734,Post y2 fbref season end date.
+post_y2_fbref_expected_goals,float64,post_signing_outcome_or_censoring,734,Post y2 fbref expected goals.
+post_y2_fbref_non_penalty_expected_goals,float64,post_signing_outcome_or_censoring,734,Post y2 fbref non penalty expected goals.
+post_y2_fbref_progressive_carries,float64,post_signing_outcome_or_censoring,734,Post y2 fbref progressive carries.
+post_y2_fbref_progressive_passes,float64,post_signing_outcome_or_censoring,734,Post y2 fbref progressive passes.
+post_y2_fbref_tackles_won,float64,post_signing_outcome_or_censoring,734,Post y2 fbref tackles won.
+post_y2_fbref_interceptions,float64,post_signing_outcome_or_censoring,734,Post y2 fbref interceptions.
+post_y2_fbref_clearances,float64,post_signing_outcome_or_censoring,734,Post y2 fbref clearances.
+post_y2_fbref_pass_completion_pct,float64,post_signing_outcome_or_censoring,734,Post y2 fbref pass completion pct.
+post_y2_fbref_key_passes,float64,post_signing_outcome_or_censoring,734,Post y2 fbref key passes.
+post_y2_fbref_total_shots,float64,post_signing_outcome_or_censoring,734,Post y2 fbref total shots.
+post_y2_fbref_aerial_duels_won_pct,float64,post_signing_outcome_or_censoring,734,Post y2 fbref aerial duels won pct.
+post_y2_fbref_shot_creating_actions_per90,float64,post_signing_outcome_or_censoring,734,Post y2 fbref shot creating actions per90.
+post_y2_fbref_goal_creating_actions_per90,float64,post_signing_outcome_or_censoring,734,Post y2 fbref goal creating actions per90.
+post_y2_same_club_domestic_performance_available,bool,post_signing_outcome_or_censoring,2805,Post y2 same club domestic performance available.
+post_y2_basic_minutes_available,bool,post_signing_outcome_or_censoring,2805,Post y2 basic minutes available.
+post_y2_advanced_features_available_flag,bool,post_signing_outcome_or_censoring,2805,Post y2 advanced features available flag.
+post_y3_canonical_performance_id,object,post_signing_outcome_or_censoring,653,Post y3 canonical performance id.
+post_y3_data_coverage_tier,object,post_signing_outcome_or_censoring,653,Post y3 data coverage tier.
+post_y3_advanced_features_available,object,post_signing_outcome_or_censoring,653,Post y3 advanced features available.
+post_y3_basic_model_eligible_450_minutes,object,post_signing_outcome_or_censoring,653,Post y3 basic model eligible 450 minutes.
+post_y3_canonical_matches_played,float64,post_signing_outcome_or_censoring,653,Post y3 canonical matches played.
+post_y3_canonical_minutes_played,float64,post_signing_outcome_or_censoring,604,Post y3 canonical minutes played.
+post_y3_canonical_goals,float64,post_signing_outcome_or_censoring,652,Post y3 canonical goals.
+post_y3_canonical_assists,float64,post_signing_outcome_or_censoring,652,Post y3 canonical assists.
+post_y3_canonical_yellow_cards,float64,post_signing_outcome_or_censoring,652,Post y3 canonical yellow cards.
+post_y3_canonical_red_cards,float64,post_signing_outcome_or_censoring,652,Post y3 canonical red cards.
+post_y3_canonical_goals_per90,float64,post_signing_outcome_or_censoring,604,Post y3 canonical goals per90.
+post_y3_canonical_assists_per90,float64,post_signing_outcome_or_censoring,604,Post y3 canonical assists per90.
+post_y3_current_starts,float64,post_signing_outcome_or_censoring,653,Post y3 current starts.
+post_y3_current_start_pct,float64,post_signing_outcome_or_censoring,653,Post y3 current start pct.
+post_y3_fbref_season_end_date,object,post_signing_outcome_or_censoring,378,Post y3 fbref season end date.
+post_y3_fbref_expected_goals,float64,post_signing_outcome_or_censoring,378,Post y3 fbref expected goals.
+post_y3_fbref_non_penalty_expected_goals,float64,post_signing_outcome_or_censoring,378,Post y3 fbref non penalty expected goals.
+post_y3_fbref_progressive_carries,float64,post_signing_outcome_or_censoring,378,Post y3 fbref progressive carries.
+post_y3_fbref_progressive_passes,float64,post_signing_outcome_or_censoring,378,Post y3 fbref progressive passes.
+post_y3_fbref_tackles_won,float64,post_signing_outcome_or_censoring,378,Post y3 fbref tackles won.
+post_y3_fbref_interceptions,float64,post_signing_outcome_or_censoring,378,Post y3 fbref interceptions.
+post_y3_fbref_clearances,float64,post_signing_outcome_or_censoring,378,Post y3 fbref clearances.
+post_y3_fbref_pass_completion_pct,float64,post_signing_outcome_or_censoring,378,Post y3 fbref pass completion pct.
+post_y3_fbref_key_passes,float64,post_signing_outcome_or_censoring,378,Post y3 fbref key passes.
+post_y3_fbref_total_shots,float64,post_signing_outcome_or_censoring,378,Post y3 fbref total shots.
+post_y3_fbref_aerial_duels_won_pct,float64,post_signing_outcome_or_censoring,378,Post y3 fbref aerial duels won pct.
+post_y3_fbref_shot_creating_actions_per90,float64,post_signing_outcome_or_censoring,378,Post y3 fbref shot creating actions per90.
+post_y3_fbref_goal_creating_actions_per90,float64,post_signing_outcome_or_censoring,378,Post y3 fbref goal creating actions per90.
+post_y3_same_club_domestic_performance_available,bool,post_signing_outcome_or_censoring,2805,Post y3 same club domestic performance available.
+post_y3_basic_minutes_available,bool,post_signing_outcome_or_censoring,2805,Post y3 basic minutes available.
+post_y3_advanced_features_available_flag,bool,post_signing_outcome_or_censoring,2805,Post y3 advanced features available flag.
+pre365_window_start_exclusive_or_inclusive,datetime64[ns],available_at_signing_predictor,2805,Pre365 window start exclusive or inclusive.
+pre365_window_end_exclusive_or_inclusive,datetime64[ns],available_at_signing_predictor,2805,Pre365 window end exclusive or inclusive.
+pre365_window_fully_observable,bool,available_at_signing_predictor,2805,Pre365 window fully observable.
+pre365_same_club_all_competition_games,int64,available_at_signing_predictor,2805,Pre365 same club all competition games.
+pre365_same_club_all_competition_appearances,int64,available_at_signing_predictor,2805,Pre365 same club all competition appearances.
+pre365_same_club_all_competition_minutes,float64,available_at_signing_predictor,2805,Pre365 same club all competition minutes.
+pre365_same_club_all_competition_goals,float64,available_at_signing_predictor,2805,Pre365 same club all competition goals.
+pre365_same_club_all_competition_assists,float64,available_at_signing_predictor,2805,Pre365 same club all competition assists.
+pre365_same_club_same_big5_competition_games,int64,available_at_signing_predictor,2805,Pre365 same club same big5 competition games.
+pre365_same_club_same_big5_competition_appearances,int64,available_at_signing_predictor,2805,Pre365 same club same big5 competition appearances.
+pre365_same_club_same_big5_competition_minutes,float64,available_at_signing_predictor,2805,Pre365 same club same big5 competition minutes.
+pre365_window_evidence_eligible_10_club_games,bool,available_at_signing_predictor,2805,Pre365 window evidence eligible 10 club games.
+pre365_same_club_all_competition_opportunity_share,float64,available_at_signing_predictor,2779,Minutes divided by 90 times club games during the 365 days strictly before signing.
+pre365_same_club_all_competition_appearance_rate,float64,available_at_signing_predictor,2779,Pre365 same club all competition appearance rate.
+pre365_same_club_same_big5_competition_opportunity_share,float64,available_at_signing_predictor,2689,Pre365 same club same big5 competition opportunity share.
+post_y1_window_start_exclusive_or_inclusive,datetime64[ns],post_signing_outcome_or_censoring,2805,Post y1 window start exclusive or inclusive.
+post_y1_window_end_exclusive_or_inclusive,datetime64[ns],post_signing_outcome_or_censoring,2805,Post y1 window end exclusive or inclusive.
+post_y1_window_fully_observable,bool,post_signing_outcome_or_censoring,2805,Post y1 window fully observable.
+post_y1_same_club_all_competition_games,int64,post_signing_outcome_or_censoring,2805,Post y1 same club all competition games.
+post_y1_same_club_all_competition_appearances,int64,post_signing_outcome_or_censoring,2805,Post y1 same club all competition appearances.
+post_y1_same_club_all_competition_minutes,float64,post_signing_outcome_or_censoring,2805,Post y1 same club all competition minutes.
+post_y1_same_club_all_competition_goals,float64,post_signing_outcome_or_censoring,2805,Post y1 same club all competition goals.
+post_y1_same_club_all_competition_assists,float64,post_signing_outcome_or_censoring,2805,Post y1 same club all competition assists.
+post_y1_same_club_same_big5_competition_games,int64,post_signing_outcome_or_censoring,2805,Post y1 same club same big5 competition games.
+post_y1_same_club_same_big5_competition_appearances,int64,post_signing_outcome_or_censoring,2805,Post y1 same club same big5 competition appearances.
+post_y1_same_club_same_big5_competition_minutes,float64,post_signing_outcome_or_censoring,2805,Post y1 same club same big5 competition minutes.
+post_y1_window_evidence_eligible_10_club_games,bool,post_signing_outcome_or_censoring,2805,Post y1 window evidence eligible 10 club games.
+post_y1_same_club_all_competition_opportunity_share,float64,post_signing_outcome_or_censoring,2794,Post y1 same club all competition opportunity share.
+post_y1_same_club_all_competition_appearance_rate,float64,post_signing_outcome_or_censoring,2794,Post y1 same club all competition appearance rate.
+post_y1_same_club_same_big5_competition_opportunity_share,float64,post_signing_outcome_or_censoring,2769,Post y1 same club same big5 competition opportunity share.
+post_y2_window_start_exclusive_or_inclusive,datetime64[ns],post_signing_outcome_or_censoring,2805,Post y2 window start exclusive or inclusive.
+post_y2_window_end_exclusive_or_inclusive,datetime64[ns],post_signing_outcome_or_censoring,2805,Post y2 window end exclusive or inclusive.
+post_y2_window_fully_observable,bool,post_signing_outcome_or_censoring,2805,Post y2 window fully observable.
+post_y2_same_club_all_competition_games,int64,post_signing_outcome_or_censoring,2805,Post y2 same club all competition games.
+post_y2_same_club_all_competition_appearances,int64,post_signing_outcome_or_censoring,2805,Post y2 same club all competition appearances.
+post_y2_same_club_all_competition_minutes,float64,post_signing_outcome_or_censoring,2805,Post y2 same club all competition minutes.
+post_y2_same_club_all_competition_goals,float64,post_signing_outcome_or_censoring,2805,Post y2 same club all competition goals.
+post_y2_same_club_all_competition_assists,float64,post_signing_outcome_or_censoring,2805,Post y2 same club all competition assists.
+post_y2_same_club_same_big5_competition_games,int64,post_signing_outcome_or_censoring,2805,Post y2 same club same big5 competition games.
+post_y2_same_club_same_big5_competition_appearances,int64,post_signing_outcome_or_censoring,2805,Post y2 same club same big5 competition appearances.
+post_y2_same_club_same_big5_competition_minutes,float64,post_signing_outcome_or_censoring,2805,Post y2 same club same big5 competition minutes.
+post_y2_window_evidence_eligible_10_club_games,bool,post_signing_outcome_or_censoring,2805,Post y2 window evidence eligible 10 club games.
+post_y2_same_club_all_competition_opportunity_share,float64,post_signing_outcome_or_censoring,2694,Post y2 same club all competition opportunity share.
+post_y2_same_club_all_competition_appearance_rate,float64,post_signing_outcome_or_censoring,2694,Post y2 same club all competition appearance rate.
+post_y2_same_club_same_big5_competition_opportunity_share,float64,post_signing_outcome_or_censoring,2503,Post y2 same club same big5 competition opportunity share.
+post_y3_window_start_exclusive_or_inclusive,datetime64[ns],post_signing_outcome_or_censoring,2805,Post y3 window start exclusive or inclusive.
+post_y3_window_end_exclusive_or_inclusive,datetime64[ns],post_signing_outcome_or_censoring,2805,Post y3 window end exclusive or inclusive.
+post_y3_window_fully_observable,bool,post_signing_outcome_or_censoring,2805,Post y3 window fully observable.
+post_y3_same_club_all_competition_games,int64,post_signing_outcome_or_censoring,2805,Post y3 same club all competition games.
+post_y3_same_club_all_competition_appearances,int64,post_signing_outcome_or_censoring,2805,Post y3 same club all competition appearances.
+post_y3_same_club_all_competition_minutes,float64,post_signing_outcome_or_censoring,2805,Post y3 same club all competition minutes.
+post_y3_same_club_all_competition_goals,float64,post_signing_outcome_or_censoring,2805,Post y3 same club all competition goals.
+post_y3_same_club_all_competition_assists,float64,post_signing_outcome_or_censoring,2805,Post y3 same club all competition assists.
+post_y3_same_club_same_big5_competition_games,int64,post_signing_outcome_or_censoring,2805,Post y3 same club same big5 competition games.
+post_y3_same_club_same_big5_competition_appearances,int64,post_signing_outcome_or_censoring,2805,Post y3 same club same big5 competition appearances.
+post_y3_same_club_same_big5_competition_minutes,float64,post_signing_outcome_or_censoring,2805,Post y3 same club same big5 competition minutes.
+post_y3_window_evidence_eligible_10_club_games,bool,post_signing_outcome_or_censoring,2805,Post y3 window evidence eligible 10 club games.
+post_y3_same_club_all_competition_opportunity_share,float64,post_signing_outcome_or_censoring,2284,Post y3 same club all competition opportunity share.
+post_y3_same_club_all_competition_appearance_rate,float64,post_signing_outcome_or_censoring,2284,Post y3 same club all competition appearance rate.
+post_y3_same_club_same_big5_competition_opportunity_share,float64,post_signing_outcome_or_censoring,2060,Post y3 same club same big5 competition opportunity share.
+at_signing_target_date,datetime64[ns],available_at_signing_predictor,2805,At signing target date.
+at_signing_nearest_valuation_date,datetime64[ns],available_at_signing_predictor,2659,At signing nearest valuation date.
+at_signing_market_value_eur,float64,available_at_signing_predictor,2659,At signing market value eur.
+at_signing_gap_days,float64,available_at_signing_predictor,2659,At signing gap days.
+at_signing_horizon_fully_observable,bool,available_at_signing_predictor,2805,At signing horizon fully observable.
+at_signing_strict_timing_eligible,bool,available_at_signing_predictor,2805,At signing strict timing eligible.
+at_signing_change_from_signing_eur,float64,available_at_signing_predictor,0,At signing change from signing eur.
+at_signing_change_from_signing_pct,float64,available_at_signing_predictor,0,At signing change from signing pct.
+post12_target_date,datetime64[ns],post_signing_outcome_or_censoring,2805,Post12 target date.
+post12_nearest_valuation_date,datetime64[ns],post_signing_outcome_or_censoring,2726,Post12 nearest valuation date.
+post12_market_value_eur,float64,post_signing_outcome_or_censoring,2726,Post12 market value eur.
+post12_gap_days,float64,post_signing_outcome_or_censoring,2726,Post12 gap days.
+post12_horizon_fully_observable,bool,post_signing_outcome_or_censoring,2805,Post12 horizon fully observable.
+post12_strict_timing_eligible,bool,post_signing_outcome_or_censoring,2805,Post12 strict timing eligible.
+post12_change_from_signing_eur,float64,post_signing_outcome_or_censoring,2659,Post12 change from signing eur.
+post12_change_from_signing_pct,float64,post_signing_outcome_or_censoring,2659,Post12 change from signing pct.
+post24_target_date,datetime64[ns],post_signing_outcome_or_censoring,2805,Post24 target date.
+post24_nearest_valuation_date,datetime64[ns],post_signing_outcome_or_censoring,2726,Post24 nearest valuation date.
+post24_market_value_eur,float64,post_signing_outcome_or_censoring,2726,Post24 market value eur.
+post24_gap_days,float64,post_signing_outcome_or_censoring,2726,Post24 gap days.
+post24_horizon_fully_observable,bool,post_signing_outcome_or_censoring,2805,Post24 horizon fully observable.
+post24_strict_timing_eligible,bool,post_signing_outcome_or_censoring,2805,Post24 strict timing eligible.
+post24_change_from_signing_eur,float64,post_signing_outcome_or_censoring,2659,Post24 change from signing eur.
+post24_change_from_signing_pct,float64,post_signing_outcome_or_censoring,2659,Post24 change from signing pct.
+post36_target_date,datetime64[ns],post_signing_outcome_or_censoring,2805,Post36 target date.
+post36_nearest_valuation_date,datetime64[ns],post_signing_outcome_or_censoring,2726,Post36 nearest valuation date.
+post36_market_value_eur,float64,post_signing_outcome_or_censoring,2726,Post36 market value eur.
+post36_gap_days,float64,post_signing_outcome_or_censoring,2726,Post36 gap days.
+post36_horizon_fully_observable,bool,post_signing_outcome_or_censoring,2805,Post36 horizon fully observable.
+post36_strict_timing_eligible,bool,post_signing_outcome_or_censoring,2805,Post36 strict timing eligible.
+post36_change_from_signing_eur,float64,post_signing_outcome_or_censoring,2659,Post36 change from signing eur.
+post36_change_from_signing_pct,float64,post_signing_outcome_or_censoring,2659,Post36 change from signing pct.
+first_any_outbound_event_id,object,post_signing_outcome_or_censoring,1962,First any outbound event id.
+first_any_outbound_date,datetime64[ns],post_signing_outcome_or_censoring,1962,First any outbound date.
+first_any_outbound_to_club_id,float64,post_signing_outcome_or_censoring,1962,First any outbound to club id.
+first_any_outbound_type,object,post_signing_outcome_or_censoring,1946,First any outbound type.
+first_any_outbound_days,float64,post_signing_outcome_or_censoring,1962,First any outbound days.
+first_any_outbound_fee_eur,float64,post_signing_outcome_or_censoring,1949,First any outbound fee eur.
+first_any_outbound_fee_status,object,post_signing_outcome_or_censoring,1962,First any outbound fee status.
+first_permanent_outbound_event_id,object,post_signing_outcome_or_censoring,1753,First permanent outbound event id.
+first_permanent_outbound_date,datetime64[ns],post_signing_outcome_or_censoring,1753,First permanent outbound date.
+first_permanent_outbound_to_club_id,float64,post_signing_outcome_or_censoring,1753,First permanent outbound to club id.
+first_permanent_outbound_type,object,post_signing_outcome_or_censoring,1753,First permanent outbound type.
+first_permanent_outbound_days,float64,post_signing_outcome_or_censoring,1753,First permanent outbound days.
+first_permanent_outbound_fee_eur,float64,post_signing_outcome_or_censoring,1753,First permanent outbound fee eur.
+first_permanent_outbound_fee_status,object,post_signing_outcome_or_censoring,1753,First permanent outbound fee status.
+next_same_club_extension_date,datetime64[ns],post_signing_outcome_or_censoring,521,Next same club extension date.
+next_same_club_extension_days,float64,post_signing_outcome_or_censoring,521,Next same club extension days.
+outbound_horizon_365d_observable,bool,post_signing_outcome_or_censoring,2805,Outbound horizon 365d observable.
+uninterrupted_same_club_spell_365d,bool,post_signing_outcome_or_censoring,2805,Uninterrupted same club spell 365d.
+no_permanent_outbound_365d,bool,post_signing_outcome_or_censoring,2805,No permanent outbound 365d.
+outbound_horizon_730d_observable,bool,post_signing_outcome_or_censoring,2805,Outbound horizon 730d observable.
+uninterrupted_same_club_spell_730d,object,post_signing_outcome_or_censoring,2492,No later outbound event from the extension club within 730 days; loans count as interruptions and this is not contract termination.
+no_permanent_outbound_730d,object,post_signing_outcome_or_censoring,2492,No canonically classified permanent outbound from the extension club within 730 days.
+outbound_horizon_1095d_observable,bool,post_signing_outcome_or_censoring,2805,Outbound horizon 1095d observable.
+uninterrupted_same_club_spell_1095d,object,post_signing_outcome_or_censoring,2094,Uninterrupted same club spell 1095d.
+no_permanent_outbound_1095d,object,post_signing_outcome_or_censoring,2094,No permanent outbound 1095d.

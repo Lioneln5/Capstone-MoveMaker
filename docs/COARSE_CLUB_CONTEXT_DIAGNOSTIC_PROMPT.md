@@ -1,6 +1,6 @@
 # MoveMaker — coarse club-context and compatibility diagnostic (large-n signal check)
 
-Read `CODEX.md` section 0A first, then:
+Read the scope-pivot journal and data-readiness audit first, then:
 
 - `docs/DATA_READINESS_AUDIT.md`, especially **Transfermarkt sporting, 24 months, both club contexts**;
 - `Data/processed/transfermarkt_merged/COMPREHENSIVE_MASTER_README.md`;

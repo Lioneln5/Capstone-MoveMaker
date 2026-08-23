@@ -1,0 +1,11 @@
+﻿check,observed,expected,passed,notes
+source_event_ids_unique,0,0,True,One row per extension event.
+annual_wage_cohort,2265,2265,True,Linked positive target cohort.
+contract_duration_cohort,2358,2358,True,Linked positive target cohort.
+fixed_wage_commitment_cohort,2265,2265,True,Linked positive target cohort.
+wage_to_market_value_cohort,2222,2222,True,Linked positive target cohort.
+fixed_commitment_formula,1,1,True,Fixed commitment equals annual gross fixed wage times exact years.
+target_leakage_exclusion,1,1,True,Current terms and their derivatives are not benchmark predictors.
+prediction_key_unique,0,0,True,One prediction per endpoint/origin/model/event.
+interval_ordering,1,1,True,Every empirical interval contains its point benchmark.
+decision_rows,4,4,True,One decision per peer benchmark.

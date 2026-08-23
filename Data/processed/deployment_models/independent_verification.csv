@@ -1,0 +1,14 @@
+﻿check,observed,expected,passed,notes
+sample_size,200,200,True,Stratified across 8 signed years.
+retriever_feature_parity_rate,0.9988,>=0.99,True,3442/3446 field comparisons matched across 200 historical events.
+retriever_parity_no_unexplained_mismatches,0,0,True,Mismatches outside the documented club-salary-panel season-label approximation: none.
+model_artifact_sanity,0,0,True,Failures: none
+model_artifact_count,16,16,True,"16 endpoints: 2 opportunity + 3 survival-horizon + 7 value (added downside_10pct_12m/24m, Tier 2, 2026-08-12) + 4 financial."
+scorer_runs_without_exception,0,0,True,200/200 scored without exception. Failures: none
+ordering_warning_mechanism_correct,392,392,True,"For every scored profile, the threshold/horizon ordering warning fires if and only if the raw model outputs actually disagree."
+in_sample_directional_signal_sustained_contribution,0.7861,>=0.65,True,IN-SAMPLE sanity check only (these signed_year<=2023 rows were part of deployment training) -- n=196. This is NOT a generalization claim; the trustworthy out-of-sample figure remains the diagnostic's own AUC 0.788 (Data/processed/extension_opportunity_diagnostic/).
+refusal_unknown_player_id,scored,scored_but_all_modules_unavailable,True,An unknown canonical_player_id must not fabricate a number for any module; core-feature-missing must gate every one.
+refusal_out_of_scope_league,refused,refused,True,"competition_id='POR1' (outside ['ES1', 'FR1', 'GB1', 'IT1', 'L1']) must refuse outright. Got reason: ""competition_id 'POR1' is outside the modeled Big-Five scope (GB1/ES1/IT1/L1/FR1); Phase 1-4 models have no training support outside it."""
+refusal_missing_core_feature_dob,scored,scored_but_all_modules_unavailable,True,"canonical_player_id=23 has no date_of_birth on file; age_at_signing must be unavailable, gating every module that requires it (all four do)."
+refusal_new_club_incumbency_flag,False,False,True,canonical_player_id=291266 scored against an essentially-arbitrary club_id=20258 it has no appearance history for must surface incumbency_verified=False so the caller can refuse the new-club-acquisition misuse case; this stays a flag rather than a hard block because some genuine pre-debut/academy extensions in real training data also have zero prior appearances (see retriever docstring).
+manifest_artifact_hashes_intact,0,0,True,Every serialized artifact's on-disk hash must match what build_deployment_models.py recorded.

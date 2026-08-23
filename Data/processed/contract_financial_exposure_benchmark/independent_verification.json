@@ -1,0 +1,23 @@
+{
+  "checks_passed": 33,
+  "checks_total": 33,
+  "all_checks_passed": true,
+  "source_extension_events": 2425,
+  "wage_cohort": 2265,
+  "duration_cohort": 2358,
+  "commitment_cohort": 2265,
+  "wage_value_cohort": 2222,
+  "prediction_rows_verified": 36264,
+  "decisions_verified": {
+    "annual_wage": "advance_historical_peer_benchmark",
+    "contract_duration": "advance_historical_peer_benchmark",
+    "fixed_wage_commitment": "advance_historical_peer_benchmark",
+    "wage_to_market_value": "advance_historical_peer_benchmark"
+  },
+  "selected_models_verified": {
+    "annual_wage": "B2_plus_prior_wage",
+    "contract_duration": "B5_compact_nonlinear",
+    "fixed_wage_commitment": "B2_plus_prior_wage",
+    "wage_to_market_value": "B2_plus_prior_wage"
+  }
+}
