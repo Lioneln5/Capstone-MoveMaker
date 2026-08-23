@@ -107,6 +107,7 @@ Data/processed/statsbomb_case_studies/lineups_case_study.csv
 Data/processed/statsbomb_case_studies/team_match_features.csv
 
 # Generated workbook inspection and preview artifacts
+/outputs/
 outputs/**/work/
 outputs/**/.build/
 outputs/**/workbook_build/
@@ -115,6 +116,56 @@ outputs/**/previews/
 outputs/**/*.ndjson
 outputs/**/*.png
 outputs/**/*.mjs
+
+# Public-repository curation: preserve these locally, but publish the
+# maintained scripts and compact evidence rather than generated workbooks,
+# exploratory notebooks, or internal analysis prompts.
+/Notebook/merge_transfer_core_fbref.ipynb
+/docs/COARSE_CLUB_CONTEXT_DIAGNOSTIC_PROMPT.md
+/docs/OPPORTUNITY_TRANSFERABILITY_DECOMPOSITION_PROMPT.md
+
+# Source-derived identity, transfer, and performance tables. Their schemas,
+# summaries, manifests, and verification reports remain public.
+Data/processed/transfermarkt_clean/player_identity_union.csv
+Data/processed/transfermarkt_clean/player_name_observations.csv
+Data/processed/transfermarkt_clean/club_name_observations.csv
+Data/processed/transfermarkt_clean/club_dimension_historical.csv
+Data/processed/integration_crosswalks/player_identity_crosswalk.csv
+Data/processed/integration_crosswalks/club_identity_crosswalk.csv
+Data/processed/integration_crosswalks/fbref_player_crosswalk.csv
+Data/processed/integration_crosswalks/fbref_player_candidate_review.csv
+Data/processed/integration_crosswalks/competition_crosswalk.csv
+Data/processed/integration_crosswalks/fbref_club_season_crosswalk.csv
+Data/processed/integration_crosswalks/season_crosswalk.csv
+Data/processed/integration_crosswalks/fbref_club_crosswalk.csv
+Data/processed/transfermarkt_merged/transfer_core.csv
+Data/processed/fbref_2017_2024_clean/fbref_player_squad_season_clean.csv
+Data/processed/fbref_2017_2024_clean/by_season/
+Data/processed/transfer_cohort_master.csv
+Data/processed/player_season_features.csv
+Data/processed/model_dataset.csv
+Data/processed/model_dataset_with_injuries.csv
+Data/processed/player_crosswalk.csv
+Data/processed/club_dimension_union.csv
+Data/processed/football_datalake_audit/transfer_conflicts.csv
+Data/processed/canonical_integration/transfer_conflict_review.csv
+Data/processed/canonical_integration/valuation_conflict_review.csv
+Data/processed/canonical_performance/unresolved_fbref_performance_review.csv
+Data/processed/statsbomb_case_studies/match_catalog.csv
+Data/processed/statsbomb_case_studies/statsbomb_player_crosswalk_candidates.csv
+Data/processed/statsbomb_case_studies/statsbomb_club_crosswalk_candidates.csv
+Data/processed/statsbomb_case_studies/team_period_features.csv
+Data/processed/statsbomb_case_studies/transfer_case_study_candidates.csv
+Data/processed/compatibility_targets/transfer_compatibility_targets.csv
+
+# Regenerable row-level predictions, hyperparameter searches, bootstrap
+# draws, modeling matrices, and cohort-membership tables.
+Data/processed/**/*predictions*.csv
+Data/processed/**/*tuning*.csv
+Data/processed/**/*bootstrap*.csv
+Data/processed/**/*model_matrix*.csv
+Data/processed/**/*membership*.csv
+Data/processed/compatibility_targets/transfer_compatibility_strict_features.csv
 
 # Local presentation scratch files and superseded deck iterations. The curated
 # final export and script live under slides/final/.

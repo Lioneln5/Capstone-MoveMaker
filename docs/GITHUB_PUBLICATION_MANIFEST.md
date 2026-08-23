@@ -28,6 +28,8 @@ MoveMaker’s GitHub repository should make the research, product architecture, 
 - Row-level targets, model matrices, predictions, tuning grids, bootstrap samples, and generated case-card tables unless a specific compact example is needed.
 - Candidate/rejected serialized models, temporary backups, caches, `.DS_Store`, and copied `.git` directories.
 - Superseded PowerPoint/PDF drafts, render diagnostics, inspect logs, and temporary slide assets.
+- Generated audit workbooks and `outputs/` exports; their maintained builders and compact evidence remain public.
+- Internal prompt drafts and uncurated exploratory notebooks superseded by the analytical journal and maintained scripts.
 
 ## Evidence standard
 
