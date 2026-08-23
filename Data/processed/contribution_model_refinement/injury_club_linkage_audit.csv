@@ -1,0 +1,146 @@
+﻿club_key,club,canonical_club_id,canonical_club_name,club_link_method,row_count_in_source,linked
+bayernmunich,Bayern Munich,27.0,Bayern Munich,fbref_accepted_exact_alias,349,True
+rbleipzig,RB Leipzig,23826.0,RB Leipzig,fbref_accepted_exact_alias,183,True
+borussiadortmund,Borussia Dortmund,16.0,Borussia Dortmund,reviewed_exact_capology_alias,349,True
+vflwolfsburg,VfL Wolfsburg,,,unresolved,157,False
+eintrachtfrankfurt,Eintracht Frankfurt,24.0,Eintracht Frankfurt,reviewed_exact_capology_alias,247,True
+bayerleverkusen,Bayer Leverkusen,15.0,Bayer 04 Leverkusen,reviewed_exact_capology_alias,173,True
+unionberlin,Union Berlin,89.0,1.FC Union Berlin,fbref_accepted_exact_alias,201,True
+borussiamonchengladbach,Borussia Monchengladbach,,,unresolved,184,False
+scfreiburg,SC Freiburg,,,unresolved,139,False
+vfbstuttgart,VfB Stuttgart,,,unresolved,262,False
+hoffenheim,Hoffenheim,533.0,TSG 1899 Hoffenheim,fbref_accepted_exact_alias,281,True
+mainz05,Mainz 05,39.0,1.FSV Mainz 05,fbref_accepted_exact_alias,112,True
+herthabsc,Hertha BSC,44.0,Hertha BSC,fbref_accepted_exact_alias,137,True
+augsburg,Augsburg,167.0,FC Augsburg,fbref_accepted_exact_alias,214,True
+fckoln,FC Koln,,,unresolved,92,False
+werderbremen,Werder Bremen,86.0,SV Werder Bremen,fbref_accepted_exact_alias,203,True
+schalke04,Schalke 04,33.0,FC Schalke 04,fbref_accepted_exact_alias,64,True
+arminiabielefeld,Arminia Bielefeld,10.0,Arminia Bielefeld,reviewed_exact_capology_alias,69,True
+vflbochum,VfL Bochum,,,unresolved,121,False
+greutherfurth,Greuther Furth,65.0,SpVgg Greuther Fürth,fbref_accepted_exact_alias,48,True
+freiburg,Freiburg,60.0,SC Freiburg,fbref_accepted_exact_alias,29,True
+wolfsburg,Wolfsburg,82.0,VfL Wolfsburg,fbref_accepted_exact_alias,34,True
+mainz,Mainz,39.0,1.FSV Mainz 05,reviewed_exact_capology_alias,30,True
+borussiamanchengladbach,Borussia MÃ¶nchengladbach,,,unresolved,62,False
+kaln,KÃ¶ln,,,unresolved,37,False
+stuttgart,Stuttgart,79.0,VfB Stuttgart,fbref_accepted_exact_alias,60,True
+herthaberlin,Hertha Berlin,44.0,Hertha BSC,reviewed_exact_capology_alias,40,True
+schalke,Schalke,,,unresolved,49,False
+bochum,Bochum,80.0,VfL Bochum,fbref_accepted_exact_alias,41,True
+fcheidenheim,FC Heidenheim,,,unresolved,45,False
+darmstadt,Darmstadt,105.0,SV Darmstadt 98,reviewed_exact_capology_alias,39,True
+fcstpauli,FC St. Pauli,,,unresolved,41,False
+holsteinkiel,Holstein Kiel,,,unresolved,2,False
+manchestercity,Manchester City,281.0,Manchester City,fbref_accepted_exact_alias,150,True
+manchesterunited,Manchester United,985.0,Manchester United,reviewed_exact_capology_alias,193,True
+liverpool,Liverpool,31.0,Liverpool FC,fbref_accepted_exact_alias,184,True
+chelsea,Chelsea,631.0,Chelsea FC,fbref_accepted_exact_alias,245,True
+leicestercity,Leicester City,1003.0,Leicester City,fbref_accepted_exact_alias,98,True
+westham,West Ham,379.0,West Ham United,fbref_accepted_exact_alias,83,True
+tottenham,Tottenham,148.0,Tottenham Hotspur,fbref_accepted_exact_alias,157,True
+arsenal,Arsenal,11.0,Arsenal FC,fbref_accepted_exact_alias,173,True
+leedsunited,Leeds United,399.0,Leeds United,fbref_accepted_exact_alias,58,True
+everton,Everton,29.0,Everton FC,fbref_accepted_exact_alias,134,True
+astonvilla,Aston Villa,405.0,Aston Villa,fbref_accepted_exact_alias,146,True
+newcastleunited,Newcastle United,,,unresolved,192,False
+wolves,Wolves,543.0,Wolverhampton Wanderers,fbref_accepted_exact_alias,109,True
+crystalpalace,Crystal Palace,873.0,Crystal Palace,fbref_accepted_exact_alias,85,True
+southampton,Southampton,180.0,Southampton FC,fbref_accepted_exact_alias,106,True
+brighton,Brighton,1237.0,Brighton & Hove Albion,fbref_accepted_exact_alias,179,True
+burnley,Burnley,1132.0,Burnley FC,fbref_accepted_exact_alias,77,True
+fulham,Fulham,931.0,Fulham FC,fbref_accepted_exact_alias,118,True
+westbrom,West Brom,984.0,West Bromwich Albion,fbref_accepted_exact_alias,21,True
+sheffieldunited,Sheffield United,350.0,Sheffield United,reviewed_exact_capology_alias,40,True
+brentford,Brentford,1148.0,Brentford FC,fbref_accepted_exact_alias,79,True
+watford,Watford,1010.0,Watford FC,fbref_accepted_exact_alias,13,True
+norwichcity,Norwich City,1123.0,Norwich City,fbref_accepted_exact_alias,13,True
+bournemouth,Bournemouth,989.0,AFC Bournemouth,fbref_accepted_exact_alias,74,True
+nottinghamforest,Nottingham Forest,703.0,Nottingham Forest,reviewed_exact_capology_alias,63,True
+lutontown,Luton Town,1031.0,Luton Town,fbref_accepted_exact_alias,21,True
+ipswichtown,Ipswich Town,677.0,Ipswich Town,reviewed_exact_capology_alias,38,True
+tottenhamhotspur,Tottenham Hotspur,,,unresolved,50,False
+westhamunited,West Ham United,,,unresolved,15,False
+atleticomadrid,Atletico Madrid,13.0,Atlético de Madrid,fbref_accepted_exact_alias,160,True
+realmadrid,Real Madrid,418.0,Real Madrid,fbref_accepted_exact_alias,278,True
+barcelona,Barcelona,131.0,FC Barcelona,fbref_accepted_exact_alias,271,True
+sevilla,Sevilla,368.0,Sevilla FC,fbref_accepted_exact_alias,161,True
+realsociedad,Real Sociedad,681.0,Real Sociedad,fbref_accepted_exact_alias,155,True
+villarreal,Villarreal,1050.0,Villarreal CF,fbref_accepted_exact_alias,85,True
+celtavigo,Celta Vigo,940.0,Celta de Vigo,fbref_accepted_exact_alias,75,True
+granada,Granada,16795.0,Granada CF,fbref_accepted_exact_alias,54,True
+athleticbilbao,Athletic Bilbao,,,unresolved,196,False
+osasuna,Osasuna,331.0,CA Osasuna,fbref_accepted_exact_alias,93,True
+cadiz,Cadiz,2687.0,Cádiz CF,fbref_accepted_exact_alias,26,True
+valencia,Valencia,1049.0,Valencia CF,fbref_accepted_exact_alias,110,True
+levante,Levante,3368.0,Levante UD,fbref_accepted_exact_alias,12,True
+getafe,Getafe,3709.0,Getafe CF,fbref_accepted_exact_alias,56,True
+deportivoalaves,Deportivo Alaves,,,unresolved,64,False
+elche,Elche,1531.0,Elche CF,fbref_accepted_exact_alias,14,True
+huesca,Huesca,5358.0,SD Huesca,fbref_accepted_exact_alias,5,True
+valladolid,Valladolid,366.0,Real Valladolid CF,fbref_accepted_exact_alias,62,True
+eibar,Eibar,1533.0,SD Eibar,fbref_accepted_exact_alias,8,True
+realbetis,Real Betis,150.0,Real Betis Balompié,reviewed_exact_capology_alias,110,True
+rayovallecano,Rayo Vallecano,367.0,Rayo Vallecano,fbref_accepted_exact_alias,17,True
+espanyol,Espanyol,714.0,RCD Espanyol Barcelona,fbref_accepted_exact_alias,20,True
+mallorca,Mallorca,237.0,RCD Mallorca,fbref_accepted_exact_alias,45,True
+girona,Girona,12321.0,Girona FC,fbref_accepted_exact_alias,47,True
+almeria,Almeria,3302.0,UD Almería,fbref_accepted_exact_alias,17,True
+laspalmas,Las Palmas,472.0,UD Las Palmas,fbref_accepted_exact_alias,21,True
+leganes,Leganes,1244.0,CD Leganés,fbref_accepted_exact_alias,6,True
+lille,Lille,1082.0,LOSC Lille,fbref_accepted_exact_alias,74,True
+parissaintgermain,Paris Saint-Germain,,,unresolved,216,False
+monaco,Monaco,162.0,AS Monaco,fbref_accepted_exact_alias,189,True
+lyon,Lyon,1041.0,Olympique Lyon,fbref_accepted_exact_alias,147,True
+marseille,Marseille,244.0,Olympique Marseille,fbref_accepted_exact_alias,172,True
+lens,Lens,826.0,RC Lens,fbref_accepted_exact_alias,166,True
+rennes,Rennes,273.0,Stade Rennais FC,fbref_accepted_exact_alias,130,True
+montpellier,Montpellier,969.0,Montpellier HSC,fbref_accepted_exact_alias,115,True
+nice,Nice,417.0,OGC Nice,fbref_accepted_exact_alias,139,True
+metz,Metz,347.0,FC Metz,fbref_accepted_exact_alias,47,True
+angers,Angers,1420.0,Angers SCO,fbref_accepted_exact_alias,81,True
+brest,Brest,3911.0,Stade Brestois 29,fbref_accepted_exact_alias,68,True
+reims,Reims,1421.0,Stade Reims,fbref_accepted_exact_alias,109,True
+bordeaux,Bordeaux,40.0,FC Girondins Bordeaux,fbref_accepted_exact_alias,65,True
+strasbourg,Strasbourg,667.0,RC Strasbourg Alsace,fbref_accepted_exact_alias,93,True
+lorient,Lorient,1158.0,FC Lorient,fbref_accepted_exact_alias,72,True
+saintetienne,Saint-Etienne,618.0,AS Saint-Étienne,fbref_accepted_exact_alias,81,True
+nantes,Nantes,995.0,FC Nantes,fbref_accepted_exact_alias,113,True
+nimes,Nimes,1160.0,Nîmes Olympique,fbref_accepted_exact_alias,22,True
+dijon,Dijon,2969.0,Dijon FCO,fbref_accepted_exact_alias,13,True
+troyes,Troyes,1095.0,ESTAC Troyes,fbref_accepted_exact_alias,29,True
+clermont,Clermont,3524.0,Clermont Foot 63,reviewed_exact_capology_alias,18,True
+toulouse,Toulouse,415.0,FC Toulouse,fbref_accepted_exact_alias,40,True
+ajaccio,Ajaccio,1147.0,AC Ajaccio,fbref_accepted_exact_alias,29,True
+auxerre,Auxerre,290.0,AJ Auxerre,fbref_accepted_exact_alias,47,True
+lehavre,Le Havre,738.0,Le Havre AC,fbref_accepted_exact_alias,55,True
+inter,Inter,46.0,Inter Milan,fbref_accepted_exact_alias,232,True
+acmilan,AC Milan,5.0,AC Milan,reviewed_exact_capology_alias,242,True
+atalanta,Atalanta,800.0,Atalanta BC,fbref_accepted_exact_alias,223,True
+juventus,Juventus,506.0,Juventus FC,fbref_accepted_exact_alias,327,True
+napoli,Napoli,6195.0,SSC Napoli,fbref_accepted_exact_alias,263,True
+lazio,Lazio,398.0,SS Lazio,fbref_accepted_exact_alias,229,True
+roma,Roma,12.0,AS Roma,fbref_accepted_exact_alias,199,True
+sassuolo,Sassuolo,6574.0,US Sassuolo,fbref_accepted_exact_alias,110,True
+sampdoria,Sampdoria,1038.0,UC Sampdoria,fbref_accepted_exact_alias,105,True
+hellasverona,Hellas Verona,276.0,Hellas Verona,fbref_accepted_exact_alias,180,True
+bologna,Bologna,1025.0,Bologna FC 1909,fbref_accepted_exact_alias,173,True
+udinese,Udinese,410.0,Udinese Calcio,fbref_accepted_exact_alias,149,True
+fiorentina,Fiorentina,430.0,ACF Fiorentina,fbref_accepted_exact_alias,208,True
+genoa,Genoa,252.0,Genoa CFC,fbref_accepted_exact_alias,182,True
+spezia,Spezia,3522.0,Spezia Calcio,fbref_accepted_exact_alias,117,True
+torino,Torino,416.0,Torino FC,fbref_accepted_exact_alias,239,True
+cagliari,Cagliari,1390.0,Cagliari Calcio,fbref_accepted_exact_alias,174,True
+benevento,Benevento,4171.0,Benevento Calcio,fbref_accepted_exact_alias,8,True
+parma,Parma,130.0,Parma Calcio 1913,fbref_accepted_exact_alias,114,True
+crotone,Crotone,4083.0,FC Crotone,fbref_accepted_exact_alias,1,True
+empoli,Empoli,749.0,FC Empoli,fbref_accepted_exact_alias,109,True
+salernitana,Salernitana,380.0,US Salernitana 1919,fbref_accepted_exact_alias,97,True
+venezia,Venezia,607.0,Venezia FC,fbref_accepted_exact_alias,78,True
+lecce,Lecce,1005.0,US Lecce,fbref_accepted_exact_alias,71,True
+cremonese,Cremonese,2239.0,US Cremonese,fbref_accepted_exact_alias,30,True
+monza,Monza,2919.0,AC Monza,fbref_accepted_exact_alias,101,True
+asroma,AS Roma,,,unresolved,55,False
+frosinone,Frosinone,8970.0,Frosinone Calcio,fbref_accepted_exact_alias,22,True
+verona,Verona,,,unresolved,28,False
+como,Como,1047.0,Como 1907,reviewed_exact_capology_alias,31,True

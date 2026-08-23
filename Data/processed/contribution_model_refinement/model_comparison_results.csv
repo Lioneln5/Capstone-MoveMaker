@@ -1,0 +1,22 @@
+﻿endpoint,window,comparison,baseline,candidate,evaluation_years,evaluation_rows,mean_loss_improvement,origin_wins,origin_count,cluster_count,cluster_ci_lower_95,cluster_ci_upper_95,cluster_probability_candidate_better
+sustained_meaningful_contribution,pooled_four,R1_vs_R0_injury_only,R0_baseline_M5,R1_injury,2020 | 2021 | 2022 | 2023,929,-0.005213116208943679,2,4,832,-0.011937661099643414,0.0017094761858578653,0.069
+sustained_meaningful_contribution,pooled_four,R2_vs_R0_elite_only,R0_baseline_M5,R2_elite,2020 | 2021 | 2022 | 2023,929,0.002189029393460027,3,4,832,-0.000998682222339448,0.005298553940440535,0.9102
+sustained_meaningful_contribution,pooled_four,R3_vs_R0_injury_and_elite,R0_baseline_M5,R3_injury_elite,2020 | 2021 | 2022 | 2023,929,-0.004189017466223674,3,4,832,-0.010682806602066719,0.002328297964386871,0.1144
+sustained_meaningful_contribution,pooled_four,R4_vs_R0_compact,R0_baseline_M5,R4_compact,2020 | 2021 | 2022 | 2023,929,0.0021109065672308253,3,4,832,-0.003026791647464959,0.007351360675018123,0.7894
+sustained_meaningful_contribution,pooled_four,R3_vs_R1_elite_increment,R1_injury,R3_injury_elite,2020 | 2021 | 2022 | 2023,929,0.001024098742720005,4,4,832,6.250990410379395e-05,0.0019792127878752474,0.9816
+sustained_meaningful_contribution,pooled_four,R3_vs_R2_injury_increment,R2_elite,R3_injury_elite,2020 | 2021 | 2022 | 2023,929,-0.006378046859683702,2,4,832,-0.013132017971079515,0.00020468034210347069,0.029
+sustained_meaningful_contribution,pooled_four,R4_vs_R3_compaction_cost,R3_injury_elite,R4_compact,2020 | 2021 | 2022 | 2023,929,0.006299924033454501,3,4,832,0.002238815550732705,0.010647178612971412,0.9978
+sustained_meaningful_contribution,mature_three,R1_vs_R0_injury_only,R0_baseline_M5,R1_injury,2021 | 2022 | 2023,704,-0.00754065288736161,1,3,656,-0.01624061369587504,0.0010326146451513426,0.043
+sustained_meaningful_contribution,mature_three,R2_vs_R0_elite_only,R0_baseline_M5,R2_elite,2021 | 2022 | 2023,704,0.003085450245327614,3,3,656,-0.000975691765374734,0.0071185174884115425,0.9292
+sustained_meaningful_contribution,mature_three,R3_vs_R0_injury_and_elite,R0_baseline_M5,R3_injury_elite,2021 | 2022 | 2023,704,-0.0063032307826451535,2,3,656,-0.014943286243148945,0.0022161643146267652,0.079
+sustained_meaningful_contribution,mature_three,R4_vs_R0_compact,R0_baseline_M5,R4_compact,2021 | 2022 | 2023,704,0.0020048863248489156,2,3,656,-0.004274966444213212,0.008318166901432696,0.7326
+sustained_meaningful_contribution,mature_three,R3_vs_R1_elite_increment,R1_injury,R3_injury_elite,2021 | 2022 | 2023,704,0.0012374221047164581,3,3,656,0.0001312541663323905,0.002340990937824373,0.9856
+sustained_meaningful_contribution,mature_three,R3_vs_R2_injury_increment,R2_elite,R3_injury_elite,2021 | 2022 | 2023,704,-0.00938868102797277,1,3,656,-0.018284511787444727,-0.0011756008289392002,0.0126
+sustained_meaningful_contribution,mature_three,R4_vs_R3_compaction_cost,R3_injury_elite,R4_compact,2021 | 2022 | 2023,704,0.00830811710749407,2,3,656,0.0028449174033984273,0.013938953336312463,0.999
+sustained_meaningful_contribution,terminal_two,R1_vs_R0_injury_only,R0_baseline_M5,R1_injury,2022 | 2023,468,0.003596474706067823,1,2,455,-0.0038151119814163544,0.011107521474196887,0.8192
+sustained_meaningful_contribution,terminal_two,R2_vs_R0_elite_only,R0_baseline_M5,R2_elite,2022 | 2023,468,0.0043285712970700715,2,2,455,-0.001746103035339452,0.010392178861460865,0.9224
+sustained_meaningful_contribution,terminal_two,R3_vs_R0_injury_and_elite,R0_baseline_M5,R3_injury_elite,2022 | 2023,468,0.0040446045940631245,2,2,455,-0.00349184599837566,0.011987224044241008,0.8518
+sustained_meaningful_contribution,terminal_two,R4_vs_R0_compact,R0_baseline_M5,R4_compact,2022 | 2023,468,0.005160821532721816,2,2,455,-0.0008272383078908853,0.011112119538802727,0.9556
+sustained_meaningful_contribution,terminal_two,R3_vs_R1_elite_increment,R1_injury,R3_injury_elite,2022 | 2023,468,0.0004481298879953009,2,2,455,-0.0009213138398844871,0.0017856009741633134,0.746
+sustained_meaningful_contribution,terminal_two,R3_vs_R2_injury_increment,R2_elite,R3_injury_elite,2022 | 2023,468,-0.000283966703006947,1,2,455,-0.008709125895957409,0.00817068231304554,0.4644
+sustained_meaningful_contribution,terminal_two,R4_vs_R3_compaction_cost,R3_injury_elite,R4_compact,2022 | 2023,468,0.0011162169386586924,1,2,455,-0.0032614739454141944,0.005728461053721704,0.6918

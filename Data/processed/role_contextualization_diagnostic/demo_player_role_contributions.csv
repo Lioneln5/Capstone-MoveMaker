@@ -1,0 +1,1201 @@
+player,endpoint,candidate,rank,feature,label,logit_or_coef_contribution,direction
+Jude Bellingham,year2_opportunity_share,R1_remove_scoring,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.1296399290860726,positive
+Jude Bellingham,year2_opportunity_share,R1_remove_scoring,2,log_annual_gross_eur,Current annual wage,-0.1020320693166116,negative
+Jude Bellingham,year2_opportunity_share,R1_remove_scoring,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.053429106741232135,positive
+Jude Bellingham,year2_opportunity_share,R1_remove_scoring,4,pre2_canonical_minutes_played,Minutes played (2 seasons ago),0.03589443975341362,positive
+Jude Bellingham,year2_opportunity_share,R1_remove_scoring,5,canonical_position,Position,0.034913628298121724,positive
+Jude Bellingham,year2_opportunity_share,R1_remove_scoring,bottom_1,log_annual_gross_eur,Current annual wage,-0.1020320693166116,negative
+Jude Bellingham,year2_opportunity_share,R1_remove_scoring,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.029877889040091084,negative
+Jude Bellingham,year2_opportunity_share,R1_remove_scoring,bottom_3,log_market_value_at_signing,Market value,-0.021260467411193893,negative
+Jude Bellingham,year2_opportunity_share,R1_remove_scoring,bottom_4,exact_duration_years,Proposed contract length,-0.015398915068206715,negative
+Jude Bellingham,year2_opportunity_share,R1_remove_scoring,bottom_5,salary_change_from_prior_pct,Wage change vs. prior season,-0.010754573295452612,negative
+Jude Bellingham,year2_opportunity_share,R2_position_relative,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.11997196303377429,positive
+Jude Bellingham,year2_opportunity_share,R2_position_relative,2,log_annual_gross_eur,Current annual wage,-0.09188477290276069,negative
+Jude Bellingham,year2_opportunity_share,R2_position_relative,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.05394467211077897,positive
+Jude Bellingham,year2_opportunity_share,R2_position_relative,4,canonical_position,Position,0.03586406747416352,positive
+Jude Bellingham,year2_opportunity_share,R2_position_relative,5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.034572536888211075,negative
+Jude Bellingham,year2_opportunity_share,R2_position_relative,bottom_1,log_annual_gross_eur,Current annual wage,-0.09188477290276069,negative
+Jude Bellingham,year2_opportunity_share,R2_position_relative,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.034572536888211075,negative
+Jude Bellingham,year2_opportunity_share,R2_position_relative,bottom_3,log_market_value_at_signing,Market value,-0.02270897490561781,negative
+Jude Bellingham,year2_opportunity_share,R2_position_relative,bottom_4,exact_duration_years,Proposed contract length,-0.01611325953435931,negative
+Jude Bellingham,year2_opportunity_share,R2_position_relative,bottom_5,pre1_canonical_goals_per90__role_z,Pre1 canonical goals per90  role z,-0.011321945336049669,negative
+Jude Bellingham,year2_opportunity_share,R3_position_interactions,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.1283152067357757,positive
+Jude Bellingham,year2_opportunity_share,R3_position_interactions,2,log_annual_gross_eur,Current annual wage,-0.0997461447101309,negative
+Jude Bellingham,year2_opportunity_share,R3_position_interactions,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.05240099468092768,positive
+Jude Bellingham,year2_opportunity_share,R3_position_interactions,4,pre2_canonical_assists_per90__x__Midfield,Pre2 canonical assists per90  x  midfield,-0.051136099626396765,negative
+Jude Bellingham,year2_opportunity_share,R3_position_interactions,5,pre1_canonical_goals_per90__x__Midfield,Pre1 canonical goals per90  x  midfield,-0.04471998698579836,negative
+Jude Bellingham,year2_opportunity_share,R3_position_interactions,bottom_1,log_annual_gross_eur,Current annual wage,-0.0997461447101309,negative
+Jude Bellingham,year2_opportunity_share,R3_position_interactions,bottom_2,pre2_canonical_assists_per90__x__Midfield,Pre2 canonical assists per90  x  midfield,-0.051136099626396765,negative
+Jude Bellingham,year2_opportunity_share,R3_position_interactions,bottom_3,pre1_canonical_goals_per90__x__Midfield,Pre1 canonical goals per90  x  midfield,-0.04471998698579836,negative
+Jude Bellingham,year2_opportunity_share,R3_position_interactions,bottom_4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.03181028182096819,negative
+Jude Bellingham,year2_opportunity_share,R3_position_interactions,bottom_5,pre365_assists_per90__x__Midfield,Recent-365d assists per90  x  midfield,-0.020651778255609984,negative
+Jude Bellingham,year2_opportunity_share,R4_compact_role_aware,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.11997196303377429,positive
+Jude Bellingham,year2_opportunity_share,R4_compact_role_aware,2,log_annual_gross_eur,Current annual wage,-0.09188477290276069,negative
+Jude Bellingham,year2_opportunity_share,R4_compact_role_aware,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.05394467211077897,positive
+Jude Bellingham,year2_opportunity_share,R4_compact_role_aware,4,canonical_position,Position,0.03586406747416352,positive
+Jude Bellingham,year2_opportunity_share,R4_compact_role_aware,5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.034572536888211075,negative
+Jude Bellingham,year2_opportunity_share,R4_compact_role_aware,bottom_1,log_annual_gross_eur,Current annual wage,-0.09188477290276069,negative
+Jude Bellingham,year2_opportunity_share,R4_compact_role_aware,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.034572536888211075,negative
+Jude Bellingham,year2_opportunity_share,R4_compact_role_aware,bottom_3,log_market_value_at_signing,Market value,-0.02270897490561781,negative
+Jude Bellingham,year2_opportunity_share,R4_compact_role_aware,bottom_4,exact_duration_years,Proposed contract length,-0.01611325953435931,negative
+Jude Bellingham,year2_opportunity_share,R4_compact_role_aware,bottom_5,pre1_canonical_goals_per90__role_z,Pre1 canonical goals per90  role z,-0.011321945336049669,negative
+Jude Bellingham,any_outbound,R1_remove_scoring,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.35801455750734806,negative
+Jude Bellingham,any_outbound,R1_remove_scoring,2,log_market_value_at_signing,Market value,0.2757471407725607,positive
+Jude Bellingham,any_outbound,R1_remove_scoring,3,league,League,-0.20440152898071987,negative
+Jude Bellingham,any_outbound,R1_remove_scoring,4,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.13304183895905766,negative
+Jude Bellingham,any_outbound,R1_remove_scoring,5,log_annual_gross_eur,Current annual wage,0.13237917866957538,positive
+Jude Bellingham,any_outbound,R1_remove_scoring,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.35801455750734806,negative
+Jude Bellingham,any_outbound,R1_remove_scoring,bottom_2,league,League,-0.20440152898071987,negative
+Jude Bellingham,any_outbound,R1_remove_scoring,bottom_3,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.13304183895905766,negative
+Jude Bellingham,any_outbound,R1_remove_scoring,bottom_4,salary_change_from_prior_pct,Wage change vs. prior season,-0.05211564504986564,negative
+Jude Bellingham,any_outbound,R1_remove_scoring,bottom_5,annual_wage_to_market_value,Proposed wage / market value,-0.02855169932971241,negative
+Jude Bellingham,any_outbound,R2_position_relative,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.3485248920628626,negative
+Jude Bellingham,any_outbound,R2_position_relative,2,log_market_value_at_signing,Market value,0.3068321533800792,positive
+Jude Bellingham,any_outbound,R2_position_relative,3,league,League,-0.20751323154251783,negative
+Jude Bellingham,any_outbound,R2_position_relative,4,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.17150232689629985,negative
+Jude Bellingham,any_outbound,R2_position_relative,5,log_annual_gross_eur,Current annual wage,0.13438795829750028,positive
+Jude Bellingham,any_outbound,R2_position_relative,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.3485248920628626,negative
+Jude Bellingham,any_outbound,R2_position_relative,bottom_2,league,League,-0.20751323154251783,negative
+Jude Bellingham,any_outbound,R2_position_relative,bottom_3,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.17150232689629985,negative
+Jude Bellingham,any_outbound,R2_position_relative,bottom_4,salary_change_from_prior_pct,Wage change vs. prior season,-0.05259770207502567,negative
+Jude Bellingham,any_outbound,R2_position_relative,bottom_5,pre1_canonical_goals_per90__role_pct,Pre1 canonical goals per90  role pct,-0.04035896426861319,negative
+Jude Bellingham,any_outbound,R3_position_interactions,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.35965214521726796,negative
+Jude Bellingham,any_outbound,R3_position_interactions,2,log_market_value_at_signing,Market value,0.24907421036893992,positive
+Jude Bellingham,any_outbound,R3_position_interactions,3,league,League,-0.2022379032670509,negative
+Jude Bellingham,any_outbound,R3_position_interactions,4,log_annual_gross_eur,Current annual wage,0.11589718411611871,positive
+Jude Bellingham,any_outbound,R3_position_interactions,5,pre365_goals_per90__x__Midfield,Recent-365d goals per90  x  midfield,0.110767790038434,positive
+Jude Bellingham,any_outbound,R3_position_interactions,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.35965214521726796,negative
+Jude Bellingham,any_outbound,R3_position_interactions,bottom_2,league,League,-0.2022379032670509,negative
+Jude Bellingham,any_outbound,R3_position_interactions,bottom_3,pre1_canonical_goals_per90__x__Midfield,Pre1 canonical goals per90  x  midfield,-0.08841107892368853,negative
+Jude Bellingham,any_outbound,R3_position_interactions,bottom_4,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.06697984507703304,negative
+Jude Bellingham,any_outbound,R3_position_interactions,bottom_5,salary_change_from_prior_pct,Wage change vs. prior season,-0.05379756980081048,negative
+Jude Bellingham,any_outbound,R4_compact_role_aware,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.35965214521726796,negative
+Jude Bellingham,any_outbound,R4_compact_role_aware,2,log_market_value_at_signing,Market value,0.24907421036893992,positive
+Jude Bellingham,any_outbound,R4_compact_role_aware,3,league,League,-0.2022379032670509,negative
+Jude Bellingham,any_outbound,R4_compact_role_aware,4,log_annual_gross_eur,Current annual wage,0.11589718411611871,positive
+Jude Bellingham,any_outbound,R4_compact_role_aware,5,pre365_goals_per90__x__Midfield,Recent-365d goals per90  x  midfield,0.110767790038434,positive
+Jude Bellingham,any_outbound,R4_compact_role_aware,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.35965214521726796,negative
+Jude Bellingham,any_outbound,R4_compact_role_aware,bottom_2,league,League,-0.2022379032670509,negative
+Jude Bellingham,any_outbound,R4_compact_role_aware,bottom_3,pre1_canonical_goals_per90__x__Midfield,Pre1 canonical goals per90  x  midfield,-0.08841107892368853,negative
+Jude Bellingham,any_outbound,R4_compact_role_aware,bottom_4,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.06697984507703304,negative
+Jude Bellingham,any_outbound,R4_compact_role_aware,bottom_5,salary_change_from_prior_pct,Wage change vs. prior season,-0.05379756980081048,negative
+Jude Bellingham,permanent_outbound,R1_remove_scoring,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.20918131907832402,negative
+Jude Bellingham,permanent_outbound,R1_remove_scoring,2,league,League,-0.20266475550079857,negative
+Jude Bellingham,permanent_outbound,R1_remove_scoring,3,log_market_value_at_signing,Market value,0.10208089154426413,positive
+Jude Bellingham,permanent_outbound,R1_remove_scoring,4,age_at_signing,Age (at signing),-0.08286187715716149,negative
+Jude Bellingham,permanent_outbound,R1_remove_scoring,5,age_at_expiration,Age (at contract end),-0.058794208704404126,negative
+Jude Bellingham,permanent_outbound,R1_remove_scoring,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.20918131907832402,negative
+Jude Bellingham,permanent_outbound,R1_remove_scoring,bottom_2,league,League,-0.20266475550079857,negative
+Jude Bellingham,permanent_outbound,R1_remove_scoring,bottom_3,age_at_signing,Age (at signing),-0.08286187715716149,negative
+Jude Bellingham,permanent_outbound,R1_remove_scoring,bottom_4,age_at_expiration,Age (at contract end),-0.058794208704404126,negative
+Jude Bellingham,permanent_outbound,R1_remove_scoring,bottom_5,annual_wage_to_market_value,Proposed wage / market value,-0.05320321995688347,negative
+Jude Bellingham,permanent_outbound,R2_position_relative,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.20750916431671398,negative
+Jude Bellingham,permanent_outbound,R2_position_relative,2,league,League,-0.2014206595040791,negative
+Jude Bellingham,permanent_outbound,R2_position_relative,3,log_market_value_at_signing,Market value,0.09070895888668451,positive
+Jude Bellingham,permanent_outbound,R2_position_relative,4,age_at_signing,Age (at signing),-0.08285203437691432,negative
+Jude Bellingham,permanent_outbound,R2_position_relative,5,age_at_expiration,Age (at contract end),-0.058830714075628905,negative
+Jude Bellingham,permanent_outbound,R2_position_relative,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.20750916431671398,negative
+Jude Bellingham,permanent_outbound,R2_position_relative,bottom_2,league,League,-0.2014206595040791,negative
+Jude Bellingham,permanent_outbound,R2_position_relative,bottom_3,age_at_signing,Age (at signing),-0.08285203437691432,negative
+Jude Bellingham,permanent_outbound,R2_position_relative,bottom_4,age_at_expiration,Age (at contract end),-0.058830714075628905,negative
+Jude Bellingham,permanent_outbound,R2_position_relative,bottom_5,annual_wage_to_market_value,Proposed wage / market value,-0.053456529739327824,negative
+Jude Bellingham,permanent_outbound,R3_position_interactions,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.21431824206297326,negative
+Jude Bellingham,permanent_outbound,R3_position_interactions,2,league,League,-0.20200136470946464,negative
+Jude Bellingham,permanent_outbound,R3_position_interactions,3,log_market_value_at_signing,Market value,0.08737224771772742,positive
+Jude Bellingham,permanent_outbound,R3_position_interactions,4,age_at_signing,Age (at signing),-0.08296115356712801,negative
+Jude Bellingham,permanent_outbound,R3_position_interactions,5,pre2_canonical_goals_per90__x__Midfield,Pre2 canonical goals per90  x  midfield,0.07420082171225365,positive
+Jude Bellingham,permanent_outbound,R3_position_interactions,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.21431824206297326,negative
+Jude Bellingham,permanent_outbound,R3_position_interactions,bottom_2,league,League,-0.20200136470946464,negative
+Jude Bellingham,permanent_outbound,R3_position_interactions,bottom_3,age_at_signing,Age (at signing),-0.08296115356712801,negative
+Jude Bellingham,permanent_outbound,R3_position_interactions,bottom_4,age_at_expiration,Age (at contract end),-0.05908383327313854,negative
+Jude Bellingham,permanent_outbound,R3_position_interactions,bottom_5,annual_wage_to_market_value,Proposed wage / market value,-0.05545766063119589,negative
+Jude Bellingham,permanent_outbound,R4_compact_role_aware,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.21431824206297326,negative
+Jude Bellingham,permanent_outbound,R4_compact_role_aware,2,league,League,-0.20200136470946464,negative
+Jude Bellingham,permanent_outbound,R4_compact_role_aware,3,log_market_value_at_signing,Market value,0.08737224771772742,positive
+Jude Bellingham,permanent_outbound,R4_compact_role_aware,4,age_at_signing,Age (at signing),-0.08296115356712801,negative
+Jude Bellingham,permanent_outbound,R4_compact_role_aware,5,pre2_canonical_goals_per90__x__Midfield,Pre2 canonical goals per90  x  midfield,0.07420082171225365,positive
+Jude Bellingham,permanent_outbound,R4_compact_role_aware,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.21431824206297326,negative
+Jude Bellingham,permanent_outbound,R4_compact_role_aware,bottom_2,league,League,-0.20200136470946464,negative
+Jude Bellingham,permanent_outbound,R4_compact_role_aware,bottom_3,age_at_signing,Age (at signing),-0.08296115356712801,negative
+Jude Bellingham,permanent_outbound,R4_compact_role_aware,bottom_4,age_at_expiration,Age (at contract end),-0.05908383327313854,negative
+Jude Bellingham,permanent_outbound,R4_compact_role_aware,bottom_5,annual_wage_to_market_value,Proposed wage / market value,-0.05545766063119589,negative
+Jude Bellingham,value_log_ratio_12m,R1_remove_scoring,1,log_market_value_at_signing,Market value,-0.9627386924739615,negative
+Jude Bellingham,value_log_ratio_12m,R1_remove_scoring,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.1889725448425083,positive
+Jude Bellingham,value_log_ratio_12m,R1_remove_scoring,3,age_at_expiration,Age (at contract end),0.16030157839275067,positive
+Jude Bellingham,value_log_ratio_12m,R1_remove_scoring,4,age_at_signing,Age (at signing),0.15733414441173346,positive
+Jude Bellingham,value_log_ratio_12m,R1_remove_scoring,5,league,League,0.09338986420112336,positive
+Jude Bellingham,value_log_ratio_12m,R1_remove_scoring,bottom_1,log_market_value_at_signing,Market value,-0.9627386924739615,negative
+Jude Bellingham,value_log_ratio_12m,R1_remove_scoring,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.061760109882230234,negative
+Jude Bellingham,value_log_ratio_12m,R1_remove_scoring,bottom_3,salary_change_from_prior_pct,Wage change vs. prior season,-0.0508183407168341,negative
+Jude Bellingham,value_log_ratio_12m,R1_remove_scoring,bottom_4,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.03347326206437897,negative
+Jude Bellingham,value_log_ratio_12m,R1_remove_scoring,bottom_5,commitment_to_market_value,Commitment to market value,-0.015173009926846545,negative
+Jude Bellingham,value_log_ratio_12m,R2_position_relative,1,log_market_value_at_signing,Market value,-1.0069002056277567,negative
+Jude Bellingham,value_log_ratio_12m,R2_position_relative,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.18569650061599396,positive
+Jude Bellingham,value_log_ratio_12m,R2_position_relative,3,age_at_expiration,Age (at contract end),0.16421240380074195,positive
+Jude Bellingham,value_log_ratio_12m,R2_position_relative,4,age_at_signing,Age (at signing),0.16029332796286,positive
+Jude Bellingham,value_log_ratio_12m,R2_position_relative,5,league,League,0.09815248069296571,positive
+Jude Bellingham,value_log_ratio_12m,R2_position_relative,bottom_1,log_market_value_at_signing,Market value,-1.0069002056277567,negative
+Jude Bellingham,value_log_ratio_12m,R2_position_relative,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.05606325946592618,negative
+Jude Bellingham,value_log_ratio_12m,R2_position_relative,bottom_3,salary_change_from_prior_pct,Wage change vs. prior season,-0.048841359728657496,negative
+Jude Bellingham,value_log_ratio_12m,R2_position_relative,bottom_4,commitment_to_market_value,Commitment to market value,-0.015198819583608116,negative
+Jude Bellingham,value_log_ratio_12m,R2_position_relative,bottom_5,annual_wage_to_market_value,Proposed wage / market value,-0.011597566030985208,negative
+Jude Bellingham,value_log_ratio_12m,R3_position_interactions,1,log_market_value_at_signing,Market value,-0.9964813478867798,negative
+Jude Bellingham,value_log_ratio_12m,R3_position_interactions,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.23357813124619148,positive
+Jude Bellingham,value_log_ratio_12m,R3_position_interactions,3,age_at_expiration,Age (at contract end),0.16280015279475862,positive
+Jude Bellingham,value_log_ratio_12m,R3_position_interactions,4,age_at_signing,Age (at signing),0.15766145354035516,positive
+Jude Bellingham,value_log_ratio_12m,R3_position_interactions,5,pre2_canonical_assists_per90__x__Midfield,Pre2 canonical assists per90  x  midfield,-0.1413801677484238,negative
+Jude Bellingham,value_log_ratio_12m,R3_position_interactions,bottom_1,log_market_value_at_signing,Market value,-0.9964813478867798,negative
+Jude Bellingham,value_log_ratio_12m,R3_position_interactions,bottom_2,pre2_canonical_assists_per90__x__Midfield,Pre2 canonical assists per90  x  midfield,-0.1413801677484238,negative
+Jude Bellingham,value_log_ratio_12m,R3_position_interactions,bottom_3,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.09422912748011965,negative
+Jude Bellingham,value_log_ratio_12m,R3_position_interactions,bottom_4,pre365_assists_per90__x__Midfield,Recent-365d assists per90  x  midfield,-0.07869503918617658,negative
+Jude Bellingham,value_log_ratio_12m,R3_position_interactions,bottom_5,pre2_canonical_goals_per90__x__Midfield,Pre2 canonical goals per90  x  midfield,-0.04921598480337087,negative
+Jude Bellingham,value_log_ratio_12m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,-1.0069002056277567,negative
+Jude Bellingham,value_log_ratio_12m,R4_compact_role_aware,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.18569650061599396,positive
+Jude Bellingham,value_log_ratio_12m,R4_compact_role_aware,3,age_at_expiration,Age (at contract end),0.16421240380074195,positive
+Jude Bellingham,value_log_ratio_12m,R4_compact_role_aware,4,age_at_signing,Age (at signing),0.16029332796286,positive
+Jude Bellingham,value_log_ratio_12m,R4_compact_role_aware,5,league,League,0.09815248069296571,positive
+Jude Bellingham,value_log_ratio_12m,R4_compact_role_aware,bottom_1,log_market_value_at_signing,Market value,-1.0069002056277567,negative
+Jude Bellingham,value_log_ratio_12m,R4_compact_role_aware,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.05606325946592618,negative
+Jude Bellingham,value_log_ratio_12m,R4_compact_role_aware,bottom_3,salary_change_from_prior_pct,Wage change vs. prior season,-0.048841359728657496,negative
+Jude Bellingham,value_log_ratio_12m,R4_compact_role_aware,bottom_4,commitment_to_market_value,Commitment to market value,-0.015198819583608116,negative
+Jude Bellingham,value_log_ratio_12m,R4_compact_role_aware,bottom_5,annual_wage_to_market_value,Proposed wage / market value,-0.011597566030985208,negative
+Jude Bellingham,value_log_ratio_24m,R1_remove_scoring,1,log_market_value_at_signing,Market value,-1.2544579171495844,negative
+Jude Bellingham,value_log_ratio_24m,R1_remove_scoring,2,log_annual_gross_eur,Current annual wage,0.2532482774782731,positive
+Jude Bellingham,value_log_ratio_24m,R1_remove_scoring,3,age_at_signing,Age (at signing),0.22889388459251805,positive
+Jude Bellingham,value_log_ratio_24m,R1_remove_scoring,4,age_at_expiration,Age (at contract end),0.21323542125182332,positive
+Jude Bellingham,value_log_ratio_24m,R1_remove_scoring,5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.09353833731767087,positive
+Jude Bellingham,value_log_ratio_24m,R1_remove_scoring,bottom_1,log_market_value_at_signing,Market value,-1.2544579171495844,negative
+Jude Bellingham,value_log_ratio_24m,R1_remove_scoring,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.08157952645640883,negative
+Jude Bellingham,value_log_ratio_24m,R1_remove_scoring,bottom_3,salary_change_from_prior_pct,Wage change vs. prior season,-0.07006357629887447,negative
+Jude Bellingham,value_log_ratio_24m,R1_remove_scoring,bottom_4,annual_wage_to_market_value,Proposed wage / market value,-0.052001231368274226,negative
+Jude Bellingham,value_log_ratio_24m,R1_remove_scoring,bottom_5,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.012992054836175637,negative
+Jude Bellingham,value_log_ratio_24m,R2_position_relative,1,log_market_value_at_signing,Market value,-1.303507144779107,negative
+Jude Bellingham,value_log_ratio_24m,R2_position_relative,2,log_annual_gross_eur,Current annual wage,0.2463090991126997,positive
+Jude Bellingham,value_log_ratio_24m,R2_position_relative,3,age_at_signing,Age (at signing),0.23188406310068854,positive
+Jude Bellingham,value_log_ratio_24m,R2_position_relative,4,age_at_expiration,Age (at contract end),0.21702546360722194,positive
+Jude Bellingham,value_log_ratio_24m,R2_position_relative,5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.09370533804384912,positive
+Jude Bellingham,value_log_ratio_24m,R2_position_relative,bottom_1,log_market_value_at_signing,Market value,-1.303507144779107,negative
+Jude Bellingham,value_log_ratio_24m,R2_position_relative,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.07820463912250501,negative
+Jude Bellingham,value_log_ratio_24m,R2_position_relative,bottom_3,salary_change_from_prior_pct,Wage change vs. prior season,-0.06721053077537649,negative
+Jude Bellingham,value_log_ratio_24m,R2_position_relative,bottom_4,annual_wage_to_market_value,Proposed wage / market value,-0.04982325349803431,negative
+Jude Bellingham,value_log_ratio_24m,R2_position_relative,bottom_5,pre1_fbref_expected_goals,"Expected goals, xG (prior season)",-0.0053807773104830574,negative
+Jude Bellingham,value_log_ratio_24m,R3_position_interactions,1,log_market_value_at_signing,Market value,-1.2920216967618852,negative
+Jude Bellingham,value_log_ratio_24m,R3_position_interactions,2,age_at_signing,Age (at signing),0.22808739279140675,positive
+Jude Bellingham,value_log_ratio_24m,R3_position_interactions,3,age_at_expiration,Age (at contract end),0.21344966585085026,positive
+Jude Bellingham,value_log_ratio_24m,R3_position_interactions,4,log_annual_gross_eur,Current annual wage,0.19118390631048812,positive
+Jude Bellingham,value_log_ratio_24m,R3_position_interactions,5,pre365_goals_per90__x__Midfield,Recent-365d goals per90  x  midfield,0.1359123571527297,positive
+Jude Bellingham,value_log_ratio_24m,R3_position_interactions,bottom_1,log_market_value_at_signing,Market value,-1.2920216967618852,negative
+Jude Bellingham,value_log_ratio_24m,R3_position_interactions,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.12235606052108636,negative
+Jude Bellingham,value_log_ratio_24m,R3_position_interactions,bottom_3,pre365_assists_per90__x__Midfield,Recent-365d assists per90  x  midfield,-0.1152150380468685,negative
+Jude Bellingham,value_log_ratio_24m,R3_position_interactions,bottom_4,salary_change_from_prior_pct,Wage change vs. prior season,-0.06575099634798705,negative
+Jude Bellingham,value_log_ratio_24m,R3_position_interactions,bottom_5,annual_wage_to_market_value,Proposed wage / market value,-0.05372390768513116,negative
+Jude Bellingham,value_log_ratio_24m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,-1.303507144779107,negative
+Jude Bellingham,value_log_ratio_24m,R4_compact_role_aware,2,log_annual_gross_eur,Current annual wage,0.2463090991126997,positive
+Jude Bellingham,value_log_ratio_24m,R4_compact_role_aware,3,age_at_signing,Age (at signing),0.23188406310068854,positive
+Jude Bellingham,value_log_ratio_24m,R4_compact_role_aware,4,age_at_expiration,Age (at contract end),0.21702546360722194,positive
+Jude Bellingham,value_log_ratio_24m,R4_compact_role_aware,5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.09370533804384912,positive
+Jude Bellingham,value_log_ratio_24m,R4_compact_role_aware,bottom_1,log_market_value_at_signing,Market value,-1.303507144779107,negative
+Jude Bellingham,value_log_ratio_24m,R4_compact_role_aware,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.07820463912250501,negative
+Jude Bellingham,value_log_ratio_24m,R4_compact_role_aware,bottom_3,salary_change_from_prior_pct,Wage change vs. prior season,-0.06721053077537649,negative
+Jude Bellingham,value_log_ratio_24m,R4_compact_role_aware,bottom_4,annual_wage_to_market_value,Proposed wage / market value,-0.04982325349803431,negative
+Jude Bellingham,value_log_ratio_24m,R4_compact_role_aware,bottom_5,pre1_fbref_expected_goals,"Expected goals, xG (prior season)",-0.0053807773104830574,negative
+Jude Bellingham,downside_10pct_12m,R1_remove_scoring,1,log_market_value_at_signing,Market value,1.361115303339826,positive
+Jude Bellingham,downside_10pct_12m,R1_remove_scoring,2,log_annual_gross_eur,Current annual wage,0.6087695646717752,positive
+Jude Bellingham,downside_10pct_12m,R1_remove_scoring,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.5224012140635879,negative
+Jude Bellingham,downside_10pct_12m,R1_remove_scoring,4,age_at_signing,Age (at signing),-0.43648135129194954,negative
+Jude Bellingham,downside_10pct_12m,R1_remove_scoring,5,age_at_expiration,Age (at contract end),-0.42842507293525983,negative
+Jude Bellingham,downside_10pct_12m,R1_remove_scoring,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.5224012140635879,negative
+Jude Bellingham,downside_10pct_12m,R1_remove_scoring,bottom_2,age_at_signing,Age (at signing),-0.43648135129194954,negative
+Jude Bellingham,downside_10pct_12m,R1_remove_scoring,bottom_3,age_at_expiration,Age (at contract end),-0.42842507293525983,negative
+Jude Bellingham,downside_10pct_12m,R1_remove_scoring,bottom_4,league,League,-0.15423844293606878,negative
+Jude Bellingham,downside_10pct_12m,R1_remove_scoring,bottom_5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.14545129910693563,negative
+Jude Bellingham,downside_10pct_12m,R2_position_relative,1,log_market_value_at_signing,Market value,1.4160190692164076,positive
+Jude Bellingham,downside_10pct_12m,R2_position_relative,2,log_annual_gross_eur,Current annual wage,0.5641629051752081,positive
+Jude Bellingham,downside_10pct_12m,R2_position_relative,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.4588418592173513,negative
+Jude Bellingham,downside_10pct_12m,R2_position_relative,4,age_at_signing,Age (at signing),-0.44421476163658796,negative
+Jude Bellingham,downside_10pct_12m,R2_position_relative,5,age_at_expiration,Age (at contract end),-0.43498327724672076,negative
+Jude Bellingham,downside_10pct_12m,R2_position_relative,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.4588418592173513,negative
+Jude Bellingham,downside_10pct_12m,R2_position_relative,bottom_2,age_at_signing,Age (at signing),-0.44421476163658796,negative
+Jude Bellingham,downside_10pct_12m,R2_position_relative,bottom_3,age_at_expiration,Age (at contract end),-0.43498327724672076,negative
+Jude Bellingham,downside_10pct_12m,R2_position_relative,bottom_4,league,League,-0.15529997443051274,negative
+Jude Bellingham,downside_10pct_12m,R2_position_relative,bottom_5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.14920156722567482,negative
+Jude Bellingham,downside_10pct_12m,R3_position_interactions,1,log_market_value_at_signing,Market value,1.3682592328854009,positive
+Jude Bellingham,downside_10pct_12m,R3_position_interactions,2,log_annual_gross_eur,Current annual wage,0.5459837632165219,positive
+Jude Bellingham,downside_10pct_12m,R3_position_interactions,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.48959326073114245,negative
+Jude Bellingham,downside_10pct_12m,R3_position_interactions,4,age_at_signing,Age (at signing),-0.43922216763477817,negative
+Jude Bellingham,downside_10pct_12m,R3_position_interactions,5,age_at_expiration,Age (at contract end),-0.43332181172740697,negative
+Jude Bellingham,downside_10pct_12m,R3_position_interactions,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.48959326073114245,negative
+Jude Bellingham,downside_10pct_12m,R3_position_interactions,bottom_2,age_at_signing,Age (at signing),-0.43922216763477817,negative
+Jude Bellingham,downside_10pct_12m,R3_position_interactions,bottom_3,age_at_expiration,Age (at contract end),-0.43332181172740697,negative
+Jude Bellingham,downside_10pct_12m,R3_position_interactions,bottom_4,pre365_goals_per90__x__Midfield,Recent-365d goals per90  x  midfield,-0.3055732833685789,negative
+Jude Bellingham,downside_10pct_12m,R3_position_interactions,bottom_5,league,League,-0.16325072905160048,negative
+Jude Bellingham,downside_10pct_12m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,1.4160190692164076,positive
+Jude Bellingham,downside_10pct_12m,R4_compact_role_aware,2,log_annual_gross_eur,Current annual wage,0.5641629051752081,positive
+Jude Bellingham,downside_10pct_12m,R4_compact_role_aware,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.4588418592173513,negative
+Jude Bellingham,downside_10pct_12m,R4_compact_role_aware,4,age_at_signing,Age (at signing),-0.44421476163658796,negative
+Jude Bellingham,downside_10pct_12m,R4_compact_role_aware,5,age_at_expiration,Age (at contract end),-0.43498327724672076,negative
+Jude Bellingham,downside_10pct_12m,R4_compact_role_aware,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.4588418592173513,negative
+Jude Bellingham,downside_10pct_12m,R4_compact_role_aware,bottom_2,age_at_signing,Age (at signing),-0.44421476163658796,negative
+Jude Bellingham,downside_10pct_12m,R4_compact_role_aware,bottom_3,age_at_expiration,Age (at contract end),-0.43498327724672076,negative
+Jude Bellingham,downside_10pct_12m,R4_compact_role_aware,bottom_4,league,League,-0.15529997443051274,negative
+Jude Bellingham,downside_10pct_12m,R4_compact_role_aware,bottom_5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.14920156722567482,negative
+Jude Bellingham,downside_10pct_24m,R1_remove_scoring,1,log_market_value_at_signing,Market value,1.5135883771030345,positive
+Jude Bellingham,downside_10pct_24m,R1_remove_scoring,2,age_at_signing,Age (at signing),-0.512632979905231,negative
+Jude Bellingham,downside_10pct_24m,R1_remove_scoring,3,age_at_expiration,Age (at contract end),-0.48477834306229123,negative
+Jude Bellingham,downside_10pct_24m,R1_remove_scoring,4,pre2_canonical_minutes_played,Minutes played (2 seasons ago),0.234625459009946,positive
+Jude Bellingham,downside_10pct_24m,R1_remove_scoring,5,annual_wage_to_market_value,Proposed wage / market value,0.21974660627234524,positive
+Jude Bellingham,downside_10pct_24m,R1_remove_scoring,bottom_1,age_at_signing,Age (at signing),-0.512632979905231,negative
+Jude Bellingham,downside_10pct_24m,R1_remove_scoring,bottom_2,age_at_expiration,Age (at contract end),-0.48477834306229123,negative
+Jude Bellingham,downside_10pct_24m,R1_remove_scoring,bottom_3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.11979453980447105,negative
+Jude Bellingham,downside_10pct_24m,R1_remove_scoring,bottom_4,league,League,-0.07962612308329009,negative
+Jude Bellingham,downside_10pct_24m,R1_remove_scoring,bottom_5,club_salary_share_known,Wage share of known club payroll,-0.00648758374964605,negative
+Jude Bellingham,downside_10pct_24m,R2_position_relative,1,log_market_value_at_signing,Market value,1.6484845510909627,positive
+Jude Bellingham,downside_10pct_24m,R2_position_relative,2,age_at_signing,Age (at signing),-0.5240854983017469,negative
+Jude Bellingham,downside_10pct_24m,R2_position_relative,3,age_at_expiration,Age (at contract end),-0.4972878590070448,negative
+Jude Bellingham,downside_10pct_24m,R2_position_relative,4,annual_wage_to_market_value,Proposed wage / market value,0.223745257867746,positive
+Jude Bellingham,downside_10pct_24m,R2_position_relative,5,pre2_canonical_minutes_played,Minutes played (2 seasons ago),0.222801524132355,positive
+Jude Bellingham,downside_10pct_24m,R2_position_relative,bottom_1,age_at_signing,Age (at signing),-0.5240854983017469,negative
+Jude Bellingham,downside_10pct_24m,R2_position_relative,bottom_2,age_at_expiration,Age (at contract end),-0.4972878590070448,negative
+Jude Bellingham,downside_10pct_24m,R2_position_relative,bottom_3,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.1340309245693499,negative
+Jude Bellingham,downside_10pct_24m,R2_position_relative,bottom_4,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.12912049029135006,negative
+Jude Bellingham,downside_10pct_24m,R2_position_relative,bottom_5,league,League,-0.09010432982737243,negative
+Jude Bellingham,downside_10pct_24m,R3_position_interactions,1,log_market_value_at_signing,Market value,1.560273394916491,positive
+Jude Bellingham,downside_10pct_24m,R3_position_interactions,2,age_at_signing,Age (at signing),-0.5158479635811412,negative
+Jude Bellingham,downside_10pct_24m,R3_position_interactions,3,age_at_expiration,Age (at contract end),-0.4894658776285979,negative
+Jude Bellingham,downside_10pct_24m,R3_position_interactions,4,canonical_position,Position,0.2826966338126682,positive
+Jude Bellingham,downside_10pct_24m,R3_position_interactions,5,pre365_goals_per90__x__Midfield,Recent-365d goals per90  x  midfield,-0.2729410459752138,negative
+Jude Bellingham,downside_10pct_24m,R3_position_interactions,bottom_1,age_at_signing,Age (at signing),-0.5158479635811412,negative
+Jude Bellingham,downside_10pct_24m,R3_position_interactions,bottom_2,age_at_expiration,Age (at contract end),-0.4894658776285979,negative
+Jude Bellingham,downside_10pct_24m,R3_position_interactions,bottom_3,pre365_goals_per90__x__Midfield,Recent-365d goals per90  x  midfield,-0.2729410459752138,negative
+Jude Bellingham,downside_10pct_24m,R3_position_interactions,bottom_4,pre365_assists_per90__x__Midfield,Recent-365d assists per90  x  midfield,-0.21498936151802966,negative
+Jude Bellingham,downside_10pct_24m,R3_position_interactions,bottom_5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.13863813772611075,negative
+Jude Bellingham,downside_10pct_24m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,1.6484845510909627,positive
+Jude Bellingham,downside_10pct_24m,R4_compact_role_aware,2,age_at_signing,Age (at signing),-0.5240854983017469,negative
+Jude Bellingham,downside_10pct_24m,R4_compact_role_aware,3,age_at_expiration,Age (at contract end),-0.4972878590070448,negative
+Jude Bellingham,downside_10pct_24m,R4_compact_role_aware,4,annual_wage_to_market_value,Proposed wage / market value,0.223745257867746,positive
+Jude Bellingham,downside_10pct_24m,R4_compact_role_aware,5,pre2_canonical_minutes_played,Minutes played (2 seasons ago),0.222801524132355,positive
+Jude Bellingham,downside_10pct_24m,R4_compact_role_aware,bottom_1,age_at_signing,Age (at signing),-0.5240854983017469,negative
+Jude Bellingham,downside_10pct_24m,R4_compact_role_aware,bottom_2,age_at_expiration,Age (at contract end),-0.4972878590070448,negative
+Jude Bellingham,downside_10pct_24m,R4_compact_role_aware,bottom_3,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.1340309245693499,negative
+Jude Bellingham,downside_10pct_24m,R4_compact_role_aware,bottom_4,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.12912049029135006,negative
+Jude Bellingham,downside_10pct_24m,R4_compact_role_aware,bottom_5,league,League,-0.09010432982737243,negative
+Jude Bellingham,downside_25pct_12m,R1_remove_scoring,1,log_market_value_at_signing,Market value,1.3606616150505355,positive
+Jude Bellingham,downside_25pct_12m,R1_remove_scoring,2,age_at_signing,Age (at signing),-0.42384438807774694,negative
+Jude Bellingham,downside_25pct_12m,R1_remove_scoring,3,age_at_expiration,Age (at contract end),-0.402097679143443,negative
+Jude Bellingham,downside_25pct_12m,R1_remove_scoring,4,log_annual_gross_eur,Current annual wage,0.3902248391940248,positive
+Jude Bellingham,downside_25pct_12m,R1_remove_scoring,5,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.23056884364189373,negative
+Jude Bellingham,downside_25pct_12m,R1_remove_scoring,bottom_1,age_at_signing,Age (at signing),-0.42384438807774694,negative
+Jude Bellingham,downside_25pct_12m,R1_remove_scoring,bottom_2,age_at_expiration,Age (at contract end),-0.402097679143443,negative
+Jude Bellingham,downside_25pct_12m,R1_remove_scoring,bottom_3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.23056884364189373,negative
+Jude Bellingham,downside_25pct_12m,R1_remove_scoring,bottom_4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.14508969377676337,negative
+Jude Bellingham,downside_25pct_12m,R1_remove_scoring,bottom_5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.11628157233354806,negative
+Jude Bellingham,downside_25pct_12m,R2_position_relative,1,log_market_value_at_signing,Market value,1.2937120431518756,positive
+Jude Bellingham,downside_25pct_12m,R2_position_relative,2,age_at_signing,Age (at signing),-0.42427990720205166,negative
+Jude Bellingham,downside_25pct_12m,R2_position_relative,3,age_at_expiration,Age (at contract end),-0.40308125780234433,negative
+Jude Bellingham,downside_25pct_12m,R2_position_relative,4,log_annual_gross_eur,Current annual wage,0.3330041625103547,positive
+Jude Bellingham,downside_25pct_12m,R2_position_relative,5,annual_wage_to_market_value,Proposed wage / market value,0.20987201352385632,positive
+Jude Bellingham,downside_25pct_12m,R2_position_relative,bottom_1,age_at_signing,Age (at signing),-0.42427990720205166,negative
+Jude Bellingham,downside_25pct_12m,R2_position_relative,bottom_2,age_at_expiration,Age (at contract end),-0.40308125780234433,negative
+Jude Bellingham,downside_25pct_12m,R2_position_relative,bottom_3,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.20555887798573,negative
+Jude Bellingham,downside_25pct_12m,R2_position_relative,bottom_4,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.17092979929665428,negative
+Jude Bellingham,downside_25pct_12m,R2_position_relative,bottom_5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.11067091823332276,negative
+Jude Bellingham,downside_25pct_12m,R3_position_interactions,1,log_market_value_at_signing,Market value,1.3525907002011386,positive
+Jude Bellingham,downside_25pct_12m,R3_position_interactions,2,age_at_signing,Age (at signing),-0.42916328817248073,negative
+Jude Bellingham,downside_25pct_12m,R3_position_interactions,3,age_at_expiration,Age (at contract end),-0.4105178243163618,negative
+Jude Bellingham,downside_25pct_12m,R3_position_interactions,4,log_annual_gross_eur,Current annual wage,0.3644311050095915,positive
+Jude Bellingham,downside_25pct_12m,R3_position_interactions,5,annual_wage_to_market_value,Proposed wage / market value,0.21005749360044368,positive
+Jude Bellingham,downside_25pct_12m,R3_position_interactions,bottom_1,age_at_signing,Age (at signing),-0.42916328817248073,negative
+Jude Bellingham,downside_25pct_12m,R3_position_interactions,bottom_2,age_at_expiration,Age (at contract end),-0.4105178243163618,negative
+Jude Bellingham,downside_25pct_12m,R3_position_interactions,bottom_3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.2047672575549901,negative
+Jude Bellingham,downside_25pct_12m,R3_position_interactions,bottom_4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.1794142450244959,negative
+Jude Bellingham,downside_25pct_12m,R3_position_interactions,bottom_5,pre2_canonical_goals_per90__x__Midfield,Pre2 canonical goals per90  x  midfield,-0.15399723484552946,negative
+Jude Bellingham,downside_25pct_12m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,1.2937120431518756,positive
+Jude Bellingham,downside_25pct_12m,R4_compact_role_aware,2,age_at_signing,Age (at signing),-0.42427990720205166,negative
+Jude Bellingham,downside_25pct_12m,R4_compact_role_aware,3,age_at_expiration,Age (at contract end),-0.40308125780234433,negative
+Jude Bellingham,downside_25pct_12m,R4_compact_role_aware,4,log_annual_gross_eur,Current annual wage,0.3330041625103547,positive
+Jude Bellingham,downside_25pct_12m,R4_compact_role_aware,5,annual_wage_to_market_value,Proposed wage / market value,0.20987201352385632,positive
+Jude Bellingham,downside_25pct_12m,R4_compact_role_aware,bottom_1,age_at_signing,Age (at signing),-0.42427990720205166,negative
+Jude Bellingham,downside_25pct_12m,R4_compact_role_aware,bottom_2,age_at_expiration,Age (at contract end),-0.40308125780234433,negative
+Jude Bellingham,downside_25pct_12m,R4_compact_role_aware,bottom_3,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.20555887798573,negative
+Jude Bellingham,downside_25pct_12m,R4_compact_role_aware,bottom_4,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.17092979929665428,negative
+Jude Bellingham,downside_25pct_12m,R4_compact_role_aware,bottom_5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.11067091823332276,negative
+Jude Bellingham,downside_25pct_24m,R1_remove_scoring,1,log_market_value_at_signing,Market value,1.722098382305983,positive
+Jude Bellingham,downside_25pct_24m,R1_remove_scoring,2,age_at_signing,Age (at signing),-0.5245342685613775,negative
+Jude Bellingham,downside_25pct_24m,R1_remove_scoring,3,age_at_expiration,Age (at contract end),-0.5122606547299478,negative
+Jude Bellingham,downside_25pct_24m,R1_remove_scoring,4,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.3229030923229072,negative
+Jude Bellingham,downside_25pct_24m,R1_remove_scoring,5,annual_wage_to_market_value,Proposed wage / market value,0.2844142761027289,positive
+Jude Bellingham,downside_25pct_24m,R1_remove_scoring,bottom_1,age_at_signing,Age (at signing),-0.5245342685613775,negative
+Jude Bellingham,downside_25pct_24m,R1_remove_scoring,bottom_2,age_at_expiration,Age (at contract end),-0.5122606547299478,negative
+Jude Bellingham,downside_25pct_24m,R1_remove_scoring,bottom_3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.3229030923229072,negative
+Jude Bellingham,downside_25pct_24m,R1_remove_scoring,bottom_4,league,League,-0.20859860220117002,negative
+Jude Bellingham,downside_25pct_24m,R1_remove_scoring,bottom_5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.12322708455647287,negative
+Jude Bellingham,downside_25pct_24m,R2_position_relative,1,log_market_value_at_signing,Market value,1.8720270494350257,positive
+Jude Bellingham,downside_25pct_24m,R2_position_relative,2,age_at_signing,Age (at signing),-0.5380360883943579,negative
+Jude Bellingham,downside_25pct_24m,R2_position_relative,3,age_at_expiration,Age (at contract end),-0.5260718699849449,negative
+Jude Bellingham,downside_25pct_24m,R2_position_relative,4,annual_wage_to_market_value,Proposed wage / market value,0.28900798227391916,positive
+Jude Bellingham,downside_25pct_24m,R2_position_relative,5,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.2594862690154506,negative
+Jude Bellingham,downside_25pct_24m,R2_position_relative,bottom_1,age_at_signing,Age (at signing),-0.5380360883943579,negative
+Jude Bellingham,downside_25pct_24m,R2_position_relative,bottom_2,age_at_expiration,Age (at contract end),-0.5260718699849449,negative
+Jude Bellingham,downside_25pct_24m,R2_position_relative,bottom_3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.2594862690154506,negative
+Jude Bellingham,downside_25pct_24m,R2_position_relative,bottom_4,league,League,-0.2167737571206632,negative
+Jude Bellingham,downside_25pct_24m,R2_position_relative,bottom_5,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.13923830274753513,negative
+Jude Bellingham,downside_25pct_24m,R3_position_interactions,1,log_market_value_at_signing,Market value,1.7254264704176914,positive
+Jude Bellingham,downside_25pct_24m,R3_position_interactions,2,age_at_signing,Age (at signing),-0.5276108209982867,negative
+Jude Bellingham,downside_25pct_24m,R3_position_interactions,3,age_at_expiration,Age (at contract end),-0.5178337202763014,negative
+Jude Bellingham,downside_25pct_24m,R3_position_interactions,4,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.3425246370590516,negative
+Jude Bellingham,downside_25pct_24m,R3_position_interactions,5,pre2_canonical_goals_per90__x__Midfield,Pre2 canonical goals per90  x  midfield,-0.3175788805918963,negative
+Jude Bellingham,downside_25pct_24m,R3_position_interactions,bottom_1,age_at_signing,Age (at signing),-0.5276108209982867,negative
+Jude Bellingham,downside_25pct_24m,R3_position_interactions,bottom_2,age_at_expiration,Age (at contract end),-0.5178337202763014,negative
+Jude Bellingham,downside_25pct_24m,R3_position_interactions,bottom_3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.3425246370590516,negative
+Jude Bellingham,downside_25pct_24m,R3_position_interactions,bottom_4,pre2_canonical_goals_per90__x__Midfield,Pre2 canonical goals per90  x  midfield,-0.3175788805918963,negative
+Jude Bellingham,downside_25pct_24m,R3_position_interactions,bottom_5,pre365_assists_per90__x__Midfield,Recent-365d assists per90  x  midfield,-0.26951266202568597,negative
+Jude Bellingham,downside_25pct_24m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,1.8720270494350257,positive
+Jude Bellingham,downside_25pct_24m,R4_compact_role_aware,2,age_at_signing,Age (at signing),-0.5380360883943579,negative
+Jude Bellingham,downside_25pct_24m,R4_compact_role_aware,3,age_at_expiration,Age (at contract end),-0.5260718699849449,negative
+Jude Bellingham,downside_25pct_24m,R4_compact_role_aware,4,annual_wage_to_market_value,Proposed wage / market value,0.28900798227391916,positive
+Jude Bellingham,downside_25pct_24m,R4_compact_role_aware,5,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.2594862690154506,negative
+Jude Bellingham,downside_25pct_24m,R4_compact_role_aware,bottom_1,age_at_signing,Age (at signing),-0.5380360883943579,negative
+Jude Bellingham,downside_25pct_24m,R4_compact_role_aware,bottom_2,age_at_expiration,Age (at contract end),-0.5260718699849449,negative
+Jude Bellingham,downside_25pct_24m,R4_compact_role_aware,bottom_3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.2594862690154506,negative
+Jude Bellingham,downside_25pct_24m,R4_compact_role_aware,bottom_4,league,League,-0.2167737571206632,negative
+Jude Bellingham,downside_25pct_24m,R4_compact_role_aware,bottom_5,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.13923830274753513,negative
+Jude Bellingham,downside_50pct_24m,R1_remove_scoring,1,log_market_value_at_signing,Market value,1.9294361976803713,positive
+Jude Bellingham,downside_50pct_24m,R1_remove_scoring,2,age_at_signing,Age (at signing),-0.5089745402847289,negative
+Jude Bellingham,downside_50pct_24m,R1_remove_scoring,3,age_at_expiration,Age (at contract end),-0.4892156683323051,negative
+Jude Bellingham,downside_50pct_24m,R1_remove_scoring,4,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.4528300806981676,negative
+Jude Bellingham,downside_50pct_24m,R1_remove_scoring,5,annual_wage_to_market_value,Proposed wage / market value,0.2616652408106271,positive
+Jude Bellingham,downside_50pct_24m,R1_remove_scoring,bottom_1,age_at_signing,Age (at signing),-0.5089745402847289,negative
+Jude Bellingham,downside_50pct_24m,R1_remove_scoring,bottom_2,age_at_expiration,Age (at contract end),-0.4892156683323051,negative
+Jude Bellingham,downside_50pct_24m,R1_remove_scoring,bottom_3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.4528300806981676,negative
+Jude Bellingham,downside_50pct_24m,R1_remove_scoring,bottom_4,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.20243027704713779,negative
+Jude Bellingham,downside_50pct_24m,R1_remove_scoring,bottom_5,pre1_fbref_progressive_passes,Progressive passes (prior season),-0.08442259980324711,negative
+Jude Bellingham,downside_50pct_24m,R2_position_relative,1,log_market_value_at_signing,Market value,1.924291051874972,positive
+Jude Bellingham,downside_50pct_24m,R2_position_relative,2,age_at_signing,Age (at signing),-0.513179898772939,negative
+Jude Bellingham,downside_50pct_24m,R2_position_relative,3,age_at_expiration,Age (at contract end),-0.49339151366475853,negative
+Jude Bellingham,downside_50pct_24m,R2_position_relative,4,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.38419118063824487,negative
+Jude Bellingham,downside_50pct_24m,R2_position_relative,5,annual_wage_to_market_value,Proposed wage / market value,0.2606744174806826,positive
+Jude Bellingham,downside_50pct_24m,R2_position_relative,bottom_1,age_at_signing,Age (at signing),-0.513179898772939,negative
+Jude Bellingham,downside_50pct_24m,R2_position_relative,bottom_2,age_at_expiration,Age (at contract end),-0.49339151366475853,negative
+Jude Bellingham,downside_50pct_24m,R2_position_relative,bottom_3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.38419118063824487,negative
+Jude Bellingham,downside_50pct_24m,R2_position_relative,bottom_4,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.21989278125228703,negative
+Jude Bellingham,downside_50pct_24m,R2_position_relative,bottom_5,pre2_canonical_goals_per90__role_z,Pre2 canonical goals per90  role z,-0.11526884767673357,negative
+Jude Bellingham,downside_50pct_24m,R3_position_interactions,1,log_market_value_at_signing,Market value,1.968273020808121,positive
+Jude Bellingham,downside_50pct_24m,R3_position_interactions,2,pre2_canonical_goals_per90__x__Midfield,Pre2 canonical goals per90  x  midfield,-0.6561956466009509,negative
+Jude Bellingham,downside_50pct_24m,R3_position_interactions,3,age_at_signing,Age (at signing),-0.515544960240114,negative
+Jude Bellingham,downside_50pct_24m,R3_position_interactions,4,age_at_expiration,Age (at contract end),-0.4959870055915132,negative
+Jude Bellingham,downside_50pct_24m,R3_position_interactions,5,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.41108989052935735,negative
+Jude Bellingham,downside_50pct_24m,R3_position_interactions,bottom_1,pre2_canonical_goals_per90__x__Midfield,Pre2 canonical goals per90  x  midfield,-0.6561956466009509,negative
+Jude Bellingham,downside_50pct_24m,R3_position_interactions,bottom_2,age_at_signing,Age (at signing),-0.515544960240114,negative
+Jude Bellingham,downside_50pct_24m,R3_position_interactions,bottom_3,age_at_expiration,Age (at contract end),-0.4959870055915132,negative
+Jude Bellingham,downside_50pct_24m,R3_position_interactions,bottom_4,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.41108989052935735,negative
+Jude Bellingham,downside_50pct_24m,R3_position_interactions,bottom_5,pre365_goals_per90__x__Midfield,Recent-365d goals per90  x  midfield,-0.25993010830852215,negative
+Jude Bellingham,downside_50pct_24m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,1.924291051874972,positive
+Jude Bellingham,downside_50pct_24m,R4_compact_role_aware,2,age_at_signing,Age (at signing),-0.513179898772939,negative
+Jude Bellingham,downside_50pct_24m,R4_compact_role_aware,3,age_at_expiration,Age (at contract end),-0.49339151366475853,negative
+Jude Bellingham,downside_50pct_24m,R4_compact_role_aware,4,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.38419118063824487,negative
+Jude Bellingham,downside_50pct_24m,R4_compact_role_aware,5,annual_wage_to_market_value,Proposed wage / market value,0.2606744174806826,positive
+Jude Bellingham,downside_50pct_24m,R4_compact_role_aware,bottom_1,age_at_signing,Age (at signing),-0.513179898772939,negative
+Jude Bellingham,downside_50pct_24m,R4_compact_role_aware,bottom_2,age_at_expiration,Age (at contract end),-0.49339151366475853,negative
+Jude Bellingham,downside_50pct_24m,R4_compact_role_aware,bottom_3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.38419118063824487,negative
+Jude Bellingham,downside_50pct_24m,R4_compact_role_aware,bottom_4,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.21989278125228703,negative
+Jude Bellingham,downside_50pct_24m,R4_compact_role_aware,bottom_5,pre2_canonical_goals_per90__role_z,Pre2 canonical goals per90  role z,-0.11526884767673357,negative
+Erling Haaland,year2_opportunity_share,R1_remove_scoring,1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.17418323693886112,positive
+Erling Haaland,year2_opportunity_share,R1_remove_scoring,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.1296399290860726,positive
+Erling Haaland,year2_opportunity_share,R1_remove_scoring,3,log_annual_gross_eur,Current annual wage,-0.1020320693166116,negative
+Erling Haaland,year2_opportunity_share,R1_remove_scoring,4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.053064247725597424,negative
+Erling Haaland,year2_opportunity_share,R1_remove_scoring,5,pre2_canonical_minutes_played,Minutes played (2 seasons ago),0.04170950071149506,positive
+Erling Haaland,year2_opportunity_share,R1_remove_scoring,bottom_1,log_annual_gross_eur,Current annual wage,-0.1020320693166116,negative
+Erling Haaland,year2_opportunity_share,R1_remove_scoring,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.053064247725597424,negative
+Erling Haaland,year2_opportunity_share,R1_remove_scoring,bottom_3,canonical_position,Position,-0.03651666901903395,negative
+Erling Haaland,year2_opportunity_share,R1_remove_scoring,bottom_4,log_market_value_at_signing,Market value,-0.022765304025136372,negative
+Erling Haaland,year2_opportunity_share,R1_remove_scoring,bottom_5,exact_duration_years,Proposed contract length,-0.015398915068206715,negative
+Erling Haaland,year2_opportunity_share,R2_position_relative,1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.1758640220089949,positive
+Erling Haaland,year2_opportunity_share,R2_position_relative,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.11997196303377429,positive
+Erling Haaland,year2_opportunity_share,R2_position_relative,3,log_annual_gross_eur,Current annual wage,-0.09188477290276069,negative
+Erling Haaland,year2_opportunity_share,R2_position_relative,4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.06140211778270915,negative
+Erling Haaland,year2_opportunity_share,R2_position_relative,5,canonical_position,Position,-0.04083489480141309,negative
+Erling Haaland,year2_opportunity_share,R2_position_relative,bottom_1,log_annual_gross_eur,Current annual wage,-0.09188477290276069,negative
+Erling Haaland,year2_opportunity_share,R2_position_relative,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.06140211778270915,negative
+Erling Haaland,year2_opportunity_share,R2_position_relative,bottom_3,canonical_position,Position,-0.04083489480141309,negative
+Erling Haaland,year2_opportunity_share,R2_position_relative,bottom_4,log_market_value_at_signing,Market value,-0.024302397575867406,negative
+Erling Haaland,year2_opportunity_share,R2_position_relative,bottom_5,exact_duration_years,Proposed contract length,-0.01611325953435931,negative
+Erling Haaland,year2_opportunity_share,R3_position_interactions,1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.1708315079371574,positive
+Erling Haaland,year2_opportunity_share,R3_position_interactions,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.1283152067357757,positive
+Erling Haaland,year2_opportunity_share,R3_position_interactions,3,pre1_canonical_goals_per90__x__Attack,Pre1 canonical goals per90  x  attack,-0.10758994695708733,negative
+Erling Haaland,year2_opportunity_share,R3_position_interactions,4,log_annual_gross_eur,Current annual wage,-0.0997461447101309,negative
+Erling Haaland,year2_opportunity_share,R3_position_interactions,5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.05649624953436063,negative
+Erling Haaland,year2_opportunity_share,R3_position_interactions,bottom_1,pre1_canonical_goals_per90__x__Attack,Pre1 canonical goals per90  x  attack,-0.10758994695708733,negative
+Erling Haaland,year2_opportunity_share,R3_position_interactions,bottom_2,log_annual_gross_eur,Current annual wage,-0.0997461447101309,negative
+Erling Haaland,year2_opportunity_share,R3_position_interactions,bottom_3,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.05649624953436063,negative
+Erling Haaland,year2_opportunity_share,R3_position_interactions,bottom_4,pre365_goals_per90__x__Attack,Recent-365d goals per90  x  attack,-0.044562057152437114,negative
+Erling Haaland,year2_opportunity_share,R3_position_interactions,bottom_5,canonical_position,Position,-0.02737292961497992,negative
+Erling Haaland,year2_opportunity_share,R4_compact_role_aware,1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.1758640220089949,positive
+Erling Haaland,year2_opportunity_share,R4_compact_role_aware,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.11997196303377429,positive
+Erling Haaland,year2_opportunity_share,R4_compact_role_aware,3,log_annual_gross_eur,Current annual wage,-0.09188477290276069,negative
+Erling Haaland,year2_opportunity_share,R4_compact_role_aware,4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.06140211778270915,negative
+Erling Haaland,year2_opportunity_share,R4_compact_role_aware,5,canonical_position,Position,-0.04083489480141309,negative
+Erling Haaland,year2_opportunity_share,R4_compact_role_aware,bottom_1,log_annual_gross_eur,Current annual wage,-0.09188477290276069,negative
+Erling Haaland,year2_opportunity_share,R4_compact_role_aware,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.06140211778270915,negative
+Erling Haaland,year2_opportunity_share,R4_compact_role_aware,bottom_3,canonical_position,Position,-0.04083489480141309,negative
+Erling Haaland,year2_opportunity_share,R4_compact_role_aware,bottom_4,log_market_value_at_signing,Market value,-0.024302397575867406,negative
+Erling Haaland,year2_opportunity_share,R4_compact_role_aware,bottom_5,exact_duration_years,Proposed contract length,-0.01611325953435931,negative
+Erling Haaland,any_outbound,R1_remove_scoring,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.35801455750734806,negative
+Erling Haaland,any_outbound,R1_remove_scoring,2,log_market_value_at_signing,Market value,0.29113038922895096,positive
+Erling Haaland,any_outbound,R1_remove_scoring,3,canonical_position,Position,0.23688815340855524,positive
+Erling Haaland,any_outbound,R1_remove_scoring,4,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.14969786274696414,negative
+Erling Haaland,any_outbound,R1_remove_scoring,5,log_annual_gross_eur,Current annual wage,0.13237917866957538,positive
+Erling Haaland,any_outbound,R1_remove_scoring,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.35801455750734806,negative
+Erling Haaland,any_outbound,R1_remove_scoring,bottom_2,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.14969786274696414,negative
+Erling Haaland,any_outbound,R1_remove_scoring,bottom_3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.06129904251224036,negative
+Erling Haaland,any_outbound,R1_remove_scoring,bottom_4,salary_change_from_prior_pct,Wage change vs. prior season,-0.05275788469093278,negative
+Erling Haaland,any_outbound,R1_remove_scoring,bottom_5,annual_wage_to_market_value,Proposed wage / market value,-0.029236436262311417,negative
+Erling Haaland,any_outbound,R2_position_relative,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.3485248920628626,negative
+Erling Haaland,any_outbound,R2_position_relative,2,log_market_value_at_signing,Market value,0.324115518120564,positive
+Erling Haaland,any_outbound,R2_position_relative,3,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.1872417095272951,negative
+Erling Haaland,any_outbound,R2_position_relative,4,canonical_position,Position,0.18165529175720396,positive
+Erling Haaland,any_outbound,R2_position_relative,5,log_annual_gross_eur,Current annual wage,0.13438795829750028,positive
+Erling Haaland,any_outbound,R2_position_relative,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.3485248920628626,negative
+Erling Haaland,any_outbound,R2_position_relative,bottom_2,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.1872417095272951,negative
+Erling Haaland,any_outbound,R2_position_relative,bottom_3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.06097744936273914,negative
+Erling Haaland,any_outbound,R2_position_relative,bottom_4,salary_change_from_prior_pct,Wage change vs. prior season,-0.053276330426726894,negative
+Erling Haaland,any_outbound,R2_position_relative,bottom_5,pre1_canonical_goals_per90__role_pct,Pre1 canonical goals per90  role pct,-0.05286205337205515,negative
+Erling Haaland,any_outbound,R3_position_interactions,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.35965214521726796,negative
+Erling Haaland,any_outbound,R3_position_interactions,2,log_market_value_at_signing,Market value,0.26291836883960157,positive
+Erling Haaland,any_outbound,R3_position_interactions,3,pre365_goals_per90__x__Attack,Recent-365d goals per90  x  attack,0.16609993264924816,positive
+Erling Haaland,any_outbound,R3_position_interactions,4,pre365_goals_per90,Goals per 90 (last 365 days),0.15785037169742916,positive
+Erling Haaland,any_outbound,R3_position_interactions,5,pre2_canonical_goals_per90__x__Attack,Pre2 canonical goals per90  x  attack,0.1458503106138072,positive
+Erling Haaland,any_outbound,R3_position_interactions,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.35965214521726796,negative
+Erling Haaland,any_outbound,R3_position_interactions,bottom_2,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.08552518523791372,negative
+Erling Haaland,any_outbound,R3_position_interactions,bottom_3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.058689175637196,negative
+Erling Haaland,any_outbound,R3_position_interactions,bottom_4,salary_change_from_prior_pct,Wage change vs. prior season,-0.05450675818016659,negative
+Erling Haaland,any_outbound,R3_position_interactions,bottom_5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.046154613318486526,negative
+Erling Haaland,any_outbound,R4_compact_role_aware,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.35965214521726796,negative
+Erling Haaland,any_outbound,R4_compact_role_aware,2,log_market_value_at_signing,Market value,0.26291836883960157,positive
+Erling Haaland,any_outbound,R4_compact_role_aware,3,pre365_goals_per90__x__Attack,Recent-365d goals per90  x  attack,0.16609993264924816,positive
+Erling Haaland,any_outbound,R4_compact_role_aware,4,pre365_goals_per90,Goals per 90 (last 365 days),0.15785037169742916,positive
+Erling Haaland,any_outbound,R4_compact_role_aware,5,pre2_canonical_goals_per90__x__Attack,Pre2 canonical goals per90  x  attack,0.1458503106138072,positive
+Erling Haaland,any_outbound,R4_compact_role_aware,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.35965214521726796,negative
+Erling Haaland,any_outbound,R4_compact_role_aware,bottom_2,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.08552518523791372,negative
+Erling Haaland,any_outbound,R4_compact_role_aware,bottom_3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.058689175637196,negative
+Erling Haaland,any_outbound,R4_compact_role_aware,bottom_4,salary_change_from_prior_pct,Wage change vs. prior season,-0.05450675818016659,negative
+Erling Haaland,any_outbound,R4_compact_role_aware,bottom_5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.046154613318486526,negative
+Erling Haaland,permanent_outbound,R1_remove_scoring,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.20918131907832402,negative
+Erling Haaland,permanent_outbound,R1_remove_scoring,2,canonical_position,Position,0.20789541964667024,positive
+Erling Haaland,permanent_outbound,R1_remove_scoring,3,log_market_value_at_signing,Market value,0.1069481615326218,positive
+Erling Haaland,permanent_outbound,R1_remove_scoring,4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),0.07535964390772266,positive
+Erling Haaland,permanent_outbound,R1_remove_scoring,5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.05688817612286508,negative
+Erling Haaland,permanent_outbound,R1_remove_scoring,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.20918131907832402,negative
+Erling Haaland,permanent_outbound,R1_remove_scoring,bottom_2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.05688817612286508,negative
+Erling Haaland,permanent_outbound,R1_remove_scoring,bottom_3,annual_wage_to_market_value,Proposed wage / market value,-0.05439405206244637,negative
+Erling Haaland,permanent_outbound,R1_remove_scoring,bottom_4,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.054312891877693406,negative
+Erling Haaland,permanent_outbound,R1_remove_scoring,bottom_5,salary_change_from_prior_pct,Wage change vs. prior season,-0.03981296178039193,negative
+Erling Haaland,permanent_outbound,R2_position_relative,1,canonical_position,Position,0.2100959298291343,positive
+Erling Haaland,permanent_outbound,R2_position_relative,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.20750916431671398,negative
+Erling Haaland,permanent_outbound,R2_position_relative,3,log_market_value_at_signing,Market value,0.09494089167353185,positive
+Erling Haaland,permanent_outbound,R2_position_relative,4,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.060159792263753654,negative
+Erling Haaland,permanent_outbound,R2_position_relative,5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),0.05974483177959856,positive
+Erling Haaland,permanent_outbound,R2_position_relative,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.20750916431671398,negative
+Erling Haaland,permanent_outbound,R2_position_relative,bottom_2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.060159792263753654,negative
+Erling Haaland,permanent_outbound,R2_position_relative,bottom_3,annual_wage_to_market_value,Proposed wage / market value,-0.05465651735354127,negative
+Erling Haaland,permanent_outbound,R2_position_relative,bottom_4,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.048310580830643164,negative
+Erling Haaland,permanent_outbound,R2_position_relative,bottom_5,salary_change_from_prior_pct,Wage change vs. prior season,-0.03607294071226525,negative
+Erling Haaland,permanent_outbound,R3_position_interactions,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.21431824206297326,negative
+Erling Haaland,permanent_outbound,R3_position_interactions,2,pre365_goals_per90__x__Attack,Recent-365d goals per90  x  attack,0.13399639139532388,positive
+Erling Haaland,permanent_outbound,R3_position_interactions,3,canonical_position,Position,0.12754281645592458,positive
+Erling Haaland,permanent_outbound,R3_position_interactions,4,pre365_goals_per90,Goals per 90 (last 365 days),0.127193569568365,positive
+Erling Haaland,permanent_outbound,R3_position_interactions,5,log_market_value_at_signing,Market value,0.09142624360770674,positive
+Erling Haaland,permanent_outbound,R3_position_interactions,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.21431824206297326,negative
+Erling Haaland,permanent_outbound,R3_position_interactions,bottom_2,annual_wage_to_market_value,Proposed wage / market value,-0.05670707564241445,negative
+Erling Haaland,permanent_outbound,R3_position_interactions,bottom_3,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.05128441444541021,negative
+Erling Haaland,permanent_outbound,R3_position_interactions,bottom_4,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.04540789289123051,negative
+Erling Haaland,permanent_outbound,R3_position_interactions,bottom_5,log_annual_gross_eur,Current annual wage,-0.03842866155411769,negative
+Erling Haaland,permanent_outbound,R4_compact_role_aware,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.21431824206297326,negative
+Erling Haaland,permanent_outbound,R4_compact_role_aware,2,pre365_goals_per90__x__Attack,Recent-365d goals per90  x  attack,0.13399639139532388,positive
+Erling Haaland,permanent_outbound,R4_compact_role_aware,3,canonical_position,Position,0.12754281645592458,positive
+Erling Haaland,permanent_outbound,R4_compact_role_aware,4,pre365_goals_per90,Goals per 90 (last 365 days),0.127193569568365,positive
+Erling Haaland,permanent_outbound,R4_compact_role_aware,5,log_market_value_at_signing,Market value,0.09142624360770674,positive
+Erling Haaland,permanent_outbound,R4_compact_role_aware,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.21431824206297326,negative
+Erling Haaland,permanent_outbound,R4_compact_role_aware,bottom_2,annual_wage_to_market_value,Proposed wage / market value,-0.05670707564241445,negative
+Erling Haaland,permanent_outbound,R4_compact_role_aware,bottom_3,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.05128441444541021,negative
+Erling Haaland,permanent_outbound,R4_compact_role_aware,bottom_4,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.04540789289123051,negative
+Erling Haaland,permanent_outbound,R4_compact_role_aware,bottom_5,log_annual_gross_eur,Current annual wage,-0.03842866155411769,negative
+Erling Haaland,value_log_ratio_12m,R1_remove_scoring,1,log_market_value_at_signing,Market value,-1.0187947197257874,negative
+Erling Haaland,value_log_ratio_12m,R1_remove_scoring,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.22020332550320576,positive
+Erling Haaland,value_log_ratio_12m,R1_remove_scoring,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.1889725448425083,positive
+Erling Haaland,value_log_ratio_12m,R1_remove_scoring,4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.1000516468733677,negative
+Erling Haaland,value_log_ratio_12m,R1_remove_scoring,5,league,League,0.06467687428628092,positive
+Erling Haaland,value_log_ratio_12m,R1_remove_scoring,bottom_1,log_market_value_at_signing,Market value,-1.0187947197257874,negative
+Erling Haaland,value_log_ratio_12m,R1_remove_scoring,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.1000516468733677,negative
+Erling Haaland,value_log_ratio_12m,R1_remove_scoring,bottom_3,salary_change_from_prior_pct,Wage change vs. prior season,-0.05094411008308469,negative
+Erling Haaland,value_log_ratio_12m,R1_remove_scoring,bottom_4,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.03444798361853681,negative
+Erling Haaland,value_log_ratio_12m,R1_remove_scoring,bottom_5,commitment_to_market_value,Commitment to market value,-0.01583241012541805,negative
+Erling Haaland,value_log_ratio_12m,R2_position_relative,1,log_market_value_at_signing,Market value,-1.0655275629862697,negative
+Erling Haaland,value_log_ratio_12m,R2_position_relative,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.21453688855389266,positive
+Erling Haaland,value_log_ratio_12m,R2_position_relative,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.18569650061599396,positive
+Erling Haaland,value_log_ratio_12m,R2_position_relative,4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.09081485489683545,negative
+Erling Haaland,value_log_ratio_12m,R2_position_relative,5,pre2_canonical_assists_per90__role_pct,Pre2 canonical assists per90  role pct,-0.08931803255417375,negative
+Erling Haaland,value_log_ratio_12m,R2_position_relative,bottom_1,log_market_value_at_signing,Market value,-1.0655275629862697,negative
+Erling Haaland,value_log_ratio_12m,R2_position_relative,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.09081485489683545,negative
+Erling Haaland,value_log_ratio_12m,R2_position_relative,bottom_3,pre2_canonical_assists_per90__role_pct,Pre2 canonical assists per90  role pct,-0.08931803255417375,negative
+Erling Haaland,value_log_ratio_12m,R2_position_relative,bottom_4,salary_change_from_prior_pct,Wage change vs. prior season,-0.0489926368613828,negative
+Erling Haaland,value_log_ratio_12m,R2_position_relative,bottom_5,commitment_to_market_value,Commitment to market value,-0.015858487654836516,negative
+Erling Haaland,value_log_ratio_12m,R3_position_interactions,1,log_market_value_at_signing,Market value,-1.0545020611184632,negative
+Erling Haaland,value_log_ratio_12m,R3_position_interactions,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.23357813124619148,positive
+Erling Haaland,value_log_ratio_12m,R3_position_interactions,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.22999585912373885,positive
+Erling Haaland,value_log_ratio_12m,R3_position_interactions,4,pre1_canonical_goals_per90__x__Attack,Pre1 canonical goals per90  x  attack,-0.1566756590859511,negative
+Erling Haaland,value_log_ratio_12m,R3_position_interactions,5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.15226180591504612,negative
+Erling Haaland,value_log_ratio_12m,R3_position_interactions,bottom_1,log_market_value_at_signing,Market value,-1.0545020611184632,negative
+Erling Haaland,value_log_ratio_12m,R3_position_interactions,bottom_2,pre1_canonical_goals_per90__x__Attack,Pre1 canonical goals per90  x  attack,-0.1566756590859511,negative
+Erling Haaland,value_log_ratio_12m,R3_position_interactions,bottom_3,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.15226180591504612,negative
+Erling Haaland,value_log_ratio_12m,R3_position_interactions,bottom_4,pre365_assists_per90__x__Attack,Recent-365d assists per90  x  attack,-0.09852894722396446,negative
+Erling Haaland,value_log_ratio_12m,R3_position_interactions,bottom_5,pre1_canonical_assists_per90__x__Attack,Pre1 canonical assists per90  x  attack,-0.09462205033379276,negative
+Erling Haaland,value_log_ratio_12m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,-1.0655275629862697,negative
+Erling Haaland,value_log_ratio_12m,R4_compact_role_aware,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.21453688855389266,positive
+Erling Haaland,value_log_ratio_12m,R4_compact_role_aware,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.18569650061599396,positive
+Erling Haaland,value_log_ratio_12m,R4_compact_role_aware,4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.09081485489683545,negative
+Erling Haaland,value_log_ratio_12m,R4_compact_role_aware,5,pre2_canonical_assists_per90__role_pct,Pre2 canonical assists per90  role pct,-0.08931803255417375,negative
+Erling Haaland,value_log_ratio_12m,R4_compact_role_aware,bottom_1,log_market_value_at_signing,Market value,-1.0655275629862697,negative
+Erling Haaland,value_log_ratio_12m,R4_compact_role_aware,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.09081485489683545,negative
+Erling Haaland,value_log_ratio_12m,R4_compact_role_aware,bottom_3,pre2_canonical_assists_per90__role_pct,Pre2 canonical assists per90  role pct,-0.08931803255417375,negative
+Erling Haaland,value_log_ratio_12m,R4_compact_role_aware,bottom_4,salary_change_from_prior_pct,Wage change vs. prior season,-0.0489926368613828,negative
+Erling Haaland,value_log_ratio_12m,R4_compact_role_aware,bottom_5,commitment_to_market_value,Commitment to market value,-0.015858487654836516,negative
+Erling Haaland,value_log_ratio_24m,R1_remove_scoring,1,log_market_value_at_signing,Market value,-1.3283780165452304,negative
+Erling Haaland,value_log_ratio_24m,R1_remove_scoring,2,log_annual_gross_eur,Current annual wage,0.2532482774782731,positive
+Erling Haaland,value_log_ratio_24m,R1_remove_scoring,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.2435364899103618,positive
+Erling Haaland,value_log_ratio_24m,R1_remove_scoring,4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.13140712210902564,negative
+Erling Haaland,value_log_ratio_24m,R1_remove_scoring,5,salary_change_from_prior_pct,Wage change vs. prior season,-0.07137728973656894,negative
+Erling Haaland,value_log_ratio_24m,R1_remove_scoring,bottom_1,log_market_value_at_signing,Market value,-1.3283780165452304,negative
+Erling Haaland,value_log_ratio_24m,R1_remove_scoring,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.13140712210902564,negative
+Erling Haaland,value_log_ratio_24m,R1_remove_scoring,bottom_3,salary_change_from_prior_pct,Wage change vs. prior season,-0.07137728973656894,negative
+Erling Haaland,value_log_ratio_24m,R1_remove_scoring,bottom_4,annual_wage_to_market_value,Proposed wage / market value,-0.05341081434839092,negative
+Erling Haaland,value_log_ratio_24m,R1_remove_scoring,bottom_5,pre1_canonical_minutes_played,Pre1 canonical minutes played,-0.048875026101355,negative
+Erling Haaland,value_log_ratio_24m,R2_position_relative,1,log_market_value_at_signing,Market value,-1.3803175155278902,negative
+Erling Haaland,value_log_ratio_24m,R2_position_relative,2,log_annual_gross_eur,Current annual wage,0.2463090991126997,positive
+Erling Haaland,value_log_ratio_24m,R2_position_relative,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.24388353552352193,positive
+Erling Haaland,value_log_ratio_24m,R2_position_relative,4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.12598159104325543,negative
+Erling Haaland,value_log_ratio_24m,R2_position_relative,5,league,League,0.07014286517380092,positive
+Erling Haaland,value_log_ratio_24m,R2_position_relative,bottom_1,log_market_value_at_signing,Market value,-1.3803175155278902,negative
+Erling Haaland,value_log_ratio_24m,R2_position_relative,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.12598159104325543,negative
+Erling Haaland,value_log_ratio_24m,R2_position_relative,bottom_3,salary_change_from_prior_pct,Wage change vs. prior season,-0.06854008456115189,negative
+Erling Haaland,value_log_ratio_24m,R2_position_relative,bottom_4,pre2_canonical_assists_per90__role_pct,Pre2 canonical assists per90  role pct,-0.06674193920119936,negative
+Erling Haaland,value_log_ratio_24m,R2_position_relative,bottom_5,annual_wage_to_market_value,Proposed wage / market value,-0.05117625551369058,negative
+Erling Haaland,value_log_ratio_24m,R3_position_interactions,1,log_market_value_at_signing,Market value,-1.3681552768049543,negative
+Erling Haaland,value_log_ratio_24m,R3_position_interactions,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.25443739053910713,positive
+Erling Haaland,value_log_ratio_24m,R3_position_interactions,3,pre1_canonical_goals_per90__x__Attack,Pre1 canonical goals per90  x  attack,-0.23554950366940122,negative
+Erling Haaland,value_log_ratio_24m,R3_position_interactions,4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.1967672457080094,negative
+Erling Haaland,value_log_ratio_24m,R3_position_interactions,5,log_annual_gross_eur,Current annual wage,0.19118390631048812,positive
+Erling Haaland,value_log_ratio_24m,R3_position_interactions,bottom_1,log_market_value_at_signing,Market value,-1.3681552768049543,negative
+Erling Haaland,value_log_ratio_24m,R3_position_interactions,bottom_2,pre1_canonical_goals_per90__x__Attack,Pre1 canonical goals per90  x  attack,-0.23554950366940122,negative
+Erling Haaland,value_log_ratio_24m,R3_position_interactions,bottom_3,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.1967672457080094,negative
+Erling Haaland,value_log_ratio_24m,R3_position_interactions,bottom_4,pre365_assists_per90__x__Attack,Recent-365d assists per90  x  attack,-0.1322934750174944,negative
+Erling Haaland,value_log_ratio_24m,R3_position_interactions,bottom_5,salary_change_from_prior_pct,Wage change vs. prior season,-0.06726733332179392,negative
+Erling Haaland,value_log_ratio_24m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,-1.3803175155278902,negative
+Erling Haaland,value_log_ratio_24m,R4_compact_role_aware,2,log_annual_gross_eur,Current annual wage,0.2463090991126997,positive
+Erling Haaland,value_log_ratio_24m,R4_compact_role_aware,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.24388353552352193,positive
+Erling Haaland,value_log_ratio_24m,R4_compact_role_aware,4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.12598159104325543,negative
+Erling Haaland,value_log_ratio_24m,R4_compact_role_aware,5,league,League,0.07014286517380092,positive
+Erling Haaland,value_log_ratio_24m,R4_compact_role_aware,bottom_1,log_market_value_at_signing,Market value,-1.3803175155278902,negative
+Erling Haaland,value_log_ratio_24m,R4_compact_role_aware,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.12598159104325543,negative
+Erling Haaland,value_log_ratio_24m,R4_compact_role_aware,bottom_3,salary_change_from_prior_pct,Wage change vs. prior season,-0.06854008456115189,negative
+Erling Haaland,value_log_ratio_24m,R4_compact_role_aware,bottom_4,pre2_canonical_assists_per90__role_pct,Pre2 canonical assists per90  role pct,-0.06674193920119936,negative
+Erling Haaland,value_log_ratio_24m,R4_compact_role_aware,bottom_5,annual_wage_to_market_value,Proposed wage / market value,-0.05117625551369058,negative
+Erling Haaland,downside_10pct_12m,R1_remove_scoring,1,log_market_value_at_signing,Market value,1.4403670433325637,positive
+Erling Haaland,downside_10pct_12m,R1_remove_scoring,2,log_annual_gross_eur,Current annual wage,0.6087695646717752,positive
+Erling Haaland,downside_10pct_12m,R1_remove_scoring,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.5224012140635879,negative
+Erling Haaland,downside_10pct_12m,R1_remove_scoring,4,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.38321803732236837,negative
+Erling Haaland,downside_10pct_12m,R1_remove_scoring,5,canonical_position,Position,0.29950993858825026,positive
+Erling Haaland,downside_10pct_12m,R1_remove_scoring,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.5224012140635879,negative
+Erling Haaland,downside_10pct_12m,R1_remove_scoring,bottom_2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.38321803732236837,negative
+Erling Haaland,downside_10pct_12m,R1_remove_scoring,bottom_3,league,League,-0.24736549853975448,negative
+Erling Haaland,downside_10pct_12m,R1_remove_scoring,bottom_4,age_at_signing,Age (at signing),-0.0828373103947593,negative
+Erling Haaland,downside_10pct_12m,R1_remove_scoring,bottom_5,age_at_expiration,Age (at contract end),-0.077056856945788,negative
+Erling Haaland,downside_10pct_12m,R2_position_relative,1,log_market_value_at_signing,Market value,1.4984676133059005,positive
+Erling Haaland,downside_10pct_12m,R2_position_relative,2,log_annual_gross_eur,Current annual wage,0.5641629051752081,positive
+Erling Haaland,downside_10pct_12m,R2_position_relative,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.4588418592173513,negative
+Erling Haaland,downside_10pct_12m,R2_position_relative,4,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.3895458060237617,negative
+Erling Haaland,downside_10pct_12m,R2_position_relative,5,pre1_canonical_minutes_played,Pre1 canonical minutes played,0.3023523110975473,positive
+Erling Haaland,downside_10pct_12m,R2_position_relative,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.4588418592173513,negative
+Erling Haaland,downside_10pct_12m,R2_position_relative,bottom_2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.3895458060237617,negative
+Erling Haaland,downside_10pct_12m,R2_position_relative,bottom_3,league,League,-0.2631095474985029,negative
+Erling Haaland,downside_10pct_12m,R2_position_relative,bottom_4,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.15240568797848755,negative
+Erling Haaland,downside_10pct_12m,R2_position_relative,bottom_5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.10275685653913755,negative
+Erling Haaland,downside_10pct_12m,R3_position_interactions,1,log_market_value_at_signing,Market value,1.4479269323824386,positive
+Erling Haaland,downside_10pct_12m,R3_position_interactions,2,log_annual_gross_eur,Current annual wage,0.5459837632165219,positive
+Erling Haaland,downside_10pct_12m,R3_position_interactions,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.48959326073114245,negative
+Erling Haaland,downside_10pct_12m,R3_position_interactions,4,pre1_canonical_goals_per90,Pre1 canonical goals per90,0.4790857174150406,positive
+Erling Haaland,downside_10pct_12m,R3_position_interactions,5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.3686219258991886,negative
+Erling Haaland,downside_10pct_12m,R3_position_interactions,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.48959326073114245,negative
+Erling Haaland,downside_10pct_12m,R3_position_interactions,bottom_2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.3686219258991886,negative
+Erling Haaland,downside_10pct_12m,R3_position_interactions,bottom_3,pre1_canonical_assists_per90__x__Attack,Pre1 canonical assists per90  x  attack,-0.3447065165395887,negative
+Erling Haaland,downside_10pct_12m,R3_position_interactions,bottom_4,league,League,-0.24094655966791334,negative
+Erling Haaland,downside_10pct_12m,R3_position_interactions,bottom_5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.15779155980341605,negative
+Erling Haaland,downside_10pct_12m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,1.4984676133059005,positive
+Erling Haaland,downside_10pct_12m,R4_compact_role_aware,2,log_annual_gross_eur,Current annual wage,0.5641629051752081,positive
+Erling Haaland,downside_10pct_12m,R4_compact_role_aware,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.4588418592173513,negative
+Erling Haaland,downside_10pct_12m,R4_compact_role_aware,4,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.3895458060237617,negative
+Erling Haaland,downside_10pct_12m,R4_compact_role_aware,5,pre1_canonical_minutes_played,Pre1 canonical minutes played,0.3023523110975473,positive
+Erling Haaland,downside_10pct_12m,R4_compact_role_aware,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.4588418592173513,negative
+Erling Haaland,downside_10pct_12m,R4_compact_role_aware,bottom_2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.3895458060237617,negative
+Erling Haaland,downside_10pct_12m,R4_compact_role_aware,bottom_3,league,League,-0.2631095474985029,negative
+Erling Haaland,downside_10pct_12m,R4_compact_role_aware,bottom_4,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.15240568797848755,negative
+Erling Haaland,downside_10pct_12m,R4_compact_role_aware,bottom_5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.10275685653913755,negative
+Erling Haaland,downside_10pct_24m,R1_remove_scoring,1,log_market_value_at_signing,Market value,1.602777979838994,positive
+Erling Haaland,downside_10pct_24m,R1_remove_scoring,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.31518054047404503,negative
+Erling Haaland,downside_10pct_24m,R1_remove_scoring,3,pre2_canonical_minutes_played,Minutes played (2 seasons ago),0.27277934946189636,positive
+Erling Haaland,downside_10pct_24m,R1_remove_scoring,4,annual_wage_to_market_value,Proposed wage / market value,0.2254618028035981,positive
+Erling Haaland,downside_10pct_24m,R1_remove_scoring,5,pre1_canonical_minutes_played,Pre1 canonical minutes played,0.19130700450741328,positive
+Erling Haaland,downside_10pct_24m,R1_remove_scoring,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.31518054047404503,negative
+Erling Haaland,downside_10pct_24m,R1_remove_scoring,bottom_2,league,League,-0.126045833716151,negative
+Erling Haaland,downside_10pct_24m,R1_remove_scoring,bottom_3,age_at_signing,Age (at signing),-0.05991129041475918,negative
+Erling Haaland,downside_10pct_24m,R1_remove_scoring,bottom_4,age_at_expiration,Age (at contract end),-0.056820056196821116,negative
+Erling Haaland,downside_10pct_24m,R1_remove_scoring,bottom_5,club_salary_percentile,Position in club's wage structure,-0.030865913933019275,negative
+Erling Haaland,downside_10pct_24m,R2_position_relative,1,log_market_value_at_signing,Market value,1.7456230363306398,positive
+Erling Haaland,downside_10pct_24m,R2_position_relative,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.33770324967698007,negative
+Erling Haaland,downside_10pct_24m,R2_position_relative,3,pre2_canonical_minutes_played,Minutes played (2 seasons ago),0.2587647516719387,positive
+Erling Haaland,downside_10pct_24m,R2_position_relative,4,annual_wage_to_market_value,Proposed wage / market value,0.22955937036419405,positive
+Erling Haaland,downside_10pct_24m,R2_position_relative,5,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.17707600398619083,negative
+Erling Haaland,downside_10pct_24m,R2_position_relative,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.33770324967698007,negative
+Erling Haaland,downside_10pct_24m,R2_position_relative,bottom_2,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.17707600398619083,negative
+Erling Haaland,downside_10pct_24m,R2_position_relative,bottom_3,league,League,-0.15704676195299655,negative
+Erling Haaland,downside_10pct_24m,R2_position_relative,bottom_4,age_at_signing,Age (at signing),-0.06124974342603612,negative
+Erling Haaland,downside_10pct_24m,R2_position_relative,bottom_5,age_at_expiration,Age (at contract end),-0.05828627557140361,negative
+Erling Haaland,downside_10pct_24m,R3_position_interactions,1,log_market_value_at_signing,Market value,1.6522139557434956,positive
+Erling Haaland,downside_10pct_24m,R3_position_interactions,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.3628873729617335,negative
+Erling Haaland,downside_10pct_24m,R3_position_interactions,3,pre1_canonical_goals_per90,Pre1 canonical goals per90,0.2401347782107365,positive
+Erling Haaland,downside_10pct_24m,R3_position_interactions,4,annual_wage_to_market_value,Proposed wage / market value,0.21942163882710503,positive
+Erling Haaland,downside_10pct_24m,R3_position_interactions,5,salary_change_from_prior_pct,Wage change vs. prior season,0.18088098288331864,positive
+Erling Haaland,downside_10pct_24m,R3_position_interactions,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.3628873729617335,negative
+Erling Haaland,downside_10pct_24m,R3_position_interactions,bottom_2,pre1_canonical_assists_per90__x__Attack,Pre1 canonical assists per90  x  attack,-0.11635807902621004,negative
+Erling Haaland,downside_10pct_24m,R3_position_interactions,bottom_3,league,League,-0.11592470547419277,negative
+Erling Haaland,downside_10pct_24m,R3_position_interactions,bottom_4,age_at_signing,Age (at signing),-0.06028702476708619,negative
+Erling Haaland,downside_10pct_24m,R3_position_interactions,bottom_5,age_at_expiration,Age (at contract end),-0.05736947425827908,negative
+Erling Haaland,downside_10pct_24m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,1.7456230363306398,positive
+Erling Haaland,downside_10pct_24m,R4_compact_role_aware,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.33770324967698007,negative
+Erling Haaland,downside_10pct_24m,R4_compact_role_aware,3,pre2_canonical_minutes_played,Minutes played (2 seasons ago),0.2587647516719387,positive
+Erling Haaland,downside_10pct_24m,R4_compact_role_aware,4,annual_wage_to_market_value,Proposed wage / market value,0.22955937036419405,positive
+Erling Haaland,downside_10pct_24m,R4_compact_role_aware,5,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.17707600398619083,negative
+Erling Haaland,downside_10pct_24m,R4_compact_role_aware,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.33770324967698007,negative
+Erling Haaland,downside_10pct_24m,R4_compact_role_aware,bottom_2,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.17707600398619083,negative
+Erling Haaland,downside_10pct_24m,R4_compact_role_aware,bottom_3,league,League,-0.15704676195299655,negative
+Erling Haaland,downside_10pct_24m,R4_compact_role_aware,bottom_4,age_at_signing,Age (at signing),-0.06124974342603612,negative
+Erling Haaland,downside_10pct_24m,R4_compact_role_aware,bottom_5,age_at_expiration,Age (at contract end),-0.05828627557140361,negative
+Erling Haaland,downside_25pct_12m,R1_remove_scoring,1,log_market_value_at_signing,Market value,1.4398869387754871,positive
+Erling Haaland,downside_25pct_12m,R1_remove_scoring,2,log_annual_gross_eur,Current annual wage,0.3902248391940248,positive
+Erling Haaland,downside_25pct_12m,R1_remove_scoring,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.30412428959088017,negative
+Erling Haaland,downside_25pct_12m,R1_remove_scoring,4,canonical_position,Position,0.2984333586247424,positive
+Erling Haaland,downside_25pct_12m,R1_remove_scoring,5,pre1_canonical_minutes_played,Pre1 canonical minutes played,0.2525296620411984,positive
+Erling Haaland,downside_25pct_12m,R1_remove_scoring,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.30412428959088017,negative
+Erling Haaland,downside_25pct_12m,R1_remove_scoring,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.23663009185936057,negative
+Erling Haaland,downside_25pct_12m,R1_remove_scoring,bottom_3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.23056884364189373,negative
+Erling Haaland,downside_25pct_12m,R1_remove_scoring,bottom_4,league,League,-0.16898661823939162,negative
+Erling Haaland,downside_25pct_12m,R1_remove_scoring,bottom_5,age_at_signing,Age (at signing),-0.08043901309952876,negative
+Erling Haaland,downside_25pct_12m,R2_position_relative,1,log_market_value_at_signing,Market value,1.369039188631591,positive
+Erling Haaland,downside_25pct_12m,R2_position_relative,2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.333735836366565,negative
+Erling Haaland,downside_25pct_12m,R2_position_relative,3,log_annual_gross_eur,Current annual wage,0.3330041625103547,positive
+Erling Haaland,downside_25pct_12m,R2_position_relative,4,canonical_position,Position,0.32910451915832223,positive
+Erling Haaland,downside_25pct_12m,R2_position_relative,5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.28683625723783235,negative
+Erling Haaland,downside_25pct_12m,R2_position_relative,bottom_1,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.333735836366565,negative
+Erling Haaland,downside_25pct_12m,R2_position_relative,bottom_2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.28683625723783235,negative
+Erling Haaland,downside_25pct_12m,R2_position_relative,bottom_3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.17092979929665428,negative
+Erling Haaland,downside_25pct_12m,R2_position_relative,bottom_4,league,League,-0.16016893829502893,negative
+Erling Haaland,downside_25pct_12m,R2_position_relative,bottom_5,age_at_signing,Age (at signing),-0.08052166779434242,negative
+Erling Haaland,downside_25pct_12m,R3_position_interactions,1,log_market_value_at_signing,Market value,1.4313460901566453,positive
+Erling Haaland,downside_25pct_12m,R3_position_interactions,2,pre1_canonical_goals_per90__x__Attack,Pre1 canonical goals per90  x  attack,0.6264341234362407,positive
+Erling Haaland,downside_25pct_12m,R3_position_interactions,3,log_annual_gross_eur,Current annual wage,0.3644311050095915,positive
+Erling Haaland,downside_25pct_12m,R3_position_interactions,4,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.31418645349811597,negative
+Erling Haaland,downside_25pct_12m,R3_position_interactions,5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.29134856033190293,negative
+Erling Haaland,downside_25pct_12m,R3_position_interactions,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.31418645349811597,negative
+Erling Haaland,downside_25pct_12m,R3_position_interactions,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.29134856033190293,negative
+Erling Haaland,downside_25pct_12m,R3_position_interactions,bottom_3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.2047672575549901,negative
+Erling Haaland,downside_25pct_12m,R3_position_interactions,bottom_4,pre2_canonical_assists_per90__x__Attack,Pre2 canonical assists per90  x  attack,-0.1936277110147484,negative
+Erling Haaland,downside_25pct_12m,R3_position_interactions,bottom_5,league,League,-0.15967372675193275,negative
+Erling Haaland,downside_25pct_12m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,1.369039188631591,positive
+Erling Haaland,downside_25pct_12m,R4_compact_role_aware,2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.333735836366565,negative
+Erling Haaland,downside_25pct_12m,R4_compact_role_aware,3,log_annual_gross_eur,Current annual wage,0.3330041625103547,positive
+Erling Haaland,downside_25pct_12m,R4_compact_role_aware,4,canonical_position,Position,0.32910451915832223,positive
+Erling Haaland,downside_25pct_12m,R4_compact_role_aware,5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.28683625723783235,negative
+Erling Haaland,downside_25pct_12m,R4_compact_role_aware,bottom_1,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.333735836366565,negative
+Erling Haaland,downside_25pct_12m,R4_compact_role_aware,bottom_2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.28683625723783235,negative
+Erling Haaland,downside_25pct_12m,R4_compact_role_aware,bottom_3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.17092979929665428,negative
+Erling Haaland,downside_25pct_12m,R4_compact_role_aware,bottom_4,league,League,-0.16016893829502893,negative
+Erling Haaland,downside_25pct_12m,R4_compact_role_aware,bottom_5,age_at_signing,Age (at signing),-0.08052166779434242,negative
+Erling Haaland,downside_25pct_24m,R1_remove_scoring,1,log_market_value_at_signing,Market value,1.8235746310097967,positive
+Erling Haaland,downside_25pct_24m,R1_remove_scoring,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.3229030923229072,negative
+Erling Haaland,downside_25pct_24m,R1_remove_scoring,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.3214107396712775,negative
+Erling Haaland,downside_25pct_24m,R1_remove_scoring,4,annual_wage_to_market_value,Proposed wage / market value,0.2918091546905348,positive
+Erling Haaland,downside_25pct_24m,R1_remove_scoring,5,salary_change_from_prior_pct,Wage change vs. prior season,0.20523478796294647,positive
+Erling Haaland,downside_25pct_24m,R1_remove_scoring,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.3229030923229072,negative
+Erling Haaland,downside_25pct_24m,R1_remove_scoring,bottom_2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.3214107396712775,negative
+Erling Haaland,downside_25pct_24m,R1_remove_scoring,bottom_3,league,League,-0.11075979365555583,negative
+Erling Haaland,downside_25pct_24m,R1_remove_scoring,bottom_4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.10642419914782054,negative
+Erling Haaland,downside_25pct_24m,R1_remove_scoring,bottom_5,commitment_to_market_value,Commitment to market value,-0.09366179752466551,negative
+Erling Haaland,downside_25pct_24m,R2_position_relative,1,log_market_value_at_signing,Market value,1.9823379842808968,positive
+Erling Haaland,downside_25pct_24m,R2_position_relative,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.3430219375208822,negative
+Erling Haaland,downside_25pct_24m,R2_position_relative,3,annual_wage_to_market_value,Proposed wage / market value,0.2965153353453648,positive
+Erling Haaland,downside_25pct_24m,R2_position_relative,4,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.2594862690154506,negative
+Erling Haaland,downside_25pct_24m,R2_position_relative,5,salary_change_from_prior_pct,Wage change vs. prior season,0.19759554613226382,positive
+Erling Haaland,downside_25pct_24m,R2_position_relative,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.3430219375208822,negative
+Erling Haaland,downside_25pct_24m,R2_position_relative,bottom_2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.2594862690154506,negative
+Erling Haaland,downside_25pct_24m,R2_position_relative,bottom_3,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.18542875121628488,negative
+Erling Haaland,downside_25pct_24m,R2_position_relative,bottom_4,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.1839557723829299,negative
+Erling Haaland,downside_25pct_24m,R2_position_relative,bottom_5,league,League,-0.14833684205657155,negative
+Erling Haaland,downside_25pct_24m,R3_position_interactions,1,log_market_value_at_signing,Market value,1.8270988298085609,positive
+Erling Haaland,downside_25pct_24m,R3_position_interactions,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.3599052203314345,negative
+Erling Haaland,downside_25pct_24m,R3_position_interactions,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.3425246370590516,negative
+Erling Haaland,downside_25pct_24m,R3_position_interactions,4,annual_wage_to_market_value,Proposed wage / market value,0.2904689524000145,positive
+Erling Haaland,downside_25pct_24m,R3_position_interactions,5,pre1_canonical_goals_per90,Pre1 canonical goals per90,0.28452042754032125,positive
+Erling Haaland,downside_25pct_24m,R3_position_interactions,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.3599052203314345,negative
+Erling Haaland,downside_25pct_24m,R3_position_interactions,bottom_2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.3425246370590516,negative
+Erling Haaland,downside_25pct_24m,R3_position_interactions,bottom_3,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.13952278106686714,negative
+Erling Haaland,downside_25pct_24m,R3_position_interactions,bottom_4,canonical_position,Position,-0.1081652633720998,negative
+Erling Haaland,downside_25pct_24m,R3_position_interactions,bottom_5,league,League,-0.09560195663460325,negative
+Erling Haaland,downside_25pct_24m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,1.9823379842808968,positive
+Erling Haaland,downside_25pct_24m,R4_compact_role_aware,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.3430219375208822,negative
+Erling Haaland,downside_25pct_24m,R4_compact_role_aware,3,annual_wage_to_market_value,Proposed wage / market value,0.2965153353453648,positive
+Erling Haaland,downside_25pct_24m,R4_compact_role_aware,4,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.2594862690154506,negative
+Erling Haaland,downside_25pct_24m,R4_compact_role_aware,5,salary_change_from_prior_pct,Wage change vs. prior season,0.19759554613226382,positive
+Erling Haaland,downside_25pct_24m,R4_compact_role_aware,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.3430219375208822,negative
+Erling Haaland,downside_25pct_24m,R4_compact_role_aware,bottom_2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.2594862690154506,negative
+Erling Haaland,downside_25pct_24m,R4_compact_role_aware,bottom_3,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.18542875121628488,negative
+Erling Haaland,downside_25pct_24m,R4_compact_role_aware,bottom_4,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.1839557723829299,negative
+Erling Haaland,downside_25pct_24m,R4_compact_role_aware,bottom_5,league,League,-0.14833684205657155,negative
+Erling Haaland,downside_50pct_24m,R1_remove_scoring,1,log_market_value_at_signing,Market value,2.043130019976272,positive
+Erling Haaland,downside_50pct_24m,R1_remove_scoring,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.530255919090155,negative
+Erling Haaland,downside_50pct_24m,R1_remove_scoring,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.4528300806981676,negative
+Erling Haaland,downside_50pct_24m,R1_remove_scoring,4,annual_wage_to_market_value,Proposed wage / market value,0.26850882837869,positive
+Erling Haaland,downside_50pct_24m,R1_remove_scoring,5,canonical_position,Position,0.19129094914359945,positive
+Erling Haaland,downside_50pct_24m,R1_remove_scoring,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.530255919090155,negative
+Erling Haaland,downside_50pct_24m,R1_remove_scoring,bottom_2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.4528300806981676,negative
+Erling Haaland,downside_50pct_24m,R1_remove_scoring,bottom_3,pre1_fbref_progressive_passes,Progressive passes (prior season),-0.08442259980324711,negative
+Erling Haaland,downside_50pct_24m,R1_remove_scoring,bottom_4,pre1_fbref_pass_completion_pct,Pass completion % (prior season),-0.08148746619534718,negative
+Erling Haaland,downside_50pct_24m,R1_remove_scoring,bottom_5,pre1_canonical_minutes_played,Pre1 canonical minutes played,-0.06502204009238936,negative
+Erling Haaland,downside_50pct_24m,R2_position_relative,1,log_market_value_at_signing,Market value,2.0376816916693787,positive
+Erling Haaland,downside_50pct_24m,R2_position_relative,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.5728629744718587,negative
+Erling Haaland,downside_50pct_24m,R2_position_relative,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.38419118063824487,negative
+Erling Haaland,downside_50pct_24m,R2_position_relative,4,annual_wage_to_market_value,Proposed wage / market value,0.2674883398126038,positive
+Erling Haaland,downside_50pct_24m,R2_position_relative,5,salary_change_from_prior_pct,Wage change vs. prior season,0.16334822943770472,positive
+Erling Haaland,downside_50pct_24m,R2_position_relative,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.5728629744718587,negative
+Erling Haaland,downside_50pct_24m,R2_position_relative,bottom_2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.38419118063824487,negative
+Erling Haaland,downside_50pct_24m,R2_position_relative,bottom_3,pre2_canonical_goals_per90__role_z,Pre2 canonical goals per90  role z,-0.09118904309392545,negative
+Erling Haaland,downside_50pct_24m,R2_position_relative,bottom_4,pre1_fbref_progressive_passes,Progressive passes (prior season),-0.08704667579252624,negative
+Erling Haaland,downside_50pct_24m,R2_position_relative,bottom_5,pre1_fbref_pass_completion_pct,Pass completion % (prior season),-0.08249527520536735,negative
+Erling Haaland,downside_50pct_24m,R3_position_interactions,1,log_market_value_at_signing,Market value,2.084255339024504,positive
+Erling Haaland,downside_50pct_24m,R3_position_interactions,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.6536497973857989,negative
+Erling Haaland,downside_50pct_24m,R3_position_interactions,3,pre2_canonical_goals_per90__x__Attack,Pre2 canonical goals per90  x  attack,0.4655048596485335,positive
+Erling Haaland,downside_50pct_24m,R3_position_interactions,4,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.41108989052935735,negative
+Erling Haaland,downside_50pct_24m,R3_position_interactions,5,pre365_goals_per90__x__Attack,Recent-365d goals per90  x  attack,-0.3456459549673274,negative
+Erling Haaland,downside_50pct_24m,R3_position_interactions,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.6536497973857989,negative
+Erling Haaland,downside_50pct_24m,R3_position_interactions,bottom_2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.41108989052935735,negative
+Erling Haaland,downside_50pct_24m,R3_position_interactions,bottom_3,pre365_goals_per90__x__Attack,Recent-365d goals per90  x  attack,-0.3456459549673274,negative
+Erling Haaland,downside_50pct_24m,R3_position_interactions,bottom_4,pre365_goals_per90,Goals per 90 (last 365 days),-0.33397580308006913,negative
+Erling Haaland,downside_50pct_24m,R3_position_interactions,bottom_5,pre1_canonical_assists_per90__x__Attack,Pre1 canonical assists per90  x  attack,-0.23837463259928704,negative
+Erling Haaland,downside_50pct_24m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,2.0376816916693787,positive
+Erling Haaland,downside_50pct_24m,R4_compact_role_aware,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.5728629744718587,negative
+Erling Haaland,downside_50pct_24m,R4_compact_role_aware,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.38419118063824487,negative
+Erling Haaland,downside_50pct_24m,R4_compact_role_aware,4,annual_wage_to_market_value,Proposed wage / market value,0.2674883398126038,positive
+Erling Haaland,downside_50pct_24m,R4_compact_role_aware,5,salary_change_from_prior_pct,Wage change vs. prior season,0.16334822943770472,positive
+Erling Haaland,downside_50pct_24m,R4_compact_role_aware,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.5728629744718587,negative
+Erling Haaland,downside_50pct_24m,R4_compact_role_aware,bottom_2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.38419118063824487,negative
+Erling Haaland,downside_50pct_24m,R4_compact_role_aware,bottom_3,pre2_canonical_goals_per90__role_z,Pre2 canonical goals per90  role z,-0.09118904309392545,negative
+Erling Haaland,downside_50pct_24m,R4_compact_role_aware,bottom_4,pre1_fbref_progressive_passes,Progressive passes (prior season),-0.08704667579252624,negative
+Erling Haaland,downside_50pct_24m,R4_compact_role_aware,bottom_5,pre1_fbref_pass_completion_pct,Pass completion % (prior season),-0.08249527520536735,negative
+Kylian Mbappé,year2_opportunity_share,R1_remove_scoring,1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.14630053691426795,positive
+Kylian Mbappé,year2_opportunity_share,R1_remove_scoring,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.1296399290860726,positive
+Kylian Mbappé,year2_opportunity_share,R1_remove_scoring,3,log_annual_gross_eur,Current annual wage,-0.1020320693166116,negative
+Kylian Mbappé,year2_opportunity_share,R1_remove_scoring,4,pre2_canonical_minutes_played,Minutes played (2 seasons ago),0.04571907903339799,positive
+Kylian Mbappé,year2_opportunity_share,R1_remove_scoring,5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.039260276043063425,negative
+Kylian Mbappé,year2_opportunity_share,R1_remove_scoring,bottom_1,log_annual_gross_eur,Current annual wage,-0.1020320693166116,negative
+Kylian Mbappé,year2_opportunity_share,R1_remove_scoring,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.039260276043063425,negative
+Kylian Mbappé,year2_opportunity_share,R1_remove_scoring,bottom_3,canonical_position,Position,-0.03651666901903395,negative
+Kylian Mbappé,year2_opportunity_share,R1_remove_scoring,bottom_4,log_market_value_at_signing,Market value,-0.02205477324464052,negative
+Kylian Mbappé,year2_opportunity_share,R1_remove_scoring,bottom_5,exact_duration_years,Proposed contract length,-0.015398915068206715,negative
+Kylian Mbappé,year2_opportunity_share,R2_position_relative,1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.1477122672421661,positive
+Kylian Mbappé,year2_opportunity_share,R2_position_relative,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.11997196303377429,positive
+Kylian Mbappé,year2_opportunity_share,R2_position_relative,3,log_annual_gross_eur,Current annual wage,-0.09188477290276069,negative
+Kylian Mbappé,year2_opportunity_share,R2_position_relative,4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.04542915799435681,negative
+Kylian Mbappé,year2_opportunity_share,R2_position_relative,5,canonical_position,Position,-0.04083489480141309,negative
+Kylian Mbappé,year2_opportunity_share,R2_position_relative,bottom_1,log_annual_gross_eur,Current annual wage,-0.09188477290276069,negative
+Kylian Mbappé,year2_opportunity_share,R2_position_relative,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.04542915799435681,negative
+Kylian Mbappé,year2_opportunity_share,R2_position_relative,bottom_3,canonical_position,Position,-0.04083489480141309,negative
+Kylian Mbappé,year2_opportunity_share,R2_position_relative,bottom_4,log_market_value_at_signing,Market value,-0.023550039583602665,negative
+Kylian Mbappé,year2_opportunity_share,R2_position_relative,bottom_5,exact_duration_years,Proposed contract length,-0.01611325953435931,negative
+Kylian Mbappé,year2_opportunity_share,R3_position_interactions,1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.14348534205879232,positive
+Kylian Mbappé,year2_opportunity_share,R3_position_interactions,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.1283152067357757,positive
+Kylian Mbappé,year2_opportunity_share,R3_position_interactions,3,pre1_canonical_goals_per90__x__Attack,Pre1 canonical goals per90  x  attack,-0.11362021267353557,negative
+Kylian Mbappé,year2_opportunity_share,R3_position_interactions,4,log_annual_gross_eur,Current annual wage,-0.0997461447101309,negative
+Kylian Mbappé,year2_opportunity_share,R3_position_interactions,5,pre365_goals_per90__x__Attack,Recent-365d goals per90  x  attack,-0.05893260824135784,negative
+Kylian Mbappé,year2_opportunity_share,R3_position_interactions,bottom_1,pre1_canonical_goals_per90__x__Attack,Pre1 canonical goals per90  x  attack,-0.11362021267353557,negative
+Kylian Mbappé,year2_opportunity_share,R3_position_interactions,bottom_2,log_annual_gross_eur,Current annual wage,-0.0997461447101309,negative
+Kylian Mbappé,year2_opportunity_share,R3_position_interactions,bottom_3,pre365_goals_per90__x__Attack,Recent-365d goals per90  x  attack,-0.05893260824135784,negative
+Kylian Mbappé,year2_opportunity_share,R3_position_interactions,bottom_4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.04179948736080607,negative
+Kylian Mbappé,year2_opportunity_share,R3_position_interactions,bottom_5,pre2_canonical_goals_per90__x__Attack,Pre2 canonical goals per90  x  attack,-0.03571713381645669,negative
+Kylian Mbappé,year2_opportunity_share,R4_compact_role_aware,1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.1477122672421661,positive
+Kylian Mbappé,year2_opportunity_share,R4_compact_role_aware,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.11997196303377429,positive
+Kylian Mbappé,year2_opportunity_share,R4_compact_role_aware,3,log_annual_gross_eur,Current annual wage,-0.09188477290276069,negative
+Kylian Mbappé,year2_opportunity_share,R4_compact_role_aware,4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.04542915799435681,negative
+Kylian Mbappé,year2_opportunity_share,R4_compact_role_aware,5,canonical_position,Position,-0.04083489480141309,negative
+Kylian Mbappé,year2_opportunity_share,R4_compact_role_aware,bottom_1,log_annual_gross_eur,Current annual wage,-0.09188477290276069,negative
+Kylian Mbappé,year2_opportunity_share,R4_compact_role_aware,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.04542915799435681,negative
+Kylian Mbappé,year2_opportunity_share,R4_compact_role_aware,bottom_3,canonical_position,Position,-0.04083489480141309,negative
+Kylian Mbappé,year2_opportunity_share,R4_compact_role_aware,bottom_4,log_market_value_at_signing,Market value,-0.023550039583602665,negative
+Kylian Mbappé,year2_opportunity_share,R4_compact_role_aware,bottom_5,exact_duration_years,Proposed contract length,-0.01611325953435931,negative
+Kylian Mbappé,any_outbound,R1_remove_scoring,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.35801455750734806,negative
+Kylian Mbappé,any_outbound,R1_remove_scoring,2,log_market_value_at_signing,Market value,0.28386696180366744,positive
+Kylian Mbappé,any_outbound,R1_remove_scoring,3,canonical_position,Position,0.23688815340855524,positive
+Kylian Mbappé,any_outbound,R1_remove_scoring,4,league,League,-0.20440152898071987,negative
+Kylian Mbappé,any_outbound,R1_remove_scoring,5,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.16118245979427062,negative
+Kylian Mbappé,any_outbound,R1_remove_scoring,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.35801455750734806,negative
+Kylian Mbappé,any_outbound,R1_remove_scoring,bottom_2,league,League,-0.20440152898071987,negative
+Kylian Mbappé,any_outbound,R1_remove_scoring,bottom_3,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.16118245979427062,negative
+Kylian Mbappé,any_outbound,R1_remove_scoring,bottom_4,salary_change_from_prior_pct,Wage change vs. prior season,-0.052730421916185446,negative
+Kylian Mbappé,any_outbound,R1_remove_scoring,bottom_5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.05205184404396947,negative
+Kylian Mbappé,any_outbound,R2_position_relative,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.3485248920628626,negative
+Kylian Mbappé,any_outbound,R2_position_relative,2,log_market_value_at_signing,Market value,0.3159549227942194,positive
+Kylian Mbappé,any_outbound,R2_position_relative,3,league,League,-0.20751323154251783,negative
+Kylian Mbappé,any_outbound,R2_position_relative,4,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.19809426771237654,negative
+Kylian Mbappé,any_outbound,R2_position_relative,5,canonical_position,Position,0.18165529175720396,positive
+Kylian Mbappé,any_outbound,R2_position_relative,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.3485248920628626,negative
+Kylian Mbappé,any_outbound,R2_position_relative,bottom_2,league,League,-0.20751323154251783,negative
+Kylian Mbappé,any_outbound,R2_position_relative,bottom_3,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.19809426771237654,negative
+Kylian Mbappé,any_outbound,R2_position_relative,bottom_4,pre1_canonical_goals_per90__role_pct,Pre1 canonical goals per90  role pct,-0.056201575159941515,negative
+Kylian Mbappé,any_outbound,R2_position_relative,bottom_5,salary_change_from_prior_pct,Wage change vs. prior season,-0.05324731163628139,negative
+Kylian Mbappé,any_outbound,R3_position_interactions,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.35965214521726796,negative
+Kylian Mbappé,any_outbound,R3_position_interactions,2,log_market_value_at_signing,Market value,0.25638164542901376,positive
+Kylian Mbappé,any_outbound,R3_position_interactions,3,pre365_goals_per90__x__Attack,Recent-365d goals per90  x  attack,0.2161994724523107,positive
+Kylian Mbappé,any_outbound,R3_position_interactions,4,pre365_goals_per90,Goals per 90 (last 365 days),0.20903783884316332,positive
+Kylian Mbappé,any_outbound,R3_position_interactions,5,league,League,-0.2022379032670509,negative
+Kylian Mbappé,any_outbound,R3_position_interactions,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.35965214521726796,negative
+Kylian Mbappé,any_outbound,R3_position_interactions,bottom_2,league,League,-0.2022379032670509,negative
+Kylian Mbappé,any_outbound,R3_position_interactions,bottom_3,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.09831249639723065,negative
+Kylian Mbappé,any_outbound,R3_position_interactions,bottom_4,salary_change_from_prior_pct,Wage change vs. prior season,-0.054476432614022276,negative
+Kylian Mbappé,any_outbound,R3_position_interactions,bottom_5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.0499918527116813,negative
+Kylian Mbappé,any_outbound,R4_compact_role_aware,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.35965214521726796,negative
+Kylian Mbappé,any_outbound,R4_compact_role_aware,2,log_market_value_at_signing,Market value,0.25638164542901376,positive
+Kylian Mbappé,any_outbound,R4_compact_role_aware,3,pre365_goals_per90__x__Attack,Recent-365d goals per90  x  attack,0.2161994724523107,positive
+Kylian Mbappé,any_outbound,R4_compact_role_aware,4,pre365_goals_per90,Goals per 90 (last 365 days),0.20903783884316332,positive
+Kylian Mbappé,any_outbound,R4_compact_role_aware,5,league,League,-0.2022379032670509,negative
+Kylian Mbappé,any_outbound,R4_compact_role_aware,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.35965214521726796,negative
+Kylian Mbappé,any_outbound,R4_compact_role_aware,bottom_2,league,League,-0.2022379032670509,negative
+Kylian Mbappé,any_outbound,R4_compact_role_aware,bottom_3,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.09831249639723065,negative
+Kylian Mbappé,any_outbound,R4_compact_role_aware,bottom_4,salary_change_from_prior_pct,Wage change vs. prior season,-0.054476432614022276,negative
+Kylian Mbappé,any_outbound,R4_compact_role_aware,bottom_5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.0499918527116813,negative
+Kylian Mbappé,permanent_outbound,R1_remove_scoring,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.20918131907832402,negative
+Kylian Mbappé,permanent_outbound,R1_remove_scoring,2,canonical_position,Position,0.20789541964667024,positive
+Kylian Mbappé,permanent_outbound,R1_remove_scoring,3,league,League,-0.20266475550079857,negative
+Kylian Mbappé,permanent_outbound,R1_remove_scoring,4,log_market_value_at_signing,Market value,0.10465000829015689,positive
+Kylian Mbappé,permanent_outbound,R1_remove_scoring,5,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.06180762241885488,negative
+Kylian Mbappé,permanent_outbound,R1_remove_scoring,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.20918131907832402,negative
+Kylian Mbappé,permanent_outbound,R1_remove_scoring,bottom_2,league,League,-0.20266475550079857,negative
+Kylian Mbappé,permanent_outbound,R1_remove_scoring,bottom_3,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.06180762241885488,negative
+Kylian Mbappé,permanent_outbound,R1_remove_scoring,bottom_4,annual_wage_to_market_value,Proposed wage / market value,-0.053864793348862856,negative
+Kylian Mbappé,permanent_outbound,R1_remove_scoring,bottom_5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.049197260565363804,negative
+Kylian Mbappé,permanent_outbound,R2_position_relative,1,canonical_position,Position,0.2100959298291343,positive
+Kylian Mbappé,permanent_outbound,R2_position_relative,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.20750916431671398,negative
+Kylian Mbappé,permanent_outbound,R2_position_relative,3,league,League,-0.2014206595040791,negative
+Kylian Mbappé,permanent_outbound,R2_position_relative,4,log_market_value_at_signing,Market value,0.09294272225222379,positive
+Kylian Mbappé,permanent_outbound,R2_position_relative,5,pre365_goals_per90__role_z,Recent-365d goals per90  role z,0.0628694969772936,positive
+Kylian Mbappé,permanent_outbound,R2_position_relative,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.20750916431671398,negative
+Kylian Mbappé,permanent_outbound,R2_position_relative,bottom_2,league,League,-0.2014206595040791,negative
+Kylian Mbappé,permanent_outbound,R2_position_relative,bottom_3,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.05598224629502177,negative
+Kylian Mbappé,permanent_outbound,R2_position_relative,bottom_4,annual_wage_to_market_value,Proposed wage / market value,-0.05412318952500196,negative
+Kylian Mbappé,permanent_outbound,R2_position_relative,bottom_5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.05206323495210863,negative
+Kylian Mbappé,permanent_outbound,R3_position_interactions,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.21431824206297326,negative
+Kylian Mbappé,permanent_outbound,R3_position_interactions,2,league,League,-0.20200136470946464,negative
+Kylian Mbappé,permanent_outbound,R3_position_interactions,3,pre365_goals_per90__x__Attack,Recent-365d goals per90  x  attack,0.17502946217906853,positive
+Kylian Mbappé,permanent_outbound,R3_position_interactions,4,pre365_goals_per90,Goals per 90 (last 365 days),0.16904898733629944,positive
+Kylian Mbappé,permanent_outbound,R3_position_interactions,5,canonical_position,Position,0.12754281645592458,positive
+Kylian Mbappé,permanent_outbound,R3_position_interactions,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.21431824206297326,negative
+Kylian Mbappé,permanent_outbound,R3_position_interactions,bottom_2,league,League,-0.20200136470946464,negative
+Kylian Mbappé,permanent_outbound,R3_position_interactions,bottom_3,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.059417173925641414,negative
+Kylian Mbappé,permanent_outbound,R3_position_interactions,bottom_4,annual_wage_to_market_value,Proposed wage / market value,-0.05615178008187287,negative
+Kylian Mbappé,permanent_outbound,R3_position_interactions,bottom_5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.03933157994948765,negative
+Kylian Mbappé,permanent_outbound,R4_compact_role_aware,1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.21431824206297326,negative
+Kylian Mbappé,permanent_outbound,R4_compact_role_aware,2,league,League,-0.20200136470946464,negative
+Kylian Mbappé,permanent_outbound,R4_compact_role_aware,3,pre365_goals_per90__x__Attack,Recent-365d goals per90  x  attack,0.17502946217906853,positive
+Kylian Mbappé,permanent_outbound,R4_compact_role_aware,4,pre365_goals_per90,Goals per 90 (last 365 days),0.16904898733629944,positive
+Kylian Mbappé,permanent_outbound,R4_compact_role_aware,5,canonical_position,Position,0.12754281645592458,positive
+Kylian Mbappé,permanent_outbound,R4_compact_role_aware,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.21431824206297326,negative
+Kylian Mbappé,permanent_outbound,R4_compact_role_aware,bottom_2,league,League,-0.20200136470946464,negative
+Kylian Mbappé,permanent_outbound,R4_compact_role_aware,bottom_3,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.059417173925641414,negative
+Kylian Mbappé,permanent_outbound,R4_compact_role_aware,bottom_4,annual_wage_to_market_value,Proposed wage / market value,-0.05615178008187287,negative
+Kylian Mbappé,permanent_outbound,R4_compact_role_aware,bottom_5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.03933157994948765,negative
+Kylian Mbappé,value_log_ratio_12m,R1_remove_scoring,1,log_market_value_at_signing,Market value,-0.9923270404935628,negative
+Kylian Mbappé,value_log_ratio_12m,R1_remove_scoring,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.1889725448425083,positive
+Kylian Mbappé,value_log_ratio_12m,R1_remove_scoring,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.18892098074510102,positive
+Kylian Mbappé,value_log_ratio_12m,R1_remove_scoring,4,league,League,0.09338986420112336,positive
+Kylian Mbappé,value_log_ratio_12m,R1_remove_scoring,5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.07725482485073704,negative
+Kylian Mbappé,value_log_ratio_12m,R1_remove_scoring,bottom_1,log_market_value_at_signing,Market value,-0.9923270404935628,negative
+Kylian Mbappé,value_log_ratio_12m,R1_remove_scoring,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.07725482485073704,negative
+Kylian Mbappé,value_log_ratio_12m,R1_remove_scoring,bottom_3,salary_change_from_prior_pct,Wage change vs. prior season,-0.05093873206597924,negative
+Kylian Mbappé,value_log_ratio_12m,R1_remove_scoring,bottom_4,age_at_expiration,Age (at contract end),-0.042110168902348546,negative
+Kylian Mbappé,value_log_ratio_12m,R1_remove_scoring,bottom_5,age_at_signing,Age (at signing),-0.03892683192460048,negative
+Kylian Mbappé,value_log_ratio_12m,R2_position_relative,1,log_market_value_at_signing,Market value,-1.0378457923565543,negative
+Kylian Mbappé,value_log_ratio_12m,R2_position_relative,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.18569650061599396,positive
+Kylian Mbappé,value_log_ratio_12m,R2_position_relative,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.18406113578317682,positive
+Kylian Mbappé,value_log_ratio_12m,R2_position_relative,4,league,League,0.09815248069296571,positive
+Kylian Mbappé,value_log_ratio_12m,R2_position_relative,5,pre2_canonical_assists_per90__role_pct,Pre2 canonical assists per90  role pct,-0.09225402531018757,negative
+Kylian Mbappé,value_log_ratio_12m,R2_position_relative,bottom_1,log_market_value_at_signing,Market value,-1.0378457923565543,negative
+Kylian Mbappé,value_log_ratio_12m,R2_position_relative,bottom_2,pre2_canonical_assists_per90__role_pct,Pre2 canonical assists per90  role pct,-0.09225402531018757,negative
+Kylian Mbappé,value_log_ratio_12m,R2_position_relative,bottom_3,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.07012553296587552,negative
+Kylian Mbappé,value_log_ratio_12m,R2_position_relative,bottom_4,salary_change_from_prior_pct,Wage change vs. prior season,-0.048986168108047116,negative
+Kylian Mbappé,value_log_ratio_12m,R2_position_relative,bottom_5,age_at_expiration,Age (at contract end),-0.04313751698044804,negative
+Kylian Mbappé,value_log_ratio_12m,R3_position_interactions,1,log_market_value_at_signing,Market value,-1.027106726451912,negative
+Kylian Mbappé,value_log_ratio_12m,R3_position_interactions,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.23357813124619148,positive
+Kylian Mbappé,value_log_ratio_12m,R3_position_interactions,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.19720912035122895,positive
+Kylian Mbappé,value_log_ratio_12m,R3_position_interactions,4,pre1_canonical_goals_per90__x__Attack,Pre1 canonical goals per90  x  attack,-0.16556856979183052,negative
+Kylian Mbappé,value_log_ratio_12m,R3_position_interactions,5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.1177121182886713,negative
+Kylian Mbappé,value_log_ratio_12m,R3_position_interactions,bottom_1,log_market_value_at_signing,Market value,-1.027106726451912,negative
+Kylian Mbappé,value_log_ratio_12m,R3_position_interactions,bottom_2,pre1_canonical_goals_per90__x__Attack,Pre1 canonical goals per90  x  attack,-0.16556856979183052,negative
+Kylian Mbappé,value_log_ratio_12m,R3_position_interactions,bottom_3,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.1177121182886713,negative
+Kylian Mbappé,value_log_ratio_12m,R3_position_interactions,bottom_4,pre365_assists_per90__x__Attack,Recent-365d assists per90  x  attack,-0.09675256279453333,negative
+Kylian Mbappé,value_log_ratio_12m,R3_position_interactions,bottom_5,pre365_goals_per90__x__Attack,Recent-365d goals per90  x  attack,-0.07863030311812938,negative
+Kylian Mbappé,value_log_ratio_12m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,-1.0378457923565543,negative
+Kylian Mbappé,value_log_ratio_12m,R4_compact_role_aware,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,0.18569650061599396,positive
+Kylian Mbappé,value_log_ratio_12m,R4_compact_role_aware,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.18406113578317682,positive
+Kylian Mbappé,value_log_ratio_12m,R4_compact_role_aware,4,league,League,0.09815248069296571,positive
+Kylian Mbappé,value_log_ratio_12m,R4_compact_role_aware,5,pre2_canonical_assists_per90__role_pct,Pre2 canonical assists per90  role pct,-0.09225402531018757,negative
+Kylian Mbappé,value_log_ratio_12m,R4_compact_role_aware,bottom_1,log_market_value_at_signing,Market value,-1.0378457923565543,negative
+Kylian Mbappé,value_log_ratio_12m,R4_compact_role_aware,bottom_2,pre2_canonical_assists_per90__role_pct,Pre2 canonical assists per90  role pct,-0.09225402531018757,negative
+Kylian Mbappé,value_log_ratio_12m,R4_compact_role_aware,bottom_3,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.07012553296587552,negative
+Kylian Mbappé,value_log_ratio_12m,R4_compact_role_aware,bottom_4,salary_change_from_prior_pct,Wage change vs. prior season,-0.048986168108047116,negative
+Kylian Mbappé,value_log_ratio_12m,R4_compact_role_aware,bottom_5,age_at_expiration,Age (at contract end),-0.04313751698044804,negative
+Kylian Mbappé,value_log_ratio_24m,R1_remove_scoring,1,log_market_value_at_signing,Market value,-1.2934755524296628,negative
+Kylian Mbappé,value_log_ratio_24m,R1_remove_scoring,2,log_annual_gross_eur,Current annual wage,0.2532482774782731,positive
+Kylian Mbappé,value_log_ratio_24m,R1_remove_scoring,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.2089012067433164,positive
+Kylian Mbappé,value_log_ratio_24m,R1_remove_scoring,4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.10174232097630496,negative
+Kylian Mbappé,value_log_ratio_24m,R1_remove_scoring,5,age_at_signing,Age (at signing),-0.08232738466175811,negative
+Kylian Mbappé,value_log_ratio_24m,R1_remove_scoring,bottom_1,log_market_value_at_signing,Market value,-1.2934755524296628,negative
+Kylian Mbappé,value_log_ratio_24m,R1_remove_scoring,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.10174232097630496,negative
+Kylian Mbappé,value_log_ratio_24m,R1_remove_scoring,bottom_3,age_at_signing,Age (at signing),-0.08232738466175811,negative
+Kylian Mbappé,value_log_ratio_24m,R1_remove_scoring,bottom_4,age_at_expiration,Age (at contract end),-0.07658427694767128,negative
+Kylian Mbappé,value_log_ratio_24m,R1_remove_scoring,bottom_5,salary_change_from_prior_pct,Wage change vs. prior season,-0.07132111410692078,negative
+Kylian Mbappé,value_log_ratio_24m,R2_position_relative,1,log_market_value_at_signing,Market value,-1.3440503672058366,negative
+Kylian Mbappé,value_log_ratio_24m,R2_position_relative,2,log_annual_gross_eur,Current annual wage,0.2463090991126997,positive
+Kylian Mbappé,value_log_ratio_24m,R2_position_relative,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.20920667914016944,positive
+Kylian Mbappé,value_log_ratio_24m,R2_position_relative,4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.09753763827183194,negative
+Kylian Mbappé,value_log_ratio_24m,R2_position_relative,5,league,League,0.08803428603811941,positive
+Kylian Mbappé,value_log_ratio_24m,R2_position_relative,bottom_1,log_market_value_at_signing,Market value,-1.3440503672058366,negative
+Kylian Mbappé,value_log_ratio_24m,R2_position_relative,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.09753763827183194,negative
+Kylian Mbappé,value_log_ratio_24m,R2_position_relative,bottom_3,age_at_signing,Age (at signing),-0.08340287681257602,negative
+Kylian Mbappé,value_log_ratio_24m,R2_position_relative,bottom_4,age_at_expiration,Age (at contract end),-0.07794548444164794,negative
+Kylian Mbappé,value_log_ratio_24m,R2_position_relative,bottom_5,pre2_canonical_assists_per90__role_pct,Pre2 canonical assists per90  role pct,-0.06920230747787838,negative
+Kylian Mbappé,value_log_ratio_24m,R3_position_interactions,1,log_market_value_at_signing,Market value,-1.3322076851868698,negative
+Kylian Mbappé,value_log_ratio_24m,R3_position_interactions,2,pre1_canonical_goals_per90__x__Attack,Pre1 canonical goals per90  x  attack,-0.24870252068166213,negative
+Kylian Mbappé,value_log_ratio_24m,R3_position_interactions,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.21812119437152802,positive
+Kylian Mbappé,value_log_ratio_24m,R3_position_interactions,4,log_annual_gross_eur,Current annual wage,0.19118390631048812,positive
+Kylian Mbappé,value_log_ratio_24m,R3_position_interactions,5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.15246663313160874,negative
+Kylian Mbappé,value_log_ratio_24m,R3_position_interactions,bottom_1,log_market_value_at_signing,Market value,-1.3322076851868698,negative
+Kylian Mbappé,value_log_ratio_24m,R3_position_interactions,bottom_2,pre1_canonical_goals_per90__x__Attack,Pre1 canonical goals per90  x  attack,-0.24870252068166213,negative
+Kylian Mbappé,value_log_ratio_24m,R3_position_interactions,bottom_3,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.15246663313160874,negative
+Kylian Mbappé,value_log_ratio_24m,R3_position_interactions,bottom_4,pre365_assists_per90__x__Attack,Recent-365d assists per90  x  attack,-0.12994280006218425,negative
+Kylian Mbappé,value_log_ratio_24m,R3_position_interactions,bottom_5,age_at_signing,Age (at signing),-0.08203730980521554,negative
+Kylian Mbappé,value_log_ratio_24m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,-1.3440503672058366,negative
+Kylian Mbappé,value_log_ratio_24m,R4_compact_role_aware,2,log_annual_gross_eur,Current annual wage,0.2463090991126997,positive
+Kylian Mbappé,value_log_ratio_24m,R4_compact_role_aware,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,0.20920667914016944,positive
+Kylian Mbappé,value_log_ratio_24m,R4_compact_role_aware,4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.09753763827183194,negative
+Kylian Mbappé,value_log_ratio_24m,R4_compact_role_aware,5,league,League,0.08803428603811941,positive
+Kylian Mbappé,value_log_ratio_24m,R4_compact_role_aware,bottom_1,log_market_value_at_signing,Market value,-1.3440503672058366,negative
+Kylian Mbappé,value_log_ratio_24m,R4_compact_role_aware,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.09753763827183194,negative
+Kylian Mbappé,value_log_ratio_24m,R4_compact_role_aware,bottom_3,age_at_signing,Age (at signing),-0.08340287681257602,negative
+Kylian Mbappé,value_log_ratio_24m,R4_compact_role_aware,bottom_4,age_at_expiration,Age (at contract end),-0.07794548444164794,negative
+Kylian Mbappé,value_log_ratio_24m,R4_compact_role_aware,bottom_5,pre2_canonical_assists_per90__role_pct,Pre2 canonical assists per90  role pct,-0.06920230747787838,negative
+Kylian Mbappé,downside_10pct_12m,R1_remove_scoring,1,log_market_value_at_signing,Market value,1.402947166549285,positive
+Kylian Mbappé,downside_10pct_12m,R1_remove_scoring,2,log_annual_gross_eur,Current annual wage,0.6087695646717752,positive
+Kylian Mbappé,downside_10pct_12m,R1_remove_scoring,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.5224012140635879,negative
+Kylian Mbappé,downside_10pct_12m,R1_remove_scoring,4,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.32831657244794327,negative
+Kylian Mbappé,downside_10pct_12m,R1_remove_scoring,5,canonical_position,Position,0.29950993858825026,positive
+Kylian Mbappé,downside_10pct_12m,R1_remove_scoring,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.5224012140635879,negative
+Kylian Mbappé,downside_10pct_12m,R1_remove_scoring,bottom_2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.32831657244794327,negative
+Kylian Mbappé,downside_10pct_12m,R1_remove_scoring,bottom_3,league,League,-0.15423844293606878,negative
+Kylian Mbappé,downside_10pct_12m,R1_remove_scoring,bottom_4,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.07965761562649457,negative
+Kylian Mbappé,downside_10pct_12m,R1_remove_scoring,bottom_5,pre1_fbref_pass_completion_pct,Pass completion % (prior season),-0.05356955156966002,negative
+Kylian Mbappé,downside_10pct_12m,R2_position_relative,1,log_market_value_at_signing,Market value,1.4595383183645871,positive
+Kylian Mbappé,downside_10pct_12m,R2_position_relative,2,log_annual_gross_eur,Current annual wage,0.5641629051752081,positive
+Kylian Mbappé,downside_10pct_12m,R2_position_relative,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.4588418592173513,negative
+Kylian Mbappé,downside_10pct_12m,R2_position_relative,4,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.33404918406906337,negative
+Kylian Mbappé,downside_10pct_12m,R2_position_relative,5,annual_wage_to_market_value,Proposed wage / market value,0.2518695926683104,positive
+Kylian Mbappé,downside_10pct_12m,R2_position_relative,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.4588418592173513,negative
+Kylian Mbappé,downside_10pct_12m,R2_position_relative,bottom_2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.33404918406906337,negative
+Kylian Mbappé,downside_10pct_12m,R2_position_relative,bottom_3,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.17410985939309015,negative
+Kylian Mbappé,downside_10pct_12m,R2_position_relative,bottom_4,league,League,-0.15529997443051274,negative
+Kylian Mbappé,downside_10pct_12m,R2_position_relative,bottom_5,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.09224252027738294,negative
+Kylian Mbappé,downside_10pct_12m,R3_position_interactions,1,log_market_value_at_signing,Market value,1.4103106541901917,positive
+Kylian Mbappé,downside_10pct_12m,R3_position_interactions,2,log_annual_gross_eur,Current annual wage,0.5459837632165219,positive
+Kylian Mbappé,downside_10pct_12m,R3_position_interactions,3,pre1_canonical_goals_per90,Pre1 canonical goals per90,0.5083254799541224,positive
+Kylian Mbappé,downside_10pct_12m,R3_position_interactions,4,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.48959326073114245,negative
+Kylian Mbappé,downside_10pct_12m,R3_position_interactions,5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.31621580878895456,negative
+Kylian Mbappé,downside_10pct_12m,R3_position_interactions,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.48959326073114245,negative
+Kylian Mbappé,downside_10pct_12m,R3_position_interactions,bottom_2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.31621580878895456,negative
+Kylian Mbappé,downside_10pct_12m,R3_position_interactions,bottom_3,pre1_canonical_assists_per90__x__Attack,Pre1 canonical assists per90  x  attack,-0.23780188157797294,negative
+Kylian Mbappé,downside_10pct_12m,R3_position_interactions,bottom_4,league,League,-0.16325072905160048,negative
+Kylian Mbappé,downside_10pct_12m,R3_position_interactions,bottom_5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.12150734055334626,negative
+Kylian Mbappé,downside_10pct_12m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,1.4595383183645871,positive
+Kylian Mbappé,downside_10pct_12m,R4_compact_role_aware,2,log_annual_gross_eur,Current annual wage,0.5641629051752081,positive
+Kylian Mbappé,downside_10pct_12m,R4_compact_role_aware,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.4588418592173513,negative
+Kylian Mbappé,downside_10pct_12m,R4_compact_role_aware,4,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.33404918406906337,negative
+Kylian Mbappé,downside_10pct_12m,R4_compact_role_aware,5,annual_wage_to_market_value,Proposed wage / market value,0.2518695926683104,positive
+Kylian Mbappé,downside_10pct_12m,R4_compact_role_aware,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.4588418592173513,negative
+Kylian Mbappé,downside_10pct_12m,R4_compact_role_aware,bottom_2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.33404918406906337,negative
+Kylian Mbappé,downside_10pct_12m,R4_compact_role_aware,bottom_3,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.17410985939309015,negative
+Kylian Mbappé,downside_10pct_12m,R4_compact_role_aware,bottom_4,league,League,-0.15529997443051274,negative
+Kylian Mbappé,downside_10pct_12m,R4_compact_role_aware,bottom_5,pre2_canonical_minutes_played,Minutes played (2 seasons ago),-0.09224252027738294,negative
+Kylian Mbappé,downside_10pct_24m,R1_remove_scoring,1,log_market_value_at_signing,Market value,1.560665794730692,positive
+Kylian Mbappé,downside_10pct_24m,R1_remove_scoring,2,pre2_canonical_minutes_played,Minutes played (2 seasons ago),0.299087072313846,positive
+Kylian Mbappé,downside_10pct_24m,R1_remove_scoring,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.2700649884282595,negative
+Kylian Mbappé,downside_10pct_24m,R1_remove_scoring,4,annual_wage_to_market_value,Proposed wage / market value,0.22292171545637457,positive
+Kylian Mbappé,downside_10pct_24m,R1_remove_scoring,5,age_at_signing,Age (at signing),0.18438121491141315,positive
+Kylian Mbappé,downside_10pct_24m,R1_remove_scoring,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.2700649884282595,negative
+Kylian Mbappé,downside_10pct_24m,R1_remove_scoring,bottom_2,league,League,-0.07962612308329009,negative
+Kylian Mbappé,downside_10pct_24m,R1_remove_scoring,bottom_3,club_salary_share_known,Wage share of known club payroll,-0.008557535887451461,negative
+Kylian Mbappé,downside_10pct_24m,R1_remove_scoring,bottom_4,exact_duration_years,Proposed contract length,0.0004755628687578605,positive
+Kylian Mbappé,downside_10pct_24m,R1_remove_scoring,bottom_5,commitment_to_market_value,Commitment to market value,0.0020506977409522342,positive
+Kylian Mbappé,downside_10pct_24m,R2_position_relative,1,log_market_value_at_signing,Market value,1.6997576692243004,positive
+Kylian Mbappé,downside_10pct_24m,R2_position_relative,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.28954050360168593,negative
+Kylian Mbappé,downside_10pct_24m,R2_position_relative,3,pre2_canonical_minutes_played,Minutes played (2 seasons ago),0.2835619771125388,positive
+Kylian Mbappé,downside_10pct_24m,R2_position_relative,4,annual_wage_to_market_value,Proposed wage / market value,0.22697532036577267,positive
+Kylian Mbappé,downside_10pct_24m,R2_position_relative,5,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.20844310494231488,negative
+Kylian Mbappé,downside_10pct_24m,R2_position_relative,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.28954050360168593,negative
+Kylian Mbappé,downside_10pct_24m,R2_position_relative,bottom_2,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.20844310494231488,negative
+Kylian Mbappé,downside_10pct_24m,R2_position_relative,bottom_3,league,League,-0.09010432982737243,negative
+Kylian Mbappé,downside_10pct_24m,R2_position_relative,bottom_4,pre2_canonical_assists_per90__role_pct,Pre2 canonical assists per90  role pct,-0.039064464867585684,negative
+Kylian Mbappé,downside_10pct_24m,R2_position_relative,bottom_5,canonical_position,Position,-0.02951258606123,negative
+Kylian Mbappé,downside_10pct_24m,R3_position_interactions,1,log_market_value_at_signing,Market value,1.6088028652381345,positive
+Kylian Mbappé,downside_10pct_24m,R3_position_interactions,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.311107163484956,negative
+Kylian Mbappé,downside_10pct_24m,R3_position_interactions,3,pre1_canonical_goals_per90,Pre1 canonical goals per90,0.2540044111645368,positive
+Kylian Mbappé,downside_10pct_24m,R3_position_interactions,4,annual_wage_to_market_value,Proposed wage / market value,0.2169411329755049,positive
+Kylian Mbappé,downside_10pct_24m,R3_position_interactions,5,pre2_canonical_minutes_played,Minutes played (2 seasons ago),0.20424787997293675,positive
+Kylian Mbappé,downside_10pct_24m,R3_position_interactions,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.311107163484956,negative
+Kylian Mbappé,downside_10pct_24m,R3_position_interactions,bottom_2,league,League,-0.09881693852917077,negative
+Kylian Mbappé,downside_10pct_24m,R3_position_interactions,bottom_3,pre1_canonical_assists_per90__x__Attack,Pre1 canonical assists per90  x  attack,-0.07681350803013945,negative
+Kylian Mbappé,downside_10pct_24m,R3_position_interactions,bottom_4,pre2_canonical_goals_per90__x__Attack,Pre2 canonical goals per90  x  attack,-0.054291258476697725,negative
+Kylian Mbappé,downside_10pct_24m,R3_position_interactions,bottom_5,canonical_position,Position,-0.05267695387899631,negative
+Kylian Mbappé,downside_10pct_24m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,1.6997576692243004,positive
+Kylian Mbappé,downside_10pct_24m,R4_compact_role_aware,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.28954050360168593,negative
+Kylian Mbappé,downside_10pct_24m,R4_compact_role_aware,3,pre2_canonical_minutes_played,Minutes played (2 seasons ago),0.2835619771125388,positive
+Kylian Mbappé,downside_10pct_24m,R4_compact_role_aware,4,annual_wage_to_market_value,Proposed wage / market value,0.22697532036577267,positive
+Kylian Mbappé,downside_10pct_24m,R4_compact_role_aware,5,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.20844310494231488,negative
+Kylian Mbappé,downside_10pct_24m,R4_compact_role_aware,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.28954050360168593,negative
+Kylian Mbappé,downside_10pct_24m,R4_compact_role_aware,bottom_2,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.20844310494231488,negative
+Kylian Mbappé,downside_10pct_24m,R4_compact_role_aware,bottom_3,league,League,-0.09010432982737243,negative
+Kylian Mbappé,downside_10pct_24m,R4_compact_role_aware,bottom_4,pre2_canonical_assists_per90__role_pct,Pre2 canonical assists per90  role pct,-0.039064464867585684,negative
+Kylian Mbappé,downside_10pct_24m,R4_compact_role_aware,bottom_5,canonical_position,Position,-0.02951258606123,negative
+Kylian Mbappé,downside_25pct_12m,R1_remove_scoring,1,log_market_value_at_signing,Market value,1.4024795348222776,positive
+Kylian Mbappé,downside_25pct_12m,R1_remove_scoring,2,log_annual_gross_eur,Current annual wage,0.3902248391940248,positive
+Kylian Mbappé,downside_25pct_12m,R1_remove_scoring,3,canonical_position,Position,0.2984333586247424,positive
+Kylian Mbappé,downside_25pct_12m,R1_remove_scoring,4,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.2607505173768884,negative
+Kylian Mbappé,downside_25pct_12m,R1_remove_scoring,5,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.23056884364189373,negative
+Kylian Mbappé,downside_25pct_12m,R1_remove_scoring,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.2607505173768884,negative
+Kylian Mbappé,downside_25pct_12m,R1_remove_scoring,bottom_2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.23056884364189373,negative
+Kylian Mbappé,downside_25pct_12m,R1_remove_scoring,bottom_3,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.1821316223032097,negative
+Kylian Mbappé,downside_25pct_12m,R1_remove_scoring,bottom_4,league,League,-0.09806585550501894,negative
+Kylian Mbappé,downside_25pct_12m,R1_remove_scoring,bottom_5,club_salary_percentile,Position in club's wage structure,-0.06271707287318021,negative
+Kylian Mbappé,downside_25pct_12m,R2_position_relative,1,log_market_value_at_signing,Market value,1.3334723669751154,positive
+Kylian Mbappé,downside_25pct_12m,R2_position_relative,2,log_annual_gross_eur,Current annual wage,0.3330041625103547,positive
+Kylian Mbappé,downside_25pct_12m,R2_position_relative,3,canonical_position,Position,0.32910451915832223,positive
+Kylian Mbappé,downside_25pct_12m,R2_position_relative,4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.2574258332375098,negative
+Kylian Mbappé,downside_25pct_12m,R2_position_relative,5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.24615884691526643,negative
+Kylian Mbappé,downside_25pct_12m,R2_position_relative,bottom_1,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.2574258332375098,negative
+Kylian Mbappé,downside_25pct_12m,R2_position_relative,bottom_2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.24615884691526643,negative
+Kylian Mbappé,downside_25pct_12m,R2_position_relative,bottom_3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.17092979929665428,negative
+Kylian Mbappé,downside_25pct_12m,R2_position_relative,bottom_4,league,League,-0.08742655522313958,negative
+Kylian Mbappé,downside_25pct_12m,R2_position_relative,bottom_5,club_salary_percentile,Position in club's wage structure,-0.07245657745874558,negative
+Kylian Mbappé,downside_25pct_12m,R3_position_interactions,1,log_market_value_at_signing,Market value,1.3941605723569832,positive
+Kylian Mbappé,downside_25pct_12m,R3_position_interactions,2,pre1_canonical_goals_per90__x__Attack,Pre1 canonical goals per90  x  attack,0.6614374828449457,positive
+Kylian Mbappé,downside_25pct_12m,R3_position_interactions,3,log_annual_gross_eur,Current annual wage,0.3644311050095915,positive
+Kylian Mbappé,downside_25pct_12m,R3_position_interactions,4,pre2_canonical_goals_per90__x__Attack,Pre2 canonical goals per90  x  attack,0.30660771166115897,positive
+Kylian Mbappé,downside_25pct_12m,R3_position_interactions,5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.26961581865745154,negative
+Kylian Mbappé,downside_25pct_12m,R3_position_interactions,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.26961581865745154,negative
+Kylian Mbappé,downside_25pct_12m,R3_position_interactions,bottom_2,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.22470859586981878,negative
+Kylian Mbappé,downside_25pct_12m,R3_position_interactions,bottom_3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.2047672575549901,negative
+Kylian Mbappé,downside_25pct_12m,R3_position_interactions,bottom_4,pre2_canonical_assists_per90__x__Attack,Pre2 canonical assists per90  x  attack,-0.17975317935249285,negative
+Kylian Mbappé,downside_25pct_12m,R3_position_interactions,bottom_5,pre365_goals_per90,Goals per 90 (last 365 days),-0.16417371227476846,negative
+Kylian Mbappé,downside_25pct_12m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,1.3334723669751154,positive
+Kylian Mbappé,downside_25pct_12m,R4_compact_role_aware,2,log_annual_gross_eur,Current annual wage,0.3330041625103547,positive
+Kylian Mbappé,downside_25pct_12m,R4_compact_role_aware,3,canonical_position,Position,0.32910451915832223,positive
+Kylian Mbappé,downside_25pct_12m,R4_compact_role_aware,4,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.2574258332375098,negative
+Kylian Mbappé,downside_25pct_12m,R4_compact_role_aware,5,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.24615884691526643,negative
+Kylian Mbappé,downside_25pct_12m,R4_compact_role_aware,bottom_1,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.2574258332375098,negative
+Kylian Mbappé,downside_25pct_12m,R4_compact_role_aware,bottom_2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.24615884691526643,negative
+Kylian Mbappé,downside_25pct_12m,R4_compact_role_aware,bottom_3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.17092979929665428,negative
+Kylian Mbappé,downside_25pct_12m,R4_compact_role_aware,bottom_4,league,League,-0.08742655522313958,negative
+Kylian Mbappé,downside_25pct_12m,R4_compact_role_aware,bottom_5,club_salary_percentile,Position in club's wage structure,-0.07245657745874558,negative
+Kylian Mbappé,downside_25pct_24m,R1_remove_scoring,1,log_market_value_at_signing,Market value,1.7756611249684904,positive
+Kylian Mbappé,downside_25pct_24m,R1_remove_scoring,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.3229030923229072,negative
+Kylian Mbappé,downside_25pct_24m,R1_remove_scoring,3,annual_wage_to_market_value,Proposed wage / market value,0.2885225419848433,positive
+Kylian Mbappé,downside_25pct_24m,R1_remove_scoring,4,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.27564919597666665,negative
+Kylian Mbappé,downside_25pct_24m,R1_remove_scoring,5,league,League,-0.20859860220117002,negative
+Kylian Mbappé,downside_25pct_24m,R1_remove_scoring,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.3229030923229072,negative
+Kylian Mbappé,downside_25pct_24m,R1_remove_scoring,bottom_2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.27564919597666665,negative
+Kylian Mbappé,downside_25pct_24m,R1_remove_scoring,bottom_3,league,League,-0.20859860220117002,negative
+Kylian Mbappé,downside_25pct_24m,R1_remove_scoring,bottom_4,commitment_to_market_value,Commitment to market value,-0.09238479032596535,negative
+Kylian Mbappé,downside_25pct_24m,R1_remove_scoring,bottom_5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.08189183030454324,negative
+Kylian Mbappé,downside_25pct_24m,R2_position_relative,1,log_market_value_at_signing,Market value,1.9302530510017148,positive
+Kylian Mbappé,downside_25pct_24m,R2_position_relative,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.2944473072366464,negative
+Kylian Mbappé,downside_25pct_24m,R2_position_relative,3,annual_wage_to_market_value,Proposed wage / market value,0.29317873398027783,positive
+Kylian Mbappé,downside_25pct_24m,R2_position_relative,4,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.2594862690154506,negative
+Kylian Mbappé,downside_25pct_24m,R2_position_relative,5,league,League,-0.2167737571206632,negative
+Kylian Mbappé,downside_25pct_24m,R2_position_relative,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.2944473072366464,negative
+Kylian Mbappé,downside_25pct_24m,R2_position_relative,bottom_2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.2594862690154506,negative
+Kylian Mbappé,downside_25pct_24m,R2_position_relative,bottom_3,league,League,-0.2167737571206632,negative
+Kylian Mbappé,downside_25pct_24m,R2_position_relative,bottom_4,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.21654154998070718,negative
+Kylian Mbappé,downside_25pct_24m,R2_position_relative,bottom_5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.14334115615239076,negative
+Kylian Mbappé,downside_25pct_24m,R3_position_interactions,1,log_market_value_at_signing,Market value,1.779092727216741,positive
+Kylian Mbappé,downside_25pct_24m,R3_position_interactions,2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.3425246370590516,negative
+Kylian Mbappé,downside_25pct_24m,R3_position_interactions,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.3089170881406787,negative
+Kylian Mbappé,downside_25pct_24m,R3_position_interactions,4,pre1_canonical_goals_per90,Pre1 canonical goals per90,0.3016752318066728,positive
+Kylian Mbappé,downside_25pct_24m,R3_position_interactions,5,annual_wage_to_market_value,Proposed wage / market value,0.2871907263468621,positive
+Kylian Mbappé,downside_25pct_24m,R3_position_interactions,bottom_1,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.3425246370590516,negative
+Kylian Mbappé,downside_25pct_24m,R3_position_interactions,bottom_2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.3089170881406787,negative
+Kylian Mbappé,downside_25pct_24m,R3_position_interactions,bottom_3,league,League,-0.21512401820567434,negative
+Kylian Mbappé,downside_25pct_24m,R3_position_interactions,bottom_4,canonical_position,Position,-0.1081652633720998,negative
+Kylian Mbappé,downside_25pct_24m,R3_position_interactions,bottom_5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.10783438733985658,negative
+Kylian Mbappé,downside_25pct_24m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,1.9302530510017148,positive
+Kylian Mbappé,downside_25pct_24m,R4_compact_role_aware,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.2944473072366464,negative
+Kylian Mbappé,downside_25pct_24m,R4_compact_role_aware,3,annual_wage_to_market_value,Proposed wage / market value,0.29317873398027783,positive
+Kylian Mbappé,downside_25pct_24m,R4_compact_role_aware,4,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.2594862690154506,negative
+Kylian Mbappé,downside_25pct_24m,R4_compact_role_aware,5,league,League,-0.2167737571206632,negative
+Kylian Mbappé,downside_25pct_24m,R4_compact_role_aware,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.2944473072366464,negative
+Kylian Mbappé,downside_25pct_24m,R4_compact_role_aware,bottom_2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.2594862690154506,negative
+Kylian Mbappé,downside_25pct_24m,R4_compact_role_aware,bottom_3,league,League,-0.2167737571206632,negative
+Kylian Mbappé,downside_25pct_24m,R4_compact_role_aware,bottom_4,pre365_goals_per90__role_pct,Recent-365d goals per90  role pct,-0.21654154998070718,negative
+Kylian Mbappé,downside_25pct_24m,R4_compact_role_aware,bottom_5,pre365_same_club_all_competition_appearance_rate,Recent appearance rate (same club),-0.14334115615239076,negative
+Kylian Mbappé,downside_50pct_24m,R1_remove_scoring,1,log_market_value_at_signing,Market value,1.9894478065419363,positive
+Kylian Mbappé,downside_50pct_24m,R1_remove_scoring,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.4545594271979499,negative
+Kylian Mbappé,downside_50pct_24m,R1_remove_scoring,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.4528300806981676,negative
+Kylian Mbappé,downside_50pct_24m,R1_remove_scoring,4,annual_wage_to_market_value,Proposed wage / market value,0.26546723390399535,positive
+Kylian Mbappé,downside_50pct_24m,R1_remove_scoring,5,canonical_position,Position,0.19129094914359945,positive
+Kylian Mbappé,downside_50pct_24m,R1_remove_scoring,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.4545594271979499,negative
+Kylian Mbappé,downside_50pct_24m,R1_remove_scoring,bottom_2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.4528300806981676,negative
+Kylian Mbappé,downside_50pct_24m,R1_remove_scoring,bottom_3,pre1_fbref_progressive_passes,Progressive passes (prior season),-0.08442259980324711,negative
+Kylian Mbappé,downside_50pct_24m,R1_remove_scoring,bottom_4,pre1_fbref_pass_completion_pct,Pass completion % (prior season),-0.08148746619534718,negative
+Kylian Mbappé,downside_50pct_24m,R1_remove_scoring,bottom_5,pre1_canonical_minutes_played,Pre1 canonical minutes played,-0.06853905807539593,negative
+Kylian Mbappé,downside_50pct_24m,R2_position_relative,1,log_market_value_at_signing,Market value,1.984142630320408,positive
+Kylian Mbappé,downside_50pct_24m,R2_position_relative,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.4913604867386711,negative
+Kylian Mbappé,downside_50pct_24m,R2_position_relative,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.38419118063824487,negative
+Kylian Mbappé,downside_50pct_24m,R2_position_relative,4,annual_wage_to_market_value,Proposed wage / market value,0.2644599298873055,positive
+Kylian Mbappé,downside_50pct_24m,R2_position_relative,5,age_at_signing,Age (at signing),0.18457792789953306,positive
+Kylian Mbappé,downside_50pct_24m,R2_position_relative,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.4913604867386711,negative
+Kylian Mbappé,downside_50pct_24m,R2_position_relative,bottom_2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.38419118063824487,negative
+Kylian Mbappé,downside_50pct_24m,R2_position_relative,bottom_3,pre2_canonical_goals_per90__role_z,Pre2 canonical goals per90  role z,-0.13521828623325038,negative
+Kylian Mbappé,downside_50pct_24m,R2_position_relative,bottom_4,pre1_fbref_progressive_passes,Progressive passes (prior season),-0.08704667579252624,negative
+Kylian Mbappé,downside_50pct_24m,R2_position_relative,bottom_5,pre1_fbref_pass_completion_pct,Pass completion % (prior season),-0.08249527520536735,negative
+Kylian Mbappé,downside_50pct_24m,R3_position_interactions,1,log_market_value_at_signing,Market value,2.0294925785211535,positive
+Kylian Mbappé,downside_50pct_24m,R3_position_interactions,2,pre2_canonical_goals_per90__x__Attack,Pre2 canonical goals per90  x  attack,0.6262578574340966,positive
+Kylian Mbappé,downside_50pct_24m,R3_position_interactions,3,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.560656237744953,negative
+Kylian Mbappé,downside_50pct_24m,R3_position_interactions,4,pre365_goals_per90__x__Attack,Recent-365d goals per90  x  attack,-0.45644559761419345,negative
+Kylian Mbappé,downside_50pct_24m,R3_position_interactions,5,pre365_goals_per90,Goals per 90 (last 365 days),-0.4495581059137953,negative
+Kylian Mbappé,downside_50pct_24m,R3_position_interactions,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.560656237744953,negative
+Kylian Mbappé,downside_50pct_24m,R3_position_interactions,bottom_2,pre365_goals_per90__x__Attack,Recent-365d goals per90  x  attack,-0.45644559761419345,negative
+Kylian Mbappé,downside_50pct_24m,R3_position_interactions,bottom_3,pre365_goals_per90,Goals per 90 (last 365 days),-0.4495581059137953,negative
+Kylian Mbappé,downside_50pct_24m,R3_position_interactions,bottom_4,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.41108989052935735,negative
+Kylian Mbappé,downside_50pct_24m,R3_position_interactions,bottom_5,pre1_canonical_assists_per90__x__Attack,Pre1 canonical assists per90  x  attack,-0.16639071232379624,negative
+Kylian Mbappé,downside_50pct_24m,R4_compact_role_aware,1,log_market_value_at_signing,Market value,1.984142630320408,positive
+Kylian Mbappé,downside_50pct_24m,R4_compact_role_aware,2,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.4913604867386711,negative
+Kylian Mbappé,downside_50pct_24m,R4_compact_role_aware,3,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.38419118063824487,negative
+Kylian Mbappé,downside_50pct_24m,R4_compact_role_aware,4,annual_wage_to_market_value,Proposed wage / market value,0.2644599298873055,positive
+Kylian Mbappé,downside_50pct_24m,R4_compact_role_aware,5,age_at_signing,Age (at signing),0.18457792789953306,positive
+Kylian Mbappé,downside_50pct_24m,R4_compact_role_aware,bottom_1,pre365_same_club_all_competition_opportunity_share,Recent-365d same club all competition opportunity share,-0.4913604867386711,negative
+Kylian Mbappé,downside_50pct_24m,R4_compact_role_aware,bottom_2,log_fixed_wage_commitment_eur,Total fixed-wage commitment,-0.38419118063824487,negative
+Kylian Mbappé,downside_50pct_24m,R4_compact_role_aware,bottom_3,pre2_canonical_goals_per90__role_z,Pre2 canonical goals per90  role z,-0.13521828623325038,negative
+Kylian Mbappé,downside_50pct_24m,R4_compact_role_aware,bottom_4,pre1_fbref_progressive_passes,Progressive passes (prior season),-0.08704667579252624,negative
+Kylian Mbappé,downside_50pct_24m,R4_compact_role_aware,bottom_5,pre1_fbref_pass_completion_pct,Pass completion % (prior season),-0.08249527520536735,negative

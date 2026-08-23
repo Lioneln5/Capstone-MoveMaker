@@ -1,0 +1,24 @@
+﻿check,observed,expected,passed,notes
+required_outputs_exist,0,0,True,Missing: none
+frozen_source_row_count,2425,2425,True,Frozen snapshot is untouched.
+primary_cohort_size_independent,1385,1385,True,Recomputed directly from frozen source fields.
+sustained_prevalence_independent,0.501083,0.501083,True,Target formula/prevalence unchanged.
+c0_pooled_row_count,929,929,True,C0 pooled evaluation cohort size.
+c0_pooled_observed_rate_matches_reference,0.4887,0.4887,True,Recomputed from model_predictions.csv.
+c0_pooled_mean_predicted_matches_reference,0.5227,0.5227,True,Recomputed from model_predictions.csv.
+c0_pooled_brier_matches_reference,0.1869,0.1869,True,Recomputed from model_predictions.csv.
+c0_pooled_auc_matches_reference,0.7881,0.788,True,Recomputed from model_predictions.csv.
+c0_pooled_average_precision_matches_reference,0.7323,0.732,True,Recomputed from model_predictions.csv.
+comparison_recomputation,0,0,True,Every declared comparison reproduces from model_predictions.csv.
+decision_core_gate_recomputation,0,0,True,Improves/origin-wins/CI/ECE-delta reproduce from saved tables for every candidate; a False on the core superiority AND compact gates independently confirms non-advancement.
+no_ambiguous_crosswalk_names_were_linked,0,0,True,"Recomputed directly from BOTH fbref_player_crosswalk.csv and player_identity_crosswalk.csv's own (normalized_name -> canonical_player_id) cardinality, replicating link_player()'s fbref-first-then-identity-fallback order independently of build_player_map()'s internal filtering -- a genuine assertion, not a tautology, and not a false positive from checking only one of the two sources."
+corrected_injury_bounds_hold_on_resample,0,0,True,"Recomputed injury features from scratch (fresh linkage + lookup, not reusing any builder output object) for 40 resampled cohort rows; calendar days must never exceed their window and games-missed must never be negative."
+corrected_coverage_never_true_when_fully_left_censored,0,0,True,Coverage cannot be True when zero days of the requested window fall within the source's confirmed coverage era.
+demo_old_production_matches_prompt_reference,0,0,True,Old (pre-fix) production reference values match the prompt's stated figures exactly.
+builder_time_protected_fingerprint_captured,101,>0,True,The experiment's start-of-run protected-path fingerprint and passing builder check remain archived. Current production is intentionally newer and is verified by the separate C6 deployment audit.
+retriever_league_fix_present,True,True,True,The declared league-encoding fix is present in the file.
+explainer_label_fix_present,True,True,True,The declared label correction is present in the file.
+immutable_source_hashes_and_documented_c6_evolution,0,0,True,"Unexpected failures: none; documented post-experiment C6 changes: ['Data/processed/deployment_models/extension_opportunity_diagnostic/sustained_meaningful_contribution.joblib', 'Data/processed/deployment_models/model_manifest.json']."
+computed_builder_output_hashes,0,0,True,Unexpected failures: none; documented README-only drift: ['README.md'].
+builder_checks_all_passed,True,True,True,Every build-time check passed.
+perturbation_flag_present_for_c0,True,True,True,Independently confirms the face-invalidity finding reproduces from the saved perturbation table.

@@ -1,0 +1,34 @@
+{
+  "deployed_at_utc": "2026-08-17T02:12:56.770948+00:00",
+  "deployed_variant": "C6_C3_minus_pre365_goals_assists",
+  "deployed_features": [
+    "age_at_signing",
+    "canonical_position",
+    "league",
+    "log_market_value_at_signing",
+    "pre365_same_club_all_competition_opportunity_share",
+    "pre365_same_club_all_competition_appearance_rate",
+    "exact_duration_years",
+    "age_at_expiration",
+    "log_annual_gross_eur",
+    "log_fixed_wage_commitment_eur",
+    "club_salary_percentile",
+    "club_salary_share_known",
+    "salary_change_from_prior_pct",
+    "annual_wage_to_market_value",
+    "commitment_to_market_value"
+  ],
+  "deployed_feature_count": 15,
+  "training_rows": 1304,
+  "artifact_sha256": "adf4e464fe213bec23e8eaf612ebb8959a0fd5aee9bd7ce725325a94b06614db",
+  "selection_basis": "compact_non_inferiority",
+  "checks_passed": 25,
+  "checks_total": 25,
+  "all_checks_passed": true,
+  "demo_scores": {
+    "Haaland": 0.8086721598281377,
+    "Mbappe": 0.8146606032387413,
+    "Bellingham": 0.7726952632854973,
+    "Mbappe_2022_PSG_historical": 0.8500560090339199
+  }
+}

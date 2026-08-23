@@ -1,0 +1,24 @@
+{
+  "scope": "append_only_live_scoring_refresh",
+  "frozen_research_artifacts_modified": false,
+  "performance": {
+    "source_rows": 5693,
+    "linked_rows": 5018,
+    "player_link_rate": 0.9249956086421922,
+    "club_link_rate": 0.9525733356753908,
+    "advanced_rows": 2618,
+    "duplicate_keys_collapsed": 0
+  },
+  "salary": {
+    "source_files": 15,
+    "source_rows": 9107,
+    "canonical_rows": 9103,
+    "player_link_rate": 0.9480391079863781,
+    "club_link_rate": 0.9596836207843568,
+    "seasons": [
+      "2024-2025",
+      "2025-2026",
+      "2026-2027"
+    ]
+  }
+}

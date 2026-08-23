@@ -1,0 +1,35 @@
+check,observed,expected,passed,notes
+file_exists::README.md,True,True,True,required output file
+file_exists::run_summary.json,True,True,True,required output file
+file_exists::source_manifest.csv,True,True,True,required output file
+file_exists::production_scoring_feature_inventory.csv,True,True,True,required output file
+file_exists::role_coverage_audit.csv,True,True,True,required output file
+file_exists::role_scoring_distribution_audit.csv,True,True,True,required output file
+file_exists::role_origin_stability_audit.csv,True,True,True,required output file
+file_exists::candidate_feature_manifest.csv,True,True,True,required output file
+file_exists::origin_model_metrics.csv,True,True,True,required output file
+file_exists::pooled_model_comparison.csv,True,True,True,required output file
+file_exists::position_subgroup_metrics.csv,True,True,True,required output file
+file_exists::calibration_audit.csv,True,True,True,required output file
+file_exists::role_specific_perturbation_audit.csv,True,True,True,required output file
+file_exists::live_production_role_audit.csv,True,True,True,required output file
+file_exists::demo_player_role_comparison.csv,True,True,True,required output file
+file_exists::demo_player_role_contributions.csv,True,True,True,required output file
+file_exists::model_selection_decision.csv,True,True,True,required output file
+random_seed_matches_project_standard,20260811,20260811,True,
+bootstrap_reps_match_project_standard,5000,5000,True,
+c6_out_of_scope_confirmed_in_summary,True,True,True,
+c6_excludes_all_scoring_features_independent_check,[],[],True,
+affected_endpoint_set_matches_independent_rederivation,"['any_outbound', 'contract_duration', 'downside_10pct_12m', 'downside_10pct_24m', 'downside_25pct_12m', 'downside_25pct_24m', 'downside_50pct_24m', 'permanent_outbound', 'value_log_ratio_12m', 'value_log_ratio_24m', 'year2_opportunity_share']","['any_outbound', 'contract_duration', 'downside_10pct_12m', 'downside_10pct_24m', 'downside_25pct_12m', 'downside_25pct_24m', 'downside_50pct_24m', 'permanent_outbound', 'value_log_ratio_12m', 'value_log_ratio_24m', 'year2_opportunity_share']",True,
+R0_feature_lists_match_deployed_artifacts,[],[],True,
+no_future_information_in_any_candidate_feature_list,[],[],True,
+fallback_log_entries_are_genuinely_below_minimum_n,0,0,True,
+bootstrap_ci_lower_le_upper,0,0,True,
+bootstrap_probability_in_unit_interval,0,0,True,
+origin_wins_le_n_origins,0,0,True,
+all_three_headline_demo_players_present,"['Erling Haaland', 'Jude Bellingham', 'Kylian Mbappé']","['Erling Haaland', 'Jude Bellingham', 'Kylian Mbappé']",True,
+calibration_error_in_valid_range,0,0,True,
+protected_artifacts_unchanged,True,True,True,"byte-for-byte digest set comparison, before vs after the diagnostic run"
+candidate_artifacts_confined_to_subfolder,[],[],True,
+candidate_artifacts_correctly_labeled,0,0,True,
+candidate_artifact_hashes_match_manifest,[],[],True,

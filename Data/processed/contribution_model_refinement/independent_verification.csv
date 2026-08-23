@@ -1,0 +1,26 @@
+﻿check,observed,expected,passed,notes
+required_outputs_exist,0,0,True,Missing: none
+frozen_source_row_count,2425,2425,True,Frozen snapshot is untouched.
+primary_cohort_size_independent,1385,1385,True,"Recomputed directly from frozen source fields, not from the builder's frame."
+sustained_prevalence_independent,0.501083,0.501083,True,Target formula and prevalence reproduce the frozen Phase-1 diagnostic exactly.
+r0_pooled_row_count,929,929,True,R0 pooled evaluation cohort size.
+r0_pooled_observed_rate_matches_reference,0.4887,0.4887,True,Recomputed independently from model_predictions.csv row-level actual/prediction pairs.
+r0_pooled_mean_predicted_matches_reference,0.5227,0.5227,True,Recomputed independently from model_predictions.csv row-level actual/prediction pairs.
+r0_pooled_brier_matches_reference,0.1869,0.1869,True,Recomputed independently from model_predictions.csv row-level actual/prediction pairs.
+r0_pooled_auc_matches_reference,0.7881,0.788,True,Recomputed independently from model_predictions.csv row-level actual/prediction pairs.
+r0_pooled_average_precision_matches_reference,0.7323,0.732,True,Recomputed independently from model_predictions.csv row-level actual/prediction pairs.
+high_value_75m_n,22,22,True,"High-value audit sample size, recomputed by joining predictions to the frozen source's own market-value column."
+high_value_75m_observed,0.864,0.864,True,Recomputed independently.
+high_value_75m_predicted,0.856,0.856,True,Recomputed independently.
+comparison_recomputation,0,0,True,"Paired loss improvement, origin wins, and row counts reproduce from model_predictions.csv for every declared comparison."
+decision_core_gate_recomputation,0,0,True,Improves/origin-wins/CI gates and ECE deltas reproduce from saved comparison and calibration tables for every candidate.
+injury_row_link_rate_recomputed,0.9801,0.9801,True,"Recomputed from a fresh build_player_map() call, independent of the builder's cached linkage."
+injury_link_rate_reasonable,0.98,>=0.90,True,Conservative exact-unique-name matching should still cover the large majority of Big-Five injury records.
+no_ambiguous_names_force_linked,True,n/a,True,Every unlinked name in injury_linkage_audit.csv has canonical_player_id null -- link_player() never guesses.
+builder_checks_all_passed,True,True,True,Every build-time check (including the hard-stop baseline/high-value reproduction gates) passed.
+demo_player_baseline_matches_given_reference,0,0,True,Live production sustained-contribution scores match the prompt's stated reference values for Haaland/Mbappe/Bellingham.
+immutable_source_hashes,0,0,True,Unexpected failures: none; documented post-experiment registry drift: ['Data/processed/deployment_models/model_manifest.json'].
+builder_output_hashes,0,0,True,Failures: none
+frozen_source_untouched,True,True,True,Frozen Phase-1 source hash matches the one recorded at build time.
+opportunity_diagnostic_dir_not_written_by_this_experiment,True,True,True,Experiment output directory is distinct from the frozen Phase-1 output directory.
+deployment_models_dir_not_written_by_this_experiment,True,True,True,Experiment output directory is distinct from the production deployment directory.

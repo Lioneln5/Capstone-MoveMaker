@@ -1,0 +1,179 @@
+{
+  "generated_at_utc": "2026-08-22T23:59:12.319477+00:00",
+  "elapsed_seconds": 197.32640409469604,
+  "random_seed": 20260811,
+  "bootstrap_repetitions": 5000,
+  "origins": [
+    {
+      "id": "origin_2020",
+      "train_end": 2018,
+      "validation_year": 2019,
+      "evaluation_year": 2020
+    },
+    {
+      "id": "origin_2021",
+      "train_end": 2019,
+      "validation_year": 2020,
+      "evaluation_year": 2021
+    },
+    {
+      "id": "origin_2022",
+      "train_end": 2020,
+      "validation_year": 2021,
+      "evaluation_year": 2022
+    },
+    {
+      "id": "origin_2023",
+      "train_end": 2021,
+      "validation_year": 2022,
+      "evaluation_year": 2023
+    }
+  ],
+  "affected_endpoints": [
+    "year2_opportunity_share",
+    "any_outbound_24m",
+    "permanent_outbound_24m",
+    "value_log_ratio_12m_12m",
+    "value_log_ratio_24m_24m",
+    "downside_10pct_12m_12m",
+    "downside_10pct_24m_24m",
+    "downside_25pct_12m_12m",
+    "downside_25pct_24m_24m",
+    "downside_50pct_24m_24m",
+    "contract_duration"
+  ],
+  "sustained_meaningful_contribution_C6_out_of_scope_confirmed": true,
+  "decisions": [
+    {
+      "endpoint": "year2_opportunity_share",
+      "decision": "ADVANCE_ROLE_AWARE",
+      "chosen_candidate": "R4_compact_role_aware",
+      "R1_gate": "{\"eligible\": true, \"terminal_two_improvement\": -1.4943439865994224e-05, \"origin_wins\": 2, \"n_origins\": 4, \"ci_lower_95\": -0.0012576022937388015, \"ci_upper_95\": 0.0018275619780785699, \"degrades_a_position_group\": false}",
+      "R2_gate": "{\"eligible\": true, \"terminal_two_improvement\": -0.00020650529596566436, \"origin_wins\": 2, \"n_origins\": 4, \"ci_lower_95\": -0.0020062625018111633, \"ci_upper_95\": 0.0011343446636956486, \"degrades_a_position_group\": false}",
+      "R3_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.004073678341283332, \"origin_wins\": 0, \"n_origins\": 4, \"ci_lower_95\": -0.005405465544208182, \"ci_upper_95\": -0.0015359722188689985, \"degrades_a_position_group\": false}",
+      "R4_gate": "{\"eligible\": true, \"terminal_two_improvement\": -0.00020650529596566436, \"origin_wins\": 2, \"n_origins\": 4, \"ci_lower_95\": -0.002015342997119934, \"ci_upper_95\": 0.0011474123428363168, \"degrades_a_position_group\": false}",
+      "note": "Computed decision gate only -- this script does not deploy anything regardless of outcome. Requires human review."
+    },
+    {
+      "endpoint": "any_outbound_24m",
+      "decision": "ADVANCE_ROLE_AWARE",
+      "chosen_candidate": "R4_compact_role_aware",
+      "R1_gate": "{\"eligible\": true, \"terminal_two_improvement\": 0.0013075149323835134, \"origin_wins\": 2, \"n_origins\": 4, \"ci_lower_95\": -0.0002571572258029139, \"ci_upper_95\": 0.003444748188724197, \"degrades_a_position_group\": false}",
+      "R2_gate": "{\"eligible\": true, \"terminal_two_improvement\": -0.0014387792540317412, \"origin_wins\": 2, \"n_origins\": 4, \"ci_lower_95\": -0.0008236248766495979, \"ci_upper_95\": 0.002449865844007488, \"degrades_a_position_group\": false}",
+      "R3_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.0017474658006450816, \"origin_wins\": 0, \"n_origins\": 4, \"ci_lower_95\": -0.00461188139969057, \"ci_upper_95\": -0.0004143789471465849, \"degrades_a_position_group\": false}",
+      "R4_gate": "{\"eligible\": true, \"terminal_two_improvement\": -0.0014387792540317412, \"origin_wins\": 2, \"n_origins\": 4, \"ci_lower_95\": -0.00081361578739507, \"ci_upper_95\": 0.0024019449700172567, \"degrades_a_position_group\": false}",
+      "note": "Computed decision gate only -- this script does not deploy anything regardless of outcome. Requires human review."
+    },
+    {
+      "endpoint": "any_outbound_36m",
+      "decision": "ADVANCE_ROLE_AWARE",
+      "chosen_candidate": "R4_compact_role_aware",
+      "R1_gate": "{\"eligible\": true, \"terminal_two_improvement\": 0.0036014743190982412, \"origin_wins\": 2, \"n_origins\": 3, \"ci_lower_95\": 8.170998569968388e-05, \"ci_upper_95\": 0.004213253221732255, \"degrades_a_position_group\": false}",
+      "R2_gate": "{\"eligible\": true, \"terminal_two_improvement\": -0.0007639216302492702, \"origin_wins\": 2, \"n_origins\": 3, \"ci_lower_95\": -0.0006841571661458625, \"ci_upper_95\": 0.0031407873627027055, \"degrades_a_position_group\": false}",
+      "R3_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.0020940776575343045, \"origin_wins\": 0, \"n_origins\": 3, \"ci_lower_95\": -0.004138007592396107, \"ci_upper_95\": 0.0006750704455011914, \"degrades_a_position_group\": false}",
+      "R4_gate": "{\"eligible\": true, \"terminal_two_improvement\": -0.0007639216302492702, \"origin_wins\": 2, \"n_origins\": 3, \"ci_lower_95\": -0.0006924424250694847, \"ci_upper_95\": 0.0031280479605056994, \"degrades_a_position_group\": false}",
+      "note": "Computed decision gate only -- this script does not deploy anything regardless of outcome. Requires human review."
+    },
+    {
+      "endpoint": "permanent_outbound_24m",
+      "decision": "ADVANCE_ROLE_AWARE",
+      "chosen_candidate": "R4_compact_role_aware",
+      "R1_gate": "{\"eligible\": true, \"terminal_two_improvement\": -0.000439099928107034, \"origin_wins\": 3, \"n_origins\": 4, \"ci_lower_95\": -0.0003748000270794081, \"ci_upper_95\": 0.002344307646562508, \"degrades_a_position_group\": false}",
+      "R2_gate": "{\"eligible\": true, \"terminal_two_improvement\": -0.0024131273057032554, \"origin_wins\": 2, \"n_origins\": 4, \"ci_lower_95\": -0.0016201452928429083, \"ci_upper_95\": 0.0015774052850766878, \"degrades_a_position_group\": false}",
+      "R3_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.0005353692594154413, \"origin_wins\": 0, \"n_origins\": 4, \"ci_lower_95\": -0.004035198816746592, \"ci_upper_95\": -7.668820524533571e-05, \"degrades_a_position_group\": false}",
+      "R4_gate": "{\"eligible\": true, \"terminal_two_improvement\": -0.0024131273057032554, \"origin_wins\": 2, \"n_origins\": 4, \"ci_lower_95\": -0.0016338802195200422, \"ci_upper_95\": 0.0015033598267922758, \"degrades_a_position_group\": false}",
+      "note": "Computed decision gate only -- this script does not deploy anything regardless of outcome. Requires human review."
+    },
+    {
+      "endpoint": "permanent_outbound_36m",
+      "decision": "REMOVE_SCORING_FEATURES",
+      "chosen_candidate": "R1_remove_scoring",
+      "R1_gate": "{\"eligible\": true, \"terminal_two_improvement\": -0.0001768626013744501, \"origin_wins\": 2, \"n_origins\": 3, \"ci_lower_95\": -0.00037208769967171304, \"ci_upper_95\": 0.003565653890312653, \"degrades_a_position_group\": false}",
+      "R2_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.0009521541515363496, \"origin_wins\": 1, \"n_origins\": 3, \"ci_lower_95\": -0.001816290416963436, \"ci_upper_95\": 0.0028891270770739484, \"degrades_a_position_group\": false}",
+      "R3_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.003035453264446042, \"origin_wins\": 1, \"n_origins\": 3, \"ci_lower_95\": -0.004326081321042318, \"ci_upper_95\": 0.0010152997898284558, \"degrades_a_position_group\": false}",
+      "R4_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.0009521541515363496, \"origin_wins\": 1, \"n_origins\": 3, \"ci_lower_95\": -0.0017436035751190833, \"ci_upper_95\": 0.002903995555472594, \"degrades_a_position_group\": false}",
+      "note": "Computed decision gate only -- this script does not deploy anything regardless of outcome. Requires human review."
+    },
+    {
+      "endpoint": "value_log_ratio_12m",
+      "decision": "ADVANCE_ROLE_AWARE",
+      "chosen_candidate": "R2_position_relative",
+      "R1_gate": "{\"eligible\": true, \"terminal_two_improvement\": 0.007162700462728988, \"origin_wins\": 3, \"n_origins\": 4, \"ci_lower_95\": -0.0007388464147853428, \"ci_upper_95\": 0.00731153232111643, \"degrades_a_position_group\": false}",
+      "R2_gate": "{\"eligible\": true, \"terminal_two_improvement\": 0.0023254181789433837, \"origin_wins\": 2, \"n_origins\": 4, \"ci_lower_95\": -0.004408559900330545, \"ci_upper_95\": 0.0021839555369932606, \"degrades_a_position_group\": false}",
+      "R3_gate": "{\"eligible\": false, \"terminal_two_improvement\": 0.005914780473987857, \"origin_wins\": 1, \"n_origins\": 4, \"ci_lower_95\": -0.007971304671487106, \"ci_upper_95\": 0.003035416980542705, \"degrades_a_position_group\": false}",
+      "R4_gate": "{\"eligible\": false, \"terminal_two_improvement\": 0.000838426099776246, \"origin_wins\": 1, \"n_origins\": 4, \"ci_lower_95\": -0.005285127517722173, \"ci_upper_95\": 0.0018494454131872545, \"degrades_a_position_group\": false}",
+      "note": "Computed decision gate only -- this script does not deploy anything regardless of outcome. Requires human review."
+    },
+    {
+      "endpoint": "value_log_ratio_24m",
+      "decision": "ADVANCE_ROLE_AWARE",
+      "chosen_candidate": "R2_position_relative",
+      "R1_gate": "{\"eligible\": true, \"terminal_two_improvement\": 0.0030651831707388943, \"origin_wins\": 4, \"n_origins\": 4, \"ci_lower_95\": -0.0003078853967573639, \"ci_upper_95\": 0.008016486169519483, \"degrades_a_position_group\": false}",
+      "R2_gate": "{\"eligible\": true, \"terminal_two_improvement\": 0.00016552232166777703, \"origin_wins\": 2, \"n_origins\": 4, \"ci_lower_95\": -0.005382629824247918, \"ci_upper_95\": 0.004803480315830326, \"degrades_a_position_group\": false}",
+      "R3_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.001801732961718705, \"origin_wins\": 1, \"n_origins\": 4, \"ci_lower_95\": -0.00883963251592161, \"ci_upper_95\": 0.003832448220249013, \"degrades_a_position_group\": false}",
+      "R4_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.002640588449565162, \"origin_wins\": 1, \"n_origins\": 4, \"ci_lower_95\": -0.007346342655557101, \"ci_upper_95\": 0.0037680046788174312, \"degrades_a_position_group\": false}",
+      "note": "Computed decision gate only -- this script does not deploy anything regardless of outcome. Requires human review."
+    },
+    {
+      "endpoint": "downside_10pct_12m",
+      "decision": "REMOVE_SCORING_FEATURES",
+      "chosen_candidate": "R1_remove_scoring",
+      "R1_gate": "{\"eligible\": true, \"terminal_two_improvement\": 0.0004732506357621735, \"origin_wins\": 3, \"n_origins\": 4, \"ci_lower_95\": -0.0020176634611150657, \"ci_upper_95\": 0.00285849456741917, \"degrades_a_position_group\": false}",
+      "R2_gate": "{\"eligible\": false, \"terminal_two_improvement\": 0.0014217629966636613, \"origin_wins\": 1, \"n_origins\": 4, \"ci_lower_95\": -0.0025387400782301466, \"ci_upper_95\": 0.0016480316619962264, \"degrades_a_position_group\": false}",
+      "R3_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.0016227861612522487, \"origin_wins\": 1, \"n_origins\": 4, \"ci_lower_95\": -0.0036780567307388664, \"ci_upper_95\": 0.0004416924876177238, \"degrades_a_position_group\": false}",
+      "R4_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.0008589107721618805, \"origin_wins\": 0, \"n_origins\": 4, \"ci_lower_95\": -0.004017725193814612, \"ci_upper_95\": 0.0007564149193833645, \"degrades_a_position_group\": false}",
+      "note": "Computed decision gate only -- this script does not deploy anything regardless of outcome. Requires human review."
+    },
+    {
+      "endpoint": "downside_10pct_24m",
+      "decision": "ADVANCE_ROLE_AWARE",
+      "chosen_candidate": "R4_compact_role_aware",
+      "R1_gate": "{\"eligible\": true, \"terminal_two_improvement\": 0.003358595134631659, \"origin_wins\": 2, \"n_origins\": 4, \"ci_lower_95\": -0.0008072444391465642, \"ci_upper_95\": 0.003391809720406003, \"degrades_a_position_group\": false}",
+      "R2_gate": "{\"eligible\": true, \"terminal_two_improvement\": 0.002189496676846925, \"origin_wins\": 2, \"n_origins\": 4, \"ci_lower_95\": -0.001044660509236585, \"ci_upper_95\": 0.0014615319524029832, \"degrades_a_position_group\": false}",
+      "R3_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.0003672738446333923, \"origin_wins\": 1, \"n_origins\": 4, \"ci_lower_95\": -0.004714709057007736, \"ci_upper_95\": 0.002290780242579522, \"degrades_a_position_group\": false}",
+      "R4_gate": "{\"eligible\": true, \"terminal_two_improvement\": 0.002971622619872605, \"origin_wins\": 2, \"n_origins\": 4, \"ci_lower_95\": -0.00132986929649427, \"ci_upper_95\": 0.0026465402584805262, \"degrades_a_position_group\": false}",
+      "note": "Computed decision gate only -- this script does not deploy anything regardless of outcome. Requires human review."
+    },
+    {
+      "endpoint": "downside_25pct_12m",
+      "decision": "ADVANCE_ROLE_AWARE",
+      "chosen_candidate": "R4_compact_role_aware",
+      "R1_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.0008255288654549775, \"origin_wins\": 0, \"n_origins\": 4, \"ci_lower_95\": -0.0026743601829958288, \"ci_upper_95\": 0.0012139414760266112, \"degrades_a_position_group\": false}",
+      "R2_gate": "{\"eligible\": true, \"terminal_two_improvement\": -2.206098778015364e-05, \"origin_wins\": 2, \"n_origins\": 4, \"ci_lower_95\": -0.0015431168699012456, \"ci_upper_95\": 0.001950450398789164, \"degrades_a_position_group\": false}",
+      "R3_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.004020249685702748, \"origin_wins\": 0, \"n_origins\": 4, \"ci_lower_95\": -0.010995824755658742, \"ci_upper_95\": -0.004129325213733842, \"degrades_a_position_group\": true}",
+      "R4_gate": "{\"eligible\": true, \"terminal_two_improvement\": -2.206098778015364e-05, \"origin_wins\": 2, \"n_origins\": 4, \"ci_lower_95\": -0.0015902469098589215, \"ci_upper_95\": 0.001963490014032882, \"degrades_a_position_group\": false}",
+      "note": "Computed decision gate only -- this script does not deploy anything regardless of outcome. Requires human review."
+    },
+    {
+      "endpoint": "downside_25pct_24m",
+      "decision": "REMOVE_SCORING_FEATURES",
+      "chosen_candidate": "R1_remove_scoring",
+      "R1_gate": "{\"eligible\": true, \"terminal_two_improvement\": 0.0027034413248160916, \"origin_wins\": 3, \"n_origins\": 4, \"ci_lower_95\": -0.0008575120151691703, \"ci_upper_95\": 0.0034350800353418133, \"degrades_a_position_group\": false}",
+      "R2_gate": "{\"eligible\": false, \"terminal_two_improvement\": 0.0011799331014328007, \"origin_wins\": 1, \"n_origins\": 4, \"ci_lower_95\": -0.002797411513988653, \"ci_upper_95\": 0.0006783592297795799, \"degrades_a_position_group\": false}",
+      "R3_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.002441115230727625, \"origin_wins\": 0, \"n_origins\": 4, \"ci_lower_95\": -0.006202666974451082, \"ci_upper_95\": -0.0005786996157028942, \"degrades_a_position_group\": false}",
+      "R4_gate": "{\"eligible\": false, \"terminal_two_improvement\": 0.0011799331014328007, \"origin_wins\": 1, \"n_origins\": 4, \"ci_lower_95\": -0.002775979832032396, \"ci_upper_95\": 0.0006390646438743454, \"degrades_a_position_group\": false}",
+      "note": "Computed decision gate only -- this script does not deploy anything regardless of outcome. Requires human review."
+    },
+    {
+      "endpoint": "downside_50pct_24m",
+      "decision": "ADVANCE_ROLE_AWARE",
+      "chosen_candidate": "R2_position_relative",
+      "R1_gate": "{\"eligible\": true, \"terminal_two_improvement\": -0.0002419132615498476, \"origin_wins\": 2, \"n_origins\": 4, \"ci_lower_95\": -0.0023047194246100847, \"ci_upper_95\": 0.0006967003526397116, \"degrades_a_position_group\": false}",
+      "R2_gate": "{\"eligible\": true, \"terminal_two_improvement\": -0.00012894743238014983, \"origin_wins\": 2, \"n_origins\": 4, \"ci_lower_95\": -0.0019258138577691551, \"ci_upper_95\": 0.0006612442571201351, \"degrades_a_position_group\": false}",
+      "R3_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.004574169550640772, \"origin_wins\": 1, \"n_origins\": 4, \"ci_lower_95\": -0.007506876394521448, \"ci_upper_95\": -0.0011666627609847418, \"degrades_a_position_group\": false}",
+      "R4_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.00012894743238014983, \"origin_wins\": 1, \"n_origins\": 4, \"ci_lower_95\": -0.005302208128955973, \"ci_upper_95\": -0.0010930086846312143, \"degrades_a_position_group\": false}",
+      "note": "Computed decision gate only -- this script does not deploy anything regardless of outcome. Requires human review."
+    },
+    {
+      "endpoint": "contract_duration",
+      "decision": "RETAIN_CURRENT_PENDING_MORE_DATA",
+      "chosen_candidate": null,
+      "R1_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.0027065537539221474, \"origin_wins\": 1, \"n_origins\": 4, \"ci_lower_95\": -0.0036952087625080443, \"ci_upper_95\": 0.0006359501849704805, \"degrades_a_position_group\": false}",
+      "R2_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.0012119356224917777, \"origin_wins\": 1, \"n_origins\": 4, \"ci_lower_95\": -0.003159972944219803, \"ci_upper_95\": 0.001714606773701639, \"degrades_a_position_group\": false}",
+      "R3_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.001469024218610615, \"origin_wins\": 0, \"n_origins\": 4, \"ci_lower_95\": -0.001842343655119665, \"ci_upper_95\": 0.0001360956082305288, \"degrades_a_position_group\": false}",
+      "R4_gate": "{\"eligible\": false, \"terminal_two_improvement\": -0.0012119356224917777, \"origin_wins\": 1, \"n_origins\": 4, \"ci_lower_95\": -0.0030923451344430997, \"ci_upper_95\": 0.0016976021498245055, \"degrades_a_position_group\": false}",
+      "note": "Computed decision gate only -- this script does not deploy anything regardless of outcome. Requires human review."
+    }
+  ],
+  "deployment_manifest_model_vintage": "deployment_v1_cutoff_2023"
+}
