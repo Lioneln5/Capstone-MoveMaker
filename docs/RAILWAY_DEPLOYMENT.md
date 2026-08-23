@@ -18,18 +18,22 @@ health check. In Railway:
    ```bash
    railway link
    railway volume list
-   railway volume files upload Data/processed/canonical_integration/canonical_player_dimension.csv /data/processed/canonical_integration/canonical_player_dimension.csv
-   railway volume files upload Data/processed/canonical_integration/canonical_club_dimension.csv /data/processed/canonical_integration/canonical_club_dimension.csv
-   railway volume files upload Data/processed/canonical_integration/canonical_valuation_history.csv /data/processed/canonical_integration/canonical_valuation_history.csv
-   railway volume files upload Data/processed/canonical_performance/canonical_player_team_season_performance.csv /data/processed/canonical_performance/canonical_player_team_season_performance.csv
-   railway volume files upload Data/processed/canonical_performance/fbref_advanced_performance_features.csv /data/processed/canonical_performance/fbref_advanced_performance_features.csv
-   railway volume files upload Data/processed/capology_contracts/canonical_salary_panel.csv /data/processed/capology_contracts/canonical_salary_panel.csv
-   railway volume files upload Data/processed/contract_extension_integration/extension_modeling_master.csv /data/processed/contract_extension_integration/extension_modeling_master.csv
-   railway volume files upload Data/processed/transfermarkt_clean/tables/appearances_clean.csv /data/processed/transfermarkt_clean/tables/appearances_clean.csv
-   railway volume files upload Data/processed/transfermarkt_clean/tables/games_clean.csv /data/processed/transfermarkt_clean/tables/games_clean.csv
-   railway volume files upload Data/processed/live_input_refresh/canonical_performance_overlay.csv /data/processed/live_input_refresh/canonical_performance_overlay.csv
-   railway volume files upload Data/processed/live_input_refresh/canonical_salary_overlay.csv /data/processed/live_input_refresh/canonical_salary_overlay.csv
+   railway volume files upload Data/processed/canonical_integration/canonical_player_dimension.csv /processed/canonical_integration/canonical_player_dimension.csv
+   railway volume files upload Data/processed/canonical_integration/canonical_club_dimension.csv /processed/canonical_integration/canonical_club_dimension.csv
+   railway volume files upload Data/processed/canonical_integration/canonical_valuation_history.csv /processed/canonical_integration/canonical_valuation_history.csv
+   railway volume files upload Data/processed/canonical_performance/canonical_player_team_season_performance.csv /processed/canonical_performance/canonical_player_team_season_performance.csv
+   railway volume files upload Data/processed/canonical_performance/fbref_advanced_performance_features.csv /processed/canonical_performance/fbref_advanced_performance_features.csv
+   railway volume files upload Data/processed/capology_contracts/canonical_salary_panel.csv /processed/capology_contracts/canonical_salary_panel.csv
+   railway volume files upload Data/processed/contract_extension_integration/extension_modeling_master.csv /processed/contract_extension_integration/extension_modeling_master.csv
+   railway volume files upload Data/processed/transfermarkt_clean/tables/appearances_clean.csv /processed/transfermarkt_clean/tables/appearances_clean.csv
+   railway volume files upload Data/processed/transfermarkt_clean/tables/games_clean.csv /processed/transfermarkt_clean/tables/games_clean.csv
+   railway volume files upload Data/processed/live_input_refresh/canonical_performance_overlay.csv /processed/live_input_refresh/canonical_performance_overlay.csv
+   railway volume files upload Data/processed/live_input_refresh/canonical_salary_overlay.csv /processed/live_input_refresh/canonical_salary_overlay.csv
    ```
+
+   The CLI addresses `/` as the volume root. Because Railway mounts that root
+   at `/data` in the running container, `/processed/example.csv` in the CLI is
+   available to the application as `/data/processed/example.csv`.
 
    The upload commands target the volume attached to the linked service. If a
    Railway project contains multiple services or volumes, pass the relevant
@@ -42,8 +46,10 @@ health check. In Railway:
    python scripts/verify_railway_runtime_data.py --data-root Data
    ```
 
-5. Redeploy and confirm `GET /health` returns a successful response before
-   opening the site.
+5. The checked-in bootstrap launcher keeps `/health` available while an empty
+   first-deployment volume is populated. When all eleven deployment-parity
+   files arrive, it automatically replaces itself with the real API process.
+   Confirm `GET /health` reports `engine_loaded: true` before opening the site.
 
 ## Required volume layout
 
@@ -61,8 +67,9 @@ The API requires these files beneath `/data`:
 | `processed/capology_contracts/canonical_salary_panel.csv` | Salary and club-payroll context |
 | `processed/contract_extension_integration/extension_modeling_master.csv` | Historical extension reference distribution |
 
-The two files under `processed/live_input_refresh/` are optional fallbacks, but
-should be uploaded for parity with the current local demo.
+The two files under `processed/live_input_refresh/` are optional to the core
+retriever, but the hosted bootstrap waits for them so the public service starts
+with parity to the current local demo.
 
 ## Operational note
 
