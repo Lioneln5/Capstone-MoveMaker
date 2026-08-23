@@ -21,6 +21,7 @@ search, never for reconstructing a player's club as of some past date.
 
 from __future__ import annotations
 
+import os
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -28,10 +29,12 @@ from typing import Any
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
-PLAYER_DIM_PATH = ROOT / "Data" / "processed" / "canonical_integration" / "canonical_player_dimension.csv"
-CLUB_DIM_PATH = ROOT / "Data" / "processed" / "canonical_integration" / "canonical_club_dimension.csv"
-APPEARANCE_PATH = ROOT / "Data" / "processed" / "transfermarkt_clean" / "tables" / "appearances_clean.csv"
-GAMES_PATH = ROOT / "Data" / "processed" / "transfermarkt_clean" / "tables" / "games_clean.csv"
+DATA_ROOT = Path(os.environ.get("MOVEMAKER_DATA_ROOT", ROOT / "Data")).expanduser().resolve()
+PROCESSED = DATA_ROOT / "processed"
+PLAYER_DIM_PATH = PROCESSED / "canonical_integration" / "canonical_player_dimension.csv"
+CLUB_DIM_PATH = PROCESSED / "canonical_integration" / "canonical_club_dimension.csv"
+APPEARANCE_PATH = PROCESSED / "transfermarkt_clean" / "tables" / "appearances_clean.csv"
+GAMES_PATH = PROCESSED / "transfermarkt_clean" / "tables" / "games_clean.csv"
 
 
 @dataclass

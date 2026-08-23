@@ -60,6 +60,8 @@ python -m uvicorn api.main:app --host 127.0.0.1 --port 8000
 
 Then open [http://127.0.0.1:8000/](http://127.0.0.1:8000/). The service and source data are local; collaborators cannot run a standalone copy of the HTML without also running the API and retaining the required local artifacts.
 
+For hosted deployment, see the [Railway deployment guide](docs/RAILWAY_DEPLOYMENT.md). Large runtime tables are supplied through a Railway volume rather than committed to Git.
+
 ## Repository map
 
 ```text

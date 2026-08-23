@@ -10,6 +10,7 @@ from __future__ import annotations
 import hashlib
 import json
 import math
+import os
 import sys
 from pathlib import Path
 from typing import Any
@@ -30,12 +31,13 @@ from sklearn.metrics import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
+DATA_ROOT = Path(os.environ.get("MOVEMAKER_DATA_ROOT", ROOT / "Data")).expanduser().resolve()
 if str(ROOT / "models") not in sys.path:
     sys.path.insert(0, str(ROOT / "models"))
 from mixed_type_preprocessor import fit_preprocessor
 
 
-SOURCE = ROOT / "Data" / "processed" / "contract_extension_integration" / "extension_modeling_master.csv"
+SOURCE = DATA_ROOT / "processed" / "contract_extension_integration" / "extension_modeling_master.csv"
 UPSTREAM_VERIFY = ROOT / "Data" / "processed" / "contract_extension_integration" / "independent_verification.json"
 OUTPUT = ROOT / "Data" / "processed" / "extension_opportunity_diagnostic"
 
