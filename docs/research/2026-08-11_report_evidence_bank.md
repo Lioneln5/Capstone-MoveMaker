@@ -1,5 +1,7 @@
 # MoveMaker research-paper evidence bank
 
+> **Historical scope note:** This evidence bank captures the August 11 transfer-risk pivot before MoveMaker narrowed to incumbent-club contract extensions. Its results remain part of the research history, but its modular transfer product is not the current product specification. For the deployed scope, see the [project README](../../README.md) and [model card](../MODEL_CARD.md).
+
 ## Intended use
 
 This document is a source bank for a five-page capstone research report. It condenses the August 11 development session into report-ready research questions, methods, verified results, limitations, business implications, and draft prose. It is not an external-literature bibliography. Before final submission, add and cite academic or industry sources required by the course.
