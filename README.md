@@ -1,5 +1,7 @@
 # MoveMaker
 
+**Football Contract Extension Decision Support**
+
 MoveMaker is an explainable decision-support system for incumbent-club football contract extensions. A user selects a current player and enters proposed wage and term information; the application returns separate, evidence-backed views of:
 
 - meaningful contribution through Year 2;
@@ -10,7 +12,11 @@ MoveMaker is an explainable decision-support system for incumbent-club football 
 
 MoveMaker is a screening and prioritization tool. It does **not** produce one overall success score, recommend whether a club should extend a player, predict tactical compatibility, or estimate accounting loss or ROI.
 
-**Explore the project:** [final presentation](slides/final/MoveMaker_Final_Presentation.html) · [application](html/index.html) · [model card](docs/MODEL_CARD.md) · [data provenance](docs/DATA_PROVENANCE.md) · [analytical journal](docs/journal/2026-08-11_scope_pivot_journal.md)
+**Explore the project:** [live demo](https://movemaker-production.up.railway.app/) · [final presentation](slides/final/MoveMaker_Final_Presentation.html) · [model card](docs/MODEL_CARD.md) · [data provenance](docs/DATA_PROVENANCE.md) · [analytical journal](docs/journal/2026-08-11_scope_pivot_journal.md)
+
+[![MoveMaker live decision profile showing Jude Bellingham's four separate contract-extension signals](docs/assets/movemaker-live-profile.png)](https://movemaker-production.up.railway.app/)
+
+*Live example: a three-year extension profile for Jude Bellingham. The four outputs answer different questions and are intentionally not combined into one recommendation.*
 
 ## Why this product exists
 
@@ -39,7 +45,7 @@ The financial scale is material. Across 908 out-of-time extension profiles with 
 
 ## Current product
 
-The local application consists of a FastAPI scoring service and a static HTML front end:
+The deployed application combines a FastAPI scoring service with a static HTML front end. The public demo is hosted on Railway, while the same interface and API can also run locally:
 
 ```text
 api/main.py                         API
@@ -58,7 +64,7 @@ python -m pip install -r requirements.txt
 python -m uvicorn api.main:app --host 127.0.0.1 --port 8000
 ```
 
-Then open [http://127.0.0.1:8000/](http://127.0.0.1:8000/). The service and source data are local; collaborators cannot run a standalone copy of the HTML without also running the API and retaining the required local artifacts.
+Then open [http://127.0.0.1:8000/](http://127.0.0.1:8000/). A local run requires both the API and the runtime artifacts; opening `html/index.html` by itself will display the interface but cannot produce scores.
 
 For hosted deployment, see the [Railway deployment guide](docs/RAILWAY_DEPLOYMENT.md). Large runtime tables are supplied through a Railway volume rather than committed to Git.
 
@@ -75,6 +81,15 @@ slides/final/           final presentation assets
 ```
 
 See [models/README.md](models/README.md) for the experiment and verifier registry, the [scope-pivot journal](docs/journal/2026-08-11_scope_pivot_journal.md) for the analytical history, and [docs/GITHUB_PUBLICATION_MANIFEST.md](docs/GITHUB_PUBLICATION_MANIFEST.md) for what belongs in Git.
+
+## Project team
+
+MoveMaker was developed as a four-person capstone project. The repository and deployed demo represent the shared project deliverable.
+
+- **Lionel** — Project Coordinator and ML Lead
+- **Evelyn** — Scrum Master
+- **Derick** — Deliverable Architect
+- **Rene** — Tech Auditor
 
 ## Reproducibility and evidence
 
@@ -103,18 +118,17 @@ This repository is therefore an **auditable publication baseline**, not a zero-d
 
 The presentation milestone is complete, but development is not. The next work should improve model validity and deployability rather than widen the claims:
 
-1. finish publishing the current reproducible baseline in reviewable commits;
-2. audit and, where justified, replace globally specified scoring-rate features with role-aware or removed variants;
-3. refresh current performance and salary inputs without contaminating frozen out-of-time evidence;
-4. strengthen uncertainty, subgroup, and out-of-distribution displays in the application;
-5. package the API and front end for a reproducible public demo; and
-6. add richer injury, squad-competition, option, clause, and internal club data only when coverage supports a new claim.
+1. audit and, where justified, replace globally specified scoring-rate features with role-aware or removed variants;
+2. refresh current performance and salary inputs without contaminating frozen chronological evidence;
+3. strengthen uncertainty, subgroup, and out-of-distribution displays in the application;
+4. improve deployment startup, runtime-data packaging, and monitoring; and
+5. add richer injury, squad-competition, option, clause, and internal club data only when coverage supports a new claim.
 
 ## Research record
 
 - [Scope-pivot journal](docs/journal/2026-08-11_scope_pivot_journal.md)
-- [Research-paper evidence bank](docs/research/2026-08-11_report_evidence_bank.md)
-- [Data-readiness audit](docs/DATA_READINESS_AUDIT.md)
+- [Research-paper evidence bank](docs/research/2026-08-11_report_evidence_bank.md) — historical transfer-risk pivot
+- [Data-readiness audit](docs/DATA_READINESS_AUDIT.md) — historical pre-extension scope
 - [Contract diagnostic checklist](docs/diagnostics/contract_scope_diagnostic_checklist.md)
 - [Final presentation](slides/final/MoveMaker_Final_Presentation.html)
 

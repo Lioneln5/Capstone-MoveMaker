@@ -1,5 +1,7 @@
 # MoveMaker Data Readiness Audit
 
+> **Historical scope note:** This August 6 audit predates the salary and extension-data integration. It documents the original transfer and compatibility scope and is retained as evidence of the analytical pivot, not as the specification of the current deployed product. For the current incumbent-club extension system, see the [project README](../README.md) and [model card](MODEL_CARD.md).
+
 **Audit date:** 2026-08-06
 **Question:** What data do we actually have, how much is model-worthy under the project rules, what is not ready, and what should we acquire next?
 
