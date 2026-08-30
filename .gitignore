@@ -107,7 +107,9 @@ Data/processed/statsbomb_case_studies/lineups_case_study.csv
 Data/processed/statsbomb_case_studies/team_match_features.csv
 
 # Generated workbook inspection and preview artifacts
+/output/
 /outputs/
+/tmp/
 outputs/**/work/
 outputs/**/.build/
 outputs/**/workbook_build/
