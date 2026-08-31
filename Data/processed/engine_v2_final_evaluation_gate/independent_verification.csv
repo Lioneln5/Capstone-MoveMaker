@@ -1,0 +1,27 @@
+check,passed,observed,expected,notes
+four_modules_audited,True,4,4,Every candidate module receives a readiness decision.
+only_wage_opened,True,['annual_wage_peer_benchmark'],['annual_wage_peer_benchmark'],No predictive risk target was opened.
+risk_holdouts_have_no_prediction_files,True,"['README.md', 'build_checks.csv', 'holdout_readiness.csv', 'output_manifest.csv', 'phase5_decisions.json', 'prior_exposure_audit.csv', 'run_summary.json', 'source_manifest.csv', 'wage_final_holdout_metrics.csv', 'wage_final_holdout_predictions.csv', 'wage_final_holdout_subgroups.csv']",no risk prediction files,Underpowered/non-pristine targets remain unscored.
+phase4_exposure_explicit,True,2,2,Role and continuity are not mislabeled pristine.
+value_holdout_underpowered,True,26,26,Value target remains sealed.
+role_holdout_underpowered,True,56,56,Role target remains unscored.
+wage_holdout_count_reconstructed,True,"[235, 235]","[235, 235]",Cohort derives from raw eligibility plus player-disjoint rule.
+wage_ids_exact,True,235,235,No holdout row was added or removed after scoring.
+player_identity_disjoint,True,0,0,No player crosses development and final partitions.
+selected_alpha_reconstructed,True,10.0,10.0,Final fit uses the frozen validation recipe.
+wage_predictions_reconstructed,True,1.7763568394002505e-15,<1e-12,Independent Ridge refit reproduces every final prediction.
+interval_width_reconstructed,True,0.7758707396758447,0.7758707396758447,Interval is fixed from 2023 validation residuals.
+wage_targets_and_losses_reconstructed,True,"{'actual': 1.7763568394002505e-15, 'baseline': 0.0, 'candidate_loss': 0.0, 'baseline_loss': 0.0}",all <1e-12,Saved final metrics derive from row-level evidence.
+pooled_interval_coverage_reconstructed,True,0.7702127659574468,0.7702127659574468,Final coverage uses the frozen interval.
+pooled_wage_improves_baseline,True,0.3312858656274224,>0,Pooled performance is positive but not sufficient for release.
+pooled_coverage_in_gate,True,0.7702127659574468,"[0.70,0.90]",Pooled interval coverage passes.
+refusal_rate_reconstructed,True,0.02127659574468085,saved and <=0.15,Coverage is operationally acceptable.
+refusals_explained,True,5,all explained,No silent refusal.
+subgroup_metrics_reconstructed,True,1.1102230246251565e-16,<1e-12,Every subgroup row derives from final predictions.
+ligue1_failure_explicit,True,"['failed', 0.6060606060606061]","['failed', '<0.70']",A pooled pass cannot hide failed league coverage.
+wage_artifact_build_blocked,True,"{'artifact_serialized': False, 'candidate': 'B2_plus_prior_wage', 'decision': 'block_artifact_build', 'deployment_status': 'not_deployed', 'holdout_kind': 'sealed_player_disjoint_temporal', 'holdout_rows': 235, 'holdout_year': 2024, 'notes': 'Final holdout results are immutable. A failed gate may not be repaired by tuning on 2024.', 'release_gate_passed': False}",blocked,No post-holdout tuning or promotion.
+overall_engine_blocked,True,not_ready_for_engine_deployment,not_ready_for_engine_deployment,Phase 5 does not authorize deployment.
+no_phase5_model_artifacts,True,0,0,Evidence only.
+v1_hashes_unchanged,True,[],[],Frozen V1 remains byte-identical.
+summary_matches,True,"{'all_build_checks_passed': True, 'holdout_year': 2024, 'overall_decision': 'not_ready_for_engine_deployment', 'phase': 5, 'wage_holdout_rows': 235, 'wage_release_gate_passed': False}",235 rows and gate false,Run summary reflects evidence.
+prior_exposure_rows_present,True,"['not_pristine_restricted_confirmatory_only', 'sealed_but_underpowered', 'opened_immutable_final_evaluation']",contains not_pristine,Holdout contamination is permanent and visible.

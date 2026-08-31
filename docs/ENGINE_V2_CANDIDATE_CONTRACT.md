@@ -77,13 +77,17 @@ recorded outbound event within 24 months. The targets are not mutually
 exclusive, so adding or normalizing their independently fitted probabilities
 would impose a false relationship.
 
-## Final holdout remains sealed
+## Phase-4 holdout status (corrected by Phase 5)
 
-Candidate selection and calibration used evidence through evaluation year
-2023. Extension year 2024 is the earliest potential final temporal holdout,
-but it may be opened only after each endpoint's outcome horizon is completely
-observable. No feature, calibration, support rule, or subgroup gate may change
-after that holdout is opened.
+Candidate selection and calibration used performance evidence through
+evaluation year 2023. Phase 5 subsequently found that Phase 4's aggregate
+target-relationship table included 81 jointly eligible 2024 role/continuity
+labels. No 2024 predictions or performance metrics were inspected, but those
+two targets cannot be described as a pristine final holdout. See the
+[Phase-5 correction and readiness decision](ENGINE_V2_FINAL_EVALUATION_GATE.md).
+
+No feature, calibration, support rule, or subgroup gate may change after a
+module's final holdout is opened.
 
 ## Decision
 

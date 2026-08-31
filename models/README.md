@@ -17,6 +17,7 @@ must not be diluted into ordinary phase notes.
 | Phase 2: endpoint and feature specification | Complete; candidates only, not deployed | `python models/run_engine_v2_feature_specification.py` | `python scripts/verify_engine_v2_feature_specification.py` | `Data/processed/engine_v2_feature_specification/` |
 | Phase 3: calibration, uncertainty, subgroup, and OOD reliability | Complete; role/value candidates advance, continuity blocked, none deployed | `python models/run_engine_v2_calibration_reliability.py` | `python scripts/verify_engine_v2_calibration_reliability.py` | `Data/processed/engine_v2_calibration_reliability/` |
 | Phase 4: continuity repair, wage audit, and versioned result contract | Complete; continuity still blocked by Ligue 1 reliability, none deployed | `python models/run_engine_v2_candidate_contract.py` | `python scripts/verify_engine_v2_candidate_contract.py` | `Data/processed/engine_v2_candidate_contract/` |
+| Phase 5: final-evaluation readiness and sealed wage holdout | Complete; predictive holdouts remain closed, wage candidate failed Ligue 1 coverage, none deployed | `python models/run_engine_v2_final_evaluation_gate.py` | `python scripts/verify_engine_v2_final_evaluation_gate.py` | `Data/processed/engine_v2_final_evaluation_gate/` |
 
 Phase 1 permits only research outcome scenarios conditional on an extension.
 It does not validate extend/do-not-extend recommendations because the sources
@@ -44,6 +45,14 @@ position/league audit and may proceed to the sealed final holdout. The
 versioned result contract requires values, uncertainty, support status,
 subgroup status, data vintage, and refusal reasons to travel together and
 prohibits an overall score or automated recommendation.
+
+Phase 5 finds that 2024 is not a usable final test for the predictive risk
+modules: role/continuity labels were previously exposed in aggregate, and the
+player-disjoint role and value cohorts are underpowered. Only the annual-wage
+benchmark qualified to open. It improved strongly in the pooled 235-row final
+cohort but failed the frozen Ligue 1 interval-coverage gate (60.6% versus the
+required 70%), so no artifact was authorized. The final result is immutable;
+2024 may not be used to retune that candidate.
 
 ## Current incumbent-extension pipeline
 

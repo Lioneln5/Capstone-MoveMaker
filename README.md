@@ -12,7 +12,7 @@ MoveMaker is an explainable research prototype for incumbent-club football contr
 
 MoveMaker is a screening and prioritization tool. It does **not** produce one overall success score, recommend whether a club should extend a player, predict tactical compatibility, or estimate accounting loss or ROI.
 
-> **Current status (2026-08-31):** Engine V1 is frozen and public scoring is paused. Engine V2 Phases 1–4 now define the validity boundary, test decision-time-safe features, audit probability reliability, repair continuity's missing-input failure, validate the wage peer benchmark, and freeze a refusal-safe result contract. Future role, value downside, and wage benchmarking may proceed to a sealed final holdout. Continuity's coverage is repaired, but its Ligue 1 subgroup still lacks positive skill, so the overall engine remains blocked and nothing from V2 is deployed. This release blocker is tracked as [E2-CRIT-001 in the dedicated critical-issues register](docs/ENGINE_V2_CRITICAL_ISSUES.md). See also the [V1 freeze record](docs/ENGINE_V1_FREEZE.md), [V2 validity boundary](docs/ENGINE_V2_VALIDITY_BOUNDARY.md), [V2 feature specification](docs/ENGINE_V2_FEATURE_SPECIFICATION.md), [V2 reliability gate](docs/ENGINE_V2_CALIBRATION_RELIABILITY.md), and [V2 candidate contract](docs/ENGINE_V2_CANDIDATE_CONTRACT.md).
+> **Current status (2026-08-31):** Engine V1 is frozen and public scoring is paused. Engine V2 Phases 1–5 now define the validity boundary, test decision-time-safe features, audit probability reliability, repair continuity's missing-input failure, freeze a refusal-safe result contract, and enforce a final temporal-evaluation gate. Phase 5 found no valid final 2024 test for the predictive risk modules: role/continuity labels were previously exposed in aggregate, while player-disjoint role and value cohorts are underpowered. The wage benchmark was the only eligible sealed test; it improved pooled error but failed the frozen Ligue 1 interval-coverage gate. The overall engine remains blocked and nothing from V2 is deployed. All three blockers are maintained in the [dedicated critical-issues register](docs/ENGINE_V2_CRITICAL_ISSUES.md). See also the [V1 freeze record](docs/ENGINE_V1_FREEZE.md), [V2 validity boundary](docs/ENGINE_V2_VALIDITY_BOUNDARY.md), [V2 feature specification](docs/ENGINE_V2_FEATURE_SPECIFICATION.md), [V2 reliability gate](docs/ENGINE_V2_CALIBRATION_RELIABILITY.md), [V2 candidate contract](docs/ENGINE_V2_CANDIDATE_CONTRACT.md), and [V2 final-evaluation gate](docs/ENGINE_V2_FINAL_EVALUATION_GATE.md).
 
 **Explore the project:** [hosted research site](https://movemaker-production.up.railway.app/) · [final presentation](slides/final/MoveMaker_Final_Presentation.html) · [model card](docs/MODEL_CARD.md) · [data provenance](docs/DATA_PROVENANCE.md) · [analytical journal](docs/journal/2026-08-11_scope_pivot_journal.md)
 
@@ -118,17 +118,19 @@ This repository is therefore an **auditable publication baseline**, not a zero-d
 
 ## Continuing the project
 
-The presentation milestone is complete, but development is not. Phase 4 has
-frozen the candidate response contract and separated modules that can enter a
-final temporal test from continuity, which still fails one Big-Five subgroup
-gate. The next work should improve validity and deployability rather than widen
-the claims:
+The presentation milestone is complete, but development is not. Phase 5 has
+shown that none of the current V2 candidates is authorized for an artifact:
+the predictive modules lack a valid final cohort, continuity also fails a
+development-stage league gate, and the wage benchmark failed final Ligue 1
+coverage. The next work should improve validity and deployability rather than
+widen the claims:
 
 1. freeze any proposed continuity repair before testing it on later, fully observed data; add genuinely new club/squad context only in a separately declared candidate;
-2. wait until 2024 extension outcomes are fully observable, then run the sealed final temporal evaluation without changing features, calibration, support rules, or gates;
-3. build versioned artifacts and API parity checks only for modules that pass that final evaluation;
-4. refresh current performance and salary inputs without contaminating frozen chronological evidence; and
-5. add richer injury, squad-competition, option, clause, and internal club data only when coverage supports a new claim.
+2. preserve the failed/contaminated 2024 evidence and reserve a later, fully mature, player-disjoint cohort before opening another final temporal test;
+3. declare any successor wage candidate as a new version without fitting to the failed 2024 final labels, then test it only on later untouched evidence;
+4. build versioned artifacts and API parity checks only for modules that pass their immutable final evaluation;
+5. refresh current performance and salary inputs without contaminating frozen chronological evidence; and
+6. add richer injury, squad-competition, option, clause, and internal club data only when coverage supports a new claim.
 
 ## Research record
 
