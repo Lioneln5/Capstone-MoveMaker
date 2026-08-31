@@ -1,0 +1,11 @@
+check,passed,notes
+three_phase2_candidates_only,True,No V1 auxiliary endpoint slipped back in.
+calibration_methods_complete,True,"Raw, Platt, and isotonic tested."
+four_rolling_origins,True,No random split.
+probabilities_bounded,True,All selected probabilities are valid.
+uncertainty_intervals_ordered,True,Bootstrap bounds are ordered.
+support_status_exhaustive,True,Every evaluation profile has a declared support status.
+refused_profiles_have_reasons,True,No unexplained refusal.
+subgroup_status_exhaustive,True,Every subgroup has a declared status.
+no_model_artifacts_written,True,Phase 3 still cannot deploy.
+v1_artifacts_remain_frozen,True,All Phase-0 hashes remain byte-identical.

@@ -84,7 +84,13 @@ python scripts/verify_engine_v2_feature_specification.py
 ```
 
 Evidence is stored under
-`Data/processed/engine_v2_feature_specification/`. Phase 3 must now test
-calibration, uncertainty, subgroup support, out-of-distribution refusal, and
-cross-endpoint behavior before any artifact is eligible for serialization.
+`Data/processed/engine_v2_feature_specification/`. Phase 3 subsequently tested
+calibration, model-fit uncertainty, subgroup support, and out-of-distribution
+refusal. Future-role and value-downside candidates cleared that reliability
+gate; the continuity candidate was blocked because its prior-season-minutes
+requirements would force refusal for 60.7% of evaluated profiles. See
+[`ENGINE_V2_CALIBRATION_RELIABILITY.md`](ENGINE_V2_CALIBRATION_RELIABILITY.md).
 
+That result supersedes Phase 2's provisional decision for continuity. It is a
+useful example of why historical predictive improvement alone is not a
+deployability test.

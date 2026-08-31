@@ -12,6 +12,7 @@ from `Data/processed/deployment_models/` and must advance phase by phase.
 | Phase 0: V1 freeze and containment | Complete | — | `python scripts/verify_engine_v1_freeze.py` | `docs/ENGINE_V1_FREEZE.md` |
 | Phase 1: cohort and decision-time validity boundary | Complete; no model fitted | `python models/run_engine_v2_validity_boundary.py` | `python scripts/verify_engine_v2_validity_boundary.py` | `Data/processed/engine_v2_validity_boundary/` |
 | Phase 2: endpoint and feature specification | Complete; candidates only, not deployed | `python models/run_engine_v2_feature_specification.py` | `python scripts/verify_engine_v2_feature_specification.py` | `Data/processed/engine_v2_feature_specification/` |
+| Phase 3: calibration, uncertainty, subgroup, and OOD reliability | Complete; role/value candidates advance, continuity blocked, none deployed | `python models/run_engine_v2_calibration_reliability.py` | `python scripts/verify_engine_v2_calibration_reliability.py` | `Data/processed/engine_v2_calibration_reliability/` |
 
 Phase 1 permits only research outcome scenarios conditional on an extension.
 It does not validate extend/do-not-extend recommendations because the sources
@@ -22,6 +23,13 @@ validated wage-benchmark module. It removes raw scoring rates, unsupported
 advanced-event fields, and user-controlled commercial terms from the sporting
 and public-value candidates. Passing Phase 2 means only that a feature
 specification may proceed to calibration and subgroup testing.
+
+Phase 3 requires calibrated probabilities, explicit model-fit uncertainty,
+subgroup evidence thresholds, and supported/limited/refused input states. The
+future-role and value-downside candidates passed the declared endpoint gate.
+The 24-month continuity candidate did not: required prior-season minutes were
+missing often enough to produce a 60.7% refusal rate. No Phase-3 result is a
+deployment authorization.
 
 ## Current incumbent-extension pipeline
 
