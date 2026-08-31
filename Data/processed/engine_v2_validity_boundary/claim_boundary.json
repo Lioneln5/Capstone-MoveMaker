@@ -1,0 +1,14 @@
+{
+  "candidate_selection_bias_status": "unresolved_material_limitation",
+  "plain_language": "For a verified incumbent-player extension scenario, estimate separate historical outcome signals conditional on the extension being made.",
+  "prohibited_claims": [
+    "automated_extend_or_do_not_extend_recommendation",
+    "causal_effect_of_extending_the_player",
+    "probability_the_extension_will_succeed",
+    "new_club_transfer_compatibility",
+    "guaranteed_financial_loss_or_savings"
+  ],
+  "reason": "The sources enumerate signed extensions but do not enumerate every player clubs considered and declined to extend.",
+  "required_product_language": "Research scenario profile; not an extend/do-not-extend recommendation.",
+  "supported_claim": "outcome_scenario_conditional_on_extension"
+}

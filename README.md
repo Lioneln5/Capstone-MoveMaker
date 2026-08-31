@@ -12,7 +12,7 @@ MoveMaker is an explainable research prototype for incumbent-club football contr
 
 MoveMaker is a screening and prioritization tool. It does **not** produce one overall success score, recommend whether a club should extend a player, predict tactical compatibility, or estimate accounting loss or ROI.
 
-> **Current status (2026-08-30):** Engine V1 is frozen and public scoring is paused while Engine V2 validity repairs are evaluated. The hosted research site, source, historical evidence, and presentation remain available. See the [V1 freeze and containment record](docs/ENGINE_V1_FREEZE.md).
+> **Current status (2026-08-30):** Engine V1 is frozen and public scoring is paused. Engine V2 Phase 1 now defines a verified cohort, claim, and decision-time request boundary before any retraining begins. The hosted research site, source, historical evidence, and presentation remain available. See the [V1 freeze record](docs/ENGINE_V1_FREEZE.md) and [V2 validity boundary](docs/ENGINE_V2_VALIDITY_BOUNDARY.md).
 
 **Explore the project:** [hosted research site](https://movemaker-production.up.railway.app/) · [final presentation](slides/final/MoveMaker_Final_Presentation.html) · [model card](docs/MODEL_CARD.md) · [data provenance](docs/DATA_PROVENANCE.md) · [analytical journal](docs/journal/2026-08-11_scope_pivot_journal.md)
 

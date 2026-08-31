@@ -1,0 +1,9 @@
+check,passed,notes
+cohort_contains_only_big_five,True,All observed events are inside declared league scope.
+extension_event_count_reconciles,True,Master and cleaned event summary reconcile.
+candidate_nonextension_population_not_fabricated,True,Unknown candidates remain explicitly unknown.
+arbitrary_club_hard_refused,True,Incumbency failure is no longer a warning-only path.
+stale_sporting_modules_refused,True,Partial pre-decision sporting windows cannot score.
+missing_value_is_module_specific,True,Independent modules fail independently.
+stale_salary_is_module_specific,True,No stale wage fallback; sporting evidence remains separate.
+v1_artifacts_remain_frozen,True,Every Phase-0 V1 hash remains byte-identical.

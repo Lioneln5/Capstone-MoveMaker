@@ -71,3 +71,8 @@ Engine V2 work must satisfy all of the following:
 
 Phase 0 changes containment and versioning only. It does not repair, retrain,
 or reinterpret any V1 model.
+
+Engine V2 Phase 1 is documented separately in
+[`ENGINE_V2_VALIDITY_BOUNDARY.md`](ENGINE_V2_VALIDITY_BOUNDARY.md). It defines
+the historical cohort, conditional claim, decision-time information rules,
+and strict refusal contract without fitting or promoting a model.

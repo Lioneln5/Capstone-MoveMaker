@@ -2,6 +2,20 @@
 
 Run commands from the repository root. Every finalized research stage has a dedicated verifier and compact evidence under `Data/processed/`.
 
+## Engine V2 validity program
+
+Frozen V1 public scoring is disabled by default. Engine V2 work is isolated
+from `Data/processed/deployment_models/` and must advance phase by phase.
+
+| Stage | Status | Runner | Verifier | Evidence |
+| --- | --- | --- | --- | --- |
+| Phase 0: V1 freeze and containment | Complete | — | `python scripts/verify_engine_v1_freeze.py` | `docs/ENGINE_V1_FREEZE.md` |
+| Phase 1: cohort and decision-time validity boundary | Complete; no model fitted | `python models/run_engine_v2_validity_boundary.py` | `python scripts/verify_engine_v2_validity_boundary.py` | `Data/processed/engine_v2_validity_boundary/` |
+
+Phase 1 permits only research outcome scenarios conditional on an extension.
+It does not validate extend/do-not-extend recommendations because the sources
+do not observe the full set of players considered but not extended.
+
 ## Current incumbent-extension pipeline
 
 | Stage | Runner or builder | Verifier | Evidence |
@@ -19,7 +33,7 @@ Run commands from the repository root. Every finalized research stage has a dedi
 
 `models/business_metric_engine.py` formats deterministic contract facts and consumes model probabilities. It does not generate player predictions by itself.
 
-## Production scoring
+## Frozen V1 scoring components
 
 | Component | Purpose |
 | --- | --- |
@@ -40,7 +54,9 @@ python scripts/verify_deployment_out_of_sample.py
 python scripts/verify_live_request_integrity.py
 ```
 
-The production artifact manifest is under `Data/processed/deployment_models/`. Do not overwrite it during an exploratory run.
+The frozen V1 artifact manifest is under `Data/processed/deployment_models/`.
+Do not overwrite it during an exploratory run. These components are retained
+for regression testing and historical audit; they are not enabled by default.
 
 ## Post-production diagnostics
 

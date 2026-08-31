@@ -1,0 +1,24 @@
+{
+  "competition_counts": {
+    "ES1": 479,
+    "FR1": 499,
+    "GB1": 648,
+    "IT1": 612,
+    "L1": 567
+  },
+  "event_date_max": "2025-06-30",
+  "event_date_min": "2018-07-01",
+  "extension_events": 2805,
+  "historical_unit": "observed_incumbent_club_extension_event",
+  "linked_player_events": 2726,
+  "outbound_data_cutoff": "2026-08-10",
+  "positive_at_signing_value_events": 2659,
+  "pre365_10_game_evidence_events": 2634,
+  "salary_panel_match_events": 2162,
+  "sporting_data_cutoff": "2026-05-24",
+  "two_year_sporting_outcome_observable_events": 2379,
+  "two_year_value_outcome_observable_events": 2303,
+  "unique_clubs": 141,
+  "unique_players": 2096,
+  "valuation_data_cutoff": "2026-02-27"
+}

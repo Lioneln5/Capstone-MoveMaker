@@ -1,0 +1,196 @@
+{
+  "arbitrary_new_club": {
+    "global_refusal_codes": [
+      "INCUMBENCY_UNVERIFIED"
+    ],
+    "modules": {
+      "club_continuity": {
+        "eligible": false,
+        "module": "club_continuity",
+        "refusal_codes": [
+          "INCUMBENCY_UNVERIFIED"
+        ]
+      },
+      "future_role": {
+        "eligible": false,
+        "module": "future_role",
+        "refusal_codes": [
+          "INCUMBENCY_UNVERIFIED"
+        ]
+      },
+      "public_value_downside": {
+        "eligible": false,
+        "module": "public_value_downside",
+        "refusal_codes": [
+          "INCUMBENCY_UNVERIFIED"
+        ]
+      },
+      "wage_benchmark": {
+        "eligible": false,
+        "module": "wage_benchmark",
+        "refusal_codes": [
+          "INCUMBENCY_UNVERIFIED"
+        ]
+      }
+    },
+    "prohibited_claims": [
+      "automated_extend_or_do_not_extend_recommendation",
+      "causal_effect_of_extending_the_player",
+      "probability_the_extension_will_succeed",
+      "new_club_transfer_compatibility",
+      "guaranteed_financial_loss_or_savings"
+    ],
+    "status": "refused",
+    "supported_claim": "outcome_scenario_conditional_on_extension"
+  },
+  "fully_covered_historical_scenario": {
+    "global_refusal_codes": [],
+    "modules": {
+      "club_continuity": {
+        "eligible": true,
+        "module": "club_continuity",
+        "refusal_codes": []
+      },
+      "future_role": {
+        "eligible": true,
+        "module": "future_role",
+        "refusal_codes": []
+      },
+      "public_value_downside": {
+        "eligible": true,
+        "module": "public_value_downside",
+        "refusal_codes": []
+      },
+      "wage_benchmark": {
+        "eligible": true,
+        "module": "wage_benchmark",
+        "refusal_codes": []
+      }
+    },
+    "prohibited_claims": [
+      "automated_extend_or_do_not_extend_recommendation",
+      "causal_effect_of_extending_the_player",
+      "probability_the_extension_will_succeed",
+      "new_club_transfer_compatibility",
+      "guaranteed_financial_loss_or_savings"
+    ],
+    "status": "eligible_for_research_scoring",
+    "supported_claim": "outcome_scenario_conditional_on_extension"
+  },
+  "missing_market_value": {
+    "global_refusal_codes": [],
+    "modules": {
+      "club_continuity": {
+        "eligible": true,
+        "module": "club_continuity",
+        "refusal_codes": []
+      },
+      "future_role": {
+        "eligible": true,
+        "module": "future_role",
+        "refusal_codes": []
+      },
+      "public_value_downside": {
+        "eligible": false,
+        "module": "public_value_downside",
+        "refusal_codes": [
+          "CURRENT_MARKET_VALUE_UNAVAILABLE"
+        ]
+      },
+      "wage_benchmark": {
+        "eligible": true,
+        "module": "wage_benchmark",
+        "refusal_codes": []
+      }
+    },
+    "prohibited_claims": [
+      "automated_extend_or_do_not_extend_recommendation",
+      "causal_effect_of_extending_the_player",
+      "probability_the_extension_will_succeed",
+      "new_club_transfer_compatibility",
+      "guaranteed_financial_loss_or_savings"
+    ],
+    "status": "eligible_for_research_scoring",
+    "supported_claim": "outcome_scenario_conditional_on_extension"
+  },
+  "stale_salary_panel": {
+    "global_refusal_codes": [],
+    "modules": {
+      "club_continuity": {
+        "eligible": true,
+        "module": "club_continuity",
+        "refusal_codes": []
+      },
+      "future_role": {
+        "eligible": true,
+        "module": "future_role",
+        "refusal_codes": []
+      },
+      "public_value_downside": {
+        "eligible": true,
+        "module": "public_value_downside",
+        "refusal_codes": []
+      },
+      "wage_benchmark": {
+        "eligible": false,
+        "module": "wage_benchmark",
+        "refusal_codes": [
+          "SALARY_PANEL_DOES_NOT_REACH_DECISION_DATE"
+        ]
+      }
+    },
+    "prohibited_claims": [
+      "automated_extend_or_do_not_extend_recommendation",
+      "causal_effect_of_extending_the_player",
+      "probability_the_extension_will_succeed",
+      "new_club_transfer_compatibility",
+      "guaranteed_financial_loss_or_savings"
+    ],
+    "status": "eligible_for_research_scoring",
+    "supported_claim": "outcome_scenario_conditional_on_extension"
+  },
+  "stale_sporting_sources": {
+    "global_refusal_codes": [
+      "INCUMBENCY_EVIDENCE_STALE"
+    ],
+    "modules": {
+      "club_continuity": {
+        "eligible": false,
+        "module": "club_continuity",
+        "refusal_codes": [
+          "INCUMBENCY_EVIDENCE_STALE"
+        ]
+      },
+      "future_role": {
+        "eligible": false,
+        "module": "future_role",
+        "refusal_codes": [
+          "INCUMBENCY_EVIDENCE_STALE"
+        ]
+      },
+      "public_value_downside": {
+        "eligible": false,
+        "module": "public_value_downside",
+        "refusal_codes": [
+          "INCUMBENCY_EVIDENCE_STALE"
+        ]
+      },
+      "wage_benchmark": {
+        "eligible": false,
+        "module": "wage_benchmark",
+        "refusal_codes": [
+          "INCUMBENCY_EVIDENCE_STALE"
+        ]
+      }
+    },
+    "prohibited_claims": [
+      "automated_extend_or_do_not_extend_recommendation",
+      "causal_effect_of_extending_the_player",
+      "probability_the_extension_will_succeed",
+      "new_club_transfer_compatibility",
+      "guaranteed_financial_loss_or_savings"
+    ],
+    "status": "refused",
+    "supported_claim": "outcome_scenario_conditional_on_extension"
+  }
+}
