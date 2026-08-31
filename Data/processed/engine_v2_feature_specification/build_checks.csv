@@ -1,0 +1,10 @@
+check,passed,notes
+four_headline_modules_declared,True,One separate contract per module.
+three_predictive_candidates_evaluated,True,Sporting/value modules evaluated chronologically.
+candidate_features_have_no_scoring_rates,True,No global goals/assists rate.
+candidate_features_have_no_advanced_stats,True,No unsupported incremental event block.
+candidate_features_have_no_commercial_terms,True,User proposals cannot alter sporting/value probabilities.
+v1_policy_violations_are_visible,True,Phase 2 does not silently bless V1 feature lists.
+all_evaluations_are_rolling_2020_to_2023,True,No random split.
+no_candidate_artifact_written,True,Passing Phase 2 cannot promote a model.
+v1_artifacts_remain_frozen,True,Every frozen V1 hash remains byte-identical.

@@ -1,0 +1,30 @@
+check,passed,observed,expected,notes
+four_modules_exact,True,"['club_continuity', 'future_role', 'public_value_downside', 'wage_benchmark']",four declared modules,No combined score.
+one_contract_per_module,True,4,4,Endpoint topology is unambiguous.
+three_predictive_endpoint_decisions,True,"['any_outbound_24m', 'downside_25pct_24m', 'sustained_meaningful_contribution']",three predictive endpoints,Wage benchmark remains a later validation task.
+all_candidates_not_deployed,True,['not_deployed'],['not_deployed'],Phase 2 cannot promote artifacts.
+all_candidates_advance_only_to_phase3,True,['advance_to_phase3_candidate'],['advance_to_phase3_candidate'],"Advance means more testing, not deployment."
+no_raw_scoring_in_v2,True,[],[],Goals/assists rates are removed.
+no_advanced_stats_in_v2,True,[],[],Unvalidated event block is removed.
+no_commercial_scenario_in_v2_predictions,True,[],[],User proposal cannot change sporting/value risk.
+historical_reference_never_selected,True,"['V2_core_involvement', 'V2_plus_prior_volume', 'V2_core_involvement']",only contract-valid candidates,Accuracy cannot override feature semantics.
+prediction_keys_unique,True,0,0,One prediction per event/endpoint/origin/variant.
+rolling_years_exact,True,"[np.int64(2020), np.int64(2021), np.int64(2022), np.int64(2023)]","[2020, 2021, 2022, 2023]",Chronological origins only.
+prediction_probabilities_bounded,True,"[3.851664364564791e-05, 0.996981415299785]","[0,1]",Valid probability outputs.
+prediction_actuals_binary,True,"[np.int64(0), np.int64(1)]","[0, 1]",All selected endpoints are binary.
+origin_brier_recomputes,True,1.1102230246251565e-16,<1e-12,Metrics derive from saved predictions.
+all_pooled_comparisons_recompute,True,9.71445146547012e-17,<1e-12,Pairwise results are independently reproducible.
+sustained_meaningful_contribution_validated_signal,True,"{'improvement': np.float64(0.0596711392296639), 'ci_lower': np.float64(0.0465127477851608), 'wins': 4}",positive lower CI and >=3 origin wins,Candidate beats chronology-only history without prohibited inputs.
+sustained_meaningful_contribution_recent_involvement_adds_value,True,"{'improvement': np.float64(0.0195650892312136), 'wins': 4}",positive pooled improvement and >=2 wins,The selected specification adds more than age/position/league/value alone.
+any_outbound_24m_validated_signal,True,"{'improvement': np.float64(0.0179959780282233), 'ci_lower': np.float64(0.0112651307679313), 'wins': 4}",positive lower CI and >=3 origin wins,Candidate beats chronology-only history without prohibited inputs.
+any_outbound_24m_recent_involvement_adds_value,True,"{'improvement': np.float64(0.0043802729915355), 'wins': 2}",positive pooled improvement and >=2 wins,The selected specification adds more than age/position/league/value alone.
+downside_25pct_24m_validated_signal,True,"{'improvement': np.float64(0.0803196092761995), 'ci_lower': np.float64(0.0694258582065697), 'wins': 4}",positive lower CI and >=3 origin wins,Candidate beats chronology-only history without prohibited inputs.
+downside_25pct_24m_recent_involvement_adds_value,True,"{'improvement': np.float64(0.0037461982954699), 'wins': 3}",positive pooled improvement and >=2 wins,The selected specification adds more than age/position/league/value alone.
+subgroup_rows_present,True,210,>0,Phase 3 has saved subgroup inputs to audit.
+twelve_v1_artifacts_used_raw_scoring,True,12,12,Reproduces the prior deployment audit.
+thirteen_v1_artifacts_violate_phase2_policy,True,13,13,"Violations remain audit evidence, not modified artifacts."
+source_manifest_integrity,True,[],[],Every source hash still matches.
+v1_hashes_unchanged,True,[],[],All Phase-0 protected files remain frozen.
+no_phase2_joblib,True,[],[],No candidate can be loaded accidentally as production.
+summary_reconciles,True,"{'endpoints': 3, 'predictions': 19280}","{'endpoints': 3, 'predictions': 19280}",Top-level counts agree.
+output_manifest_integrity,True,[],[],Every declared Phase-2 output matches its size and hash.

@@ -12,7 +12,7 @@ MoveMaker is an explainable research prototype for incumbent-club football contr
 
 MoveMaker is a screening and prioritization tool. It does **not** produce one overall success score, recommend whether a club should extend a player, predict tactical compatibility, or estimate accounting loss or ROI.
 
-> **Current status (2026-08-30):** Engine V1 is frozen and public scoring is paused. Engine V2 Phase 1 now defines a verified cohort, claim, and decision-time request boundary before any retraining begins. The hosted research site, source, historical evidence, and presentation remain available. See the [V1 freeze record](docs/ENGINE_V1_FREEZE.md) and [V2 validity boundary](docs/ENGINE_V2_VALIDITY_BOUNDARY.md).
+> **Current status (2026-08-30):** Engine V1 is frozen and public scoring is paused. Engine V2 Phase 1 defines the cohort, claim, and decision-time request boundary; Phase 2 defines and chronologically tests compact feature-safe candidates without deploying them. The hosted research site, source, historical evidence, and presentation remain available. See the [V1 freeze record](docs/ENGINE_V1_FREEZE.md), [V2 validity boundary](docs/ENGINE_V2_VALIDITY_BOUNDARY.md), and [V2 feature specification](docs/ENGINE_V2_FEATURE_SPECIFICATION.md).
 
 **Explore the project:** [hosted research site](https://movemaker-production.up.railway.app/) · [final presentation](slides/final/MoveMaker_Final_Presentation.html) · [model card](docs/MODEL_CARD.md) · [data provenance](docs/DATA_PROVENANCE.md) · [analytical journal](docs/journal/2026-08-11_scope_pivot_journal.md)
 
@@ -118,11 +118,13 @@ This repository is therefore an **auditable publication baseline**, not a zero-d
 
 ## Continuing the project
 
-The presentation milestone is complete, but development is not. The next work should improve model validity and deployability rather than widen the claims:
+The presentation milestone is complete, but development is not. Phase 2 has
+completed the first feature-specification repair. The next work should improve
+model validity and deployability rather than widen the claims:
 
-1. audit and, where justified, replace globally specified scoring-rate features with role-aware or removed variants;
+1. calibrate and stress-test the Phase-2 candidates by subgroup and out-of-distribution support;
 2. refresh current performance and salary inputs without contaminating frozen chronological evidence;
-3. strengthen uncertainty, subgroup, and out-of-distribution displays in the application;
+3. define a new versioned artifact/API contract and cross-endpoint coherence checks;
 4. improve deployment startup, runtime-data packaging, and monitoring; and
 5. add richer injury, squad-competition, option, clause, and internal club data only when coverage supports a new claim.
 

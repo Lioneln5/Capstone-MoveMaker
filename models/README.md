@@ -11,10 +11,17 @@ from `Data/processed/deployment_models/` and must advance phase by phase.
 | --- | --- | --- | --- | --- |
 | Phase 0: V1 freeze and containment | Complete | — | `python scripts/verify_engine_v1_freeze.py` | `docs/ENGINE_V1_FREEZE.md` |
 | Phase 1: cohort and decision-time validity boundary | Complete; no model fitted | `python models/run_engine_v2_validity_boundary.py` | `python scripts/verify_engine_v2_validity_boundary.py` | `Data/processed/engine_v2_validity_boundary/` |
+| Phase 2: endpoint and feature specification | Complete; candidates only, not deployed | `python models/run_engine_v2_feature_specification.py` | `python scripts/verify_engine_v2_feature_specification.py` | `Data/processed/engine_v2_feature_specification/` |
 
 Phase 1 permits only research outcome scenarios conditional on an extension.
 It does not validate extend/do-not-extend recommendations because the sources
 do not observe the full set of players considered but not extended.
+
+Phase 2 narrows V2 to three predictive headline candidates plus a separately
+validated wage-benchmark module. It removes raw scoring rates, unsupported
+advanced-event fields, and user-controlled commercial terms from the sporting
+and public-value candidates. Passing Phase 2 means only that a feature
+specification may proceed to calibration and subgroup testing.
 
 ## Current incumbent-extension pipeline
 

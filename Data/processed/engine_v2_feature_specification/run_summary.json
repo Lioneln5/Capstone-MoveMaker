@@ -1,0 +1,20 @@
+{
+  "all_checks_passed": true,
+  "candidate_decisions": {
+    "any_outbound_24m": "advance_to_phase3_candidate",
+    "downside_25pct_24m": "advance_to_phase3_candidate",
+    "sustained_meaningful_contribution": "advance_to_phase3_candidate"
+  },
+  "checks_passed": 9,
+  "checks_total": 9,
+  "evaluated_endpoints": 3,
+  "out_of_time_prediction_rows": 19280,
+  "phase": "engine_v2_phase_2_feature_specification",
+  "rolling_origins": 4,
+  "status": "complete_research_candidates_not_deployed",
+  "v1_artifacts_audited": 16,
+  "v1_artifacts_modified": false,
+  "v1_artifacts_with_policy_violations": 13,
+  "v1_artifacts_with_raw_scoring_rates": 12,
+  "v1_feature_policy_violation_rows": 228
+}

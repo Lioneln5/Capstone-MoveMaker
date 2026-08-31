@@ -77,6 +77,11 @@ Phase 1 also freezes the decision-time role of each input group:
 Role-aware feature design, subgroup support, calibration, endpoint coherence,
 and deployment parity remain later Engine V2 phases.
 
+Phase 2 is now documented in
+[`ENGINE_V2_FEATURE_SPECIFICATION.md`](ENGINE_V2_FEATURE_SPECIFICATION.md).
+It audits the frozen V1 feature lists and tests compact, decision-time-valid
+candidate specifications without serializing or deploying a model.
+
 ## Reproduce and verify
 
 ```bash
