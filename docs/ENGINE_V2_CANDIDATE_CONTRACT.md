@@ -1,5 +1,10 @@
 # Engine V2 Phase 4: repaired candidates and result contract
 
+> **OPEN CRITICAL ISSUE:** Personalized Big-Five continuity remains release
+> blocked because Ligue 1 does not demonstrate positive Brier skill. This is
+> tracked separately as
+> [E2-CRIT-001](ENGINE_V2_CRITICAL_ISSUES.md#e2-crit-001--personalized-continuity-lacks-reliable-cross-league-signal).
+
 Phase 4 converts the surviving research signals into a candidate product
 contract without deploying them. It repairs continuity's unusable input
 requirements, independently validates the annual-wage peer benchmark, and

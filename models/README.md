@@ -6,6 +6,9 @@ Run commands from the repository root. Every finalized research stage has a dedi
 
 Frozen V1 public scoring is disabled by default. Engine V2 work is isolated
 from `Data/processed/deployment_models/` and must advance phase by phase.
+Release-blocking failures are maintained separately in
+[`docs/ENGINE_V2_CRITICAL_ISSUES.md`](../docs/ENGINE_V2_CRITICAL_ISSUES.md) and
+must not be diluted into ordinary phase notes.
 
 | Stage | Status | Runner | Verifier | Evidence |
 | --- | --- | --- | --- | --- |
