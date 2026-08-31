@@ -72,6 +72,11 @@
   .site-nav a.active { color: #ffffff; background: var(--green); }
   .site-nav a.active:hover { color: #ffffff; }
 
+  .prototype-banner { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; padding: 16px 34px; background: var(--amber-bg); border-bottom: 2px solid var(--amber-line); color: var(--amber-text); }
+  .prototype-banner-label { padding: 5px 8px; background: var(--amber-line); font-size: 10px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; white-space: nowrap; }
+  .prototype-banner-copy { font-size: 12px; line-height: 1.55; }
+  .prototype-banner-copy strong { font-weight: 800; }
+
   .league-rail { display: grid; grid-template-columns: 170px repeat(5, 1fr); background: var(--panel); border-bottom: 2px solid var(--rule); }
   .league-rail-side { padding: 18px 18px 18px 34px; font-size: 10.5px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--text-mute); line-height: 1.4; border-right: 1px solid var(--rule-soft); display: flex; flex-direction: column; justify-content: center; gap: 8px; }
   .league-rail-eyebrow { color: var(--text-mute); }
@@ -275,6 +280,11 @@
     <a href="about.html">About</a><a href="index.html" class="active">Tool</a>
     <a href="how-it-works.html">How It Works</a><a href="scope.html">Scope &amp; Limitations</a><a href="contact.html">Contact</a>
   </nav>
+
+  <div class="prototype-banner" id="prototypeBanner" role="status" aria-live="polite">
+    <div class="prototype-banner-label">Research prototype</div>
+    <div class="prototype-banner-copy" id="prototypeBannerCopy"><strong>Live scoring is temporarily paused.</strong> Engine V1 has been frozen while Engine V2 validity repairs are independently evaluated. The project pages and historical evidence remain available.</div>
+  </div>
 
   <section class="league-rail" aria-label="Data coverage across the Big Five leagues">
     <div class="league-rail-side">
@@ -528,6 +538,7 @@
   let selectedPlayer = null;
   let currentProfile = null;
   let searchDebounce = null;
+  let scoringEnabled = false;
 
   const LEAGUES = {
     GB1: {name: 'Premier League', country: 'England', logo: 'assets/leagues/GB1.png'},
@@ -616,16 +627,42 @@
   $('connectToggle').addEventListener('click', () => $('connectBody').classList.toggle('open'));
   apiBaseInput.addEventListener('change', checkApiConnection);
 
+  function setScoringAvailability(enabled, message = null) {
+    scoringEnabled = Boolean(enabled);
+    ['playerSearch', 'marketValue', 'wage', 'contractLength'].forEach(id => {
+      const element = $(id);
+      if (element) element.disabled = !scoringEnabled;
+    });
+    if (scoringEnabled) {
+      $('prototypeBannerCopy').innerHTML = '<strong>Experimental V1 scoring is enabled.</strong> This remains a research prototype for screening and demonstration—not an automated contract recommendation.';
+    } else {
+      $('prototypeBannerCopy').innerHTML = `<strong>Live scoring is temporarily paused.</strong> ${escapeHtml(message || 'Engine V1 has been frozen while Engine V2 validity repairs are independently evaluated. The project pages and historical evidence remain available.')}`;
+      selectedPlayer = null;
+      currentProfile = null;
+      $('lockedInfo').style.display = 'none';
+      $('searchResults').classList.remove('show');
+    }
+    updateRunState();
+  }
+
   async function checkApiConnection() {
-    $('modelStatusText').textContent = 'Connecting to scoring engine…';
+    $('modelStatusText').textContent = 'Checking research-prototype status…';
     $('modelDot').classList.remove('live');
     try {
       const response = await fetch(`${apiBase()}/health`);
       const health = response.ok ? await response.json() : null;
-      if (!health || health.status !== 'ok' || !health.engine_loaded) throw new Error('engine unavailable');
+      if (!health || health.status !== 'ok') throw new Error('service unavailable');
+      if (!health.scoring_enabled) {
+        setScoringAvailability(false, health.message);
+        $('modelStatusText').textContent = 'Research prototype — scoring paused';
+        return;
+      }
+      if (!health.engine_loaded) throw new Error('engine unavailable');
+      setScoringAvailability(true);
       $('modelStatusText').textContent = 'Connected — scoring engine ready';
       $('modelDot').classList.add('live');
     } catch (_) {
+      setScoringAvailability(false, 'The explanatory site is available, but the scoring service could not be reached.');
       $('modelStatusText').textContent = 'Not connected — check API settings';
       $('modelDot').classList.remove('live');
     }
@@ -722,8 +759,8 @@
   });
 
   function updateRunState() {
-    $('runBtn').disabled = !selectedPlayer;
-    $('runBtn').textContent = selectedPlayer ? 'Run Extension Assessment' : 'Search a player first';
+    $('runBtn').disabled = !scoringEnabled || !selectedPlayer;
+    $('runBtn').textContent = !scoringEnabled ? 'Live scoring temporarily paused' : selectedPlayer ? 'Run Extension Assessment' : 'Search a player first';
   }
 
   function setProbability(valueId, barId, value, risk = false) {
@@ -904,6 +941,7 @@
   }
 
   renderLeagueRail();
+  setScoringAvailability(false);
   updateRunState();
   checkApiConnection();
 </script>

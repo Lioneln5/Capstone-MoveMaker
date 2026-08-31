@@ -5,6 +5,17 @@ code, serialized deployment models, and compact reference artifacts. Large
 source tables remain outside Git and are mounted into the service through a
 Railway volume.
 
+## Current safe default
+
+Phase 0 freezes Engine V1 and leaves public scoring paused. With
+`MOVEMAKER_ENABLE_SCORING` unset or false, Railway starts the explanatory site
+immediately, does not wait for volume data, and reports
+`scoring_enabled: false` from `/health`.
+
+Only set `MOVEMAKER_ENABLE_SCORING=true` for a controlled V1 regression test.
+Doing so restores the runtime-data requirements below; it does not change V1's
+research-prototype status.
+
 ## Service configuration
 
 The checked-in `railway.toml` supplies the Railpack start command and `/health`
@@ -12,7 +23,9 @@ health check. In Railway:
 
 1. Attach a volume to the API service at **`/data`**. Do not mount it at
    `/app/Data`, because that would hide model artifacts shipped in the image.
-2. Add the service variable **`MOVEMAKER_DATA_ROOT=/data`**.
+2. For controlled scoring only, add **`MOVEMAKER_DATA_ROOT=/data`** and
+   **`MOVEMAKER_ENABLE_SCORING=true`**. Leave the scoring flag unset for the
+   public Phase 0 research site.
 3. Upload the required local data directories into the volume:
 
    ```bash

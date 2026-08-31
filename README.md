@@ -2,7 +2,7 @@
 
 **Football Contract Extension Decision Support**
 
-MoveMaker is an explainable decision-support system for incumbent-club football contract extensions. A user selects a current player and enters proposed wage and term information; the application returns separate, evidence-backed views of:
+MoveMaker is an explainable research prototype for incumbent-club football contract extensions. In its frozen V1 scoring mode, a user selects a current player and enters proposed wage and term information; the application returns separate, evidence-backed views of:
 
 - meaningful contribution through Year 2;
 - continuous stay at the current club;
@@ -12,11 +12,13 @@ MoveMaker is an explainable decision-support system for incumbent-club football 
 
 MoveMaker is a screening and prioritization tool. It does **not** produce one overall success score, recommend whether a club should extend a player, predict tactical compatibility, or estimate accounting loss or ROI.
 
-**Explore the project:** [live demo](https://movemaker-production.up.railway.app/) · [final presentation](slides/final/MoveMaker_Final_Presentation.html) · [model card](docs/MODEL_CARD.md) · [data provenance](docs/DATA_PROVENANCE.md) · [analytical journal](docs/journal/2026-08-11_scope_pivot_journal.md)
+> **Current status (2026-08-30):** Engine V1 is frozen and public scoring is paused while Engine V2 validity repairs are evaluated. The hosted research site, source, historical evidence, and presentation remain available. See the [V1 freeze and containment record](docs/ENGINE_V1_FREEZE.md).
+
+**Explore the project:** [hosted research site](https://movemaker-production.up.railway.app/) · [final presentation](slides/final/MoveMaker_Final_Presentation.html) · [model card](docs/MODEL_CARD.md) · [data provenance](docs/DATA_PROVENANCE.md) · [analytical journal](docs/journal/2026-08-11_scope_pivot_journal.md)
 
 [![MoveMaker live decision profile showing Jude Bellingham's four separate contract-extension signals](docs/assets/movemaker-live-profile.png)](https://movemaker-production.up.railway.app/)
 
-*Live example: a three-year extension profile for Jude Bellingham. The four outputs answer different questions and are intentionally not combined into one recommendation.*
+*Frozen V1 example: a three-year extension profile for Jude Bellingham. The four outputs answer different questions and are intentionally not combined into one recommendation.*
 
 ## Why this product exists
 
@@ -45,7 +47,7 @@ The financial scale is material. Across 908 out-of-time extension profiles with 
 
 ## Current product
 
-The deployed application combines a FastAPI scoring service with a static HTML front end. The public demo is hosted on Railway, while the same interface and API can also run locally:
+The application combines a FastAPI service with a static HTML front end. The public research site is hosted on Railway with scoring disabled by default; controlled V1 regression testing can still run locally:
 
 ```text
 api/main.py                         API
@@ -55,16 +57,16 @@ models/canonical_feature_retriever.py
 Data/processed/deployment_models/   serialized model artifacts and manifest
 ```
 
-The deployed profile exposes 16 separately validated endpoints rather than a composite score. The sustained-contribution endpoint uses the later C6 compact model, which removed unstable goals/assists-per-90 inputs and passed the declared non-inferiority and deployment-parity checks. The role-contextualization diagnostic is research-only and has not replaced the remaining production endpoints.
+The frozen V1 profile exposes 16 separately evaluated endpoints rather than a composite score. The sustained-contribution endpoint uses the later C6 compact model, which removed unstable goals/assists-per-90 inputs and passed the declared non-inferiority and deployment-parity checks. The role-contextualization diagnostic is research-only and did not replace the remaining V1 endpoints.
 
 ### Run locally
 
 ```bash
 python -m pip install -r requirements.txt
-python -m uvicorn api.main:app --host 127.0.0.1 --port 8000
+MOVEMAKER_ENABLE_SCORING=true python -m uvicorn api.main:app --host 127.0.0.1 --port 8000
 ```
 
-Then open [http://127.0.0.1:8000/](http://127.0.0.1:8000/). A local run requires both the API and the runtime artifacts; opening `html/index.html` by itself will display the interface but cannot produce scores.
+Then open [http://127.0.0.1:8000/](http://127.0.0.1:8000/). The explicit environment flag is for controlled V1 regression testing only. Without it, the site starts in its safe research-prototype state and does not load models or runtime data.
 
 For hosted deployment, see the [Railway deployment guide](docs/RAILWAY_DEPLOYMENT.md). Large runtime tables are supplied through a Railway volume rather than committed to Git.
 

@@ -23,6 +23,16 @@ from pathlib import Path
 DATA_ROOT = Path(os.environ.get("MOVEMAKER_DATA_ROOT", "Data")).expanduser().resolve()
 PORT = int(os.environ.get("PORT", "8000"))
 
+
+def environment_flag(name: str, *, default: bool = False) -> bool:
+    raw = os.environ.get(name)
+    if raw is None:
+        return default
+    return raw.strip().lower() in {"1", "true", "yes", "on"}
+
+
+SCORING_ENABLED = environment_flag("MOVEMAKER_ENABLE_SCORING", default=False)
+
 # The two live-input overlays are technically optional fallbacks in the
 # retriever, but required here so the public deployment matches the current
 # local demo rather than starting halfway through the initial upload.
@@ -82,6 +92,18 @@ def start_api() -> None:
 
 
 def main() -> None:
+    # A paused research-prototype deployment must not wait for the large
+    # serving tables. The real API can serve the site and a healthy, explicit
+    # scoring-disabled state without mounting or parsing any runtime data.
+    if not SCORING_ENABLED:
+        print(
+            "MoveMaker bootstrap: live scoring disabled; starting the "
+            "research-prototype site without runtime data.",
+            flush=True,
+        )
+        start_api()
+        return
+
     missing = missing_files()
     if not missing:
         start_api()

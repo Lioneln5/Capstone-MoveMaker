@@ -4,6 +4,11 @@
 
 MoveMaker is an explainable decision-support system for **incumbent-club contract extensions in the Big Five European leagues**. It helps a club screen a proposed extension by presenting separate estimates for future role, club continuity, public-value downside, and historical wage context.
 
+**Current status:** Engine V1 is a frozen research prototype. Public scoring is
+disabled by default while Engine V2 validity repairs are evaluated. The
+metrics below document the frozen V1 evidence; they are not a claim that the
+current public site is a production club-decision engine.
+
 The product deliberately avoids a single success score. Each output answers a different decision question and should be interpreted with its own target definition, time horizon, and uncertainty.
 
 ## Intended users and uses
@@ -27,7 +32,7 @@ MoveMaker is not validated for:
 - betting or investment recommendations; or
 - leagues, seasons, and player profiles outside the documented data support.
 
-## Deployed decision signals
+## Frozen V1 decision signals
 
 The application exposes 16 separately validated endpoints. The main user-facing signals are:
 
@@ -45,7 +50,7 @@ An attempted integrated contract score was rejected: its AUC was 0.6830 versus 0
 
 Primary performance claims use rolling chronological, out-of-time evaluation rather than random train/test splitting. Earlier extension cohorts train the model and later cohorts evaluate it, approximating how the product would have behaved on future decisions. Saved independent-verification artifacts check the declared cohorts, metrics, manifests, model selection, and deployment parity.
 
-The sustained-contribution endpoint uses the deployed C6 compact model. C6 removed unstable goals- and assists-per-90 inputs and advanced through a declared compact non-inferiority route; it was not claimed to be statistically superior. Later role-contextualization candidates remain research-only and have not replaced other deployed endpoints.
+The sustained-contribution endpoint uses the frozen C6 compact model. C6 removed unstable goals- and assists-per-90 inputs and advanced through a declared compact non-inferiority route; it was not claimed to be statistically superior. Later role-contextualization candidates remain research-only and did not replace other V1 endpoints.
 
 ## Inputs and missingness
 
@@ -70,4 +75,4 @@ Every output should be reviewed alongside medical information, scouting judgment
 
 ## Versioning and audit trail
 
-Deployment artifacts and their manifest live under `Data/processed/deployment_models/`. Research runners and independent verifiers are registered in `models/README.md`. Frozen evidence should remain hash-stable; any future replacement requires a newly versioned evaluation, deployment parity checks, explainability checks, and smoke tests.
+Frozen V1 artifacts and their original manifest live under `Data/processed/deployment_models/`. Their byte-level Phase 0 inventory is recorded in `docs/releases/engine_v1_freeze_2026-08-30.json` and verified by `scripts/verify_engine_v1_freeze.py`. Research runners and independent verifiers are registered in `models/README.md`. V2 must use separate artifact paths; any future live replacement requires a newly versioned evaluation, deployment parity checks, explainability checks, and smoke tests.

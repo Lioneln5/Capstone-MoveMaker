@@ -27,6 +27,7 @@ from the repository root.
 
 from __future__ import annotations
 
+import os
 import sys
 from datetime import date
 from pathlib import Path
@@ -50,6 +51,26 @@ from player_search import PlayerSearchIndex  # noqa: E402
 app = FastAPI(title="MoveMaker Incumbent-Extension API", version="1.0.0")
 app.mount("/assets", StaticFiles(directory=HTML_DIR / "assets"), name="assets")
 
+
+def _environment_flag(name: str, *, default: bool = False) -> bool:
+    """Read a deliberately explicit boolean environment switch."""
+    raw = os.environ.get(name)
+    if raw is None:
+        return default
+    return raw.strip().lower() in {"1", "true", "yes", "on"}
+
+
+# Phase 0 containment: V1 is a frozen research prototype, not a production
+# decision engine. Scoring therefore fails closed unless an operator makes the
+# enablement decision explicitly. The explanatory site and /health remain
+# available while Engine V2 validity repairs are developed separately.
+SCORING_ENABLED = _environment_flag("MOVEMAKER_ENABLE_SCORING", default=False)
+SCORING_PAUSED_REASON = (
+    "Engine V1 has been frozen while Engine V2 validity repairs are under "
+    "independent evaluation. The project pages and historical evidence remain available."
+)
+SCORING_PAUSED_DETAIL = f"Live scoring is temporarily paused. {SCORING_PAUSED_REASON}"
+
 # Permissive for local development while the front end is being wired up
 # today. Tighten to the deployed frontend's real origin before shipping.
 app.add_middleware(
@@ -67,6 +88,13 @@ _profile_builder: IncumbentExtensionProfileBuilder | None = None
 def _load_engine() -> None:
     import time
     global _search_index, _profile_builder
+    if not SCORING_ENABLED:
+        print(
+            "MoveMaker API: research-prototype mode; live scoring is disabled "
+            "and V1 artifacts will not be loaded.",
+            flush=True,
+        )
+        return
     t0 = time.time()
     print("MoveMaker API: loading engine and warming caches...", flush=True)
     _search_index = PlayerSearchIndex()
@@ -97,11 +125,24 @@ def supporting_page(page_name: str) -> FileResponse:
 
 @app.get("/health")
 def health() -> dict[str, Any]:
-    return {"status": "ok", "engine_loaded": _profile_builder is not None}
+    return {
+        "status": "ok",
+        "product_mode": "research_prototype",
+        "scoring_enabled": SCORING_ENABLED,
+        "engine_loaded": _profile_builder is not None,
+        "engine_version": "v1_frozen" if SCORING_ENABLED else None,
+        "message": None if SCORING_ENABLED else SCORING_PAUSED_REASON,
+    }
+
+
+def _require_scoring_enabled() -> None:
+    if not SCORING_ENABLED:
+        raise HTTPException(status_code=503, detail=SCORING_PAUSED_DETAIL)
 
 
 @app.get("/players/search")
 def search_players(q: str, limit: int = 10) -> list[dict[str, Any]]:
+    _require_scoring_enabled()
     if _search_index is None:
         raise HTTPException(status_code=503, detail="Search index not loaded yet.")
     if len(q.strip()) < 2:
@@ -115,6 +156,7 @@ def player_input_defaults(
     canonical_club_id: int,
     player_name_normalized: str | None = None,
 ) -> dict[str, Any]:
+    _require_scoring_enabled()
     if _profile_builder is None:
         raise HTTPException(status_code=503, detail="Engine not loaded yet.")
     return _profile_builder.scorer.retriever.get_player_input_defaults(
@@ -144,6 +186,7 @@ class ProfileRequest(BaseModel):
 
 @app.post("/profile")
 def build_profile(request: ProfileRequest) -> dict[str, Any]:
+    _require_scoring_enabled()
     if _profile_builder is None:
         raise HTTPException(status_code=503, detail="Engine not loaded yet.")
     try:

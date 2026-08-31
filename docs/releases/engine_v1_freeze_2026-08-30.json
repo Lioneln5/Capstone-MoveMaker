@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "release_id": "engine_v1_frozen_2026-08-30",
+  "status": "frozen_research_prototype",
+  "frozen_at_utc": "2026-08-30T00:00:00Z",
+  "source_commit": "fa0d4e3cb437e772cf0dabb3f6a6cf592e8b07ee",
+  "artifact_root": "Data/processed/deployment_models",
+  "excluded_paths": [
+    "Data/processed/deployment_models/_backups"
+  ],
+  "file_count": 24,
+  "files": [
+    {"path": "Data/processed/deployment_models/contract_financial_exposure_benchmark/annual_wage.joblib", "sha256": "e69f722b8a31662006bc3d65b65b5cf07126776fece13388a27e28acb4363476"},
+    {"path": "Data/processed/deployment_models/contract_financial_exposure_benchmark/contract_duration.joblib", "sha256": "912c2964acac418db683f64ffffd9a0c5d4b573ab4e4b169254aef6694f0a13d"},
+    {"path": "Data/processed/deployment_models/contract_financial_exposure_benchmark/fixed_wage_commitment.joblib", "sha256": "ecbb46e65122e19039fb2cfd666c15a1132beeed548c603b3dd83353f2fce146"},
+    {"path": "Data/processed/deployment_models/contract_financial_exposure_benchmark/wage_to_market_value.joblib", "sha256": "584e326f4dc39f08c5a32b827c04c421e48047678f750f4956e044d6ec0b2691"},
+    {"path": "Data/processed/deployment_models/extension_opportunity_diagnostic/sustained_meaningful_contribution.joblib", "sha256": "adf4e464fe213bec23e8eaf612ebb8959a0fd5aee9bd7ce725325a94b06614db"},
+    {"path": "Data/processed/deployment_models/extension_opportunity_diagnostic/year2_opportunity_share.joblib", "sha256": "1a1cf145aa98402ba5d38c8c8a7d86f85508f716a283349b6a65fd8a7cc6d025"},
+    {"path": "Data/processed/deployment_models/extension_survival_diagnostic/any_outbound_24m.joblib", "sha256": "2dc2386ac30375a87d01f6c1716867283898312d3a09307133f91ec5142735df"},
+    {"path": "Data/processed/deployment_models/extension_survival_diagnostic/any_outbound_36m.joblib", "sha256": "c107ebff5e6b067e2e3cba59b3bb5eb00a8c50955569fab9e19c517f7c30580e"},
+    {"path": "Data/processed/deployment_models/extension_survival_diagnostic/interval_bounds.json", "sha256": "d56773d4eb08e2e933e80defa054775e18ebf53953a367a3adcf1c93accd18e0"},
+    {"path": "Data/processed/deployment_models/extension_survival_diagnostic/permanent_outbound_24m.joblib", "sha256": "d44001ef4230bd706b6977001c5af0e4663a6b021ba5854c9cd6d7ff21f47023"},
+    {"path": "Data/processed/deployment_models/extension_value_preservation_diagnostic/downside_10pct_12m.joblib", "sha256": "3eea293f8ab955a0299c7e525d98064740a96877cd627e2c942e93d98f231e35"},
+    {"path": "Data/processed/deployment_models/extension_value_preservation_diagnostic/downside_10pct_24m.joblib", "sha256": "1c98b2440ae1796620152f2c97287cbb7a78a400d24184d904d0fc5b0107aea5"},
+    {"path": "Data/processed/deployment_models/extension_value_preservation_diagnostic/downside_25pct_12m.joblib", "sha256": "21fe7499099c98559f475bc453e06e155dc8b58eb14ecb204288141ed9f4b566"},
+    {"path": "Data/processed/deployment_models/extension_value_preservation_diagnostic/downside_25pct_24m.joblib", "sha256": "d04a8cf0072c7db128863d298e9ac02bdfbf3d84d4d7ede6bf04e7ad29ad9496"},
+    {"path": "Data/processed/deployment_models/extension_value_preservation_diagnostic/downside_50pct_24m.joblib", "sha256": "cd11d0d0d5f1a921dab5e1d9ce4742e0bf4a121ef48e68db0f74eff8bd4da50e"},
+    {"path": "Data/processed/deployment_models/extension_value_preservation_diagnostic/value_log_ratio_12m.joblib", "sha256": "5d22ff68d343406f1fdbd89a5dc43692c14c65556da53dfd1b9bd868c18a3c5f"},
+    {"path": "Data/processed/deployment_models/extension_value_preservation_diagnostic/value_log_ratio_24m.joblib", "sha256": "192d1f5cbaa925e12c5fdddcd12f5b9466cf33eecbcb30f83bd860e4e46f43e9"},
+    {"path": "Data/processed/deployment_models/independent_verification.csv", "sha256": "3956d2b22359653456b953f8b5a456f26d2bdc225e756818cf677ebe852a5a1d"},
+    {"path": "Data/processed/deployment_models/independent_verification.json", "sha256": "64e8c5a635e785f2c98d9dcab81d5ceab9301e2d9262316f7e287fef649da93f"},
+    {"path": "Data/processed/deployment_models/live_request_integrity.csv", "sha256": "a722414a6b8d30c143bf3535b06dac85a187ea8c28a030cc75b62a5e395e6004"},
+    {"path": "Data/processed/deployment_models/live_request_integrity.json", "sha256": "9197ec2ae27c91a5a43f1c609eeb8a31cd81d8e027089583147c0e0dcb3ab339"},
+    {"path": "Data/processed/deployment_models/model_manifest.json", "sha256": "eca610594d958815719c437a0d25bc46161cfff7e852a407aff0ea47aae4131c"},
+    {"path": "Data/processed/deployment_models/out_of_sample_verification.csv", "sha256": "2241e64ec8a248a45e561a303786c2cf6a1d13bb1638ed68997f1d144039b69f"},
+    {"path": "Data/processed/deployment_models/out_of_sample_verification.json", "sha256": "423b48c52bc3d48a3d56a6e53f0d9823de4a4082d14212cc500e5fbccad9bb14"}
+  ]
+}
