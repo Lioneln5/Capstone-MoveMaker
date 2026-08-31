@@ -1,0 +1,95 @@
+[
+  {
+    "decision_scope": "incumbent_club_extension_scenario",
+    "engine_version": "2.0.0-candidate",
+    "modules": [
+      {
+        "artifact_id": "not_built_phase4",
+        "calibration_method": "raw",
+        "data_vintage": {
+          "evaluation_cutoff": "2023"
+        },
+        "endpoint_id": "sustained_meaningful_contribution",
+        "horizon": "year_1_and_year_2",
+        "interval": {
+          "high": 0.79,
+          "kind": "model_fit_80",
+          "low": 0.64,
+          "unit": "probability"
+        },
+        "limitations": [
+          "Historical conditional estimate; not a recommendation."
+        ],
+        "module_id": "future_role",
+        "result_kind": "probability",
+        "status": "supported",
+        "subgroup_reliability": {
+          "league": "supported",
+          "position": "supported"
+        },
+        "support_reasons": [],
+        "target_definition": "at_least_25pct_same_club_opportunity_share_in_each_year",
+        "unit": "probability",
+        "value": 0.72
+      },
+      {
+        "artifact_id": null,
+        "calibration_method": "raw",
+        "data_vintage": {
+          "evaluation_cutoff": "2023"
+        },
+        "endpoint_id": "any_outbound_24m",
+        "horizon": "24m",
+        "interval": null,
+        "limitations": [
+          "No personalized Ligue 1 continuity result is authorized by Phase 4."
+        ],
+        "module_id": "club_continuity",
+        "result_kind": "probability",
+        "status": "refused",
+        "subgroup_reliability": {},
+        "support_reasons": [
+          "SUBGROUP_RELIABILITY_LIMITED:Ligue 1"
+        ],
+        "target_definition": "any_recorded_loan_or_permanent_outbound_move",
+        "unit": "probability",
+        "value": null
+      },
+      {
+        "artifact_id": "not_built_phase4",
+        "calibration_method": null,
+        "data_vintage": {
+          "evaluation_cutoff": "2023"
+        },
+        "endpoint_id": "annual_wage_peer_benchmark",
+        "horizon": "proposal",
+        "interval": {
+          "high": 14900000,
+          "kind": "historical_reference_80",
+          "low": 4200000,
+          "unit": "EUR_per_year"
+        },
+        "limitations": [
+          "Peer context, not fair value or an optimal wage."
+        ],
+        "module_id": "wage_benchmark",
+        "result_kind": "historical_benchmark",
+        "status": "limited",
+        "subgroup_reliability": {
+          "league": "supported",
+          "position": "supported"
+        },
+        "support_reasons": [
+          "PROFILE_NEAR_HISTORICAL_EDGE"
+        ],
+        "target_definition": "historical_annual_fixed_wage",
+        "unit": "EUR_per_year",
+        "value": 8000000
+      }
+    ],
+    "overall_score": null,
+    "recommendation": null,
+    "request_id": "contract-example-supported",
+    "scoring_as_of": "2026-08-30"
+  }
+]

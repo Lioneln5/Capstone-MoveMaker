@@ -12,7 +12,7 @@ MoveMaker is an explainable research prototype for incumbent-club football contr
 
 MoveMaker is a screening and prioritization tool. It does **not** produce one overall success score, recommend whether a club should extend a player, predict tactical compatibility, or estimate accounting loss or ROI.
 
-> **Current status (2026-08-30):** Engine V1 is frozen and public scoring is paused. Engine V2 Phases 1–3 now define the valid cohort and request boundary, test compact feature-safe candidates, and audit calibration, model-fit uncertainty, subgroup reliability, and out-of-distribution refusal. Future-role and value-downside candidates may proceed to a versioned build; continuity is blocked for input-coverage repair. Nothing from V2 is deployed. See the [V1 freeze record](docs/ENGINE_V1_FREEZE.md), [V2 validity boundary](docs/ENGINE_V2_VALIDITY_BOUNDARY.md), [V2 feature specification](docs/ENGINE_V2_FEATURE_SPECIFICATION.md), and [V2 reliability gate](docs/ENGINE_V2_CALIBRATION_RELIABILITY.md).
+> **Current status (2026-08-30):** Engine V1 is frozen and public scoring is paused. Engine V2 Phases 1–4 now define the validity boundary, test decision-time-safe features, audit probability reliability, repair continuity's missing-input failure, validate the wage peer benchmark, and freeze a refusal-safe result contract. Future role, value downside, and wage benchmarking may proceed to a sealed final holdout. Continuity's coverage is repaired, but its Ligue 1 subgroup still lacks positive skill, so the overall engine remains blocked and nothing from V2 is deployed. See the [V1 freeze record](docs/ENGINE_V1_FREEZE.md), [V2 validity boundary](docs/ENGINE_V2_VALIDITY_BOUNDARY.md), [V2 feature specification](docs/ENGINE_V2_FEATURE_SPECIFICATION.md), [V2 reliability gate](docs/ENGINE_V2_CALIBRATION_RELIABILITY.md), and [V2 candidate contract](docs/ENGINE_V2_CANDIDATE_CONTRACT.md).
 
 **Explore the project:** [hosted research site](https://movemaker-production.up.railway.app/) · [final presentation](slides/final/MoveMaker_Final_Presentation.html) · [model card](docs/MODEL_CARD.md) · [data provenance](docs/DATA_PROVENANCE.md) · [analytical journal](docs/journal/2026-08-11_scope_pivot_journal.md)
 
@@ -118,14 +118,15 @@ This repository is therefore an **auditable publication baseline**, not a zero-d
 
 ## Continuing the project
 
-The presentation milestone is complete, but development is not. Phase 3 has
-separated candidates that can proceed from one that is not operationally
-supportable. The next work should improve validity and deployability rather
-than widen the claims:
+The presentation milestone is complete, but development is not. Phase 4 has
+frozen the candidate response contract and separated modules that can enter a
+final temporal test from continuity, which still fails one Big-Five subgroup
+gate. The next work should improve validity and deployability rather than widen
+the claims:
 
-1. repair the continuity feature contract so required inputs are broadly available, then rerun its chronological and reliability gates;
-2. freeze the surviving probability specifications and define a versioned result/API contract carrying uncertainty, support state, subgroup status, data vintage, and refusal reason;
-3. reserve later-season data for the final untouched temporal evaluation before enabling any V2 scoring path;
+1. freeze any proposed continuity repair before testing it on later, fully observed data; add genuinely new club/squad context only in a separately declared candidate;
+2. wait until 2024 extension outcomes are fully observable, then run the sealed final temporal evaluation without changing features, calibration, support rules, or gates;
+3. build versioned artifacts and API parity checks only for modules that pass that final evaluation;
 4. refresh current performance and salary inputs without contaminating frozen chronological evidence; and
 5. add richer injury, squad-competition, option, clause, and internal club data only when coverage supports a new claim.
 

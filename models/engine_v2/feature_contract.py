@@ -59,6 +59,12 @@ HISTORICAL_SALARY_CONTEXT = (
     "log_prior_season_annual_gross_eur",
     "prior_wage_available",
 )
+DERIVED_PLAYER_CONTEXT = (
+    # Decision-time-valid nonlinear age term. It is derived only from
+    # age_at_signing and captures the empirically observed U-shaped continuity
+    # relationship without importing post-extension information.
+    "age_distance_from_27_squared",
+)
 
 FEATURE_GROUPS = {
     "player_context": PLAYER_CONTEXT,
@@ -69,6 +75,7 @@ FEATURE_GROUPS = {
     "advanced_performance": ADVANCED_PERFORMANCE,
     "commercial_scenario": COMMERCIAL_SCENARIO,
     "historical_salary_context": HISTORICAL_SALARY_CONTEXT,
+    "derived_player_context": DERIVED_PLAYER_CONTEXT,
 }
 
 CORE_PROFILE_FEATURES = list(PLAYER_CONTEXT + PUBLIC_VALUE_CONTEXT)
@@ -110,7 +117,7 @@ HEADLINE_ENDPOINTS = (
         target="any_recorded_loan_or_permanent_outbound_move",
         public_status="phase2_candidate_only",
         model_form="direct_fixed_horizon_binary_probability",
-        allowed_feature_groups=("player_context", "public_value_context", "recent_involvement", "prior_volume"),
+        allowed_feature_groups=("player_context", "derived_player_context", "public_value_context", "recent_involvement", "prior_volume"),
         prohibited_feature_groups=("raw_scoring_rates", "advanced_performance", "commercial_scenario", "historical_salary_context"),
         interpretation="Historical probability of uninterrupted club involvement for 24 months; outbound includes loans.",
     ),
@@ -153,4 +160,3 @@ def contract_for(module: str) -> EndpointContract:
     if len(matches) != 1:
         raise KeyError(module)
     return matches[0]
-

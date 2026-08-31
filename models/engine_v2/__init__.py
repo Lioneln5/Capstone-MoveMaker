@@ -10,3 +10,4 @@ from .validity_boundary import (  # noqa: F401
     ModuleDecision,
     evaluate_request,
 )
+from .result_contract import ENGINE_VERSION, ModuleResult, ResultEnvelope  # noqa: F401

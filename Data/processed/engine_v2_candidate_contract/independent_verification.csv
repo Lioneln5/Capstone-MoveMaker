@@ -1,0 +1,34 @@
+check,passed,observed,expected,notes
+continuity_variants_exact,True,"['chronology_prevalence', 'core_available', 'core_plus_age_curve', 'phase2_prior_volume']","['chronology_prevalence', 'core_available', 'core_plus_age_curve', 'phase2_prior_volume']",No undeclared repair candidate is present.
+rolling_years_exact,True,"[np.int64(2020), np.int64(2021), np.int64(2022), np.int64(2023)]","[2020, 2021, 2022, 2023]",Both audits are chronological.
+continuity_keys_unique,True,0,0,One result per candidate/event/origin.
+wage_keys_unique,True,0,0,One wage peer estimate per event/origin.
+continuity_probabilities_bounded,True,"[0.0904410326949519, 0.8644662342407484]","[0,1]",All probabilities are valid.
+selected_is_age_curve,True,['core_plus_age_curve'],['core_plus_age_curve'],The repaired observable candidate is selected.
+selected_probabilities_exact,True,0.0,<1e-12,Intervals/support did not alter point estimates.
+continuity_comparisons_recompute,True,9.367506770274758e-17,<1e-12,Pooled candidate evidence derives from row-level predictions.
+age_curve_ci_positive,True,"[0.0111063120777032, 4]",CI > 0 and 4/4,Repair beats chronology across origins with positive cluster interval.
+continuity_intervals_ordered,True,0,0,Point estimate lies inside each model-fit interval.
+continuity_bootstraps_complete,True,250,250,All cluster refits completed.
+continuity_refusals_explained,True,87,all explained,No refused result is silent.
+continuity_subgroup_metrics_recompute,True,1.1102230246251565e-16,<1e-12,Subgroup metrics independently reconstruct.
+continuity_subgroup_statuses_recompute,True,[],[],Predeclared subgroup gates reproduce.
+ligue1_limitation_explicit,True,['Ligue 1'],['Ligue 1'],"Failure is surfaced, not averaged away."
+continuity_deployment_block_recomputes,True,blocked_big_five_deployment_pending_new_context_or_untouched_holdout,blocked_big_five*,A failed league gate blocks Big-Five deployment.
+wage_origin_metrics_recompute,True,5.551115123125783e-17,<1e-12,Wage metrics derive from row-level evidence.
+wage_subgroup_metrics_recompute,True,1.1102230246251565e-16,<1e-12,Wage subgroup evidence independently reconstructs.
+wage_subgroup_statuses_recompute,True,[],[],Wage reliability gates reproduce.
+wage_decision_recomputes,True,"[np.float64(0.5993966411959335), np.float64(0.8131648936170213), np.float64(0.02327127659574468)]","positive, [.70,.90], <=.15",Peer benchmark may advance only to sealed holdout.
+missing_prior_wage_not_silently_required,True,0,0,Availability flag represents genuine missing context without zero-filling or automatic refusal.
+relationship_table_totals,True,1385,1385,Target overlap cohort reconciles.
+targets_not_mutually_exclusive,True,87,87,Observed overlap prohibits probability normalization.
+contract_examples_validate,True,[],[],Every serialized example satisfies the result contract.
+refused_numeric_leak_rejected,True,True,True,Contract rejects a number on a refused module.
+no_overall_score_or_recommendation,True,True,True,No universal output returns.
+engine_version_exact,True,2.0.0-candidate,2.0.0-candidate,Version is explicit.
+holdout_remains_sealed,True,reserved_not_evaluated,reserved_not_evaluated,No later-season tuning occurred.
+overall_engine_not_ready,True,not_ready_for_deployment,not_ready_for_deployment,Component progress does not authorize the engine.
+no_phase4_artifacts,True,[],[],Research evidence is not loadable production state.
+source_manifest_integrity,True,[],[],Declared inputs remain unchanged.
+v1_hashes_unchanged,True,[],[],Every frozen V1 file remains byte-identical.
+runner_checks_reconcile,True,"{'all_checks_passed': True, 'checks_passed': 13, 'checks_total': 13, 'continuity_decision': 'blocked_big_five_deployment_pending_new_context_or_untouched_holdout', 'engine_version': '2.0.0-candidate', 'overall_engine_decision': 'not_ready_for_deployment', 'phase': 'engine_v2_phase_4_candidate_contract', 'status': 'complete_research_only_not_deployed', 'v1_artifacts_modified': False, 'wage_benchmark_decision': 'advance_to_final_holdout'}",13/13,Runner checks and summary agree.

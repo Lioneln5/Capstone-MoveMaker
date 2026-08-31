@@ -13,6 +13,7 @@ from `Data/processed/deployment_models/` and must advance phase by phase.
 | Phase 1: cohort and decision-time validity boundary | Complete; no model fitted | `python models/run_engine_v2_validity_boundary.py` | `python scripts/verify_engine_v2_validity_boundary.py` | `Data/processed/engine_v2_validity_boundary/` |
 | Phase 2: endpoint and feature specification | Complete; candidates only, not deployed | `python models/run_engine_v2_feature_specification.py` | `python scripts/verify_engine_v2_feature_specification.py` | `Data/processed/engine_v2_feature_specification/` |
 | Phase 3: calibration, uncertainty, subgroup, and OOD reliability | Complete; role/value candidates advance, continuity blocked, none deployed | `python models/run_engine_v2_calibration_reliability.py` | `python scripts/verify_engine_v2_calibration_reliability.py` | `Data/processed/engine_v2_calibration_reliability/` |
+| Phase 4: continuity repair, wage audit, and versioned result contract | Complete; continuity still blocked by Ligue 1 reliability, none deployed | `python models/run_engine_v2_candidate_contract.py` | `python scripts/verify_engine_v2_candidate_contract.py` | `Data/processed/engine_v2_candidate_contract/` |
 
 Phase 1 permits only research outcome scenarios conditional on an extension.
 It does not validate extend/do-not-extend recommendations because the sources
@@ -30,6 +31,16 @@ future-role and value-downside candidates passed the declared endpoint gate.
 The 24-month continuity candidate did not: required prior-season minutes were
 missing often enough to produce a 60.7% refusal rate. No Phase-3 result is a
 deployment authorization.
+
+Phase 4 replaces those sparse minutes with broadly available recent-involvement
+features and adds a decision-time-valid nonlinear age term. Refusal falls to
+5.6% and pooled performance improves, but Ligue 1 still has negative Brier
+skill against chronology-only prevalence. Big-Five continuity therefore
+remains blocked. The annual-wage peer benchmark passes its broad
+position/league audit and may proceed to the sealed final holdout. The
+versioned result contract requires values, uncertainty, support status,
+subgroup status, data vintage, and refusal reasons to travel together and
+prohibits an overall score or automated recommendation.
 
 ## Current incumbent-extension pipeline
 
