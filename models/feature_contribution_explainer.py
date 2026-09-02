@@ -93,8 +93,13 @@ def raw_contributions(
     |contribution|, intercept, total logit)."""
     frame = pd.DataFrame([full_row(fv, artifact.features, extra)])
     x = artifact.preprocessor.transform(frame)[0]
-    coef = artifact.model.coef_[0]
-    intercept = float(artifact.model.intercept_[0])
+    # LogisticRegression exposes ``coef_`` as (1, n_features) and
+    # ``intercept_`` as (1,), while Ridge exposes ``coef_`` as
+    # (n_features,) and may expose a scalar ``intercept_``.  Flattening both
+    # representations keeps the shared explainer faithful to either linear
+    # artifact instead of assuming classifier-only shapes.
+    coef = np.ravel(np.asarray(artifact.model.coef_, dtype=float))
+    intercept = float(np.ravel(np.asarray(artifact.model.intercept_, dtype=float))[0])
     encoded_raw = artifact.preprocessor.encoded_raw_features
 
     per_raw: dict[str, float] = {}

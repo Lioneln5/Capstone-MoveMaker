@@ -137,6 +137,7 @@ validity and deployability rather than widen the claims:
 
 ## Research record
 
+- [Original twelve-problem Engine V2 audit](docs/ENGINE_V2_ORIGINAL_AUDIT.md) — permanent status ledger for the post-presentation stress-test findings
 - [Scope-pivot journal](docs/journal/2026-08-11_scope_pivot_journal.md)
 - [Research-paper evidence bank](docs/research/2026-08-11_report_evidence_bank.md) — historical transfer-risk pivot
 - [Data-readiness audit](docs/DATA_READINESS_AUDIT.md) — historical pre-extension scope

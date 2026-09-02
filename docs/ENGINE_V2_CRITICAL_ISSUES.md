@@ -1,5 +1,11 @@
 # ENGINE V2 CRITICAL-ISSUES REGISTER
 
+The twelve findings from the original post-presentation engine audit are
+preserved separately in
+[`ENGINE_V2_ORIGINAL_AUDIT.md`](ENGINE_V2_ORIGINAL_AUDIT.md). This register is
+reserved for later findings that independently block release or invalidate a
+specific product claim.
+
 > **RELEASE-BLOCKING REGISTER — NOT A PROGRESS LOG**
 >
 > An issue belongs here only when ignoring it could produce a materially

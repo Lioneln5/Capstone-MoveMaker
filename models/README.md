@@ -10,6 +10,13 @@ Release-blocking failures are maintained separately in
 [`docs/ENGINE_V2_CRITICAL_ISSUES.md`](../docs/ENGINE_V2_CRITICAL_ISSUES.md) and
 must not be diluted into ordinary phase notes.
 
+The original twelve findings that triggered the V2 program, together with an
+explicit `FIXED`, `CONTAINED`, `DEFERRED`, or `OPEN` status for each, are
+preserved in
+[`docs/ENGINE_V2_ORIGINAL_AUDIT.md`](../docs/ENGINE_V2_ORIGINAL_AUDIT.md).
+Verify that ledger and its shared Ridge-explainer repair with
+`python scripts/verify_engine_v2_original_audit.py`.
+
 | Stage | Status | Runner | Verifier | Evidence |
 | --- | --- | --- | --- | --- |
 | Phase 0: V1 freeze and containment | Complete | — | `python scripts/verify_engine_v1_freeze.py` | `docs/ENGINE_V1_FREEZE.md` |
