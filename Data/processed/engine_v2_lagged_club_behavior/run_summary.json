@@ -1,0 +1,36 @@
+{
+  "anchor_rows": 2805,
+  "checks_passed": 9,
+  "checks_total": 9,
+  "contract_version": "engine_v2_movement_targets_v1_2026-09-01",
+  "deployment_changed": false,
+  "development_years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "extension_history_rows": 2502,
+  "feature_rows": 2805,
+  "final_holdout_opened": false,
+  "model_features": [
+    "club_outbound_events_730d_log1p",
+    "club_outbound_unique_players_730d_log1p",
+    "club_transaction_churn_730d_log1p",
+    "club_inbound_outbound_ratio_730d_log",
+    "club_temporary_outbound_share_1095d",
+    "club_loan_return_within_temporary_share_1095d",
+    "club_position_outbound_typed_count_1095d_log1p",
+    "club_position_temporary_share_1095d",
+    "club_ageband_outbound_typed_count_1095d_log1p",
+    "club_ageband_permanent_share_1095d",
+    "club_mature_prior_extension_count_log1p",
+    "club_prior_extension_temporary_share",
+    "club_prior_extension_permanent_first_share",
+    "club_prior_extension_strict_stay_share",
+    "club_position_mature_prior_extension_count_log1p",
+    "club_position_prior_extension_temporary_share"
+  ],
+  "relevant_transfer_rows": 46931,
+  "v1_unchanged": true
+}

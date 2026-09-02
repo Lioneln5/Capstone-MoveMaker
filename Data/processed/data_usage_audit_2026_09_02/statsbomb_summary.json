@@ -1,0 +1,28 @@
+{
+  "cataloged_matches": 3961,
+  "competition_seasons": 80,
+  "unique_lineup_players": 11889,
+  "payloads": [
+    {
+      "kind": "events",
+      "files": 4235,
+      "records": 14874171,
+      "bytes": 12824330591,
+      "cataloged": 3961
+    },
+    {
+      "kind": "lineups",
+      "files": 4235,
+      "records": 8470,
+      "bytes": 83203954,
+      "cataloged": 3961
+    },
+    {
+      "kind": "three-sixty",
+      "files": 426,
+      "records": 1381467,
+      "bytes": 3211858288,
+      "cataloged": 426
+    }
+  ]
+}

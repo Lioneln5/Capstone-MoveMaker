@@ -1,0 +1,16 @@
+check,passed,observed,expected,note
+event_grain,True,"{'rows': 2805, 'duplicates': 0}","{'rows': 2805, 'duplicates': 0}",Canonical extension grain is preserved.
+latest_game_date_used_predecision,True,0,0,All operational evidence must be strictly before signing.
+latest_manager_game_date_used_predecision,True,0,0,All operational evidence must be strictly before signing.
+latest_formation_game_date_used_predecision,True,0,0,All operational evidence must be strictly before signing.
+latest_current_manager_lineup_date_used_predecision,True,0,0,All operational evidence must be strictly before signing.
+latest_current_manager_appearance_date_used_predecision,True,0,0,All operational evidence must be strictly before signing.
+manager_stability_available_matches_features,True,0,0,Availability is explicit and reconstructible.
+formation_stability_available_matches_features,True,0,0,Availability is explicit and reconstructible.
+current_manager_player_role_available_matches_features,True,0,0,Availability is explicit and reconstructible.
+manager_transition_role_change_available_matches_features,True,0,0,Availability is explicit and reconstructible.
+unit_features_bounded,True,True,True,Unit-scaled values remain bounded.
+transition_deltas_bounded,True,True,True,Role changes remain within plausible bounds.
+no_targets,True,True,True,Feature build contains no outcomes.
+finite_model_features,True,True,True,No infinite model input.
+v1_frozen,True,True,True,All frozen V1 files remain byte-identical.

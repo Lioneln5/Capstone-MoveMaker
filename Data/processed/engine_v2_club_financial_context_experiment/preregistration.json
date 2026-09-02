@@ -1,0 +1,71 @@
+{
+  "advance_gate": "positive adjusted CI; >=3/4 origin wins; <=15% refusal; ECE<=0.08; all Big Five leagues supported",
+  "baseline_features": [
+    "age_at_signing",
+    "canonical_position",
+    "league",
+    "log_market_value_at_signing",
+    "pre365_same_club_all_competition_opportunity_share",
+    "pre365_same_club_all_competition_appearance_rate",
+    "age_distance_from_27_squared"
+  ],
+  "candidate_family_size": 5,
+  "comparison_policy": "baseline retrained on the identical eligible train/validation/evaluation rows",
+  "endpoint": "any_outbound_24m",
+  "familywise_interval": "Bonferroni 99% player-cluster bootstrap interval",
+  "final_holdout_policy": "2024 and later are not evaluated",
+  "missing_context_policy": "unavailable; never imputed and never scored",
+  "origins": [
+    [
+      "origin_2020",
+      2018,
+      2019,
+      2020
+    ],
+    [
+      "origin_2021",
+      2019,
+      2020,
+      2021
+    ],
+    [
+      "origin_2022",
+      2020,
+      2021,
+      2022
+    ],
+    [
+      "origin_2023",
+      2021,
+      2022,
+      2023
+    ]
+  ],
+  "target": "any_outbound_event_by_24m",
+  "variant_blocks": {
+    "R1_resource_level": [
+      "payroll_log_eur",
+      "payroll_league_percentile"
+    ],
+    "R2_recruitment_intensity": [
+      "transfer_spend_to_payroll",
+      "transfer_income_to_payroll"
+    ],
+    "R3_squad_context": [
+      "squad_average_age",
+      "squad_foreign_share"
+    ],
+    "R4_combined_core_context": [
+      "payroll_log_eur",
+      "payroll_league_percentile",
+      "transfer_spend_to_payroll",
+      "transfer_income_to_payroll",
+      "squad_average_age",
+      "squad_foreign_share"
+    ],
+    "R5_wage_structure_diagnostic": [
+      "wage_structure_gini",
+      "wage_structure_top5_share"
+    ]
+  }
+}

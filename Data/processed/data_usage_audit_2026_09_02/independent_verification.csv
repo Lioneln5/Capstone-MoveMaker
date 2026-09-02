@@ -1,0 +1,27 @@
+check,passed,detail
+inventory_unique,True,10899
+raw_external_sources_still_unchanged,True,9363 acquired files checked by size and nanosecond mtime
+all_csv_files_counted,True,1171
+csv_parse_errors_explicit_and_none,True,[]
+schema_counts_match,True,Header columns reconcile
+profile_rows_match_inventory,True,2353
+profile_nonnull_bounds,True,All profiled fields
+independent_csv_reader_count_extension_modeling_master,True,2805
+independent_csv_reader_count_canonical_salary_panel,True,19770
+independent_csv_reader_count_team_competitions_seasons_clean,True,58247
+overlap_one_row_per_extension,True,2805
+manager_and_formation_subset_club_games,True,Cannot exceed available matches
+all_overlap_aggregates_reconstructed,True,192
+independent_manager_window_reconstruction,True,2700
+all_sb_payload_paths_inventoried,True,8896
+sb_catalog_reconstructed,True,3961
+sb_orphan_classification,True,File presence separate from usable match metadata
+invalid_sb_file_confirmed_3845506,True,Data/Open-Data-Master/open-data-master/open-data-master/data/three-sixty/3845506.json
+sb_counts_reconcile,True,Raw payload totals; invalid payload excluded from record count
+sixteen_frozen_endpoints,True,16
+no_statsbomb_or_injury_selected_features,True,"Selected V1 artifacts and V2 candidate lists, not all experiments"
+all_raw_capology_csvs_classified,True,204
+capology_partition,True,"{'club_financial_context_input': 110, 'base_manifest_input': 69, 'live_salary_overlay_input': 15, 'no_base_or_live_overlay_ingestion_found': 10}"
+club_financial_context_sources_complete,True,"{'Payrolls': 55, 'TransferWindows': 55}"
+every_inventory_family_classified,True,86
+frozen_V1_sha256_unchanged,True,24

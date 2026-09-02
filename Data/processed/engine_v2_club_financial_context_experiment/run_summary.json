@@ -1,0 +1,18 @@
+{
+  "advanced_variants": [],
+  "all_build_checks_passed": true,
+  "deployment_changed": false,
+  "development_evaluation_years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "final_holdout_opened": false,
+  "locked_baseline_reconstruction": {
+    "exact_within_1e_12": true,
+    "max_absolute_prediction_difference": 8.326672684688674e-17,
+    "rows": 1560
+  },
+  "variants_evaluated": 5
+}

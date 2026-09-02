@@ -1,0 +1,30 @@
+check,passed,observed,expected,note
+required_outputs_exist,True,[],[],All declared evidence tables exist.
+origins_preregistered,True,"[['origin_2020', 2018, 2019, 2020], ['origin_2021', 2019, 2020, 2021], ['origin_2022', 2020, 2021, 2022], ['origin_2023', 2021, 2022, 2023]]","[['origin_2020', 2018, 2019, 2020], ['origin_2021', 2019, 2020, 2021], ['origin_2022', 2020, 2021, 2022], ['origin_2023', 2021, 2022, 2023]]",Only the established four development origins are used.
+holdout_policy_preregistered,True,2024 and later are not evaluated,2024 and later are not evaluated,Future holdout remains sealed.
+missing_context_not_imputed,True,unavailable; never imputed and never scored,unavailable; never imputed and never scored,Promoted-club gaps cannot be silently filled.
+variant_family_exact,True,"['R1_resource_level', 'R2_recruitment_intensity', 'R3_squad_context', 'R4_combined_core_context', 'R5_wage_structure_diagnostic']","['R1_resource_level', 'R2_recruitment_intensity', 'R3_squad_context', 'R4_combined_core_context', 'R5_wage_structure_diagnostic']",No post-hoc feature block was added or dropped.
+prediction_key_unique,True,0,0,One paired prediction per candidate/event/origin.
+development_years_only,True,"[2020, 2021, 2022, 2023]","[2020, 2021, 2022, 2023]",No 2024+ outcome was evaluated.
+candidate_loss_recomputed,True,2.220446049250313e-16,<=1e-14,Row losses reconstruct from raw predictions.
+baseline_loss_recomputed,True,2.220446049250313e-16,<=1e-14,Matched baseline losses reconstruct.
+paired_improvement_recomputed,True,3.209238430557093e-16,<=1e-14,Paired improvement direction is baseline minus candidate.
+pooled_brier_recomputed,True,5.551115123125783e-17,<=1e-14,Candidate Brier is independently pooled.
+pooled_baseline_recomputed,True,2.7755575615628914e-17,<=1e-14,Matched baseline Brier is independently pooled.
+no_candidate_positive_adjusted_ci,True,[],[],No context block has multiplicity-adjusted positive evidence.
+no_candidate_advanced,True,[],[],The mechanical gate rejected every block.
+nothing_deployed,True,['not_deployed'],['not_deployed'],Experiment did not mutate production status.
+coverage_recomputed,True,0.0,<=1e-14,Coverage denominator includes all evaluation events.
+refusal_recomputed,True,8.326672684688674e-17,<=1e-14,Unavailable and OOD-refused rows are both counted.
+context_rows_never_exceed_total,True,0,0,Coverage arithmetic is coherent.
+ligue1_full_failure_reproduced,True,-0.0065828350340781,-0.006583,The original release-blocking league failure is preserved.
+coverage_filter_alone_does_not_repair_ligue1,True,-0.0008766161220558,<0,Filtering to context-covered Ligue 1 cases improves the number but does not create positive skill.
+missing_ligue1_segment_is_materially_weak,True,-0.0597097007667009,<-0.05,The omitted promoted/missing-context segment is especially weak and cannot be hidden.
+runner_checks_pass,True,8,8,Runner internal invariants all pass.
+baseline_reconstruction_exact,True,8.326672684688674e-17,<=1e-12,The Phase-4 reference is genuinely reconstructed.
+summary_holdout_false,True,False,False,Summary does not imply final testing.
+summary_deployment_false,True,False,False,Summary does not imply deployment.
+source_hashes_current,True,True,True,Inputs still match the experiment manifest.
+frozen_v1_hashes_unchanged,True,True,True,All 24 frozen production artifacts remain byte-identical.
+no_model_artifacts_in_output,True,[],[],"Only evidence, never candidate binaries, is emitted."
+byte_reproducible_rerun,True,[],[],Independent clean-directory rerun reproduces every substantive artifact byte-for-byte.

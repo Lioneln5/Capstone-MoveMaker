@@ -1,0 +1,6 @@
+{
+  "checks": 26,
+  "passed": 26,
+  "failed": [],
+  "limits": "Checks inventory integrity and independently reconstructs selected counts/windows; does not prove semantic validity of every field or upstream completeness."
+}

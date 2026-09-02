@@ -41,6 +41,27 @@ LEAGUE_META = {
 CLUB_ALIASES = {
     "acmilan": 5,
     "arminiabielefeld": 10,
+    # Reviewed Capology club-level payroll/transfer-window aliases.  Each ID
+    # was confirmed against the source slug, source club code, Transfermarkt
+    # club URL/ID, and historical top-flight competition membership.  Do not
+    # infer these from club_identity_crosswalk.name_aliases: that legacy field
+    # contains unrelated movement-history names and is not identity evidence.
+    "bastia": 595,  # SC Bastia; not AC Bastia 1924 (28904)
+    "carpi": 4102,  # AC Carpi / Carpi FC 1909
+    "cesena": 1429,  # Cesena FC / AC Cesena
+    "cordoba": 993,  # Cordoba CF; not unrelated canonical 'Cordoba' (82232)
+    "evian": 14171,  # Thonon Evian Grand Geneve FC
+    "gazelecajaccio": 3558,  # GFC Ajaccio
+    "holsteinkiel": 269,
+    "hullcity": 3008,
+    "ingolstadt": 4795,  # FC Ingolstadt 04
+    "middlesbrough": 641,
+    "nancy": 1159,  # AS Nancy-Lorraine
+    "palermo": 458,
+    "pescara": 2921,  # Delfino Pescara 1936
+    "qpr": 1039,  # Queens Park Rangers
+    "sportinggijon": 2448,
+    "sunderland": 289,
     "borussiadortmund": 16,
     "chievoverona": 862,
     "eintrachtfrankfurt": 24,

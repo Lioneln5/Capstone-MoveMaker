@@ -1,0 +1,9 @@
+check,passed,observed,expected,note
+product_contract_valid,True,[],[],Product status invariants must hold.
+strict_meaningful_stay_24m_development_signal,True,"{'brier_skill': 0.0352050277611941, 'ci_low': 0.0259793780034838, 'origin_wins': 4}","positive skill, CI low > 0, 4/4 origins","This is development evidence only, not deployment authorization."
+temporary_first_24m_development_signal,True,"{'brier_skill': 0.0291264690855683, 'ci_low': 0.0208728711075097, 'origin_wins': 4}","positive skill, CI low > 0, 4/4 origins","This is development evidence only, not deployment authorization."
+permanent_separation_subgroup_failure_preserved,True,"['Bundesliga', 'Ligue 1']",at least one league,Research-only status is grounded in an observed subgroup failure.
+no_numeric_output_authorized,True,0,0,No movement/retention probability is authorized for live display.
+upstream_verification,True,"{'movement': 28, 'manager_tactical': 16}",all upstream checks pass,The scope decision uses independently verified evidence.
+v1_frozen,True,True,True,All 24 V1 artifacts remain byte-identical.
+final_holdout_sealed,True,False,False,No 2024+ target is opened by this closeout.

@@ -1,0 +1,9 @@
+check,passed,observed,expected,note
+four_binary_endpoints,True,4,4,All decomposed binary questions were tested.
+four_predeclared_variants,True,4,4,No post-outcome variant was added.
+four_rolling_origins,True,4,4,Only the established development origins were used.
+holdout_sealed,True,2023,2023,No 2024+ target was evaluated.
+binary_loss_formula,True,0.0,<=1e-14,Paired Brier deltas reconstruct.
+multinomial_probability_sum,True,2.220446049250313e-16,<=1e-12,Named candidate probabilities are coherent.
+all_results_research_only,True,True,True,No diagnostic result is treated as a deployment authorization.
+v1_frozen,True,24,24,All frozen V1 files remain byte-identical.

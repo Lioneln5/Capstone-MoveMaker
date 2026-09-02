@@ -1,0 +1,14 @@
+check,observed,expected,passed,note
+source_file_count,110,110,True,55 files per source family.
+alias_review_count,16,16,True,Every previously unresolved alias has an evidence row.
+alias_ids_unique,16,16,True,No two aliases collapse to one club in this reviewed set.
+all_club_rows_linked,1074,1074,True,No unresolved source club remains.
+canonical_panel_rows,1074,1074,True,Expected Big-Five club-season universe.
+canonical_key_unique,0,0,True,One row per canonical club and season.
+stable_id_unique,0,0,True,Stable hashed row ID is unique.
+payroll_transfer_merge_complete,1074,1074,True,Exact paired source coverage.
+no_adjusted_2025_values,0,0,True,Retrospective 2025-adjusted values are excluded.
+wage_structure_quarantine,0,0,True,Distribution features emit only above coverage gate.
+evaluation_prior_season_coverage,795,795,True,Leakage-safe historical join reproduces audited coverage.
+no_infinite_features,0,0,True,Ratios and logs contain no infinities.
+lineage_never_future,0,0,True,Every row's derived history ends in that row's season.

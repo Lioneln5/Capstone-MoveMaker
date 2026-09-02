@@ -1,0 +1,10 @@
+check,passed,observed,expected
+development_rows,True,1560.0,1560
+raw_states_exhaustive,True,1560.0,1560
+unresolved_not_modeled,True,7.0,excluded
+three_state_probabilities_sum_to_one,True,2.220446049250313e-16,<=1e-12
+four_origins_binary,True,4.0,4
+four_origins_multinomial,True,4.0,4
+no_holdout_after_2023,True,2023.0,2023
+profile_register_records_completed_p0_work,True,4.0,>=4
+frozen_v1_unchanged,True,24.0,24

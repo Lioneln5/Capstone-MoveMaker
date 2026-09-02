@@ -1,0 +1,25 @@
+feature,block,definition,timing
+role_lineup_selection_rate_365d,role_level,Matchday selections / observed club games.,decision-time; source-gated
+role_start_rate_365d,role_level,Starting-XI selections / observed club games.,decision-time; source-gated
+role_substitute_selection_rate_365d,role_level,Bench selections / observed club games.,decision-time; source-gated
+role_captain_rate_365d,role_level,Captain selections / observed club games.,decision-time; source-gated
+role_position_entropy_365d,role_level,Normalized entropy of detailed observed lineup positions.,decision-time; source-gated
+role_days_since_last_selection_scaled_365d,role_level,"Days since last selection, capped and divided by 365.",decision-time; source-gated
+role_recent_start_rate_180d,role_trajectory,Starting rate in the most recent 180 days.,decision-time; source-gated
+role_start_rate_change_recent_vs_prior,role_trajectory,Recent 180-day start rate minus preceding 185-day rate.,decision-time; source-gated
+role_selection_rate_change_recent_vs_prior,role_trajectory,Recent selection rate minus preceding selection rate.,decision-time; source-gated
+role_opportunity_share_change_recent_vs_prior,role_trajectory,Recent minutes opportunity share minus preceding share.,decision-time; source-gated
+squad_same_position_competitor_count_log1p,squad_onfield,log(1 + other same-position players with at least three selections).,decision-time; source-gated
+squad_same_position_strong_competitor_count_log1p,squad_onfield,log(1 + same-position competitors starting at least 25% of club games).,decision-time; source-gated
+player_same_position_start_percentile,squad_onfield,Player start-rate percentile among active same-position group.,decision-time; source-gated
+player_same_position_minutes_percentile,squad_onfield,Player minutes percentile among active same-position group.,decision-time; source-gated
+player_start_rate_gap_to_position_leader,squad_onfield,Position leader start rate minus player start rate.,decision-time; source-gated
+player_opportunity_gap_to_position_leader,squad_onfield,Position leader opportunity share minus player share.,decision-time; source-gated
+player_share_of_position_minutes,squad_onfield,Player minutes / active same-position minutes.,decision-time; source-gated
+squad_position_minutes_hhi,squad_onfield,HHI of minutes across the active same-position group.,decision-time; source-gated
+squad_position_known_value_players_log1p,squad_value_incoming,log(1 + active same-position players with valid predecision values).,decision-time; source-gated
+player_same_position_value_percentile,squad_value_incoming,Player predecision value percentile in active same-position group.,decision-time; source-gated
+player_value_to_position_median_log,squad_value_incoming,log(player value / position-group median value).,decision-time; source-gated
+incoming_same_position_players_180d_log1p,squad_value_incoming,log(1 + incoming same-position players in prior 180 days).,decision-time; source-gated
+incoming_same_position_higher_value_players_180d_log1p,squad_value_incoming,log(1 + incoming same-position players valued above target player).,decision-time; source-gated
+incoming_same_position_max_value_ratio_log,squad_value_incoming,log(maximum known incoming value / player value); zero when no incoming player has a known value.,decision-time; source-gated

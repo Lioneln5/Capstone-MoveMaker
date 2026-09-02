@@ -1,0 +1,129 @@
+scope,movement_state_raw,rows,share,denominator,signed_year,league
+pooled,no_outbound_24m,772,0.4948717948717949,1560,,
+pooled,permanent_first_24m,451,0.28910256410256413,1560,,
+pooled,loan_first_24m,295,0.1891025641025641,1560,,
+pooled,loan_return_first_24m,35,0.022435897435897436,1560,,
+pooled,unresolved_first_type_24m,7,0.004487179487179487,1560,,
+signed_year,no_outbound_24m,188,0.44655581947743467,421,2020.0,
+signed_year,permanent_first_24m,114,0.27078384798099764,421,2020.0,
+signed_year,loan_first_24m,102,0.24228028503562946,421,2020.0,
+signed_year,loan_return_first_24m,16,0.03800475059382423,421,2020.0,
+signed_year,unresolved_first_type_24m,1,0.0023752969121140144,421,2020.0,
+signed_year,no_outbound_24m,213,0.5546875,384,2021.0,
+signed_year,permanent_first_24m,101,0.2630208333333333,384,2021.0,
+signed_year,loan_first_24m,62,0.16145833333333334,384,2021.0,
+signed_year,loan_return_first_24m,8,0.020833333333333332,384,2021.0,
+signed_year,no_outbound_24m,177,0.477088948787062,371,2022.0,
+signed_year,permanent_first_24m,130,0.3504043126684636,371,2022.0,
+signed_year,loan_first_24m,60,0.16172506738544473,371,2022.0,
+signed_year,unresolved_first_type_24m,2,0.005390835579514825,371,2022.0,
+signed_year,loan_return_first_24m,2,0.005390835579514825,371,2022.0,
+signed_year,no_outbound_24m,194,0.5052083333333334,384,2023.0,
+signed_year,permanent_first_24m,106,0.2760416666666667,384,2023.0,
+signed_year,loan_first_24m,71,0.18489583333333334,384,2023.0,
+signed_year,loan_return_first_24m,9,0.0234375,384,2023.0,
+signed_year,unresolved_first_type_24m,4,0.010416666666666666,384,2023.0,
+league,no_outbound_24m,169,0.5399361022364217,313,,Bundesliga
+league,permanent_first_24m,77,0.24600638977635783,313,,Bundesliga
+league,loan_first_24m,61,0.19488817891373802,313,,Bundesliga
+league,loan_return_first_24m,5,0.01597444089456869,313,,Bundesliga
+league,unresolved_first_type_24m,1,0.003194888178913738,313,,Bundesliga
+league,no_outbound_24m,163,0.5927272727272728,275,,La Liga
+league,permanent_first_24m,73,0.26545454545454544,275,,La Liga
+league,loan_first_24m,30,0.10909090909090909,275,,La Liga
+league,loan_return_first_24m,7,0.025454545454545455,275,,La Liga
+league,unresolved_first_type_24m,2,0.007272727272727273,275,,La Liga
+league,no_outbound_24m,136,0.45484949832775917,299,,Ligue 1
+league,permanent_first_24m,105,0.3511705685618729,299,,Ligue 1
+league,loan_first_24m,53,0.17725752508361203,299,,Ligue 1
+league,loan_return_first_24m,4,0.013377926421404682,299,,Ligue 1
+league,unresolved_first_type_24m,1,0.0033444816053511705,299,,Ligue 1
+league,no_outbound_24m,167,0.5107033639143731,327,,Premier League
+league,permanent_first_24m,99,0.30275229357798167,327,,Premier League
+league,loan_first_24m,56,0.1712538226299694,327,,Premier League
+league,loan_return_first_24m,4,0.012232415902140673,327,,Premier League
+league,unresolved_first_type_24m,1,0.0030581039755351682,327,,Premier League
+league,no_outbound_24m,137,0.3959537572254335,346,,Serie A
+league,permanent_first_24m,97,0.28034682080924855,346,,Serie A
+league,loan_first_24m,95,0.2745664739884393,346,,Serie A
+league,loan_return_first_24m,15,0.04335260115606936,346,,Serie A
+league,unresolved_first_type_24m,2,0.005780346820809248,346,,Serie A
+signed_year+league,no_outbound_24m,43,0.5443037974683544,79,2020.0,Bundesliga
+signed_year+league,loan_first_24m,21,0.26582278481012656,79,2020.0,Bundesliga
+signed_year+league,permanent_first_24m,14,0.17721518987341772,79,2020.0,Bundesliga
+signed_year+league,loan_return_first_24m,1,0.012658227848101266,79,2020.0,Bundesliga
+signed_year+league,no_outbound_24m,27,0.54,50,2020.0,La Liga
+signed_year+league,loan_first_24m,10,0.2,50,2020.0,La Liga
+signed_year+league,permanent_first_24m,9,0.18,50,2020.0,La Liga
+signed_year+league,loan_return_first_24m,4,0.08,50,2020.0,La Liga
+signed_year+league,no_outbound_24m,34,0.4657534246575342,73,2020.0,Ligue 1
+signed_year+league,permanent_first_24m,25,0.3424657534246575,73,2020.0,Ligue 1
+signed_year+league,loan_first_24m,11,0.1506849315068493,73,2020.0,Ligue 1
+signed_year+league,loan_return_first_24m,3,0.0410958904109589,73,2020.0,Ligue 1
+signed_year+league,no_outbound_24m,60,0.4411764705882353,136,2020.0,Premier League
+signed_year+league,permanent_first_24m,45,0.33088235294117646,136,2020.0,Premier League
+signed_year+league,loan_first_24m,27,0.19852941176470587,136,2020.0,Premier League
+signed_year+league,loan_return_first_24m,4,0.029411764705882353,136,2020.0,Premier League
+signed_year+league,loan_first_24m,33,0.39759036144578314,83,2020.0,Serie A
+signed_year+league,no_outbound_24m,24,0.2891566265060241,83,2020.0,Serie A
+signed_year+league,permanent_first_24m,21,0.25301204819277107,83,2020.0,Serie A
+signed_year+league,loan_return_first_24m,4,0.04819277108433735,83,2020.0,Serie A
+signed_year+league,unresolved_first_type_24m,1,0.012048192771084338,83,2020.0,Serie A
+signed_year+league,no_outbound_24m,50,0.5555555555555556,90,2021.0,Bundesliga
+signed_year+league,permanent_first_24m,24,0.26666666666666666,90,2021.0,Bundesliga
+signed_year+league,loan_first_24m,14,0.15555555555555556,90,2021.0,Bundesliga
+signed_year+league,loan_return_first_24m,2,0.022222222222222223,90,2021.0,Bundesliga
+signed_year+league,no_outbound_24m,43,0.6615384615384615,65,2021.0,La Liga
+signed_year+league,permanent_first_24m,16,0.24615384615384617,65,2021.0,La Liga
+signed_year+league,loan_first_24m,6,0.09230769230769231,65,2021.0,La Liga
+signed_year+league,no_outbound_24m,35,0.5223880597014925,67,2021.0,Ligue 1
+signed_year+league,permanent_first_24m,21,0.31343283582089554,67,2021.0,Ligue 1
+signed_year+league,loan_first_24m,11,0.16417910447761194,67,2021.0,Ligue 1
+signed_year+league,no_outbound_24m,46,0.5822784810126582,79,2021.0,Premier League
+signed_year+league,permanent_first_24m,20,0.25316455696202533,79,2021.0,Premier League
+signed_year+league,loan_first_24m,13,0.16455696202531644,79,2021.0,Premier League
+signed_year+league,no_outbound_24m,39,0.46987951807228917,83,2021.0,Serie A
+signed_year+league,permanent_first_24m,20,0.24096385542168675,83,2021.0,Serie A
+signed_year+league,loan_first_24m,18,0.21686746987951808,83,2021.0,Serie A
+signed_year+league,loan_return_first_24m,6,0.07228915662650602,83,2021.0,Serie A
+signed_year+league,no_outbound_24m,36,0.46153846153846156,78,2022.0,Bundesliga
+signed_year+league,permanent_first_24m,22,0.28205128205128205,78,2022.0,Bundesliga
+signed_year+league,loan_first_24m,18,0.23076923076923078,78,2022.0,Bundesliga
+signed_year+league,loan_return_first_24m,1,0.01282051282051282,78,2022.0,Bundesliga
+signed_year+league,unresolved_first_type_24m,1,0.01282051282051282,78,2022.0,Bundesliga
+signed_year+league,no_outbound_24m,46,0.575,80,2022.0,La Liga
+signed_year+league,permanent_first_24m,27,0.3375,80,2022.0,La Liga
+signed_year+league,loan_first_24m,6,0.075,80,2022.0,La Liga
+signed_year+league,loan_return_first_24m,1,0.0125,80,2022.0,La Liga
+signed_year+league,permanent_first_24m,33,0.4342105263157895,76,2022.0,Ligue 1
+signed_year+league,no_outbound_24m,32,0.42105263157894735,76,2022.0,Ligue 1
+signed_year+league,loan_first_24m,10,0.13157894736842105,76,2022.0,Ligue 1
+signed_year+league,unresolved_first_type_24m,1,0.013157894736842105,76,2022.0,Ligue 1
+signed_year+league,no_outbound_24m,28,0.6511627906976745,43,2022.0,Premier League
+signed_year+league,permanent_first_24m,12,0.27906976744186046,43,2022.0,Premier League
+signed_year+league,loan_first_24m,3,0.06976744186046512,43,2022.0,Premier League
+signed_year+league,permanent_first_24m,36,0.3829787234042553,94,2022.0,Serie A
+signed_year+league,no_outbound_24m,35,0.3723404255319149,94,2022.0,Serie A
+signed_year+league,loan_first_24m,23,0.24468085106382978,94,2022.0,Serie A
+signed_year+league,no_outbound_24m,40,0.6060606060606061,66,2023.0,Bundesliga
+signed_year+league,permanent_first_24m,17,0.25757575757575757,66,2023.0,Bundesliga
+signed_year+league,loan_first_24m,8,0.12121212121212122,66,2023.0,Bundesliga
+signed_year+league,loan_return_first_24m,1,0.015151515151515152,66,2023.0,Bundesliga
+signed_year+league,no_outbound_24m,47,0.5875,80,2023.0,La Liga
+signed_year+league,permanent_first_24m,21,0.2625,80,2023.0,La Liga
+signed_year+league,loan_first_24m,8,0.1,80,2023.0,La Liga
+signed_year+league,unresolved_first_type_24m,2,0.025,80,2023.0,La Liga
+signed_year+league,loan_return_first_24m,2,0.025,80,2023.0,La Liga
+signed_year+league,no_outbound_24m,35,0.42168674698795183,83,2023.0,Ligue 1
+signed_year+league,permanent_first_24m,26,0.3132530120481928,83,2023.0,Ligue 1
+signed_year+league,loan_first_24m,21,0.25301204819277107,83,2023.0,Ligue 1
+signed_year+league,loan_return_first_24m,1,0.012048192771084338,83,2023.0,Ligue 1
+signed_year+league,no_outbound_24m,33,0.4782608695652174,69,2023.0,Premier League
+signed_year+league,permanent_first_24m,22,0.3188405797101449,69,2023.0,Premier League
+signed_year+league,loan_first_24m,13,0.18840579710144928,69,2023.0,Premier League
+signed_year+league,unresolved_first_type_24m,1,0.014492753623188406,69,2023.0,Premier League
+signed_year+league,no_outbound_24m,39,0.45348837209302323,86,2023.0,Serie A
+signed_year+league,loan_first_24m,21,0.2441860465116279,86,2023.0,Serie A
+signed_year+league,permanent_first_24m,20,0.23255813953488372,86,2023.0,Serie A
+signed_year+league,loan_return_first_24m,5,0.05813953488372093,86,2023.0,Serie A
+signed_year+league,unresolved_first_type_24m,1,0.011627906976744186,86,2023.0,Serie A

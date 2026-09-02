@@ -1,0 +1,29 @@
+check,passed,observed,expected,note
+required_outputs,True,[],[],All substantive evidence exists.
+raw_state_counts,True,"{'no_outbound_24m': 772, 'permanent_first_24m': 451, 'loan_first_24m': 295, 'loan_return_first_24m': 35, 'unresolved_first_type_24m': 7}","{'no_outbound_24m': 772, 'permanent_first_24m': 451, 'loan_first_24m': 295, 'loan_return_first_24m': 35, 'unresolved_first_type_24m': 7}",Raw movement semantics are preserved before grouping.
+strict_meaningful_stay_count,True,482,482,Joint no-outbound plus sustained-use outcome reconstructs.
+binary_loss_formula,True,3.3306690738754696e-16,<=1e-14,Binary row losses reconstruct.
+binary_baseline_formula,True,2.220446049250313e-16,<=1e-14,Chronology losses reconstruct.
+binary_development_years,True,"[2020, 2021, 2022, 2023]","[2020, 2021, 2022, 2023]",No later outcome enters binary evaluation.
+binary_pooled_recomputed,True,5.551115123125783e-17,<=1e-14,Pooled binary metrics do not rely on runner summaries.
+temporary_signal_positive_all_origins,True,"{'origin_wins': 4.0, 'player_cluster_ci_low_95': 0.0208728711075097}",4 wins and CI low >0,Temporary-first target has repeated-origin signal.
+strict_stay_signal_positive_all_origins,True,"{'origin_wins': 4.0, 'player_cluster_ci_low_95': 0.0259793780034838}",4 wins and CI low >0,Strict meaningful stay has repeated-origin signal.
+multinomial_probability_sum,True,3.3306690738754696e-16,<=1e-12,Three-state probabilities are coherent.
+multinomial_chronology_sum,True,2.220446049250313e-16,<=1e-12,Baseline probabilities are coherent.
+multinomial_brier_formula,True,6.661338147750939e-16,<=1e-14,Multiclass Brier reconstructs.
+multinomial_baseline_formula,True,1.1102230246251565e-16,<=1e-14,Multiclass baseline reconstructs.
+multinomial_log_loss_label_order,True,1.1102230246251565e-16,<=1e-14,Actual labels select their named probability columns.
+chronology_log_loss_label_order,True,0.0,<=1e-14,Chronology log loss uses the same class order.
+unresolved_excluded,True,1553,1553,Seven unresolved first types are not silently assigned.
+multinomial_all_origin_wins,True,"{'origin_wins': np.float64(4.0), 'ci_low': np.float64(0.0450153660453186)}",4 and >0,Three-state model beats chronology repeatedly.
+club_context_not_misrepresented,True,[],[],Aggregate club context did not repair any decomposed endpoint.
+completed_p0_profile_contract,True,"['P01', 'P02', 'P03', 'P04']","['P01', 'P02', 'P03', 'P04']",Completed mechanism tests remain explicit and cannot be silently recycled.
+remaining_profile_contract,True,"{'P05': 'P1_PARTIAL', 'P11': 'P0'}","{'P05': 'P1_PARTIAL', 'P11': 'P0'}",Partial and unresolved directions remain distinguishable from completed tests.
+statsbomb_not_overclaimed,True,"{'priority': 'P3', 'relevance': 'case study, not global engine'}",P3 case study,Rich but selective coverage is not confused with global modelability.
+runner_checks,True,9,9,Runner invariants pass.
+holdout_sealed,True,False,False,Final holdout remains sealed.
+deployment_unchanged,True,False,False,No candidate was promoted.
+source_hashes,True,True,True,Source evidence still matches.
+v1_hashes,True,True,True,All frozen production artifacts remain byte-identical.
+no_model_binaries,True,[],[],Diagnostic emits evidence only.
+byte_reproducible,True,[],[],A clean-directory rerun reproduces every substantive output.

@@ -1,0 +1,36 @@
+{
+  "binary_endpoints": [
+    "temporary_first_24m",
+    "permanent_first_24m",
+    "permanent_relationship_ended_24m",
+    "strict_meaningful_stay_24m"
+  ],
+  "binary_evidence_counts": {
+    "inconclusive": 16,
+    "repeated_harm": 4
+  },
+  "checks_passed": 10,
+  "checks_total": 10,
+  "deployment_changed": false,
+  "development_evaluation_years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "final_holdout_opened": false,
+  "manager_tactical_contract_version": "engine_v2_manager_tactical_v1_2026-09-01",
+  "model_binaries_written": false,
+  "movement_contract_version": "engine_v2_movement_targets_v1_2026-09-01",
+  "multinomial_evidence_counts": {
+    "inconclusive": 5
+  },
+  "v1_unchanged": true,
+  "variants": [
+    "M1_manager_stability",
+    "T1_formation_tactical_stability",
+    "M2_player_under_current_manager",
+    "M3_role_change_at_manager_transition",
+    "C1_combined_manager_tactical"
+  ]
+}

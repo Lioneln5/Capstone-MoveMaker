@@ -22,8 +22,7 @@ directory.
 
 ## Public containment
 
-The application now fails closed. Unless an operator explicitly sets
-`MOVEMAKER_ENABLE_SCORING=true`:
+The application now fails closed without an operator override:
 
 - the API does not load serialized V1 models or large runtime tables;
 - player search, input-default, and profile endpoints return HTTP 503;
@@ -36,19 +35,20 @@ This is not a cosmetic disclaimer. It prevents the presentation-era engine
 from continuing to emit live player probabilities while the validity issues
 identified in the post-presentation stress test remain unresolved.
 
-## Controlled V1 access
+## Frozen V1 regression access
 
-V1 can still be enabled for local regression testing or a deliberately
-controlled historical demonstration:
+V1 remains testable through its offline builders and verifiers:
 
 ```bash
-MOVEMAKER_ENABLE_SCORING=true \
-python -m uvicorn api.main:app --host 127.0.0.1 --port 8000
+python scripts/verify_engine_v1_freeze.py
+python scripts/verify_deployment_models.py
+python scripts/verify_deployment_out_of_sample.py
+python scripts/verify_live_request_integrity.py
 ```
 
-Enabling V1 requires the documented runtime data and does not change its
-research-prototype status. It must not be described as a club-ready decision
-engine.
+The HTTP application deliberately does not provide a V1 enablement switch.
+Direct module-level research remains possible with the separately documented
+runtime data, but it must not be described as a club-ready decision engine.
 
 ## V2 isolation policy
 

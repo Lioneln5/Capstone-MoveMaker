@@ -4,7 +4,7 @@ Run commands from the repository root. Every finalized research stage has a dedi
 
 ## Engine V2 validity program
 
-Frozen V1 public scoring is disabled by default. Engine V2 work is isolated
+Frozen V1 public scoring is unconditionally disabled. Engine V2 work is isolated
 from `Data/processed/deployment_models/` and must advance phase by phase.
 Release-blocking failures are maintained separately in
 [`docs/ENGINE_V2_CRITICAL_ISSUES.md`](../docs/ENGINE_V2_CRITICAL_ISSUES.md) and
@@ -18,6 +18,7 @@ must not be diluted into ordinary phase notes.
 | Phase 3: calibration, uncertainty, subgroup, and OOD reliability | Complete; role/value candidates advance, continuity blocked, none deployed | `python models/run_engine_v2_calibration_reliability.py` | `python scripts/verify_engine_v2_calibration_reliability.py` | `Data/processed/engine_v2_calibration_reliability/` |
 | Phase 4: continuity repair, wage audit, and versioned result contract | Complete; continuity still blocked by Ligue 1 reliability, none deployed | `python models/run_engine_v2_candidate_contract.py` | `python scripts/verify_engine_v2_candidate_contract.py` | `Data/processed/engine_v2_candidate_contract/` |
 | Phase 5: final-evaluation readiness and sealed wage holdout | Complete; predictive holdouts remain closed, wage candidate failed Ligue 1 coverage, none deployed | `python models/run_engine_v2_final_evaluation_gate.py` | `python scripts/verify_engine_v2_final_evaluation_gate.py` | `Data/processed/engine_v2_final_evaluation_gate/` |
+| Movement-scope closeout | Complete; generic continuity retired, replacement questions separated, none deployed | `python models/run_engine_v2_movement_scope_closeout.py` | `python scripts/verify_engine_v2_movement_scope_closeout.py` | `Data/processed/engine_v2_movement_scope_closeout/` |
 
 Phase 1 permits only research outcome scenarios conditional on an extension.
 It does not validate extend/do-not-extend recommendations because the sources
@@ -54,6 +55,12 @@ cohort but failed the frozen Ligue 1 interval-coverage gate (60.6% versus the
 required 70%), so no artifact was authorized. The final result is immutable;
 2024 may not be used to retune that candidate.
 
+The movement-scope closeout resolves the former continuity blocker through
+endpoint retirement rather than model repair. Meaningful Retention and
+Temporary Displacement Risk are separate development candidates; Permanent
+Separation is research-only and unavailable. The HTTP application has no V1
+scoring override, and no movement/retention probability is deployed.
+
 ## Current incumbent-extension pipeline
 
 | Stage | Runner or builder | Verifier | Evidence |
@@ -77,7 +84,7 @@ required 70%), so no artifact was authorized. The final result is immutable;
 | --- | --- |
 | `models/canonical_feature_retriever.py` | Resolves current player, club, performance, salary, and public-value features |
 | `models/deployment_model_artifact.py` | Versioned serialized artifact contract |
-| `models/deployment_scorer.py` | Scores the 16 deployed endpoints |
+| `models/deployment_scorer.py` | Reconstructs the 16 frozen historical endpoints offline |
 | `models/feature_contribution_explainer.py` | Reconstructs and explains supported predictions |
 | `models/player_search.py` | Player lookup for the application |
 | `models/incumbent_extension_profile.py` | Integrates the typed extension profile |
@@ -104,6 +111,12 @@ for regression testing and historical audit; they are not enabled by default.
 | C6 contribution repair | C6 deployed after explicit promotion and parity verification | `models/run_contribution_model_repair.py` | `scripts/verify_contribution_model_repair.py`, `scripts/verify_c6_deployment.py` | `Data/processed/contribution_model_repair/` |
 | Live input refresh | Append-only live feature source | `scripts/build_live_input_refresh.py` | `scripts/verify_live_input_refresh.py` | `Data/processed/live_input_refresh/` |
 | Role contextualization | Research only; no production promotion | `models/run_role_contextualization_diagnostic.py` | `scripts/verify_role_contextualization_diagnostic.py` | `Data/processed/role_contextualization_diagnostic/` |
+| Local data-use audit | Refreshed after Capology club-season acquisition; 26/26 checks | `scripts/audit_data_usage_coverage.py` | `scripts/verify_data_usage_coverage.py` | `Data/processed/data_usage_audit_2026_09_02/` |
+| Capology club financial context | Verified feature infrastructure; rejected as continuity repair | `scripts/build_capology_club_financial_context.py`, `models/run_engine_v2_club_financial_context_experiment.py` | `scripts/verify_capology_club_financial_context_build.py`, `scripts/verify_capology_club_financial_context.py`, `scripts/verify_engine_v2_club_financial_context_experiment.py` | `Data/processed/capology_club_financial_context/`, `Data/processed/engine_v2_club_financial_context_experiment/` |
+| Movement-state decomposition | Development diagnostic; replacement semantics frozen | `models/run_engine_v2_movement_state_profile_diagnostic.py` | `scripts/verify_engine_v2_movement_state_profile_diagnostic.py` | `Data/processed/engine_v2_movement_state_profile_diagnostic/` |
+| Lagged club behavior | Research only; no block promoted | `models/run_engine_v2_lagged_club_behavior_experiment.py` | `scripts/verify_engine_v2_lagged_club_behavior.py` | `Data/processed/engine_v2_lagged_club_behavior_experiment/` |
+| Role trajectory and squad competition | Research/descriptive only; no block promoted | `models/run_engine_v2_role_squad_experiment.py` | `scripts/verify_engine_v2_role_squad.py` | `Data/processed/engine_v2_role_squad_experiment/` |
+| Manager and tactical context | Research/descriptive only; no block promoted | `models/run_engine_v2_manager_tactical_experiment.py` | `scripts/verify_engine_v2_manager_tactical.py` | `Data/processed/engine_v2_manager_tactical_experiment/` |
 
 Do not promote candidate `.joblib` files directly. A production change requires backup, full-history refit through the declared cutoff, manifest update, cross-path scoring parity, endpoint smoke tests, explainability reconstruction, and independent verification.
 

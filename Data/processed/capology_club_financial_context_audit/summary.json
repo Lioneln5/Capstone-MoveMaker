@@ -1,0 +1,37 @@
+{
+  "source_files": 110,
+  "payroll_files": 55,
+  "transfer_window_files": 55,
+  "seasons": [
+    "2014-2015",
+    "2024-2025"
+  ],
+  "club_seasons_per_family": 1074,
+  "unique_capology_clubs": 164,
+  "canonical_linked_club_seasons": 1049,
+  "canonical_link_rate": 0.9767225325884544,
+  "unresolved_unique_clubs": 16,
+  "bonus_available_club_seasons": 311,
+  "position_group_columns_status": "paywalled_locked_placeholders_not_usable",
+  "extension_prior_season_coverage": [
+    {
+      "scope": "all_canonical_extension_events",
+      "events": 2805,
+      "prior_completed_season_available": 2449,
+      "prior_completed_season_missing": 356,
+      "prior_completed_season_coverage_rate": 0.8730837789661319,
+      "likely_promoted_missing": 353
+    },
+    {
+      "scope": "integrated_839_evaluation_cohort",
+      "events": 839,
+      "prior_completed_season_available": 795,
+      "prior_completed_season_missing": 44,
+      "prior_completed_season_coverage_rate": 0.9475566150178785,
+      "likely_promoted_missing": 44
+    }
+  ],
+  "checks_passed": 17,
+  "checks_total": 17,
+  "modeling_status": "audit_only_not_approved_for_training_or_scoring"
+}

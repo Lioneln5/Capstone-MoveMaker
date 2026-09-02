@@ -2,12 +2,13 @@
 
 ## Model purpose
 
-MoveMaker is an explainable decision-support system for **incumbent-club contract extensions in the Big Five European leagues**. It helps a club screen a proposed extension by presenting separate estimates for future role, club continuity, public-value downside, and historical wage context.
+MoveMaker is an explainable research program for **incumbent-club contract extensions in the Big Five European leagues**. Frozen V1 evidence covers future role, outbound movement, public-value downside, and historical wage context. Engine V2 has not authorized any live scoring output.
 
-**Current status:** Engine V1 is a frozen research prototype. Public scoring is
-disabled by default while Engine V2 validity repairs are evaluated. The
-metrics below document the frozen V1 evidence; they are not a claim that the
-current public site is a production club-decision engine.
+**Current status:** Engine V1 is a frozen research prototype and HTTP scoring
+is unconditionally disabled. Engine V2 retired generic continuity. Meaningful
+Retention and Temporary Displacement Risk are development candidates;
+Permanent Separation is research-only and unavailable. The metrics below
+document historical or rolling-development evidence, not a live product.
 
 The product deliberately avoids a single success score. Each output answers a different decision question and should be interpreted with its own target definition, time horizon, and uncertainty.
 
@@ -17,7 +18,7 @@ Intended users include club recruitment, sporting, finance, and contract-plannin
 
 - prioritizing extension cases for deeper review;
 - comparing proposed fixed-wage commitment with historical peer extensions;
-- identifying where role, continuity, and public-value risk disagree; and
+- investigating where role, movement, and public-value evidence disagree; and
 - supporting—not replacing—staff judgment and internal information.
 
 ## Out-of-scope uses
@@ -40,11 +41,23 @@ The application exposes 16 separately validated endpoints. The main user-facing 
 | --- | --- | --- | --- |
 | Year-2 opportunity | Same-club opportunity share in Year 2 | MAE 0.2369; R² 0.249; Spearman 0.512; improvement +0.0586, 95% CI [0.0485, 0.0686], 4/4 origins | Broad future-role outlook, not exact minutes |
 | Sustained meaningful contribution | At least 25% same-club opportunity share in both Year 1 and Year 2 | AUC 0.788; AP 0.732; Brier 0.1869; improvement +0.0643, 4/4 origins | A probability of meeting the defined involvement threshold |
-| Club continuity | Any recorded outbound movement by 24 months | AUC 0.710; Brier 0.2191; improvement +0.0363, 4/4 origins | Continuous-stay risk, not an exact departure date or reason |
+| Generic continuity | Any recorded outbound movement by 24 months | AUC 0.710; Brier 0.2191; improvement +0.0363, 4/4 origins | **Retired V1 endpoint**; blended temporary and permanent movement |
 | Public-value downside | Public market-value decline of at least 25% by 24 months | AUC 0.821 | Public valuation risk, not cash loss or sale proceeds |
 | Wage commitment benchmark | Proposed annual fixed wage × term versus historical extensions | R² 0.644; Spearman 0.832; approximately 80% empirical reference-range coverage | Historical context, not an optimal or “fair” wage |
 
 An attempted integrated contract score was rejected: its AUC was 0.6830 versus 0.6885 for opportunity risk alone, with the difference interval crossing zero. Production therefore preserves the signals separately.
+
+## Engine V2 movement and retention scope
+
+| Output | Exact definition | Current authorization |
+| --- | --- | --- |
+| Meaningful Retention | No outbound within 24 months and at least 25% same-club opportunity share in both Year 1 and Year 2 | Development candidate; later untouched temporal validation required |
+| Temporary Displacement Risk | Loan or loan return is the first resolved outbound interruption within 24 months | Development candidate; later untouched temporal validation required |
+| Permanent Separation | Permanent relationship with the extension club ends within 24 months, even if a loan occurred first | Research-only; no personalized probability |
+| Generic continuity | Any loan or permanent outbound movement | Retired; no proxy or composite may reintroduce it |
+
+No row in this table is authorized for live numeric display. Meaningful
+Retention is not the contribution-only V1 target under a new name.
 
 ## Evaluation design
 
@@ -63,7 +76,7 @@ Current live inputs and frozen evaluation evidence have different vintages. Newe
 - Public salary, contract, injury, and market-value data are estimates and have uneven coverage.
 - Fixed wages exclude bonuses, taxes, agent fees, clauses, and options unless explicitly stated.
 - Public market value is not an accounting valuation or guaranteed transfer price.
-- “Any outbound” can include loan or permanent movement; it does not identify the cause.
+- Historical “any outbound” includes loan or permanent movement and does not identify the cause; this is why Engine V2 retired it as a product endpoint.
 - Low contribution is threshold-defined and may include injury, tactical, developmental, or market-driven cases.
 - Subgroup and extreme-value samples can be small; star-player outputs may be extrapolations.
 - Manager changes, squad competition, medical detail, contract options, release clauses, bonuses, and internal club valuations are not comprehensively observed.

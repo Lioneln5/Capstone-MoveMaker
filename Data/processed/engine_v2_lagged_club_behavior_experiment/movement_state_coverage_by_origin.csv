@@ -1,0 +1,17 @@
+model_type,endpoint,variant,origin_id,evaluation_year,evaluation_rows_total,feature_eligible_rows,feature_unavailable_rows,support_refused_rows,operational_refused_rows,operational_refusal_rate
+multinomial,movement_state_3,C1_general_club_movement,origin_2020,2020,420,420,0,42,42,0.1
+multinomial,movement_state_3,C1_general_club_movement,origin_2021,2021,384,384,0,22,22,0.057291666666666664
+multinomial,movement_state_3,C1_general_club_movement,origin_2022,2022,369,369,0,24,24,0.06504065040650407
+multinomial,movement_state_3,C1_general_club_movement,origin_2023,2023,380,380,0,10,10,0.02631578947368421
+multinomial,movement_state_3,C2_role_conditioned_movement,origin_2020,2020,420,420,0,37,37,0.0880952380952381
+multinomial,movement_state_3,C2_role_conditioned_movement,origin_2021,2021,384,384,0,18,18,0.046875
+multinomial,movement_state_3,C2_role_conditioned_movement,origin_2022,2022,369,369,0,24,24,0.06504065040650407
+multinomial,movement_state_3,C2_role_conditioned_movement,origin_2023,2023,380,380,0,10,10,0.02631578947368421
+multinomial,movement_state_3,C3_mature_extension_history,origin_2020,2020,420,420,0,172,172,0.4095238095238095
+multinomial,movement_state_3,C3_mature_extension_history,origin_2021,2021,384,384,0,150,150,0.390625
+multinomial,movement_state_3,C3_mature_extension_history,origin_2022,2022,369,369,0,46,46,0.12466124661246612
+multinomial,movement_state_3,C3_mature_extension_history,origin_2023,2023,380,380,0,52,52,0.1368421052631579
+multinomial,movement_state_3,C4_combined_behavior,origin_2020,2020,420,420,0,173,173,0.4119047619047619
+multinomial,movement_state_3,C4_combined_behavior,origin_2021,2021,384,384,0,153,153,0.3984375
+multinomial,movement_state_3,C4_combined_behavior,origin_2022,2022,369,369,0,47,47,0.12737127371273713
+multinomial,movement_state_3,C4_combined_behavior,origin_2023,2023,380,380,0,67,67,0.1763157894736842

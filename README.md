@@ -2,23 +2,23 @@
 
 **Football Contract Extension Decision Support**
 
-MoveMaker is an explainable research prototype for incumbent-club football contract extensions. In its frozen V1 scoring mode, a user selects a current player and enters proposed wage and term information; the application returns separate, evidence-backed views of:
+MoveMaker is an explainable research program for incumbent-club football contract extensions. Its frozen V1 prototype evaluated separate views of:
 
 - meaningful contribution through Year 2;
-- continuous stay at the current club;
+- outbound movement from the current club, an endpoint now retired from the candidate product;
 - 24-month public market-value downside;
 - proposed fixed-wage commitment versus historical extension peers; and
 - qualified financial exposure tied to low contribution.
 
 MoveMaker is a screening and prioritization tool. It does **not** produce one overall success score, recommend whether a club should extend a player, predict tactical compatibility, or estimate accounting loss or ROI.
 
-> **Current status (2026-08-31):** Engine V1 is frozen and public scoring is paused. Engine V2 Phases 1–5 now define the validity boundary, test decision-time-safe features, audit probability reliability, repair continuity's missing-input failure, freeze a refusal-safe result contract, and enforce a final temporal-evaluation gate. Phase 5 found no valid final 2024 test for the predictive risk modules: role/continuity labels were previously exposed in aggregate, while player-disjoint role and value cohorts are underpowered. The wage benchmark was the only eligible sealed test; it improved pooled error but failed the frozen Ligue 1 interval-coverage gate. The overall engine remains blocked and nothing from V2 is deployed. All three blockers are maintained in the [dedicated critical-issues register](docs/ENGINE_V2_CRITICAL_ISSUES.md). See also the [V1 freeze record](docs/ENGINE_V1_FREEZE.md), [V2 validity boundary](docs/ENGINE_V2_VALIDITY_BOUNDARY.md), [V2 feature specification](docs/ENGINE_V2_FEATURE_SPECIFICATION.md), [V2 reliability gate](docs/ENGINE_V2_CALIBRATION_RELIABILITY.md), [V2 candidate contract](docs/ENGINE_V2_CANDIDATE_CONTRACT.md), and [V2 final-evaluation gate](docs/ENGINE_V2_FINAL_EVALUATION_GATE.md).
+> **Current status (2026-09-02):** Engine V1 is frozen for historical audit and HTTP scoring is unconditionally disabled. Engine V2 retired the generic continuity endpoint after decomposing it into distinct football questions. **Meaningful Retention** and **Temporary Displacement Risk** remain development candidates awaiting a later untouched temporal test; **Permanent Separation** is research-only and unavailable. This product-scope decision resolves the former continuity release blocker through endpoint retirement, not model repair. The two remaining release blockers concern final temporal validation and the historical wage benchmark. Nothing from V2 is deployed. See the [movement-scope contract](docs/ENGINE_V2_MOVEMENT_SCOPE_CLOSEOUT.md), [critical-issues register](docs/ENGINE_V2_CRITICAL_ISSUES.md), and [V1 freeze record](docs/ENGINE_V1_FREEZE.md).
 
 **Explore the project:** [hosted research site](https://movemaker-production.up.railway.app/) · [final presentation](slides/final/MoveMaker_Final_Presentation.html) · [model card](docs/MODEL_CARD.md) · [data provenance](docs/DATA_PROVENANCE.md) · [analytical journal](docs/journal/2026-08-11_scope_pivot_journal.md)
 
 [![MoveMaker live decision profile showing Jude Bellingham's four separate contract-extension signals](docs/assets/movemaker-live-profile.png)](https://movemaker-production.up.railway.app/)
 
-*Frozen V1 example: a three-year extension profile for Jude Bellingham. The four outputs answer different questions and are intentionally not combined into one recommendation.*
+*Historical V1 example: a three-year extension profile for Jude Bellingham. The pictured continuity card has since been retired; the image is retained as part of the project’s analytical history.*
 
 ## Why this product exists
 
@@ -38,7 +38,10 @@ All primary results use rolling chronological evaluation and saved independent-v
 | --- | --- | --- |
 | Year-2 opportunity | MAE 0.2369, R² 0.249, Spearman 0.512; improvement +0.0586, 95% CI [0.0485, 0.0686], 4/4 origins | Broad future-role outlook, not exact minutes |
 | Sustained meaningful contribution | AUC 0.788, AP 0.732, Brier 0.1869; improvement +0.0643, 4/4 origins | Probability of sustaining at least 25% same-club opportunity share in both Year 1 and Year 2 |
-| Any outbound by 24 months | AUC 0.710, Brier 0.2191; improvement +0.0363, 4/4 origins | Continuous-stay risk, not an exact departure date |
+| Any outbound by 24 months | AUC 0.710, Brier 0.2191; improvement +0.0363, 4/4 origins | Frozen V1 historical evidence; endpoint retired because it blends temporary and permanent movement |
+| Meaningful Retention | AUC 0.759; Brier skill +0.0352, 95% CI [+0.0260, +0.0443], 4/4 origins | Engine V2 development candidate; no outbound plus meaningful same-club use in both years; not deployed |
+| Temporary Displacement Risk | AUC 0.777; Brier skill +0.0291, 95% CI [+0.0209, +0.0375], 4/4 origins | Engine V2 development candidate; temporary first movement; not deployed |
+| Permanent Separation | AUC 0.628; negative league-level skill in Bundesliga and Ligue 1 | Research-only and unavailable as a personalized output |
 | Public-value downside by 24 months | AUC 0.821 for a decline of at least 25% | Public valuation risk, not sale proceeds or accounting loss |
 | Fixed-wage commitment benchmark | R² 0.644, Spearman 0.832; ~80% empirical reference-range coverage | Proposed commitment versus historical peers, not a “fair” wage |
 | Integrated contract score | Three-module AUC 0.6830 versus 0.6885 for opportunity risk alone; difference CI crosses zero | Rejected; signals remain separate |
@@ -47,28 +50,28 @@ The financial scale is material. Across 908 out-of-time extension profiles with 
 
 ## Current product
 
-The application combines a FastAPI service with a static HTML front end. The public research site is hosted on Railway with scoring disabled by default; controlled V1 regression testing can still run locally:
+The application combines a FastAPI service with a static HTML front end. The public research site is hosted on Railway in fail-closed research-record mode. HTTP scoring cannot be enabled by environment variable:
 
 ```text
 api/main.py                         API
 html/index.html                     application interface
-models/deployment_scorer.py         deployed endpoint orchestration
+models/deployment_scorer.py         frozen V1 scoring code retained for offline audit
 models/canonical_feature_retriever.py
 Data/processed/deployment_models/   serialized model artifacts and manifest
 ```
 
-The frozen V1 profile exposes 16 separately evaluated endpoints rather than a composite score. The sustained-contribution endpoint uses the later C6 compact model, which removed unstable goals/assists-per-90 inputs and passed the declared non-inferiority and deployment-parity checks. The role-contextualization diagnostic is research-only and did not replace the remaining V1 endpoints.
+The frozen V1 package contains 16 separately evaluated endpoints rather than a composite score. Those artifacts are preserved byte-for-byte, but they are not served. Engine V2 uses a separate movement product contract and has authorized no live movement/retention probability.
 
-### Run locally
+### Run the research site locally
 
 ```bash
 python -m pip install -r requirements.txt
-MOVEMAKER_ENABLE_SCORING=true python -m uvicorn api.main:app --host 127.0.0.1 --port 8000
+python -m uvicorn api.main:app --host 127.0.0.1 --port 8000
 ```
 
-Then open [http://127.0.0.1:8000/](http://127.0.0.1:8000/). The explicit environment flag is for controlled V1 regression testing only. Without it, the site starts in its safe research-prototype state and does not load models or runtime data.
+Then open [http://127.0.0.1:8000/](http://127.0.0.1:8000/). The site does not load models or runtime data. Frozen V1 regression checks run through the registered offline verifiers rather than an HTTP scoring switch.
 
-For hosted deployment, see the [Railway deployment guide](docs/RAILWAY_DEPLOYMENT.md). Large runtime tables are supplied through a Railway volume rather than committed to Git.
+For hosted deployment, see the [Railway deployment guide](docs/RAILWAY_DEPLOYMENT.md). The current fail-closed research site needs no runtime data volume. The historical V1 scoring setup used separately supplied runtime tables that were never committed to Git.
 
 ## Repository map
 
@@ -109,7 +112,8 @@ This repository is therefore an **auditable publication baseline**, not a zero-d
 
 - Extension probabilities apply to incumbent-club extensions, not hypothetical destination-club transfers.
 - “Low contribution” means failing to sustain at least 25% same-club opportunity share in both Year 1 and Year 2; it does not necessarily mean fewer than 25% of all possible minutes across the full two-year window.
-- Outbound means any recorded move away from the incumbent club in the stated horizon, including loan or permanent movement where the endpoint says “any outbound.”
+- Historical “any outbound” means any recorded loan or permanent move away from the incumbent club in the stated horizon. Engine V2 retired that blended product endpoint and keeps movement mechanisms separate.
+- Meaningful Retention is a joint outcome: no outbound movement plus at least 25% same-club opportunity share in both Year 1 and Year 2. It is not a rename of the contribution-only V1 endpoint.
 - Public market value is a public estimate, not a realized transfer fee, cash flow, or accounting valuation.
 - Fixed wages exclude bonuses, taxes, agent fees, clauses, and options unless explicitly stated.
 - Risk-weighted wage exposure is a prioritization proxy, not expected loss, wasted wages, or projected savings.
@@ -118,15 +122,14 @@ This repository is therefore an **auditable publication baseline**, not a zero-d
 
 ## Continuing the project
 
-The presentation milestone is complete, but development is not. Phase 5 has
-shown that none of the current V2 candidates is authorized for an artifact:
-the predictive modules lack a valid final cohort, continuity also fails a
-development-stage league gate, and the wage benchmark failed final Ligue 1
-coverage. The next work should improve validity and deployability rather than
-widen the claims:
+The presentation milestone is complete, but development is not. No current V2
+candidate is authorized for an artifact. Generic continuity has been retired,
+the two replacement development candidates lack a valid final cohort, and the
+wage benchmark failed final Ligue 1 coverage. The next work should improve
+validity and deployability rather than widen the claims:
 
-1. freeze any proposed continuity repair before testing it on later, fully observed data; add genuinely new club/squad context only in a separately declared candidate;
-2. preserve the failed/contaminated 2024 evidence and reserve a later, fully mature, player-disjoint cohort before opening another final temporal test;
+1. preserve the failed/contaminated 2024 evidence and reserve a later, fully mature, player-disjoint cohort before opening another final temporal test;
+2. keep permanent-separation research deferred until a materially new, decision-time-safe mechanism justifies a frozen candidate;
 3. declare any successor wage candidate as a new version without fitting to the failed 2024 final labels, then test it only on later untouched evidence;
 4. build versioned artifacts and API parity checks only for modules that pass their immutable final evaluation;
 5. refresh current performance and salary inputs without contaminating frozen chronological evidence; and

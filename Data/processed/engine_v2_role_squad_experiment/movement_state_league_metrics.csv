@@ -1,0 +1,26 @@
+variant,league,rows,brier_improvement
+R1_current_role_structure,Bundesliga,302,0.0034473380677672895
+R1_current_role_structure,La Liga,264,0.009882615987241102
+R1_current_role_structure,Ligue 1,277,-0.003654673377521044
+R1_current_role_structure,Premier League,304,-0.0026104973620545593
+R1_current_role_structure,Serie A,323,0.0018816016316812862
+R2_role_trajectory,Bundesliga,280,0.000795106239756428
+R2_role_trajectory,La Liga,246,0.003509036730918689
+R2_role_trajectory,Ligue 1,245,0.0027653024023044843
+R2_role_trajectory,Premier League,294,-0.002751305855291505
+R2_role_trajectory,Serie A,302,-0.004091506575093837
+S1_onfield_position_competition,Bundesliga,302,0.006017989052232182
+S1_onfield_position_competition,La Liga,264,0.0029586293899485014
+S1_onfield_position_competition,Ligue 1,277,-0.0005721332781990117
+S1_onfield_position_competition,Premier League,303,-0.00039234959664500397
+S1_onfield_position_competition,Serie A,322,-0.009677611566314838
+S2_value_and_incoming_competition,Bundesliga,288,0.0045738402308557295
+S2_value_and_incoming_competition,La Liga,258,-0.00017554149652971118
+S2_value_and_incoming_competition,Ligue 1,255,0.001420148219830811
+S2_value_and_incoming_competition,Premier League,292,0.00232029815209728
+S2_value_and_incoming_competition,Serie A,315,-0.0010401559314429515
+C1_combined_role_and_competition,Bundesliga,267,0.002112284354682035
+C1_combined_role_and_competition,La Liga,241,0.002713773404218821
+C1_combined_role_and_competition,Ligue 1,227,0.009127363470135989
+C1_combined_role_and_competition,Premier League,283,-0.0033954533111899
+C1_combined_role_and_competition,Serie A,295,-0.006372454639310778

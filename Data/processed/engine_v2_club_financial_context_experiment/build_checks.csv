@@ -1,0 +1,9 @@
+check,passed,observed,expected
+locked_phase4_baseline_reconstructed,True,8.326672684688674e-17,<=1e-12
+four_rolling_origins,True,4,4
+five_predeclared_variants,True,5,5
+no_evaluation_after_2023,True,2023,2023
+no_missing_context_scored,True,0,0
+matched_pairing_complete,True,0,0
+frozen_v1_byte_identical,True,24,24
+no_candidate_passes_silently,True,['not_deployed'],['not_deployed']

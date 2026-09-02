@@ -18,6 +18,9 @@ MoveMaker’s GitHub repository should make the research, product architecture, 
   - source/output manifests;
   - build checks; and
   - independent-verification CSV/JSON reports.
+- Engine V2 movement-scope closeout artifacts: the product-scope contract,
+  decision table, aggregate development evidence, non-blocking research
+  backlog, checks, summaries, and independent verification.
 - Small production model artifacts and their manifest when required for the application.
 
 ## Keep local or distribute separately
@@ -26,6 +29,12 @@ MoveMaker’s GitHub repository should make the research, product architecture, 
 - Credentials, tokens, local environment files, editor settings, browser downloads, and machine-specific launch configurations.
 - Large canonical, clean, integrated, and training tables that builders can reproduce locally.
 - Row-level targets, model matrices, predictions, tuning grids, bootstrap samples, and generated case-card tables unless a specific compact example is needed.
+- Player/event-level Engine V2 mechanism profiles and as-of evidence audits;
+  publish their feature dictionaries, coverage summaries and verifiers instead.
+- Machine-specific file inventories, table schemas, raw StatsBomb payload
+  catalogs, extension-level overlap rows, and canonical Capology club-season
+  panels; publish the refreshed audit summary, classifications, aggregate
+  coverage and independent verification instead.
 - Candidate/rejected serialized models, temporary backups, caches, `.DS_Store`, and copied `.git` directories.
 - Superseded PowerPoint/PDF drafts, render diagnostics, inspect logs, and temporary slide assets.
 - Generated audit workbooks and `outputs/` exports; their maintained builders and compact evidence remain public.

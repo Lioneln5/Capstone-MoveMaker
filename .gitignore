@@ -169,6 +169,41 @@ Data/processed/**/*model_matrix*.csv
 Data/processed/**/*membership*.csv
 Data/processed/compatibility_targets/transfer_compatibility_strict_features.csv
 
+# Engine V2 mechanism diagnostics: publish contracts, checks, aggregate
+# comparisons, manifests, and independent verification; regenerate the
+# player/event-level feature profiles and as-of audits locally.
+Data/processed/engine_v2_lagged_club_behavior/lagged_club_behavior_features.csv
+Data/processed/engine_v2_lagged_club_behavior/asof_evidence_audit.csv
+Data/processed/engine_v2_role_squad_profiles/role_squad_profiles.csv
+Data/processed/engine_v2_role_squad_profiles/asof_evidence_audit.csv
+Data/processed/engine_v2_manager_tactical_profiles/manager_tactical_profiles.csv
+Data/processed/engine_v2_manager_tactical_profiles/asof_evidence_audit.csv
+
+# Superseded local inventory plus row/file-level evidence from the refreshed
+# audit. Publish the compact summaries, classifications, manifests and
+# independent verification, not a machine-specific 10k-file catalog.
+Data/processed/data_usage_audit_2026_08_31/
+Data/processed/data_usage_audit_2026_09_02/file_inventory.csv
+Data/processed/data_usage_audit_2026_09_02/folder_inventory.csv
+Data/processed/data_usage_audit_2026_09_02/table_inventory.csv
+Data/processed/data_usage_audit_2026_09_02/table_schemas.csv
+Data/processed/data_usage_audit_2026_09_02/source_column_completeness.csv
+Data/processed/data_usage_audit_2026_09_02/source_group_coverage.csv
+Data/processed/data_usage_audit_2026_09_02/folder_reference_evidence.csv
+Data/processed/data_usage_audit_2026_09_02/code_string_evidence.csv
+Data/processed/data_usage_audit_2026_09_02/statsbomb_payload_inventory.csv
+Data/processed/data_usage_audit_2026_09_02/statsbomb_catalog_audit.csv
+Data/processed/data_usage_audit_2026_09_02/extension_source_overlap_rows.csv
+
+# Canonical and row-level Capology feature panels remain local third-party
+# derivatives. Their compact coverage, decisions, checks and hashes are public.
+Data/processed/capology_club_financial_context/canonical_club_season_financial_context.csv
+Data/processed/capology_club_financial_context/extension_prior_season_feature_coverage.csv
+Data/processed/capology_club_financial_context_audit/parsed_payroll_audit_panel.csv
+Data/processed/capology_club_financial_context_audit/parsed_transfer_window_audit_panel.csv
+Data/processed/capology_club_financial_context_audit/paired_club_season_audit.csv
+Data/processed/capology_club_financial_context_audit/extension_prior_season_coverage.csv
+
 # Local presentation scratch files and superseded deck iterations. The curated
 # final export and script live under slides/final/.
 .tmp/

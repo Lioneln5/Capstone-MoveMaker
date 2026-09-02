@@ -1,0 +1,7 @@
+movement_state_raw,not_sustained,sustained,All,sustained_rate
+loan_first_24m,280,15,295,0.05084745762711865
+loan_return_first_24m,26,9,35,0.2571428571428571
+no_outbound_24m,290,482,772,0.6243523316062176
+permanent_first_24m,393,58,451,0.1286031042128603
+unresolved_first_type_24m,7,0,7,0.0
+All,996,564,1560,0.36153846153846153

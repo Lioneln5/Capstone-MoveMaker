@@ -1,0 +1,10 @@
+check,passed,observed,expected,note
+event_grain,True,0,0,One profile per canonical extension event.
+anchor_count,True,2805,2805,Canonical extension universe is preserved.
+transfers_strictly_predecision,True,0,0,No same-day or future transfer enters a profile.
+extension_outcomes_mature,True,0,0,Every reused extension outcome was knowable at the decision date.
+model_features_finite,True,True,True,No infinite engineered value.
+no_target_columns,True,[],[],Feature table contains no future target.
+general_profile_complete,True,0,0,"No-history clubs receive explicit counts and priors, not missing values."
+role_availability_explicit,True,0,0,Role block is unavailable only when position/age context is missing.
+v1_frozen,True,True,True,All frozen V1 files remain byte-identical.

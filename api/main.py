@@ -1,24 +1,9 @@
-"""HTTP API for the MoveMaker incumbent-club extension profile.
+"""Fail-closed HTTP service for the MoveMaker research record.
 
-Stack-agnostic on purpose: we didn't know today whether the front end's
-backend would end up Python or something else, so this stands alone as a
-plain HTTP service any frontend language can call, rather than assuming a
-same-language integration. If the frontend backend does turn out to be
-Python, it can still import models/incumbent_extension_profile.py directly
-instead of going over HTTP -- this doesn't preclude that, it just doesn't
-require it.
-
-The root URL serves the browser tool, with two scoring endpoints matching the
-proposed input flow exactly:
-  GET  /players/search?q=...   -- typeahead; returns players with their
-                                   CURRENT club/league already resolved.
-                                   The frontend must never let a user pick
-                                   an arbitrary club -- only ever one of
-                                   these resolved (player, club, league)
-                                   triples. That's a scope guardrail, not
-                                   just convenience.
-  POST /profile                -- score a proposed extension for one of
-                                   those resolved triples.
+The root URL serves the explanatory site and ``/health`` reports the current
+product status. Frozen V1 request schemas and endpoint paths are retained only
+for interface lineage; every scoring route refuses before loading data or
+models. No environment variable can enable scoring.
 
 Run with:
     python3 -m uvicorn api.main:app --reload --port 8000
@@ -27,11 +12,9 @@ from the repository root.
 
 from __future__ import annotations
 
-import os
-import sys
 from datetime import date
 from pathlib import Path
-from typing import Any
+from typing import Any, Final
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -40,73 +23,43 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 ROOT = Path(__file__).resolve().parents[1]
-MODELS_DIR = ROOT / "models"
 HTML_DIR = ROOT / "html"
-if str(MODELS_DIR) not in sys.path:
-    sys.path.insert(0, str(MODELS_DIR))
-
-from incumbent_extension_profile import IncumbentExtensionProfileBuilder  # noqa: E402
-from player_search import PlayerSearchIndex  # noqa: E402
 
 app = FastAPI(title="MoveMaker Incumbent-Extension API", version="1.0.0")
 app.mount("/assets", StaticFiles(directory=HTML_DIR / "assets"), name="assets")
 
 
-def _environment_flag(name: str, *, default: bool = False) -> bool:
-    """Read a deliberately explicit boolean environment switch."""
-    raw = os.environ.get(name)
-    if raw is None:
-        return default
-    return raw.strip().lower() in {"1", "true", "yes", "on"}
-
-
-# Phase 0 containment: V1 is a frozen research prototype, not a production
-# decision engine. Scoring therefore fails closed unless an operator makes the
-# enablement decision explicitly. The explanatory site and /health remain
-# available while Engine V2 validity repairs are developed separately.
-SCORING_ENABLED = _environment_flag("MOVEMAKER_ENABLE_SCORING", default=False)
+# V1 remains available as frozen code and artifacts for offline regression
+# verification, but it is no longer an HTTP scoring product.  There is
+# deliberately no environment-variable override: Engine V2 retired generic
+# continuity, and no V2 output has completed final temporal validation.
+SCORING_ENABLED: Final[bool] = False
 SCORING_PAUSED_REASON = (
-    "Engine V1 has been frozen while Engine V2 validity repairs are under "
-    "independent evaluation. The project pages and historical evidence remain available."
+    "Engine V1 is frozen for historical audit. Engine V2 retired generic "
+    "continuity and has not authorized any live scoring output. The project "
+    "pages and verified research evidence remain available."
 )
-SCORING_PAUSED_DETAIL = f"Live scoring is temporarily paused. {SCORING_PAUSED_REASON}"
+SCORING_PAUSED_DETAIL = f"Live scoring is unavailable. {SCORING_PAUSED_REASON}"
 
-# Permissive for local development while the front end is being wired up
-# today. Tighten to the deployed frontend's real origin before shipping.
+# The service exposes only static pages, status, and refusing scoring routes.
 app.add_middleware(
     CORSMiddleware, allow_origins=["*"], allow_credentials=False,
     allow_methods=["GET", "POST"], allow_headers=["*"],
 )
 
-# Constructed once at process start -- both load and cache several CSVs;
-# must not be rebuilt per-request.
-_search_index: PlayerSearchIndex | None = None
-_profile_builder: IncumbentExtensionProfileBuilder | None = None
+# Explicit ``None`` sentinels let health and verification prove that frozen
+# scoring components were never loaded.
+_search_index: Any | None = None
+_profile_builder: Any | None = None
 
 
 @app.on_event("startup")
 def _load_engine() -> None:
-    import time
-    global _search_index, _profile_builder
-    if not SCORING_ENABLED:
-        print(
-            "MoveMaker API: research-prototype mode; live scoring is disabled "
-            "and V1 artifacts will not be loaded.",
-            flush=True,
-        )
-        return
-    t0 = time.time()
-    print("MoveMaker API: loading engine and warming caches...", flush=True)
-    _search_index = PlayerSearchIndex()
-    _profile_builder = IncumbentExtensionProfileBuilder()
-    # Eagerly parse every source table now, at boot, not on whichever
-    # request happens to arrive first. Measured cost is ~44s (pandas CSV
-    # parsing, dominated by the ~1.9M-row appearances table); every request
-    # after that is ~0.08-0.15s. Without this, the first real user pays the
-    # 44s tax instead of the deployment process.
-    _profile_builder.scorer.retriever.warm_up()
-    _search_index.warm_up()
-    print(f"MoveMaker API: ready in {time.time() - t0:.1f}s. Requests should now take well under a second.", flush=True)
+    print(
+        "MoveMaker API: research-record mode; HTTP scoring is disabled and "
+        "frozen V1 artifacts will not be loaded.",
+        flush=True,
+    )
 
 
 @app.get("/", include_in_schema=False)

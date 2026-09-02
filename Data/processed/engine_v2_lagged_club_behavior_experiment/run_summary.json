@@ -1,0 +1,35 @@
+{
+  "binary_endpoints": [
+    "temporary_first_24m",
+    "permanent_first_24m",
+    "permanent_relationship_ended_24m",
+    "strict_meaningful_stay_24m"
+  ],
+  "binary_evidence_counts": {
+    "inconclusive": 13,
+    "repeated_harm": 3
+  },
+  "checks_passed": 8,
+  "checks_total": 8,
+  "contract_version": "engine_v2_movement_targets_v1_2026-09-01",
+  "deployment_changed": false,
+  "development_evaluation_years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "final_holdout_opened": false,
+  "model_binaries_written": false,
+  "multinomial_evidence_counts": {
+    "inconclusive": 2,
+    "repeated_harm": 2
+  },
+  "v1_unchanged": true,
+  "variants": [
+    "C1_general_club_movement",
+    "C2_role_conditioned_movement",
+    "C3_mature_extension_history",
+    "C4_combined_behavior"
+  ]
+}

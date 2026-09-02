@@ -1,0 +1,29 @@
+{
+  "source_files": 110,
+  "canonical_club_seasons": 1074,
+  "unique_clubs": 164,
+  "reviewed_aliases": 16,
+  "unresolved_source_rows": 0,
+  "wage_structure_eligible_club_seasons": 666,
+  "extension_coverage": [
+    {
+      "scope": "all_canonical_extension_events",
+      "events": 2805,
+      "feature_available": 2449,
+      "feature_missing": 356,
+      "feature_coverage_rate": 0.8730837789661319,
+      "wage_structure_eligible": 2356
+    },
+    {
+      "scope": "integrated_839_evaluation_cohort",
+      "events": 839,
+      "feature_available": 795,
+      "feature_missing": 44,
+      "feature_coverage_rate": 0.9475566150178785,
+      "wage_structure_eligible": 740
+    }
+  ],
+  "build_checks_passed": 13,
+  "build_checks_total": 13,
+  "modeling_status": "candidate_feature_source_not_trained_not_deployed"
+}
