@@ -1,0 +1,18 @@
+check,observed,expected,passed,note
+source_file_count,110.0,110,True,55 payroll and 55 transfer-window files.
+payroll_file_count,55.0,55,True,Five leagues by eleven seasons.
+transfer_file_count,55.0,55,True,Five leagues by eleven seasons.
+league_season_grid_complete,110.0,110,True,No missing or extra league-season file.
+expected_file_row_counts,110.0,110,True,Accounts for Bundesliga's 18 clubs and Ligue 1's 2023-24 contraction to 18.
+schema_consistency_by_family,1.0,1,True,One schema per source family.
+source_columns_expected,110.0,110,True,Payroll has 56 columns; transfer window has 17.
+club_season_keys_unique,0.0,0,True,"One club row per family, league, and season."
+payroll_transfer_keys_identical,0.0,0,True,"Both source families cover the exact same 1,074 club-seasons."
+source_club_identity_complete,0.0,0,True,"Display name, stable Capology slug, and source club code are present."
+required_numeric_fields_complete,0.0,0,True,Bonus is optional and assessed separately.
+payroll_weekly_annual_arithmetic,26.0,<=26 EUR,True,"Weekly figures are whole-euro displays, creating at most half-euro times 52 rounding drift."
+payroll_total_arithmetic,8.0,<=10 EUR,True,Small display-currency rounding tolerance.
+transfer_balance_arithmetic,1.0,<=2 EUR,True,Balance equals income minus expense.
+squad_counts_coherent,0.0,0,True,Foreign-player count never exceeds squad-player count.
+canonical_club_link_rate_diagnostic,0.976723,>=0.95,True,Unresolved historical clubs remain quarantined for alias review; no fuzzy matching.
+club_season_merge_complete,1074.0,1074,True,Every payroll row has its same-season transfer-window row.

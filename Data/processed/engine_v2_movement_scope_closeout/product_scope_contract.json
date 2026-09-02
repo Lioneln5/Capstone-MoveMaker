@@ -1,0 +1,80 @@
+{
+  "contract_version": "engine_v2_movement_product_scope_v1_2026-09-02",
+  "decision_date": "2026-09-02",
+  "deployment_status": "no_engine_v2_movement_output_deployed",
+  "final_holdout_policy": "No 2024+ outcome was opened for this scope decision; later untouched evidence is required before candidate promotion.",
+  "outputs": [
+    {
+      "definition": "Any recorded loan or permanent outbound movement within 24 months.",
+      "final_validation_required": false,
+      "numeric_output_allowed": false,
+      "output_id": "generic_continuity_24m",
+      "product_note": "The former Contract-Horizon Stability output mixed temporary and permanent movement and is removed from the candidate product.",
+      "public_label": "Generic club continuity",
+      "public_probability_claim_allowed": false,
+      "reason_code": "ENDPOINT_RETIRED:MIXED_MOVEMENT_MECHANISMS",
+      "status": "retired",
+      "target_field": "any_outbound_event_by_24m"
+    },
+    {
+      "definition": "No outbound movement within 24 months and at least 25% same-club opportunity share in both Year 1 and Year 2.",
+      "final_validation_required": true,
+      "numeric_output_allowed": false,
+      "output_id": "meaningful_retention_24m",
+      "product_note": "Primary movement/retention candidate. It is not a rename of the contribution-only V1 endpoint.",
+      "public_label": "Meaningful Retention",
+      "public_probability_claim_allowed": false,
+      "reason_code": "FINAL_TEMPORAL_VALIDATION_REQUIRED",
+      "status": "development_candidate_not_deployed",
+      "target_field": "target_strict_meaningful_stay_24m"
+    },
+    {
+      "definition": "The first resolved outbound interruption within 24 months is a loan or loan return rather than a permanent transfer.",
+      "final_validation_required": true,
+      "numeric_output_allowed": false,
+      "output_id": "temporary_displacement_risk_24m",
+      "product_note": "Secondary candidate representing a different football mechanism from permanent separation.",
+      "public_label": "Temporary Displacement Risk",
+      "public_probability_claim_allowed": false,
+      "reason_code": "FINAL_TEMPORAL_VALIDATION_REQUIRED",
+      "status": "development_candidate_not_deployed",
+      "target_field": "target_temporary_first_24m"
+    },
+    {
+      "definition": "The permanent relationship with the extension club ends within 24 months, whether or not a loan happened first.",
+      "final_validation_required": false,
+      "numeric_output_allowed": false,
+      "output_id": "permanent_separation_risk_24m",
+      "product_note": "Unavailable as a personalized product output until a new frozen candidate repairs cross-league reliability.",
+      "public_label": "Permanent Separation",
+      "public_probability_claim_allowed": false,
+      "reason_code": "RESEARCH_ONLY:SUBGROUP_RELIABILITY_LIMITED",
+      "status": "research_only_unavailable",
+      "target_field": "target_permanent_relationship_ended_24m"
+    },
+    {
+      "definition": "At least 25% same-club opportunity share in both Year 1 and Year 2, without the no-outbound condition required by Meaningful Retention.",
+      "final_validation_required": false,
+      "numeric_output_allowed": false,
+      "output_id": "sustained_meaningful_contribution_24m",
+      "product_note": "Retained for V1 audit and contribution research; it must not be relabeled as Meaningful Retention.",
+      "public_label": "Sustained Meaningful Contribution",
+      "public_probability_claim_allowed": false,
+      "reason_code": "FROZEN_V1_HISTORICAL_EVIDENCE_ONLY",
+      "status": "frozen_v1_historical_only",
+      "target_field": "target_sustained_meaningful_contribution"
+    }
+  ],
+  "product_invariants": {
+    "development_candidate_is_not_deployment_authorization": true,
+    "generic_continuity_retired": true,
+    "movement_mechanisms_remain_separate": true,
+    "no_proxy_may_reintroduce_retired_continuity": true,
+    "unavailable_outputs_return_no_personalized_probability": true
+  },
+  "prohibited_composites": [
+    "overall_continuity_score",
+    "contract_horizon_stability",
+    "combined_retention_departure_score"
+  ]
+}

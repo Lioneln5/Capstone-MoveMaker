@@ -1,0 +1,17 @@
+feature,block,definition,timing_or_availability_rule
+club_outbound_events_730d_log1p,general_movement,log(1 + outbound events in prior 730 days),strictly pre-signing canonical transfers
+club_outbound_unique_players_730d_log1p,general_movement,log(1 + distinct outbound players in prior 730 days),strictly pre-signing canonical transfers
+club_transaction_churn_730d_log1p,general_movement,log(1 + inbound + outbound events in prior 730 days),strictly pre-signing canonical transfers
+club_inbound_outbound_ratio_730d_log,general_movement,log((inbound+1)/(outbound+1)) in prior 730 days,strictly pre-signing canonical transfers
+club_temporary_outbound_share_1095d,general_movement,"Beta(1,1)-smoothed temporary share of typed outbound events",loan and loan_return remain auditable raw types
+club_loan_return_within_temporary_share_1095d,general_movement,"Beta(1,1)-smoothed loan-return share within temporary outbound events",keeps loan-return mechanism visible
+club_position_outbound_typed_count_1095d_log1p,role_conditioned,log(1 + same-broad-position typed outbounds),unavailable when extension position is unknown
+club_position_temporary_share_1095d,role_conditioned,smoothed temporary share among same-position outbounds,unavailable when extension position is unknown
+club_ageband_outbound_typed_count_1095d_log1p,role_conditioned,log(1 + same-age-band typed outbounds),age calculated at each historical move
+club_ageband_permanent_share_1095d,role_conditioned,smoothed permanent share among same-age-band outbounds,unavailable when extension age is unknown
+club_mature_prior_extension_count_log1p,mature_extension_history,log(1 + resolved prior extensions with 730-day horizon complete),outcome_available_date must be <= current signing date
+club_prior_extension_temporary_share,mature_extension_history,"Dirichlet(1,1,1)-smoothed temporary-first share",future outcomes prohibited
+club_prior_extension_permanent_first_share,mature_extension_history,"Dirichlet(1,1,1)-smoothed permanent-first share",future outcomes prohibited
+club_prior_extension_strict_stay_share,mature_extension_history,"Beta(1,1)-smoothed strict meaningful-stay share","only mature, observable prior extensions"
+club_position_mature_prior_extension_count_log1p,mature_extension_history,log(1 + same-position mature resolved extensions),unavailable when extension position is unknown
+club_position_prior_extension_temporary_share,mature_extension_history,smoothed same-position temporary-first share,unavailable when extension position is unknown

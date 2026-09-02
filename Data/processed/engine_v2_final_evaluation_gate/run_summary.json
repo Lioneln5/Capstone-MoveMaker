@@ -1,0 +1,8 @@
+{
+  "all_build_checks_passed": true,
+  "holdout_year": 2024,
+  "overall_decision": "not_ready_for_engine_deployment",
+  "phase": 5,
+  "wage_holdout_rows": 235,
+  "wage_release_gate_passed": false
+}

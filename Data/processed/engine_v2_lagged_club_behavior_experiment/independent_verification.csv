@@ -1,0 +1,25 @@
+check,passed,observed,expected,note
+build_outputs_present,True,[],[],Feature evidence is complete.
+experiment_outputs_present,True,[],[],Experiment evidence is complete.
+feature_event_grain,True,"{'rows': 2805, 'duplicates': 0}","{'rows': 2805, 'duplicates': 0}",Canonical event grain is preserved.
+all_transfer_evidence_predecision,True,0,0,No same-day or future transfer was used.
+all_extension_outcomes_mature,True,0,0,No immature prior extension outcome was used.
+direct_transfer_count_reconstruction,True,"{'sample_rows': 29, 'mismatches': 0, 'total_outbounds': 1441}",{'mismatches': 0},"Fixed sample counts are rebuilt from canonical events, not runner summaries."
+direct_mature_extension_reconstruction,True,"{'sample_rows': 25, 'mismatches': 0}",{'mismatches': 0},Fixed sample maturity counts are independently rebuilt.
+target_contract_frozen,True,"{'version': 'engine_v2_movement_targets_v1_2026-09-01', 'states': ['no_outbound_24m', 'temporary_first_24m', 'permanent_first_24m']}","{'version': 'engine_v2_movement_targets_v1_2026-09-01', 'states': ['no_outbound_24m', 'temporary_first_24m', 'permanent_first_24m']}",Movement semantics are explicit and serialized.
+unresolved_policy_explicit,True,True,True,Unresolved first movements cannot be silently assigned.
+binary_loss_reconstruction,True,3.209238430557093e-16,<=1e-14,Paired Brier improvement reconstructs row by row.
+binary_prediction_key,True,0,0,"One paired prediction per endpoint, block, origin, and event."
+development_years_only,True,"[2020, 2021, 2022, 2023]","[2020, 2021, 2022, 2023]",2024+ target outcomes remain sealed.
+binary_evidence_classification,True,"{'inconclusive': 13, 'repeated_harm': 3}","{'inconclusive': 13, 'repeated_harm': 3}",No block is falsely promoted from small unadjusted changes.
+mature_history_refusal_visible,True,0.2692307692307692,>0.25,Accumulating history creates a material modelability problem.
+multinomial_probability_sum,True,4.440892098500626e-16,<=1e-12,Named state probabilities are coherent.
+multinomial_loss_reconstruction,True,7.008282842946301e-16,<=1e-14,Multiclass paired loss reconstructs.
+multinomial_evidence_classification,True,"{'inconclusive': 2, 'repeated_harm': 2}","{'inconclusive': 2, 'repeated_harm': 2}","Role-conditioned movement is retained as inconclusive, not overclaimed."
+role_signal_not_overclaimed,True,"{'improvement': np.float64(0.0031937805736795), 'adjusted_ci_low': np.float64(-0.0007471451234328)}",positive point estimate but adjusted CI crosses zero,Small coherent signal remains development evidence only.
+runner_checks,True,"{'build': 9, 'experiment': 8}","{'build': 9, 'experiment': 8}",All internal invariants pass.
+source_hashes,True,True,True,All source evidence is unchanged.
+v1_hashes,True,True,True,All 24 frozen V1 files remain byte-identical.
+no_model_binaries,True,[],[],Research outputs contain evidence only.
+build_byte_reproducible,True,[],[],Clean-directory feature build is byte reproducible.
+experiment_byte_reproducible,True,[],[],Clean-directory experiment is byte reproducible.

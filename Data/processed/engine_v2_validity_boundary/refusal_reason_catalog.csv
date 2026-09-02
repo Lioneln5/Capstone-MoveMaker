@@ -1,0 +1,25 @@
+refusal_code,scope,meaning
+UNSUPPORTED_USE_CASE,global,Only incumbent-club extension scenarios are in scope.
+PLAYER_IDENTITY_UNVERIFIED,global,Canonical player identity is absent or unresolved.
+CLUB_IDENTITY_UNVERIFIED,global,Canonical club identity is absent or unresolved.
+LEAGUE_OUTSIDE_BIG_FIVE,global,Historical support is limited to the Big Five.
+FUTURE_DECISION_DATE,global,Future-dated information boundaries cannot be audited.
+DATE_OF_BIRTH_UNAVAILABLE,global,Age cannot be reconstructed.
+AGE_OUTSIDE_HISTORICAL_SUPPORT,global,"Age is outside 16–46.1, the observed event support."
+BROAD_POSITION_UNRESOLVED,global,Required broad role is unavailable.
+INCUMBENCY_UNVERIFIED,global,The player-current-club relationship is not verified.
+INCUMBENCY_EVIDENCE_UNSUPPORTED,global,The relationship source is not an accepted dated club source.
+INCUMBENCY_EVIDENCE_UNDATED,global,The club relationship has no as-of date.
+INCUMBENCY_EVIDENCE_AFTER_DECISION,global,The relationship evidence is post-decision leakage.
+INCUMBENCY_EVIDENCE_STALE,global,The latest relationship evidence is more than 365 days old.
+PROPOSED_TERM_OUTSIDE_SUPPORTED_RANGE,global,Term must be 2–6 years for this product horizon.
+SPORTING_DATA_CUTOFF_UNKNOWN,sporting,Coverage cannot be proven.
+SPORTING_DATA_DOES_NOT_REACH_DECISION_DATE,sporting,The pre-decision window is incomplete.
+INSUFFICIENT_PRE365_CLUB_GAME_EVIDENCE,sporting,Fewer than 10 same-club games make opportunity evidence unreliable.
+CURRENT_MARKET_VALUE_UNAVAILABLE,value,A positive current public value is required.
+MARKET_VALUE_EVIDENCE_UNDATED,value,The public value has no as-of date.
+MARKET_VALUE_AFTER_DECISION,value,The public value is post-decision leakage.
+MARKET_VALUE_EVIDENCE_STALE,value,The public value is more than 365 days old.
+PROPOSED_FIXED_WAGE_INVALID,wage,The proposed annual fixed wage must be positive.
+SALARY_PANEL_COVERAGE_UNKNOWN,wage,Peer-panel coverage cannot be proven.
+SALARY_PANEL_DOES_NOT_REACH_DECISION_DATE,wage,A stale panel cannot support a current wage comparison.

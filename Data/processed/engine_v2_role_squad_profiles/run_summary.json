@@ -1,0 +1,21 @@
+{
+  "anchor_rows": 2805,
+  "checks_passed": 15,
+  "checks_total": 15,
+  "contract_version": "engine_v2_role_squad_v1_2026-09-01",
+  "deployment_changed": false,
+  "development_availability": {
+    "role_level_available": 0.9213483146067416,
+    "role_trajectory_available": 0.8564294631710362,
+    "squad_onfield_available": 0.920099875156055,
+    "squad_value_incoming_available": 0.8820224719101124
+  },
+  "final_holdout_opened": false,
+  "profile_rows": 2805,
+  "relevant_appearance_rows": 488651,
+  "relevant_club_games": 33996,
+  "relevant_incoming_transfers": 22094,
+  "relevant_lineup_rows": 682489,
+  "relevant_valuation_rows": 283896,
+  "v1_unchanged": true
+}

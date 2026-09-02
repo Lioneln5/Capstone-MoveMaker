@@ -1,0 +1,21 @@
+variant,league,rows,brier_improvement
+C1_general_club_movement,Bundesliga,312,0.004647826686403611
+C1_general_club_movement,La Liga,273,-0.0009673392502169588
+C1_general_club_movement,Ligue 1,298,0.003563534639000053
+C1_general_club_movement,Premier League,326,-0.0037315318672654597
+C1_general_club_movement,Serie A,344,0.004185383778052951
+C2_role_conditioned_movement,Bundesliga,312,0.004830970745399459
+C2_role_conditioned_movement,La Liga,273,0.003734559422483733
+C2_role_conditioned_movement,Ligue 1,298,0.0032900737435078396
+C2_role_conditioned_movement,Premier League,326,-0.0014070438522141677
+C2_role_conditioned_movement,Serie A,344,0.005556389407785698
+C3_mature_extension_history,Bundesliga,312,-0.011619864709312823
+C3_mature_extension_history,La Liga,273,-0.005577666776961017
+C3_mature_extension_history,Ligue 1,298,-0.009633865074932496
+C3_mature_extension_history,Premier League,326,-0.008679631026247891
+C3_mature_extension_history,Serie A,344,-0.024101708578978552
+C4_combined_behavior,Bundesliga,312,-0.008242169993383964
+C4_combined_behavior,La Liga,273,-0.0021551561958604165
+C4_combined_behavior,Ligue 1,298,-0.0045456338009150984
+C4_combined_behavior,Premier League,326,-0.015316361917125827
+C4_combined_behavior,Serie A,344,-0.023184420362946746

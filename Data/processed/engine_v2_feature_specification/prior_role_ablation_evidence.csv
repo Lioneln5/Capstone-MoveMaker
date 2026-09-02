@@ -1,0 +1,4 @@
+endpoint,window,candidate,n_rows,n_players_clustered,pooled_baseline_loss,pooled_candidate_loss,pooled_loss_improvement,origin_wins,n_origins,bootstrap_ci_lower_95,bootstrap_ci_upper_95,bootstrap_probability_candidate_better,ci_excludes_zero_favoring_candidate
+year2_opportunity_share,pooled_four,R1_remove_scoring,935,832,0.2371569931330938,0.2368974437581686,0.0002595493749251,2,4,-0.0012576022937388,0.0018275619780785,0.634,False
+any_outbound_24m,pooled_four,R1_remove_scoring,1588,1330,0.219178106740264,0.2175766731408054,0.0016014335994585,2,4,-0.0002571572258029,0.0034447481887241,0.9542,False
+downside_25pct_24m,pooled_four,R1_remove_scoring,1391,1192,0.1729790126823625,0.1717543875540781,0.0012246251282844,3,4,-0.0008575120151691,0.0034350800353418,0.8636,False

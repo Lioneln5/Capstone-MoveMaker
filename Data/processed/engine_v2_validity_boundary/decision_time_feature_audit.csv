@@ -1,0 +1,13 @@
+input_group,field_or_concept,decision_time_requirement,v2_policy,interpretation
+player_identity,canonical player ID and date of birth,identity sources known on/before decision,allow_if_verified,Required; current/latest snapshot fields are not outcome predictors.
+incumbent_club,player-club relationship,"dated appearance, roster, contract, or salary-panel evidence",hard_refusal_if_unverified,An arbitrary player-club pairing is never scoreable in V2.
+league,Big-Five competition at decision,dated club/competition evidence,hard_refusal_outside_big_five,Caller text alone is insufficient provenance.
+broad_position,Goalkeeper/Defender/Midfield/Attack,as-of role evidence,allow_if_resolved,Historical retraining must not use a later current-position snapshot as though it were contemporaneous.
+age,age at decision,verified date of birth,allow_16_to_46_1,"Observed historical support, not a claim that boundary cases are equally reliable."
+pre365_sporting,"same-club games, appearances, minutes, opportunity",strictly before decision; source reaches decision date,require_10_club_games,No stale fallback and no partial-window score.
+completed_season_performance,prior completed same-club season,season end on/before decision,candidate_feature_only,Role-aware specification is a later modeling phase.
+current_market_value,positive public valuation,as-of date on/before decision and no more than 365 days old,required_for_value_module,"Public estimate, not sale proceeds or accounting value."
+proposed_fixed_wage,club-entered scenario input,known at decision,financial_module_only,Prohibited from sporting endpoints until a dedicated causal/ablation case survives.
+proposed_contract_term,club-entered scenario input,known at decision,allow_2_to_6_years,Needed for the two-year product horizon and within broad historical support.
+salary_panel,club/player wage context,panel valid through decision date,required_for_wage_benchmark,Older-season fallback is prohibited in V2 scoring.
+post_extension_outcomes,"future minutes, departure, valuation",after decision,target_only_never_predictor,Any use as a predictor is leakage.

@@ -1,0 +1,94 @@
+{
+  "availability": {
+    "minimum_club_games_full_window": 10,
+    "minimum_current_manager_games_for_player_rates": 5,
+    "minimum_games_each_formation_split": 5,
+    "minimum_games_each_side_of_manager_transition": 5,
+    "minimum_manager_lineup_appearance_or_formation_game_coverage": 0.8
+  },
+  "blocks": {
+    "C1_combined_manager_tactical": [
+      "manager_unique_count_365d_log1p",
+      "manager_change_count_365d_log1p",
+      "current_manager_observed_match_share_365d",
+      "current_manager_spell_games_365d_log1p",
+      "current_manager_spell_days_scaled_365d",
+      "manager_change_within_90d",
+      "formation_unique_shape_count_365d_log1p",
+      "formation_shape_entropy_365d",
+      "formation_shape_change_rate_365d",
+      "dominant_formation_shape_share_365d",
+      "current_formation_shape_spell_share_365d",
+      "formation_distribution_shift_recent_vs_prior",
+      "current_manager_player_selection_rate",
+      "current_manager_player_start_rate",
+      "current_manager_player_opportunity_share",
+      "current_manager_player_captain_rate",
+      "manager_transition_observed_365d",
+      "days_since_manager_transition_scaled_365d",
+      "player_selection_rate_change_post_vs_pre_manager",
+      "player_start_rate_change_post_vs_pre_manager",
+      "player_opportunity_share_change_post_vs_pre_manager"
+    ],
+    "M1_manager_stability": [
+      "manager_unique_count_365d_log1p",
+      "manager_change_count_365d_log1p",
+      "current_manager_observed_match_share_365d",
+      "current_manager_spell_games_365d_log1p",
+      "current_manager_spell_days_scaled_365d",
+      "manager_change_within_90d"
+    ],
+    "M2_player_under_current_manager": [
+      "current_manager_player_selection_rate",
+      "current_manager_player_start_rate",
+      "current_manager_player_opportunity_share",
+      "current_manager_player_captain_rate"
+    ],
+    "M3_role_change_at_manager_transition": [
+      "manager_transition_observed_365d",
+      "days_since_manager_transition_scaled_365d",
+      "player_selection_rate_change_post_vs_pre_manager",
+      "player_start_rate_change_post_vs_pre_manager",
+      "player_opportunity_share_change_post_vs_pre_manager"
+    ],
+    "T1_formation_tactical_stability": [
+      "formation_unique_shape_count_365d_log1p",
+      "formation_shape_entropy_365d",
+      "formation_shape_change_rate_365d",
+      "dominant_formation_shape_share_365d",
+      "current_formation_shape_spell_share_365d",
+      "formation_distribution_shift_recent_vs_prior"
+    ]
+  },
+  "contract_version": "engine_v2_manager_tactical_v1_2026-09-01",
+  "definitions": {
+    "current_manager": "Manager in the latest manager-coded club game strictly before signing.",
+    "formation_shape": "Leading numeric formation shape; textual modifiers such as Attacking, Defending, flat, Diamond, or double 6 are removed.",
+    "manager_identity": "Unicode-normalized manager name recorded for each club-game.",
+    "manager_transition": "Latest change in adjacent manager-coded club games during the prior-year window.",
+    "no_manager_transition": "Transition indicator is zero, days-since is one, and role-change fields are structural zero when manager coverage passes and no change is observed.",
+    "observed_manager_spell": "Consecutive manager-coded games at the end of the prior-year window with the current manager; not an official employment tenure."
+  },
+  "deployment_status": "research_only_not_deployed",
+  "final_holdout_policy": "2024+ outcomes remain sealed during development.",
+  "interpretation_boundary": {
+    "formation_features": "Reported base-shape stability, not full tactical intent or in-match tactical changes.",
+    "manager_features": "Observed match-record stability, not appointment-contract tenure or causal manager quality.",
+    "player_manager_features": "Observed role under a manager, not a causal manager preference effect."
+  },
+  "timing": {
+    "future_outcomes": "never read by profile construction",
+    "games_lineups_appearances": "strictly before signing"
+  },
+  "windows": {
+    "full": "[signed_date - 365 days, signed_date)",
+    "prior": "[signed_date - 365 days, signed_date - 180 days)",
+    "recent": "[signed_date - 180 days, signed_date)",
+    "recent_manager_change": "[signed_date - 90 days, signed_date)"
+  },
+  "zero_semantics": {
+    "no_manager_change": "Zero role-change fields mean no observed transition, distinguished by manager_transition_observed_365d.",
+    "player_not_selected": "Zero player rate is accepted only when current-manager lineup and appearance game coverage passes the source gate.",
+    "stable_formation": "Zero formation change or distribution shift is valid only after formation coverage passes."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "all_checks_passed": true,
+  "candidate_selection_bias": "unresolved_material_limitation",
+  "checks_passed": 8,
+  "checks_total": 8,
+  "considered_not_extended_events": null,
+  "historical_extension_events": 2805,
+  "phase": "engine_v2_phase_1_validity_boundary",
+  "request_contract": "strict_global_and_module_specific_refusal",
+  "status": "complete_no_model_fitted",
+  "v1_artifacts_modified": false
+}

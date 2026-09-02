@@ -1,0 +1,19 @@
+{
+  "anchor_rows": 2805,
+  "checks_passed": 15,
+  "checks_total": 15,
+  "contract_version": "engine_v2_manager_tactical_v1_2026-09-01",
+  "deployment_changed": false,
+  "development_availability": {
+    "current_manager_player_role_available": 0.8789013732833958,
+    "formation_stability_available": 0.8789013732833958,
+    "manager_stability_available": 0.9506866416978776,
+    "manager_transition_role_change_available": 0.7833957553058677
+  },
+  "final_holdout_opened": false,
+  "profile_rows": 2805,
+  "relevant_appearance_rows": 488651,
+  "relevant_club_games": 33996,
+  "relevant_lineup_rows": 682489,
+  "v1_unchanged": true
+}

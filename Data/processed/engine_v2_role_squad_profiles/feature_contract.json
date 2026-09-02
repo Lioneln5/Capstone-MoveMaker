@@ -1,0 +1,91 @@
+{
+  "availability": {
+    "maximum_predecision_valuation_age_days": 365,
+    "minimum_club_games_each_trajectory_split": 5,
+    "minimum_club_games_full_window": 10,
+    "minimum_known_values_in_position_group": 3,
+    "minimum_lineup_or_appearance_game_coverage": 0.8,
+    "minimum_selections_for_active_competitor": 3
+  },
+  "blocks": {
+    "C1_combined_role_and_competition": [
+      "role_lineup_selection_rate_365d",
+      "role_start_rate_365d",
+      "role_substitute_selection_rate_365d",
+      "role_captain_rate_365d",
+      "role_position_entropy_365d",
+      "role_days_since_last_selection_scaled_365d",
+      "role_recent_start_rate_180d",
+      "role_start_rate_change_recent_vs_prior",
+      "role_selection_rate_change_recent_vs_prior",
+      "role_opportunity_share_change_recent_vs_prior",
+      "squad_same_position_competitor_count_log1p",
+      "squad_same_position_strong_competitor_count_log1p",
+      "player_same_position_start_percentile",
+      "player_same_position_minutes_percentile",
+      "player_start_rate_gap_to_position_leader",
+      "player_opportunity_gap_to_position_leader",
+      "player_share_of_position_minutes",
+      "squad_position_minutes_hhi",
+      "squad_position_known_value_players_log1p",
+      "player_same_position_value_percentile",
+      "player_value_to_position_median_log",
+      "incoming_same_position_players_180d_log1p",
+      "incoming_same_position_higher_value_players_180d_log1p",
+      "incoming_same_position_max_value_ratio_log"
+    ],
+    "R1_current_role_structure": [
+      "role_lineup_selection_rate_365d",
+      "role_start_rate_365d",
+      "role_substitute_selection_rate_365d",
+      "role_captain_rate_365d",
+      "role_position_entropy_365d",
+      "role_days_since_last_selection_scaled_365d"
+    ],
+    "R2_role_trajectory": [
+      "role_recent_start_rate_180d",
+      "role_start_rate_change_recent_vs_prior",
+      "role_selection_rate_change_recent_vs_prior",
+      "role_opportunity_share_change_recent_vs_prior"
+    ],
+    "S1_onfield_position_competition": [
+      "squad_same_position_competitor_count_log1p",
+      "squad_same_position_strong_competitor_count_log1p",
+      "player_same_position_start_percentile",
+      "player_same_position_minutes_percentile",
+      "player_start_rate_gap_to_position_leader",
+      "player_opportunity_gap_to_position_leader",
+      "player_share_of_position_minutes",
+      "squad_position_minutes_hhi"
+    ],
+    "S2_value_and_incoming_competition": [
+      "squad_position_known_value_players_log1p",
+      "player_same_position_value_percentile",
+      "player_value_to_position_median_log",
+      "incoming_same_position_players_180d_log1p",
+      "incoming_same_position_higher_value_players_180d_log1p",
+      "incoming_same_position_max_value_ratio_log"
+    ]
+  },
+  "contract_version": "engine_v2_role_squad_v1_2026-09-01",
+  "deployment_status": "research_only_not_deployed",
+  "final_holdout_policy": "2024+ outcomes remain sealed during development.",
+  "timing": {
+    "incoming_transfers": "strictly before signing",
+    "lineups_appearances_games": "strictly before signing",
+    "valuations": "on or before signing and no more than 365 days old"
+  },
+  "windows": {
+    "full": "[signed_date - 365 days, signed_date)",
+    "incoming": "[signed_date - 180 days, signed_date)",
+    "prior": "[signed_date - 365 days, signed_date - 180 days)",
+    "recent": "[signed_date - 180 days, signed_date)"
+  },
+  "zero_semantics": {
+    "no_competitors": "Zero competitors is allowed only after the same club/source gate passes.",
+    "no_incoming_competitor": "Zero incoming players is a valid count from the canonical transfer history.",
+    "no_known_incoming_value": "Incoming maximum-value ratio is zero when no incoming player has a known value; the companion known-value count preserves that distinction.",
+    "player_not_selected": "Zero role rate is allowed only when club lineup coverage passes the source gate.",
+    "position_entropy": "Set to zero for fewer than two observed positions; selection rate distinguishes no role from a stable role."
+  }
+}

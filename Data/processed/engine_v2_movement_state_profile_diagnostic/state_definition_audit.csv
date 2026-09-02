@@ -1,0 +1,7 @@
+field,rule,interpretation
+no_outbound_24m,any_outbound_event_by_24m == 0,No recorded interruption from the extension club within 730 days.
+permanent_first_24m,any_outbound_event_by_24m == 1 and first_any_outbound_type == transfer,First recorded interruption is a permanent move.
+loan_first_24m,any_outbound_event_by_24m == 1 and first_any_outbound_type == loan,First recorded interruption is an outbound loan.
+loan_return_first_24m,any_outbound_event_by_24m == 1 and first_any_outbound_type == loan_return,Temporary-contract movement label; retained separately in the raw audit and grouped only for the three-state diagnostic.
+unresolved_first_type_24m,any_outbound_event_by_24m == 1 and first_any_outbound_type missing,Excluded from three-state model; never silently assigned.
+strict_meaningful_stay_24m,no outbound within 24m and sustained >=25% same-club opportunity in both Year 1 and Year 2,Joint sporting-use and uninterrupted-stay outcome; separate from movement-state probabilities.

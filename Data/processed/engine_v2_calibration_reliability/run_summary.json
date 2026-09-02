@@ -1,0 +1,20 @@
+{
+  "all_checks_passed": true,
+  "checks_passed": 10,
+  "checks_total": 10,
+  "endpoint_decisions": {
+    "any_outbound_24m": "blocked_reliability_repair",
+    "downside_25pct_24m": "advance_to_versioned_artifact_build",
+    "sustained_meaningful_contribution": "advance_to_versioned_artifact_build"
+  },
+  "evaluation_rows": 3856,
+  "parameter_bootstrap_repetitions": 250,
+  "phase": "engine_v2_phase_3_calibration_reliability",
+  "selected_calibration": {
+    "any_outbound_24m": "raw",
+    "downside_25pct_24m": "platt",
+    "sustained_meaningful_contribution": "raw"
+  },
+  "status": "complete_research_only_not_deployed",
+  "v1_artifacts_modified": false
+}

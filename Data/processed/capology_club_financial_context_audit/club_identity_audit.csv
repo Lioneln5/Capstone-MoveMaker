@@ -1,0 +1,165 @@
+league,club_name,club_name_normalized,capology_club_slug,club_code,canonical_club_id,canonical_club_name,club_link_method
+Bundesliga,Arminia Bielefeld,arminiabielefeld,arminia-bielefeld,ARB,10.0,Arminia Bielefeld,reviewed_exact_capology_alias
+Bundesliga,Augsburg,augsburg,augsburg,AUG,167.0,FC Augsburg,fbref_accepted_exact_alias
+Bundesliga,Bayer Leverkusen,bayerleverkusen,bayer-leverkusen,B04,15.0,Bayer 04 Leverkusen,reviewed_exact_capology_alias
+Bundesliga,Bayern Munich,bayernmunich,bayern-munich,BAY,27.0,Bayern Munich,fbref_accepted_exact_alias
+Bundesliga,Bochum,bochum,bochum,BCM,80.0,VfL Bochum,fbref_accepted_exact_alias
+Bundesliga,Borussia Dortmund,borussiadortmund,borussia-dortmund,BVB,16.0,Borussia Dortmund,reviewed_exact_capology_alias
+Bundesliga,Darmstadt,darmstadt,darmstadt,DMT,105.0,SV Darmstadt 98,reviewed_exact_capology_alias
+Bundesliga,Dusseldorf,dusseldorf,dusseldorf,F95,38.0,Fortuna Düsseldorf,fbref_accepted_exact_alias
+Bundesliga,Eintracht Frankfurt,eintrachtfrankfurt,eintracht-frankfurt,SGE,24.0,Eintracht Frankfurt,reviewed_exact_capology_alias
+Bundesliga,Freiburg,freiburg,freiburg,SCF,60.0,SC Freiburg,fbref_accepted_exact_alias
+Bundesliga,Furth,furth,furth,FUR,65.0,SpVgg Greuther Fürth,reviewed_exact_capology_alias
+Bundesliga,Hamburg,hamburg,hamburg,HSV,41.0,Hamburger SV,reviewed_exact_capology_alias
+Bundesliga,Hannover,hannover,hannover,HAN,42.0,Hannover 96,reviewed_exact_capology_alias
+Bundesliga,Heidenheim,heidenheim,heidenheim,HEI,2036.0,1.FC Heidenheim 1846,fbref_accepted_exact_alias
+Bundesliga,Hertha Berlin,herthaberlin,hertha-berlin,BSC,44.0,Hertha BSC,reviewed_exact_capology_alias
+Bundesliga,Hoffenheim,hoffenheim,hoffenheim,TSG,533.0,TSG 1899 Hoffenheim,fbref_accepted_exact_alias
+Bundesliga,Holstein Kiel,holsteinkiel,holstein-kiel,HLK,,,unresolved
+Bundesliga,Ingolstadt,ingolstadt,ingolstadt,IGD,,,unresolved
+Bundesliga,Koln,koln,koln,CGN,3.0,1.FC Köln,fbref_accepted_exact_alias
+Bundesliga,Leipzig,leipzig,leipzig,RBL,23826.0,RB Leipzig,reviewed_exact_capology_alias
+Bundesliga,Mainz,mainz,mainz,MAI,39.0,1.FSV Mainz 05,reviewed_exact_capology_alias
+Bundesliga,Monchengladbach,monchengladbach,monchengladbach,BMG,18.0,Borussia Mönchengladbach,reviewed_exact_capology_alias
+Bundesliga,Nurnberg,nurnberg,nurnberg,FCN,4.0,1.FC Nuremberg,fbref_accepted_exact_alias
+Bundesliga,Paderborn,paderborn,paderborn,PAD,127.0,SC Paderborn 07,reviewed_exact_capology_alias
+Bundesliga,Schalke 04,schalke04,schalke-04,S04,33.0,FC Schalke 04,fbref_accepted_exact_alias
+Bundesliga,St Pauli,stpauli,st-pauli,STP,35.0,FC St. Pauli,reviewed_exact_capology_alias
+Bundesliga,Stuttgart,stuttgart,stuttgart,STU,79.0,VfB Stuttgart,fbref_accepted_exact_alias
+Bundesliga,Union Berlin,unionberlin,union-berlin,UBE,89.0,1.FC Union Berlin,fbref_accepted_exact_alias
+Bundesliga,Werder Bremen,werderbremen,werder-bremen,SVW,86.0,SV Werder Bremen,fbref_accepted_exact_alias
+Bundesliga,Wolfsburg,wolfsburg,wolfsburg,WOB,82.0,VfL Wolfsburg,fbref_accepted_exact_alias
+La Liga,Alaves,alaves,alaves,ALV,1108.0,Deportivo Alavés,fbref_accepted_exact_alias
+La Liga,Almeria,almeria,almeria,ALM,3302.0,UD Almería,fbref_accepted_exact_alias
+La Liga,Athletic Club,athleticclub,athletic-club,ATB,621.0,Athletic Bilbao,fbref_accepted_exact_alias
+La Liga,Atletico Madrid,atleticomadrid,atletico-madrid,ATM,13.0,Atlético de Madrid,fbref_accepted_exact_alias
+La Liga,Barcelona,barcelona,barcelona,FCB,131.0,FC Barcelona,fbref_accepted_exact_alias
+La Liga,Cadiz,cadiz,cadiz,CAD,2687.0,Cádiz CF,fbref_accepted_exact_alias
+La Liga,Celta Vigo,celtavigo,celta-vigo,CLV,940.0,Celta de Vigo,fbref_accepted_exact_alias
+La Liga,Cordoba,cordoba,cordoba,COR,,,unresolved
+La Liga,Deportivo,deportivo,deportivo,DCO,897.0,Deportivo de La Coruña,reviewed_exact_capology_alias
+La Liga,Eibar,eibar,eibar,EIB,1533.0,SD Eibar,fbref_accepted_exact_alias
+La Liga,Elche,elche,elche,ELH,1531.0,Elche CF,fbref_accepted_exact_alias
+La Liga,Espanyol,espanyol,espanyol,ESY,714.0,RCD Espanyol Barcelona,fbref_accepted_exact_alias
+La Liga,Getafe,getafe,getafe,GET,3709.0,Getafe CF,fbref_accepted_exact_alias
+La Liga,Girona,girona,girona,GIR,12321.0,Girona FC,fbref_accepted_exact_alias
+La Liga,Granada,granada,granada,GRA,16795.0,Granada CF,fbref_accepted_exact_alias
+La Liga,Huesca,huesca,huesca,HUE,5358.0,SD Huesca,fbref_accepted_exact_alias
+La Liga,Las Palmas,laspalmas,las-palmas,LAP,472.0,UD Las Palmas,fbref_accepted_exact_alias
+La Liga,Leganes,leganes,leganes,LEG,1244.0,CD Leganés,fbref_accepted_exact_alias
+La Liga,Levante,levante,levante,LVT,3368.0,Levante UD,fbref_accepted_exact_alias
+La Liga,Malaga,malaga,malaga,MLA,1084.0,Málaga CF,fbref_accepted_exact_alias
+La Liga,Mallorca,mallorca,mallorca,MAL,237.0,RCD Mallorca,fbref_accepted_exact_alias
+La Liga,Osasuna,osasuna,osasuna,OSA,331.0,CA Osasuna,fbref_accepted_exact_alias
+La Liga,Rayo Vallecano,rayovallecano,rayo-vallecano,RAY,367.0,Rayo Vallecano,fbref_accepted_exact_alias
+La Liga,Real Betis,realbetis,real-betis,BET,150.0,Real Betis Balompié,reviewed_exact_capology_alias
+La Liga,Real Madrid,realmadrid,real-madrid,MAD,418.0,Real Madrid,fbref_accepted_exact_alias
+La Liga,Real Sociedad,realsociedad,real-sociedad,SOC,681.0,Real Sociedad,fbref_accepted_exact_alias
+La Liga,Sevilla,sevilla,sevilla,SEV,368.0,Sevilla FC,fbref_accepted_exact_alias
+La Liga,Sporting Gijon,sportinggijon,sporting-gijon,GIJ,,,unresolved
+La Liga,Valencia,valencia,valencia,VAL,1049.0,Valencia CF,fbref_accepted_exact_alias
+La Liga,Valladolid,valladolid,valladolid,REV,366.0,Real Valladolid CF,fbref_accepted_exact_alias
+La Liga,Villarreal,villarreal,villarreal,VIL,1050.0,Villarreal CF,fbref_accepted_exact_alias
+Ligue 1,Ajaccio,ajaccio,ajaccio,AJC,1147.0,AC Ajaccio,fbref_accepted_exact_alias
+Ligue 1,Amiens,amiens,amiens,AMI,1416.0,Amiens SC,fbref_accepted_exact_alias
+Ligue 1,Angers,angers,angers,ANG,1420.0,Angers SCO,fbref_accepted_exact_alias
+Ligue 1,Auxerre,auxerre,auxerre,AUX,290.0,AJ Auxerre,fbref_accepted_exact_alias
+Ligue 1,Bastia,bastia,bastia,BAS,,,unresolved
+Ligue 1,Bordeaux,bordeaux,bordeaux,BOR,40.0,FC Girondins Bordeaux,fbref_accepted_exact_alias
+Ligue 1,Brest,brest,brest,BST,3911.0,Stade Brestois 29,fbref_accepted_exact_alias
+Ligue 1,Caen,caen,caen,CAE,1162.0,SM Caen,fbref_accepted_exact_alias
+Ligue 1,Clermont,clermont,clermont,CLE,3524.0,Clermont Foot 63,reviewed_exact_capology_alias
+Ligue 1,Dijon,dijon,dijon,DIJ,2969.0,Dijon FCO,fbref_accepted_exact_alias
+Ligue 1,Evian,evian,evian,EVI,,,unresolved
+Ligue 1,Gazelec Ajaccio,gazelecajaccio,gazelec-ajaccio,GAJ,,,unresolved
+Ligue 1,Guingamp,guingamp,guingamp,GUI,855.0,EA Guingamp,fbref_accepted_exact_alias
+Ligue 1,Le Havre,lehavre,le-havre,LHA,738.0,Le Havre AC,fbref_accepted_exact_alias
+Ligue 1,Lens,lens,lens,LEN,826.0,RC Lens,fbref_accepted_exact_alias
+Ligue 1,Lille,lille,lille,LIL,1082.0,LOSC Lille,fbref_accepted_exact_alias
+Ligue 1,Lorient,lorient,lorient,LOR,1158.0,FC Lorient,fbref_accepted_exact_alias
+Ligue 1,Lyon,lyon,lyon,LYO,1041.0,Olympique Lyon,fbref_accepted_exact_alias
+Ligue 1,Marseille,marseille,marseille,OLM,244.0,Olympique Marseille,fbref_accepted_exact_alias
+Ligue 1,Metz,metz,metz,MTZ,347.0,FC Metz,fbref_accepted_exact_alias
+Ligue 1,Monaco,monaco,monaco,AMO,162.0,AS Monaco,fbref_accepted_exact_alias
+Ligue 1,Montpellier,montpellier,montpellier,MPL,969.0,Montpellier HSC,fbref_accepted_exact_alias
+Ligue 1,Nancy,nancy,nancy,NAN,,,unresolved
+Ligue 1,Nantes,nantes,nantes,NNT,995.0,FC Nantes,fbref_accepted_exact_alias
+Ligue 1,Nice,nice,nice,NCE,417.0,OGC Nice,fbref_accepted_exact_alias
+Ligue 1,Nimes,nimes,nimes,NIM,1160.0,Nîmes Olympique,fbref_accepted_exact_alias
+Ligue 1,PSG,psg,psg,PSG,583.0,Paris Saint-Germain,reviewed_exact_capology_alias
+Ligue 1,Reims,reims,reims,REI,1421.0,Stade Reims,fbref_accepted_exact_alias
+Ligue 1,Rennes,rennes,rennes,REN,273.0,Stade Rennais FC,fbref_accepted_exact_alias
+Ligue 1,St-Etienne,stetienne,st-etienne,STE,618.0,AS Saint-Étienne,reviewed_exact_capology_alias
+Ligue 1,Strasbourg,strasbourg,strasbourg,STR,667.0,RC Strasbourg Alsace,fbref_accepted_exact_alias
+Ligue 1,Toulouse,toulouse,toulouse,TOU,415.0,FC Toulouse,fbref_accepted_exact_alias
+Ligue 1,Troyes,troyes,troyes,TRY,1095.0,ESTAC Troyes,fbref_accepted_exact_alias
+Premier League,Arsenal,arsenal,arsenal,ARS,11.0,Arsenal FC,fbref_accepted_exact_alias
+Premier League,Aston Villa,astonvilla,aston-villa,AVA,405.0,Aston Villa,fbref_accepted_exact_alias
+Premier League,Bournemouth,bournemouth,bournemouth,BOU,989.0,AFC Bournemouth,fbref_accepted_exact_alias
+Premier League,Brentford,brentford,brentford,BTD,1148.0,Brentford FC,fbref_accepted_exact_alias
+Premier League,Brighton,brighton,brighton,BHA,1237.0,Brighton & Hove Albion,fbref_accepted_exact_alias
+Premier League,Burnley,burnley,burnley,RNL,1132.0,Burnley FC,fbref_accepted_exact_alias
+Premier League,Cardiff,cardiff,cardiff,CDF,603.0,Cardiff City,reviewed_exact_capology_alias
+Premier League,Chelsea,chelsea,chelsea,CHE,631.0,Chelsea FC,fbref_accepted_exact_alias
+Premier League,Crystal Palace,crystalpalace,crystal-palace,CRY,873.0,Crystal Palace,fbref_accepted_exact_alias
+Premier League,Everton,everton,everton,EVE,29.0,Everton FC,fbref_accepted_exact_alias
+Premier League,Fulham,fulham,fulham,FUL,931.0,Fulham FC,fbref_accepted_exact_alias
+Premier League,Huddersfield,huddersfield,huddersfield,HDD,1110.0,Huddersfield Town,fbref_accepted_exact_alias
+Premier League,Hull City,hullcity,hull-city,HUL,,,unresolved
+Premier League,Ipswich Town,ipswichtown,ipswich-town,IPS,677.0,Ipswich Town,reviewed_exact_capology_alias
+Premier League,Leeds,leeds,leeds,LEE,399.0,Leeds United,reviewed_exact_capology_alias
+Premier League,Leicester,leicester,leicester,LEI,1003.0,Leicester City,reviewed_exact_capology_alias
+Premier League,Liverpool,liverpool,liverpool,LIV,31.0,Liverpool FC,fbref_accepted_exact_alias
+Premier League,Luton Town,lutontown,luton-town,LUT,1031.0,Luton Town,fbref_accepted_exact_alias
+Premier League,Manchester City,manchestercity,manchester-city,MCI,281.0,Manchester City,fbref_accepted_exact_alias
+Premier League,Manchester United,manchesterunited,manchester-united,MUN,985.0,Manchester United,reviewed_exact_capology_alias
+Premier League,Middlesbrough,middlesbrough,middlesbrough,MID,,,unresolved
+Premier League,Newcastle,newcastle,newcastle,NEW,762.0,Newcastle United,reviewed_exact_capology_alias
+Premier League,Norwich,norwich,norwich,NOR,1123.0,Norwich City,reviewed_exact_capology_alias
+Premier League,Nottingham Forest,nottinghamforest,nottingham-forest,NTG,703.0,Nottingham Forest,reviewed_exact_capology_alias
+Premier League,QPR,qpr,qpr,QPR,,,unresolved
+Premier League,Sheffield United,sheffieldunited,sheffield-united,SHU,350.0,Sheffield United,reviewed_exact_capology_alias
+Premier League,Southampton,southampton,southampton,SOU,180.0,Southampton FC,fbref_accepted_exact_alias
+Premier League,Stoke City,stokecity,stoke-city,STK,512.0,Stoke City,fbref_accepted_exact_alias
+Premier League,Sunderland,sunderland,sunderland,SUN,,,unresolved
+Premier League,Swansea,swansea,swansea,SWA,2288.0,Swansea City,reviewed_exact_capology_alias
+Premier League,Tottenham,tottenham,tottenham,TOT,148.0,Tottenham Hotspur,fbref_accepted_exact_alias
+Premier League,Watford,watford,watford,WAT,1010.0,Watford FC,fbref_accepted_exact_alias
+Premier League,West Bromwich,westbromwich,west-bromwich,WBA,984.0,West Bromwich Albion,reviewed_exact_capology_alias
+Premier League,West Ham,westham,west-ham,WHU,379.0,West Ham United,fbref_accepted_exact_alias
+Premier League,Wolverhampton,wolverhampton,wolverhampton,WLV,543.0,Wolverhampton Wanderers,reviewed_exact_capology_alias
+Serie A,AC Milan,acmilan,ac-milan,MIL,5.0,AC Milan,reviewed_exact_capology_alias
+Serie A,Atalanta,atalanta,atalanta,ATT,800.0,Atalanta BC,fbref_accepted_exact_alias
+Serie A,Benevento,benevento,benevento,BNV,4171.0,Benevento Calcio,fbref_accepted_exact_alias
+Serie A,Bologna,bologna,bologna,BGN,1025.0,Bologna FC 1909,fbref_accepted_exact_alias
+Serie A,Brescia,brescia,brescia,BRE,19.0,Brescia Calcio (- 2025),fbref_accepted_exact_alias
+Serie A,Cagliari,cagliari,cagliari,CAG,1390.0,Cagliari Calcio,fbref_accepted_exact_alias
+Serie A,Carpi,carpi,carpi,CAR,,,unresolved
+Serie A,Cesena,cesena,cesena,CES,,,unresolved
+Serie A,Chievo Verona,chievoverona,chievo-verona,CVE,862.0,Chievo Verona,reviewed_exact_capology_alias
+Serie A,Como,como,como,COM,1047.0,Como 1907,reviewed_exact_capology_alias
+Serie A,Cremonese,cremonese,cremonese,CRE,2239.0,US Cremonese,fbref_accepted_exact_alias
+Serie A,Crotone,crotone,crotone,CRO,4083.0,FC Crotone,fbref_accepted_exact_alias
+Serie A,Empoli,empoli,empoli,EMP,749.0,FC Empoli,fbref_accepted_exact_alias
+Serie A,Fiorentina,fiorentina,fiorentina,FIO,430.0,ACF Fiorentina,fbref_accepted_exact_alias
+Serie A,Frosinone,frosinone,frosinone,FRO,8970.0,Frosinone Calcio,fbref_accepted_exact_alias
+Serie A,Genoa,genoa,genoa,GEN,252.0,Genoa CFC,fbref_accepted_exact_alias
+Serie A,Hellas Verona,hellasverona,hellas-verona,HEL,276.0,Hellas Verona,fbref_accepted_exact_alias
+Serie A,Inter Milan,intermilan,inter-milan,INT,46.0,Inter Milan,reviewed_exact_capology_alias
+Serie A,Juventus,juventus,juventus,JUV,506.0,Juventus FC,fbref_accepted_exact_alias
+Serie A,Lazio,lazio,lazio,LAZ,398.0,SS Lazio,fbref_accepted_exact_alias
+Serie A,Lecce,lecce,lecce,LEC,1005.0,US Lecce,fbref_accepted_exact_alias
+Serie A,Monza,monza,monza,MZN,2919.0,AC Monza,fbref_accepted_exact_alias
+Serie A,Napoli,napoli,napoli,NAP,6195.0,SSC Napoli,fbref_accepted_exact_alias
+Serie A,Palermo,palermo,palermo,PAL,,,unresolved
+Serie A,Parma,parma,parma,PAR,130.0,Parma Calcio 1913,fbref_accepted_exact_alias
+Serie A,Pescara,pescara,pescara,PES,,,unresolved
+Serie A,Roma,roma,roma,ROM,12.0,AS Roma,fbref_accepted_exact_alias
+Serie A,SPAL,spal,spal,SPA,2722.0,SPAL,fbref_accepted_exact_alias
+Serie A,Salernitana,salernitana,salernitana,SAL,380.0,US Salernitana 1919,fbref_accepted_exact_alias
+Serie A,Sampdoria,sampdoria,sampdoria,SAM,1038.0,UC Sampdoria,fbref_accepted_exact_alias
+Serie A,Sassuolo,sassuolo,sassuolo,SAS,6574.0,US Sassuolo,fbref_accepted_exact_alias
+Serie A,Spezia,spezia,spezia,SPZ,3522.0,Spezia Calcio,fbref_accepted_exact_alias
+Serie A,Torino,torino,torino,TOR,416.0,Torino FC,fbref_accepted_exact_alias
+Serie A,Udinese,udinese,udinese,UDI,410.0,Udinese Calcio,fbref_accepted_exact_alias
+Serie A,Venezia,venezia,venezia,VEN,607.0,Venezia FC,fbref_accepted_exact_alias

@@ -1,0 +1,12 @@
+check,passed,notes
+phase4_verified,True,Phase 4 verifier passed before execution.
+only_wage_holdout_opened,True,Risk holdouts remain sealed.
+future_role_underpowered,True,No role scoring.
+value_downside_underpowered,True,No downside scoring.
+prior_2024_exposure_not_hidden,True,Phase 4 aggregate exposure is explicit.
+wage_player_identity_disjoint,True,No player crosses development/final partitions.
+wage_holdout_rows_frozen,True,Readiness and evaluation cohorts agree.
+wage_intervals_ordered,True,Every estimate lies within its reference interval.
+wage_refusals_explained,True,No silent refusal.
+no_artifact_serialized,True,Phase 5 creates evidence only.
+v1_hashes_unchanged,True,Frozen V1 remains byte-identical.

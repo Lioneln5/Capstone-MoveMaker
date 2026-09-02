@@ -1,0 +1,8 @@
+{
+  "base_manifest_files": 69,
+  "observed_salary_files": 50,
+  "observed_extension_files": 44,
+  "observed_payroll_files": 55,
+  "observed_transfer_window_files": 55,
+  "result": "Legacy salary/extension rebuilding remains version-gated. Payroll and transfer-window files have a separate verified club-financial-context ingestion path."
+}

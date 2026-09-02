@@ -1,0 +1,16 @@
+check,passed,observed,expected,note
+event_grain,True,"{'rows': 2805, 'duplicates': 0}","{'rows': 2805, 'duplicates': 0}",Canonical extension grain is preserved.
+latest_game_date_used_predecision,True,0,0,Operational evidence must be strictly before signing.
+latest_lineup_date_used_predecision,True,0,0,Operational evidence must be strictly before signing.
+latest_appearance_date_used_predecision,True,0,0,Operational evidence must be strictly before signing.
+latest_incoming_transfer_date_used_predecision,True,0,0,Operational evidence must be strictly before signing.
+valuation_not_future,True,0,0,"Valuations may be on, never after, signing date."
+role_level_available_matches_features,True,0,0,Availability is explicit and reconstructible.
+role_trajectory_available_matches_features,True,0,0,Availability is explicit and reconstructible.
+squad_onfield_available_matches_features,True,0,0,Availability is explicit and reconstructible.
+squad_value_incoming_available_matches_features,True,0,0,Availability is explicit and reconstructible.
+rates_bounded,True,True,True,Role rates stay within defensible bounds.
+percentiles_bounded,True,True,True,Relative ranks are valid percentiles.
+no_targets,True,[],[],Feature artifact contains no outcome.
+finite_model_features,True,True,True,No infinite model input.
+v1_frozen,True,True,True,All frozen V1 files remain byte-identical.

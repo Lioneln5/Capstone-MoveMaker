@@ -1,0 +1,35 @@
+{
+  "binary_endpoints": [
+    "temporary_first_24m",
+    "permanent_first_24m",
+    "permanent_relationship_ended_24m",
+    "strict_meaningful_stay_24m"
+  ],
+  "binary_evidence_counts": {
+    "inconclusive": 20
+  },
+  "checks_passed": 10,
+  "checks_total": 10,
+  "deployment_changed": false,
+  "development_evaluation_years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "final_holdout_opened": false,
+  "model_binaries_written": false,
+  "movement_contract_version": "engine_v2_movement_targets_v1_2026-09-01",
+  "multinomial_evidence_counts": {
+    "inconclusive": 5
+  },
+  "role_squad_contract_version": "engine_v2_role_squad_v1_2026-09-01",
+  "v1_unchanged": true,
+  "variants": [
+    "R1_current_role_structure",
+    "R2_role_trajectory",
+    "S1_onfield_position_competition",
+    "S2_value_and_incoming_competition",
+    "C1_combined_role_and_competition"
+  ]
+}

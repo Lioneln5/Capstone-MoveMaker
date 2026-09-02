@@ -1,0 +1,87 @@
+family,status,files,bytes,note
+Data/.DS_Store,support_or_filesystem_metadata,1,12292,"README, workflow, source docs, or filesystem metadata; see inventory."
+Data/2017-2024,raw_integrated_selectively,7,4560157,See domain-level report and table schema/column coverage; not all fields reach models.
+Data/2024-2026,raw_live_overlay_input_plus_unused_light_exports,4,5522402,Full files read by build_live_input_refresh; light files not read by that builder.
+Data/Open-Data-Master,raw_StatsBomb_partially_extracted,8995,16129261081,Full local payload audit; most outside selected 2017-2024 case-study scope. Local completeness does not imply current upstream completeness.
+Data/TransferMarkt,raw_integrated_selectively,13,739523614,See domain-level report and table schema/column coverage; not all fields reach models.
+Data/app-html,reports_presentations_or_exports,2,45001,Not independent training data; preserve source/provenance distinction.
+Data/injury,thesis_injury_research_only,2,1606994,Separate 15603-row source used in refinement/repair; not the supplemental 143195-row injury source.
+Data/leagues,raw_contract_plus_club_financial_inputs,229,29316743,"50 salary, 44 extension, 55 payroll and 55 transfer-window files. The 110 club-season files feed the separately verified financial-context builder; later extension pages remain outside the base/overlay path."
+Data/processed,legacy_root_level_matrices,7,25339231,Old transfer cohort/player features/crosswalk plus notebook model_dataset and model_dataset_with_injuries; no selected current model loading those notebook matrices.
+Data/processed/business_metric_product,V1_business_reference_data,14,315480,Offer comparison reference consumed by historical profile builder; not an independent predictive source.
+Data/processed/business_metric_translation_audit,historical_research_or_verification_outputs,19,1527987,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/canonical_integration,core_integration_and_V1_runtime,22,1156000964,Player/club dimensions and valuation history load in V1; transfer history builds extension outcomes. Snapshot evidence and reviews are not all predictors.
+Data/processed/canonical_performance,core_integration_partial_model_use,19,1513386377,Basic/advanced seasonal features join extension master and V1 retriever; V2 selected candidates no longer use prior seasonal volume or advanced stats.
+Data/processed/capital_at_risk_integration,historical_research_or_verification_outputs,16,387867,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/capology_club_financial_context,V2_club_financial_context_features,12,1736227,"Canonical lagged payroll, transfer-window and squad context built from the newly added Capology club-season files."
+Data/processed/capology_club_financial_context_audit,V2_club_financial_context_verification,15,1676672,"Independent parsing, identity, timing and coverage evidence for the club-season context build."
+Data/processed/capology_contracts,core_integration_and_V1_runtime,15,16968048,19770 base salary rows and 2805 extension events; source season inventory differs from newer raw additions.
+Data/processed/coarse_club_context_diagnostic,historical_research_or_verification_outputs,7,1500951,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/compatibility_features,legacy_engineered_research_not_current_engine,20,729832893,"Broad lagged player features, role-season standardized styles, prior-club teammate context and preference interactions; not ported into extension V2."
+Data/processed/compatibility_model_ablations,historical_research_or_verification_outputs,20,4800474,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/compatibility_models,historical_research_or_verification_outputs,17,1041411,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/compatibility_targets,legacy_transfer_targets,30,6809977,Transfer-scope target/cohort matrices; not current extension inputs.
+Data/processed/contract_extension_integration,current_V2_training_spine_and_V1_history,15,14513861,"Master is source for current V2 development. Many columns are targets, identifiers, or unused context, not predictors."
+Data/processed/contract_financial_exposure_benchmark,historical_research_or_verification_outputs,20,11514264,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/contribution_model_refinement,superseded_research_evidence,24,1641370,Thesis injury and refinement research; later repair corrects methodological issues. No blanket inference that all results are valid.
+Data/processed/contribution_model_repair,historical_repair_and_injury_diagnostics,33,2081261,"C6 repair selected for frozen V1; corrected thesis-injury diagnostics remain separate, not selected injury model inputs."
+Data/processed/data_usage_audit_2026_08_31,historical_research_or_verification_outputs,24,11801268,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/deployment_models,frozen_V1_artifacts,27,226359,16 fitted artifacts retained; API scoring disabled by default. Backups retained. No V2 artifacts promoted.
+Data/processed/engine_v2_calibration_reliability,V2_current_research_evidence,16,4221173,Phase 3 calibration/support evidence.
+Data/processed/engine_v2_candidate_contract,V2_current_research_evidence,19,2258222,Phase 4 continuity/wage candidates and result contract evidence.
+Data/processed/engine_v2_club_financial_context_experiment,V2_rejected_mechanism_evidence,17,2185438,Club financial context did not repair continuity and remains non-deployed.
+Data/processed/engine_v2_feature_specification,V2_current_research_evidence,16,4275346,"Phase 2 feature candidates and policy audit, not production artifacts."
+Data/processed/engine_v2_final_evaluation_gate,V2_release_gate_evidence,13,76624,Phase 5 blocks promotion; prior outcomes not re-evaluated by this audit.
+Data/processed/engine_v2_lagged_club_behavior,V2_research_feature_infrastructure,9,1607197,Decision-time lagged club movement and extension behavior; row-level profiles remain local.
+Data/processed/engine_v2_lagged_club_behavior_experiment,V2_rejected_mechanism_evidence,20,10450760,Lagged club behavior did not clear the evidence gate.
+Data/processed/engine_v2_manager_tactical_experiment,V2_rejected_mechanism_evidence,19,10985181,Manager/tactical blocks did not clear the evidence gate.
+Data/processed/engine_v2_manager_tactical_profiles,V2_research_feature_infrastructure,9,1670616,"Decision-time manager, formation and player-manager context; row-level profiles remain local."
+Data/processed/engine_v2_movement_scope_closeout,V2_product_scope_contract,10,16821,Retires generic continuity and freezes replacement statuses without deploying numeric outputs.
+Data/processed/engine_v2_movement_state_profile_diagnostic,V2_movement_decomposition_evidence,20,1801960,"Separates meaningful retention, temporary displacement and permanent separation without opening the final holdout."
+Data/processed/engine_v2_role_squad_experiment,V2_rejected_mechanism_evidence,19,11542968,Role and squad blocks did not clear the evidence gate.
+Data/processed/engine_v2_role_squad_profiles,V2_research_feature_infrastructure,9,1889188,Decision-time player role trajectory and player-relative squad competition; row-level profiles remain local.
+Data/processed/engine_v2_validity_boundary,V2_current_research_governance,13,22498,Phase 1 boundary checks; not a new raw data source.
+Data/processed/extension_opportunity_diagnostic,historical_research_or_verification_outputs,19,6806796,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/extension_survival_diagnostic,historical_research_or_verification_outputs,19,24683785,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/extension_value_preservation_diagnostic,historical_research_or_verification_outputs,18,19523739,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/fbref_2017_2024_clean,integrated_and_legacy_research,14,9013676,Cleaned seasonal data feeds crosswalks/performance and legacy compatibility. V2 selected feature lists exclude advanced stats.
+Data/processed/fee_benchmarking_model,historical_research_or_verification_outputs,19,3806374,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/financial_module_feasibility,historical_research_or_verification_outputs,16,11318610,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/football_datalake_audit,historical_research_or_verification_outputs,16,1293163,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/football_datalake_clean,mixed_integrated_and_dormant,24,1452156381,"Valuations/transfers/profiles/performance integrated; injury spells, career nationals, lifetime teammate edges, season standings/manager fields and hierarchy mostly outside extension modeling."
+Data/processed/frozen_contract_sources,frozen_research_copy,18,14894796,"Intentional reproducibility snapshot, not independent additional observations."
+Data/processed/integrated_contract_profile,historical_product_research,20,3230429,Profile experiments/reference outputs; distinguish from runtime business reference files.
+Data/processed/integration_crosswalks,identity_infrastructure,18,37497858,Accepted source links support canonical integration. Reading a table for entity aliases does not use its substantive metrics.
+Data/processed/landmark_monitoring_experiment,historical_research_or_verification_outputs,17,9150757,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/live_input_refresh,V1_runtime_overlay_only,5,7940838,"Newer performance and salary overlays, not appended to frozen historical research. V2 has no deployed inference path."
+Data/processed/market_value_calibration_experiment,historical_research_or_verification_outputs,16,15455454,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/market_value_downside_model,historical_research_or_verification_outputs,15,20597241,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/market_value_downside_product,historical_research_or_verification_outputs,12,1215233,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/opportunity_transferability_decomposition,historical_research_or_verification_outputs,8,2109716,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/paid_transfer_underutilization_model,historical_research_or_verification_outputs,18,5595247,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/paid_transfer_underutilization_refinement,historical_research_or_verification_outputs,21,5465110,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/player_club_case_studies,historical_research_or_verification_outputs,15,93531,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/retention_diagnostic,historical_research_or_verification_outputs,13,2606008,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/role_contextualization_diagnostic,nondeployed_candidate_research,72,1785074,Role-aware/removal comparisons and candidate joblib files; not deployed.
+Data/processed/rolling_origin_stability,historical_research_or_verification_outputs,28,4411514,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/statsbomb_case_studies,case_study_processed_not_engine,20,203936501,642 selected matches; workbook and historical case availability evidence. Crosswalks review-only; no selected V1/V2 model feature input.
+Data/processed/subgroup_stability,historical_research_or_verification_outputs,15,470819,"Generated experiment outputs, not independent raw observations. See source-manifest and static-code evidence for exact consumers."
+Data/processed/transfermarkt_clean,core_integration_partial_runtime,27,1111711965,Appearances/games directly feed exact windows and V1; lineups feed seasonal starts. Manager/formation columns are retained but not current model inputs.
+Data/processed/transfermarkt_merged,legacy_transfer_spine,18,172649571,Broad 35139-transfer master and transfer_core used by old experiments/notebook; not current extension master.
+Data/slides,reports_presentations_or_exports,2,627658,Not independent training data; preserve source/provenance distinction.
+Data/source_backups,preservation_backup,1,8196,Intentional copies; not unused unique observations and not a deletion recommendation.
+Data/source_backups/capology_contracts_original,preservation_backup,69,18544319,Intentional copies; not unused unique observations and not a deletion recommendation.
+Data/source_backups/fbref_2017_2024_original,preservation_backup,7,4560157,Intentional copies; not unused unique observations and not a deletion recommendation.
+Data/source_backups/football_datalake_original,preservation_backup,11,363634524,Intentional copies; not unused unique observations and not a deletion recommendation.
+Data/source_backups/transfermarkt_original,preservation_backup,12,739517466,Intentional copies; not unused unique observations and not a deletion recommendation.
+football-datasets-main/.DS_Store,support_or_filesystem_metadata,1,6148,"README, workflow, source docs, or filesystem metadata; see inventory."
+football-datasets-main/.gitattributes,support_or_filesystem_metadata,1,200,"README, workflow, source docs, or filesystem metadata; see inventory."
+football-datasets-main/.github/FUNDING.yml,support_or_filesystem_metadata,1,62,"README, workflow, source docs, or filesystem metadata; see inventory."
+football-datasets-main/.github/workflows,support_or_filesystem_metadata,1,2381,"README, workflow, source docs, or filesystem metadata; see inventory."
+football-datasets-main/README.md,support_or_filesystem_metadata,1,12770,"README, workflow, source docs, or filesystem metadata; see inventory."
+football-datasets-main/README_data.md,support_or_filesystem_metadata,1,26130,"README, workflow, source docs, or filesystem metadata; see inventory."
+football-datasets-main/datalake/.DS_Store,support_or_filesystem_metadata,1,6148,"README, workflow, source docs, or filesystem metadata; see inventory."
+football-datasets-main/datalake/transfermarkt,raw_integrated_selectively,12,363644768,See domain-level report and table schema/column coverage; not all fields reach models.
+git,local_git_metadata_copy,164,54686254,"Objects/refs, not a football dataset; not read as .git by the current checkout. No removal performed."
+output,reports_presentations_or_exports,3,150634,Not independent training data; preserve source/provenance distinction.
+outputs,reports_presentations_or_exports,252,264903028,Not independent training data; preserve source/provenance distinction.

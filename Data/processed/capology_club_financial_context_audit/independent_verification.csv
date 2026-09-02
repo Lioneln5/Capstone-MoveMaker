@@ -1,0 +1,21 @@
+check,observed,expected,passed,note
+required_outputs_present,13,13,True,All audit deliverables exist.
+manifest_rows,110,110,True,One manifest row per source CSV.
+manifest_paths_unique,0,0,True,No source file is counted twice.
+raw_source_hashes_stable,0,0,True,Every raw CSV is byte-identical to its audit manifest hash.
+source_checks_all_pass,17,17,True,All primary audit checks pass independently loaded output.
+panel_row_counts,1074 payroll; 1074 transfer,1074 each,True,Expected club-season count.
+payroll_key_unique,0,0,True,Payroll grain is unique.
+transfer_key_unique,0,0,True,Transfer-window grain is unique.
+source_family_keys_match,0,0,True,Exact paired club-season universe.
+paired_merge_complete,1074,1074,True,Outer merge contains no source-only records.
+required_parsed_values_complete,0,0,True,Optional bonus excluded from completeness requirement.
+balance_identity,1.0,<=2 EUR,True,Income minus expense independently recomputed.
+position_group_payroll_unavailable,25776,25776,True,"Every position-group cell is a paywalled Locked placeholder, not usable data."
+canonical_link_summary,0.976723; 16 unresolved,0.976723; 16 unresolved,True,Summary agrees with panel.
+extension_event_grain,0,0,True,One coverage row per canonical extension event.
+extension_event_count,2805,2805,True,Exact canonical extension universe.
+evaluation_cohort_membership_exact,0,0,True,The 839-row published evaluation cohort is identified exactly.
+extension_coverage_summary_reconciles,0,0,True,Coverage summary exactly reconciles to event-level audit.
+evaluation_missingness_classified,44,44,True,"All 44 missing prior-season rows have an event-season panel, consistent with promoted-club coverage loss."
+frozen_v1_artifacts_unchanged,0,0,True,All 24 previously frozen V1 artifact hashes remain exact.

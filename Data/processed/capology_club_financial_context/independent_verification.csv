@@ -1,0 +1,30 @@
+check,observed,expected,passed,note
+required_outputs_present,10,10,True,Complete build deliverable set.
+source_manifest_count,110,110,True,Exactly 110 unique raw sources.
+raw_source_hashes_exact,0,0,True,All raw inputs remain byte-identical to build manifest.
+reviewed_alias_map_exact,0,0,True,All 16 reviewed aliases map to the predeclared canonical IDs.
+shared_alias_map_exact,0,0,True,Shared Capology linker contains the reviewed map.
+alias_transfermarkt_evidence,16,16,True,Every accepted alias has matching Transfermarkt club-ID URL evidence.
+build_checks_all_pass,13,13,True,Primary builder gates all pass.
+canonical_grain,1074 rows; 164 clubs,1074 rows; 164 clubs,True,One canonical row per club-season.
+all_identity_links_complete,1074,1074,True,No unresolved canonical identity.
+stable_ids_unique,0,0,True,Stable IDs are unique.
+raw_values_reconstructed_exactly,0,0,True,Every retained raw value independently re-parses from source.
+payroll_percentile_recomputed,5.551115123125783e-17,<=1e-12,True,League-season ranks independently recomputed.
+payroll_median_ratio_recomputed,3.552713678800501e-15,<=1e-12,True,Contemporaneous league median ratio independently recomputed.
+exact_prior_season_history,0,0,True,History flags never bridge a missing top-flight season.
+payroll_growth_recomputed,0,0,True,Every one-year growth value independently recomputed.
+rolling_spend_recomputed,0,0,True,Every three-season spend mean independently recomputed.
+lineage_not_future,0,0,True,No feature lineage extends beyond row season.
+retrospective_adjusted_fields_excluded,0,0,True,No 2025-adjusted Capology field is retained.
+wage_structure_gate_exact,0,0,True,Coverage rule independently reproduces 666 eligible club-seasons.
+wage_structure_invalid_rows_null,0,0,True,No distribution feature escapes the coverage gate.
+candidate_feature_allowlist_exact,0,0,True,Field dictionary permits only preregistered candidates.
+field_dictionary_complete,64 rows; 0 duplicates,64 rows; 0 duplicates,True,One dictionary row per table field.
+extension_event_grain,2805 rows,2805 unique,True,One coverage row per canonical extension event.
+evaluation_feature_coverage,795/839,795/839,True,Decision-time-safe evaluation coverage is exact.
+promoted_boundary_preserved,44,44,True,No signing-season value silently fills promoted-club prior-season gaps.
+coverage_summary_reconciles,795/839,795/839,True,Summary reconciles to event table.
+output_manifest_hashes_exact,0,0,True,All builder outputs remain exact.
+run_summary_reconciles,1074; 666,1074; 666,True,Run summary matches canonical table.
+frozen_v1_artifacts_unchanged,0,0,True,All 24 frozen V1 hashes remain exact.

@@ -1,0 +1,25 @@
+{
+  "audit_utc": "2026-09-02T04:50:12.949373+00:00",
+  "file_count": 10899,
+  "logical_bytes": 25425706247,
+  "csv_tables": 1171,
+  "csv_parse_errors": [],
+  "invalid_statsbomb_payloads": [
+    {
+      "path": "Data/Open-Data-Master/open-data-master/open-data-master/data/three-sixty/3845506.json",
+      "parse_status": "INVALID: JSONDecodeError: Expecting ',' delimiter: line 92794 column 3 (char 2637824)"
+    }
+  ],
+  "changed_source_files_size_mtime": [],
+  "changed_v1_files_sha256": [],
+  "method": "Full filesystem inventory; full CSV row parse; full StatsBomb payload parse/hash; selected source column profiles; static code evidence; artifact feature inspection; no training/scoring.",
+  "limits": [
+    "Inventory is local, not proof of completeness against a current upstream source.",
+    "Static references do not prove runtime execution or predictive contribution.",
+    "Raw/external source preservation checked by size/mtime and frozen V1 by SHA256; generated evidence may be refreshed after inventory.",
+    "Extension overlaps are availability, not outcome/performance metrics or confirmed temporal validity.",
+    "StatsBomb identity overlap is unreviewed candidate matching, not approved linkage.",
+    "Injury-record presence is positive evidence only; absence cannot establish health or reporting coverage.",
+    "Standings overlap is any competition in previous completed season, not confirmed same-league or publication-safe data."
+  ]
+}

@@ -1,0 +1,4 @@
+population,observed_count,status,implication
+observed extension recipients,2805.0,observed,Supports outcome modeling conditional on an extension event.
+players considered but not extended,,not_observable_in_sources,Selection into the historical extension cohort cannot be modeled or corrected from current public sources.
+all incumbent players eligible for renewal,,not_observable_in_sources,No validated base rate for extend-versus-not decisions.

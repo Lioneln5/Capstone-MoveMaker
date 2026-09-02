@@ -1,0 +1,11 @@
+check,passed,observed,expected,note
+four_binary_endpoints,True,4,4,All decomposed movement questions were tested.
+five_predeclared_variants,True,5,5,No post-outcome block was added.
+four_rolling_origins,True,4,4,Only established development origins were used.
+holdout_sealed,True,2023,2023,No 2024+ target was evaluated.
+binary_loss_formula,True,0.0,<=1e-14,Paired Brier deltas reconstruct.
+multinomial_probability_sum,True,2.220446049250313e-16,<=1e-12,Named movement-state probabilities are coherent.
+matched_row_comparisons,True,True,True,Every candidate baseline uses identical rows.
+features_present,True,21,21,Every frozen feature has development observations.
+research_only,True,True,True,This diagnostic cannot authorize deployment.
+v1_frozen,True,24,24,All frozen V1 files remain byte-identical.

@@ -1,0 +1,11 @@
+{
+  "earliest_eligible_extension_year": 2024,
+  "requirements": [
+    "Outcome horizon must be completely observable as of scoring date.",
+    "No feature, calibration, support threshold, or subgroup rule may be changed after opening the holdout.",
+    "Player identity clusters must not cross fit and test partitions.",
+    "Every module must pass its pooled, calibration, refusal, and subgroup gates independently."
+  ],
+  "selection_and_calibration_evidence_through": 2023,
+  "status": "reserved_not_evaluated"
+}

@@ -1,0 +1,94 @@
+{
+  "baseline_features": [
+    "age_at_signing",
+    "canonical_position",
+    "league",
+    "log_market_value_at_signing",
+    "pre365_same_club_all_competition_opportunity_share",
+    "pre365_same_club_all_competition_appearance_rate",
+    "age_distance_from_27_squared"
+  ],
+  "binary_endpoints": {
+    "permanent_first_24m": "target_permanent_first_24m",
+    "permanent_relationship_ended_24m": "target_permanent_relationship_ended_24m",
+    "strict_meaningful_stay_24m": "target_strict_meaningful_stay_24m",
+    "temporary_first_24m": "target_temporary_first_24m"
+  },
+  "contract_version": "engine_v2_movement_targets_v1_2026-09-01",
+  "development_origins": [
+    [
+      "origin_2020",
+      2018,
+      2019,
+      2020
+    ],
+    [
+      "origin_2021",
+      2019,
+      2020,
+      2021
+    ],
+    [
+      "origin_2022",
+      2020,
+      2021,
+      2022
+    ],
+    [
+      "origin_2023",
+      2021,
+      2022,
+      2023
+    ]
+  ],
+  "familywise_interval": "98.75% player-cluster bootstrap interval across four variants within each endpoint family",
+  "future_holdout_policy": "2024+ target outcomes remain sealed",
+  "multinomial_state_order": [
+    "no_outbound_24m",
+    "temporary_first_24m",
+    "permanent_first_24m"
+  ],
+  "primary_loss": "paired Brier loss versus baseline retrained on identical rows",
+  "promotion_policy": "No candidate can be deployed from this diagnostic; promising blocks proceed only to combined development tests.",
+  "support_policy": "score for development audit, but count unsupported rows as operational refusals",
+  "variant_blocks": {
+    "C1_general_club_movement": [
+      "club_outbound_events_730d_log1p",
+      "club_outbound_unique_players_730d_log1p",
+      "club_transaction_churn_730d_log1p",
+      "club_inbound_outbound_ratio_730d_log",
+      "club_temporary_outbound_share_1095d",
+      "club_loan_return_within_temporary_share_1095d"
+    ],
+    "C2_role_conditioned_movement": [
+      "club_position_outbound_typed_count_1095d_log1p",
+      "club_position_temporary_share_1095d",
+      "club_ageband_outbound_typed_count_1095d_log1p",
+      "club_ageband_permanent_share_1095d"
+    ],
+    "C3_mature_extension_history": [
+      "club_mature_prior_extension_count_log1p",
+      "club_prior_extension_temporary_share",
+      "club_prior_extension_permanent_first_share",
+      "club_prior_extension_strict_stay_share"
+    ],
+    "C4_combined_behavior": [
+      "club_outbound_events_730d_log1p",
+      "club_outbound_unique_players_730d_log1p",
+      "club_transaction_churn_730d_log1p",
+      "club_inbound_outbound_ratio_730d_log",
+      "club_temporary_outbound_share_1095d",
+      "club_loan_return_within_temporary_share_1095d",
+      "club_position_outbound_typed_count_1095d_log1p",
+      "club_position_temporary_share_1095d",
+      "club_ageband_outbound_typed_count_1095d_log1p",
+      "club_ageband_permanent_share_1095d",
+      "club_mature_prior_extension_count_log1p",
+      "club_prior_extension_temporary_share",
+      "club_prior_extension_permanent_first_share",
+      "club_prior_extension_strict_stay_share",
+      "club_position_mature_prior_extension_count_log1p",
+      "club_position_prior_extension_temporary_share"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+check,passed,notes
+continuity_four_variants,True,Declared repair candidates only.
+continuity_four_rolling_origins,True,Chronological evaluation retained.
+continuity_age_curve_improves_chronology,True,Player-cluster CI excludes zero.
+continuity_coverage_repaired,True,Missing historical volume no longer drives refusal.
+continuity_big_five_failure_not_hidden,True,Ligue 1 limitation remains explicit.
+wage_benchmark_improves_chronology,True,Historical salary context adds signal.
+wage_interval_coverage_reasonable,True,Reference range is empirically audited.
+wage_refusal_within_limit,True,Benchmark is operationally available.
+targets_not_forced_mutually_exclusive,True,Observed labels prove cards cannot be normalized as mutually exclusive.
+contract_examples_validate,True,Serialized examples satisfy the V2 contract.
+no_overall_scores,True,No universal score reintroduced.
+no_model_artifacts_written,True,Phase 4 does not serialize candidates.
+v1_artifacts_remain_frozen,True,All Phase-0 hashes remain byte-identical.

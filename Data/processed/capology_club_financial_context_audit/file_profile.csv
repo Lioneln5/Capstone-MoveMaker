@@ -1,0 +1,111 @@
+source_relative_path,source_family,league,season,rows,expected_rows,unique_club_slugs,duplicate_club_slugs,missing_club_name,missing_club_slug,missing_club_code,canonical_club_links,nonnull_weekly_gross_eur,nonnull_annual_gross_eur,nonnull_total_gross_eur,nonnull_adjusted_total_gross_eur,nonnull_income_eur,nonnull_expense_eur,nonnull_balance_eur,nonnull_adjbalance_eur,nonnull_players,nonnull_foreign,nonnull_age
+Data/leagues/bundesliga/Payrolls/bundesliga_payroll_2014_2015_capology.csv,payroll,Bundesliga,2014-2015,18,18,18,0,0,0,0,18,18.0,18.0,18.0,18.0,,,,,,,
+Data/leagues/bundesliga/Payrolls/bundesliga_payroll_2015_2016_capology.csv,payroll,Bundesliga,2015-2016,18,18,18,0,0,0,0,17,18.0,18.0,18.0,18.0,,,,,,,
+Data/leagues/bundesliga/Payrolls/bundesliga_payroll_2016_2017_capology.csv,payroll,Bundesliga,2016-2017,18,18,18,0,0,0,0,17,18.0,18.0,18.0,18.0,,,,,,,
+Data/leagues/bundesliga/Payrolls/bundesliga_payroll_2017_2018_capology.csv,payroll,Bundesliga,2017-2018,18,18,18,0,0,0,0,18,18.0,18.0,18.0,18.0,,,,,,,
+Data/leagues/bundesliga/Payrolls/bundesliga_payroll_2018_2019_capology.csv,payroll,Bundesliga,2018-2019,18,18,18,0,0,0,0,18,18.0,18.0,18.0,18.0,,,,,,,
+Data/leagues/bundesliga/Payrolls/bundesliga_payroll_2019_2020_capology.csv,payroll,Bundesliga,2019-2020,18,18,18,0,0,0,0,18,18.0,18.0,18.0,18.0,,,,,,,
+Data/leagues/bundesliga/Payrolls/bundesliga_payroll_2020_2021_capology.csv,payroll,Bundesliga,2020-2021,18,18,18,0,0,0,0,18,18.0,18.0,18.0,18.0,,,,,,,
+Data/leagues/bundesliga/Payrolls/bundesliga_payroll_2021_2022_capology.csv,payroll,Bundesliga,2021-2022,18,18,18,0,0,0,0,18,18.0,18.0,18.0,18.0,,,,,,,
+Data/leagues/bundesliga/Payrolls/bundesliga_payroll_2022_2023_capology.csv,payroll,Bundesliga,2022-2023,18,18,18,0,0,0,0,18,18.0,18.0,18.0,18.0,,,,,,,
+Data/leagues/bundesliga/Payrolls/bundesliga_payroll_2023_2024_capology.csv,payroll,Bundesliga,2023-2024,18,18,18,0,0,0,0,18,18.0,18.0,18.0,18.0,,,,,,,
+Data/leagues/bundesliga/Payrolls/bundesliga_payroll_2024_2025_capology.csv,payroll,Bundesliga,2024-2025,18,18,18,0,0,0,0,17,18.0,18.0,18.0,18.0,,,,,,,
+Data/leagues/la liga/Payrolls/laliga_payroll_2014_2015_capology.csv,payroll,La Liga,2014-2015,20,20,20,0,0,0,0,19,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/la liga/Payrolls/laliga_payroll_2015_2016_capology.csv,payroll,La Liga,2015-2016,20,20,20,0,0,0,0,19,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/la liga/Payrolls/laliga_payroll_2016_2017_capology.csv,payroll,La Liga,2016-2017,20,20,20,0,0,0,0,19,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/la liga/Payrolls/laliga_payroll_2017_2018_capology.csv,payroll,La Liga,2017-2018,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/la liga/Payrolls/laliga_payroll_2018_2019_capology.csv,payroll,La Liga,2018-2019,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/la liga/Payrolls/laliga_payroll_2019_2020_capology.csv,payroll,La Liga,2019-2020,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/la liga/Payrolls/laliga_payroll_2020_2021_capology.csv,payroll,La Liga,2020-2021,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/la liga/Payrolls/laliga_payroll_2021_2022_capology.csv,payroll,La Liga,2021-2022,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/la liga/Payrolls/laliga_payroll_2022_2023_capology.csv,payroll,La Liga,2022-2023,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/la liga/Payrolls/laliga_payroll_2023_2024_capology.csv,payroll,La Liga,2023-2024,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/la liga/Payrolls/laliga_payroll_2024_2025_capology.csv,payroll,La Liga,2024-2025,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/ligue1/Payrolls/ligue1_payroll_2014_2015_capology.csv,payroll,Ligue 1,2014-2015,20,20,20,0,0,0,0,18,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/ligue1/Payrolls/ligue1_payroll_2015_2016_capology.csv,payroll,Ligue 1,2015-2016,20,20,20,0,0,0,0,18,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/ligue1/Payrolls/ligue1_payroll_2016_2017_capology.csv,payroll,Ligue 1,2016-2017,20,20,20,0,0,0,0,18,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/ligue1/Payrolls/ligue1_payroll_2017_2018_capology.csv,payroll,Ligue 1,2017-2018,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/ligue1/Payrolls/ligue1_payroll_2018_2019_capology.csv,payroll,Ligue 1,2018-2019,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/ligue1/Payrolls/ligue1_payroll_2019_2020_capology.csv,payroll,Ligue 1,2019-2020,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/ligue1/Payrolls/ligue1_payroll_2020_2021_capology.csv,payroll,Ligue 1,2020-2021,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/ligue1/Payrolls/ligue1_payroll_2021_2022_capology.csv,payroll,Ligue 1,2021-2022,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/ligue1/Payrolls/ligue1_payroll_2022_2023_capology.csv,payroll,Ligue 1,2022-2023,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/ligue1/Payrolls/ligue1_payroll_2023_2024_capology.csv,payroll,Ligue 1,2023-2024,18,18,18,0,0,0,0,18,18.0,18.0,18.0,18.0,,,,,,,
+Data/leagues/ligue1/Payrolls/ligue1_payroll_2024_2025_capology.csv,payroll,Ligue 1,2024-2025,18,18,18,0,0,0,0,18,18.0,18.0,18.0,18.0,,,,,,,
+Data/leagues/premier league/Payrolls/PremierLeague_payrolls_2014_2015_capology.csv,payroll,Premier League,2014-2015,20,20,20,0,0,0,0,17,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/premier league/Payrolls/PremierLeague_payrolls_2015_2016_capology.csv,payroll,Premier League,2015-2016,20,20,20,0,0,0,0,19,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/premier league/Payrolls/PremierLeague_payrolls_2016_2017_capology.csv,payroll,Premier League,2016-2017,20,20,20,0,0,0,0,17,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/premier league/Payrolls/PremierLeague_payrolls_2017_2018_capology.csv,payroll,Premier League,2017-2018,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/premier league/Payrolls/PremierLeague_payrolls_2018_2019_capology.csv,payroll,Premier League,2018-2019,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/premier league/Payrolls/PremierLeague_payrolls_2019_2020_capology.csv,payroll,Premier League,2019-2020,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/premier league/Payrolls/PremierLeague_payrolls_2020_2021_capology.csv,payroll,Premier League,2020-2021,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/premier league/Payrolls/PremierLeague_payrolls_2021_2022_capology.csv,payroll,Premier League,2021-2022,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/premier league/Payrolls/PremierLeague_payrolls_2022_2023_capology.csv,payroll,Premier League,2022-2023,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/premier league/Payrolls/PremierLeague_payrolls_2023_2024_capology.csv,payroll,Premier League,2023-2024,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/premier league/Payrolls/PremierLeague_payrolls_2024_2025_capology.csv,payroll,Premier League,2024-2025,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/serie a/Payrolls/SeriaA_payrolls_2014_2015_capology.csv,payroll,Serie A,2014-2015,20,20,20,0,0,0,0,18,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/serie a/Payrolls/SeriaA_payrolls_2015_2016_capology.csv,payroll,Serie A,2015-2016,20,20,20,0,0,0,0,18,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/serie a/Payrolls/SeriaA_payrolls_2016_2017_capology.csv,payroll,Serie A,2016-2017,20,20,20,0,0,0,0,18,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/serie a/Payrolls/SeriaA_payrolls_2017_2018_capology.csv,payroll,Serie A,2017-2018,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/serie a/Payrolls/SeriaA_payrolls_2018_2019_capology.csv,payroll,Serie A,2018-2019,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/serie a/Payrolls/SeriaA_payrolls_2019_2020_capology.csv,payroll,Serie A,2019-2020,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/serie a/Payrolls/SeriaA_payrolls_2020_2021_capology.csv,payroll,Serie A,2020-2021,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/serie a/Payrolls/SeriaA_payrolls_2021_2022_capology.csv,payroll,Serie A,2021-2022,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/serie a/Payrolls/SeriaA_payrolls_2022_2023_capology.csv,payroll,Serie A,2022-2023,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/serie a/Payrolls/SeriaA_payrolls_2023_2024_capology.csv,payroll,Serie A,2023-2024,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/serie a/Payrolls/SeriaA_payrolls_2024_2025_capology.csv,payroll,Serie A,2024-2025,20,20,20,0,0,0,0,20,20.0,20.0,20.0,20.0,,,,,,,
+Data/leagues/bundesliga/TransferWindows/bundesliga_Twindow_2014_2015_capology.csv,transfer_window,Bundesliga,2014-2015,18,18,18,0,0,0,0,18,,,,,18.0,18.0,18.0,18.0,18.0,18.0,18.0
+Data/leagues/bundesliga/TransferWindows/bundesliga_Twindow_2015_2016_capology.csv,transfer_window,Bundesliga,2015-2016,18,18,18,0,0,0,0,17,,,,,18.0,18.0,18.0,18.0,18.0,18.0,18.0
+Data/leagues/bundesliga/TransferWindows/bundesliga_Twindow_2016_2017_capology.csv,transfer_window,Bundesliga,2016-2017,18,18,18,0,0,0,0,17,,,,,18.0,18.0,18.0,18.0,18.0,18.0,18.0
+Data/leagues/bundesliga/TransferWindows/bundesliga_Twindow_2017_2018_capology.csv,transfer_window,Bundesliga,2017-2018,18,18,18,0,0,0,0,18,,,,,18.0,18.0,18.0,18.0,18.0,18.0,18.0
+Data/leagues/bundesliga/TransferWindows/bundesliga_Twindow_2018_2019_capology.csv,transfer_window,Bundesliga,2018-2019,18,18,18,0,0,0,0,18,,,,,18.0,18.0,18.0,18.0,18.0,18.0,18.0
+Data/leagues/bundesliga/TransferWindows/bundesliga_Twindow_2019_2020_capology.csv,transfer_window,Bundesliga,2019-2020,18,18,18,0,0,0,0,18,,,,,18.0,18.0,18.0,18.0,18.0,18.0,18.0
+Data/leagues/bundesliga/TransferWindows/bundesliga_Twindow_2020_2021_capology.csv,transfer_window,Bundesliga,2020-2021,18,18,18,0,0,0,0,18,,,,,18.0,18.0,18.0,18.0,18.0,18.0,18.0
+Data/leagues/bundesliga/TransferWindows/bundesliga_Twindow_2021_2022_capology.csv,transfer_window,Bundesliga,2021-2022,18,18,18,0,0,0,0,18,,,,,18.0,18.0,18.0,18.0,18.0,18.0,18.0
+Data/leagues/bundesliga/TransferWindows/bundesliga_Twindow_2022_2023_capology.csv,transfer_window,Bundesliga,2022-2023,18,18,18,0,0,0,0,18,,,,,18.0,18.0,18.0,18.0,18.0,18.0,18.0
+Data/leagues/bundesliga/TransferWindows/bundesliga_Twindow_2023_2024_capology.csv,transfer_window,Bundesliga,2023-2024,18,18,18,0,0,0,0,18,,,,,18.0,18.0,18.0,18.0,18.0,18.0,18.0
+Data/leagues/bundesliga/TransferWindows/bundesliga_Twindow_2024_2025_capology.csv,transfer_window,Bundesliga,2024-2025,18,18,18,0,0,0,0,17,,,,,18.0,18.0,18.0,18.0,18.0,18.0,18.0
+Data/leagues/la liga/TransferWindows/laliga_TWindow_2014_2015_capology.csv,transfer_window,La Liga,2014-2015,20,20,20,0,0,0,0,19,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/la liga/TransferWindows/laliga_TWindow_2015_2016_capology.csv,transfer_window,La Liga,2015-2016,20,20,20,0,0,0,0,19,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/la liga/TransferWindows/laliga_TWindow_2016_2017_capology.csv,transfer_window,La Liga,2016-2017,20,20,20,0,0,0,0,19,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/la liga/TransferWindows/laliga_TWindow_2017_2018_capology.csv,transfer_window,La Liga,2017-2018,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/la liga/TransferWindows/laliga_TWindow_2018_2019_capology.csv,transfer_window,La Liga,2018-2019,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/la liga/TransferWindows/laliga_TWindow_2019_2020_capology.csv,transfer_window,La Liga,2019-2020,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/la liga/TransferWindows/laliga_TWindow_2020_2021_capology.csv,transfer_window,La Liga,2020-2021,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/la liga/TransferWindows/laliga_TWindow_2021_2022_capology.csv,transfer_window,La Liga,2021-2022,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/la liga/TransferWindows/laliga_TWindow_2022_2023_capology.csv,transfer_window,La Liga,2022-2023,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/la liga/TransferWindows/laliga_TWindow_2023_2024_capology.csv,transfer_window,La Liga,2023-2024,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/la liga/TransferWindows/laliga_TWindow_2024_2025_capology.csv,transfer_window,La Liga,2024-2025,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/ligue1/TransferWindows/ligue1_TWindow_2014_2015_capology.csv,transfer_window,Ligue 1,2014-2015,20,20,20,0,0,0,0,18,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/ligue1/TransferWindows/ligue1_TWindow_2015_2016_capology.csv,transfer_window,Ligue 1,2015-2016,20,20,20,0,0,0,0,18,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/ligue1/TransferWindows/ligue1_TWindow_2016_2017_capology.csv,transfer_window,Ligue 1,2016-2017,20,20,20,0,0,0,0,18,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/ligue1/TransferWindows/ligue1_TWindow_2017_2018_capology.csv,transfer_window,Ligue 1,2017-2018,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/ligue1/TransferWindows/ligue1_TWindow_2018_2019_capology.csv,transfer_window,Ligue 1,2018-2019,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/ligue1/TransferWindows/ligue1_TWindow_2019_2020_capology.csv,transfer_window,Ligue 1,2019-2020,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/ligue1/TransferWindows/ligue1_TWindow_2020_2021_capology.csv,transfer_window,Ligue 1,2020-2021,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/ligue1/TransferWindows/ligue1_TWindow_2021_2022_capology.csv,transfer_window,Ligue 1,2021-2022,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/ligue1/TransferWindows/ligue1_TWindow_2022_2023_capology.csv,transfer_window,Ligue 1,2022-2023,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/ligue1/TransferWindows/ligue1_TWindow_2023_2024_capology.csv,transfer_window,Ligue 1,2023-2024,18,18,18,0,0,0,0,18,,,,,18.0,18.0,18.0,18.0,18.0,18.0,18.0
+Data/leagues/ligue1/TransferWindows/ligue1_TWindow_2024_2025_capology.csv,transfer_window,Ligue 1,2024-2025,18,18,18,0,0,0,0,18,,,,,18.0,18.0,18.0,18.0,18.0,18.0,18.0
+Data/leagues/premier league/TransferWindows/PremierLeague_Twindow_2014_2015_capology.csv,transfer_window,Premier League,2014-2015,20,20,20,0,0,0,0,17,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/premier league/TransferWindows/PremierLeague_Twindow_2015_2016_capology.csv,transfer_window,Premier League,2015-2016,20,20,20,0,0,0,0,19,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/premier league/TransferWindows/PremierLeague_Twindow_2016_2017_capology.csv,transfer_window,Premier League,2016-2017,20,20,20,0,0,0,0,17,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/premier league/TransferWindows/PremierLeague_Twindow_2017_2018_capology.csv,transfer_window,Premier League,2017-2018,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/premier league/TransferWindows/PremierLeague_Twindow_2018_2019_capology.csv,transfer_window,Premier League,2018-2019,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/premier league/TransferWindows/PremierLeague_Twindow_2019_2020_capology.csv,transfer_window,Premier League,2019-2020,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/premier league/TransferWindows/PremierLeague_Twindow_2020_2021_capology.csv,transfer_window,Premier League,2020-2021,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/premier league/TransferWindows/PremierLeague_Twindow_2021_2022_capology.csv,transfer_window,Premier League,2021-2022,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/premier league/TransferWindows/PremierLeague_Twindow_2022_2023_capology.csv,transfer_window,Premier League,2022-2023,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/premier league/TransferWindows/PremierLeague_Twindow_2023_2024_capology.csv,transfer_window,Premier League,2023-2024,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/premier league/TransferWindows/PremierLeague_Twindow_2024_2025_capology.csv,transfer_window,Premier League,2024-2025,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/serie a/TransferWindows/SeriaA_TWindows_2014_2015_capology.csv,transfer_window,Serie A,2014-2015,20,20,20,0,0,0,0,18,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/serie a/TransferWindows/SeriaA_TWindows_2015_2016_capology.csv,transfer_window,Serie A,2015-2016,20,20,20,0,0,0,0,18,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/serie a/TransferWindows/SeriaA_TWindows_2016_2017_capology.csv,transfer_window,Serie A,2016-2017,20,20,20,0,0,0,0,18,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/serie a/TransferWindows/SeriaA_TWindows_2017_2018_capology.csv,transfer_window,Serie A,2017-2018,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/serie a/TransferWindows/SeriaA_TWindows_2018_2019_capology.csv,transfer_window,Serie A,2018-2019,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/serie a/TransferWindows/SeriaA_TWindows_2019_2020_capology.csv,transfer_window,Serie A,2019-2020,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/serie a/TransferWindows/SeriaA_TWindows_2020_2021_capology.csv,transfer_window,Serie A,2020-2021,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/serie a/TransferWindows/SeriaA_TWindows_2021_2022_capology.csv,transfer_window,Serie A,2021-2022,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/serie a/TransferWindows/SeriaA_TWindows_2022_2023_capology.csv,transfer_window,Serie A,2022-2023,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/serie a/TransferWindows/SeriaA_TWindows_2023_2024_capology.csv,transfer_window,Serie A,2023-2024,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+Data/leagues/serie a/TransferWindows/SeriaA_TWindows_2024_2025_capology.csv,transfer_window,Serie A,2024-2025,20,20,20,0,0,0,0,20,,,,,20.0,20.0,20.0,20.0,20.0,20.0,20.0

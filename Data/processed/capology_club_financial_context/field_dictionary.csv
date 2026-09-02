@@ -1,0 +1,65 @@
+field,dtype,category,candidate_model_eligible,feature_block,timing_rule,description
+league,object,identity,False,,not a direct model feature,League
+competition_id,object,identity,False,,not a direct model feature,Competition id
+season,object,identity,False,,not a direct model feature,Season
+season_start_year,int64,identity,False,,not a direct model feature,Season start year
+season_end_year,int64,identity,False,,not a direct model feature,Season end year
+capology_club_name,object,identity,False,,not a direct model feature,Capology club name
+capology_club_name_normalized,object,identity,False,,not a direct model feature,Capology club name normalized
+capology_club_slug,object,identity,False,,not a direct model feature,Capology club slug
+capology_club_code,object,identity,False,,not a direct model feature,Capology club code
+canonical_club_id,int64,identity,False,,not a direct model feature,Canonical club id
+canonical_club_name,object,identity,False,,not a direct model feature,Canonical club name
+club_link_method,object,identity,False,,not a direct model feature,Club link method
+payroll_source_relative_path,object,lineage,False,,not a direct model feature,Payroll source relative path
+payroll_source_row_number,int64,lineage,False,,not a direct model feature,Payroll source row number
+payroll_source_sha256,object,lineage,False,,not a direct model feature,Payroll source sha256
+club_payroll_weekly_gross_eur,float64,source_value_not_in_initial_candidate_contract,False,,not a direct model feature,Club payroll weekly gross eur
+club_payroll_annual_gross_eur,float64,candidate_feature,True,resource_level_raw,Join table row only as last completed season before decision,"Estimated nominal fixed gross annual club payroll, excluding bonus."
+club_payroll_bonus_gross_eur,float64,coverage_or_diagnostic,False,,not a direct model feature,Club payroll bonus gross eur
+club_payroll_total_gross_eur,float64,source_value_not_in_initial_candidate_contract,False,,not a direct model feature,Club payroll total gross eur
+club_payroll_bonus_reported,bool,coverage_or_diagnostic,False,,not a direct model feature,Club payroll bonus reported
+transfer_source_relative_path,object,lineage,False,,not a direct model feature,Transfer source relative path
+transfer_source_row_number,int64,lineage,False,,not a direct model feature,Transfer source row number
+transfer_source_sha256,object,lineage,False,,not a direct model feature,Transfer source sha256
+transfer_income_eur,float64,candidate_feature,True,recruitment_context_raw,Join table row only as last completed season before decision,Transfer income eur
+transfer_spend_eur,float64,candidate_feature,True,recruitment_context_raw,Join table row only as last completed season before decision,Transfer spend eur
+transfer_balance_eur,float64,candidate_feature,True,recruitment_context_raw,Join table row only as last completed season before decision,Nominal transfer income minus nominal transfer spend.
+squad_player_count,int64,source_value_not_in_initial_candidate_contract,False,,not a direct model feature,Squad player count
+squad_foreign_player_count,int64,source_value_not_in_initial_candidate_contract,False,,not a direct model feature,Squad foreign player count
+squad_average_age,float64,candidate_feature,True,squad_context,Join table row only as last completed season before decision,Squad average age
+canonical_club_season_id,object,identity,False,,not a direct model feature,Canonical club season id
+known_player_wage_count,float64,coverage_or_diagnostic,False,,not a direct model feature,Known player wage count
+known_canonical_player_count,float64,coverage_or_diagnostic,False,,not a direct model feature,Known canonical player count
+known_player_wage_sum_eur,float64,coverage_or_diagnostic,False,,not a direct model feature,Known player wage sum eur
+source_player_wage_median_eur,float64,lineage,False,,not a direct model feature,Source player wage median eur
+source_player_wage_max_eur,float64,lineage,False,,not a direct model feature,Source player wage max eur
+source_player_wage_top5_share,float64,lineage,False,,not a direct model feature,Source player wage top5 share
+source_player_wage_hhi,float64,lineage,False,,not a direct model feature,Source player wage hhi
+source_player_wage_gini,float64,lineage,False,,not a direct model feature,Source player wage gini
+known_player_wage_coverage_ratio,float64,coverage_or_diagnostic,False,,not a direct model feature,Known player wage coverage ratio
+wage_structure_eligible,bool,coverage_or_diagnostic,False,,not a direct model feature,Wage structure eligible
+wage_structure_ineligible_reason,object,coverage_or_diagnostic,False,,not a direct model feature,Wage structure ineligible reason
+wage_structure_median_eur,float64,candidate_feature,True,wage_structure_coverage_gated,Join table row only as last completed season before decision,Wage structure median eur
+wage_structure_max_eur,float64,candidate_feature,True,wage_structure_coverage_gated,Join table row only as last completed season before decision,Wage structure max eur
+wage_structure_top5_share,float64,candidate_feature,True,wage_structure_coverage_gated,Join table row only as last completed season before decision,Wage structure top5 share
+wage_structure_hhi,float64,candidate_feature,True,wage_structure_coverage_gated,Join table row only as last completed season before decision,Player-wage concentration HHI emitted only when coverage is eligible.
+wage_structure_gini,float64,candidate_feature,True,wage_structure_coverage_gated,Join table row only as last completed season before decision,Player-wage Gini emitted only when the player panel reconciles to club payroll.
+season_club_count,int64,coverage_or_diagnostic,False,,not a direct model feature,Season club count
+payroll_log_eur,float64,candidate_feature,True,resource_level_transformed,Join table row only as last completed season before decision,Payroll log eur
+payroll_league_percentile,float64,candidate_feature,True,resource_level_transformed,Join table row only as last completed season before decision,Within-league-season percentile of nominal fixed payroll.
+payroll_to_league_median,float64,candidate_feature,True,resource_level_transformed,Join table row only as last completed season before decision,Nominal fixed payroll divided by contemporaneous league median.
+transfer_spend_log_eur,float64,candidate_feature,True,recruitment_context_transformed,Join table row only as last completed season before decision,Transfer spend log eur
+transfer_income_log_eur,float64,candidate_feature,True,recruitment_context_transformed,Join table row only as last completed season before decision,Transfer income log eur
+transfer_spend_to_payroll,float64,candidate_feature,True,recruitment_context_transformed,Join table row only as last completed season before decision,Transfer spend to payroll
+transfer_income_to_payroll,float64,candidate_feature,True,recruitment_context_transformed,Join table row only as last completed season before decision,Transfer income to payroll
+squad_foreign_share,float64,candidate_feature,True,squad_context,Join table row only as last completed season before decision,Squad foreign share
+prior_top_flight_panel_available,bool,coverage_or_diagnostic,False,,not a direct model feature,Prior top flight panel available
+history_3y_consecutive_available,bool,coverage_or_diagnostic,False,,not a direct model feature,History 3y consecutive available
+payroll_growth_1y,float64,candidate_feature,True,resource_trajectory,Join table row only as last completed season before decision,Change from the immediately preceding club-season; null across a panel gap.
+payroll_cagr_3y,float64,candidate_feature,True,resource_trajectory,Join table row only as last completed season before decision,Three-year payroll CAGR requiring four consecutive top-flight panel seasons.
+transfer_spend_3y_mean_eur,float64,candidate_feature,True,recruitment_trajectory,Join table row only as last completed season before decision,Transfer spend 3y mean eur
+transfer_income_3y_mean_eur,float64,candidate_feature,True,recruitment_trajectory,Join table row only as last completed season before decision,Transfer income 3y mean eur
+transfer_balance_3y_mean_eur,float64,candidate_feature,True,recruitment_trajectory,Join table row only as last completed season before decision,Transfer balance 3y mean eur
+transfer_spend_3y_std_eur,float64,candidate_feature,True,recruitment_trajectory,Join table row only as last completed season before decision,Transfer spend 3y std eur
+feature_history_max_season_start_year,int64,lineage,False,,not a direct model feature,Feature history max season start year

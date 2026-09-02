@@ -1,0 +1,1966 @@
+[
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 129,
+        "Defender": 165,
+        "Goalkeeper": 68,
+        "Midfield": 144
+      },
+      "league": {
+        "Bundesliga": 111,
+        "La Liga": 54,
+        "Ligue 1": 92,
+        "Premier League": 144,
+        "Serie A": 105
+      }
+    },
+    "complete_reference_rows": 506,
+    "distance_limited_threshold": 2.4097883595546725,
+    "distance_refusal_threshold": 4.518113059962016,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "payroll_log_eur",
+      "payroll_league_percentile"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 41.61533196440794,
+        "median": 25.603011635865847,
+        "min": 16.761122518822724,
+        "q01": 18.311293634496923,
+        "q99": 38.42778918548939,
+        "robust_scale": 5.740556672648741
+      },
+      "age_distance_from_27_squared": {
+        "max": 213.60792842984455,
+        "median": 16.89374852718714,
+        "min": 0.00016912459516687855,
+        "q01": 0.008064666498947408,
+        "q99": 130.5945882003503,
+        "robust_scale": 25.165558755211638
+      },
+      "log_market_value_at_signing": {
+        "max": 18.826145858727198,
+        "median": 15.424948670398354,
+        "min": 10.12667110305036,
+        "q01": 11.23964066272076,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.742763810765341
+      },
+      "payroll_league_percentile": {
+        "max": 1.0,
+        "median": 0.65,
+        "min": 0.05,
+        "q01": 0.0555555555555555,
+        "q99": 1.0,
+        "robust_scale": 0.37064492216456635
+      },
+      "payroll_log_eur": {
+        "max": 19.464026948371444,
+        "median": 17.58458657714586,
+        "min": 15.994797547735992,
+        "q01": 16.133743017527596,
+        "q99": 19.132646645219403,
+        "robust_scale": 0.8504889527548215
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.6,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.5024092798662656
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.4595625241966705,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.9812710437710439,
+        "robust_scale": 0.47797637842804813
+      }
+    },
+    "origin_id": "origin_2020",
+    "variant": "R1_resource_level"
+  },
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 193,
+        "Defender": 281,
+        "Goalkeeper": 131,
+        "Midfield": 237
+      },
+      "league": {
+        "Bundesliga": 174,
+        "La Liga": 92,
+        "Ligue 1": 154,
+        "Premier League": 251,
+        "Serie A": 171
+      }
+    },
+    "complete_reference_rows": 842,
+    "distance_limited_threshold": 2.4113226207908576,
+    "distance_refusal_threshold": 4.045436883279722,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "payroll_log_eur",
+      "payroll_league_percentile"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 42.417522245037645,
+        "median": 25.813826146475016,
+        "min": 16.761122518822724,
+        "q01": 18.030636550308007,
+        "q99": 38.555592060232726,
+        "robust_scale": 6.267222557942124
+      },
+      "age_distance_from_27_squared": {
+        "max": 237.69999217623064,
+        "median": 19.86689894360373,
+        "min": 0.0001054100662396329,
+        "q01": 0.00824411659571402,
+        "q99": 133.54245856564557,
+        "robust_scale": 28.099699217129462
+      },
+      "log_market_value_at_signing": {
+        "max": 18.826145858727198,
+        "median": 15.319588176962746,
+        "min": 10.12667110305036,
+        "q01": 11.343205008817401,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.8660137066699223
+      },
+      "payroll_league_percentile": {
+        "max": 1.0,
+        "median": 0.6055555555555556,
+        "min": 0.05,
+        "q01": 0.05,
+        "q99": 1.0,
+        "robust_scale": 0.3582900914257475
+      },
+      "payroll_log_eur": {
+        "max": 19.687966321306003,
+        "median": 17.60506739898673,
+        "min": 15.844973861243904,
+        "q01": 16.088543442544815,
+        "q99": 19.33500955652083,
+        "robust_scale": 0.81457107956864
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.5420094007050529,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.5151446033580949
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.41473807140473806,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.9941595441595447,
+        "robust_scale": 0.47930319929186205
+      }
+    },
+    "origin_id": "origin_2021",
+    "variant": "R1_resource_level"
+  },
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 264,
+        "Defender": 405,
+        "Goalkeeper": 183,
+        "Midfield": 315
+      },
+      "league": {
+        "Bundesliga": 244,
+        "La Liga": 150,
+        "Ligue 1": 206,
+        "Premier League": 324,
+        "Serie A": 243
+      }
+    },
+    "complete_reference_rows": 1167,
+    "distance_limited_threshold": 2.4061721192667958,
+    "distance_refusal_threshold": 3.8847195699341293,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "payroll_log_eur",
+      "payroll_league_percentile"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 42.417522245037645,
+        "median": 25.93839835728953,
+        "min": 16.761122518822724,
+        "q01": 18.02053388090349,
+        "q99": 38.502888432580406,
+        "robust_scale": 6.418423361234448
+      },
+      "age_distance_from_27_squared": {
+        "max": 237.69999217623064,
+        "median": 20.14234060006904,
+        "min": 0.0001054100662396329,
+        "q01": 0.008368734718468614,
+        "q99": 132.32641524726117,
+        "robust_scale": 28.878294205698445
+      },
+      "log_market_value_at_signing": {
+        "max": 18.826145858727198,
+        "median": 15.201805169084134,
+        "min": 10.12667110305036,
+        "q01": 11.51293546492023,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.8211527138005092
+      },
+      "payroll_league_percentile": {
+        "max": 1.0,
+        "median": 0.6111111111111112,
+        "min": 0.05,
+        "q01": 0.05,
+        "q99": 1.0,
+        "robust_scale": 0.37064492216456635
+      },
+      "payroll_log_eur": {
+        "max": 19.687966321306003,
+        "median": 17.6332229058992,
+        "min": 15.844973861243904,
+        "q01": 16.01051055163695,
+        "q99": 19.497047427081473,
+        "robust_scale": 0.8477981574572772
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.5526315789473685,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.4940052376060294
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.4093827160493827,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.9903209876543204,
+        "robust_scale": 0.4562686703590535
+      }
+    },
+    "origin_id": "origin_2022",
+    "variant": "R1_resource_level"
+  },
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 325,
+        "Defender": 504,
+        "Goalkeeper": 237,
+        "Midfield": 432
+      },
+      "league": {
+        "Bundesliga": 312,
+        "La Liga": 224,
+        "Ligue 1": 274,
+        "Premier League": 358,
+        "Serie A": 330
+      }
+    },
+    "complete_reference_rows": 1498,
+    "distance_limited_threshold": 2.4810124194391276,
+    "distance_refusal_threshold": 4.3868615992737015,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "payroll_log_eur",
+      "payroll_league_percentile"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 42.417522245037645,
+        "median": 26.262833675564682,
+        "min": 16.10677618069815,
+        "q01": 18.014976043805614,
+        "q99": 39.24383299110199,
+        "robust_scale": 6.469669271075135
+      },
+      "age_distance_from_27_squared": {
+        "max": 237.69999217623064,
+        "median": 20.425945212063972,
+        "min": 3.79476238462941e-05,
+        "q01": 0.00852326119068431,
+        "q99": 149.91160532972037,
+        "robust_scale": 29.516695976707897
+      },
+      "log_market_value_at_signing": {
+        "max": 18.8906843794481,
+        "median": 15.201805169084134,
+        "min": 10.12667110305036,
+        "q01": 11.51293546492023,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.7662172307321502
+      },
+      "payroll_league_percentile": {
+        "max": 1.0,
+        "median": 0.6111111111111112,
+        "min": 0.05,
+        "q01": 0.05,
+        "q99": 1.0,
+        "robust_scale": 0.3582900914257475
+      },
+      "payroll_log_eur": {
+        "max": 19.756523564205523,
+        "median": 17.61273055454152,
+        "min": 15.33283340078879,
+        "q01": 15.952041184691984,
+        "q99": 19.60412426008803,
+        "robust_scale": 0.8554183379680942
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.5619517543859649,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.501213019745266
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.41384677360287114,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.9831223571749886,
+        "robust_scale": 0.4520052555784832
+      }
+    },
+    "origin_id": "origin_2023",
+    "variant": "R1_resource_level"
+  },
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 129,
+        "Defender": 165,
+        "Goalkeeper": 68,
+        "Midfield": 144
+      },
+      "league": {
+        "Bundesliga": 111,
+        "La Liga": 54,
+        "Ligue 1": 92,
+        "Premier League": 144,
+        "Serie A": 105
+      }
+    },
+    "complete_reference_rows": 506,
+    "distance_limited_threshold": 3.434293530313275,
+    "distance_refusal_threshold": 5.157841842443545,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "transfer_spend_to_payroll",
+      "transfer_income_to_payroll"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 41.61533196440794,
+        "median": 25.603011635865847,
+        "min": 16.761122518822724,
+        "q01": 18.311293634496923,
+        "q99": 38.42778918548939,
+        "robust_scale": 5.740556672648741
+      },
+      "age_distance_from_27_squared": {
+        "max": 213.60792842984455,
+        "median": 16.89374852718714,
+        "min": 0.00016912459516687855,
+        "q01": 0.008064666498947408,
+        "q99": 130.5945882003503,
+        "robust_scale": 25.165558755211638
+      },
+      "log_market_value_at_signing": {
+        "max": 18.826145858727198,
+        "median": 15.424948670398354,
+        "min": 10.12667110305036,
+        "q01": 11.23964066272076,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.742763810765341
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.6,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.5024092798662656
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.4595625241966705,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.9812710437710439,
+        "robust_scale": 0.47797637842804813
+      },
+      "transfer_income_to_payroll": {
+        "max": 4.626269956458636,
+        "median": 0.6888954031259118,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 4.092050209205021,
+        "robust_scale": 0.7038728163652552
+      },
+      "transfer_spend_to_payroll": {
+        "max": 3.2726168791742563,
+        "median": 0.9681114812479682,
+        "min": 0.0,
+        "q01": 0.0541330590591674,
+        "q99": 2.263464721262901,
+        "robust_scale": 0.5310165737453855
+      }
+    },
+    "origin_id": "origin_2020",
+    "variant": "R2_recruitment_intensity"
+  },
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 193,
+        "Defender": 281,
+        "Goalkeeper": 131,
+        "Midfield": 237
+      },
+      "league": {
+        "Bundesliga": 174,
+        "La Liga": 92,
+        "Ligue 1": 154,
+        "Premier League": 251,
+        "Serie A": 171
+      }
+    },
+    "complete_reference_rows": 842,
+    "distance_limited_threshold": 3.56011779568425,
+    "distance_refusal_threshold": 5.682939719505309,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "transfer_spend_to_payroll",
+      "transfer_income_to_payroll"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 42.417522245037645,
+        "median": 25.813826146475016,
+        "min": 16.761122518822724,
+        "q01": 18.030636550308007,
+        "q99": 38.555592060232726,
+        "robust_scale": 6.267222557942124
+      },
+      "age_distance_from_27_squared": {
+        "max": 237.69999217623064,
+        "median": 19.86689894360373,
+        "min": 0.0001054100662396329,
+        "q01": 0.00824411659571402,
+        "q99": 133.54245856564557,
+        "robust_scale": 28.099699217129462
+      },
+      "log_market_value_at_signing": {
+        "max": 18.826145858727198,
+        "median": 15.319588176962746,
+        "min": 10.12667110305036,
+        "q01": 11.343205008817401,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.8660137066699223
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.5420094007050529,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.5151446033580949
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.41473807140473806,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.9941595441595447,
+        "robust_scale": 0.47930319929186205
+      },
+      "transfer_income_to_payroll": {
+        "max": 5.272861356932153,
+        "median": 0.6544212436912552,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 4.092050209205021,
+        "robust_scale": 0.6927225565876367
+      },
+      "transfer_spend_to_payroll": {
+        "max": 3.303834808259587,
+        "median": 1.0330981050540322,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 2.997228362396053,
+        "robust_scale": 0.5428474371885121
+      }
+    },
+    "origin_id": "origin_2021",
+    "variant": "R2_recruitment_intensity"
+  },
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 264,
+        "Defender": 405,
+        "Goalkeeper": 183,
+        "Midfield": 315
+      },
+      "league": {
+        "Bundesliga": 244,
+        "La Liga": 150,
+        "Ligue 1": 206,
+        "Premier League": 324,
+        "Serie A": 243
+      }
+    },
+    "complete_reference_rows": 1167,
+    "distance_limited_threshold": 3.661093699590383,
+    "distance_refusal_threshold": 5.089324188288783,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "transfer_spend_to_payroll",
+      "transfer_income_to_payroll"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 42.417522245037645,
+        "median": 25.93839835728953,
+        "min": 16.761122518822724,
+        "q01": 18.02053388090349,
+        "q99": 38.502888432580406,
+        "robust_scale": 6.418423361234448
+      },
+      "age_distance_from_27_squared": {
+        "max": 237.69999217623064,
+        "median": 20.14234060006904,
+        "min": 0.0001054100662396329,
+        "q01": 0.008368734718468614,
+        "q99": 132.32641524726117,
+        "robust_scale": 28.878294205698445
+      },
+      "log_market_value_at_signing": {
+        "max": 18.826145858727198,
+        "median": 15.201805169084134,
+        "min": 10.12667110305036,
+        "q01": 11.51293546492023,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.8211527138005092
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.5526315789473685,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.4940052376060294
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.4093827160493827,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.9903209876543204,
+        "robust_scale": 0.4562686703590535
+      },
+      "transfer_income_to_payroll": {
+        "max": 5.272861356932153,
+        "median": 0.6303892266996461,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 3.742396251082583,
+        "robust_scale": 0.6801808755809112
+      },
+      "transfer_spend_to_payroll": {
+        "max": 3.303834808259587,
+        "median": 0.980986598825472,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 3.04977391910805,
+        "robust_scale": 0.5624202965025988
+      }
+    },
+    "origin_id": "origin_2022",
+    "variant": "R2_recruitment_intensity"
+  },
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 325,
+        "Defender": 504,
+        "Goalkeeper": 237,
+        "Midfield": 432
+      },
+      "league": {
+        "Bundesliga": 312,
+        "La Liga": 224,
+        "Ligue 1": 274,
+        "Premier League": 358,
+        "Serie A": 330
+      }
+    },
+    "complete_reference_rows": 1498,
+    "distance_limited_threshold": 3.691341877729543,
+    "distance_refusal_threshold": 5.328376749121143,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "transfer_spend_to_payroll",
+      "transfer_income_to_payroll"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 42.417522245037645,
+        "median": 26.262833675564682,
+        "min": 16.10677618069815,
+        "q01": 18.014976043805614,
+        "q99": 39.24383299110199,
+        "robust_scale": 6.469669271075135
+      },
+      "age_distance_from_27_squared": {
+        "max": 237.69999217623064,
+        "median": 20.425945212063972,
+        "min": 3.79476238462941e-05,
+        "q01": 0.00852326119068431,
+        "q99": 149.91160532972037,
+        "robust_scale": 29.516695976707897
+      },
+      "log_market_value_at_signing": {
+        "max": 18.8906843794481,
+        "median": 15.201805169084134,
+        "min": 10.12667110305036,
+        "q01": 11.51293546492023,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.7662172307321502
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.5619517543859649,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.501213019745266
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.41384677360287114,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.9831223571749886,
+        "robust_scale": 0.4520052555784832
+      },
+      "transfer_income_to_payroll": {
+        "max": 5.272861356932153,
+        "median": 0.5747126436781609,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 3.3187294633077764,
+        "robust_scale": 0.6601142770369993
+      },
+      "transfer_spend_to_payroll": {
+        "max": 3.303834808259587,
+        "median": 0.8693660258885718,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 3.064854139624901,
+        "robust_scale": 0.5886374772063622
+      }
+    },
+    "origin_id": "origin_2023",
+    "variant": "R2_recruitment_intensity"
+  },
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 129,
+        "Defender": 165,
+        "Goalkeeper": 68,
+        "Midfield": 144
+      },
+      "league": {
+        "Bundesliga": 111,
+        "La Liga": 54,
+        "Ligue 1": 92,
+        "Premier League": 144,
+        "Serie A": 105
+      }
+    },
+    "complete_reference_rows": 506,
+    "distance_limited_threshold": 3.195000000000002,
+    "distance_refusal_threshold": 4.518113059962016,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "squad_average_age",
+      "squad_foreign_share"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 41.61533196440794,
+        "median": 25.603011635865847,
+        "min": 16.761122518822724,
+        "q01": 18.311293634496923,
+        "q99": 38.42778918548939,
+        "robust_scale": 5.740556672648741
+      },
+      "age_distance_from_27_squared": {
+        "max": 213.60792842984455,
+        "median": 16.89374852718714,
+        "min": 0.00016912459516687855,
+        "q01": 0.008064666498947408,
+        "q99": 130.5945882003503,
+        "robust_scale": 25.165558755211638
+      },
+      "log_market_value_at_signing": {
+        "max": 18.826145858727198,
+        "median": 15.424948670398354,
+        "min": 10.12667110305036,
+        "q01": 11.23964066272076,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.742763810765341
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.6,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.5024092798662656
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.4595625241966705,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.9812710437710439,
+        "robust_scale": 0.47797637842804813
+      },
+      "squad_average_age": {
+        "max": 29.4,
+        "median": 24.9,
+        "min": 21.1,
+        "q01": 22.1,
+        "q99": 28.394999999999996,
+        "robust_scale": 1.4084507042253511
+      },
+      "squad_foreign_share": {
+        "max": 1.0,
+        "median": 0.5526315789473685,
+        "min": 0.0303030303030303,
+        "q01": 0.033475378787878776,
+        "q99": 1.0,
+        "robust_scale": 0.1347264875804535
+      }
+    },
+    "origin_id": "origin_2020",
+    "variant": "R3_squad_context"
+  },
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 193,
+        "Defender": 281,
+        "Goalkeeper": 131,
+        "Midfield": 237
+      },
+      "league": {
+        "Bundesliga": 174,
+        "La Liga": 92,
+        "Ligue 1": 154,
+        "Premier League": 251,
+        "Serie A": 171
+      }
+    },
+    "complete_reference_rows": 842,
+    "distance_limited_threshold": 2.8764536580508184,
+    "distance_refusal_threshold": 4.045436883279722,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "squad_average_age",
+      "squad_foreign_share"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 42.417522245037645,
+        "median": 25.813826146475016,
+        "min": 16.761122518822724,
+        "q01": 18.030636550308007,
+        "q99": 38.555592060232726,
+        "robust_scale": 6.267222557942124
+      },
+      "age_distance_from_27_squared": {
+        "max": 237.69999217623064,
+        "median": 19.86689894360373,
+        "min": 0.0001054100662396329,
+        "q01": 0.00824411659571402,
+        "q99": 133.54245856564557,
+        "robust_scale": 28.099699217129462
+      },
+      "log_market_value_at_signing": {
+        "max": 18.826145858727198,
+        "median": 15.319588176962746,
+        "min": 10.12667110305036,
+        "q01": 11.343205008817401,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.8660137066699223
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.5420094007050529,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.5151446033580949
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.41473807140473806,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.9941595441595447,
+        "robust_scale": 0.47930319929186205
+      },
+      "squad_average_age": {
+        "max": 29.8,
+        "median": 25.55,
+        "min": 21.1,
+        "q01": 22.5,
+        "q99": 29.0,
+        "robust_scale": 1.7049666419570058
+      },
+      "squad_foreign_share": {
+        "max": 1.0,
+        "median": 0.5625,
+        "min": 0.0303030303030303,
+        "q01": 0.06203750000000001,
+        "q99": 0.84,
+        "robust_scale": 0.15205945524700157
+      }
+    },
+    "origin_id": "origin_2021",
+    "variant": "R3_squad_context"
+  },
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 264,
+        "Defender": 405,
+        "Goalkeeper": 183,
+        "Midfield": 315
+      },
+      "league": {
+        "Bundesliga": 244,
+        "La Liga": 150,
+        "Ligue 1": 206,
+        "Premier League": 324,
+        "Serie A": 243
+      }
+    },
+    "complete_reference_rows": 1167,
+    "distance_limited_threshold": 2.7899772727272727,
+    "distance_refusal_threshold": 3.8847195699341293,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "squad_average_age",
+      "squad_foreign_share"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 42.417522245037645,
+        "median": 25.93839835728953,
+        "min": 16.761122518822724,
+        "q01": 18.02053388090349,
+        "q99": 38.502888432580406,
+        "robust_scale": 6.418423361234448
+      },
+      "age_distance_from_27_squared": {
+        "max": 237.69999217623064,
+        "median": 20.14234060006904,
+        "min": 0.0001054100662396329,
+        "q01": 0.008368734718468614,
+        "q99": 132.32641524726117,
+        "robust_scale": 28.878294205698445
+      },
+      "log_market_value_at_signing": {
+        "max": 18.826145858727198,
+        "median": 15.201805169084134,
+        "min": 10.12667110305036,
+        "q01": 11.51293546492023,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.8211527138005092
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.5526315789473685,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.4940052376060294
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.4093827160493827,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.9903209876543204,
+        "robust_scale": 0.4562686703590535
+      },
+      "squad_average_age": {
+        "max": 29.8,
+        "median": 25.9,
+        "min": 21.1,
+        "q01": 22.631999999999998,
+        "q99": 29.4,
+        "robust_scale": 1.6308376575240915
+      },
+      "squad_foreign_share": {
+        "max": 1.0,
+        "median": 0.5757575757575758,
+        "min": 0.0303030303030303,
+        "q01": 0.04,
+        "q99": 0.84,
+        "robust_scale": 0.15205945524700157
+      }
+    },
+    "origin_id": "origin_2022",
+    "variant": "R3_squad_context"
+  },
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 325,
+        "Defender": 504,
+        "Goalkeeper": 237,
+        "Midfield": 432
+      },
+      "league": {
+        "Bundesliga": 312,
+        "La Liga": 224,
+        "Ligue 1": 274,
+        "Premier League": 358,
+        "Serie A": 330
+      }
+    },
+    "complete_reference_rows": 1498,
+    "distance_limited_threshold": 2.8734483945273133,
+    "distance_refusal_threshold": 4.3868615992737015,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "squad_average_age",
+      "squad_foreign_share"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 42.417522245037645,
+        "median": 26.262833675564682,
+        "min": 16.10677618069815,
+        "q01": 18.014976043805614,
+        "q99": 39.24383299110199,
+        "robust_scale": 6.469669271075135
+      },
+      "age_distance_from_27_squared": {
+        "max": 237.69999217623064,
+        "median": 20.425945212063972,
+        "min": 3.79476238462941e-05,
+        "q01": 0.00852326119068431,
+        "q99": 149.91160532972037,
+        "robust_scale": 29.516695976707897
+      },
+      "log_market_value_at_signing": {
+        "max": 18.8906843794481,
+        "median": 15.201805169084134,
+        "min": 10.12667110305036,
+        "q01": 11.51293546492023,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.7662172307321502
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.5619517543859649,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.501213019745266
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.41384677360287114,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.9831223571749886,
+        "robust_scale": 0.4520052555784832
+      },
+      "squad_average_age": {
+        "max": 29.9,
+        "median": 26.0,
+        "min": 21.1,
+        "q01": 23.1,
+        "q99": 29.4,
+        "robust_scale": 1.5567086730911797
+      },
+      "squad_foreign_share": {
+        "max": 1.0,
+        "median": 0.5714285714285714,
+        "min": 0.0,
+        "q01": 0.037037037037037,
+        "q99": 0.8636363636363636,
+        "robust_scale": 0.1618908855431439
+      }
+    },
+    "origin_id": "origin_2023",
+    "variant": "R3_squad_context"
+  },
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 129,
+        "Defender": 165,
+        "Goalkeeper": 68,
+        "Midfield": 144
+      },
+      "league": {
+        "Bundesliga": 111,
+        "La Liga": 54,
+        "Ligue 1": 92,
+        "Premier League": 144,
+        "Serie A": 105
+      }
+    },
+    "complete_reference_rows": 506,
+    "distance_limited_threshold": 3.454743080293949,
+    "distance_refusal_threshold": 5.157841842443545,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "payroll_log_eur",
+      "payroll_league_percentile",
+      "transfer_spend_to_payroll",
+      "transfer_income_to_payroll",
+      "squad_average_age",
+      "squad_foreign_share"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 41.61533196440794,
+        "median": 25.603011635865847,
+        "min": 16.761122518822724,
+        "q01": 18.311293634496923,
+        "q99": 38.42778918548939,
+        "robust_scale": 5.740556672648741
+      },
+      "age_distance_from_27_squared": {
+        "max": 213.60792842984455,
+        "median": 16.89374852718714,
+        "min": 0.00016912459516687855,
+        "q01": 0.008064666498947408,
+        "q99": 130.5945882003503,
+        "robust_scale": 25.165558755211638
+      },
+      "log_market_value_at_signing": {
+        "max": 18.826145858727198,
+        "median": 15.424948670398354,
+        "min": 10.12667110305036,
+        "q01": 11.23964066272076,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.742763810765341
+      },
+      "payroll_league_percentile": {
+        "max": 1.0,
+        "median": 0.65,
+        "min": 0.05,
+        "q01": 0.0555555555555555,
+        "q99": 1.0,
+        "robust_scale": 0.37064492216456635
+      },
+      "payroll_log_eur": {
+        "max": 19.464026948371444,
+        "median": 17.58458657714586,
+        "min": 15.994797547735992,
+        "q01": 16.133743017527596,
+        "q99": 19.132646645219403,
+        "robust_scale": 0.8504889527548215
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.6,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.5024092798662656
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.4595625241966705,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.9812710437710439,
+        "robust_scale": 0.47797637842804813
+      },
+      "squad_average_age": {
+        "max": 29.4,
+        "median": 24.9,
+        "min": 21.1,
+        "q01": 22.1,
+        "q99": 28.394999999999996,
+        "robust_scale": 1.4084507042253511
+      },
+      "squad_foreign_share": {
+        "max": 1.0,
+        "median": 0.5526315789473685,
+        "min": 0.0303030303030303,
+        "q01": 0.033475378787878776,
+        "q99": 1.0,
+        "robust_scale": 0.1347264875804535
+      },
+      "transfer_income_to_payroll": {
+        "max": 4.626269956458636,
+        "median": 0.6888954031259118,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 4.092050209205021,
+        "robust_scale": 0.7038728163652552
+      },
+      "transfer_spend_to_payroll": {
+        "max": 3.2726168791742563,
+        "median": 0.9681114812479682,
+        "min": 0.0,
+        "q01": 0.0541330590591674,
+        "q99": 2.263464721262901,
+        "robust_scale": 0.5310165737453855
+      }
+    },
+    "origin_id": "origin_2020",
+    "variant": "R4_combined_core_context"
+  },
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 193,
+        "Defender": 281,
+        "Goalkeeper": 131,
+        "Midfield": 237
+      },
+      "league": {
+        "Bundesliga": 174,
+        "La Liga": 92,
+        "Ligue 1": 154,
+        "Premier League": 251,
+        "Serie A": 171
+      }
+    },
+    "complete_reference_rows": 842,
+    "distance_limited_threshold": 3.56011779568425,
+    "distance_refusal_threshold": 5.682939719505309,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "payroll_log_eur",
+      "payroll_league_percentile",
+      "transfer_spend_to_payroll",
+      "transfer_income_to_payroll",
+      "squad_average_age",
+      "squad_foreign_share"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 42.417522245037645,
+        "median": 25.813826146475016,
+        "min": 16.761122518822724,
+        "q01": 18.030636550308007,
+        "q99": 38.555592060232726,
+        "robust_scale": 6.267222557942124
+      },
+      "age_distance_from_27_squared": {
+        "max": 237.69999217623064,
+        "median": 19.86689894360373,
+        "min": 0.0001054100662396329,
+        "q01": 0.00824411659571402,
+        "q99": 133.54245856564557,
+        "robust_scale": 28.099699217129462
+      },
+      "log_market_value_at_signing": {
+        "max": 18.826145858727198,
+        "median": 15.319588176962746,
+        "min": 10.12667110305036,
+        "q01": 11.343205008817401,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.8660137066699223
+      },
+      "payroll_league_percentile": {
+        "max": 1.0,
+        "median": 0.6055555555555556,
+        "min": 0.05,
+        "q01": 0.05,
+        "q99": 1.0,
+        "robust_scale": 0.3582900914257475
+      },
+      "payroll_log_eur": {
+        "max": 19.687966321306003,
+        "median": 17.60506739898673,
+        "min": 15.844973861243904,
+        "q01": 16.088543442544815,
+        "q99": 19.33500955652083,
+        "robust_scale": 0.81457107956864
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.5420094007050529,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.5151446033580949
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.41473807140473806,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.9941595441595447,
+        "robust_scale": 0.47930319929186205
+      },
+      "squad_average_age": {
+        "max": 29.8,
+        "median": 25.55,
+        "min": 21.1,
+        "q01": 22.5,
+        "q99": 29.0,
+        "robust_scale": 1.7049666419570058
+      },
+      "squad_foreign_share": {
+        "max": 1.0,
+        "median": 0.5625,
+        "min": 0.0303030303030303,
+        "q01": 0.06203750000000001,
+        "q99": 0.84,
+        "robust_scale": 0.15205945524700157
+      },
+      "transfer_income_to_payroll": {
+        "max": 5.272861356932153,
+        "median": 0.6544212436912552,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 4.092050209205021,
+        "robust_scale": 0.6927225565876367
+      },
+      "transfer_spend_to_payroll": {
+        "max": 3.303834808259587,
+        "median": 1.0330981050540322,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 2.997228362396053,
+        "robust_scale": 0.5428474371885121
+      }
+    },
+    "origin_id": "origin_2021",
+    "variant": "R4_combined_core_context"
+  },
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 264,
+        "Defender": 405,
+        "Goalkeeper": 183,
+        "Midfield": 315
+      },
+      "league": {
+        "Bundesliga": 244,
+        "La Liga": 150,
+        "Ligue 1": 206,
+        "Premier League": 324,
+        "Serie A": 243
+      }
+    },
+    "complete_reference_rows": 1167,
+    "distance_limited_threshold": 3.661093699590383,
+    "distance_refusal_threshold": 5.089324188288783,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "payroll_log_eur",
+      "payroll_league_percentile",
+      "transfer_spend_to_payroll",
+      "transfer_income_to_payroll",
+      "squad_average_age",
+      "squad_foreign_share"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 42.417522245037645,
+        "median": 25.93839835728953,
+        "min": 16.761122518822724,
+        "q01": 18.02053388090349,
+        "q99": 38.502888432580406,
+        "robust_scale": 6.418423361234448
+      },
+      "age_distance_from_27_squared": {
+        "max": 237.69999217623064,
+        "median": 20.14234060006904,
+        "min": 0.0001054100662396329,
+        "q01": 0.008368734718468614,
+        "q99": 132.32641524726117,
+        "robust_scale": 28.878294205698445
+      },
+      "log_market_value_at_signing": {
+        "max": 18.826145858727198,
+        "median": 15.201805169084134,
+        "min": 10.12667110305036,
+        "q01": 11.51293546492023,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.8211527138005092
+      },
+      "payroll_league_percentile": {
+        "max": 1.0,
+        "median": 0.6111111111111112,
+        "min": 0.05,
+        "q01": 0.05,
+        "q99": 1.0,
+        "robust_scale": 0.37064492216456635
+      },
+      "payroll_log_eur": {
+        "max": 19.687966321306003,
+        "median": 17.6332229058992,
+        "min": 15.844973861243904,
+        "q01": 16.01051055163695,
+        "q99": 19.497047427081473,
+        "robust_scale": 0.8477981574572772
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.5526315789473685,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.4940052376060294
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.4093827160493827,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.9903209876543204,
+        "robust_scale": 0.4562686703590535
+      },
+      "squad_average_age": {
+        "max": 29.8,
+        "median": 25.9,
+        "min": 21.1,
+        "q01": 22.631999999999998,
+        "q99": 29.4,
+        "robust_scale": 1.6308376575240915
+      },
+      "squad_foreign_share": {
+        "max": 1.0,
+        "median": 0.5757575757575758,
+        "min": 0.0303030303030303,
+        "q01": 0.04,
+        "q99": 0.84,
+        "robust_scale": 0.15205945524700157
+      },
+      "transfer_income_to_payroll": {
+        "max": 5.272861356932153,
+        "median": 0.6303892266996461,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 3.742396251082583,
+        "robust_scale": 0.6801808755809112
+      },
+      "transfer_spend_to_payroll": {
+        "max": 3.303834808259587,
+        "median": 0.980986598825472,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 3.04977391910805,
+        "robust_scale": 0.5624202965025988
+      }
+    },
+    "origin_id": "origin_2022",
+    "variant": "R4_combined_core_context"
+  },
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 325,
+        "Defender": 504,
+        "Goalkeeper": 237,
+        "Midfield": 432
+      },
+      "league": {
+        "Bundesliga": 312,
+        "La Liga": 224,
+        "Ligue 1": 274,
+        "Premier League": 358,
+        "Serie A": 330
+      }
+    },
+    "complete_reference_rows": 1498,
+    "distance_limited_threshold": 3.691341877729543,
+    "distance_refusal_threshold": 5.328376749121143,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "payroll_log_eur",
+      "payroll_league_percentile",
+      "transfer_spend_to_payroll",
+      "transfer_income_to_payroll",
+      "squad_average_age",
+      "squad_foreign_share"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 42.417522245037645,
+        "median": 26.262833675564682,
+        "min": 16.10677618069815,
+        "q01": 18.014976043805614,
+        "q99": 39.24383299110199,
+        "robust_scale": 6.469669271075135
+      },
+      "age_distance_from_27_squared": {
+        "max": 237.69999217623064,
+        "median": 20.425945212063972,
+        "min": 3.79476238462941e-05,
+        "q01": 0.00852326119068431,
+        "q99": 149.91160532972037,
+        "robust_scale": 29.516695976707897
+      },
+      "log_market_value_at_signing": {
+        "max": 18.8906843794481,
+        "median": 15.201805169084134,
+        "min": 10.12667110305036,
+        "q01": 11.51293546492023,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.7662172307321502
+      },
+      "payroll_league_percentile": {
+        "max": 1.0,
+        "median": 0.6111111111111112,
+        "min": 0.05,
+        "q01": 0.05,
+        "q99": 1.0,
+        "robust_scale": 0.3582900914257475
+      },
+      "payroll_log_eur": {
+        "max": 19.756523564205523,
+        "median": 17.61273055454152,
+        "min": 15.33283340078879,
+        "q01": 15.952041184691984,
+        "q99": 19.60412426008803,
+        "robust_scale": 0.8554183379680942
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.5619517543859649,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.501213019745266
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.41384677360287114,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.9831223571749886,
+        "robust_scale": 0.4520052555784832
+      },
+      "squad_average_age": {
+        "max": 29.9,
+        "median": 26.0,
+        "min": 21.1,
+        "q01": 23.1,
+        "q99": 29.4,
+        "robust_scale": 1.5567086730911797
+      },
+      "squad_foreign_share": {
+        "max": 1.0,
+        "median": 0.5714285714285714,
+        "min": 0.0,
+        "q01": 0.037037037037037,
+        "q99": 0.8636363636363636,
+        "robust_scale": 0.1618908855431439
+      },
+      "transfer_income_to_payroll": {
+        "max": 5.272861356932153,
+        "median": 0.5747126436781609,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 3.3187294633077764,
+        "robust_scale": 0.6601142770369993
+      },
+      "transfer_spend_to_payroll": {
+        "max": 3.303834808259587,
+        "median": 0.8693660258885718,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 3.064854139624901,
+        "robust_scale": 0.5886374772063622
+      }
+    },
+    "origin_id": "origin_2023",
+    "variant": "R4_combined_core_context"
+  },
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 129,
+        "Defender": 165,
+        "Goalkeeper": 68,
+        "Midfield": 144
+      },
+      "league": {
+        "Bundesliga": 111,
+        "La Liga": 54,
+        "Ligue 1": 92,
+        "Premier League": 144,
+        "Serie A": 105
+      }
+    },
+    "complete_reference_rows": 506,
+    "distance_limited_threshold": 2.7892081367318995,
+    "distance_refusal_threshold": 4.518113059962016,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "wage_structure_gini",
+      "wage_structure_top5_share"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 41.61533196440794,
+        "median": 25.603011635865847,
+        "min": 16.761122518822724,
+        "q01": 18.311293634496923,
+        "q99": 38.42778918548939,
+        "robust_scale": 5.740556672648741
+      },
+      "age_distance_from_27_squared": {
+        "max": 213.60792842984455,
+        "median": 16.89374852718714,
+        "min": 0.00016912459516687855,
+        "q01": 0.008064666498947408,
+        "q99": 130.5945882003503,
+        "robust_scale": 25.165558755211638
+      },
+      "log_market_value_at_signing": {
+        "max": 18.826145858727198,
+        "median": 15.424948670398354,
+        "min": 10.12667110305036,
+        "q01": 11.23964066272076,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.742763810765341
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.6,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.5024092798662656
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.4595625241966705,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.9812710437710439,
+        "robust_scale": 0.47797637842804813
+      },
+      "wage_structure_gini": {
+        "max": 0.6218434343434343,
+        "median": 0.3977822875018035,
+        "min": 0.1975816825315153,
+        "q01": 0.2280215716624378,
+        "q99": 0.5936732875920547,
+        "robust_scale": 0.08968998357275619
+      },
+      "wage_structure_top5_share": {
+        "max": 0.6522420821574161,
+        "median": 0.3824463832105684,
+        "min": 0.2374944665781319,
+        "q01": 0.2723222848601292,
+        "q99": 0.5908789623782875,
+        "robust_scale": 0.06252719592499875
+      }
+    },
+    "origin_id": "origin_2020",
+    "variant": "R5_wage_structure_diagnostic"
+  },
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 179,
+        "Defender": 263,
+        "Goalkeeper": 125,
+        "Midfield": 217
+      },
+      "league": {
+        "Bundesliga": 174,
+        "La Liga": 92,
+        "Ligue 1": 154,
+        "Premier League": 193,
+        "Serie A": 171
+      }
+    },
+    "complete_reference_rows": 784,
+    "distance_limited_threshold": 2.8695157986852067,
+    "distance_refusal_threshold": 4.273621318299839,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "wage_structure_gini",
+      "wage_structure_top5_share"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 42.417522245037645,
+        "median": 25.883641341546884,
+        "min": 16.761122518822724,
+        "q01": 18.019603011635866,
+        "q99": 38.654127310061604,
+        "robust_scale": 6.384428549755974
+      },
+      "age_distance_from_27_squared": {
+        "max": 237.69999217623064,
+        "median": 20.148485304197045,
+        "min": 0.0001054100662396329,
+        "q01": 0.008453475041941737,
+        "q99": 135.81939833808144,
+        "robust_scale": 28.773483902853545
+      },
+      "log_market_value_at_signing": {
+        "max": 18.826145858727198,
+        "median": 15.260696673023439,
+        "min": 10.12667110305036,
+        "q01": 11.225256725762893,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.9563057087059514
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.5454545454545454,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.5149826081998062
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.41757834757834755,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.984629629629629,
+        "robust_scale": 0.4801622136176418
+      },
+      "wage_structure_gini": {
+        "max": 0.6218434343434343,
+        "median": 0.3851769436872803,
+        "min": 0.1921713669286484,
+        "q01": 0.21747678684096744,
+        "q99": 0.5936732875920547,
+        "robust_scale": 0.0894994045986651
+      },
+      "wage_structure_top5_share": {
+        "max": 0.6522420821574161,
+        "median": 0.3915313225058004,
+        "min": 0.2374944665781319,
+        "q01": 0.2723222848601292,
+        "q99": 0.588421674453574,
+        "robust_scale": 0.0610046469337937
+      }
+    },
+    "origin_id": "origin_2021",
+    "variant": "R5_wage_structure_diagnostic"
+  },
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 243,
+        "Defender": 377,
+        "Goalkeeper": 168,
+        "Midfield": 291
+      },
+      "league": {
+        "Bundesliga": 244,
+        "La Liga": 150,
+        "Ligue 1": 206,
+        "Premier League": 236,
+        "Serie A": 243
+      }
+    },
+    "complete_reference_rows": 1079,
+    "distance_limited_threshold": 2.857195450740227,
+    "distance_refusal_threshold": 4.149168066038172,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "wage_structure_gini",
+      "wage_structure_top5_share"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 42.417522245037645,
+        "median": 25.924709103353862,
+        "min": 16.761122518822724,
+        "q01": 18.01932922655715,
+        "q99": 38.65768651608488,
+        "robust_scale": 6.494531148126558
+      },
+      "age_distance_from_27_squared": {
+        "max": 237.69999217623064,
+        "median": 20.450700180508875,
+        "min": 0.0001054100662396329,
+        "q01": 0.008793073481122175,
+        "q99": 135.90252443522465,
+        "robust_scale": 28.825023269595548
+      },
+      "log_market_value_at_signing": {
+        "max": 18.826145858727198,
+        "median": 15.201805169084134,
+        "min": 10.12667110305036,
+        "q01": 11.449646142305616,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.9153584855092922
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.5581395348837209,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.4953314392168167
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.420545073375262,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.9894590347923684,
+        "robust_scale": 0.45637103151259795
+      },
+      "wage_structure_gini": {
+        "max": 0.6218434343434343,
+        "median": 0.3846991788168259,
+        "min": 0.1921713669286484,
+        "q01": 0.2196306882160101,
+        "q99": 0.5936732875920547,
+        "robust_scale": 0.08581883666017731
+      },
+      "wage_structure_top5_share": {
+        "max": 0.6522420821574161,
+        "median": 0.3958910810370128,
+        "min": 0.2374944665781319,
+        "q01": 0.2807570977917981,
+        "q99": 0.5796210713250881,
+        "robust_scale": 0.06178371110553246
+      }
+    },
+    "origin_id": "origin_2022",
+    "variant": "R5_wage_structure_diagnostic"
+  },
+  {
+    "categorical": {
+      "canonical_position": {
+        "Attack": 304,
+        "Defender": 476,
+        "Goalkeeper": 222,
+        "Midfield": 408
+      },
+      "league": {
+        "Bundesliga": 312,
+        "La Liga": 224,
+        "Ligue 1": 274,
+        "Premier League": 270,
+        "Serie A": 330
+      }
+    },
+    "complete_reference_rows": 1410,
+    "distance_limited_threshold": 2.7719276813747755,
+    "distance_refusal_threshold": 4.408168762870655,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "age_distance_from_27_squared",
+      "wage_structure_gini",
+      "wage_structure_top5_share"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "max": 42.417522245037645,
+        "median": 26.262833675564682,
+        "min": 16.10677618069815,
+        "q01": 18.012566735112937,
+        "q99": 39.30888432580425,
+        "robust_scale": 6.535629353048296
+      },
+      "age_distance_from_27_squared": {
+        "max": 237.69999217623064,
+        "median": 20.842572642761535,
+        "min": 3.79476238462941e-05,
+        "q01": 0.009177609402764646,
+        "q99": 151.5090808851262,
+        "robust_scale": 29.64190240241006
+      },
+      "log_market_value_at_signing": {
+        "max": 18.8906843794481,
+        "median": 15.201805169084134,
+        "min": 10.12667110305036,
+        "q01": 11.51293546492023,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.8420353840784516
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "max": 1.0,
+        "median": 0.5684046345811051,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.5020211118720782
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "max": 1.0087719298245614,
+        "median": 0.42125137266646695,
+        "min": 0.0,
+        "q01": 0.0,
+        "q99": 0.9814500349406011,
+        "robust_scale": 0.4515215449240653
+      },
+      "wage_structure_gini": {
+        "max": 0.6556467068667322,
+        "median": 0.3853520953397477,
+        "min": 0.1921713669286484,
+        "q01": 0.2196306882160101,
+        "q99": 0.5906414410647713,
+        "robust_scale": 0.0839508245039526
+      },
+      "wage_structure_top5_share": {
+        "max": 0.6522420821574161,
+        "median": 0.4025556393413294,
+        "min": 0.2374944665781319,
+        "q01": 0.2856178156977834,
+        "q99": 0.5771388499298737,
+        "robust_scale": 0.062816795211788
+      }
+    },
+    "origin_id": "origin_2023",
+    "variant": "R5_wage_structure_diagnostic"
+  }
+]

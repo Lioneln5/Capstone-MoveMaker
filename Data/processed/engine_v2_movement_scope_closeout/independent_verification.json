@@ -1,0 +1,177 @@
+{
+  "all_passed": true,
+  "api_override_cannot_enable_scoring": true,
+  "checks": [
+    {
+      "check": "output_manifest",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check": "source_manifest",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check": "contract_matches_source",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check": "contract_invariants",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check": "generic_continuity_retired",
+      "expected": "retired",
+      "observed": "retired",
+      "passed": true
+    },
+    {
+      "check": "replacement_candidates_not_deployed",
+      "expected": "development_candidate_not_deployed",
+      "observed": {
+        "meaningful_retention_24m": "development_candidate_not_deployed",
+        "temporary_displacement_risk_24m": "development_candidate_not_deployed"
+      },
+      "passed": true
+    },
+    {
+      "check": "permanent_separation_unavailable",
+      "expected": "research_only_unavailable",
+      "observed": "research_only_unavailable",
+      "passed": true
+    },
+    {
+      "check": "no_numeric_display",
+      "expected": {
+        "numeric": 0,
+        "public_claim": 0
+      },
+      "observed": {
+        "numeric": 0,
+        "public_claim": 0
+      },
+      "passed": true
+    },
+    {
+      "check": "development_evidence_reconstruction",
+      "expected": {
+        "maximum_error": "<=1e-14",
+        "rows": 4
+      },
+      "observed": {
+        "maximum_error": 0.0,
+        "rows": 4
+      },
+      "passed": true
+    },
+    {
+      "check": "retired_public_claims_absent",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check": "replacement_status_copy_present",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check": "api_override_cannot_enable_scoring",
+      "expected": "false/false/false/503",
+      "observed": {
+        "engine_loaded": false,
+        "health": {
+          "engine_loaded": false,
+          "engine_version": null,
+          "message": "Engine V1 is frozen for historical audit. Engine V2 retired generic continuity and has not authorized any live scoring output. The project pages and verified research evidence remain available.",
+          "product_mode": "research_prototype",
+          "scoring_enabled": false,
+          "status": "ok"
+        },
+        "refusal_status": 503,
+        "scoring_enabled": false
+      },
+      "passed": true
+    },
+    {
+      "check": "no_scoring_environment_bypass",
+      "expected": false,
+      "observed": false,
+      "passed": true
+    },
+    {
+      "check": "critical_issue_closed_by_retirement",
+      "expected": {
+        "in_open_section": false,
+        "resolved_status": true
+      },
+      "observed": {
+        "in_open_section": false,
+        "resolved_status": true
+      },
+      "passed": true
+    },
+    {
+      "check": "remaining_blockers_preserved",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check": "final_holdout_sealed",
+      "expected": 2023,
+      "observed": 2023,
+      "passed": true
+    },
+    {
+      "check": "v1_frozen_before_rerun",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check": "row_level_artifacts_local_only",
+      "expected": {
+        "ignored": "all true",
+        "tracked": []
+      },
+      "observed": {
+        "ignored": {
+          "Data/processed/engine_v2_lagged_club_behavior/lagged_club_behavior_features.csv": true,
+          "Data/processed/engine_v2_manager_tactical_experiment/binary_predictions.csv": true,
+          "Data/processed/engine_v2_manager_tactical_profiles/manager_tactical_profiles.csv": true,
+          "Data/processed/engine_v2_role_squad_profiles/role_squad_profiles.csv": true
+        },
+        "tracked": []
+      },
+      "passed": true
+    },
+    {
+      "check": "clean_closeout_rerun",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check": "v1_frozen_after_rerun",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    }
+  ],
+  "checks_passed": 20,
+  "checks_total": 20,
+  "clean_closeout_rerun_byte_identical": true,
+  "deployment_changed": false,
+  "development_evidence_maximum_absolute_error": 0.0,
+  "final_holdout_opened": false,
+  "v1_unchanged": true
+}

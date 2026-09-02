@@ -1,0 +1,22 @@
+feature,block,definition,timing
+manager_unique_count_365d_log1p,manager_stability,log(1 + distinct observed managers in the prior-year club games).,strictly pre-signing; source-gated
+manager_change_count_365d_log1p,manager_stability,log(1 + adjacent changes in manager-coded club games).,strictly pre-signing; source-gated
+current_manager_observed_match_share_365d,manager_stability,Current manager's trailing consecutive games / manager-coded games.,strictly pre-signing; source-gated
+current_manager_spell_games_365d_log1p,manager_stability,log(1 + trailing consecutive games under the current observed manager).,strictly pre-signing; source-gated
+current_manager_spell_days_scaled_365d,manager_stability,"Days since the first match of the observed current-manager spell, capped and divided by 365.",strictly pre-signing; source-gated
+manager_change_within_90d,manager_stability,One when the latest observed manager transition is within 90 days.,strictly pre-signing; source-gated
+formation_unique_shape_count_365d_log1p,formation_tactical_stability,log(1 + distinct normalized base formation shapes).,strictly pre-signing; source-gated
+formation_shape_entropy_365d,formation_tactical_stability,Normalized entropy of reported base formation shapes.,strictly pre-signing; source-gated
+formation_shape_change_rate_365d,formation_tactical_stability,Adjacent base-shape changes / possible observed formation transitions.,strictly pre-signing; source-gated
+dominant_formation_shape_share_365d,formation_tactical_stability,Share of formation-coded games using the most common base shape.,strictly pre-signing; source-gated
+current_formation_shape_spell_share_365d,formation_tactical_stability,Trailing consecutive current-shape games / formation-coded games.,strictly pre-signing; source-gated
+formation_distribution_shift_recent_vs_prior,formation_tactical_stability,Total-variation distance between recent-180-day and prior-185-day formation distributions.,strictly pre-signing; source-gated
+current_manager_player_selection_rate,player_under_current_manager,Player matchday selections / games in the current observed manager spell.,strictly pre-signing; source-gated
+current_manager_player_start_rate,player_under_current_manager,Player starts / games in the current observed manager spell.,strictly pre-signing; source-gated
+current_manager_player_opportunity_share,player_under_current_manager,Player minutes / 90-minute opportunities in the current observed manager spell.,strictly pre-signing; source-gated
+current_manager_player_captain_rate,player_under_current_manager,Player captain selections / games in the current observed manager spell.,strictly pre-signing; source-gated
+manager_transition_observed_365d,role_change_at_manager_transition,One when at least one observed manager transition occurred in the prior year.,strictly pre-signing; source-gated
+days_since_manager_transition_scaled_365d,role_change_at_manager_transition,Days since latest transition / 365; one when no transition was observed.,strictly pre-signing; source-gated
+player_selection_rate_change_post_vs_pre_manager,role_change_at_manager_transition,Current-manager selection rate minus immediately previous-manager rate.,strictly pre-signing; source-gated
+player_start_rate_change_post_vs_pre_manager,role_change_at_manager_transition,Current-manager start rate minus immediately previous-manager rate.,strictly pre-signing; source-gated
+player_opportunity_share_change_post_vs_pre_manager,role_change_at_manager_transition,Current-manager opportunity share minus immediately previous-manager share.,strictly pre-signing; source-gated

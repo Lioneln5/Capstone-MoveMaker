@@ -1,0 +1,193 @@
+period,league,metric,denominator,events_with_any,fraction_with_any,total_records
+all_extension_years_inventory,ALL,linked,2805,2726,0.9718360071301247,2726.0
+all_extension_years_inventory,ALL,prior365_injury_start_records,2805,1335,0.47593582887700536,2486.0
+all_extension_years_inventory,ALL,any_prior_injury_start_record,2805,2021,0.7204991087344028,2021.0
+all_extension_years_inventory,ALL,prior365_lineup_rows,2805,2482,0.8848484848484849,72557.0
+all_extension_years_inventory,ALL,prior365_club_games,2805,2700,0.9625668449197861,110440.0
+all_extension_years_inventory,ALL,prior365_manager_recorded_games,2805,2700,0.9625668449197861,110382.0
+all_extension_years_inventory,ALL,prior365_formation_recorded_games,2805,2697,0.9614973262032086,109468.0
+all_extension_years_inventory,ALL,previous_completed_season_known_wage_players,2805,2394,0.853475935828877,66310.0
+all_extension_years_inventory,ALL,previous_completed_club_season_standings_rows,2805,2726,0.9718360071301247,2726.0
+all_extension_years_inventory,ALL,lifetime_teammate_record_present,2805,2666,0.950445632798574,2666.0
+all_extension_years_inventory,ALL,career_national_record_present,2805,1950,0.6951871657754011,1950.0
+all_extension_years_inventory,ALL,unreviewed_sb_prior365_same_club_matches,2805,91,0.03244206773618538,215.0
+all_extension_years_inventory,ALL,prior365_manager_recorded_games_at_least_10,2805,2560,0.9126559714795008,
+all_extension_years_inventory,ALL,prior365_lineup_rows_at_least_10,2805,2127,0.758288770053476,
+all_extension_years_inventory,ALL,previous_completed_season_known_wage_players_at_least_15,2805,2394,0.853475935828877,
+all_extension_years_inventory,ALL,unreviewed_sb_prior365_same_club_matches_at_least_3,2805,5,0.0017825311942959,
+all_extension_years_inventory,Bundesliga,linked,567,555,0.9788359788359788,555.0
+all_extension_years_inventory,Bundesliga,prior365_injury_start_records,567,329,0.5802469135802469,652.0
+all_extension_years_inventory,Bundesliga,any_prior_injury_start_record,567,449,0.7918871252204586,449.0
+all_extension_years_inventory,Bundesliga,prior365_lineup_rows,567,504,0.8888888888888888,13141.0
+all_extension_years_inventory,Bundesliga,prior365_club_games,567,555,0.9788359788359788,21867.0
+all_extension_years_inventory,Bundesliga,prior365_manager_recorded_games,567,555,0.9788359788359788,21867.0
+all_extension_years_inventory,Bundesliga,prior365_formation_recorded_games,567,555,0.9788359788359788,21827.0
+all_extension_years_inventory,Bundesliga,previous_completed_season_known_wage_players,567,495,0.873015873015873,14319.0
+all_extension_years_inventory,Bundesliga,previous_completed_club_season_standings_rows,567,555,0.9788359788359788,555.0
+all_extension_years_inventory,Bundesliga,lifetime_teammate_record_present,567,537,0.9470899470899471,537.0
+all_extension_years_inventory,Bundesliga,career_national_record_present,567,370,0.6525573192239859,370.0
+all_extension_years_inventory,Bundesliga,unreviewed_sb_prior365_same_club_matches,567,38,0.06701940035273368,50.0
+all_extension_years_inventory,Bundesliga,prior365_manager_recorded_games_at_least_10,567,539,0.9506172839506173,
+all_extension_years_inventory,Bundesliga,prior365_lineup_rows_at_least_10,567,407,0.7178130511463845,
+all_extension_years_inventory,Bundesliga,previous_completed_season_known_wage_players_at_least_15,567,495,0.873015873015873,
+all_extension_years_inventory,Bundesliga,unreviewed_sb_prior365_same_club_matches_at_least_3,567,0,0.0,
+all_extension_years_inventory,La Liga,linked,479,453,0.9457202505219207,453.0
+all_extension_years_inventory,La Liga,prior365_injury_start_records,479,213,0.44467640918580376,372.0
+all_extension_years_inventory,La Liga,any_prior_injury_start_record,479,356,0.7432150313152401,356.0
+all_extension_years_inventory,La Liga,prior365_lineup_rows,479,425,0.8872651356993737,14587.0
+all_extension_years_inventory,La Liga,prior365_club_games,479,453,0.9457202505219207,20109.0
+all_extension_years_inventory,La Liga,prior365_manager_recorded_games,479,453,0.9457202505219207,20067.0
+all_extension_years_inventory,La Liga,prior365_formation_recorded_games,479,450,0.9394572025052192,19662.0
+all_extension_years_inventory,La Liga,previous_completed_season_known_wage_players,479,397,0.8288100208768268,10189.0
+all_extension_years_inventory,La Liga,previous_completed_club_season_standings_rows,479,453,0.9457202505219207,453.0
+all_extension_years_inventory,La Liga,lifetime_teammate_record_present,479,445,0.9290187891440501,445.0
+all_extension_years_inventory,La Liga,career_national_record_present,479,295,0.615866388308977,295.0
+all_extension_years_inventory,La Liga,unreviewed_sb_prior365_same_club_matches,479,10,0.020876826722338204,87.0
+all_extension_years_inventory,La Liga,prior365_manager_recorded_games_at_least_10,479,436,0.9102296450939458,
+all_extension_years_inventory,La Liga,prior365_lineup_rows_at_least_10,479,401,0.837160751565762,
+all_extension_years_inventory,La Liga,previous_completed_season_known_wage_players_at_least_15,479,397,0.8288100208768268,
+all_extension_years_inventory,La Liga,unreviewed_sb_prior365_same_club_matches_at_least_3,479,3,0.006263048016701462,
+all_extension_years_inventory,Ligue 1,linked,499,491,0.9839679358717435,491.0
+all_extension_years_inventory,Ligue 1,prior365_injury_start_records,499,161,0.3226452905811623,263.0
+all_extension_years_inventory,Ligue 1,any_prior_injury_start_record,499,263,0.5270541082164328,263.0
+all_extension_years_inventory,Ligue 1,prior365_lineup_rows,499,428,0.8577154308617234,10884.0
+all_extension_years_inventory,Ligue 1,prior365_club_games,499,468,0.9378757515030061,17646.0
+all_extension_years_inventory,Ligue 1,prior365_manager_recorded_games,499,468,0.9378757515030061,17634.0
+all_extension_years_inventory,Ligue 1,prior365_formation_recorded_games,499,468,0.9378757515030061,17511.0
+all_extension_years_inventory,Ligue 1,previous_completed_season_known_wage_players,499,432,0.8657314629258517,11890.0
+all_extension_years_inventory,Ligue 1,previous_completed_club_season_standings_rows,499,491,0.9839679358717435,491.0
+all_extension_years_inventory,Ligue 1,lifetime_teammate_record_present,499,479,0.9599198396793587,479.0
+all_extension_years_inventory,Ligue 1,career_national_record_present,499,292,0.5851703406813628,292.0
+all_extension_years_inventory,Ligue 1,unreviewed_sb_prior365_same_club_matches,499,36,0.07214428857715431,71.0
+all_extension_years_inventory,Ligue 1,prior365_manager_recorded_games_at_least_10,499,455,0.9118236472945892,
+all_extension_years_inventory,Ligue 1,prior365_lineup_rows_at_least_10,499,362,0.7254509018036072,
+all_extension_years_inventory,Ligue 1,previous_completed_season_known_wage_players_at_least_15,499,432,0.8657314629258517,
+all_extension_years_inventory,Ligue 1,unreviewed_sb_prior365_same_club_matches_at_least_3,499,2,0.004008016032064128,
+all_extension_years_inventory,Premier League,linked,648,634,0.9783950617283951,634.0
+all_extension_years_inventory,Premier League,prior365_injury_start_records,648,308,0.47530864197530864,545.0
+all_extension_years_inventory,Premier League,any_prior_injury_start_record,648,504,0.7777777777777778,504.0
+all_extension_years_inventory,Premier League,prior365_lineup_rows,648,586,0.904320987654321,17092.0
+all_extension_years_inventory,Premier League,prior365_club_games,648,634,0.9783950617283951,26184.0
+all_extension_years_inventory,Premier League,prior365_manager_recorded_games,648,634,0.9783950617283951,26181.0
+all_extension_years_inventory,Premier League,prior365_formation_recorded_games,648,634,0.9783950617283951,25947.0
+all_extension_years_inventory,Premier League,previous_completed_season_known_wage_players,648,550,0.8487654320987654,15154.0
+all_extension_years_inventory,Premier League,previous_completed_club_season_standings_rows,648,634,0.9783950617283951,634.0
+all_extension_years_inventory,Premier League,lifetime_teammate_record_present,648,630,0.9722222222222222,630.0
+all_extension_years_inventory,Premier League,career_national_record_present,648,539,0.8317901234567902,539.0
+all_extension_years_inventory,Premier League,unreviewed_sb_prior365_same_club_matches,648,7,0.010802469135802469,7.0
+all_extension_years_inventory,Premier League,prior365_manager_recorded_games_at_least_10,648,580,0.8950617283950617,
+all_extension_years_inventory,Premier League,prior365_lineup_rows_at_least_10,648,494,0.7623456790123457,
+all_extension_years_inventory,Premier League,previous_completed_season_known_wage_players_at_least_15,648,550,0.8487654320987654,
+all_extension_years_inventory,Premier League,unreviewed_sb_prior365_same_club_matches_at_least_3,648,0,0.0,
+all_extension_years_inventory,Serie A,linked,612,593,0.9689542483660131,593.0
+all_extension_years_inventory,Serie A,prior365_injury_start_records,612,324,0.5294117647058824,654.0
+all_extension_years_inventory,Serie A,any_prior_injury_start_record,612,449,0.7336601307189542,449.0
+all_extension_years_inventory,Serie A,prior365_lineup_rows,612,539,0.880718954248366,16853.0
+all_extension_years_inventory,Serie A,prior365_club_games,612,590,0.9640522875816994,24634.0
+all_extension_years_inventory,Serie A,prior365_manager_recorded_games,612,590,0.9640522875816994,24633.0
+all_extension_years_inventory,Serie A,prior365_formation_recorded_games,612,590,0.9640522875816994,24521.0
+all_extension_years_inventory,Serie A,previous_completed_season_known_wage_players,612,520,0.8496732026143791,14758.0
+all_extension_years_inventory,Serie A,previous_completed_club_season_standings_rows,612,593,0.9689542483660131,593.0
+all_extension_years_inventory,Serie A,lifetime_teammate_record_present,612,575,0.9395424836601307,575.0
+all_extension_years_inventory,Serie A,career_national_record_present,612,454,0.7418300653594772,454.0
+all_extension_years_inventory,Serie A,unreviewed_sb_prior365_same_club_matches,612,0,0.0,0.0
+all_extension_years_inventory,Serie A,prior365_manager_recorded_games_at_least_10,612,550,0.8986928104575164,
+all_extension_years_inventory,Serie A,prior365_lineup_rows_at_least_10,612,463,0.7565359477124183,
+all_extension_years_inventory,Serie A,previous_completed_season_known_wage_players_at_least_15,612,520,0.8496732026143791,
+all_extension_years_inventory,Serie A,unreviewed_sb_prior365_same_club_matches_at_least_3,612,0,0.0,
+development_through_2023,ALL,linked,2240,2179,0.9727678571428572,2179.0
+development_through_2023,ALL,prior365_injury_start_records,2240,1053,0.4700892857142857,1975.0
+development_through_2023,ALL,any_prior_injury_start_record,2240,1578,0.7044642857142858,1578.0
+development_through_2023,ALL,prior365_lineup_rows,2240,1977,0.8825892857142857,56924.0
+development_through_2023,ALL,prior365_club_games,2240,2158,0.9633928571428572,87280.0
+development_through_2023,ALL,prior365_manager_recorded_games,2240,2158,0.9633928571428572,87230.0
+development_through_2023,ALL,prior365_formation_recorded_games,2240,2155,0.9620535714285714,86456.0
+development_through_2023,ALL,previous_completed_season_known_wage_players,2240,1912,0.8535714285714285,52098.0
+development_through_2023,ALL,previous_completed_club_season_standings_rows,2240,2179,0.9727678571428572,2179.0
+development_through_2023,ALL,lifetime_teammate_record_present,2240,2131,0.9513392857142857,2131.0
+development_through_2023,ALL,career_national_record_present,2240,1580,0.7053571428571429,1580.0
+development_through_2023,ALL,unreviewed_sb_prior365_same_club_matches,2240,58,0.025892857142857145,166.0
+development_through_2023,ALL,prior365_manager_recorded_games_at_least_10,2240,2039,0.9102678571428572,
+development_through_2023,ALL,prior365_lineup_rows_at_least_10,2240,1684,0.7517857142857143,
+development_through_2023,ALL,previous_completed_season_known_wage_players_at_least_15,2240,1912,0.8535714285714285,
+development_through_2023,ALL,unreviewed_sb_prior365_same_club_matches_at_least_3,2240,4,0.0017857142857142857,
+development_through_2023,Bundesliga,linked,450,438,0.9733333333333334,438.0
+development_through_2023,Bundesliga,prior365_injury_start_records,450,262,0.5822222222222222,523.0
+development_through_2023,Bundesliga,any_prior_injury_start_record,450,347,0.7711111111111111,347.0
+development_through_2023,Bundesliga,prior365_lineup_rows,450,398,0.8844444444444445,10425.0
+development_through_2023,Bundesliga,prior365_club_games,450,438,0.9733333333333334,17135.0
+development_through_2023,Bundesliga,prior365_manager_recorded_games,450,438,0.9733333333333334,17135.0
+development_through_2023,Bundesliga,prior365_formation_recorded_games,450,438,0.9733333333333334,17095.0
+development_through_2023,Bundesliga,previous_completed_season_known_wage_players,450,386,0.8577777777777778,10986.0
+development_through_2023,Bundesliga,previous_completed_club_season_standings_rows,450,438,0.9733333333333334,438.0
+development_through_2023,Bundesliga,lifetime_teammate_record_present,450,426,0.9466666666666667,426.0
+development_through_2023,Bundesliga,career_national_record_present,450,299,0.6644444444444444,299.0
+development_through_2023,Bundesliga,unreviewed_sb_prior365_same_club_matches,450,7,0.015555555555555555,7.0
+development_through_2023,Bundesliga,prior365_manager_recorded_games_at_least_10,450,426,0.9466666666666667,
+development_through_2023,Bundesliga,prior365_lineup_rows_at_least_10,450,323,0.7177777777777777,
+development_through_2023,Bundesliga,previous_completed_season_known_wage_players_at_least_15,450,386,0.8577777777777778,
+development_through_2023,Bundesliga,unreviewed_sb_prior365_same_club_matches_at_least_3,450,0,0.0,
+development_through_2023,La Liga,linked,366,344,0.9398907103825137,344.0
+development_through_2023,La Liga,prior365_injury_start_records,366,165,0.45081967213114754,294.0
+development_through_2023,La Liga,any_prior_injury_start_record,366,275,0.7513661202185792,275.0
+development_through_2023,La Liga,prior365_lineup_rows,366,324,0.8852459016393442,10665.0
+development_through_2023,La Liga,prior365_club_games,366,344,0.9398907103825137,15001.0
+development_through_2023,La Liga,prior365_manager_recorded_games,366,344,0.9398907103825137,14967.0
+development_through_2023,La Liga,prior365_formation_recorded_games,366,341,0.9316939890710383,14554.0
+development_through_2023,La Liga,previous_completed_season_known_wage_players,366,298,0.8142076502732241,7531.0
+development_through_2023,La Liga,previous_completed_club_season_standings_rows,366,344,0.9398907103825137,344.0
+development_through_2023,La Liga,lifetime_teammate_record_present,366,337,0.9207650273224044,337.0
+development_through_2023,La Liga,career_national_record_present,366,225,0.6147540983606558,225.0
+development_through_2023,La Liga,unreviewed_sb_prior365_same_club_matches,366,10,0.0273224043715847,87.0
+development_through_2023,La Liga,prior365_manager_recorded_games_at_least_10,366,329,0.8989071038251366,
+development_through_2023,La Liga,prior365_lineup_rows_at_least_10,366,303,0.8278688524590164,
+development_through_2023,La Liga,previous_completed_season_known_wage_players_at_least_15,366,298,0.8142076502732241,
+development_through_2023,La Liga,unreviewed_sb_prior365_same_club_matches_at_least_3,366,3,0.00819672131147541,
+development_through_2023,Ligue 1,linked,418,412,0.9856459330143541,412.0
+development_through_2023,Ligue 1,prior365_injury_start_records,418,122,0.291866028708134,198.0
+development_through_2023,Ligue 1,any_prior_injury_start_record,418,208,0.49760765550239233,208.0
+development_through_2023,Ligue 1,prior365_lineup_rows,418,357,0.854066985645933,9088.0
+development_through_2023,Ligue 1,prior365_club_games,418,394,0.9425837320574163,14962.0
+development_through_2023,Ligue 1,prior365_manager_recorded_games,418,394,0.9425837320574163,14950.0
+development_through_2023,Ligue 1,prior365_formation_recorded_games,418,394,0.9425837320574163,14827.0
+development_through_2023,Ligue 1,previous_completed_season_known_wage_players,418,370,0.8851674641148325,10069.0
+development_through_2023,Ligue 1,previous_completed_club_season_standings_rows,418,412,0.9856459330143541,412.0
+development_through_2023,Ligue 1,lifetime_teammate_record_present,418,402,0.9617224880382775,402.0
+development_through_2023,Ligue 1,career_national_record_present,418,247,0.5909090909090909,247.0
+development_through_2023,Ligue 1,unreviewed_sb_prior365_same_club_matches,418,34,0.08133971291866028,65.0
+development_through_2023,Ligue 1,prior365_manager_recorded_games_at_least_10,418,384,0.9186602870813397,
+development_through_2023,Ligue 1,prior365_lineup_rows_at_least_10,418,302,0.722488038277512,
+development_through_2023,Ligue 1,previous_completed_season_known_wage_players_at_least_15,418,370,0.8851674641148325,
+development_through_2023,Ligue 1,unreviewed_sb_prior365_same_club_matches_at_least_3,418,1,0.0023923444976076554,
+development_through_2023,Premier League,linked,520,514,0.9884615384615385,514.0
+development_through_2023,Premier League,prior365_injury_start_records,520,255,0.49038461538461536,455.0
+development_through_2023,Premier League,any_prior_injury_start_record,520,403,0.775,403.0
+development_through_2023,Premier League,prior365_lineup_rows,520,472,0.9076923076923077,13673.0
+development_through_2023,Premier League,prior365_club_games,520,514,0.9884615384615385,20785.0
+development_through_2023,Premier League,prior365_manager_recorded_games,520,514,0.9884615384615385,20782.0
+development_through_2023,Premier League,prior365_formation_recorded_games,520,514,0.9884615384615385,20692.0
+development_through_2023,Premier League,previous_completed_season_known_wage_players,520,444,0.8538461538461538,12043.0
+development_through_2023,Premier League,previous_completed_club_season_standings_rows,520,514,0.9884615384615385,514.0
+development_through_2023,Premier League,lifetime_teammate_record_present,520,510,0.9807692307692307,510.0
+development_through_2023,Premier League,career_national_record_present,520,447,0.8596153846153847,447.0
+development_through_2023,Premier League,unreviewed_sb_prior365_same_club_matches,520,7,0.013461538461538462,7.0
+development_through_2023,Premier League,prior365_manager_recorded_games_at_least_10,520,466,0.8961538461538462,
+development_through_2023,Premier League,prior365_lineup_rows_at_least_10,520,395,0.7596153846153846,
+development_through_2023,Premier League,previous_completed_season_known_wage_players_at_least_15,520,444,0.8538461538461538,
+development_through_2023,Premier League,unreviewed_sb_prior365_same_club_matches_at_least_3,520,0,0.0,
+development_through_2023,Serie A,linked,486,471,0.9691358024691358,471.0
+development_through_2023,Serie A,prior365_injury_start_records,486,249,0.5123456790123457,505.0
+development_through_2023,Serie A,any_prior_injury_start_record,486,345,0.7098765432098766,345.0
+development_through_2023,Serie A,prior365_lineup_rows,486,426,0.8765432098765432,13073.0
+development_through_2023,Serie A,prior365_club_games,486,468,0.9629629629629629,19397.0
+development_through_2023,Serie A,prior365_manager_recorded_games,486,468,0.9629629629629629,19396.0
+development_through_2023,Serie A,prior365_formation_recorded_games,486,468,0.9629629629629629,19288.0
+development_through_2023,Serie A,previous_completed_season_known_wage_players,486,414,0.8518518518518519,11469.0
+development_through_2023,Serie A,previous_completed_club_season_standings_rows,486,471,0.9691358024691358,471.0
+development_through_2023,Serie A,lifetime_teammate_record_present,486,456,0.9382716049382716,456.0
+development_through_2023,Serie A,career_national_record_present,486,362,0.7448559670781894,362.0
+development_through_2023,Serie A,unreviewed_sb_prior365_same_club_matches,486,0,0.0,0.0
+development_through_2023,Serie A,prior365_manager_recorded_games_at_least_10,486,434,0.8930041152263375,
+development_through_2023,Serie A,prior365_lineup_rows_at_least_10,486,361,0.742798353909465,
+development_through_2023,Serie A,previous_completed_season_known_wage_players_at_least_15,486,414,0.8518518518518519,
+development_through_2023,Serie A,unreviewed_sb_prior365_same_club_matches_at_least_3,486,0,0.0,

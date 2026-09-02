@@ -72,6 +72,11 @@
   .site-nav a.active { color: #ffffff; background: var(--green); }
   .site-nav a.active:hover { color: #ffffff; }
 
+  .prototype-banner { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; padding: 16px 34px; background: var(--amber-bg); border-bottom: 2px solid var(--amber-line); color: var(--amber-text); }
+  .prototype-banner-label { padding: 5px 8px; background: var(--amber-line); font-size: 10px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; white-space: nowrap; }
+  .prototype-banner-copy { font-size: 12px; line-height: 1.55; }
+  .prototype-banner-copy strong { font-weight: 800; }
+
   .league-rail { display: grid; grid-template-columns: 170px repeat(5, 1fr); background: var(--panel); border-bottom: 2px solid var(--rule); }
   .league-rail-side { padding: 18px 18px 18px 34px; font-size: 10.5px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--text-mute); line-height: 1.4; border-right: 1px solid var(--rule-soft); display: flex; flex-direction: column; justify-content: center; gap: 8px; }
   .league-rail-eyebrow { color: var(--text-mute); }
@@ -178,6 +183,14 @@
   .financial-stat { padding: 12px 14px; background: var(--soft-fill); }
   .financial-value { font-size: 21px; font-weight: 800; letter-spacing: -0.02em; color: var(--bg-deep); }
   .financial-label { margin-top: 4px; font-size: 11px; line-height: 1.4; color: var(--text-mute); }
+  .scope-status-list { display: grid; gap: 9px; margin-top: 18px; }
+  .scope-status-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; align-items: center; padding: 12px 14px; background: var(--soft-fill); border-left: 4px solid var(--rule-mid); }
+  .scope-status-row.candidate { border-left-color: var(--amber-line); }
+  .scope-status-row.unavailable { border-left-color: var(--text-faint); }
+  .scope-status-name { font-size: 13px; font-weight: 800; color: var(--bg-deep); }
+  .scope-status-definition { margin-top: 3px; font-size: 10.8px; line-height: 1.4; color: var(--text-mute); }
+  .scope-status-badge { padding: 5px 8px; font-size: 9px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; white-space: nowrap; background: #fff; border: 1px solid var(--rule-mid); color: var(--text-mute); }
+  .scope-status-row.candidate .scope-status-badge { border-color: var(--amber-line); color: var(--amber-text); }
   .card-control { display: flex; align-items: center; gap: 14px; margin-top: 14px; padding: 10px 12px; background: var(--soft-fill); border: 1px solid var(--rule-soft); }
   .card-control label { font-size: 10.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--text-mute); }
   .card-control .select-wrap { flex: 1; }
@@ -276,6 +289,11 @@
     <a href="how-it-works.html">How It Works</a><a href="scope.html">Scope &amp; Limitations</a><a href="contact.html">Contact</a>
   </nav>
 
+  <div class="prototype-banner" id="prototypeBanner" role="status" aria-live="polite">
+    <div class="prototype-banner-label">Research prototype</div>
+    <div class="prototype-banner-copy" id="prototypeBannerCopy"><strong>Live scoring is paused.</strong> Engine V1 is preserved for historical audit. Engine V2 retired generic continuity and has not authorized a live replacement; verified research evidence remains available.</div>
+  </div>
+
   <section class="league-rail" aria-label="Data coverage across the Big Five leagues">
     <div class="league-rail-side">
       <div class="league-rail-eyebrow">European<br>coverage</div>
@@ -357,7 +375,7 @@
             </div>
           </div>
         </div>
-        <div class="results-note">Four separate signals—never an overall “success score.” Each answers a different contract decision and should be interpreted with the data warnings below.</div>
+        <div class="results-note">The frozen V1 interface is preserved as a research record. No live probability is currently authorized, and the former generic continuity output has been retired.</div>
       </div>
       <div class="warning-banner" id="warningBanner"></div>
 
@@ -390,27 +408,23 @@
 
         <article class="decision-card">
           <div class="card-body">
-            <div class="card-header-row"><span class="card-kicker">Club continuity</span><span class="card-counter">02 / 04</span></div>
-            <h2 class="card-title">Contract-Horizon Stability</h2>
-            <div class="card-question">How likely is the player to remain continuously at the current club without a loan or permanent departure?</div>
-            <div class="primary-stat">
-              <div><div class="primary-value mm-num" id="continuity24">—</div><div class="primary-label">continuous-stay probability through 24 months</div></div>
-              <div><div class="score-track"><div class="score-fill" id="continuityBar"></div></div><div class="score-scale"><span>less stable</span><span>more stable</span></div></div>
-            </div>
-            <div class="financial-strip">
-              <div class="financial-stat"><div class="financial-value mm-num" id="continuity36">—</div><div class="financial-label">continuous-stay probability through 36 months</div></div>
-              <div class="financial-stat"><div class="financial-value mm-num" id="wagesAfter36">—</div><div class="financial-label">fixed wages still scheduled after Month 36</div></div>
+            <div class="card-header-row"><span class="card-kicker">Movement &amp; retention research</span><span class="card-counter">02 / 04</span></div>
+            <h2 class="card-title">Separated Football Outcomes</h2>
+            <div class="card-question">The former all-purpose continuity score was retired because loans, permanent exits and meaningful sporting use are different football outcomes.</div>
+            <div class="scope-status-list">
+              <div class="scope-status-row candidate"><div><div class="scope-status-name">Meaningful Retention</div><div class="scope-status-definition">Kept and meaningfully used for two years.</div></div><div class="scope-status-badge">Development candidate</div></div>
+              <div class="scope-status-row candidate"><div><div class="scope-status-name">Temporary Displacement Risk</div><div class="scope-status-definition">A loan or loan return is the first interruption.</div></div><div class="scope-status-badge">Development candidate</div></div>
+              <div class="scope-status-row unavailable"><div><div class="scope-status-name">Permanent Separation</div><div class="scope-status-definition">Permanent relationship ends within two years.</div></div><div class="scope-status-badge">Research only</div></div>
             </div>
           </div>
-          <button class="explain-toggle" type="button" data-panel="continuityExplain" aria-expanded="false"><span>What this means &amp; how it is calculated</span><span class="caret">▾</span></button>
-          <div class="explain-panel" id="continuityExplain">
+          <button class="explain-toggle" type="button" data-panel="movementScopeExplain" aria-expanded="false"><span>Why the product changed</span><span class="caret">▾</span></button>
+          <div class="explain-panel" id="movementScopeExplain">
             <div class="explain-grid">
-              <div class="explain-block"><h4>What it shows</h4><p>“Continuous stay” means no departure of any kind during the period. A loan counts as an interruption; a player can therefore remain under contract while failing this stricter continuity definition.</p></div>
-              <div class="explain-block"><h4>How it is calculated</h4><p>A discrete-time survival model estimates departure risk across successive intervals, then converts those hazards into the probability of an uninterrupted stay through 24 and 36 months.</p></div>
-              <div class="explain-block"><h4>Decision use</h4><p>Compare the likely relationship horizon with the guaranteed wage horizon. Large scheduled wages beyond Month 36 deserve stronger exit, loan and succession planning.</p></div>
-              <div class="explain-block"><h4>Important distinction</h4><p>This is not a loyalty or performance score. Strategic loans, planned sales and demand from other clubs can all reduce continuity.</p></div>
+              <div class="explain-block"><h4>Meaningful Retention</h4><p>Requires no outbound movement and at least 25% same-club opportunity share in both Year 1 and Year 2. It is not a relabeling of the older contribution-only endpoint.</p></div>
+              <div class="explain-block"><h4>Temporary displacement</h4><p>Models a loan or loan return as the first resolved interruption. This is a separate squad-management mechanism from a permanent exit.</p></div>
+              <div class="explain-block"><h4>Permanent separation</h4><p>Cross-league reliability remains insufficient, so no personalized probability is displayed. The question remains in the research backlog.</p></div>
+              <div class="explain-block"><h4>Current authorization</h4><p>The first two outcomes have promising rolling-development evidence but still require a later untouched temporal test. None of the three is deployed.</p></div>
             </div>
-            <div class="why-panel" id="continuityWhy"></div>
           </div>
         </article>
 
@@ -484,7 +498,7 @@
           <div class="detail-help">These are decision facts and historical comparisons—not additional outcome predictions.</div>
         </div></details>
         <details class="detail-box"><summary>Supporting model signals</summary><div class="detail-content">
-          <div class="detail-row"><span class="detail-label">Permanent relationship intact at 24m</span><span class="detail-value mm-num" id="permanent24">—</span></div>
+          <div class="detail-row"><span class="detail-label">Permanent-separation probability</span><span class="detail-value">Unavailable · research only</span></div>
           <div class="detail-row"><span class="detail-label">Value preserved within 10% at 12m</span><span class="detail-value mm-num" id="preservation12">—</span></div>
           <div class="detail-row"><span class="detail-label">Value preserved within 10% at 24m</span><span class="detail-value mm-num" id="preservation24">—</span></div>
           <div class="detail-row"><span class="detail-label">Offer aggressiveness percentile</span><span class="detail-value mm-num" id="offerPercentile">—</span></div>
@@ -528,6 +542,7 @@
   let selectedPlayer = null;
   let currentProfile = null;
   let searchDebounce = null;
+  const scoringEnabled = false;
 
   const LEAGUES = {
     GB1: {name: 'Premier League', country: 'England', logo: 'assets/leagues/GB1.png'},
@@ -616,16 +631,30 @@
   $('connectToggle').addEventListener('click', () => $('connectBody').classList.toggle('open'));
   apiBaseInput.addEventListener('change', checkApiConnection);
 
+  function setScoringUnavailable(message = null) {
+    ['playerSearch', 'marketValue', 'wage', 'contractLength'].forEach(id => {
+      const element = $(id);
+      if (element) element.disabled = true;
+    });
+    $('prototypeBannerCopy').innerHTML = `<strong>Live scoring is unavailable.</strong> ${escapeHtml(message || 'Engine V1 is preserved for historical audit. Engine V2 retired generic continuity and has not authorized a live replacement.')}`;
+    selectedPlayer = null;
+    currentProfile = null;
+    $('lockedInfo').style.display = 'none';
+    $('searchResults').classList.remove('show');
+    updateRunState();
+  }
+
   async function checkApiConnection() {
-    $('modelStatusText').textContent = 'Connecting to scoring engine…';
+    $('modelStatusText').textContent = 'Checking research-prototype status…';
     $('modelDot').classList.remove('live');
     try {
       const response = await fetch(`${apiBase()}/health`);
       const health = response.ok ? await response.json() : null;
-      if (!health || health.status !== 'ok' || !health.engine_loaded) throw new Error('engine unavailable');
-      $('modelStatusText').textContent = 'Connected — scoring engine ready';
-      $('modelDot').classList.add('live');
+      if (!health || health.status !== 'ok') throw new Error('service unavailable');
+      setScoringUnavailable(health.message);
+      $('modelStatusText').textContent = 'Research record — scoring unavailable';
     } catch (_) {
+      setScoringUnavailable('The explanatory site is available, but the status service could not be reached.');
       $('modelStatusText').textContent = 'Not connected — check API settings';
       $('modelDot').classList.remove('live');
     }
@@ -722,8 +751,8 @@
   });
 
   function updateRunState() {
-    $('runBtn').disabled = !selectedPlayer;
-    $('runBtn').textContent = selectedPlayer ? 'Run Extension Assessment' : 'Search a player first';
+    $('runBtn').disabled = !scoringEnabled || !selectedPlayer;
+    $('runBtn').textContent = !scoringEnabled ? 'No live scoring authorized' : selectedPlayer ? 'Run Extension Assessment' : 'Search a player first';
   }
 
   function setProbability(valueId, barId, value, risk = false) {
@@ -779,9 +808,6 @@
     if (profile.resolved_inputs?.current_public_market_value_eur) $('marketValue').value = Math.round(profile.resolved_inputs.current_public_market_value_eur);
     const cards = profile.cards || {};
     const contribution = findMetric(cards, 'contribution_exposure', 'low_contribution_wage_exposure_eur');
-    const continuity = findMetric(cards, 'continuity', 'contract_continuity_horizon');
-    const scheduled36 = findMetric(cards, 'continuity', 'scheduled_fixed_wages_after_36m_eur');
-    const permanent = findMetric(cards, 'continuity', 'permanent_relationship_probability_24m');
     const fixed = findMetric(cards, 'capital_commitment', 'fixed_wage_commitment_eur');
     const ageExpiration = findMetric(cards, 'capital_commitment', 'age_at_expiration');
     const wageChange = findMetric(cards, 'capital_commitment', 'proposed_wage_change_pct');
@@ -791,21 +817,15 @@
     const preserve12 = findMetric(cards, 'asset_value', 'value_preservation_probability_12m');
     const preserve24 = findMetric(cards, 'asset_value', 'value_preservation_probability_24m');
     const contributionProbability = available(contribution) ? contribution.components.sustained_contribution_probability_24m : null;
-    const stay24 = available(continuity) ? continuity.components.continuous_stay_probability_24m : null;
-    const stay36 = available(continuity) ? continuity.value.continuous_stay_probability_36m : null;
 
     setProbability('contributionProbability', 'contributionBar', contributionProbability);
     $('contributionExposure').textContent = available(contribution) ? fmtEur(contribution.value) : 'unavailable';
     $('wagesThrough24').textContent = available(contribution) ? fmtEur(contribution.components.fixed_wages_through_24m_eur) : '—';
-    setProbability('continuity24', 'continuityBar', stay24);
-    $('continuity36').textContent = fmtPct(stay36);
-    $('wagesAfter36').textContent = available(scheduled36) ? fmtEur(scheduled36.value) : '—';
     $('proposedCommitment').textContent = available(fixed) ? fmtEur(fixed.value) : '—';
     renderPeerBenchmark(peer, fixed);
     $('ageAtExpiration').textContent = available(ageExpiration) ? `${ageExpiration.value.toFixed(1)} years old` : '—';
     $('wageChange').textContent = available(wageChange) ? `${wageChange.value >= 0 ? '+' : ''}${fmtPct(wageChange.value)}` : 'unavailable';
     $('durationPeerDelta').textContent = available(duration) ? `${duration.value >= 0 ? '+' : ''}${duration.value.toFixed(1)} years` : 'unavailable';
-    $('permanent24').textContent = available(permanent) ? fmtPct(permanent.value) : 'unavailable';
     $('preservation12').textContent = available(preserve12) ? fmtPct(preserve12.value) : 'unavailable';
     $('preservation24').textContent = available(preserve24) ? fmtPct(preserve24.value) : 'unavailable';
     $('offerPercentile').textContent = available(peerPct) ? `${(peerPct.value * 100).toFixed(0)}th percentile` : 'unavailable';
@@ -813,7 +833,6 @@
 
     const explain = profile.explainability || {};
     renderWhy('contributionWhy', explain.sustained_contribution, 'supports contribution', 'raises low-contribution risk');
-    renderWhy('continuityWhy', explain.continuity, 'supports continuity', 'raises departure risk');
     renderWhy('valueWhy', explain.public_value_downside_risk, 'reduces downside risk', 'raises downside risk');
     renderDataNotes(profile);
     if (profile.data_density_warning) { $('warningBanner').textContent = profile.data_density_warning; $('warningBanner').style.display = 'block'; }
@@ -904,6 +923,7 @@
   }
 
   renderLeagueRail();
+  setScoringUnavailable();
   updateRunState();
   checkApiConnection();
 </script>

@@ -1,0 +1,31 @@
+check,passed,observed,expected,notes
+three_endpoints_exact,True,"['any_outbound_24m', 'downside_25pct_24m', 'sustained_meaningful_contribution']","['any_outbound_24m', 'downside_25pct_24m', 'sustained_meaningful_contribution']",Only Phase-2-approved predictive candidates are present.
+three_methods_exact,True,"['isotonic', 'platt', 'raw']","['isotonic', 'platt', 'raw']","Raw, Platt, and isotonic streams are retained for audit."
+rolling_years_exact,True,"[np.int64(2020), np.int64(2021), np.int64(2022), np.int64(2023)]","[2020, 2021, 2022, 2023]",Evaluation remains chronological.
+all_prediction_keys_unique,True,0,0,One prediction per method/event/origin.
+selected_prediction_keys_unique,True,0,0,One selected probability per event/origin.
+probabilities_bounded,True,"[1e-06, 0.999999]","[0,1]",All probability streams are valid.
+actuals_binary,True,"[np.int64(0), np.int64(1)]","[0, 1]",All endpoints are binary.
+selected_rows_reconcile,True,3856,3856,Selected table has exactly one chosen-method stream per endpoint.
+selected_probabilities_exact,True,0.0,<1e-12,Chosen probabilities are copied without alteration.
+origin_metrics_recompute,True,2.220446049250313e-16,<1e-12,Saved per-origin metrics derive from row-level probabilities.
+pooled_calibration_metrics_recompute,True,1.682681771697503e-16,<1e-12,Pooled method comparison is independently reconstructed.
+origin_wins_recompute,True,0,0,Origin wins derive from saved row losses.
+calibration_selection_rule_recomputes,True,[],[],Declared non-inferiority and simplicity rule reproduces every choice.
+intervals_ordered,True,0,0,Point estimate lies inside every 80% parameter interval.
+interval_widths_recompute,True,2.949029909160572e-16,<1e-12,Widths equal upper minus lower bounds.
+all_bootstraps_complete,True,250,250,Every player-cluster bootstrap completed.
+support_statuses_exact,True,"['limited', 'refused', 'supported']","['limited', 'refused', 'supported']",All three product support states occur and are explicit.
+refused_have_reasons,True,True,True,The engine can explain every refusal.
+support_summary_recomputes,True,1.1102230246251565e-16,<1e-12,Support shares derive from selected row statuses.
+ood_thresholds_ordered,True,True,True,The limited envelope is strictly inside the refusal envelope.
+support_profiles_complete,True,12,12,Three endpoints by four origins have learned support profiles.
+subgroup_metrics_recompute,True,1.6653345369377348e-16,<1e-12,Every subgroup count and metric derives from selected predictions.
+subgroup_status_rules_recompute,True,[],[],Evidence thresholds reproduce every supported/limited label.
+phase3_gates_recompute,True,[],[],"Calibration, refusal, uncertainty, and subgroup gates reproduce independently."
+continuity_block_is_real,True,0.607051282051282,>0.15,"Continuity is blocked by missing/out-of-domain live inputs, not presentation preference."
+nothing_deployed,True,['not_deployed'],['not_deployed'],Phase 3 cannot modify production.
+no_phase3_joblib,True,[],[],No research candidate is loadable as a deployed artifact.
+source_manifest_integrity,True,[],[],All declared Phase-3 inputs retain their hashes.
+v1_hashes_unchanged,True,[],[],Every Phase-0 protected file remains byte-identical.
+summary_reconciles,True,"{'all_checks_passed': True, 'checks_passed': 10, 'checks_total': 10, 'endpoint_decisions': {'any_outbound_24m': 'blocked_reliability_repair', 'downside_25pct_24m': 'advance_to_versioned_artifact_build', 'sustained_meaningful_contribution': 'advance_to_versioned_artifact_build'}, 'evaluation_rows': 3856, 'parameter_bootstrap_repetitions': 250, 'phase': 'engine_v2_phase_3_calibration_reliability', 'selected_calibration': {'any_outbound_24m': 'raw', 'downside_25pct_24m': 'platt', 'sustained_meaningful_contribution': 'raw'}, 'status': 'complete_research_only_not_deployed', 'v1_artifacts_modified': False}",row count and 10/10 runner checks,Top-level runner summary agrees with evidence.

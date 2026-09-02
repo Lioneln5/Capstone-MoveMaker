@@ -1,0 +1,211 @@
+endpoint,group_type,group,variant,n,actual_rate,brier
+sustained_meaningful_contribution,position,Attack,B0_intercept_only,204,0.43137254901960786,0.25374436325090893
+sustained_meaningful_contribution,position,Attack,B1_market_profile,204,0.43137254901960786,0.20964601342117078
+sustained_meaningful_contribution,position,Attack,V2_core_involvement,204,0.43137254901960786,0.19578841423025997
+sustained_meaningful_contribution,position,Attack,V2_plus_prior_volume,204,0.43137254901960786,0.19431052535867466
+sustained_meaningful_contribution,position,Attack,historical_M5_reference,204,0.43137254901960786,0.18615447162656523
+sustained_meaningful_contribution,position,Defender,B0_intercept_only,313,0.5303514376996805,0.24932444742917506
+sustained_meaningful_contribution,position,Defender,B1_market_profile,313,0.5303514376996805,0.2224205342651375
+sustained_meaningful_contribution,position,Defender,V2_core_involvement,313,0.5303514376996805,0.20743666280662965
+sustained_meaningful_contribution,position,Defender,V2_plus_prior_volume,313,0.5303514376996805,0.21025800239564083
+sustained_meaningful_contribution,position,Defender,historical_M5_reference,313,0.5303514376996805,0.2039846420752464
+sustained_meaningful_contribution,position,Goalkeeper,B0_intercept_only,128,0.3515625,0.25660046859837393
+sustained_meaningful_contribution,position,Goalkeeper,B1_market_profile,128,0.3515625,0.16227030572289142
+sustained_meaningful_contribution,position,Goalkeeper,V2_core_involvement,128,0.3515625,0.11790113229918225
+sustained_meaningful_contribution,position,Goalkeeper,V2_plus_prior_volume,128,0.3515625,0.11810471567800979
+sustained_meaningful_contribution,position,Goalkeeper,historical_M5_reference,128,0.3515625,0.11689675295167938
+sustained_meaningful_contribution,position,Midfield,B0_intercept_only,284,0.545774647887324,0.24871507780177357
+sustained_meaningful_contribution,position,Midfield,B1_market_profile,284,0.545774647887324,0.22136553056625166
+sustained_meaningful_contribution,position,Midfield,V2_core_involvement,284,0.545774647887324,0.20383098234053346
+sustained_meaningful_contribution,position,Midfield,V2_plus_prior_volume,284,0.545774647887324,0.20403846519925734
+sustained_meaningful_contribution,position,Midfield,historical_M5_reference,284,0.545774647887324,0.20002758967038134
+sustained_meaningful_contribution,league,Bundesliga,B0_intercept_only,198,0.43434343434343436,0.25315435341389364
+sustained_meaningful_contribution,league,Bundesliga,B1_market_profile,198,0.43434343434343436,0.17865678959218043
+sustained_meaningful_contribution,league,Bundesliga,V2_core_involvement,198,0.43434343434343436,0.1532825751728384
+sustained_meaningful_contribution,league,Bundesliga,V2_plus_prior_volume,198,0.43434343434343436,0.15611719833861795
+sustained_meaningful_contribution,league,Bundesliga,historical_M5_reference,198,0.43434343434343436,0.1533805051713186
+sustained_meaningful_contribution,league,La Liga,B0_intercept_only,172,0.6162790697674418,0.24662043038858494
+sustained_meaningful_contribution,league,La Liga,B1_market_profile,172,0.6162790697674418,0.23306113022508537
+sustained_meaningful_contribution,league,La Liga,V2_core_involvement,172,0.6162790697674418,0.20640633493732155
+sustained_meaningful_contribution,league,La Liga,V2_plus_prior_volume,172,0.6162790697674418,0.20987383695917058
+sustained_meaningful_contribution,league,La Liga,historical_M5_reference,172,0.6162790697674418,0.20125807085844902
+sustained_meaningful_contribution,league,Ligue 1,B0_intercept_only,193,0.42487046632124353,0.25473748186730605
+sustained_meaningful_contribution,league,Ligue 1,B1_market_profile,193,0.42487046632124353,0.2208466004162065
+sustained_meaningful_contribution,league,Ligue 1,V2_core_involvement,193,0.42487046632124353,0.19703072461538973
+sustained_meaningful_contribution,league,Ligue 1,V2_plus_prior_volume,193,0.42487046632124353,0.1942845718752676
+sustained_meaningful_contribution,league,Ligue 1,historical_M5_reference,193,0.42487046632124353,0.18443214558482052
+sustained_meaningful_contribution,league,Premier League,B0_intercept_only,183,0.546448087431694,0.2486526902228998
+sustained_meaningful_contribution,league,Premier League,B1_market_profile,183,0.546448087431694,0.21140416921358438
+sustained_meaningful_contribution,league,Premier League,V2_core_involvement,183,0.546448087431694,0.19763212902688643
+sustained_meaningful_contribution,league,Premier League,V2_plus_prior_volume,183,0.546448087431694,0.19706619291992858
+sustained_meaningful_contribution,league,Premier League,historical_M5_reference,183,0.546448087431694,0.19067237566670117
+sustained_meaningful_contribution,league,Serie A,B0_intercept_only,183,0.4371584699453552,0.2517556935018824
+sustained_meaningful_contribution,league,Serie A,B1_market_profile,183,0.4371584699453552,0.2144967660758047
+sustained_meaningful_contribution,league,Serie A,V2_core_involvement,183,0.4371584699453552,0.2065705296411105
+sustained_meaningful_contribution,league,Serie A,V2_plus_prior_volume,183,0.4371584699453552,0.20734911880919282
+sustained_meaningful_contribution,league,Serie A,historical_M5_reference,183,0.4371584699453552,0.2083013550225338
+sustained_meaningful_contribution,age,22-25,B0_intercept_only,267,0.5093632958801498,0.2503739027129023
+sustained_meaningful_contribution,age,22-25,B1_market_profile,267,0.5093632958801498,0.21722472058311698
+sustained_meaningful_contribution,age,22-25,V2_core_involvement,267,0.5093632958801498,0.2126054705740407
+sustained_meaningful_contribution,age,22-25,V2_plus_prior_volume,267,0.5093632958801498,0.2105398040095079
+sustained_meaningful_contribution,age,22-25,historical_M5_reference,267,0.5093632958801498,0.2000283251345215
+sustained_meaningful_contribution,age,26-29,B0_intercept_only,243,0.6008230452674898,0.24613209429145083
+sustained_meaningful_contribution,age,26-29,B1_market_profile,243,0.6008230452674898,0.23854960341637957
+sustained_meaningful_contribution,age,26-29,V2_core_involvement,243,0.6008230452674898,0.20187141999866087
+sustained_meaningful_contribution,age,26-29,V2_plus_prior_volume,243,0.6008230452674898,0.20244578952835748
+sustained_meaningful_contribution,age,26-29,historical_M5_reference,243,0.6008230452674898,0.20431049848613508
+sustained_meaningful_contribution,age,30-33,B0_intercept_only,170,0.5823529411764706,0.24630896609671943
+sustained_meaningful_contribution,age,30-33,B1_market_profile,170,0.5823529411764706,0.222075767652209
+sustained_meaningful_contribution,age,30-33,V2_core_involvement,170,0.5823529411764706,0.18570144987889572
+sustained_meaningful_contribution,age,30-33,V2_plus_prior_volume,170,0.5823529411764706,0.19182966694128395
+sustained_meaningful_contribution,age,30-33,historical_M5_reference,170,0.5823529411764706,0.19081116664121395
+sustained_meaningful_contribution,age,34+,B0_intercept_only,46,0.5217391304347826,0.24728653595199698
+sustained_meaningful_contribution,age,34+,B1_market_profile,46,0.5217391304347826,0.2319763593960208
+sustained_meaningful_contribution,age,34+,V2_core_involvement,46,0.5217391304347826,0.17970574454076682
+sustained_meaningful_contribution,age,34+,V2_plus_prior_volume,46,0.5217391304347826,0.17980279705601682
+sustained_meaningful_contribution,age,34+,historical_M5_reference,46,0.5217391304347826,0.17770245878117724
+sustained_meaningful_contribution,age,<=21,B0_intercept_only,203,0.2413793103448276,0.26292959801680366
+sustained_meaningful_contribution,age,<=21,B1_market_profile,203,0.2413793103448276,0.1558299345679188
+sustained_meaningful_contribution,age,<=21,V2_core_involvement,203,0.2413793103448276,0.1585799480257337
+sustained_meaningful_contribution,age,<=21,V2_plus_prior_volume,203,0.2413793103448276,0.15873893140815282
+sustained_meaningful_contribution,age,<=21,historical_M5_reference,203,0.2413793103448276,0.14741921009648326
+any_outbound_24m,position,Attack,B0_intercept_only,337,0.5934718100890207,0.2567921616454933
+any_outbound_24m,position,Attack,B1_market_profile,337,0.5934718100890207,0.22948948678354872
+any_outbound_24m,position,Attack,V2_core_involvement,337,0.5934718100890207,0.2230283136988284
+any_outbound_24m,position,Attack,V2_plus_prior_volume,337,0.5934718100890207,0.22140183658957882
+any_outbound_24m,position,Attack,historical_M5_reference,337,0.5934718100890207,0.2076453294731352
+any_outbound_24m,position,Defender,B0_intercept_only,525,0.49523809523809526,0.2524038285959829
+any_outbound_24m,position,Defender,B1_market_profile,525,0.49523809523809526,0.23892910572001838
+any_outbound_24m,position,Defender,V2_core_involvement,525,0.49523809523809526,0.23486796555461525
+any_outbound_24m,position,Defender,V2_plus_prior_volume,525,0.49523809523809526,0.23505262054082102
+any_outbound_24m,position,Defender,historical_M5_reference,525,0.49523809523809526,0.21910678012663468
+any_outbound_24m,position,Goalkeeper,B0_intercept_only,249,0.4497991967871486,0.2511681667917677
+any_outbound_24m,position,Goalkeeper,B1_market_profile,249,0.4497991967871486,0.251015861708516
+any_outbound_24m,position,Goalkeeper,V2_core_involvement,249,0.4497991967871486,0.24467158373599784
+any_outbound_24m,position,Goalkeeper,V2_plus_prior_volume,249,0.4497991967871486,0.24226694277225053
+any_outbound_24m,position,Goalkeeper,historical_M5_reference,249,0.4497991967871486,0.2198105965933076
+any_outbound_24m,position,Midfield,B0_intercept_only,449,0.48106904231625836,0.25033559455438226
+any_outbound_24m,position,Midfield,B1_market_profile,449,0.48106904231625836,0.23936155234247466
+any_outbound_24m,position,Midfield,V2_core_involvement,449,0.48106904231625836,0.23864462007757584
+any_outbound_24m,position,Midfield,V2_plus_prior_volume,449,0.48106904231625836,0.2395975162239471
+any_outbound_24m,position,Midfield,historical_M5_reference,449,0.48106904231625836,0.223193374720874
+any_outbound_24m,league,Bundesliga,B0_intercept_only,313,0.46006389776357826,0.24921406046810796
+any_outbound_24m,league,Bundesliga,B1_market_profile,313,0.46006389776357826,0.22893473912271287
+any_outbound_24m,league,Bundesliga,V2_core_involvement,313,0.46006389776357826,0.22083915474030227
+any_outbound_24m,league,Bundesliga,V2_plus_prior_volume,313,0.46006389776357826,0.22021497320779276
+any_outbound_24m,league,Bundesliga,historical_M5_reference,313,0.46006389776357826,0.21016554719865996
+any_outbound_24m,league,La Liga,B0_intercept_only,275,0.4072727272727273,0.24740878731497049
+any_outbound_24m,league,La Liga,B1_market_profile,275,0.4072727272727273,0.23856493565852346
+any_outbound_24m,league,La Liga,V2_core_involvement,275,0.4072727272727273,0.23045865844285596
+any_outbound_24m,league,La Liga,V2_plus_prior_volume,275,0.4072727272727273,0.2298030870996656
+any_outbound_24m,league,La Liga,historical_M5_reference,275,0.4072727272727273,0.2117149465761061
+any_outbound_24m,league,Ligue 1,B0_intercept_only,299,0.5451505016722408,0.2533162270704824
+any_outbound_24m,league,Ligue 1,B1_market_profile,299,0.5451505016722408,0.2548686936447239
+any_outbound_24m,league,Ligue 1,V2_core_involvement,299,0.5451505016722408,0.25764641512384295
+any_outbound_24m,league,Ligue 1,V2_plus_prior_volume,299,0.5451505016722408,0.2568200203745649
+any_outbound_24m,league,Ligue 1,historical_M5_reference,299,0.5451505016722408,0.2480585254453987
+any_outbound_24m,league,Premier League,B0_intercept_only,327,0.4892966360856269,0.25290635724058885
+any_outbound_24m,league,Premier League,B1_market_profile,327,0.4892966360856269,0.24491027074798355
+any_outbound_24m,league,Premier League,V2_core_involvement,327,0.4892966360856269,0.23754984139705126
+any_outbound_24m,league,Premier League,V2_plus_prior_volume,327,0.4892966360856269,0.24039277752142002
+any_outbound_24m,league,Premier League,historical_M5_reference,327,0.4892966360856269,0.21244075263076187
+any_outbound_24m,league,Serie A,B0_intercept_only,346,0.6040462427745664,0.25869703995262616
+any_outbound_24m,league,Serie A,B1_market_profile,346,0.6040462427745664,0.22889796396066764
+any_outbound_24m,league,Serie A,V2_core_involvement,346,0.6040462427745664,0.2292688428711225
+any_outbound_24m,league,Serie A,V2_plus_prior_volume,346,0.6040462427745664,0.2265839258425298
+any_outbound_24m,league,Serie A,historical_M5_reference,346,0.6040462427745664,0.20899753641703075
+any_outbound_24m,age,22-25,B0_intercept_only,379,0.5382585751978892,0.2546104379950943
+any_outbound_24m,age,22-25,B1_market_profile,379,0.5382585751978892,0.24912656421372742
+any_outbound_24m,age,22-25,V2_core_involvement,379,0.5382585751978892,0.24730192925206734
+any_outbound_24m,age,22-25,V2_plus_prior_volume,379,0.5382585751978892,0.24562189933514447
+any_outbound_24m,age,22-25,historical_M5_reference,379,0.5382585751978892,0.21235574533218748
+any_outbound_24m,age,26-29,B0_intercept_only,324,0.4074074074074074,0.2475806789336072
+any_outbound_24m,age,26-29,B1_market_profile,324,0.4074074074074074,0.23622406321694858
+any_outbound_24m,age,26-29,V2_core_involvement,324,0.4074074074074074,0.2366640011072933
+any_outbound_24m,age,26-29,V2_plus_prior_volume,324,0.4074074074074074,0.2364251697408603
+any_outbound_24m,age,26-29,historical_M5_reference,324,0.4074074074074074,0.21839734594747467
+any_outbound_24m,age,30-33,B0_intercept_only,311,0.4180064308681672,0.24726635006686135
+any_outbound_24m,age,30-33,B1_market_profile,311,0.4180064308681672,0.2376582681992653
+any_outbound_24m,age,30-33,V2_core_involvement,311,0.4180064308681672,0.23385347067178303
+any_outbound_24m,age,30-33,V2_plus_prior_volume,311,0.4180064308681672,0.234380487704565
+any_outbound_24m,age,30-33,historical_M5_reference,311,0.4180064308681672,0.21911181487021475
+any_outbound_24m,age,34+,B0_intercept_only,259,0.5791505791505791,0.2558912405768745
+any_outbound_24m,age,34+,B1_market_profile,259,0.5791505791505791,0.2521724673992369
+any_outbound_24m,age,34+,V2_core_involvement,259,0.5791505791505791,0.24039957804456494
+any_outbound_24m,age,34+,V2_plus_prior_volume,259,0.5791505791505791,0.24031138191111312
+any_outbound_24m,age,34+,historical_M5_reference,259,0.5791505791505791,0.2221630630058999
+any_outbound_24m,age,<=21,B0_intercept_only,287,0.5993031358885017,0.2581998669639591
+any_outbound_24m,age,<=21,B1_market_profile,287,0.5993031358885017,0.2180211474933423
+any_outbound_24m,age,<=21,V2_core_involvement,287,0.5993031358885017,0.2130397029965499
+any_outbound_24m,age,<=21,V2_plus_prior_volume,287,0.5993031358885017,0.21286886346447817
+any_outbound_24m,age,<=21,historical_M5_reference,287,0.5993031358885017,0.21960496198358895
+downside_25pct_24m,position,Attack,B0_intercept_only,290,0.4896551724137931,0.25128166114582795
+downside_25pct_24m,position,Attack,B1_market_profile,290,0.4896551724137931,0.18801743046877986
+downside_25pct_24m,position,Attack,V2_core_involvement,290,0.4896551724137931,0.18352858929589688
+downside_25pct_24m,position,Attack,V2_plus_prior_volume,290,0.4896551724137931,0.18334423742850872
+downside_25pct_24m,position,Attack,historical_M5_reference,290,0.4896551724137931,0.18871275488876957
+downside_25pct_24m,position,Defender,B0_intercept_only,470,0.46595744680851064,0.24914339300463414
+downside_25pct_24m,position,Defender,B1_market_profile,470,0.46595744680851064,0.1531740325788992
+downside_25pct_24m,position,Defender,V2_core_involvement,470,0.46595744680851064,0.15061264075287104
+downside_25pct_24m,position,Defender,V2_plus_prior_volume,470,0.46595744680851064,0.1510283263233889
+downside_25pct_24m,position,Defender,historical_M5_reference,470,0.46595744680851064,0.15233422160580382
+downside_25pct_24m,position,Goalkeeper,B0_intercept_only,216,0.4675925925925926,0.24909119584816392
+downside_25pct_24m,position,Goalkeeper,B1_market_profile,216,0.4675925925925926,0.18733017790936643
+downside_25pct_24m,position,Goalkeeper,V2_core_involvement,216,0.4675925925925926,0.18411807962179622
+downside_25pct_24m,position,Goalkeeper,V2_plus_prior_volume,216,0.4675925925925926,0.18354442119770567
+downside_25pct_24m,position,Goalkeeper,historical_M5_reference,216,0.4675925925925926,0.18818062079626402
+downside_25pct_24m,position,Midfield,B0_intercept_only,391,0.4731457800511509,0.24974790979685635
+downside_25pct_24m,position,Midfield,B1_market_profile,391,0.4731457800511509,0.17843525854509704
+downside_25pct_24m,position,Midfield,V2_core_involvement,391,0.4731457800511509,0.17352062493531972
+downside_25pct_24m,position,Midfield,V2_plus_prior_volume,391,0.4731457800511509,0.17448304583938595
+downside_25pct_24m,position,Midfield,historical_M5_reference,391,0.4731457800511509,0.17326074306361486
+downside_25pct_24m,league,Bundesliga,B0_intercept_only,272,0.4411764705882353,0.2460646912553679
+downside_25pct_24m,league,Bundesliga,B1_market_profile,272,0.4411764705882353,0.18863981126153437
+downside_25pct_24m,league,Bundesliga,V2_core_involvement,272,0.4411764705882353,0.19296632117811427
+downside_25pct_24m,league,Bundesliga,V2_plus_prior_volume,272,0.4411764705882353,0.19332388407313264
+downside_25pct_24m,league,Bundesliga,historical_M5_reference,272,0.4411764705882353,0.192212325448695
+downside_25pct_24m,league,La Liga,B0_intercept_only,245,0.49795918367346936,0.2518570606904845
+downside_25pct_24m,league,La Liga,B1_market_profile,245,0.49795918367346936,0.1869054393730019
+downside_25pct_24m,league,La Liga,V2_core_involvement,245,0.49795918367346936,0.17812201909642836
+downside_25pct_24m,league,La Liga,V2_plus_prior_volume,245,0.49795918367346936,0.17844910369431508
+downside_25pct_24m,league,La Liga,historical_M5_reference,245,0.49795918367346936,0.18584863517660022
+downside_25pct_24m,league,Ligue 1,B0_intercept_only,260,0.38461538461538464,0.2410657154249135
+downside_25pct_24m,league,Ligue 1,B1_market_profile,260,0.38461538461538464,0.16558130391564158
+downside_25pct_24m,league,Ligue 1,V2_core_involvement,260,0.38461538461538464,0.15937348352497702
+downside_25pct_24m,league,Ligue 1,V2_plus_prior_volume,260,0.38461538461538464,0.15977493479930244
+downside_25pct_24m,league,Ligue 1,historical_M5_reference,260,0.38461538461538464,0.1598679308483015
+downside_25pct_24m,league,Premier League,B0_intercept_only,286,0.5524475524475524,0.2583811878591994
+downside_25pct_24m,league,Premier League,B1_market_profile,286,0.5524475524475524,0.15578113269803134
+downside_25pct_24m,league,Premier League,V2_core_involvement,286,0.5524475524475524,0.15094053691841844
+downside_25pct_24m,league,Premier League,V2_plus_prior_volume,286,0.5524475524475524,0.1511496999785854
+downside_25pct_24m,league,Premier League,historical_M5_reference,286,0.5524475524475524,0.1493141059199465
+downside_25pct_24m,league,Serie A,B0_intercept_only,304,0.48355263157894735,0.25070896660988506
+downside_25pct_24m,league,Serie A,B1_market_profile,304,0.48355263157894735,0.17119062627749435
+downside_25pct_24m,league,Serie A,V2_core_involvement,304,0.48355263157894735,0.16741601409027548
+downside_25pct_24m,league,Serie A,V2_plus_prior_volume,304,0.48355263157894735,0.16758942109694508
+downside_25pct_24m,league,Serie A,historical_M5_reference,304,0.48355263157894735,0.1731302080538231
+downside_25pct_24m,age,22-25,B0_intercept_only,348,0.22126436781609196,0.22342740070964823
+downside_25pct_24m,age,22-25,B1_market_profile,348,0.22126436781609196,0.17979737889329195
+downside_25pct_24m,age,22-25,V2_core_involvement,348,0.22126436781609196,0.17813165502607772
+downside_25pct_24m,age,22-25,V2_plus_prior_volume,348,0.22126436781609196,0.17826934388677443
+downside_25pct_24m,age,22-25,historical_M5_reference,348,0.22126436781609196,0.175392564120904
+downside_25pct_24m,age,26-29,B0_intercept_only,304,0.45394736842105265,0.247767120955918
+downside_25pct_24m,age,26-29,B1_market_profile,304,0.45394736842105265,0.22505485718761828
+downside_25pct_24m,age,26-29,V2_core_involvement,304,0.45394736842105265,0.21181251477032195
+downside_25pct_24m,age,26-29,V2_plus_prior_volume,304,0.45394736842105265,0.21302495521303225
+downside_25pct_24m,age,26-29,historical_M5_reference,304,0.45394736842105265,0.2227486205444972
+downside_25pct_24m,age,30-33,B0_intercept_only,291,0.8075601374570447,0.28459800931239826
+downside_25pct_24m,age,30-33,B1_market_profile,291,0.8075601374570447,0.14778358612522813
+downside_25pct_24m,age,30-33,V2_core_involvement,291,0.8075601374570447,0.14290320866466596
+downside_25pct_24m,age,30-33,V2_plus_prior_volume,291,0.8075601374570447,0.1432780815689684
+downside_25pct_24m,age,30-33,historical_M5_reference,291,0.8075601374570447,0.14090852216313543
+downside_25pct_24m,age,34+,B0_intercept_only,188,0.8297872340425532,0.2873553689271145
+downside_25pct_24m,age,34+,B1_market_profile,188,0.8297872340425532,0.14853464157636914
+downside_25pct_24m,age,34+,V2_core_involvement,188,0.8297872340425532,0.15201264689328986
+downside_25pct_24m,age,34+,V2_plus_prior_volume,188,0.8297872340425532,0.15196087470156253
+downside_25pct_24m,age,34+,historical_M5_reference,188,0.8297872340425532,0.15037967139458563
+downside_25pct_24m,age,<=21,B0_intercept_only,236,0.17372881355932204,0.21826032708678092
+downside_25pct_24m,age,<=21,B1_market_profile,236,0.17372881355932204,0.14759599173256158
+downside_25pct_24m,age,<=21,V2_core_involvement,236,0.17372881355932204,0.14865792297062827
+downside_25pct_24m,age,<=21,V2_plus_prior_volume,236,0.17372881355932204,0.1481428978404313
+downside_25pct_24m,age,<=21,historical_M5_reference,236,0.17372881355932204,0.15545676513169984

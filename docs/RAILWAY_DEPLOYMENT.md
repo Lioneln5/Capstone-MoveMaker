@@ -1,19 +1,28 @@
 # Railway deployment
 
-MoveMaker deploys as one FastAPI service. The repository contains application
-code, serialized deployment models, and compact reference artifacts. Large
-source tables remain outside Git and are mounted into the service through a
-Railway volume.
+MoveMaker deploys as one FastAPI research-record service. The repository
+contains the explanatory site, frozen model artifacts, and compact evidence.
+No runtime data volume is required while HTTP scoring remains disabled.
+
+## Current safe default
+
+Engine V1 is frozen for historical audit. Generic continuity is retired, and
+no Engine V2 output is authorized for deployment. The API therefore has no
+environment-variable scoring override. Railway starts the explanatory site
+without runtime data and reports `scoring_enabled: false` from `/health`.
 
 ## Service configuration
 
 The checked-in `railway.toml` supplies the Railpack start command and `/health`
 health check. In Railway:
 
-1. Attach a volume to the API service at **`/data`**. Do not mount it at
-   `/app/Data`, because that would hide model artifacts shipped in the image.
-2. Add the service variable **`MOVEMAKER_DATA_ROOT=/data`**.
-3. Upload the required local data directories into the volume:
+1. Deploy the repository-backed service with the checked-in `railway.toml`.
+2. Do not set a scoring-enable variable; none is recognized.
+3. A previously attached `/data` volume may remain, but the research site does
+   not read it. It can be detached if it is not used by another service.
+
+The historical upload commands and required serving-table layout are retained
+below only for infrastructure provenance. They do not enable the current API:
 
    ```bash
    railway link
@@ -40,20 +49,18 @@ health check. In Railway:
    `--service`, `--environment`, and volume selection shown by
    `railway volume list --json`.
 
-4. Verify the volume contents from a Railway shell or locally before upload:
+4. Historical volume contents can still be verified locally with:
 
    ```bash
    python scripts/verify_railway_runtime_data.py --data-root Data
    ```
 
-5. The checked-in bootstrap launcher keeps `/health` available while an empty
-   first-deployment volume is populated. When all eleven deployment-parity
-   files arrive, it automatically replaces itself with the real API process.
-   Confirm `GET /health` reports `engine_loaded: true` before opening the site.
+5. The checked-in bootstrap now starts the fail-closed API immediately. Confirm
+`GET /health` reports `engine_loaded: false` and `scoring_enabled: false`.
 
 ## Required volume layout
 
-The API requires these files beneath `/data`:
+The frozen V1 scorer historically required these files beneath `/data`:
 
 | Path under `/data` | Purpose |
 |---|---|
@@ -67,9 +74,8 @@ The API requires these files beneath `/data`:
 | `processed/capology_contracts/canonical_salary_panel.csv` | Salary and club-payroll context |
 | `processed/contract_extension_integration/extension_modeling_master.csv` | Historical extension reference distribution |
 
-The two files under `processed/live_input_refresh/` are optional to the core
-retriever, but the hosted bootstrap waits for them so the public service starts
-with parity to the current local demo.
+These files are not loaded by the current hosted service. Frozen V1 regression
+verification runs offline through the registered scripts.
 
 ## Operational note
 

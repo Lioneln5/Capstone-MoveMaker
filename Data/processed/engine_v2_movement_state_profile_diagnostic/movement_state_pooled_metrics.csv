@@ -1,0 +1,2 @@
+evaluation_rows,multiclass_brier,chronology_brier,brier_skill,player_cluster_ci_low_95,player_cluster_ci_high_95,origin_wins,multiclass_log_loss,chronology_log_loss,macro_ovr_auc
+1553,0.5678447437840886,0.6293507201648442,0.06150597638075561,0.045015366045318604,0.07723300069570213,4,0.9414085492065344,1.0450368030583417,0.6946811645517216

@@ -1,0 +1,57 @@
+{
+  "continuity": {
+    "all_big_five_leagues_supported": false,
+    "deployment_status": "not_deployed",
+    "limited_leagues": [
+      "Ligue 1"
+    ],
+    "mean_parameter_interval_width_80": 0.11488457942820506,
+    "phase4_decision": "blocked_big_five_deployment_pending_new_context_or_untouched_holdout",
+    "pooled_auc": 0.6455577181031535,
+    "pooled_brier": 0.23514191205013363,
+    "pooled_ece": 0.035974134281879955,
+    "refused_rate": 0.05576923076923077,
+    "selected_candidate": "core_plus_age_curve"
+  },
+  "future_role": {
+    "calibration": "raw",
+    "phase4_decision": "specification_frozen_pending_final_holdout"
+  },
+  "overall_engine": {
+    "decision": "not_ready_for_deployment",
+    "reason": "Continuity lacks supported Big-Five coverage; no final untouched temporal holdout has been evaluated."
+  },
+  "public_value_downside": {
+    "calibration": "platt",
+    "phase4_decision": "specification_frozen_pending_final_holdout"
+  },
+  "wage_benchmark": {
+    "all_position_league_groups_supported": true,
+    "deployment_status": "not_deployed",
+    "limited_groups": [
+      {
+        "group": "30-33",
+        "group_type": "age"
+      },
+      {
+        "group": "34+",
+        "group_type": "age"
+      },
+      {
+        "group": "<=21",
+        "group_type": "age"
+      },
+      {
+        "group": "0.0",
+        "group_type": "prior_wage"
+      }
+    ],
+    "phase4_decision": "advance_to_final_holdout",
+    "pooled_baseline_log_mae": 1.1186702915819196,
+    "pooled_interval_80_coverage": 0.8131648936170213,
+    "pooled_log_mae": 0.5192736503859862,
+    "pooled_mae_improvement_vs_chronology": 0.5993966411959335,
+    "pooled_refused_rate": 0.02327127659574468,
+    "selected_candidate": "B2_plus_prior_wage"
+  }
+}

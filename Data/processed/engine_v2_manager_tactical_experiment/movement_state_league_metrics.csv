@@ -1,0 +1,26 @@
+variant,league,rows,brier_improvement
+M1_manager_stability,Bundesliga,302,-0.009121954848138032
+M1_manager_stability,La Liga,264,-0.0019371369864913273
+M1_manager_stability,Ligue 1,278,-0.005272086380183641
+M1_manager_stability,Premier League,305,-0.00593653668552935
+M1_manager_stability,Serie A,327,0.0031348385624281228
+T1_formation_tactical_stability,Bundesliga,280,-0.002433177099691789
+T1_formation_tactical_stability,La Liga,246,-0.00047483330768648054
+T1_formation_tactical_stability,Ligue 1,245,-0.0003313067252630588
+T1_formation_tactical_stability,Premier League,295,0.0044613750383423
+T1_formation_tactical_stability,Serie A,302,-0.0035598929347082863
+M2_player_under_current_manager,Bundesliga,286,0.0042909106379711934
+M2_player_under_current_manager,La Liga,245,0.004946371114777021
+M2_player_under_current_manager,Ligue 1,263,0.0029908936413479558
+M2_player_under_current_manager,Premier League,300,0.0015868437937875304
+M2_player_under_current_manager,Serie A,308,-0.0049140404932792705
+M3_role_change_at_manager_transition,Bundesliga,225,-0.00036732279383226046
+M3_role_change_at_manager_transition,La Liga,225,-0.0022194492905548775
+M3_role_change_at_manager_transition,Ligue 1,240,0.0018344228749236787
+M3_role_change_at_manager_transition,Premier League,269,0.0026571187067216226
+M3_role_change_at_manager_transition,Serie A,290,-0.0016397938600556318
+C1_combined_manager_tactical,Bundesliga,204,-0.005832430368244934
+C1_combined_manager_tactical,La Liga,209,-0.007974254666550783
+C1_combined_manager_tactical,Ligue 1,217,0.008924209800786552
+C1_combined_manager_tactical,Premier League,258,-0.0004724022262396737
+C1_combined_manager_tactical,Serie A,269,-0.007348805123696968

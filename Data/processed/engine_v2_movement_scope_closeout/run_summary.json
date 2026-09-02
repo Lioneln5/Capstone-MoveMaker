@@ -1,0 +1,17 @@
+{
+  "checks_passed": 8,
+  "checks_total": 8,
+  "contract_version": "engine_v2_movement_product_scope_v1_2026-09-02",
+  "deployment_changed": false,
+  "development_candidates": [
+    "meaningful_retention_24m",
+    "temporary_displacement_risk_24m"
+  ],
+  "final_holdout_opened": false,
+  "generic_continuity_status": "retired",
+  "numeric_outputs_authorized": 0,
+  "research_only_outputs": [
+    "permanent_separation_risk_24m"
+  ],
+  "v1_unchanged": true
+}
