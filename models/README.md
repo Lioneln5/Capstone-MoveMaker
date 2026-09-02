@@ -26,6 +26,7 @@ Verify that ledger and its shared Ridge-explainer repair with
 | Phase 4: continuity repair, wage audit, and versioned result contract | Complete; continuity still blocked by Ligue 1 reliability, none deployed | `python models/run_engine_v2_candidate_contract.py` | `python scripts/verify_engine_v2_candidate_contract.py` | `Data/processed/engine_v2_candidate_contract/` |
 | Phase 5: final-evaluation readiness and sealed wage holdout | Complete; predictive holdouts remain closed, wage candidate failed Ligue 1 coverage, none deployed | `python models/run_engine_v2_final_evaluation_gate.py` | `python scripts/verify_engine_v2_final_evaluation_gate.py` | `Data/processed/engine_v2_final_evaluation_gate/` |
 | Movement-scope closeout | Complete; generic continuity retired, replacement questions separated, none deployed | `python models/run_engine_v2_movement_scope_closeout.py` | `python scripts/verify_engine_v2_movement_scope_closeout.py` | `Data/processed/engine_v2_movement_scope_closeout/` |
+| Future-role target validity audit | Complete; current target blocked as a pure role outcome, no model fitted | `python models/run_engine_v2_future_role_target_audit.py` | `python scripts/verify_engine_v2_future_role_target_audit.py` | `Data/processed/engine_v2_future_role_target_audit/` |
 
 Phase 1 permits only research outcome scenarios conditional on an extension.
 It does not validate extend/do-not-extend recommendations because the sources
@@ -67,6 +68,14 @@ endpoint retirement rather than model repair. Meaningful Retention and
 Temporary Displacement Risk are separate development candidates; Permanent
 Separation is research-only and unavailable. The HTTP application has no V1
 scoring override, and no movement/retention probability is deployed.
+
+The future-role target audit then tests the contribution component itself.
+It finds an asymmetric Year-1 evidence gate, materially incomplete annual club
+schedules around relegation/top-flight exit, movement-driven labels, and a
+semantic difference between realized contribution and role when available.
+The frozen target remains historical evidence only. Meaningful Retention is
+blocked until its realized-contribution component is rebuilt and all affected
+development evidence is rerun.
 
 ## Current incumbent-extension pipeline
 

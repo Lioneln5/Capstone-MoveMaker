@@ -12,7 +12,7 @@ MoveMaker is an explainable research program for incumbent-club football contrac
 
 MoveMaker is a screening and prioritization tool. It does **not** produce one overall success score, recommend whether a club should extend a player, predict tactical compatibility, or estimate accounting loss or ROI.
 
-> **Current status (2026-09-02):** Engine V1 is frozen for historical audit and HTTP scoring is unconditionally disabled. Engine V2 retired the generic continuity endpoint after decomposing it into distinct football questions. **Meaningful Retention** and **Temporary Displacement Risk** remain development candidates awaiting a later untouched temporal test; **Permanent Separation** is research-only and unavailable. This product-scope decision resolves the former continuity release blocker through endpoint retirement, not model repair. The two remaining release blockers concern final temporal validation and the historical wage benchmark. Nothing from V2 is deployed. See the [movement-scope contract](docs/ENGINE_V2_MOVEMENT_SCOPE_CLOSEOUT.md), [critical-issues register](docs/ENGINE_V2_CRITICAL_ISSUES.md), and [V1 freeze record](docs/ENGINE_V1_FREEZE.md).
+> **Current status (2026-09-02):** Engine V1 is frozen for historical audit and HTTP scoring is unconditionally disabled. Engine V2 retired the generic continuity endpoint after decomposing it into distinct football questions. **Temporary Displacement Risk** remains a development candidate; **Permanent Separation** is research-only and unavailable. A later target audit found that the contribution component is not defensible as pure “future role,” so **Meaningful Retention is also blocked until that component is rebuilt**. The open release blockers are target validity, final temporal validation, and the historical wage benchmark. Nothing from V2 is deployed. See the [future-role target audit](docs/ENGINE_V2_FUTURE_ROLE_TARGET_AUDIT.md), [movement-scope contract](docs/ENGINE_V2_MOVEMENT_SCOPE_CLOSEOUT.md), [critical-issues register](docs/ENGINE_V2_CRITICAL_ISSUES.md), and [V1 freeze record](docs/ENGINE_V1_FREEZE.md).
 
 **Explore the project:** [hosted research site](https://movemaker-production.up.railway.app/) · [final presentation](slides/final/MoveMaker_Final_Presentation.html) · [model card](docs/MODEL_CARD.md) · [data provenance](docs/DATA_PROVENANCE.md) · [analytical journal](docs/journal/2026-08-11_scope_pivot_journal.md)
 
@@ -36,10 +36,10 @@ All primary results use rolling chronological evaluation and saved independent-v
 
 | Decision signal | Verified evidence | Product use |
 | --- | --- | --- |
-| Year-2 opportunity | MAE 0.2369, R² 0.249, Spearman 0.512; improvement +0.0586, 95% CI [0.0485, 0.0686], 4/4 origins | Broad future-role outlook, not exact minutes |
-| Sustained meaningful contribution | AUC 0.788, AP 0.732, Brier 0.1869; improvement +0.0643, 4/4 origins | Probability of sustaining at least 25% same-club opportunity share in both Year 1 and Year 2 |
+| Year-2 opportunity | MAE 0.2369, R² 0.249, Spearman 0.512; improvement +0.0586, 95% CI [0.0485, 0.0686], 4/4 origins | Frozen V1 evidence only; the target coverage audit blocks promotion as pure future role |
+| Sustained meaningful contribution | AUC 0.788, AP 0.732, Brier 0.1869; improvement +0.0643, 4/4 origins | Frozen V1 evidence only; current labels mix realized use, availability, movement, and incomplete schedules |
 | Any outbound by 24 months | AUC 0.710, Brier 0.2191; improvement +0.0363, 4/4 origins | Frozen V1 historical evidence; endpoint retired because it blends temporary and permanent movement |
-| Meaningful Retention | AUC 0.759; Brier skill +0.0352, 95% CI [+0.0260, +0.0443], 4/4 origins | Engine V2 development candidate; no outbound plus meaningful same-club use in both years; not deployed |
+| Meaningful Retention | AUC 0.759; Brier skill +0.0352, 95% CI [+0.0260, +0.0443], 4/4 origins | Historical development result; blocked until the contribution component is repaired and revalidated |
 | Temporary Displacement Risk | AUC 0.777; Brier skill +0.0291, 95% CI [+0.0209, +0.0375], 4/4 origins | Engine V2 development candidate; temporary first movement; not deployed |
 | Permanent Separation | AUC 0.628; negative league-level skill in Bundesliga and Ligue 1 | Research-only and unavailable as a personalized output |
 | Public-value downside by 24 months | AUC 0.821 for a decline of at least 25% | Public valuation risk, not sale proceeds or accounting loss |
@@ -111,7 +111,7 @@ This repository is therefore an **auditable publication baseline**, not a zero-d
 ## Claim boundaries
 
 - Extension probabilities apply to incumbent-club extensions, not hypothetical destination-club transfers.
-- “Low contribution” means failing to sustain at least 25% same-club opportunity share in both Year 1 and Year 2; it does not necessarily mean fewer than 25% of all possible minutes across the full two-year window.
+- Historical “low contribution” means failing to reach 25% of observed extension-club match-minute capacity in each of two exact post-signing anniversary years. It is not a total-24-month or player-availability-adjusted share, and the current target is blocked pending evidence and club-schedule repairs.
 - Historical “any outbound” means any recorded loan or permanent move away from the incumbent club in the stated horizon. Engine V2 retired that blended product endpoint and keeps movement mechanisms separate.
 - Meaningful Retention is a joint outcome: no outbound movement plus at least 25% same-club opportunity share in both Year 1 and Year 2. It is not a rename of the contribution-only V1 endpoint.
 - Public market value is a public estimate, not a realized transfer fee, cash flow, or accounting valuation.
@@ -124,20 +124,23 @@ This repository is therefore an **auditable publication baseline**, not a zero-d
 
 The presentation milestone is complete, but development is not. No current V2
 candidate is authorized for an artifact. Generic continuity has been retired,
-the two replacement development candidates lack a valid final cohort, and the
-wage benchmark failed final Ligue 1 coverage. The next work should improve
-validity and deployability rather than widen the claims:
+Meaningful Retention has a release-blocking target defect, both replacement
+questions lack a valid final cohort, and the wage benchmark failed final Ligue
+1 coverage. The next work should improve validity and deployability rather than
+widen the claims:
 
-1. preserve the failed/contaminated 2024 evidence and reserve a later, fully mature, player-disjoint cohort before opening another final temporal test;
-2. keep permanent-separation research deferred until a materially new, decision-time-safe mechanism justifies a frozen candidate;
-3. declare any successor wage candidate as a new version without fitting to the failed 2024 final labels, then test it only on later untouched evidence;
-4. build versioned artifacts and API parity checks only for modules that pass their immutable final evaluation;
-5. refresh current performance and salary inputs without contaminating frozen chronological evidence; and
-6. add richer injury, squad-competition, option, clause, and internal club data only when coverage supports a new claim.
+1. rebuild realized same-club contribution with symmetric Year-1/Year-2 evidence, complete relegation/lower-tier schedules or a frozen refusal rule, and a valid 100% upper bound;
+2. rerun Meaningful Retention development evidence only after that target is frozen;
+3. preserve the failed/contaminated 2024 evidence and reserve a later, fully mature, player-disjoint cohort before opening another final temporal test;
+4. keep permanent-separation research deferred until a materially new, decision-time-safe mechanism justifies a frozen candidate;
+5. declare any successor wage candidate as a new version without fitting to the failed 2024 final labels, then test it only on later untouched evidence;
+6. build versioned artifacts and API parity checks only for modules that pass their immutable final evaluation; and
+7. refresh current inputs or add richer availability/contract data only when coverage supports the exact target claim.
 
 ## Research record
 
 - [Original twelve-problem Engine V2 audit](docs/ENGINE_V2_ORIGINAL_AUDIT.md) — permanent status ledger for the post-presentation stress-test findings
+- [Future-role / meaningful-contribution target audit](docs/ENGINE_V2_FUTURE_ROLE_TARGET_AUDIT.md) — football-validity audit of thresholds, denominators, injuries, movement, and club-window coverage
 - [Scope-pivot journal](docs/journal/2026-08-11_scope_pivot_journal.md)
 - [Research-paper evidence bank](docs/research/2026-08-11_report_evidence_bank.md) — historical transfer-risk pivot
 - [Data-readiness audit](docs/DATA_READINESS_AUDIT.md) — historical pre-extension scope

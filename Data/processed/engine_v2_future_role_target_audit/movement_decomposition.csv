@@ -1,0 +1,5 @@
+﻿movement_state,records,share_of_cohort,not_sustained_records,not_sustained_rate_within_state,share_of_all_not_sustained_records
+no_outbound_within_24m,553,0.5997830802603037,162,0.29294755877034356,0.34541577825159914
+other_or_unresolved_first_within_24m,1,0.0010845986984815619,1,1.0,0.0021321961620469083
+permanent_first_within_24m,168,0.1822125813449024,124,0.7380952380952381,0.26439232409381663
+temporary_first_within_24m,200,0.21691973969631237,182,0.91,0.3880597014925373

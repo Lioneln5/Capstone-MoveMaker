@@ -21,6 +21,9 @@ MoveMaker’s GitHub repository should make the research, product architecture, 
 - Engine V2 movement-scope closeout artifacts: the product-scope contract,
   decision table, aggregate development evidence, non-blocking research
   backlog, checks, summaries, and independent verification.
+- Engine V2 future-role target-audit artifacts: aggregate threshold,
+  definition, denominator, coverage, movement, injury, and subgroup summaries;
+  the decision ledger, checks, README, and manifests.
 - Small production model artifacts and their manifest when required for the application.
 
 ## Keep local or distribute separately
@@ -31,6 +34,8 @@ MoveMaker’s GitHub repository should make the research, product architecture, 
 - Row-level targets, model matrices, predictions, tuning grids, bootstrap samples, and generated case-card tables unless a specific compact example is needed.
 - Player/event-level Engine V2 mechanism profiles and as-of evidence audits;
   publish their feature dictionaries, coverage summaries and verifiers instead.
+- Event-level future-role evidence defects, club-window break cases, and injury
+  denominator calculations; publish their aggregate audit tables and hashes.
 - Machine-specific file inventories, table schemas, raw StatsBomb payload
   catalogs, extension-level overlap rows, and canonical Capology club-season
   panels; publish the refreshed audit summary, classifications, aggregate

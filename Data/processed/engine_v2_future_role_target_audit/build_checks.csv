@@ -1,0 +1,13 @@
+﻿check,actual,expected,passed,note
+final_holdout_excluded,2023,2023,True,No 2024+ label is read by the audit population.
+strict_model_cohort_reference,922,922,True,Symmetric 2020-2023 model cohort after removing the Y1 evidence defect.
+current_cohort_reference,929,929,True,Reproduces frozen rolling-origin evaluation rows.
+year1_asymmetry_exposed,7,7,True,Seven evaluated rows lack the symmetric Year-1 evidence gate.
+primary_label_reference,453,453,True,Strict 25% target recomputed from raw shares.
+threshold_monotonic,1,1,True,Higher thresholds cannot increase positive outcomes.
+movement_partition_complete,922,922,True,Every strict row belongs to one first-movement state.
+coverage_10_matches_strict,922,922,True,Strict cohort still reproduces the current 10-game rule before sensitivity testing.
+injury_subset_nontrivial,703,>=500,True,Partial validated injury source supports a material diagnostic subset.
+injury_adjustment_one_direction,0,0,True,Removing unavailable matches cannot reduce an opportunity share.
+critical_verdict_present,1,1,True,Audit ends in one explicit product decision.
+sources_byte_identical,1,1,True,All four large input sources are read-only and unchanged.

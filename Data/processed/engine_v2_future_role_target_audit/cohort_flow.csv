@@ -1,0 +1,10 @@
+﻿stage,records,share_of_audit_population,meaning
+all_2020_2023_extension_events,1602,1.0,audit population; final 2024+ cohort excluded
+linked_player,1560,0.9737827715355806,canonical player identity resolved
+contract_covers_730_days,1068,0.6666666666666666,scheduled expiration no earlier than day 730
+current_model_cohort,929,0.579900124843945,current asymmetric pre + Y2 evidence rule
+strict_symmetric_model_cohort,922,0.5755305867665418,current rule plus explicit Y1 evidence and nonmissing Y1 share
+strict_outcome_cohort,946,0.5905118601747815,Y1/Y2 outcome observable; does not require pre-extension predictor coverage
+y1_evidence_eligible,1566,0.9775280898876404,at least 10 observed extension-club games in Year 1
+y2_evidence_eligible,1416,0.8838951310861424,at least 10 observed extension-club games in Year 2
+pre_evidence_eligible,1523,0.9506866416978776,at least 10 observed extension-club games before signing

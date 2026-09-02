@@ -20,6 +20,7 @@ specific product claim.
 | --- | --- | --- | --- | --- |
 | **E2-CRIT-002** | **CRITICAL / RELEASE BLOCKER** | Final temporal validation for predictive risk modules | **OPEN** | **Future-role, movement/retention, and value-downside artifacts cannot be promoted** |
 | **E2-CRIT-003** | **CRITICAL / RELEASE BLOCKER** | Historical annual-wage benchmark | **OPEN** | **The current Big-Five wage benchmark cannot be serialized or deployed** |
+| **E2-CRIT-004** | **CRITICAL / RELEASE BLOCKER** | Future-role / meaningful-contribution target validity | **OPEN** | **Future-role and Meaningful Retention cannot be promoted on the current contribution labels** |
 
 ---
 
@@ -199,8 +200,10 @@ This issue blocks:
 - opening a final holdout and then changing continuity features in response to
   the result.
 
-It does **not** automatically invalidate the separately modeled future-role,
-public-value-downside, or historical-wage-benchmark modules.
+This continuity finding did **not by itself** invalidate the separately modeled
+future-role, public-value-downside, or historical-wage-benchmark modules. The
+later, independent target audit recorded as E2-CRIT-004 does block future role
+and the contribution component of Meaningful Retention.
 
 ### Prohibited workarounds
 
@@ -461,3 +464,83 @@ the independently supported league set.
 Not eligible. A post-holdout patch to the same candidate does not close this
 issue; only a new predeclared version with later untouched evidence, explicit
 scope narrowing, or endpoint retirement can do so.
+
+---
+
+## E2-CRIT-004 — Future-role target mixes role, availability, movement, and incomplete club schedules
+
+### Status
+
+**OPEN — TARGET REPAIR REQUIRED — RELEASE BLOCKING**
+
+- First exposed: post-movement-closeout target audit, 2026-09-02
+- Affected historical target: `target_sustained_meaningful_contribution`
+- Affected candidate: Meaningful Retention, because it uses the same
+  contribution component
+- Current deployment authorization: **none**
+
+### The problem
+
+The frozen target assigns one when a player records at least 25% same-club
+opportunity share in both exact post-signing years. A full target audit found
+that the label cannot support a pure future-role claim:
+
+- the current model cohort assigns labels to seven 2020-2023 rows that fail the
+  matching Year-1 evidence requirement, including three missing Year-1 shares;
+- 47 of 922 otherwise strict rows have fewer than 30 captured extension-club
+  matches in at least one nominal 365-day year, consistent with relegation,
+  top-flight exit, or another club-window coverage break;
+- temporary-first moves account for 38.8% of all negative labels and all
+  outbound-first states account for 65.5%;
+- removing validated same-club injury matches from the denominator changes 29
+  of 701 comparable labels, proving that realized contribution and role when
+  available are not the same outcome; and
+- six annual opportunity shares exceed 100% because the denominator assumes
+  90 minutes per match while extra-time minutes remain in the numerator.
+
+The 25% threshold is not the main failure. Moving the annual floor to 20% or
+30% changes 30 of 922 labels in either direction, so it is locally stable. It
+is still a declared materiality threshold rather than an empirically unique
+football breakpoint.
+
+### Why this is critical
+
+A model can predict a badly named or inconsistently observed target and still
+score well. Historical AUC and Brier improvement do not turn a composite of
+movement, availability, selection, and partial schedules into “future role.”
+Because Meaningful Retention incorporates the same contribution component, it
+cannot advance merely by passing a later model-performance test.
+
+### Required resolution
+
+Before any future-role or Meaningful Retention candidate is refit:
+
+1. require symmetric, nonmissing Year-1 and Year-2 evidence;
+2. integrate lower-tier schedules for relegated/removed clubs or freeze a
+   completeness-based refusal rule;
+3. define the repaired target as **realized same-club contribution**, with the
+   25% floor explicitly treated as a policy threshold;
+4. cap normalized opportunity at 100% or use exact match-minute capacity; and
+5. keep Temporary Displacement and other movement states separate.
+
+A “role when available” outcome requires a separate availability data program;
+partial injury adjustment alone is prohibited because suspensions,
+international duty and other unavailability remain unobserved.
+
+After repair, all development evidence must be rerun under the new target. The
+2024+ cohort cannot be used to tune the definition, and a later untouched,
+player-disjoint temporal cohort remains required under E2-CRIT-002.
+
+### Evidence
+
+- [Future-role target audit](ENGINE_V2_FUTURE_ROLE_TARGET_AUDIT.md)
+- `Data/processed/engine_v2_future_role_target_audit/audit_findings.csv`
+- `Data/processed/engine_v2_future_role_target_audit/year1_evidence_asymmetry.csv`
+- `Data/processed/engine_v2_future_role_target_audit/club_window_coverage_break_cases.csv`
+- `Data/processed/engine_v2_future_role_target_audit/movement_decomposition.csv`
+- `Data/processed/engine_v2_future_role_target_audit/injury_available_denominator_summary.csv`
+
+### Closure record
+
+Not eligible. Documentation alone does not close the issue; the target must be
+rebuilt, independently verified, and all affected candidates re-evaluated.

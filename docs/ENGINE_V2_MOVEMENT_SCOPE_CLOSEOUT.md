@@ -4,12 +4,18 @@
 **Status:** generic continuity retired; replacement questions frozen as
 separate research candidates; no movement/retention output deployed.
 
+> **Later target-audit correction:** the movement decomposition remains valid,
+> but Meaningful Retention is now blocked before final validation because its
+> contribution component failed the football-validity audit. See
+> [ENGINE_V2_FUTURE_ROLE_TARGET_AUDIT.md](ENGINE_V2_FUTURE_ROLE_TARGET_AUDIT.md)
+> and E2-CRIT-004. Temporary Displacement is unaffected.
+
 ## Final product decision
 
 | Product output | Exact outcome | Status | Numeric display |
 | --- | --- | --- | --- |
 | Generic club continuity | Any loan or permanent outbound movement within 24 months | **Retired** | Prohibited |
-| Meaningful Retention | No outbound within 24 months and at least 25% same-club opportunity share in both Year 1 and Year 2 | Development candidate | Prohibited until later final validation |
+| Meaningful Retention | No outbound within 24 months and at least 25% same-club opportunity share in both Year 1 and Year 2 | Development evidence; target repair required | Prohibited until target repair, development rerun, and later final validation |
 | Temporary Displacement Risk | Loan or loan return is the first resolved interruption within 24 months | Development candidate | Prohibited until later final validation |
 | Permanent Separation | Permanent relationship ends within 24 months, even if a loan happened first | Research-only / unavailable | Prohibited |
 | Sustained Meaningful Contribution | At least 25% same-club opportunity share in both years without the no-outbound requirement | Frozen V1 historical evidence | Prohibited in the current HTTP product |

@@ -67,6 +67,10 @@ to support a Big-Five user-facing benchmark.
 These blockers are recorded independently as E2-CRIT-002 and E2-CRIT-003 in
 the [critical-issues register](ENGINE_V2_CRITICAL_ISSUES.md).
 
+> **Later scope note:** a subsequent football-validity audit added
+> E2-CRIT-004 for the future-role / meaningful-contribution target itself.
+> That later blocker is separate from this Phase-5 holdout-readiness finding.
+
 ## Reproduce and verify
 
 ```bash
@@ -78,4 +82,3 @@ The verifier independently reconstructs the player-disjoint wage cohort,
 validation-selected Ridge parameter, every final prediction, interval width,
 pooled metric, subgroup result, release decision, and frozen-V1 hashes. All 26
 checks pass.
-

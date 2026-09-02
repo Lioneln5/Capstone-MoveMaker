@@ -179,6 +179,12 @@ Data/processed/engine_v2_role_squad_profiles/asof_evidence_audit.csv
 Data/processed/engine_v2_manager_tactical_profiles/manager_tactical_profiles.csv
 Data/processed/engine_v2_manager_tactical_profiles/asof_evidence_audit.csv
 
+# Future-role target audit: publish aggregate sensitivities, findings, checks,
+# and manifests; keep event-level target/injury cases local.
+Data/processed/engine_v2_future_role_target_audit/year1_evidence_asymmetry.csv
+Data/processed/engine_v2_future_role_target_audit/club_window_coverage_break_cases.csv
+Data/processed/engine_v2_future_role_target_audit/injury_case_audit.csv
+
 # Superseded local inventory plus row/file-level evidence from the refreshed
 # audit. Publish the compact summaries, classifications, manifests and
 # independent verification, not a machine-specific 10k-file catalog.
