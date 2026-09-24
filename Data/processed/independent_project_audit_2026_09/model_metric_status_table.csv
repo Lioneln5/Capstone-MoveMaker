@@ -1,0 +1,33 @@
+component,status_as_historical_research_evidence,status_as_live_product_output_on_main,notes
+"Deterministic contract cards (fixed commitment, commitment/value, age at expiry, wage change)",Defensible for current stated scope,Defensible for current stated scope,"Arithmetic on guarded inputs; excludes bonuses, taxes, options."
+Club salary percentile / known-payroll share,Defensible with explicit limitation,Defensible with explicit limitation,Known-panel only; panel season may lag; proposal inserted once.
+"Offer-aggressiveness percentile (frozen 1,504-residual CDF)",Defensible with explicit limitation,Defensible with explicit limitation,Depends on the Phase-4 commitment peer model; MM-07 caveats apply.
+Phase-4 annual-wage peer (B2),Defensible with explicit limitation,Defensible with explicit limitation,Proposal-free; pooled coverage 81%; 66% when prior wage unknown; Ligue 1 71%; V2 sealed test failed the league gate.
+Phase-4 fixed-wage-commitment peer (B2) [card 4],Defensible with explicit limitation,Defensible with explicit limitation,Same as annual wage; coverage 0.70 for <EUR1m players; extreme-value warning shown.
+Phase-4 wage-to-market-value peer (B2),Defensible with explicit limitation,Dormant/not currently used,Computed but not rendered by index.html.
+Phase-4 contract-duration peer (B5 GBM),Defensible with explicit limitation,Defensible with explicit limitation,R2 0.43; uses global scoring rates (MM-05); shown only as a delta.
+Phase-1 sustained meaningful contribution (V1 C6) [card 1],Defensible with explicit limitation,Invalid or misleading,"AUC 0.79 pooled reproduces; but conditional on signed terms (MM-02), target conflates departures (MM-04); not served today."
+Phase-1 Year-2 opportunity share (Ridge M5),Defensible with explicit limitation,Dormant/not currently used,"R2 0.25; computed, not displayed; MM-02/MM-05 apply."
+Phase-2 any-outbound 24m / 36m hazard [card 2],Defensible with explicit limitation,Invalid or misleading,Pooled AUC 0.70/0.68; Ligue 1 0.61/0.58; proposal-driven (MM-02); retired on the branch.
+Phase-2 permanent-outbound 24m hazard,Defensible with explicit limitation,Invalid or misleading,AUC 0.69 pooled; clamped to stay-24m in 9-40% of profiles; Ligue 1 0.59.
+Phase-3 downside 25% / 10% / 50% at 24m [card 3],Defensible with explicit limitation,Invalid or misleading,"Strongest signal (AUC 0.82-0.84 pooled, all leagues >0.73); but proposal-driven in the deployed specification (MM-02); a proposal-free refit is Defensible with explicit limitation."
+Phase-3 downside 10% / 25% at 12m,Defensible with explicit limitation,Invalid or misleading,As above; 12m OOS AUC 0.79 with good calibration on n=381.
+Phase-3 value log-ratio ranges 12m / 24m,Defensible with explicit limitation,Dormant/not currently used,"Computed, not displayed; Spearman 0.61/0.66."
+Low-contribution wage exposure proxy (euro card),Defensible with explicit limitation,Invalid or misleading,908-profile screening illustration reproduces; but 42-64% of 'exposed' wages belong to departed players and the probability is proposal-driven.
+Integrated / composite contract score,Research-only,Dormant/not currently used,Rejected by Phase 5; correctly not exposed.
+Isotonic threshold ordering and permanent>=stay clamp,Defensible with explicit limitation,Defensible with explicit limitation,"Coherence repair, not evidence (MM-14)."
+Feature-contribution explainer,Defensible with explicit limitation,Defensible with explicit limitation,Exact linear decomposition; faithfully exposes counterintuitive coefficients (MM-05).
+verify_deployment_models.py (parity/refusal checks),Defensible with explicit limitation,n/a,In-sample; arithmetic and hash parity only.
+verify_deployment_out_of_sample.py (post-2023 cohort),Invalid or misleading,n/a,Survival rows selected on event occurrence (MM-03); Phase 1/3/4 rows acceptable but small.
+verify_live_request_integrity.py,Defensible with explicit limitation,n/a,Date-dependent; guards fallback/warning behaviour only.
+Live input refresh overlays (2024-2026),Defensible with explicit limitation,Defensible with explicit limitation,Append-only; 92-95% link rates; advanced features sparse.
+Role-contextualisation candidates (R1-R4),Research-only,Dormant/not currently used,Mixed; nothing promoted.
+Contribution refinement (injury / elite interactions),Research-only,Dormant/not currently used,Nothing advanced.
+Engine V2 compact sustained contribution (6 fields),Development-only,Dormant/not currently used,AUC 0.754 reproduced; awaits mature player-disjoint holdout.
+Engine V2 Meaningful Retention / Temporary Displacement,Development-only,Dormant/not currently used,AUC 0.759 / 0.777 reproduced on development origins only.
+Engine V2 Permanent Separation,Research-only,Dormant/not currently used,Negative league skill in Bundesliga and Ligue 1 reproduced.
+Engine V2 continuity (core + age curve),Research-only,Dormant/not currently used,Ligue 1 negative skill reproduced; retired.
+Engine V2 annual-wage benchmark (sealed 2024 test),Development-only,Dormant/not currently used,Pooled improvement reproduced; failed frozen league coverage gate.
+Engine V2 club-finance / lagged-behaviour / role-squad / manager-tactical blocks,Research-only,Dormant/not currently used,All rejected as predictors; descriptive infrastructure.
+"Transfer-risk research track (retention, MV downside, under-utilisation, fee benchmark, capital-at-risk, landmark monitoring)",Research-only,Dormant/not currently used,Different cohort (transfers); not part of the extension product.
+Compatibility models / ablations / rolling-origin / subgroup stability / case studies,Dormant/not currently used,Dormant/not currently used,Rejected original scope; retained as history.
