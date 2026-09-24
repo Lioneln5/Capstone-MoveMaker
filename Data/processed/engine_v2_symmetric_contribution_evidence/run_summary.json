@@ -1,0 +1,15 @@
+{
+  "all_checks_passed": true,
+  "checks_passed": 9,
+  "checks_total": 9,
+  "deployment_artifacts_changed": 0,
+  "development_cutoff_year": 2023,
+  "evaluation_rows_made_unavailable": 7,
+  "final_holdout_evaluated": false,
+  "legacy_evaluation_rows": 929,
+  "models_fitted": 0,
+  "remaining_release_status": "blocked_pending_schedule_completeness_normalization_development_rerun_and_later_final_evaluation",
+  "stage": "symmetric_year1_year2_contribution_evidence_repair",
+  "symmetric_evaluation_positive_targets": 453,
+  "symmetric_evaluation_rows": 922
+}

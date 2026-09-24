@@ -1,0 +1,15 @@
+﻿check,actual,expected,passed,note
+development_cutoff_enforced,2023,2023,True,No 2024+ extension outcome enters the repair.
+legacy_evaluation_reference,929,929,True,Frozen asymmetric reference cohort is reproduced.
+symmetric_evaluation_reference,922,922,True,Prior symmetric-evidence repair is reproduced.
+complete_evaluation_cohort,878,878,True,Both exact annual windows now pass base evidence and schedule continuity.
+schedule_exclusions_exact,44,44,True,"Incomplete original-league schedules become unavailable, not negative."
+complete_positive_count,438,438,True,25% in each year leaves 438 positive labels.
+target_available_iff_complete_gate,1,1,True,Binary labels exist only when the full gate passes.
+unavailable_never_negative,0,0,True,Incomplete evidence is nullable rather than forced to class zero.
+normalized_shares_bounded,1,1,True,"All eligible annual opportunity shares are within [0,1]."
+annual_shares_capped_exact,6,6,True,Six extra-time-derived annual shares above 100% are capped transparently.
+normalization_does_not_change_binary_labels,1,1,True,Capping repairs scale validity without changing 25% labels.
+every_exclusion_has_reason,1,1,True,Every unavailable reference row has an explicit reason.
+declared_coverage_threshold_present,1,1,True,80% policy is shown beside nearby sensitivity values.
+declared_target_threshold_present,1,1,True,25% policy is shown beside 20% and 30% sensitivity values.

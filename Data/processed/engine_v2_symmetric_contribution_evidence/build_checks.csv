@@ -1,0 +1,10 @@
+﻿check,actual,expected,passed,note
+development_cutoff_enforced,2023,2023,True,No 2024+ outcome enters this repair stage.
+target_available_iff_symmetric_evidence,1,1,True,A label exists if and only if both annual gates and shares are valid.
+unavailable_never_negative,0,0,True,Ineligible evidence remains NA rather than becoming class zero.
+legacy_evaluation_reference,929,929,True,Frozen asymmetric rolling-evaluation cohort is reproduced only as a comparison.
+symmetric_evaluation_cohort,922,922,True,Both annual evidence requirements leave 922 evaluation rows.
+asymmetric_rows_removed,7,7,True,All seven known Year-1 evidence defects become unavailable.
+symmetric_positive_count,453,453,True,The repaired evaluation cohort has 453 positive labels.
+eligible_labels_unchanged,1,1,True,The gate removes invalid labels but does not relabel eligible rows.
+reason_present_for_every_unavailable_row,1,1,True,Every unavailable target has an explicit reason.

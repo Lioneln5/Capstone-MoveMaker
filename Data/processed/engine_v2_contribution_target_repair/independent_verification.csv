@@ -1,0 +1,26 @@
+﻿check,actual,expected,passed,note
+required_outputs_exact,"['README.md', 'build_checks.csv', 'cohort_comparison.csv', 'coverage_threshold_sensitivity.csv', 'independent_verification.csv', 'independent_verification.json', 'league_coverage_summary.csv', 'normalization_cases.csv', 'output_manifest.csv', 'run_summary.json', 'schedule_exclusions.csv', 'source_manifest.csv', 'target_contract.json', 'threshold_sensitivity.csv', 'unavailability_reason_counts.csv', 'v1_freeze_comparison.csv']","['README.md', 'build_checks.csv', 'cohort_comparison.csv', 'coverage_threshold_sensitivity.csv', 'league_coverage_summary.csv', 'normalization_cases.csv', 'output_manifest.csv', 'run_summary.json', 'schedule_exclusions.csv', 'source_manifest.csv', 'target_contract.json', 'threshold_sensitivity.csv', 'unavailability_reason_counts.csv', 'v1_freeze_comparison.csv']",True,Run 1 evidence package has only declared files.
+output_manifest_exact,1,1,True,Every generated evidence hash and byte count matches.
+source_manifest_exact,1,1,True,"Master, raw games, and V1 freeze match the build inputs."
+legacy_reference_independent,929,929,True,Legacy cohort is independently reconstructed.
+symmetric_reference_independent,922,922,True,Symmetric cohort is independently reconstructed.
+raw_original_league_counts_exact,1,1,True,Both annual raw game counts reproduce the master exactly.
+complete_cohort_independent,878,878,True,Independent 80%-of-peer schedule gate leaves 878 rows.
+schedule_exclusions_independent,44,44,True,Exactly 44 symmetric rows fail schedule continuity.
+complete_positive_count_independent,438,438,True,Independent bounded-share target has 438 positives.
+annual_share_caps_independent,6,6,True,Six eligible annual values exceed one before normalization.
+caps_do_not_relabel,1,1,True,"Capping changes scale, not the policy label."
+saved_exclusion_ids_exact,44,44,True,Saved cases are all and only independent schedule exclusions.
+saved_exclusion_reasons_explicit,1,1,True,Every saved exclusion identifies the failed schedule gate.
+threshold_sensitivity_exact,1,1,True,"20%, 25%, and 30% positive counts are 466, 438, and 409."
+coverage_sensitivity_exact,1,1,True,Nearby coverage thresholds reproduce the declared sensitivity.
+synthetic_complete_contract,"[1, 0, None, None, None, 1]","[1, 0, None, None, None, 1]",True,"Positive, negative, both schedule failures, missing minutes, and >100% share behave correctly."
+synthetic_cap_exact,1.0,1.0,True,A synthetic >100% share is capped exactly at one.
+synthetic_unavailable_has_reason,1,1,True,Synthetic refused rows retain explicit reasons.
+stale_coverage_flag_fails_closed,1,1,True,A stored coverage flag cannot disagree with primitives.
+final_holdout_not_opened,False,False,True,Run 1 never evaluates 2024+ outcomes.
+no_models_fitted,0,0,True,Run 1 is target construction only.
+no_deployment_change,0,0,True,No deployed model artifact changes.
+v1_protected_files_unchanged_from_run1_baseline,1,1,True,Every protected V1 artifact retains its exact Run 1 hash; the two explicitly regenerable integrity reports are checked separately.
+preexisting_v1_freeze_divergences_explicit,"['Data/processed/deployment_models/live_request_integrity.csv', 'Data/processed/deployment_models/live_request_integrity.json']","['Data/processed/deployment_models/live_request_integrity.csv', 'Data/processed/deployment_models/live_request_integrity.json']",True,Two pre-existing generated integrity-report divergences are disclosed rather than attributed to Run 1.
+durable_documentation_updated,1,1,True,"Audit, critical ledger, and model registry record Run 1 and its remaining boundary."

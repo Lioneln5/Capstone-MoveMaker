@@ -1,0 +1,7 @@
+﻿endpoint,calibration_method,within_brier_noninferiority,within_log_loss_noninferiority,within_ece_near_tie,selected
+downside_25pct_12m,isotonic,False,False,True,False
+downside_25pct_12m,platt,False,False,True,False
+downside_25pct_12m,raw,True,True,True,True
+downside_25pct_24m,isotonic,True,False,True,False
+downside_25pct_24m,platt,False,True,True,False
+downside_25pct_24m,raw,True,True,True,True

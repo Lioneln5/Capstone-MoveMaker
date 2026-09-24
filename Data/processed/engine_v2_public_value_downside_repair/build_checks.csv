@@ -1,0 +1,11 @@
+﻿check,passed,notes
+two_endpoints_only,True,12m and 24m 25% downside only
+no_exposed_evaluation_year,True,all evaluation years <=2023
+player_disjoint_every_stage,True,"zero identity overlap in fitting, tuning, and calibration"
+proposal_free_features,True,"no scoring, advanced, salary, or proposal fields"
+complete_required_inputs,True,all required features observed
+known_exposure_explicit,True,both 2024+ cohorts restricted
+no_final_release,True,no pristine final test exists
+no_model_binary,True,evidence only
+deployment_unchanged,True,Predictive deployment artifacts unchanged; mutable verification reports excluded.
+frozen_v1_unchanged,True,Frozen V1 model artifacts unchanged; mutable verification reports excluded.

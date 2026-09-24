@@ -1,0 +1,9 @@
+﻿endpoint,origin_id,tuning_rows,validation_rows,final_fit_rows,evaluation_rows,evaluation_players,identity_overlap,tuning_identity_overlap,calibration_identity_overlap,evaluation_year
+downside_25pct_12m,origin_2020,187,305,504,344,337,0,0,0,2020
+downside_25pct_12m,origin_2021,464,315,818,370,368,0,0,0,2021
+downside_25pct_12m,origin_2022,750,347,1165,340,338,0,0,0,2022
+downside_25pct_12m,origin_2023,1053,306,1442,364,361,0,0,0,2023
+downside_25pct_24m,origin_2020,177,298,487,363,357,0,0,0,2020
+downside_25pct_24m,origin_2021,452,337,828,334,332,0,0,0,2021
+downside_25pct_24m,origin_2022,755,320,1137,334,332,0,0,0,2022
+downside_25pct_24m,origin_2023,1038,310,1425,323,321,0,0,0,2023

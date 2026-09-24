@@ -5,5 +5,6 @@ temporary_first_24m_development_signal,True,"{'brier_skill': 0.0291264690855683,
 permanent_separation_subgroup_failure_preserved,True,"['Bundesliga', 'Ligue 1']",at least one league,Research-only status is grounded in an observed subgroup failure.
 no_numeric_output_authorized,True,0,0,No movement/retention probability is authorized for live display.
 upstream_verification,True,"{'movement': 28, 'manager_tactical': 16}",all upstream checks pass,The scope decision uses independently verified evidence.
-v1_frozen,True,True,True,All 24 V1 artifacts remain byte-identical.
+v1_serialized_models_frozen,True,[],[],All frozen V1 model binaries must remain byte-identical.
+v1_freeze_manifest_exceptions_disclosed,True,"['Data/processed/deployment_models/live_request_integrity.csv', 'Data/processed/deployment_models/live_request_integrity.json']","['Data/processed/deployment_models/live_request_integrity.csv', 'Data/processed/deployment_models/live_request_integrity.json']",The two live-request audit reports were intentionally regenerated after HTTP scoring was disabled.
 final_holdout_sealed,True,False,False,No 2024+ target is opened by this closeout.

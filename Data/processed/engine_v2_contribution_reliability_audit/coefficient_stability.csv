@@ -1,0 +1,57 @@
+﻿origin_id,encoded_feature,raw_feature,coefficient
+origin_2020,age_at_signing,age_at_signing,0.07711748137362709
+origin_2020,canonical_position==Attack,canonical_position,0.03248911070209314
+origin_2020,canonical_position==Defender,canonical_position,-0.050066995417283024
+origin_2020,canonical_position==Goalkeeper,canonical_position,-0.022498677135731126
+origin_2020,canonical_position==Midfield,canonical_position,0.03590744384595339
+origin_2020,league==Bundesliga,league,-0.023674205018913146
+origin_2020,league==La Liga,league,0.009058515694601404
+origin_2020,league==Ligue 1,league,-0.008889255801395952
+origin_2020,league==Premier League,league,0.03183959651203646
+origin_2020,league==Serie A,league,-0.010594265729633477
+origin_2020,log_market_value_at_signing,log_market_value_at_signing,0.22731648017577205
+origin_2020,log_market_value_at_signing__missing,log_market_value_at_signing,-0.04323077211908011
+origin_2020,pre365_same_club_all_competition_opportunity_share,pre365_same_club_all_competition_opportunity_share,0.2646882018958963
+origin_2020,pre365_same_club_all_competition_appearance_rate,pre365_same_club_all_competition_appearance_rate,0.26049007813534003
+origin_2021,age_at_signing,age_at_signing,0.15480114830741046
+origin_2021,canonical_position==Attack,canonical_position,-0.051014639117651917
+origin_2021,canonical_position==Defender,canonical_position,-0.0022093749305086142
+origin_2021,canonical_position==Goalkeeper,canonical_position,-0.11496798498957034
+origin_2021,canonical_position==Midfield,canonical_position,0.12955383004855256
+origin_2021,league==Bundesliga,league,-0.026982878861265158
+origin_2021,league==La Liga,league,0.006117507645208665
+origin_2021,league==Ligue 1,league,-0.03377128095535592
+origin_2021,league==Premier League,league,0.023194222087261525
+origin_2021,league==Serie A,league,0.03498514223256305
+origin_2021,log_market_value_at_signing,log_market_value_at_signing,0.37573548069923357
+origin_2021,log_market_value_at_signing__missing,log_market_value_at_signing,-0.1355791197071108
+origin_2021,pre365_same_club_all_competition_opportunity_share,pre365_same_club_all_competition_opportunity_share,0.4975754526746998
+origin_2021,pre365_same_club_all_competition_appearance_rate,pre365_same_club_all_competition_appearance_rate,0.35444630108836933
+origin_2022,age_at_signing,age_at_signing,-0.03543226106122443
+origin_2022,canonical_position==Attack,canonical_position,-0.07491479039755551
+origin_2022,canonical_position==Defender,canonical_position,-0.000554585149416116
+origin_2022,canonical_position==Goalkeeper,canonical_position,-0.09723074267947694
+origin_2022,canonical_position==Midfield,canonical_position,0.14207887260288787
+origin_2022,league==Bundesliga,league,-0.06238658308495855
+origin_2022,league==La Liga,league,0.07172430061142336
+origin_2022,league==Ligue 1,league,-0.11187296459197257
+origin_2022,league==Premier League,league,0.0255934912739464
+origin_2022,league==Serie A,league,0.09310285725740088
+origin_2022,log_market_value_at_signing,log_market_value_at_signing,0.25581103814468603
+origin_2022,log_market_value_at_signing__missing,log_market_value_at_signing,-0.08754352915370914
+origin_2022,pre365_same_club_all_competition_opportunity_share,pre365_same_club_all_competition_opportunity_share,0.5699002506411439
+origin_2022,pre365_same_club_all_competition_appearance_rate,pre365_same_club_all_competition_appearance_rate,0.38253331037928173
+origin_2023,age_at_signing,age_at_signing,0.07986894838476259
+origin_2023,canonical_position==Attack,canonical_position,-0.02050732034632094
+origin_2023,canonical_position==Defender,canonical_position,-0.014633926707225861
+origin_2023,canonical_position==Goalkeeper,canonical_position,-0.052350566887202785
+origin_2023,canonical_position==Midfield,canonical_position,0.07065518381178854
+origin_2023,league==Bundesliga,league,-0.05227692479734556
+origin_2023,league==La Liga,league,0.07998283555615471
+origin_2023,league==Ligue 1,league,-0.05570761426999779
+origin_2023,league==Premier League,league,0.052556285492974884
+origin_2023,league==Serie A,league,-0.01965730254056269
+origin_2023,log_market_value_at_signing,log_market_value_at_signing,0.22846697256511872
+origin_2023,log_market_value_at_signing__missing,log_market_value_at_signing,-0.08062140052128243
+origin_2023,pre365_same_club_all_competition_opportunity_share,pre365_same_club_all_competition_opportunity_share,0.404320164753034
+origin_2023,pre365_same_club_all_competition_appearance_rate,pre365_same_club_all_competition_appearance_rate,0.34692780449963495

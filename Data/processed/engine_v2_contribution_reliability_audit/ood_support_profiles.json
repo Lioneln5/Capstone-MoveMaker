@@ -1,0 +1,266 @@
+[
+  {
+    "categorical": {
+      "canonical_position": [
+        "Attack",
+        "Defender",
+        "Goalkeeper",
+        "Midfield"
+      ],
+      "league": [
+        "Bundesliga",
+        "La Liga",
+        "Ligue 1",
+        "Premier League",
+        "Serie A"
+      ]
+    },
+    "complete_reference_rows": 330,
+    "distance_limited_threshold": 2.3271912424979235,
+    "distance_refusal_threshold": 3.1179823682463286,
+    "evaluation_year": 2020,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "maximum": 35.98631074606434,
+        "median": 25.319644079397676,
+        "minimum": 16.761122518822724,
+        "q01": 18.147460643394936,
+        "q99": 34.26510609171799,
+        "robust_scale": 5.016517926681815
+      },
+      "log_market_value_at_signing": {
+        "maximum": 18.826145858727198,
+        "median": 16.118095750958314,
+        "minimum": 10.819798284210286,
+        "q01": 11.51293546492023,
+        "q99": 18.281163159468075,
+        "robust_scale": 1.4769680332182897
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "maximum": 1.0,
+        "median": 0.7158385093167702,
+        "minimum": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.37772393119184783
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "maximum": 1.0087719298245614,
+        "median": 0.5547357723577235,
+        "minimum": 0.0,
+        "q01": 0.0,
+        "q99": 0.9754858585858585,
+        "robust_scale": 0.39690771414027265
+      }
+    },
+    "origin_id": "origin_2020",
+    "train_end_year": 2018,
+    "validation_year": 2019
+  },
+  {
+    "categorical": {
+      "canonical_position": [
+        "Attack",
+        "Defender",
+        "Goalkeeper",
+        "Midfield"
+      ],
+      "league": [
+        "Bundesliga",
+        "La Liga",
+        "Ligue 1",
+        "Premier League",
+        "Serie A"
+      ]
+    },
+    "complete_reference_rows": 507,
+    "distance_limited_threshold": 2.2064630007800434,
+    "distance_refusal_threshold": 2.8008862084670616,
+    "evaluation_year": 2021,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "maximum": 35.98631074606434,
+        "median": 25.01574264202601,
+        "minimum": 16.761122518822724,
+        "q01": 18.012484599589325,
+        "q99": 34.34995208761122,
+        "robust_scale": 4.932799361100498
+      },
+      "log_market_value_at_signing": {
+        "maximum": 18.826145858727198,
+        "median": 15.830413711839864,
+        "minimum": 10.12667110305036,
+        "q01": 11.51293546492023,
+        "q99": 18.197537205138154,
+        "robust_scale": 1.5414686372719908
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "maximum": 1.0,
+        "median": 0.6944444444444444,
+        "minimum": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.4134093836746931
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "maximum": 1.0087719298245614,
+        "median": 0.5339181286549708,
+        "minimum": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.42092615279159284
+      }
+    },
+    "origin_id": "origin_2021",
+    "train_end_year": 2019,
+    "validation_year": 2020
+  },
+  {
+    "categorical": {
+      "canonical_position": [
+        "Attack",
+        "Defender",
+        "Goalkeeper",
+        "Midfield"
+      ],
+      "league": [
+        "Bundesliga",
+        "La Liga",
+        "Ligue 1",
+        "Premier League",
+        "Serie A"
+      ]
+    },
+    "complete_reference_rows": 715,
+    "distance_limited_threshold": 2.161705124884985,
+    "distance_refusal_threshold": 2.756128332572003,
+    "evaluation_year": 2022,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "maximum": 38.23134839151266,
+        "median": 24.826830937713893,
+        "minimum": 16.761122518822724,
+        "q01": 18.012703627652293,
+        "q99": 35.08818617385353,
+        "robust_scale": 5.037320721765661
+      },
+      "log_market_value_at_signing": {
+        "maximum": 18.826145858727198,
+        "median": 15.76142084987672,
+        "minimum": 10.12667110305036,
+        "q01": 11.51293546492023,
+        "q99": 18.249674379267937,
+        "robust_scale": 1.5414686372719908
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "maximum": 1.0,
+        "median": 0.6818181818181818,
+        "minimum": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.4197687807560664
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "maximum": 1.0087719298245614,
+        "median": 0.5094017094017094,
+        "minimum": 0.0,
+        "q01": 0.0,
+        "q99": 0.9940561167227834,
+        "robust_scale": 0.4223136950570661
+      }
+    },
+    "origin_id": "origin_2022",
+    "train_end_year": 2020,
+    "validation_year": 2021
+  },
+  {
+    "categorical": {
+      "canonical_position": [
+        "Attack",
+        "Defender",
+        "Goalkeeper",
+        "Midfield"
+      ],
+      "league": [
+        "Bundesliga",
+        "La Liga",
+        "Ligue 1",
+        "Premier League",
+        "Serie A"
+      ]
+    },
+    "complete_reference_rows": 880,
+    "distance_limited_threshold": 2.161705124884985,
+    "distance_refusal_threshold": 2.756128332572003,
+    "evaluation_year": 2023,
+    "features": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate"
+    ],
+    "numeric": {
+      "age_at_signing": {
+        "maximum": 38.23134839151266,
+        "median": 25.16495550992471,
+        "minimum": 16.10677618069815,
+        "q01": 18.011745379876796,
+        "q99": 35.08624229979467,
+        "robust_scale": 5.095162639803663
+      },
+      "log_market_value_at_signing": {
+        "maximum": 18.8906843794481,
+        "median": 15.76142084987672,
+        "minimum": 10.12667110305036,
+        "q01": 11.51293546492023,
+        "q99": 18.31532023940565,
+        "robust_scale": 1.5414686372719908
+      },
+      "pre365_same_club_all_competition_appearance_rate": {
+        "maximum": 1.0,
+        "median": 0.6978938130759105,
+        "minimum": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.4233324508879837
+      },
+      "pre365_same_club_all_competition_opportunity_share": {
+        "maximum": 1.0087719298245614,
+        "median": 0.514391835016835,
+        "minimum": 0.0,
+        "q01": 0.0,
+        "q99": 1.0,
+        "robust_scale": 0.43097677729120354
+      }
+    },
+    "origin_id": "origin_2023",
+    "train_end_year": 2021,
+    "validation_year": 2022
+  }
+]

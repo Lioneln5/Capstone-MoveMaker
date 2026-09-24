@@ -51,6 +51,10 @@ from canonical_feature_retriever import (  # noqa: E402
     current_season_start_year,
 )
 from incumbent_extension_profile import IncumbentExtensionProfileBuilder  # noqa: E402
+from business_metric_engine import (  # noqa: E402
+    PRIMARY_VALUE_HORIZON_WARNING,
+    PROVISIONAL_24M_VALUE_WARNING,
+)
 
 OUTPUT = ROOT / "Data" / "processed" / "deployment_models"
 SALARY_PANEL_PATH = ROOT / "Data" / "processed" / "capology_contracts" / "canonical_salary_panel.csv"
@@ -215,7 +219,8 @@ def main() -> None:
     builder = IncumbentExtensionProfileBuilder()
     engine_exceptions: list[str] = []
     permanent_supported = stay24_supported = both_supported = ordering_violations = 0
-    preservation24_supported = tier2_ordering_violations = 0
+    preservation12_supported = preservation24_supported = tier2_ordering_violations = 0
+    horizon_policy_violations = 0
     duration_supported = wage_value_supported = engine_scored = 0
     for row in sample.itertuples(index=False):
         player_rows = players_lookup.loc[players_lookup["canonical_name_normalized"].eq(row.player_name_normalized)]
@@ -261,16 +266,48 @@ def main() -> None:
         duration_supported += duration["status"] != "unavailable"
         wage_value_supported += wage_value["status"] != "unavailable"
 
-        # --- Tier 2 (2026-08-12): value-preservation probability and its
-        # underlying 10%/25%/50% downside ordering, across the same real sample.
+        # --- Tier 2: 12 months is the primary product horizon. The 24-month
+        # estimates remain available only as explicitly provisional detail.
+        # Check both mathematical ordering and the evidence-policy contract so
+        # a later UI/refactor cannot silently promote the underpowered horizon.
         asset = profile["cards"]["asset_value"]
+        preservation_12m = next(m for m in asset if m["metric_key"] == "value_preservation_probability_12m")
         preservation_24m = next(m for m in asset if m["metric_key"] == "value_preservation_probability_24m")
-        downside_25 = next(m for m in asset if m["metric_key"] == "public_value_downside_25pct_scenario")
+        downside_12m = next(m for m in asset if m["metric_key"] == "public_value_downside_25pct_scenario_12m")
+        downside_24m = next(m for m in asset if m["metric_key"] == "public_value_downside_25pct_scenario")
         downside_50 = next((m for m in asset if m["metric_key"] == "public_value_downside_50pct_scenario"), None)
+        preservation12_supported += preservation_12m["status"] != "unavailable"
         preservation24_supported += preservation_24m["status"] != "unavailable"
-        if preservation_24m["status"] != "unavailable" and downside_25["status"] != "unavailable":
+
+        if downside_12m["status"] != "unavailable":
+            primary_components = downside_12m.get("components", {})
+            if (
+                downside_12m.get("status") != "primary_horizon_candidate"
+                or downside_12m.get("warning") != PRIMARY_VALUE_HORIZON_WARNING
+                or primary_components.get("horizon_months") != 12
+                or primary_components.get("evidence_policy") != "primary_horizon"
+            ):
+                horizon_policy_violations += 1
+        if downside_24m["status"] != "unavailable":
+            provisional_components = downside_24m.get("components", {})
+            if (
+                downside_24m.get("status") != "provisional_pending_later_validation"
+                or downside_24m.get("warning") != PROVISIONAL_24M_VALUE_WARNING
+                or provisional_components.get("horizon_months") != 24
+                or provisional_components.get("evidence_policy") != "provisional_pending_later_validation"
+                or provisional_components.get("later_player_disjoint_rows") != 26
+                or provisional_components.get("smallest_big_five_league_rows") != 3
+            ):
+                horizon_policy_violations += 1
+
+        if preservation_12m["status"] != "unavailable" and downside_12m["status"] != "unavailable":
+            downside_10_12m = 1 - preservation_12m["value"]
+            p25_12m = downside_12m["value"]["probability"]
+            if p25_12m > downside_10_12m + 1e-9:
+                tier2_ordering_violations += 1
+        if preservation_24m["status"] != "unavailable" and downside_24m["status"] != "unavailable":
             downside_10_24m = 1 - preservation_24m["value"]
-            p25 = downside_25["value"]["probability"]
+            p25 = downside_24m["value"]["probability"]
             if p25 > downside_10_24m + 1e-9:
                 tier2_ordering_violations += 1
             if downside_50 is not None and downside_50["status"] != "unavailable":
@@ -291,10 +328,15 @@ def main() -> None:
         f"{duration_supported}/{engine_scored} live profiles got a supported contract-duration peer estimate.")
     add(checks, "tier1_wage_value_peer_supported_rate", wage_value_supported, f">={duration_floor}", wage_value_supported >= duration_floor,
         f"{wage_value_supported}/{engine_scored} live profiles got a supported wage-to-value peer estimate.")
-    add(checks, "tier2_value_preservation_supported_rate", preservation24_supported, f">={duration_floor}", preservation24_supported >= duration_floor,
-        f"{preservation24_supported}/{engine_scored} live profiles got a supported 24-month value-preservation probability.")
+    add(checks, "tier2_primary_12m_value_preservation_supported_rate", preservation12_supported, f">={duration_floor}", preservation12_supported >= duration_floor,
+        f"{preservation12_supported}/{engine_scored} live profiles got a supported 12-month value-preservation probability.")
+    add(checks, "tier2_provisional_24m_value_preservation_supported_rate", preservation24_supported, f">={duration_floor}", preservation24_supported >= duration_floor,
+        f"{preservation24_supported}/{engine_scored} live profiles got a supported but explicitly provisional 24-month value-preservation probability.")
+    add(checks, "tier2_public_value_horizon_policy_never_violated", horizon_policy_violations, 0, horizon_policy_violations == 0,
+        "Every available 12-month estimate must carry the primary-horizon evidence contract, while every available 24-month estimate "
+        "must carry the exact provisional warning and the 26-row / 3-row-smallest-league bottleneck disclosure.")
     add(checks, "tier2_downside_threshold_ordering_never_violated", tier2_ordering_violations, 0, tier2_ordering_violations == 0,
-        f"Checked {preservation24_supported} profiles' 10%/25%/50% 24-month downside probabilities for non-increasing severity order "
+        f"Checked {preservation12_supported} primary 12-month and {preservation24_supported} provisional 24-month profiles for non-increasing severity order "
         "after the scorer's PAVA correction -- this is exactly the class of bug the permanent-relationship check caught minutes earlier, "
         "checked here for the newly-deployed 10% threshold specifically.")
 

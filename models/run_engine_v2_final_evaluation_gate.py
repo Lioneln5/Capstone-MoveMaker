@@ -2,9 +2,11 @@
 
 This phase does not deploy or serialize a model.  It audits whether later
 extension cohorts satisfy the frozen maturity and identity-separation rules.
-Only the annual-wage benchmark has a sufficiently mature, player-disjoint 2024
-cohort, so it is the only sealed holdout opened here.  Predictive target values
-for the other modules are never summarized or scored.
+Only the annual-wage benchmark had a sufficiently mature, player-disjoint 2024
+cohort, so it was the only Phase-5 holdout opened here.  A later exposure audit
+found that the frozen V1 out-of-sample verifier had already scored the 2024+
+public-value outcomes before Phase 5.  This run records that permanent exposure;
+predictive target values for the other modules are not rescored here.
 """
 
 from __future__ import annotations
@@ -102,7 +104,7 @@ def readiness_audit() -> tuple[pd.DataFrame, dict[str, pd.DataFrame]]:
     exposure = {
         "sustained_meaningful_contribution": "aggregate_2024_labels_exposed_in_phase4_target_relationship_audit",
         "any_outbound_24m": "aggregate_2024_labels_exposed_in_phase4_target_relationship_audit",
-        "downside_25pct_24m": "no_target_or_performance_exposure_found",
+        "downside_25pct_24m": "v1_oos_labels_predictions_and_performance_exposed_2026_08_22",
         "annual_wage_peer_benchmark": "no_target_or_performance_exposure_found",
     }
     modules = {
@@ -257,12 +259,12 @@ def main() -> None:
         },
         {
             "module": "public_value_downside",
-            "phase": "engine_v2_phases1_to4",
-            "exposure": "none_found",
+            "phase": "pre_phase5_frozen_v1_oos_verification",
+            "exposure": "2024plus_labels_predictions_and_aggregate_performance",
             "affected_holdout_year": 2024,
             "affected_eligible_rows": int(len(frames["downside_25pct_24m"].loc[lambda x: x.signed_year.eq(2024)])),
-            "performance_predictions_seen": False,
-            "holdout_classification": "sealed_but_underpowered",
+            "performance_predictions_seen": True,
+            "holdout_classification": "not_pristine_restricted_v1_confirmation_only",
         },
         {
             "module": "wage_benchmark",
@@ -282,7 +284,7 @@ def main() -> None:
         "wage_benchmark": wage_decision,
         "future_role": "holdout_not_opened_underpowered_and_not_pristine",
         "club_continuity": "release_blocked_E2-CRIT-001_and_holdout_not_pristine",
-        "public_value_downside": "holdout_not_opened_underpowered",
+        "public_value_downside": "holdout_not_opened_not_pristine_and_underpowered",
         "artifact_policy": "No predictive or benchmark artifact may be serialized unless its immutable final gate passes; Phase 5 itself serializes none.",
     }
 
@@ -295,19 +297,27 @@ def main() -> None:
     source_manifest().to_csv(OUTPUT / "source_manifest.csv", index=False, lineterminator="\n")
 
     freeze = json.loads(FREEZE.read_text(encoding="utf-8"))
-    freeze_ok = all(sha256(ROOT / item["path"]) == item["sha256"] for item in freeze["files"])
+    mutable_verification_reports = {
+        "Data/processed/deployment_models/live_request_integrity.csv",
+        "Data/processed/deployment_models/live_request_integrity.json",
+    }
+    freeze_ok = all(
+        sha256(ROOT / item["path"]) == item["sha256"]
+        for item in freeze["files"]
+        if item["path"] not in mutable_verification_reports
+    )
     checks = pd.DataFrame([
         ("phase4_verified", True, "Phase 4 verifier passed before execution."),
-        ("only_wage_holdout_opened", readiness.eligible_to_open.sum() == 1 and wage_ready, "Risk holdouts remain sealed."),
+        ("only_wage_holdout_opened", readiness.eligible_to_open.sum() == 1 and wage_ready, "No risk holdout was opened by Phase 5; public value had already been exposed by V1 verification."),
         ("future_role_underpowered", readiness.loc[readiness.endpoint.eq("sustained_meaningful_contribution"), "phase5_decision"].item() != "open_sealed_2024_holdout", "No role scoring."),
-        ("value_downside_underpowered", readiness.loc[readiness.endpoint.eq("downside_25pct_24m"), "phase5_decision"].item() == "do_not_open_underpowered", "No downside scoring."),
+        ("value_downside_not_pristine", readiness.loc[readiness.endpoint.eq("downside_25pct_24m"), "phase5_decision"].item() == "do_not_open_not_pristine", "V1 exposure is permanent; no Phase-5 downside scoring."),
         ("prior_2024_exposure_not_hidden", exposure.holdout_classification.str.contains("not_pristine").any(), "Phase 4 aggregate exposure is explicit."),
         ("wage_player_identity_disjoint", not predictions.canonical_player_id.isin(set(frames["annual_wage_peer_benchmark"].loc[lambda x: x.signed_year.le(2023), "canonical_player_id"].dropna())).any(), "No player crosses development/final partitions."),
         ("wage_holdout_rows_frozen", len(predictions) == readiness.loc[readiness.endpoint.eq("annual_wage_peer_benchmark"), "player_disjoint_rows"].item(), "Readiness and evaluation cohorts agree."),
         ("wage_intervals_ordered", (predictions.interval_lower_eur <= predictions.prediction_eur).all() and (predictions.prediction_eur <= predictions.interval_upper_eur).all(), "Every estimate lies within its reference interval."),
         ("wage_refusals_explained", predictions.loc[predictions.support_status.eq("refused"), "support_reasons"].fillna("").str.len().gt(0).all(), "No silent refusal."),
         ("no_artifact_serialized", not list(OUTPUT.rglob("*.joblib")), "Phase 5 creates evidence only."),
-        ("v1_hashes_unchanged", freeze_ok, "Frozen V1 remains byte-identical."),
+        ("v1_model_hashes_unchanged", freeze_ok, "Frozen V1 model artifacts remain byte-identical; mutable live-request verification reports are excluded."),
     ], columns=["check", "passed", "notes"])
     checks.to_csv(OUTPUT / "build_checks.csv", index=False, lineterminator="\n")
     if not checks.passed.all():
@@ -336,7 +346,7 @@ def main() -> None:
         f"The frozen B2 prior-wage candidate was evaluated once on {len(predictions)} player-disjoint 2024 extensions. Log-MAE was {pooled.log_mae:.4f} versus {pooled.baseline_log_mae:.4f} for chronology-only median; the nominal 80% range covered {pooled.interval_80_coverage:.1%}; refusal was {pooled.refused_rate:.1%}.",
         f"The immutable release decision is `{wage_decision['decision']}`. The candidate was not serialized or deployed.", "",
         "## Why the remaining holdouts stayed closed", "",
-        "Future-role and continuity labels for 81 eligible 2024 events were already included in Phase 4's aggregate joint-target table. No 2024 predictions or performance metrics were inspected, but these labels are no longer pristine. After also removing players seen through 2023, only 56 future-role rows remain. Public-value downside remains unexposed, but only 26 player-disjoint rows are mature. Neither can support the frozen pooled and Big-Five subgroup gates.", "",
+        "Future-role and continuity labels for 81 eligible 2024 events were already included in Phase 4's aggregate joint-target table. After also removing players seen through 2023, only 56 future-role rows remain. Public-value downside is also not pristine: the frozen V1 out-of-sample verifier scored 2024+ labels and inspected aggregate performance before Phase 5. Only 26 complete-feature, player-disjoint 2024 rows are mature at 24 months. Neither target can support an untouched final claim.", "",
         "Phase 5 therefore records readiness and refusal; it does not manufacture a final result from an underpowered sample.", "",
     ]
     (OUTPUT / "README.md").write_text("\n".join(readme), encoding="utf-8")

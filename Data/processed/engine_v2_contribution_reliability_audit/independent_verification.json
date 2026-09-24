@@ -1,0 +1,11 @@
+{
+  "all_checks_passed": true,
+  "checks_passed": 18,
+  "checks_total": 18,
+  "deployment_changed": false,
+  "final_holdout_evaluated": false,
+  "independent_base_model_refits": 4,
+  "independent_calibrator_refits": 8,
+  "independent_nested_parameter_refits": 1000,
+  "subgroup_bootstrap_repetitions_per_group": 5000
+}

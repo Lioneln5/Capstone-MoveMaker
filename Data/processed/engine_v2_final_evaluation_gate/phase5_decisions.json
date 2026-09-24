@@ -5,7 +5,7 @@
   "engine_version": "2.0.0-candidate",
   "future_role": "holdout_not_opened_underpowered_and_not_pristine",
   "phase": 5,
-  "public_value_downside": "holdout_not_opened_underpowered",
+  "public_value_downside": "holdout_not_opened_not_pristine_and_underpowered",
   "wage_benchmark": {
     "artifact_serialized": false,
     "candidate": "B2_plus_prior_wage",

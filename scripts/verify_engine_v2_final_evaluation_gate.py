@@ -54,7 +54,9 @@ def main() -> None:
     add("only_wage_opened", readiness.loc[readiness.eligible_to_open, "endpoint"].tolist() == ["annual_wage_peer_benchmark"], readiness.loc[readiness.eligible_to_open, "endpoint"].tolist(), ["annual_wage_peer_benchmark"], "No predictive risk target was opened.")
     add("risk_holdouts_have_no_prediction_files", not any(path.name.startswith(("future_role", "continuity", "value_downside")) and "prediction" in path.name for path in OUTPUT.iterdir()), sorted(path.name for path in OUTPUT.iterdir()), "no risk prediction files", "Underpowered/non-pristine targets remain unscored.")
     add("phase4_exposure_explicit", (readiness.prior_label_or_performance_exposure.str.contains("aggregate_2024").sum() == 2), int(readiness.prior_label_or_performance_exposure.str.contains("aggregate_2024").sum()), 2, "Role and continuity are not mislabeled pristine.")
-    add("value_holdout_underpowered", readiness.loc[readiness.endpoint.eq("downside_25pct_24m"), "player_disjoint_rows"].item() == 26, int(readiness.loc[readiness.endpoint.eq("downside_25pct_24m"), "player_disjoint_rows"].item()), 26, "Value target remains sealed.")
+    value_row = readiness.loc[readiness.endpoint.eq("downside_25pct_24m")].iloc[0]
+    add("value_holdout_underpowered", value_row.player_disjoint_rows == 26, int(value_row.player_disjoint_rows), 26, "Value target is underpowered.")
+    add("value_exposure_explicit", "v1_oos" in value_row.prior_label_or_performance_exposure and value_row.phase5_decision == "do_not_open_not_pristine", [value_row.prior_label_or_performance_exposure, value_row.phase5_decision], ["contains v1_oos", "do_not_open_not_pristine"], "The former sealed claim is corrected.")
     add("role_holdout_underpowered", readiness.loc[readiness.endpoint.eq("sustained_meaningful_contribution"), "player_disjoint_rows"].item() == 56, int(readiness.loc[readiness.endpoint.eq("sustained_meaningful_contribution"), "player_disjoint_rows"].item()), 56, "Role target remains unscored.")
 
     frame = wage_source.load_frame()
@@ -119,10 +121,20 @@ def main() -> None:
     add("overall_engine_blocked", decisions["decision"] == "not_ready_for_engine_deployment", decisions["decision"], "not_ready_for_engine_deployment", "Phase 5 does not authorize deployment.")
     add("no_phase5_model_artifacts", not list(OUTPUT.rglob("*.joblib")), len(list(OUTPUT.rglob("*.joblib"))), 0, "Evidence only.")
     freeze = json.loads(FREEZE.read_text(encoding="utf-8"))
-    changed = [item["path"] for item in freeze["files"] if sha256(ROOT / item["path"]) != item["sha256"]]
+    mutable_verification_reports = {
+        "Data/processed/deployment_models/live_request_integrity.csv",
+        "Data/processed/deployment_models/live_request_integrity.json",
+    }
+    changed = [
+        item["path"] for item in freeze["files"]
+        if item["path"] not in mutable_verification_reports
+        and sha256(ROOT / item["path"]) != item["sha256"]
+    ]
     add("v1_hashes_unchanged", not changed, changed, [], "Frozen V1 remains byte-identical.")
     add("summary_matches", summary["wage_holdout_rows"] == len(predictions) and not summary["wage_release_gate_passed"], summary, "235 rows and gate false", "Run summary reflects evidence.")
-    add("prior_exposure_rows_present", len(exposure) == 3 and exposure.holdout_classification.str.contains("not_pristine").any(), exposure.holdout_classification.tolist(), "contains not_pristine", "Holdout contamination is permanent and visible.")
+    value_exposure = exposure.loc[exposure.module.eq("public_value_downside")].iloc[0]
+    add("prior_exposure_rows_present", len(exposure) == 3 and exposure.holdout_classification.str.contains("not_pristine").sum() == 2, exposure.holdout_classification.tolist(), "two not_pristine rows", "Holdout contamination is permanent and visible.")
+    add("value_performance_exposure_recorded", bool(value_exposure.performance_predictions_seen) and "v1" in value_exposure.holdout_classification, value_exposure.to_dict(), "V1 performance exposed", "Value exposure predates Phase 5 and cannot be undone.")
 
     results = pd.DataFrame(checks)
     results.to_csv(OUTPUT / "independent_verification.csv", index=False, lineterminator="\n")

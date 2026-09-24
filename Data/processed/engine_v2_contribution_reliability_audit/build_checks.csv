@@ -1,0 +1,12 @@
+﻿check,actual,expected,passed,note
+run2_raw_predictions_reproduced,8.326672684688674e-17,<=1e-12,True,Run 3 starts from the exact selected Run 2 candidate.
+three_calibration_methods,"['isotonic', 'platt', 'raw']","['isotonic', 'platt', 'raw']",True,No post-result calibration method was added.
+evaluation_rows_exact,878,878,True,Run 3 uses the repaired Run 2 development evaluations.
+player_disjoint_all_origins,0,0,True,Evaluation players never enter model fitting.
+support_states_complete,"['limited', 'refused', 'supported']",subset of supported/limited/refused,True,Every profile has an explicit support state.
+refusals_explained,1,1,True,No probability refusal is unexplained.
+parameter_intervals_ordered,1,1,True,Bootstrap bounds are ordered.
+subgroup_intervals_ordered,1,1,True,Every subgroup has a player-cluster skill interval.
+no_2024_outcomes,2023,2023,True,The later holdout remains closed.
+no_model_binary,0,0,True,Run 3 writes no deployable model.
+deployment_unchanged,1,1,True,Current deployment files retain their pre-run hashes.

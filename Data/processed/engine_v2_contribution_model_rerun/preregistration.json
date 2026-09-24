@@ -1,0 +1,108 @@
+{
+  "advancement_gates": {
+    "optional_prior_volume_replacement": [
+      "95% player-cluster interval for Brier improvement versus the primary candidate is above zero",
+      "wins at least 3 of 4 origins versus the primary candidate"
+    ],
+    "primary_candidate": [
+      "95% player-cluster interval for Brier improvement versus chronology prevalence is above zero",
+      "wins at least 3 of 4 origins versus chronology prevalence",
+      "pooled Brier improvement versus market profile is positive",
+      "pooled ROC AUC is at least 0.70",
+      "absolute pooled calibration gap is at most 0.05"
+    ]
+  },
+  "artifact_policy": "No fitted model binary is written; results are development evidence only.",
+  "c_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "candidate_features": {
+    "B0_chronology_prevalence": [],
+    "B1_market_profile": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing"
+    ],
+    "B2_core_recent_involvement": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate"
+    ],
+    "B3_plus_prior_volume": [
+      "age_at_signing",
+      "canonical_position",
+      "league",
+      "log_market_value_at_signing",
+      "pre365_same_club_all_competition_opportunity_share",
+      "pre365_same_club_all_competition_appearance_rate",
+      "pre1_canonical_minutes_played",
+      "pre2_canonical_minutes_played"
+    ]
+  },
+  "contract_version": "engine_v2_contribution_model_run2_v1_2026-09-08",
+  "deployment_status": "research_only_not_deployed",
+  "development_origins": [
+    [
+      "origin_2020",
+      2018,
+      2019,
+      2020
+    ],
+    [
+      "origin_2021",
+      2019,
+      2020,
+      2021
+    ],
+    [
+      "origin_2022",
+      2020,
+      2021,
+      2022
+    ],
+    [
+      "origin_2023",
+      2021,
+      2022,
+      2023
+    ]
+  ],
+  "excluded_from_run2_search": [
+    "role/squad competition blocks",
+    "manager/tactical blocks",
+    "lagged club-behavior blocks",
+    "nonlinear model families"
+  ],
+  "final_holdout_policy": "No extension signed in 2024 or later is evaluated.",
+  "hyperparameter_selection": "C selected by preceding-year validation Brier loss only",
+  "model_family": "L2 logistic regression",
+  "optional_extension_candidate": "B3_plus_prior_volume",
+  "primary_candidate": "B2_core_recent_involvement",
+  "primary_evaluation": "expanding rolling origin, evaluation-player-disjoint from model fitting rows",
+  "primary_loss": "Brier score",
+  "prohibited_features": [
+    "raw goals or assists rates",
+    "advanced event statistics",
+    "salary or wage fields",
+    "proposed contract terms",
+    "post-extension predictors"
+  ],
+  "secondary_metrics": [
+    "log loss",
+    "ROC AUC",
+    "average precision",
+    "adaptive expected calibration error",
+    "calibration gap"
+  ],
+  "sensitivity_evaluation": "ordinary expanding rolling origin retaining prior events for repeat players",
+  "target_contract_version": "engine_v2_sustained_realized_contribution_v2_2026-09-07",
+  "target_semantics": "sustained realized extension-club contribution, not role when available",
+  "uncertainty": "5000 player-cluster bootstrap draws over pooled out-of-time loss deltas"
+}

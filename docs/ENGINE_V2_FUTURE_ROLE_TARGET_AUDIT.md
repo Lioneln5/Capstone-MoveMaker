@@ -17,7 +17,9 @@ name.
 
 Its strongest defensible interpretation is narrower: realized use by the
 extension club, normalized by the extension club's observed match schedule.
-Even that interpretation requires two repairs before reuse:
+At the audit date, even that interpretation required two repairs before
+reuse; both construction repairs are now implemented in the later Run 1
+record below:
 
 1. symmetric Year-1 and Year-2 evidence eligibility; and
 2. complete schedules after relegation or another explicit refusal rule for
@@ -32,6 +34,53 @@ The audit supports the existing movement-scope split:
   supportable with complete availability data.
 
 No finding in this audit authorizes a model or a live probability.
+
+## Symmetric evidence repair implemented
+
+**Implementation date:** 2026-09-04
+
+The first required repair is now enforced by
+`models/engine_v2/contribution_target_contract.py`. An Engine V2 contribution
+label is nullable and is available only when both Year 1 and Year 2
+independently have a fully observable window, at least 10 captured
+extension-club matches, and a nonmissing opportunity share. Stored evidence
+flags are checked against those primitive conditions and a disagreement fails
+closed.
+
+On the frozen 2020-2023 development evaluation rows, this changes the eligible
+cohort from 929 to 922. The seven previously invalid rows become unavailable;
+none are recoded as failures, and the 922 eligible labels remain unchanged.
+The implementation and independent verifier are recorded under
+`Data/processed/engine_v2_symmetric_contribution_evidence/`.
+
+This closes only the asymmetric-evidence subproblem. The target and Meaningful
+Retention remain release-blocked pending club-schedule completeness repair,
+normalization at 100%, a complete development rerun, and later untouched final
+temporal evaluation.
+
+## Complete contribution-target repair implemented
+
+**Implementation date:** 2026-09-07
+
+Run 1 completes the remaining target-construction repairs in the versioned
+`models/engine_v2/complete_contribution_target_contract.py`. Original-league
+schedule coverage must now reach at least 80% of the contemporaneous exact-
+window peer median in both years. This preserves complete league-wide
+interruptions, including shortened COVID-era Ligue 1 windows, while refusing
+club-specific top-flight coverage breaks. Annual opportunity shares are also
+recomputed from minutes and captured games and capped to `[0,1]`.
+
+On the 922-row symmetric 2020-2023 reference cohort, 44 incomplete-schedule
+rows become unavailable, leaving 878 eligible labels and 438 positives. Six
+annual shares are capped at 100% and no binary label changes because of that
+normalization. The 2024+ cohort was not opened and no model was fitted.
+
+This closes the construction defects identified by this audit. It does **not**
+authorize Meaningful Retention or another probability: all affected rolling-
+origin development evidence must now be rerun under the frozen contract, and
+any survivor still requires later untouched player-disjoint temporal evidence.
+See [the Run 1 repair record](ENGINE_V2_CONTRIBUTION_TARGET_REPAIR.md) and
+`Data/processed/engine_v2_contribution_target_repair/`.
 
 ## Exact current construction
 
