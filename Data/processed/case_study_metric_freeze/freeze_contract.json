@@ -1,0 +1,21 @@
+{
+  "allowed_disposition_classes": [
+    "deferred",
+    "historical_only",
+    "qualified",
+    "rejected",
+    "retained",
+    "retired"
+  ],
+  "automated_contract_decisions_authorized": 0,
+  "descriptive_numeric_outputs": [
+    "club_salary_structure_context",
+    "contract_arithmetic"
+  ],
+  "freeze_date": "2026-09-10",
+  "freeze_version": "movemaker_case_study_metric_freeze_v1_2026-09-10",
+  "interpretation": "A final case-study disposition is a stopping decision, not a production promotion.",
+  "live_predictive_probabilities_authorized": 0,
+  "output_families": 15,
+  "scope": "incumbent-club contract-extension analytical case study"
+}

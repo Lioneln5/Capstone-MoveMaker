@@ -70,6 +70,47 @@
   .page-content strong { color: var(--text); }
   .page-content a.inline-link { color: var(--green); font-weight: 700; }
 
+  .method-hero { display: grid; grid-template-columns: 1.2fr .8fr; gap: 1px; margin: -34px -34px 38px; background: var(--rule); }
+  .method-hero-main { padding: 48px 34px; background: var(--soft-fill); }
+  .method-eyebrow { color: var(--green); font-size: 10.5px; font-weight: 800; letter-spacing: .17em; text-transform: uppercase; }
+  .method-hero h2 { max-width: 760px; margin: 13px 0 18px; padding: 0; border: 0; font-size: clamp(34px, 5vw, 55px); line-height: 1.02; letter-spacing: -.045em; }
+  .method-hero-main p { margin: 0; font-size: 16px; }
+  .decision-unit { padding: 42px 30px; background: var(--bg-deep); color: #fff; }
+  .decision-unit .method-eyebrow { color: var(--amber-line); }
+  .decision-unit h3 { margin: 15px 0 19px; font-size: 27px; line-height: 1.08; }
+  .unit-row { display: flex; justify-content: space-between; gap: 14px; padding: 10px 0; border-top: 1px solid rgba(255,255,255,.22); font-size: 11px; }
+  .unit-row span:first-child { color: rgba(255,255,255,.65); }
+  .unit-row span:last-child { font-weight: 800; text-align: right; }
+  .section-label { margin-top: 44px; color: var(--green); font-size: 10.5px; font-weight: 800; letter-spacing: .17em; text-transform: uppercase; }
+  .section-title { margin: 9px 0 21px; color: var(--bg-deep); font-size: 31px; font-weight: 850; letter-spacing: -.035em; line-height: 1.06; }
+  .pipeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; border: 1px solid var(--rule); background: var(--rule); }
+  .pipe-step { min-height: 210px; padding: 22px; background: #fff; }
+  .pipe-num { color: var(--green); font-size: 11px; font-weight: 900; letter-spacing: .13em; }
+  .pipe-step h3 { margin: 24px 0 8px; color: var(--bg-deep); font-size: 19px; line-height: 1.1; }
+  .pipe-step p { margin: 0; font-size: 11.5px; line-height: 1.55; }
+  .model-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .model-card { padding: 22px; border: 1px solid var(--rule-soft); border-top: 4px solid var(--green); background: #fff; }
+  .model-card h3 { margin: 0 0 8px; color: var(--bg-deep); font-size: 19px; }
+  .model-card p { margin: 0; font-size: 11.5px; line-height: 1.55; }
+  .model-use { margin-top: 13px; color: var(--green); font-size: 9.5px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+  .origins { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--rule); background: #fff; }
+  .origin { padding: 20px; border-right: 1px solid var(--rule-soft); }
+  .origin:last-child { border-right: 0; }
+  .origin-num { color: var(--green); font-size: 10px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
+  .origin-year { margin-top: 15px; color: var(--bg-deep); font-size: 34px; font-weight: 900; letter-spacing: -.04em; }
+  .origin-copy { margin-top: 6px; color: var(--text-mute); font-size: 10.5px; }
+  .verification { display: grid; grid-template-columns: .65fr 1.35fr; gap: 1px; margin-top: 16px; background: var(--rule); border: 1px solid var(--rule); }
+  .verification-score { padding: 30px; background: var(--bg-deep); color: #fff; }
+  .verification-score strong { display: block; color: var(--amber-line); font-size: 62px; font-weight: 900; letter-spacing: -.06em; line-height: 1; }
+  .verification-score span { display: block; margin-top: 11px; color: rgba(255,255,255,.75); font-size: 11px; }
+  .verification-copy { padding: 27px; background: #fff; }
+  .verification-copy p { max-width: none; margin: 0; font-size: 12.5px; }
+  .method-cta { display: flex; justify-content: space-between; gap: 25px; align-items: center; margin: 40px -34px -34px; padding: 28px 34px; background: var(--amber-line); color: var(--bg-deep); }
+  .method-cta strong { font-size: 20px; }
+  .method-cta p { margin: 5px 0 0; color: #534500; font-size: 11.5px; }
+  .method-button { flex: none; padding: 13px 16px; background: var(--bg-deep); color: #fff; font-size: 10px; font-weight: 900; letter-spacing: .11em; text-transform: uppercase; }
+  .method-button:hover { color: #fff; background: var(--green); }
+
   footer { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 24px; padding: 20px 34px; background-color: var(--bg-deep); background-image: linear-gradient(180deg, rgba(4,16,8,.55), rgba(4,16,8,.78)), var(--grass); background-size: cover; background-position: center 75%; color: #fff; }
   .footer-note { font-size: 11.5px; letter-spacing: .06em; color: rgba(255,255,255,.85); }
   .footer-leagues { display: flex; align-items: center; gap: 16px; padding: 8px 14px; background: #fff; }
@@ -81,12 +122,25 @@
     .league-rail-grid { display: grid; grid-template-columns: repeat(3,1fr); }
     footer { grid-template-columns: 1fr; text-align: center; }
     .footer-leagues { justify-content: center; flex-wrap: wrap; }
+    .method-hero, .verification { grid-template-columns: 1fr; }
+    .pipeline { grid-template-columns: repeat(2,1fr); }
+    .origins { grid-template-columns: repeat(2,1fr); }
+    .origin:nth-child(2) { border-right: 0; }
+    .origin:nth-child(-n+2) { border-bottom: 1px solid var(--rule-soft); }
   }
   @media (max-width: 620px) {
     body { padding: 8px; }
     .title { font-size: 42px; }
     .page-content { padding: 22px; }
     .league-rail-grid { grid-template-columns: repeat(2,1fr); }
+    .method-hero { margin: -22px -22px 30px; }
+    .method-hero-main, .decision-unit { padding: 30px 22px; }
+    .pipeline, .model-grid, .origins { grid-template-columns: 1fr; }
+    .pipe-step { min-height: 0; }
+    .origin { border-right: 0; border-bottom: 1px solid var(--rule-soft); }
+    .origin:last-child { border-bottom: 0; }
+    .method-cta { display: block; margin: 32px -22px -22px; padding: 24px 22px; }
+    .method-button { display: inline-block; margin-top: 15px; }
   }
 </style>
 </head>
@@ -95,14 +149,15 @@
   <header>
     <div class="header-frame"></div>
     <h1 class="title">MOVE MAKER</h1>
-    <div class="subtitle">Research Prototype · How It Works</div>
+    <div class="subtitle">Frozen Case Study · Method &amp; Validation</div>
   </header>
 
   <nav class="site-nav">
-    <a href="about.html">About</a>
-    <a href="index.html">Tool</a>
-    <a href="how-it-works.html" class="active">How It Works</a>
-    <a href="scope.html">Scope &amp; Limitations</a>
+    <a href="index.html">Case Study</a>
+    <a href="prototype.html">Prototype</a>
+    <a href="how-it-works.html" class="active">Method</a>
+    <a href="scope.html">Evidence &amp; Limits</a>
+    <a href="about.html">Team</a>
     <a href="contact.html">Contact</a>
   </nav>
 
@@ -137,33 +192,35 @@
 
   <div class="page-content">
 
-    <h2>1. Select the current player</h2>
-    <p>Search for a player and select the verified result. The tool automatically locks the player's current club and league because the models evaluate <strong>incumbent-club contract extensions</strong>, not hypothetical transfers to another club.</p>
+    <section class="method-hero">
+      <div class="method-hero-main"><div class="method-eyebrow">From public records to dated decisions</div><h2>Build the evidence forward through time.</h2><p>The hardest part was not choosing an algorithm. It was ensuring that every row represented the right player, club and date—and that no information from after the extension entered the prediction.</p></div>
+      <aside class="decision-unit"><div class="method-eyebrow">Analytical unit</div><h3>One extension event</h3><div class="unit-row"><span>Who</span><span>one player</span></div><div class="unit-row"><span>Where</span><span>incumbent club</span></div><div class="unit-row"><span>Anchor</span><span>signed extension date</span></div><div class="unit-row"><span>Predictors</span><span>available before signing</span></div><div class="unit-row"><span>Outcomes</span><span>exact future windows</span></div></aside>
+    </section>
 
-    <h2>2. Review and edit the proposed terms</h2>
-    <p>The assessment uses three financial inputs:</p>
-    <ul>
-      <li><strong>Current public market value (€)</strong> — auto-filled from the latest dated public valuation available to the system and editable.</li>
-      <li><strong>Proposed annual gross fixed wage (€)</strong> — pre-filled from the latest matched same-club wage estimate when available, but always editable. A historical wage is context, not a recommendation.</li>
-      <li><strong>Proposed contract length</strong> — two years or longer because the contribution outcome requires both Year 1 and Year 2 to be covered.</li>
-    </ul>
-    <p>Total fixed-wage commitment is annual gross fixed wage multiplied by contract years. Bonuses, taxes, agent fees, clauses and transfer fees are not included.</p>
+    <div class="section-label">01 · Canonical pipeline</div><div class="section-title">Six stages protect the meaning of each row.</div>
+    <div class="pipeline">
+      <article class="pipe-step"><div class="pipe-num">01</div><h3>Preserve sources</h3><p>Clean each provider independently while retaining source IDs, dates and provenance.</p></article>
+      <article class="pipe-step"><div class="pipe-num">02</div><h3>Resolve identities</h3><p>Map players and clubs through stable IDs, normalized names, reviewed aliases and explicit unresolved states.</p></article>
+      <article class="pipe-step"><div class="pipe-num">03</div><h3>Anchor extensions</h3><p>Deduplicate Capology records into one player–club–date event and validate join cardinality.</p></article>
+      <article class="pipe-step"><div class="pipe-num">04</div><h3>Build pre-date features</h3><p>Join prior wages, public value, performance, playing time, injuries and club context without crossing the signing date.</p></article>
+      <article class="pipe-step"><div class="pipe-num">05</div><h3>Construct outcomes</h3><p>Use exact anniversary windows for contribution, dated valuation landmarks and future transfers for movement.</p></article>
+      <article class="pipe-step"><div class="pipe-num">06</div><h3>Audit every build</h3><p>Emit coverage checks, cohort funnels, field dictionaries, manifests, hashes and refusal states.</p></article>
+    </div>
 
-    <h2>3. Separate historical evidence from current research candidates</h2>
-    <p>The frozen V1 interface is preserved for audit, but live scoring is disabled. Engine V2 now keeps distinct football questions separate:</p>
-    <ul>
-      <li><strong>Meaningful Retention</strong> — no outbound movement plus at least 25% same-club opportunity share in both Year 1 and Year 2. This is a development candidate awaiting later untouched validation.</li>
-      <li><strong>Temporary Displacement Risk</strong> — a loan or loan return is the first resolved interruption. This is a separate development candidate.</li>
-      <li><strong>Permanent Separation</strong> — the permanent relationship ends within two years. Personalized scoring is unavailable because subgroup reliability remains insufficient.</li>
-      <li><strong>Contribution, public-value, and wage evidence</strong> — retained as separately defined historical research modules; none is currently served as a live probability.</li>
-    </ul>
+    <div class="section-label">02 · Model selection</div><div class="section-title">Complexity had to earn its place.</div>
+    <div class="model-grid">
+      <article class="model-card"><h3>L2 logistic regression</h3><p>Stable, calibrated binary probabilities with inspectable feature contributions in modest extension cohorts.</p><div class="model-use">Contribution · public-value downside</div></article>
+      <article class="model-card"><h3>Discrete-time hazards</h3><p>Represents movement timing and right-censoring instead of pretending every player has equal observed follow-up.</p><div class="model-use">Temporary and permanent movement research</div></article>
+      <article class="model-card"><h3>Ridge regression</h3><p>Regularizes correlated football and financial inputs for continuous outcomes and historical peer context.</p><div class="model-use">Opportunity · wage · value · commitment</div></article>
+      <article class="model-card"><h3>Chronology-only baseline</h3><p>Prevalence or median estimates answer the essential question: did player-specific features improve on what the date alone implied?</p><div class="model-use">Required comparator for every candidate</div></article>
+    </div>
 
-    <h2>4. Open the explanations and warnings</h2>
-    <p>Use the downside selector to compare the verified 25% and 50% value scenarios. Open “What this means &amp; how it is calculated” beneath a card for its definition, intended decision use, caveats, and the player-specific features that most influenced supported linear-model probabilities. Feature influence is not proof of causation.</p>
-    <p>Contract facts and supporting model signals remain collapsed by default. Data-freshness and extrapolation warnings should be read before using any result—especially for unusually valuable players or profiles with sparse recent data.</p>
+    <div class="section-label">03 · Rolling validation</div><div class="section-title">Later seasons never teach the earlier ones.</div>
+    <div class="origins"><div class="origin"><div class="origin-num">Origin 1</div><div class="origin-year">2020</div><div class="origin-copy">Train through 2018<br>Validate on 2019</div></div><div class="origin"><div class="origin-num">Origin 2</div><div class="origin-year">2021</div><div class="origin-copy">Train through 2019<br>Validate on 2020</div></div><div class="origin"><div class="origin-num">Origin 3</div><div class="origin-year">2022</div><div class="origin-copy">Train through 2020<br>Validate on 2021</div></div><div class="origin"><div class="origin-num">Origin 4</div><div class="origin-year">2023</div><div class="origin-copy">Train through 2021<br>Validate on 2022</div></div></div>
 
-    <h2>When the tool refuses or withholds an output</h2>
-    <p>The tool refuses requests outside the modeled Big-Five leagues or outside the current-club extension scope. If a required field cannot be reconstructed reliably, the affected result is marked unavailable rather than silently replaced with zero. See <a class="inline-link" href="scope.html">Scope &amp; Limitations</a> for the full boundary.</p>
+    <div class="verification"><div class="verification-score"><strong>236</strong><span>verification checks passed at the final freeze</span></div><div class="verification-copy"><p>Performance was not enough. The research also checked calibration, improvement over the chronology-only baseline, player-clustered uncertainty, origin consistency, league/position/age behavior, player-disjoint evaluation where available, out-of-scope refusal, logical relationships and artifact parity. The final freeze fits no model; it reconstructs the reported conclusions from saved evidence.</p></div></div>
+
+    <div class="method-cta"><div><strong>Now see what that system produced.</strong><p>Explore twelve saved player profiles, inspect the original four-card product and reveal the historical outcomes.</p></div><a class="method-button" href="prototype.html">Open historical prototype →</a></div>
 
   </div>
 

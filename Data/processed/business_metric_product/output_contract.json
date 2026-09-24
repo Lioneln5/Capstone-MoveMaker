@@ -1,5 +1,5 @@
 {
-  "metric_version": "business_metrics_v1_2026-08-12",
+  "metric_version": "business_metrics_v2_2026-09-05",
   "profile_scope": "incumbent_club_extension",
   "product_status": "verified_translation_prototype_pending_decision_utility_review",
   "overall_score": {
@@ -39,11 +39,16 @@
     {
       "card": "asset_value",
       "headline_metrics": [
-        "public_value_downside_25pct_scenario"
+        "public_value_downside_25pct_scenario_12m"
       ],
       "detail_metrics": [
+        "public_value_downside_25pct_scenario",
         "public_value_downside_50pct_scenario"
-      ]
+      ],
+      "horizon_policy": {
+        "primary": "12m",
+        "optional_with_warning": "24m"
+      }
     },
     {
       "card": "continuity",

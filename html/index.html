@@ -3,929 +3,363 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>MOVE MAKER — Incumbent-Club Extension Profile</title>
+<meta name="description" content="MoveMaker is an auditable football analytics case study examining which contract-extension risks public data can—and cannot—support." />
+<title>MOVE MAKER — Football Contract-Risk Case Study</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap');
 
   :root {
     --font: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
-    --bg-deep: #133d08;
-    --cream: #efefe8;
-    --panel: #ffffff;
-    --soft-fill: #f2f6f0;
-    --rule: #133d08;
-    --rule-soft: rgba(19,61,8,.18);
-    --rule-mid: rgba(19,61,8,.25);
-    --rule-strong: rgba(19,61,8,.35);
-    --green: #1a5622;
-    --green-dim: #133d08;
-    --green-soft: rgba(26,86,34,.1);
-    --text: #23301f;
-    --text-mute: #5c6b55;
-    --text-faint: #8a9484;
-    --amber-bg: #fdf6d8;
-    --amber-line: #ffe85a;
-    --amber-text: #4c3d00;
-    --amber: #a86d0d;
-    --red: #b93f3b;
-    --danger: #8a3b12;
-    --club-accent: #1a5622;
-    --club-accent-soft: rgba(26,86,34,.10);
-    --club-secondary: #133d08;
+    --deep: #103707;
+    --green: #1d611f;
+    --cream: #f1f0e9;
+    --paper: #fbfbf7;
+    --soft: #e7eee3;
+    --text: #21301e;
+    --muted: #5d6e58;
+    --faint: #879282;
+    --line: rgba(16,55,7,.2);
+    --yellow: #ffe650;
+    --yellow-soft: #fff8d4;
+    --amber: #9a6008;
     --grass: url('assets/grass-texture.png');
   }
 
   * { box-sizing: border-box; }
-  html, body { margin: 0; min-height: 100%; }
+  html { scroll-behavior: smooth; }
   body {
-    background-color: var(--bg-deep);
-    background-image: linear-gradient(rgba(4,16,8,.35), rgba(4,16,8,.5)), var(--grass);
-    background-size: cover; background-position: center top;
-    padding: 20px; color: var(--text); font-family: var(--font); font-size: 15px; line-height: 1.55;
+    margin: 0;
+    background-color: var(--deep);
+    background-image: linear-gradient(rgba(4,18,7,.48), rgba(4,18,7,.64)), var(--grass);
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 1.55;
   }
-  button, input, select { font: inherit; }
-  a { color: var(--green); text-decoration: none; }
-  a:hover { color: var(--green-dim); }
-  summary { list-style: none; cursor: pointer; }
-  summary::-webkit-details-marker { display: none; }
-  .mm-num { font-variant-numeric: tabular-nums; }
-  select { appearance: none; -webkit-appearance: none; }
+  a { color: inherit; }
+  .shell { width: min(1420px, calc(100% - 32px)); margin: 16px auto; background: var(--cream); border: 1px solid rgba(255,255,255,.4); }
+  .num { font-variant-numeric: tabular-nums; }
 
-  .wrap { max-width: 1320px; margin: 0 auto; background: var(--cream); }
+  header {
+    position: relative;
+    overflow: hidden;
+    padding: 34px 44px 28px;
+    background-color: var(--deep);
+    background-image: linear-gradient(105deg, rgba(5,24,8,.92) 0%, rgba(10,48,13,.8) 60%, rgba(10,48,13,.5) 100%), var(--grass);
+    background-size: cover;
+    color: #fff;
+  }
+  header::after { content: ''; position: absolute; inset: 12px; border: 1px solid rgba(255,255,255,.32); pointer-events: none; }
+  .header-inner { position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: end; gap: 30px; }
+  .brand { margin: 0; font-size: clamp(42px, 6vw, 76px); font-weight: 900; letter-spacing: -.05em; line-height: .9; }
+  .brand-sub { margin-top: 15px; padding-top: 13px; border-top: 1px solid rgba(255,255,255,.45); color: rgba(255,255,255,.86); font-size: 15px; font-weight: 500; }
+  .status { min-width: 250px; padding-left: 24px; border-left: 1px solid rgba(255,255,255,.3); }
+  .status-kicker { color: var(--yellow); font-size: 11px; font-weight: 800; letter-spacing: .19em; text-transform: uppercase; }
+  .status-title { margin-top: 9px; font-size: 16px; font-weight: 800; }
+  .status-copy { margin-top: 5px; max-width: 290px; color: rgba(255,255,255,.72); font-size: 11.5px; }
 
-  header { position: relative; padding: 30px 34px 26px; background-color: var(--bg-deep); background-image: linear-gradient(180deg, rgba(4,16,8,.55), rgba(4,16,8,.72)), var(--grass); background-size: cover; background-position: center 42%; }
-  .header-frame { position: absolute; inset: 12px; border: 1px solid rgba(255,255,255,.35); pointer-events: none; }
-  .header-inner { position: relative; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 28px; padding: 14px 16px 6px; }
-  .title { margin: 0; font-size: 62px; font-weight: 900; letter-spacing: -0.03em; line-height: .95; color: #ffffff; }
-  .subtitle { margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,.45); font-size: 15.5px; font-weight: 500; color: rgba(255,255,255,.9); }
-  .header-status { text-align: left; min-width: 230px; }
-  .header-status-label { font-size: 11px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--amber-line); }
-  .header-status-row { display: flex; align-items: center; gap: 9px; margin-top: 12px; font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: #ffffff; }
-  .header-status-note { margin-top: 5px; font-size: 11.5px; color: rgba(255,255,255,.75); }
-  .dot { width: 8px; height: 8px; background: var(--text-faint); flex: none; }
-  .dot.live { background: var(--amber-line); }
+  nav { display: flex; flex-wrap: wrap; background: #fff; border-bottom: 2px solid var(--deep); }
+  nav a { padding: 14px 22px 12px; border-right: 1px solid var(--line); color: var(--text); font-size: 11px; font-weight: 800; letter-spacing: .13em; text-decoration: none; text-transform: uppercase; }
+  nav a:hover { background: var(--soft); color: var(--green); }
+  nav a.active { background: var(--green); color: #fff; }
+  nav .external { margin-left: auto; border-left: 1px solid var(--line); border-right: 0; }
 
-  .site-nav { display: flex; flex-wrap: wrap; background: var(--panel); border-bottom: 2px solid var(--rule); }
-  .site-nav a { padding: 14px 24px 12px; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; color: var(--text); border-right: 1px solid var(--rule-soft); }
-  .site-nav a:last-child { border-right: 0; }
-  .site-nav a:hover { color: var(--green); background: var(--soft-fill); }
-  .site-nav a.active { color: #ffffff; background: var(--green); }
-  .site-nav a.active:hover { color: #ffffff; }
+  .research-banner { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 18px; padding: 15px 44px; background: var(--yellow-soft); border-bottom: 2px solid var(--yellow); color: #4d3e00; }
+  .research-label { padding: 5px 9px; background: var(--yellow); font-size: 10px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; }
+  .research-copy { font-size: 12px; }
+  .research-copy strong { font-weight: 900; }
+  .research-link { color: #4d3e00; font-size: 10px; font-weight: 800; letter-spacing: .12em; text-decoration-thickness: 1px; text-transform: uppercase; white-space: nowrap; }
 
-  .prototype-banner { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; padding: 16px 34px; background: var(--amber-bg); border-bottom: 2px solid var(--amber-line); color: var(--amber-text); }
-  .prototype-banner-label { padding: 5px 8px; background: var(--amber-line); font-size: 10px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; white-space: nowrap; }
-  .prototype-banner-copy { font-size: 12px; line-height: 1.55; }
-  .prototype-banner-copy strong { font-weight: 800; }
+  main { background: var(--cream); }
+  .hero { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(310px, .65fr); border-bottom: 2px solid var(--deep); }
+  .hero-copy { padding: clamp(46px, 6vw, 82px) 44px 62px; }
+  .eyebrow { margin-bottom: 20px; color: var(--green); font-size: 11px; font-weight: 900; letter-spacing: .2em; text-transform: uppercase; }
+  h1 { max-width: 960px; margin: 0; color: var(--deep); font-size: clamp(44px, 6vw, 82px); font-weight: 900; letter-spacing: -.055em; line-height: .96; }
+  .hero-lede { max-width: 840px; margin: 28px 0 0; color: var(--muted); font-size: clamp(17px, 1.7vw, 22px); line-height: 1.48; }
+  .hero-lede strong { color: var(--text); }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 32px; }
+  .button { display: inline-flex; align-items: center; min-height: 46px; padding: 0 17px; border: 1px solid var(--deep); background: var(--deep); color: #fff; font-size: 11px; font-weight: 800; letter-spacing: .11em; text-decoration: none; text-transform: uppercase; }
+  .button:hover { background: var(--green); }
+  .button.secondary { background: transparent; color: var(--deep); }
+  .button.secondary:hover { background: #fff; }
+  .hero-aside { display: flex; flex-direction: column; justify-content: space-between; padding: 46px 38px; background: var(--deep); color: #fff; }
+  .aside-kicker { color: var(--yellow); font-size: 11px; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; }
+  .aside-title { margin: 16px 0 0; font-size: 30px; font-weight: 850; letter-spacing: -.025em; line-height: 1.08; }
+  .aside-copy { margin: 17px 0 0; color: rgba(255,255,255,.75); font-size: 14px; }
+  .aside-rule { height: 1px; margin: 34px 0; background: rgba(255,255,255,.25); }
+  .aside-bottom { color: rgba(255,255,255,.85); font-size: 12px; }
 
-  .league-rail { display: grid; grid-template-columns: 170px repeat(5, 1fr); background: var(--panel); border-bottom: 2px solid var(--rule); }
-  .league-rail-side { padding: 18px 18px 18px 34px; font-size: 10.5px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--text-mute); line-height: 1.4; border-right: 1px solid var(--rule-soft); display: flex; flex-direction: column; justify-content: center; gap: 8px; }
-  .league-rail-eyebrow { color: var(--text-mute); }
-  .league-rail-note { font-size: 10.5px; font-weight: 500; letter-spacing: 0; text-transform: none; color: var(--text-faint); line-height: 1.5; }
-  #leagueRailGrid { display: contents; }
-  .league-rail-item { display: grid; grid-template-rows: 1fr auto; gap: 12px; padding: 22px 16px 0; border-right: 1px solid var(--rule-soft); }
-  .league-rail-item:last-child { border-right: 0; }
-  .league-rail-item.active { background: var(--soft-fill); }
-  .league-rail-logo-shell { display: grid; place-items: center; min-height: 64px; }
-  .league-rail-logo { max-height: 62px; max-width: 132px; object-fit: contain; }
-  .league-rail-status { padding: 8px 0 10px; border-top: 3px solid transparent; font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--text-faint); text-align: center; }
-  .league-rail-item.active .league-rail-status { border-top-color: var(--green); color: var(--green); }
+  .metrics { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 2px solid var(--deep); background: #fff; }
+  .metric { min-height: 172px; padding: 28px 26px; border-right: 1px solid var(--line); }
+  .metric:last-child { border-right: 0; }
+  .metric-value { color: var(--deep); font-size: clamp(38px, 4vw, 58px); font-weight: 900; letter-spacing: -.045em; line-height: 1; }
+  .metric-label { margin-top: 11px; color: var(--text); font-size: 13px; font-weight: 800; }
+  .metric-note { margin-top: 5px; color: var(--muted); font-size: 11.5px; }
 
-  .input-grid { display: grid; grid-template-columns: 1fr 1fr; background: var(--cream); border-bottom: 2px solid var(--rule); }
-  .input-grid > section { padding: 26px 34px 30px; }
-  .input-grid > section + section { border-left: 2px solid var(--rule); }
-  .eyebrow { display: flex; align-items: baseline; gap: 10px; margin-bottom: 18px; font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--text); }
-  .eyebrow-num { font-size: 12px; font-weight: 800; letter-spacing: .1em; color: var(--green); }
-  .field-label { display: block; margin: 0 0 6px; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--text-mute); }
-  .field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-  .field-wide { grid-column: 1 / -1; }
-  .field-input { width: 100%; height: 46px; padding: 0 14px; border: 1px solid var(--rule-strong); background: var(--panel); color: var(--text); font: 500 16px var(--font); }
-  .field-input:focus { outline: 2px solid var(--green); outline-offset: 1px; }
-  .field-source { min-height: 30px; margin-top: 6px; font-size: 10.5px; line-height: 1.5; color: var(--text-mute); }
-  .field-source.loading, .field-source.stale { color: #a86d0d; }
-  .field-source.fresh { color: var(--green); }
-  .select-wrap { position: relative; }
-  .select-wrap::after { content: '▾'; position: absolute; right: 14px; top: 13px; color: var(--green); font-size: 14px; pointer-events: none; }
-  select.field-input { padding-right: 40px; cursor: pointer; }
-  .search-wrap { position: relative; margin-top: 6px; }
-  .search-results { display: none; position: absolute; z-index: 5; left: 0; right: 0; top: 47px; border: 1px solid var(--rule); background: var(--panel); }
-  .search-results.show { display: block; }
-  .search-result-item { display: flex; justify-content: space-between; gap: 12px; padding: 10px 14px; border-bottom: 1px solid var(--rule-soft); cursor: pointer; }
-  .search-result-item:last-child { border-bottom: 0; }
-  .search-result-item:hover { background: var(--soft-fill); }
-  .search-empty, .search-error { cursor: default; color: var(--text-mute); font-size: 12px; }
-  .search-error { color: #b93f3b; }
-  .sr-name { font-weight: 700; }
-  .sr-meta { font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--text-mute); }
-  .locked-info { display: none; margin-top: 18px; border-top: 2px solid var(--rule); }
-  .locked-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--rule-soft); }
-  .locked-label { font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--text-mute); }
-  .locked-value { font-weight: 700; text-align: right; }
-  .scope-note { margin-top: 14px; font-size: 12px; line-height: 1.6; color: var(--text-mute); }
-  .run-btn { width: 100%; height: 54px; margin-top: 20px; display: flex; align-items: center; padding: 0 18px; border: 0; background: var(--green); color: #fff; font: 800 15px var(--font); letter-spacing: .14em; text-transform: uppercase; cursor: pointer; }
-  .run-btn:hover:not(:disabled) { background: var(--green-dim); }
-  .run-btn:disabled { background: var(--rule-soft); color: var(--text-faint); cursor: not-allowed; }
-  .connect-panel { margin-top: 14px; }
-  .connect-toggle { width: 100%; padding: 9px; border: 1px dashed var(--rule-strong); background: none; color: var(--text-mute); text-align: left; cursor: pointer; font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; }
-  .connect-body { display: none; margin-top: 8px; }
-  .connect-body.open { display: block; }
-  .connect-note { margin-top: 6px; color: var(--text-mute); font-size: 10.5px; line-height: 1.5; }
+  .section { padding: 64px 44px; border-bottom: 2px solid var(--deep); }
+  .section.soft { background: var(--soft); }
+  .section.deep { background: var(--deep); color: #fff; }
+  .section-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 520px); gap: 38px; align-items: end; margin-bottom: 34px; }
+  .section-num { color: var(--green); font-size: 11px; font-weight: 900; letter-spacing: .18em; text-transform: uppercase; }
+  .deep .section-num { color: var(--yellow); }
+  h2 { margin: 10px 0 0; color: var(--deep); font-size: clamp(32px, 4vw, 54px); font-weight: 900; letter-spacing: -.045em; line-height: 1.02; }
+  .deep h2 { color: #fff; }
+  .section-intro { margin: 0; color: var(--muted); font-size: 15px; }
+  .deep .section-intro { color: rgba(255,255,255,.72); }
 
-  .results-panel { padding: 0 0 34px; }
-  .results-head { display: grid; grid-template-columns: 1fr minmax(260px, 380px); gap: 28px; align-items: end; padding: 26px 34px 22px; background-color: var(--bg-deep); background-image: linear-gradient(180deg, rgba(4,16,8,.5), rgba(4,16,8,.78)), var(--grass); background-size: cover; background-position: center 58%; color: #fff; }
-  .identity-strip { display: flex; align-items: center; gap: 22px; min-width: 0; }
-  .club-badge-shell { width: 100px; height: 100px; flex: none; display: grid; place-items: center; background: #fff; border: 1px solid rgba(255,255,255,.5); transition: border-color .25s; }
-  .club-crest { display: none; width: 68px; height: 72px; object-fit: contain; }
-  .club-fallback { font-size: 30px; font-weight: 900; letter-spacing: -0.02em; color: var(--club-secondary); }
-  .identity-copy { min-width: 0; }
-  .player-summary { font-size: 17px; font-weight: 600; color: rgba(255,255,255,.82); }
-  .player-summary strong { color: #ffffff; font-weight: 800; }
-  .player-summary strong:first-of-type { display: block; font-size: 2.7em; letter-spacing: -0.03em; line-height: 1.02; margin-bottom: 8px; }
-  .identity-meta { display: none; align-items: center; gap: 10px; margin-top: 12px; flex-wrap: wrap; color: rgba(255,255,255,.9); font-size: 12.5px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
-  .league-logo { height: 22px; width: 32px; object-fit: contain; background: #fff; padding: 2px 4px; }
-  .identity-dot { width: 4px; height: 4px; background: rgba(255,255,255,.5); }
-  .results-note { max-width: 400px; font-size: 12px; line-height: 1.6; color: rgba(255,255,255,.85); }
-  .warning-banner { display: none; margin: 22px 34px 0; padding: 15px 17px; background: var(--amber-bg); border-left: 6px solid var(--amber-line); color: var(--amber-text); font-size: 13px; line-height: 1.6; }
+  .journey { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--deep); background: #fff; }
+  .journey-card { position: relative; min-height: 330px; padding: 28px 28px 76px; border-right: 1px solid var(--deep); }
+  .journey-card:last-child { border-right: 0; background: var(--deep); color: #fff; }
+  .journey-index { color: var(--green); font-size: 11px; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; }
+  .journey-card:last-child .journey-index { color: var(--yellow); }
+  .journey-card h3 { margin: 25px 0 14px; color: var(--deep); font-size: 29px; letter-spacing: -.035em; line-height: 1.05; }
+  .journey-card:last-child h3 { color: #fff; }
+  .journey-card p { margin: 0; color: var(--muted); font-size: 13px; }
+  .journey-card:last-child p { color: rgba(255,255,255,.72); }
+  .journey-status { position: absolute; right: 28px; bottom: 25px; left: 28px; padding-top: 12px; border-top: 1px solid var(--line); color: var(--amber); font-size: 11px; font-weight: 900; letter-spacing: .13em; text-transform: uppercase; }
+  .journey-card:last-child .journey-status { border-color: rgba(255,255,255,.25); color: var(--yellow); }
 
-  .decision-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin: 22px 34px 0; }
-  .decision-card { border: 1px solid var(--rule-mid); border-top: 4px solid var(--club-accent); background: #fff; transition: border-color .25s; }
-  .card-body { padding: 20px 22px 22px; }
-  .card-header-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-  .card-kicker { font-size: 10.5px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--green); }
-  .card-counter { font-size: 11px; font-weight: 800; letter-spacing: .1em; color: var(--text-faint); }
-  .card-title { margin: 8px 0 6px; font-size: 26px; font-weight: 800; letter-spacing: -0.02em; color: var(--bg-deep); }
-  .card-question { min-height: 40px; font-size: 13px; line-height: 1.5; color: var(--text-mute); }
-  .primary-stat { display: grid; grid-template-columns: minmax(150px, .85fr) 1.15fr; gap: 20px; align-items: center; margin-top: 18px; }
-  .primary-value { font-size: 50px; font-weight: 900; letter-spacing: -0.03em; line-height: 1; color: var(--green); }
-  #valueRiskProbability { color: var(--danger); }
-  .primary-label { margin-top: 7px; font-size: 11.5px; line-height: 1.4; color: var(--text-mute); }
-  .score-track { height: 10px; background: #e2e6dd; }
-  .score-fill { width: 0; height: 100%; background: var(--green); transition: width .35s ease; }
-  .score-scale { display: flex; justify-content: space-between; margin-top: 6px; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--text-faint); }
-  .peer-comparison { margin-top: 16px; }
-  .peer-primary-value { font-size: 40px; }
-  .peer-range-status { display: inline-block; margin-top: 8px; padding: 5px 10px; background: var(--soft-fill); border: 1px solid var(--green); font-size: 10.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--green); }
-  .benchmark-scale { position: relative; height: 108px; margin: 76px 10px 4px; }
-  .benchmark-line { position: absolute; left: 0; right: 0; top: 44px; height: 8px; background: #e2e6dd; }
-  .benchmark-range-fill { position: absolute; top: 0; height: 100%; background: var(--soft-fill); border: 1px solid var(--rule-mid); }
-  .benchmark-marker { position: absolute; top: 38px; transform: translateX(-50%); }
-  .benchmark-dot { width: 18px; height: 18px; background: var(--text-faint); border: 3px solid #fff; }
-  .benchmark-marker.peer .benchmark-dot { background: var(--green-dim); }
-  .benchmark-marker.proposal .benchmark-dot { width: 20px; height: 20px; margin: -1px; background: var(--amber-line); border-color: var(--bg-deep); }
-  .benchmark-label { position: absolute; left: 50%; transform: translateX(-50%); width: max-content; max-width: 132px; text-align: center; font-size: 10px; line-height: 1.35; color: var(--text-mute); }
-  .benchmark-label strong { display: block; color: var(--text); font-size: 12px; }
-  .benchmark-marker.lower .benchmark-label, .benchmark-marker.upper .benchmark-label { top: 24px; }
-  .benchmark-marker.peer .benchmark-label, .benchmark-marker.proposal .benchmark-label { bottom: 25px; }
-  .benchmark-marker.peer.high-lane .benchmark-label { bottom: 53px; }
-  .benchmark-marker.edge-left .benchmark-label { left: 0; transform: none; text-align: left; }
-  .benchmark-marker.edge-right .benchmark-label { left: auto; right: 0; transform: none; text-align: right; }
+  .evidence-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .evidence-card { padding: 24px; border: 1px solid var(--line); border-top: 5px solid var(--green); background: #fff; }
+  .evidence-card.limited { border-top-color: var(--yellow); }
+  .evidence-card.retired { border-top-color: var(--faint); }
+  .evidence-label { display: flex; justify-content: space-between; gap: 16px; color: var(--green); font-size: 10px; font-weight: 900; letter-spacing: .13em; text-transform: uppercase; }
+  .evidence-card.limited .evidence-label { color: var(--amber); }
+  .evidence-card.retired .evidence-label { color: var(--faint); }
+  .evidence-card h3 { margin: 17px 0 8px; color: var(--deep); font-size: 23px; line-height: 1.08; }
+  .evidence-card p { margin: 0; color: var(--muted); font-size: 12.5px; }
+  .evidence-stat { margin-top: 20px; color: var(--deep); font-size: 27px; font-weight: 900; letter-spacing: -.025em; }
+  .evidence-foot { margin-top: 5px; color: var(--faint); font-size: 10.5px; }
 
-  .financial-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin-top: 18px; background: var(--rule-soft); }
-  .financial-stat { padding: 12px 14px; background: var(--soft-fill); }
-  .financial-value { font-size: 21px; font-weight: 800; letter-spacing: -0.02em; color: var(--bg-deep); }
-  .financial-label { margin-top: 4px; font-size: 11px; line-height: 1.4; color: var(--text-mute); }
-  .scope-status-list { display: grid; gap: 9px; margin-top: 18px; }
-  .scope-status-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; align-items: center; padding: 12px 14px; background: var(--soft-fill); border-left: 4px solid var(--rule-mid); }
-  .scope-status-row.candidate { border-left-color: var(--amber-line); }
-  .scope-status-row.unavailable { border-left-color: var(--text-faint); }
-  .scope-status-name { font-size: 13px; font-weight: 800; color: var(--bg-deep); }
-  .scope-status-definition { margin-top: 3px; font-size: 10.8px; line-height: 1.4; color: var(--text-mute); }
-  .scope-status-badge { padding: 5px 8px; font-size: 9px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; white-space: nowrap; background: #fff; border: 1px solid var(--rule-mid); color: var(--text-mute); }
-  .scope-status-row.candidate .scope-status-badge { border-color: var(--amber-line); color: var(--amber-text); }
-  .card-control { display: flex; align-items: center; gap: 14px; margin-top: 14px; padding: 10px 12px; background: var(--soft-fill); border: 1px solid var(--rule-soft); }
-  .card-control label { font-size: 10.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--text-mute); }
-  .card-control .select-wrap { flex: 1; }
-  .card-control select { height: 38px; font: 600 14px var(--font); }
-  .card-control .select-wrap::after { top: 9px; right: 12px; font-size: 13px; }
+  .screening { display: grid; grid-template-columns: .8fr 1.2fr; gap: 56px; align-items: center; }
+  .screening-big { color: var(--yellow); font-size: clamp(78px, 11vw, 145px); font-weight: 900; letter-spacing: -.07em; line-height: .8; }
+  .screening-label { margin-top: 22px; color: #fff; font-size: 21px; font-weight: 800; line-height: 1.2; }
+  .comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(255,255,255,.22); }
+  .comparison-item { padding: 25px; background: rgba(255,255,255,.06); }
+  .comparison-value { font-size: 56px; font-weight: 900; letter-spacing: -.05em; line-height: 1; }
+  .comparison-item:last-child .comparison-value { color: var(--yellow); }
+  .comparison-label { margin-top: 9px; color: rgba(255,255,255,.72); font-size: 12px; }
+  .screening-note { margin-top: 18px; padding: 15px 17px; border-left: 5px solid var(--yellow); background: rgba(255,230,80,.1); color: rgba(255,255,255,.78); font-size: 12px; }
 
-  .explain-toggle { width: 100%; border: 0; border-top: 1px solid var(--rule-mid); padding: 13px 22px; background: var(--soft-fill); color: var(--text); display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; text-align: left; }
-  .explain-toggle:hover { color: var(--green); }
-  .explain-toggle .caret { color: var(--green); transition: transform .15s; }
-  .explain-toggle[aria-expanded="true"] .caret { transform: rotate(180deg); }
-  .explain-panel { display: none; padding: 18px 22px 22px; border-top: 1px solid var(--rule-mid); }
-  .explain-panel.open { display: block; }
-  .explain-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--rule-soft); }
-  .explain-block { padding: 13px 14px; background: var(--soft-fill); }
-  .explain-block h4 { margin: 0 0 5px; font-size: 10.5px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--green); }
-  .explain-block p { margin: 0; font-size: 12.5px; line-height: 1.55; color: #3c4a37; }
-  .why-panel { margin-top: 16px; }
-  .why-intro { margin-bottom: 10px; font-size: 12px; line-height: 1.55; color: var(--text-mute); }
-  .why-intro strong { color: var(--text); }
-  .why-row { margin-bottom: 9px; }
-  .why-row-top { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 4px; }
-  .why-row-label { font-size: 12.5px; font-weight: 600; color: var(--text); }
-  .why-row-direction { font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; }
-  .why-row-direction.favorable { color: var(--green); }
-  .why-row-direction.unfavorable { color: #b93f3b; }
-  .why-bar-track { height: 6px; background: #e2e6dd; }
-  .why-bar-fill { height: 100%; }
-  .why-bar-fill.favorable { background: var(--green); }
-  .why-bar-fill.unfavorable { background: #b93f3b; }
-  .why-correction-note { margin-top: 10px; padding: 8px; border: 1px solid var(--amber-line); color: var(--amber-text); font-size: 10.5px; line-height: 1.5; }
+  .principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; border: 1px solid var(--deep); background: var(--deep); }
+  .principle { min-height: 215px; padding: 25px; background: var(--paper); }
+  .principle-num { color: var(--green); font-size: 11px; font-weight: 900; letter-spacing: .15em; }
+  .principle h3 { margin: 28px 0 9px; color: var(--deep); font-size: 21px; line-height: 1.1; }
+  .principle p { margin: 0; color: var(--muted); font-size: 12px; }
 
-  .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin: 22px 34px 0; }
-  details.detail-box { border: 1px solid var(--rule-mid); background: #fff; }
-  details.detail-box summary { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 18px; font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
-  details.detail-box summary:hover { color: var(--green); }
-  details.detail-box summary::after { content: '＋'; color: var(--green); }
-  details.detail-box[open] summary::after { content: '－'; }
-  .detail-content { padding: 0 18px 16px; }
-  .detail-row { display: flex; justify-content: space-between; gap: 18px; padding: 10px 0; border-top: 1px solid var(--rule-soft); }
-  .detail-label { font-size: 13px; color: var(--text-mute); }
-  .detail-value { font-size: 13px; font-weight: 700; text-align: right; }
-  .detail-help { margin-top: 8px; font-size: 11.5px; line-height: 1.5; color: var(--text-faint); }
+  .cta { display: grid; grid-template-columns: 1fr auto; gap: 28px; align-items: center; padding: 42px 44px; background: var(--yellow); color: var(--deep); }
+  .cta h2 { margin: 0; font-size: clamp(27px, 4vw, 44px); }
+  .cta p { max-width: 760px; margin: 10px 0 0; color: #4d3e00; font-size: 13px; }
+  .cta .button { border-color: var(--deep); }
 
-  .data-notes { display: none; margin: 22px 34px 0; padding-top: 16px; border-top: 2px solid var(--rule); }
-  .data-notes strong { font-size: 10.5px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--bg-deep); }
-  .data-notes ul { margin: 10px 0 0; padding-left: 18px; font-size: 11.5px; line-height: 1.65; color: var(--text-mute); }
-
-  footer { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 24px; padding: 20px 34px; background-color: var(--bg-deep); background-image: linear-gradient(180deg, rgba(4,16,8,.55), rgba(4,16,8,.78)), var(--grass); background-size: cover; background-position: center 75%; color: #fff; }
-  .footer-note { font-size: 11.5px; letter-spacing: .06em; color: rgba(255,255,255,.85); }
-  .footer-leagues { display: flex; align-items: center; gap: 16px; padding: 8px 14px; background: #fff; }
-  .footer-leagues img { height: 20px; object-fit: contain; }
+  footer { display: flex; justify-content: space-between; gap: 24px; padding: 23px 44px; background: #fff; color: var(--muted); font-size: 11px; }
+  .footer-links { display: flex; flex-wrap: wrap; gap: 18px; }
+  .footer-links a { color: var(--deep); font-weight: 800; text-decoration: none; }
 
   @media (max-width: 980px) {
-    .header-inner { grid-template-columns: 1fr; }
-    .header-status { margin-top: 18px; }
-    .league-rail { grid-template-columns: 1fr; }
-    .league-rail-side { border-right: 0; border-bottom: 1px solid var(--rule-soft); padding: 14px 18px; }
-    #leagueRailGrid { display: grid; grid-template-columns: repeat(3,1fr); }
-    .league-rail-item { border-right: 1px solid var(--rule-soft); }
-    .input-grid, .decision-grid, .detail-grid { grid-template-columns: 1fr; }
-    .input-grid > section + section { border-left: 0; border-top: 2px solid var(--rule); }
-    .results-head { grid-template-columns: 1fr; }
-    .primary-stat { grid-template-columns: 1fr; }
-    .explain-grid { grid-template-columns: 1fr; }
-    footer { grid-template-columns: 1fr; text-align: center; }
-    .footer-leagues { justify-content: center; flex-wrap: wrap; }
+    .hero, .screening { grid-template-columns: 1fr; }
+    .hero-aside { min-height: 330px; }
+    .metrics { grid-template-columns: repeat(2, 1fr); }
+    .metric:nth-child(2) { border-right: 0; }
+    .metric:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+    .section-head { grid-template-columns: 1fr; gap: 16px; }
+    .journey { grid-template-columns: 1fr; }
+    .journey-card { min-height: 260px; border-right: 0; border-bottom: 1px solid var(--deep); }
+    .journey-card:last-child { border-bottom: 0; }
+    .principles { grid-template-columns: 1fr; }
+    .principle { min-height: 0; }
   }
-  @media (max-width: 620px) {
-    body { padding: 8px; }
-    .title { font-size: 42px; }
-    .field-grid, .financial-strip { grid-template-columns: 1fr; }
-    .field-wide { grid-column: auto; }
-    #leagueRailGrid { grid-template-columns: repeat(2,1fr); }
+
+  @media (max-width: 680px) {
+    .shell { width: 100%; margin: 0; border: 0; }
+    header { padding: 28px 24px 24px; }
+    .header-inner { display: block; }
+    .status { margin-top: 28px; padding: 18px 0 0; border-top: 1px solid rgba(255,255,255,.3); border-left: 0; }
+    nav a { flex: 1 1 50%; text-align: center; }
+    nav .external { margin-left: 0; border-left: 0; }
+    .research-banner { grid-template-columns: 1fr; padding: 15px 24px; }
+    .research-label { width: max-content; }
+    .research-link { display: none; }
+    .hero-copy, .section { padding: 44px 24px; }
+    .hero-aside { padding: 38px 24px; }
+    .metrics { grid-template-columns: 1fr; }
+    .metric { min-height: 0; border-right: 0; border-bottom: 1px solid var(--line); }
+    .metric:last-child { border-bottom: 0; }
+    .evidence-grid, .comparison { grid-template-columns: 1fr; }
+    .cta { grid-template-columns: 1fr; padding: 34px 24px; }
+    footer { display: block; padding: 22px 24px; }
+    .footer-links { margin-top: 12px; }
   }
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="shell">
   <header>
-    <div class="header-frame"></div>
     <div class="header-inner">
       <div>
-        <h1 class="title">MOVE MAKER</h1>
-        <div class="subtitle">Incumbent-Club Extension Decision Profile</div>
+        <div class="brand">MOVE MAKER</div>
+        <div class="brand-sub">Football contract-extension risk research</div>
       </div>
-      <div class="header-status">
-        <div class="header-status-label">Scoring engine</div>
-        <div class="header-status-row"><span class="dot" id="modelDot"></span><span id="modelStatusText">Connecting to scoring engine…</span></div>
-        <div class="header-status-note">Extension mode only · fixed wages only</div>
+      <div class="status">
+        <div class="status-kicker">Final case-study status</div>
+        <div class="status-title">Evidence frozen · scoring disabled</div>
+        <div class="status-copy">A public research record of what the models supported, what failed, and why the claims narrowed.</div>
       </div>
     </div>
   </header>
 
-  <nav class="site-nav" aria-label="Primary navigation">
-    <a href="about.html">About</a><a href="index.html" class="active">Tool</a>
-    <a href="how-it-works.html">How It Works</a><a href="scope.html">Scope &amp; Limitations</a><a href="contact.html">Contact</a>
+  <nav aria-label="Primary navigation">
+    <a class="active" href="index.html">Case Study</a>
+    <a href="prototype.html">Prototype</a>
+    <a href="how-it-works.html">Method</a>
+    <a href="scope.html">Evidence &amp; Limits</a>
+    <a href="about.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <a class="external" href="https://github.com/Lioneln5/Capstone-MoveMaker" target="_blank" rel="noreferrer">GitHub ↗</a>
   </nav>
 
-  <div class="prototype-banner" id="prototypeBanner" role="status" aria-live="polite">
-    <div class="prototype-banner-label">Research prototype</div>
-    <div class="prototype-banner-copy" id="prototypeBannerCopy"><strong>Live scoring is paused.</strong> Engine V1 is preserved for historical audit. Engine V2 retired generic continuity and has not authorized a live replacement; verified research evidence remains available.</div>
+  <div class="research-banner" role="note">
+    <div class="research-label">Research record</div>
+    <div class="research-copy"><strong>This site does not score current players or recommend contract decisions.</strong> It documents an explainable modeling case study and the limits discovered through post-presentation stress testing.</div>
+    <a class="research-link" href="scope.html">Read the boundaries →</a>
   </div>
 
-  <section class="league-rail" aria-label="Data coverage across the Big Five leagues">
-    <div class="league-rail-side">
-      <div class="league-rail-eyebrow">European<br>coverage</div>
-      <div class="league-rail-note" id="leagueRailNote">Historical incumbent-club extension data spans Europe’s Big Five leagues.</div>
-    </div>
-    <div id="leagueRailGrid"></div>
-  </section>
-
   <main>
-    <div class="input-grid">
-      <section aria-labelledby="playerHeading">
-        <div class="eyebrow" id="playerHeading"><span class="eyebrow-num">01</span><span>Player</span></div>
-        <label class="field-label" for="playerSearch">Search current player</label>
-        <div class="search-wrap">
-          <input class="field-input" type="text" id="playerSearch" placeholder="e.g. Jude Bellingham" autocomplete="off" />
-          <div class="search-results" id="searchResults"></div>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Incumbent-club contract extensions</div>
+        <h1>The evidence changed the product.</h1>
+        <p class="hero-lede">MoveMaker began as a player–club compatibility and transfer-ROI concept. It ended as a narrower case study of <strong>which contract risks public football data can—and cannot—support.</strong></p>
+        <div class="hero-actions">
+          <a class="button" href="prototype.html">Explore the historical prototype</a>
+          <a class="button secondary" href="#findings">See the final findings</a>
         </div>
-        <div class="locked-info" id="lockedInfo">
-          <div class="locked-row"><span class="locked-label">Current club</span><span class="locked-value" id="lockedClub">—</span></div>
-          <div class="locked-row"><span class="locked-label">League</span><span class="locked-value" id="lockedLeague">—</span></div>
-          <div class="locked-row"><span class="locked-label">Position</span><span class="locked-value" id="lockedPosition">—</span></div>
-          <div class="locked-row"><span class="locked-label">Age</span><span class="locked-value" id="lockedAge">—</span></div>
-        </div>
-        <div class="scope-note">Extension mode only. The player’s current club is verified and locked; this tool does not estimate fit at a hypothetical destination club.</div>
-      </section>
-
-      <section aria-labelledby="termsHeading">
-        <div class="eyebrow" id="termsHeading"><span class="eyebrow-num">02</span><span>Proposed extension</span></div>
-        <div class="field-grid">
-          <div>
-            <label class="field-label" for="marketValue">Current public value (€)</label>
-            <input class="field-input mm-num" type="number" id="marketValue" placeholder="auto-filled" min="1" inputmode="numeric" />
-            <div class="field-source" id="marketValueSource">Select a player to load the latest known valuation.</div>
-          </div>
-          <div>
-            <label class="field-label" for="wage">Proposed annual gross fixed wage (€)</label>
-            <input class="field-input mm-num" type="number" id="wage" placeholder="e.g. 8000000" min="1" inputmode="numeric" />
-            <div class="field-source" id="wageSource">Latest known same-club wage will be used as an editable starting point.</div>
-          </div>
-          <div class="field-wide">
-            <label class="field-label" for="contractLength">Contract length</label>
-            <div class="select-wrap">
-              <select class="field-input" id="contractLength">
-                <option value="2">2 years</option><option value="2.5">2.5 years</option>
-                <option value="3" selected>3 years</option><option value="3.5">3.5 years</option>
-                <option value="4">4 years</option><option value="4.5">4.5 years</option><option value="5">5 years</option>
-                <option value="5.5">5.5 years</option><option value="6">6 years</option><option value="7">7 years</option>
-                <option value="8">8 years</option><option value="9">9 years</option><option value="10">10 years</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <button class="run-btn" id="runBtn" disabled>Search a player first</button>
-        <div class="scope-note">The live profile begins at two-year terms because the contribution target requires the contract to cover both Year 1 and Year 2. Fixed wages only; bonuses, taxes, agent fees, clauses and transfer fees are excluded.</div>
-        <div class="connect-panel">
-          <button class="connect-toggle" id="connectToggle" type="button">› API settings</button>
-          <div class="connect-body" id="connectBody">
-            <label class="field-label" for="apiBase">API base URL</label>
-            <input class="field-input" type="text" id="apiBase" value="http://127.0.0.1:8000" />
-            <div class="connect-note">Use http://127.0.0.1:8000 when the scoring service is running on this computer.</div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <section class="results-panel" aria-labelledby="profileHeading">
-      <div class="results-head">
-        <div class="identity-strip">
-          <div class="club-badge-shell" aria-hidden="true">
-            <img class="club-crest" id="clubCrest" alt="" />
-            <div class="club-fallback" id="clubFallback">MM</div>
-          </div>
-          <div class="identity-copy">
-            <div class="eyebrow" id="profileHeading" style="color:rgba(255,255,255,.85)"><span class="eyebrow-num" style="color:var(--amber-line)">03</span><span>Decision profile</span></div>
-            <div class="player-summary" id="playerSummary">Search for a player to begin.</div>
-            <div class="identity-meta" id="identityMeta">
-              <img class="league-logo" id="leagueLogo" alt="" />
-              <span id="leagueName"></span><span class="identity-dot"></span><span id="identityDetails"></span>
-            </div>
-          </div>
-        </div>
-        <div class="results-note">The frozen V1 interface is preserved as a research record. No live probability is currently authorized, and the former generic continuity output has been retired.</div>
       </div>
-      <div class="warning-banner" id="warningBanner"></div>
+      <aside class="hero-aside">
+        <div>
+          <div class="aside-kicker">The supported decision</div>
+          <div class="aside-title">What should a club investigate before extending an existing player?</div>
+          <p class="aside-copy">Separate evidence on realized contribution, movement, public-value downside, contract commitment, and historical peers—never one “extend” or “do not extend” score.</p>
+        </div>
+        <div>
+          <div class="aside-rule"></div>
+          <div class="aside-bottom">The final decision remains with the sporting director, informed by medical, tactical, legal, scouting, squad-planning, and internal financial context that public data cannot observe.</div>
+        </div>
+      </aside>
+    </section>
 
-      <div class="decision-grid">
-        <article class="decision-card">
-          <div class="card-body">
-            <div class="card-header-row"><span class="card-kicker">Playing contribution</span><span class="card-counter">01 / 04</span></div>
-            <h2 class="card-title">Year-2 Contribution Outlook</h2>
-            <div class="card-question">How likely is the player to remain meaningfully involved through the next two seasons?</div>
-            <div class="primary-stat">
-              <div><div class="primary-value mm-num" id="contributionProbability">—</div><div class="primary-label">probability of sustained meaningful contribution at 24 months</div></div>
-              <div><div class="score-track"><div class="score-fill" id="contributionBar"></div></div><div class="score-scale"><span>lower</span><span>higher</span></div></div>
-            </div>
-            <div class="financial-strip">
-              <div class="financial-stat"><div class="financial-value mm-num" id="contributionExposure">—</div><div class="financial-label">modeled low-contribution wage exposure over 24 months</div></div>
-              <div class="financial-stat"><div class="financial-value mm-num" id="wagesThrough24">—</div><div class="financial-label">fixed wages scheduled through Month 24</div></div>
-            </div>
-          </div>
-          <button class="explain-toggle" type="button" data-panel="contributionExplain" aria-expanded="false"><span>What this means &amp; how it is calculated</span><span class="caret">▾</span></button>
-          <div class="explain-panel" id="contributionExplain">
-            <div class="explain-grid">
-              <div class="explain-block"><h4>What it shows</h4><p>“Sustained meaningful contribution” means playing at least 25% of the maximum club minutes available in both Year 1 and Year 2. The score is the probability of clearing that threshold in both seasons—not a talent or tactical-fit rating.</p></div>
-              <div class="explain-block"><h4>Financial translation</h4><p>Low-contribution exposure equals fixed wages scheduled through 24 months × the probability of failing the 25% threshold in either year. It is a prioritization proxy, not expected loss or a claim that those wages will be wasted.</p></div>
-              <div class="explain-block"><h4>Decision use</h4><p>A club can compare contract lengths or wage proposals and ask whether guaranteed salary is concentrated beyond the player’s likely contribution window.</p></div>
-              <div class="explain-block"><h4>Model basis</h4><p>The model uses age, position, league, market value, recent and prior-season involvement/performance, proposed terms and available wage context from historical extensions.</p></div>
-            </div>
-            <div class="why-panel" id="contributionWhy"></div>
-          </div>
+    <section class="metrics" aria-label="Project scale">
+      <div class="metric"><div class="metric-value num">2,805</div><div class="metric-label">deduplicated extension events</div><div class="metric-note">in the integrated historical spine</div></div>
+      <div class="metric"><div class="metric-value num">4</div><div class="metric-label">rolling evaluation origins</div><div class="metric-note">2020–2023 held out chronologically</div></div>
+      <div class="metric"><div class="metric-value num">15</div><div class="metric-label">output families frozen</div><div class="metric-note">retained, qualified, deferred, retired, or rejected</div></div>
+      <div class="metric"><div class="metric-value num">236</div><div class="metric-label">verification checks passed</div><div class="metric-note">194 upstream plus 42 final-freeze checks</div></div>
+    </section>
+
+    <section class="section soft" id="journey">
+      <div class="section-head">
+        <div><div class="section-num">01 · Analytical journey</div><h2>Three scopes. Two evidence-led pivots.</h2></div>
+        <p class="section-intro">The project became more useful by making a smaller claim. Each pivot followed a failed or unsupported hypothesis rather than a change in presentation alone.</p>
+      </div>
+      <div class="journey">
+        <article class="journey-card">
+          <div class="journey-index">01 · Original hypothesis</div>
+          <h3>Compatibility + transfer ROI</h3>
+          <p>Profile player–player and player–club relationships, then combine sporting fit with financial data to estimate a signing's return. Rich feature requirements reduced the complete cohort to 63 cases, and broader tests did not recover a stable universal signal.</p>
+          <div class="journey-status">Rejected</div>
         </article>
-
-        <article class="decision-card">
-          <div class="card-body">
-            <div class="card-header-row"><span class="card-kicker">Movement &amp; retention research</span><span class="card-counter">02 / 04</span></div>
-            <h2 class="card-title">Separated Football Outcomes</h2>
-            <div class="card-question">The former all-purpose continuity score was retired because loans, permanent exits and meaningful sporting use are different football outcomes.</div>
-            <div class="scope-status-list">
-              <div class="scope-status-row candidate"><div><div class="scope-status-name">Meaningful Retention</div><div class="scope-status-definition">Kept and meaningfully used for two years.</div></div><div class="scope-status-badge">Development candidate</div></div>
-              <div class="scope-status-row candidate"><div><div class="scope-status-name">Temporary Displacement Risk</div><div class="scope-status-definition">A loan or loan return is the first interruption.</div></div><div class="scope-status-badge">Development candidate</div></div>
-              <div class="scope-status-row unavailable"><div><div class="scope-status-name">Permanent Separation</div><div class="scope-status-definition">Permanent relationship ends within two years.</div></div><div class="scope-status-badge">Research only</div></div>
-            </div>
-          </div>
-          <button class="explain-toggle" type="button" data-panel="movementScopeExplain" aria-expanded="false"><span>Why the product changed</span><span class="caret">▾</span></button>
-          <div class="explain-panel" id="movementScopeExplain">
-            <div class="explain-grid">
-              <div class="explain-block"><h4>Meaningful Retention</h4><p>Requires no outbound movement and at least 25% same-club opportunity share in both Year 1 and Year 2. It is not a relabeling of the older contribution-only endpoint.</p></div>
-              <div class="explain-block"><h4>Temporary displacement</h4><p>Models a loan or loan return as the first resolved interruption. This is a separate squad-management mechanism from a permanent exit.</p></div>
-              <div class="explain-block"><h4>Permanent separation</h4><p>Cross-league reliability remains insufficient, so no personalized probability is displayed. The question remains in the research backlog.</p></div>
-              <div class="explain-block"><h4>Current authorization</h4><p>The first two outcomes have promising rolling-development evidence but still require a later untouched temporal test. None of the three is deployed.</p></div>
-            </div>
-          </div>
+        <article class="journey-card">
+          <div class="journey-index">02 · First pivot</div>
+          <h3>Modular transfer risks</h3>
+          <p>Opportunity, movement, public-value downside, fees, and capital risk were tested separately. Individual signals existed, but the mechanisms answered different questions and could not defensibly become one success or ROI number.</p>
+          <div class="journey-status">Risk, not fit</div>
         </article>
-
-        <article class="decision-card">
-          <div class="card-body">
-            <div class="card-header-row"><span class="card-kicker">Public-value downside</span><span class="card-counter">03 / 04</span></div>
-            <h2 class="card-title">Asset-Value Risk</h2>
-            <div class="card-question">How likely is the player’s public market-value estimate to fall by at least the selected amount within 24 months?</div>
-            <div class="card-control"><label for="downsideThreshold">Downside scenario</label><div class="select-wrap"><select class="field-input" id="downsideThreshold"><option value="25" selected>At least 25%</option><option value="50">At least 50%</option></select></div></div>
-            <div class="primary-stat">
-              <div><div class="primary-value mm-num" id="valueRiskProbability">—</div><div class="primary-label" id="valueRiskLabel">probability of a ≥25% public-value decline within 24 months</div></div>
-              <div><div class="score-track"><div class="score-fill" id="valueRiskBar"></div></div><div class="score-scale"><span>lower risk</span><span>higher risk</span></div></div>
-            </div>
-            <div class="financial-strip">
-              <div class="financial-stat"><div class="financial-value mm-num" id="valueThresholdEur">—</div><div class="financial-label" id="valueThresholdLabel">minimum euro decline represented by 25%</div></div>
-              <div class="financial-stat"><div class="financial-value mm-num" id="valueRemainingEur">—</div><div class="financial-label">public value remaining at that threshold</div></div>
-            </div>
-          </div>
-          <button class="explain-toggle" type="button" data-panel="valueExplain" aria-expanded="false"><span>What this means &amp; how it is calculated</span><span class="caret">▾</span></button>
-          <div class="explain-panel" id="valueExplain">
-            <div class="explain-grid">
-              <div class="explain-block"><h4>What it shows</h4><p>The model predicts whether a public market-value estimate crosses a defined downside threshold. The euro figure translates that threshold; it is not a predicted sale loss.</p></div>
-              <div class="explain-block"><h4>How it is calculated</h4><p>Separate calibrated models estimate 25% and 50% downside events using the player’s pre-extension sporting, market, contract and club context. The selected probability is paired with current public value.</p></div>
-              <div class="explain-block"><h4>Decision use</h4><p>A high probability and large euro threshold can justify shorter terms, stronger option structures, deeper injury/form diligence or a lower guaranteed wage.</p></div>
-              <div class="explain-block"><h4>Important distinction</h4><p>Public market value is a transparent proxy, not the club’s accounting carrying value, a guaranteed transfer fee or realized resale proceeds.</p></div>
-            </div>
-            <div class="why-panel" id="valueWhy"></div>
-          </div>
-        </article>
-
-        <article class="decision-card">
-          <div class="card-body">
-            <div class="card-header-row"><span class="card-kicker">Historical offer context</span><span class="card-counter">04 / 04</span></div>
-            <h2 class="card-title">Historical Wage Commitment Benchmark</h2>
-            <div class="card-question">Is the proposed total fixed wage—annual wage × contract years—high or low relative to historical extensions for comparable players?</div>
-            <div class="peer-comparison">
-              <div class="primary-value peer-primary-value mm-num" id="peerDifference">—</div>
-              <div class="primary-label" id="peerDifferenceContext">difference between the proposal and the model’s central historical estimate</div>
-              <div class="peer-range-status" id="peerRangeStatus">Run an assessment to compare the offer</div>
-            </div>
-            <div class="benchmark-scale" id="peerBenchmarkScale" aria-label="Historical fixed-wage commitment benchmark">
-              <div class="benchmark-line"><div class="benchmark-range-fill" id="peerRangeFill"></div></div>
-              <div class="benchmark-marker lower edge-left" id="peerLowerMarker"><div class="benchmark-dot"></div><div class="benchmark-label"><strong id="peerLowerValue">—</strong>lower bound</div></div>
-              <div class="benchmark-marker peer" id="peerEstimateMarker"><div class="benchmark-dot"></div><div class="benchmark-label"><strong id="peerEstimateMarkerValue">—</strong>peer estimate</div></div>
-              <div class="benchmark-marker proposal" id="peerProposalMarker"><div class="benchmark-dot"></div><div class="benchmark-label"><strong id="peerProposalValue">—</strong>proposal</div></div>
-              <div class="benchmark-marker upper edge-right" id="peerUpperMarker"><div class="benchmark-dot"></div><div class="benchmark-label"><strong id="peerUpperValue">—</strong>upper bound</div></div>
-            </div>
-            <div class="financial-strip">
-              <div class="financial-stat"><div class="financial-value mm-num" id="proposedCommitment">—</div><div class="financial-label">proposed total fixed-wage commitment</div></div>
-              <div class="financial-stat"><div class="financial-value mm-num" id="peerEstimate">—</div><div class="financial-label">historical peer estimate</div></div>
-            </div>
-            <div class="financial-stat" style="margin-top:1px"><div class="financial-value mm-num" id="peerRange">—</div><div class="financial-label">historical 80% reference range</div></div>
-          </div>
-          <button class="explain-toggle" type="button" data-panel="peerExplain" aria-expanded="false"><span>What this means &amp; how it is calculated</span><span class="caret">▾</span></button>
-          <div class="explain-panel" id="peerExplain">
-            <div class="explain-grid">
-              <div class="explain-block"><h4>What “commitment” means</h4><p>This is financial commitment only: proposed annual fixed wage × contract years. It does not measure playing time, effort, contribution, market value, or expected loss.</p></div>
-              <div class="explain-block"><h4>How it is calculated</h4><p>The model estimates historically typical total fixed wages for players with a similar age, position, league, public market value, and prior wage when known. The proposal is then subtracted from that central estimate and plotted against the historical 80% range.</p></div>
-              <div class="explain-block"><h4>How to read the chart</h4><p>The central peer marker is the model estimate—not the midpoint of the broad range. The proposal marker shows the entered deal. A proposal can be above the central estimate while still remaining inside the uncertainty range.</p></div>
-              <div class="explain-block"><h4>Not a fair-value verdict</h4><p>The benchmark describes comparable historical behavior. It does not know bonuses, bargaining leverage, agent terms, clauses or strategic importance.</p></div>
-            </div>
-          </div>
+        <article class="journey-card">
+          <div class="journey-index">03 · Final scope</div>
+          <h3>Extension-risk case study</h3>
+          <p>Public wage and extension histories made one concrete decision observable: evaluating an existing player at the incumbent club. Predictors were restricted to the extension date and outcomes were measured afterward.</p>
+          <div class="journey-status">Frozen research record</div>
         </article>
       </div>
+    </section>
 
-      <div class="detail-grid">
-        <details class="detail-box"><summary>Contract facts &amp; term diagnostics</summary><div class="detail-content">
-          <div class="detail-row"><span class="detail-label">Age at proposed expiration</span><span class="detail-value mm-num" id="ageAtExpiration">—</span></div>
-          <div class="detail-row"><span class="detail-label">Proposed wage change vs. known prior wage</span><span class="detail-value mm-num" id="wageChange">—</span></div>
-          <div class="detail-row"><span class="detail-label">Contract length vs. comparable players</span><span class="detail-value mm-num" id="durationPeerDelta">—</span></div>
-          <div class="detail-help">These are decision facts and historical comparisons—not additional outcome predictions.</div>
-        </div></details>
-        <details class="detail-box"><summary>Supporting model signals</summary><div class="detail-content">
-          <div class="detail-row"><span class="detail-label">Permanent-separation probability</span><span class="detail-value">Unavailable · research only</span></div>
-          <div class="detail-row"><span class="detail-label">Value preserved within 10% at 12m</span><span class="detail-value mm-num" id="preservation12">—</span></div>
-          <div class="detail-row"><span class="detail-label">Value preserved within 10% at 24m</span><span class="detail-value mm-num" id="preservation24">—</span></div>
-          <div class="detail-row"><span class="detail-label">Offer aggressiveness percentile</span><span class="detail-value mm-num" id="offerPercentile">—</span></div>
-          <div class="detail-help">Supporting diagnostics are deliberately secondary because they are less directly actionable than the four main cards.</div>
-        </div></details>
+    <section class="section" id="findings">
+      <div class="section-head">
+        <div><div class="section-num">02 · Final evidence</div><h2>What survived—and what did not.</h2></div>
+        <p class="section-intro">Predictive performance was only one gate. A result also needed a coherent football meaning, chronological consistency, subgroup reliability, and honest holdout governance.</p>
       </div>
-      <div class="data-notes" id="dataNotes"></div>
+      <div class="evidence-grid">
+        <article class="evidence-card">
+          <div class="evidence-label"><span>Qualified research signal</span><span>4 / 4 origins</span></div>
+          <h3>Sustained realized contribution</h3>
+          <p>Did the player reach at least 25% of the extension club's opportunity share in each exact post-signing year? The repaired target requires evidence in both years and sufficient club-schedule coverage. This is the contribution component of Meaningful Retention; the joint endpoint remains research only.</p>
+          <div class="evidence-stat num">AUC 0.762</div>
+          <div class="evidence-foot">Positive baseline-relative skill in every origin; 6 of 9 core league/position groups passed the strict reliability gate.</div>
+        </article>
+        <article class="evidence-card">
+          <div class="evidence-label"><span>Primary research horizon</span><span>12 months</span></div>
+          <h3>Public-value downside</h3>
+          <p>Did the public market-value estimate decline by at least 25%? The 12-month model retained useful development evidence, but public value is not a transfer fee, accounting valuation, or realized loss.</p>
+          <div class="evidence-stat num">AUC 0.760</div>
+          <div class="evidence-foot">Positive in 4 of 4 origins; 8 of 9 broad groups supported. No pristine untouched final cohort remains.</div>
+        </article>
+        <article class="evidence-card limited">
+          <div class="evidence-label"><span>Development candidate</span><span>Not deployed</span></div>
+          <h3>Temporary Displacement Risk</h3>
+          <p>A temporary first movement, such as a loan, is modeled separately from permanent separation. The question is football-coherent, but later player-disjoint final evidence is not yet mature enough.</p>
+          <div class="evidence-stat num">AUC 0.777</div>
+          <div class="evidence-foot">Brier skill +0.0291 and positive in all four rolling origins.</div>
+        </article>
+        <article class="evidence-card retired">
+          <div class="evidence-label"><span>Retired / unavailable</span><span>Interpretation failed</span></div>
+          <h3>Generic continuity + permanent separation</h3>
+          <p>One “club stability” number blended loans, loan returns, and permanent exits. Generic continuity was retired; permanent separation remains research-only because league behavior was unreliable.</p>
+          <div class="evidence-stat num">AUC 0.646 / 0.628</div>
+          <div class="evidence-foot">A statistically functional output can still be unsuitable for the meaning users infer from its label.</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section deep">
+      <div class="screening">
+        <div>
+          <div class="section-num">03 · Retrospective workflow test</div>
+          <div class="screening-big num">+46%</div>
+          <div class="screening-label">more historical low-contribution outcomes identified at equal review capacity</div>
+        </div>
+        <div>
+          <div class="comparison">
+            <div class="comparison-item"><div class="comparison-value num">54</div><div class="comparison-label">identified by reviewing the 182 largest contracts</div></div>
+            <div class="comparison-item"><div class="comparison-value num">79</div><div class="comparison-label">identified by risk-weighted ranking of the same 182 reviews</div></div>
+          </div>
+          <div class="screening-note"><strong>What this does not mean:</strong> the flagged contracts were not proven mistakes, €5.22B in scheduled two-year fixed wages was not “lost,” and the comparison does not estimate causal savings or authorize a current deployment policy. It is a historical prioritization case study.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="section-head">
+        <div><div class="section-num">04 · Research standard</div><h2>Why the model is no longer live.</h2></div>
+        <p class="section-intro">The original web prototype was deployed successfully. After the presentation, an adversarial audit found that several polished outputs had weaker target definitions, subgroup support, or final-test governance than their presentation implied.</p>
+      </div>
+      <div class="principles">
+        <article class="principle"><div class="principle-num">01</div><h3>Meaning before performance</h3><p>Loans and permanent exits were separated; realized involvement was distinguished from talent or tactical fit; incomplete Year-1/Year-2 evidence was no longer accepted.</p></article>
+        <article class="principle"><div class="principle-num">02</div><h3>Reliability before averages</h3><p>A strong pooled score could not conceal a league or position failure. The annual-wage candidate was rejected after its Ligue 1 range coverage failed the declared gate.</p></article>
+        <article class="principle"><div class="principle-num">03</div><h3>Governance before deployment</h3><p>Frozen V1 artifacts remain available for audit, but HTTP scoring is disabled. The public site now records the evidence instead of presenting current-player probabilities.</p></article>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div><h2>Experience the product—then inspect the evidence.</h2><p>Open frozen historical player profiles to see how the original product worked, or continue to the method for the canonical merge pipeline, model choices and rolling chronological validation.</p></div>
+      <a class="button" href="prototype.html">Open the prototype →</a>
     </section>
   </main>
 
   <footer>
-    <div class="footer-note">Big Five leagues · historical incumbent-club extension data</div>
-    <div class="footer-leagues">
-      <img src="assets/leagues/GB1.png" alt="Premier League" />
-      <img src="assets/leagues/ES1.png" alt="La Liga" />
-      <img src="assets/leagues/L1.png" alt="Bundesliga" />
-      <img src="assets/leagues/IT1.png" alt="Serie A" />
-      <img src="assets/leagues/FR1.png" alt="Ligue 1" />
-    </div>
+    <div>MoveMaker · Four-person capstone · Project Coordinator &amp; ML Lead: Lionel</div>
+    <div class="footer-links"><a href="prototype.html">Historical Prototype</a><a href="scope.html">Evidence &amp; Limits</a><a href="about.html">Team</a><a href="https://github.com/Lioneln5/Capstone-MoveMaker" target="_blank" rel="noreferrer">Repository ↗</a></div>
   </footer>
 </div>
-
-<script>
-  const $ = id => document.getElementById(id);
-  const apiBaseInput = $('apiBase');
-  if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
-    apiBaseInput.value = window.location.origin;
-  }
-  const apiBase = () => apiBaseInput.value.trim().replace(/\/$/, '');
-  const escapeHtml = value => String(value).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
-  const fmtEur = value => {
-    if (value === null || value === undefined || Number.isNaN(Number(value))) return '—';
-    const n = Number(value), sign = n < 0 ? '−' : '';
-    const abs = Math.abs(n);
-    const formatted = abs >= 1e9 ? `€${(abs / 1e9).toFixed(2)}B` : abs >= 1e6 ? `€${(abs / 1e6).toFixed(abs >= 10e6 ? 1 : 2)}M` : `€${Math.round(abs).toLocaleString('en-US')}`;
-    return sign + formatted;
-  };
-  const fmtPct = value => value === null || value === undefined || Number.isNaN(Number(value)) ? '—' : `${(Number(value) * 100).toFixed(1)}%`;
-  const available = metric => metric && metric.status !== 'unavailable';
-  const findMetric = (cards, card, key) => ((cards && cards[card]) || []).find(m => m.metric_key === key) || null;
-  let selectedPlayer = null;
-  let currentProfile = null;
-  let searchDebounce = null;
-  const scoringEnabled = false;
-
-  const LEAGUES = {
-    GB1: {name: 'Premier League', country: 'England', logo: 'assets/leagues/GB1.png'},
-    ES1: {name: 'La Liga', country: 'Spain', logo: 'assets/leagues/ES1.png'},
-    L1: {name: 'Bundesliga', country: 'Germany', logo: 'assets/leagues/L1.png'},
-    IT1: {name: 'Serie A', country: 'Italy', logo: 'assets/leagues/IT1.png'},
-    FR1: {name: 'Ligue 1', country: 'France', logo: 'assets/leagues/FR1.png'}
-  };
-
-  function renderLeagueRail() {
-    const grid = $('leagueRailGrid');
-    grid.innerHTML = Object.entries(LEAGUES).map(([code, league]) => {
-      const label = `${code} · ${league.country}`;
-      return `<div class="league-rail-item" data-competition="${code}" data-default="${escapeHtml(label)}">
-        <div class="league-rail-logo-shell"><img class="league-rail-logo" src="${league.logo}" alt="${escapeHtml(league.name)} logo" loading="lazy"></div>
-        <div class="league-rail-status">${escapeHtml(label)}</div>
-      </div>`;
-    }).join('');
-  }
-  const CLUB_THEMES = {
-    418: {accent:'#FEBE10', secondary:'#0B1B5D'}, 131: {accent:'#A50044', secondary:'#004D98'},
-    13: {accent:'#CB3524', secondary:'#272E61'}, 281: {accent:'#6CABDD', secondary:'#1C2C5B'},
-    985: {accent:'#DA291C', secondary:'#FBE122'}, 31: {accent:'#C8102E', secondary:'#00B2A9'},
-    11: {accent:'#EF0107', secondary:'#063672'}, 631: {accent:'#034694', secondary:'#DBA111'},
-    148: {accent:'#132257', secondary:'#FFFFFF'}, 27: {accent:'#DC052D', secondary:'#0066B2'},
-    16: {accent:'#FDE100', secondary:'#000000'}, 15: {accent:'#E32221', secondary:'#000000'},
-    506: {accent:'#000000', secondary:'#FFFFFF'}, 46: {accent:'#0057B8', secondary:'#000000'},
-    5: {accent:'#FB090B', secondary:'#000000'}, 6195: {accent:'#12A0D7', secondary:'#FFFFFF'},
-    12: {accent:'#8E1F2F', secondary:'#F0BC42'}, 583: {accent:'#004170', secondary:'#DA291C'},
-    244: {accent:'#2FAEE0', secondary:'#FFFFFF'}, 162: {accent:'#E51B23', secondary:'#FFFFFF'}
-  };
-  const clubCrestIds = new Set(Object.keys(CLUB_THEMES).map(Number));
-
-  function clubInitials(name) {
-    const ignored = new Set(['fc','cf','afc','ssc','as','ac','ss']);
-    const words = String(name || 'Move Maker').split(/\s+/).filter(Boolean);
-    const meaningful = words.filter(word => !ignored.has(word.toLowerCase()));
-    return (meaningful.length ? meaningful : words).slice(0, 2).map(word => word[0]).join('').toUpperCase();
-  }
-  function rgba(hex, alpha) {
-    const normalized = hex.replace('#','');
-    const full = normalized.length === 3 ? normalized.split('').map(char => char + char).join('') : normalized;
-    return `rgba(${parseInt(full.slice(0,2),16)},${parseInt(full.slice(2,4),16)},${parseInt(full.slice(4,6),16)},${alpha})`;
-  }
-  function applyPlayerIdentity(player) {
-    const clubId = Number(player.current_club_id);
-    const theme = CLUB_THEMES[clubId] || {accent:'#1f9d2e', secondary:'#12241a'};
-    document.documentElement.style.setProperty('--club-accent', theme.accent);
-    document.documentElement.style.setProperty('--club-accent-soft', rgba(theme.accent, .11));
-    document.documentElement.style.setProperty('--club-secondary', theme.secondary);
-    const crest = $('clubCrest'), fallback = $('clubFallback');
-    fallback.textContent = clubInitials(player.current_club_name);
-    fallback.style.display = 'block'; crest.style.display = 'none'; crest.removeAttribute('src');
-    if (clubCrestIds.has(clubId)) {
-      crest.onload = () => { crest.style.display = 'block'; fallback.style.display = 'none'; };
-      crest.onerror = () => { crest.style.display = 'none'; fallback.style.display = 'block'; };
-      crest.alt = `${player.current_club_name || 'Club'} crest`;
-      crest.src = `assets/clubs/${clubId}.png`;
-    }
-    const league = LEAGUES[player.competition_id];
-    if (league) {
-      $('leagueLogo').src = league.logo; $('leagueLogo').alt = `${league.name} logo`;
-      $('leagueName').textContent = league.name;
-    } else {
-      $('leagueLogo').removeAttribute('src'); $('leagueLogo').alt = '';
-      $('leagueName').textContent = player.competition_id || 'League unavailable';
-    }
-    document.querySelectorAll('.league-rail-item').forEach(item => {
-      const isActive = Boolean(league) && item.dataset.competition === String(player.competition_id);
-      item.classList.toggle('active', isActive);
-      item.querySelector('.league-rail-status').textContent = isActive ? 'In this profile' : item.dataset.default;
-    });
-    $('leagueRailNote').textContent = league
-      ? `Showing ${league.name} (${player.competition_id}) — coverage spans all five leagues below.`
-      : 'Historical incumbent-club extension data spans Europe’s Big Five leagues.';
-    $('identityDetails').textContent = [player.position, player.date_of_birth ? `Age ${Math.floor((Date.now() - new Date(player.date_of_birth).getTime()) / 31557600000)}` : null].filter(Boolean).join(' · ');
-    $('identityMeta').style.display = 'flex';
-  }
-
-  document.querySelectorAll('.explain-toggle').forEach(button => button.addEventListener('click', () => {
-    const panel = $(button.dataset.panel);
-    const open = button.getAttribute('aria-expanded') === 'true';
-    button.setAttribute('aria-expanded', String(!open));
-    panel.classList.toggle('open', !open);
-  }));
-  $('connectToggle').addEventListener('click', () => $('connectBody').classList.toggle('open'));
-  apiBaseInput.addEventListener('change', checkApiConnection);
-
-  function setScoringUnavailable(message = null) {
-    ['playerSearch', 'marketValue', 'wage', 'contractLength'].forEach(id => {
-      const element = $(id);
-      if (element) element.disabled = true;
-    });
-    $('prototypeBannerCopy').innerHTML = `<strong>Live scoring is unavailable.</strong> ${escapeHtml(message || 'Engine V1 is preserved for historical audit. Engine V2 retired generic continuity and has not authorized a live replacement.')}`;
-    selectedPlayer = null;
-    currentProfile = null;
-    $('lockedInfo').style.display = 'none';
-    $('searchResults').classList.remove('show');
-    updateRunState();
-  }
-
-  async function checkApiConnection() {
-    $('modelStatusText').textContent = 'Checking research-prototype status…';
-    $('modelDot').classList.remove('live');
-    try {
-      const response = await fetch(`${apiBase()}/health`);
-      const health = response.ok ? await response.json() : null;
-      if (!health || health.status !== 'ok') throw new Error('service unavailable');
-      setScoringUnavailable(health.message);
-      $('modelStatusText').textContent = 'Research record — scoring unavailable';
-    } catch (_) {
-      setScoringUnavailable('The explanatory site is available, but the status service could not be reached.');
-      $('modelStatusText').textContent = 'Not connected — check API settings';
-      $('modelDot').classList.remove('live');
-    }
-  }
-
-  $('playerSearch').addEventListener('input', event => {
-    selectedPlayer = null; currentProfile = null; $('lockedInfo').style.display = 'none'; updateRunState();
-    const query = event.target.value.trim();
-    clearTimeout(searchDebounce);
-    if (query.length < 2) { $('searchResults').classList.remove('show'); return; }
-    searchDebounce = setTimeout(() => searchPlayers(query), 250);
-  });
-
-  async function searchPlayers(query) {
-    try {
-      const response = await fetch(`${apiBase()}/players/search?q=${encodeURIComponent(query)}`);
-      if (!response.ok) throw new Error('search failed');
-      renderSearchResults(await response.json());
-    } catch (_) {
-      $('searchResults').innerHTML = `<div class="search-result-item search-error">Could not reach ${escapeHtml(apiBase())}. Open API settings and confirm the scoring service is running.</div>`;
-      $('searchResults').classList.add('show');
-    }
-  }
-
-  function renderSearchResults(players) {
-    if (!players.length) {
-      $('searchResults').innerHTML = '<div class="search-result-item search-empty">No matching in-scope player found.</div>';
-    } else {
-      $('searchResults').innerHTML = players.map((p, index) => `<div class="search-result-item" data-index="${index}"><span class="sr-name">${escapeHtml(p.display_name)}</span><span class="sr-meta">${escapeHtml(p.current_club_name || 'club unresolved')}${p.competition_id ? ' · ' + escapeHtml(p.competition_id) : ''}</span></div>`).join('');
-      document.querySelectorAll('.search-result-item[data-index]').forEach(item => item.addEventListener('click', () => selectPlayer(players[Number(item.dataset.index)])));
-    }
-    $('searchResults').classList.add('show');
-  }
-
-  function selectPlayer(player) {
-    selectedPlayer = player;
-    $('playerSearch').value = player.display_name;
-    $('searchResults').classList.remove('show');
-    $('lockedClub').textContent = player.current_club_name || 'unresolved';
-    $('lockedLeague').textContent = player.competition_id || '—';
-    $('lockedPosition').textContent = player.position || '—';
-    $('lockedAge').textContent = player.date_of_birth ? Math.floor((Date.now() - new Date(player.date_of_birth).getTime()) / 31557600000) : '—';
-    $('lockedInfo').style.display = 'block';
-    $('playerSummary').innerHTML = `<strong>${escapeHtml(player.display_name)}</strong> at <strong>${escapeHtml(player.current_club_name || 'unresolved club')}</strong>`;
-    applyPlayerIdentity(player);
-    loadPlayerDefaults(player);
-    updateRunState();
-  }
-
-  async function loadPlayerDefaults(player) {
-    $('marketValue').value = '';
-    $('wage').value = '';
-    $('marketValueSource').className = 'field-source loading';
-    $('wageSource').className = 'field-source loading';
-    $('marketValueSource').textContent = 'Loading latest known public valuation…';
-    $('wageSource').textContent = 'Loading latest known same-club wage…';
-    const params = new URLSearchParams({canonical_club_id: player.current_club_id});
-    if (player.player_name_normalized) params.set('player_name_normalized', player.player_name_normalized);
-    try {
-      const response = await fetch(`${apiBase()}/players/${player.canonical_player_id}/input-defaults?${params}`);
-      if (!response.ok) throw new Error('defaults request failed');
-      const defaults = await response.json();
-      if (selectedPlayer?.canonical_player_id !== player.canonical_player_id) return;
-
-      if (defaults.current_public_market_value_eur) {
-        $('marketValue').value = Math.round(defaults.current_public_market_value_eur);
-        $('marketValueSource').textContent = `Auto-filled from public valuation dated ${defaults.market_value_date}${defaults.market_value_age_days > 365 ? ` · ${defaults.market_value_age_days} days old` : ''}. Editable.`;
-        $('marketValueSource').className = `field-source ${defaults.market_value_age_days > 365 ? 'stale' : 'fresh'}`;
-      } else {
-        $('marketValueSource').textContent = 'No dated public valuation is available; enter the club’s current estimate.';
-        $('marketValueSource').className = 'field-source stale';
-      }
-
-      if (defaults.latest_known_same_club_annual_wage_eur) {
-        $('wage').value = Math.round(defaults.latest_known_same_club_annual_wage_eur);
-        const stale = !defaults.wage_is_current_season;
-        const annualWage = Number(defaults.latest_known_same_club_annual_wage_eur);
-        const weeklyWage = annualWage / 52;
-        $('wageSource').textContent = `Editable proposal starting point from the ${defaults.wage_source_season} estimated gross fixed salary (${fmtEur(weeklyWage)}/week; ${fmtEur(annualWage)}/year)${stale ? `; current ${defaults.current_decision_season} salary data is not in the panel` : ''}. This is historical context, not a recommended wage.`;
-        $('wageSource').className = `field-source ${stale ? 'stale' : 'fresh'}`;
-      } else {
-        $('wageSource').textContent = 'No same-club public wage was matched; enter the proposed annual fixed wage.';
-        $('wageSource').className = 'field-source stale';
-      }
-    } catch (_) {
-      $('marketValueSource').textContent = 'Could not load the valuation automatically; enter it manually.';
-      $('wageSource').textContent = 'Could not load a wage starting point; enter the proposed wage manually.';
-      $('marketValueSource').className = $('wageSource').className = 'field-source stale';
-    }
-  }
-
-  document.addEventListener('click', event => {
-    if (!event.target.closest('.search-wrap')) $('searchResults').classList.remove('show');
-  });
-
-  function updateRunState() {
-    $('runBtn').disabled = !scoringEnabled || !selectedPlayer;
-    $('runBtn').textContent = !scoringEnabled ? 'No live scoring authorized' : selectedPlayer ? 'Run Extension Assessment' : 'Search a player first';
-  }
-
-  function setProbability(valueId, barId, value, risk = false) {
-    $(valueId).textContent = fmtPct(value);
-    const pct = value === null || value === undefined ? 0 : Math.max(0, Math.min(100, Number(value) * 100));
-    const bar = $(barId); bar.style.width = `${pct}%`;
-    if (risk) bar.style.background = pct < 33 ? 'var(--green)' : pct < 66 ? 'var(--amber)' : 'var(--red)';
-    else bar.style.background = pct > 66 ? 'var(--green)' : pct > 33 ? 'var(--amber)' : 'var(--red)';
-  }
-
-  function renderWhy(panelId, data, favorableText, unfavorableText) {
-    const panel = $(panelId);
-    if (!data || data.status !== 'available' || !data.contributions || !data.contributions.length) {
-      panel.innerHTML = '<div class="why-intro">A player-specific feature breakdown is unavailable for this score.</div>';
-      return;
-    }
-    const max = Math.max(...data.contributions.map(item => Math.abs(item.logit_contribution)), .0001);
-    panel.innerHTML = `<div class="why-intro"><strong>Most influential features for this player.</strong> Bar length shows relative influence within this score; it is not a probability or causal effect.</div>` + data.contributions.map(item => {
-      const direction = item.favorable ? favorableText : unfavorableText;
-      const width = Math.max(4, Math.round(Math.abs(item.logit_contribution) / max * 100));
-      const cls = item.favorable ? 'favorable' : 'unfavorable';
-      return `<div class="why-row"><div class="why-row-top"><span class="why-row-label">${escapeHtml(item.label)}</span><span class="why-row-direction ${cls}">${escapeHtml(direction)}</span></div><div class="why-bar-track"><div class="why-bar-fill ${cls}" style="width:${width}%"></div></div></div>`;
-    }).join('') + (data.ordering_correction_applied ? `<div class="why-correction-note">${escapeHtml(data.correction_note)}</div>` : '');
-  }
-
-  $('runBtn').addEventListener('click', async () => {
-    if (!selectedPlayer) return;
-    const wage = Number($('wage').value), years = Number($('contractLength').value), market = Number($('marketValue').value) || null;
-    if (!wage || wage <= 0) { $('modelStatusText').textContent = 'Enter a proposed annual fixed wage.'; return; }
-    $('runBtn').disabled = true; $('runBtn').textContent = 'Scoring…'; $('modelStatusText').textContent = 'Building decision profile…'; $('modelDot').classList.remove('live');
-    const body = {
-      canonical_player_id: selectedPlayer.canonical_player_id, canonical_club_id: selectedPlayer.current_club_id,
-      competition_id: selectedPlayer.competition_id, player_display_name: selectedPlayer.display_name,
-      player_name_normalized: selectedPlayer.player_name_normalized, current_club_display_name: selectedPlayer.current_club_name,
-      proposed_annual_fixed_wage_eur: wage, proposed_contract_years: years
-    };
-    if (market) body.current_public_market_value_eur = market;
-    try {
-      const response = await fetch(`${apiBase()}/profile`, { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(body) });
-      if (!response.ok) { const detail = await response.json().catch(() => ({})); throw new Error(detail.detail || `HTTP ${response.status}`); }
-      renderProfile(await response.json());
-    } catch (error) {
-      $('modelStatusText').textContent = `Error: ${error.message}`;
-    } finally { updateRunState(); }
-  });
-
-  function renderProfile(profile) {
-    currentProfile = profile;
-    if (profile.status === 'refused') {
-      $('warningBanner').textContent = `Not scored: ${profile.refusal_reason}`; $('warningBanner').style.display = 'block';
-      $('modelStatusText').textContent = 'Out of scope'; return;
-    }
-    if (profile.resolved_inputs?.current_public_market_value_eur) $('marketValue').value = Math.round(profile.resolved_inputs.current_public_market_value_eur);
-    const cards = profile.cards || {};
-    const contribution = findMetric(cards, 'contribution_exposure', 'low_contribution_wage_exposure_eur');
-    const fixed = findMetric(cards, 'capital_commitment', 'fixed_wage_commitment_eur');
-    const ageExpiration = findMetric(cards, 'capital_commitment', 'age_at_expiration');
-    const wageChange = findMetric(cards, 'capital_commitment', 'proposed_wage_change_pct');
-    const peer = findMetric(cards, 'offer_context', 'fixed_commitment_peer_difference_eur');
-    const peerPct = findMetric(cards, 'offer_context', 'offer_aggressiveness_percentile');
-    const duration = findMetric(cards, 'offer_context', 'contract_duration_peer_delta_years');
-    const preserve12 = findMetric(cards, 'asset_value', 'value_preservation_probability_12m');
-    const preserve24 = findMetric(cards, 'asset_value', 'value_preservation_probability_24m');
-    const contributionProbability = available(contribution) ? contribution.components.sustained_contribution_probability_24m : null;
-
-    setProbability('contributionProbability', 'contributionBar', contributionProbability);
-    $('contributionExposure').textContent = available(contribution) ? fmtEur(contribution.value) : 'unavailable';
-    $('wagesThrough24').textContent = available(contribution) ? fmtEur(contribution.components.fixed_wages_through_24m_eur) : '—';
-    $('proposedCommitment').textContent = available(fixed) ? fmtEur(fixed.value) : '—';
-    renderPeerBenchmark(peer, fixed);
-    $('ageAtExpiration').textContent = available(ageExpiration) ? `${ageExpiration.value.toFixed(1)} years old` : '—';
-    $('wageChange').textContent = available(wageChange) ? `${wageChange.value >= 0 ? '+' : ''}${fmtPct(wageChange.value)}` : 'unavailable';
-    $('durationPeerDelta').textContent = available(duration) ? `${duration.value >= 0 ? '+' : ''}${duration.value.toFixed(1)} years` : 'unavailable';
-    $('preservation12').textContent = available(preserve12) ? fmtPct(preserve12.value) : 'unavailable';
-    $('preservation24').textContent = available(preserve24) ? fmtPct(preserve24.value) : 'unavailable';
-    $('offerPercentile').textContent = available(peerPct) ? `${(peerPct.value * 100).toFixed(0)}th percentile` : 'unavailable';
-    renderValueScenario();
-
-    const explain = profile.explainability || {};
-    renderWhy('contributionWhy', explain.sustained_contribution, 'supports contribution', 'raises low-contribution risk');
-    renderWhy('valueWhy', explain.public_value_downside_risk, 'reduces downside risk', 'raises downside risk');
-    renderDataNotes(profile);
-    if (profile.data_density_warning) { $('warningBanner').textContent = profile.data_density_warning; $('warningBanner').style.display = 'block'; }
-    else $('warningBanner').style.display = 'none';
-    $('modelStatusText').textContent = `Live — ${profile.model_vintage || 'model vintage unavailable'}`; $('modelDot').classList.add('live');
-  }
-
-  function renderPeerBenchmark(peer, fixed) {
-    if (!available(peer) || !available(fixed)) {
-      $('peerDifference').textContent = 'unavailable';
-      $('peerDifferenceContext').textContent = 'A comparable historical benchmark could not be calculated for this profile.';
-      $('peerRangeStatus').textContent = 'Benchmark unavailable';
-      return;
-    }
-    const proposed = Number(fixed.value);
-    const estimate = Number(peer.components.peer_estimate_eur);
-    const lower = Number(peer.components.peer_lower_eur);
-    const upper = Number(peer.components.peer_upper_eur);
-    const difference = proposed - estimate;
-    const differencePct = estimate > 0 ? Math.abs(difference) / estimate : null;
-    const direction = difference > 0 ? 'above' : difference < 0 ? 'below' : 'equal to';
-    $('peerDifference').textContent = difference === 0 ? 'Matches peer estimate' : `${fmtEur(Math.abs(difference))} ${direction}`;
-    $('peerDifferenceContext').textContent = differencePct === null
-      ? 'difference from the model’s central historical estimate'
-      : `${(differencePct * 100).toFixed(0)}% ${direction} the model’s central historical estimate`;
-
-    const rangePosition = peer.components.range_position;
-    const rangeText = rangePosition === 'above_historical_80pct_range'
-      ? 'Above the historical 80% reference range'
-      : rangePosition === 'below_historical_80pct_range'
-        ? 'Below the historical 80% reference range'
-        : 'Within the broad historical 80% reference range';
-    $('peerRangeStatus').textContent = rangeText;
-    $('peerRangeStatus').style.background = rangePosition === 'within_historical_80pct_range' ? 'var(--green-soft)' : 'rgba(168,109,13,.12)';
-    $('peerRangeStatus').style.color = rangePosition === 'within_historical_80pct_range' ? 'var(--green-dim)' : 'var(--amber)';
-
-    $('peerEstimate').textContent = fmtEur(estimate);
-    $('peerRange').textContent = `${fmtEur(lower)} – ${fmtEur(upper)}`;
-    $('peerLowerValue').textContent = fmtEur(lower);
-    $('peerEstimateMarkerValue').textContent = fmtEur(estimate);
-    $('peerProposalValue').textContent = fmtEur(proposed);
-    $('peerUpperValue').textContent = fmtEur(upper);
-
-    const domainMin = Math.min(lower, proposed, estimate);
-    const domainMax = Math.max(upper, proposed, estimate);
-    const span = Math.max(domainMax - domainMin, 1);
-    const position = value => Math.max(0, Math.min(100, ((value - domainMin) / span) * 100));
-    const lowerPos = position(lower), estimatePos = position(estimate), proposalPos = position(proposed), upperPos = position(upper);
-    const markers = [
-      [$('peerLowerMarker'), lowerPos], [$('peerEstimateMarker'), estimatePos],
-      [$('peerProposalMarker'), proposalPos], [$('peerUpperMarker'), upperPos]
-    ];
-    markers.forEach(([marker, pos]) => {
-      marker.style.left = `${pos}%`;
-      marker.classList.remove('edge-left', 'edge-right');
-      if (pos < 3) marker.classList.add('edge-left');
-      if (pos > 97) marker.classList.add('edge-right');
-    });
-    // Bounds remain below the scale. Proposal and peer labels remain above it;
-    // when those two are close, move the peer label to a higher lane instead
-    // of pushing the proposal label into the lower-bound label.
-    $('peerEstimateMarker').classList.toggle('high-lane', Math.abs(proposalPos - estimatePos) < 18);
-    $('peerRangeFill').style.left = `${lowerPos}%`;
-    $('peerRangeFill').style.width = `${Math.max(0, upperPos - lowerPos)}%`;
-  }
-
-  function renderValueScenario() {
-    if (!currentProfile || currentProfile.status !== 'scored') return;
-    const threshold = Number($('downsideThreshold').value);
-    const key = threshold === 50 ? 'public_value_downside_50pct_scenario' : 'public_value_downside_25pct_scenario';
-    const metric = findMetric(currentProfile.cards, 'asset_value', key);
-    const probability = available(metric) ? metric.value.probability : null;
-    setProbability('valueRiskProbability', 'valueRiskBar', probability, true);
-    $('valueRiskLabel').textContent = `probability of a ≥${threshold}% public-value decline within 24 months`;
-    $('valueThresholdLabel').textContent = `minimum euro decline represented by ${threshold}%`;
-    $('valueThresholdEur').textContent = available(metric) ? fmtEur(metric.value.minimum_threshold_eur) : 'unavailable';
-    const market = Number(currentProfile.resolved_inputs?.current_public_market_value_eur || $('marketValue').value);
-    $('valueRemainingEur').textContent = market ? fmtEur(market * (1 - threshold / 100)) : '—';
-  }
-  $('downsideThreshold').addEventListener('change', renderValueScenario);
-
-  function renderDataNotes(profile) {
-    const warnings = [...(profile.upstream_feature_warnings || [])];
-    const unavailable = Object.values(profile.upstream_feature_unavailable || {});
-    if (!warnings.length && !unavailable.length) { $('dataNotes').style.display = 'none'; return; }
-    $('dataNotes').innerHTML = `<strong>Data coverage used for this profile</strong><ul>${warnings.concat(unavailable).map(note => `<li>${escapeHtml(note)}</li>`).join('')}</ul>`;
-    $('dataNotes').style.display = 'block';
-  }
-
-  renderLeagueRail();
-  setScoringUnavailable();
-  updateRunState();
-  checkApiConnection();
-</script>
 </body>
 </html>

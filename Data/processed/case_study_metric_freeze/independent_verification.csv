@@ -1,0 +1,43 @@
+check,passed,observed,expected
+output_manifest,True,True,True
+source_manifest,True,True,True
+complete_output_set,True,"[""annual_wage_peer_benchmark"", ""club_salary_structure_context"", ""contract_arithmetic"", ""contract_duration_peer_benchmark"", ""downside_25pct_12m"", ""downside_25pct_24m"", ""fixed_wage_commitment_peer_benchmark"", ""generic_continuity_24m"", ""historical_risk_weighted_screening"", ""integrated_contract_score"", ""meaningful_retention_24m"", ""permanent_separation_risk_24m"", ""sustained_realized_contribution_24m"", ""temporary_displacement_risk_24m"", ""wage_to_market_value_peer_benchmark""]","[""annual_wage_peer_benchmark"", ""club_salary_structure_context"", ""contract_arithmetic"", ""contract_duration_peer_benchmark"", ""downside_25pct_12m"", ""downside_25pct_24m"", ""fixed_wage_commitment_peer_benchmark"", ""generic_continuity_24m"", ""historical_risk_weighted_screening"", ""integrated_contract_score"", ""meaningful_retention_24m"", ""permanent_separation_risk_24m"", ""sustained_realized_contribution_24m"", ""temporary_displacement_risk_24m"", ""wage_to_market_value_peer_benchmark""]"
+unique_output_set,True,False,False
+summary_count,True,15,15
+no_live_probabilities,True,0,0
+no_automated_decisions,True,0,0
+numeric_display_is_descriptive_only,True,"[""club_salary_structure_context"", ""contract_arithmetic""]","[""club_salary_structure_context"", ""contract_arithmetic""]"
+contribution_auc,True,0.7618410128684101,0.7618410128684101
+contribution_brier,True,0.1962445911346671,0.1962445911346671
+contribution_calibration,True,0.0114920568622919,0.0114920568622919
+contribution_subgroups,True,6,6
+contribution_limitations_named,True,"[""La Liga"", ""Midfield"", ""Serie A""]","[""La Liga"", ""Midfield"", ""Serie A""]"
+contribution_not_live,True,retain_qualified_research_signal,retain_qualified_research_signal
+generic_continuity_retired,True,retired_mixed_movement_mechanisms,retired
+meaningful_retention_superseded,True,definition_retained_current_model_not_finalized,definition retained; no current metric
+temporary_displacement_risk_24m_auc,True,0.7771253004286529,0.7771253004286529
+temporary_displacement_risk_24m_skill,True,0.0291264690855683,0.0291264690855683
+permanent_separation_risk_24m_auc,True,0.6282711903659102,0.6282711903659102
+permanent_separation_risk_24m_skill,True,0.0126882873948927,0.0126882873948927
+downside_25pct_12m_auc,True,0.7595160441389074,0.7595160441389074
+downside_25pct_12m_brier,True,0.1793986995116217,0.1793986995116217
+downside_25pct_12m_subgroups,True,8,8
+downside_25pct_12m_exposed_not_final,True,False,False
+downside_25pct_24m_auc,True,0.8234778234625143,0.8234778234625143
+downside_25pct_24m_brier,True,0.1697060547903712,0.1697060547903712
+downside_25pct_24m_subgroups,True,9,9
+downside_25pct_24m_exposed_not_final,True,False,False
+value_horizon_policy,True,"[""retain_primary_qualified_research_candidate"", ""freeze_secondary_development_candidate""]","[""primary qualified"", ""secondary frozen""]"
+wage_final_rows,True,235,235
+wage_pooled_coverage,True,0.7702127659574468,0.7702127659574468
+wage_ligue1_failure,True,"{""disposition"": ""rejected"", ""status"": ""failed""}","{""disposition"": ""rejected"", ""status"": ""failed""}"
+other_peer_benchmarks_historical_only,True,"[""contract_duration_peer_benchmark"", ""fixed_wage_commitment_peer_benchmark"", ""wage_to_market_value_peer_benchmark""]","[""contract_duration_peer_benchmark"", ""fixed_wage_commitment_peer_benchmark"", ""wage_to_market_value_peer_benchmark""]"
+integrated_score_no_improvement,True,"{""component_auc"": 0.6884538047584179, ""composite_auc"": 0.6830200960052071}",composite lower and rejected
+screening_counts,True,"{""baseline"": 54, ""selected"": 79}","{""baseline"": 54, ""selected"": 79}"
+screening_lift,True,0.462962962962963,0.462962962962963
+screening_qualified,True,"This is retrospective prioritization evidence, not causal savings, confirmed loss, or a deployable current screening policy.",contains not causal savings
+upstream_verifications,True,"{""Data/processed/business_metric_translation_audit/independent_verification.json"": true, ""Data/processed/contract_financial_exposure_benchmark/independent_verification.json"": true, ""Data/processed/engine_v2_contribution_reliability_audit/independent_verification.json"": true, ""Data/processed/engine_v2_final_evaluation_gate/independent_verification.json"": true, ""Data/processed/engine_v2_movement_scope_closeout/independent_verification.json"": true, ""Data/processed/engine_v2_public_value_downside_repair/independent_verification.json"": true, ""Data/processed/integrated_contract_profile/independent_verification.json"": true}","{""Data/processed/business_metric_translation_audit/independent_verification.json"": true, ""Data/processed/contract_financial_exposure_benchmark/independent_verification.json"": true, ""Data/processed/engine_v2_contribution_reliability_audit/independent_verification.json"": true, ""Data/processed/engine_v2_final_evaluation_gate/independent_verification.json"": true, ""Data/processed/engine_v2_movement_scope_closeout/independent_verification.json"": true, ""Data/processed/engine_v2_public_value_downside_repair/independent_verification.json"": true, ""Data/processed/integrated_contract_profile/independent_verification.json"": true}"
+v1_serialized_models_byte_identical,True,[],[]
+v1_freeze_manifest_exceptions_disclosed,True,"[""Data/processed/deployment_models/live_request_integrity.csv"", ""Data/processed/deployment_models/live_request_integrity.json""]","[""Data/processed/deployment_models/live_request_integrity.csv"", ""Data/processed/deployment_models/live_request_integrity.json""]"
+scoring_remains_disabled,True,True,True
+clean_rerun,True,True,True
