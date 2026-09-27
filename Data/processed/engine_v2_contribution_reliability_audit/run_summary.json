@@ -1,0 +1,17 @@
+{
+  "all_checks_passed": true,
+  "checks_passed": 11,
+  "checks_total": 11,
+  "deployment_changed": false,
+  "evaluation_rows": 878,
+  "explanation_policy": "group_only_recent_involvement",
+  "final_holdout_evaluated": false,
+  "model_binaries_written": 0,
+  "parameter_bootstrap_repetitions": 250,
+  "reliability_contract_version": "engine_v2_contribution_reliability_run3_v1_2026-09-08",
+  "run3_decision": "blocked_reliability_repair",
+  "run3_gate_passed": false,
+  "selected_calibration": "raw",
+  "stage": "engine_v2_repaired_contribution_reliability_run3",
+  "subgroup_bootstrap_repetitions": 5000
+}

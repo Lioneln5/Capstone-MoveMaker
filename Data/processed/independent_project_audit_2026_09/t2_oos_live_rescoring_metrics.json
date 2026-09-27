@@ -1,0 +1,412 @@
+[
+  {
+    "endpoint": "sustained_contribution_24m (signed>2023, primary cohort)",
+    "n": 80,
+    "event_rate": 0.475,
+    "mean_pred": 0.526,
+    "AUC": 0.7932,
+    "Brier": 0.1824,
+    "ECE": 0.0941,
+    "by_league": {
+      "Bundesliga": {
+        "n": 18,
+        "auc": 0.74,
+        "rate": 0.389,
+        "mean_pred": 0.491
+      },
+      "La Liga": {
+        "n": 19,
+        "auc": 0.75,
+        "rate": 0.632,
+        "mean_pred": 0.615
+      },
+      "Ligue 1": {
+        "n": 13,
+        "auc": 0.917,
+        "rate": 0.308,
+        "mean_pred": 0.472
+      },
+      "Premier League": {
+        "n": 11,
+        "auc": 0.833,
+        "rate": 0.455,
+        "mean_pred": 0.522
+      },
+      "Serie A": {
+        "n": 19,
+        "auc": 0.744,
+        "rate": 0.526,
+        "mean_pred": 0.51
+      }
+    }
+  },
+  {
+    "endpoint": "any_outbound_24m [verifier flag: event OR followup>=730]",
+    "n": 319,
+    "event_rate": 0.602,
+    "mean_pred": 0.517,
+    "AUC": 0.6786,
+    "Brier": 0.2239,
+    "ECE": 0.0857,
+    "by_league": {
+      "Bundesliga": {
+        "n": 63,
+        "auc": 0.602,
+        "rate": 0.524,
+        "mean_pred": 0.472
+      },
+      "La Liga": {
+        "n": 59,
+        "auc": 0.646,
+        "rate": 0.458,
+        "mean_pred": 0.442
+      },
+      "Ligue 1": {
+        "n": 49,
+        "auc": 0.702,
+        "rate": 0.694,
+        "mean_pred": 0.536
+      },
+      "Premier League": {
+        "n": 70,
+        "auc": 0.601,
+        "rate": 0.6,
+        "mean_pred": 0.53
+      },
+      "Serie A": {
+        "n": 78,
+        "auc": 0.706,
+        "rate": 0.718,
+        "mean_pred": 0.588
+      }
+    }
+  },
+  {
+    "endpoint": "any_outbound_24m [corrected: followup>=730 only]",
+    "n": 243,
+    "event_rate": 0.477,
+    "mean_pred": 0.507,
+    "AUC": 0.6893,
+    "Brier": 0.2233,
+    "ECE": 0.0495,
+    "by_league": {
+      "Bundesliga": {
+        "n": 51,
+        "auc": 0.632,
+        "rate": 0.412,
+        "mean_pred": 0.465
+      },
+      "La Liga": {
+        "n": 50,
+        "auc": 0.67,
+        "rate": 0.36,
+        "mean_pred": 0.439
+      },
+      "Ligue 1": {
+        "n": 33,
+        "auc": 0.67,
+        "rate": 0.545,
+        "mean_pred": 0.516
+      },
+      "Premier League": {
+        "n": 56,
+        "auc": 0.686,
+        "rate": 0.5,
+        "mean_pred": 0.544
+      },
+      "Serie A": {
+        "n": 53,
+        "auc": 0.685,
+        "rate": 0.585,
+        "mean_pred": 0.565
+      }
+    }
+  },
+  {
+    "endpoint": "any_outbound_36m [verifier flag: event OR followup>=1095]",
+    "n": 193,
+    "event_rate": 1.0,
+    "mean_pred": 0.725,
+    "AUC": null,
+    "Brier": 0.0941,
+    "ECE": 0.2755,
+    "by_league": {
+      "Bundesliga": {
+        "n": 33,
+        "auc": null,
+        "rate": 1.0,
+        "mean_pred": 0.669
+      },
+      "La Liga": {
+        "n": 27,
+        "auc": null,
+        "rate": 1.0,
+        "mean_pred": 0.65
+      },
+      "Ligue 1": {
+        "n": 35,
+        "auc": null,
+        "rate": 1.0,
+        "mean_pred": 0.738
+      },
+      "Premier League": {
+        "n": 42,
+        "auc": null,
+        "rate": 1.0,
+        "mean_pred": 0.723
+      },
+      "Serie A": {
+        "n": 56,
+        "auc": null,
+        "rate": 1.0,
+        "mean_pred": 0.786
+      }
+    }
+  },
+  {
+    "endpoint": "permanent_outbound_24m [verifier flag: event OR followup>=730]",
+    "n": 289,
+    "event_rate": 0.433,
+    "mean_pred": 0.366,
+    "AUC": 0.6523,
+    "Brier": 0.2336,
+    "ECE": 0.0661,
+    "by_league": {
+      "Bundesliga": {
+        "n": 55,
+        "auc": 0.58,
+        "rate": 0.364,
+        "mean_pred": 0.328
+      },
+      "La Liga": {
+        "n": 56,
+        "auc": 0.71,
+        "rate": 0.304,
+        "mean_pred": 0.335
+      },
+      "Ligue 1": {
+        "n": 45,
+        "auc": 0.674,
+        "rate": 0.556,
+        "mean_pred": 0.4
+      },
+      "Premier League": {
+        "n": 68,
+        "auc": 0.578,
+        "rate": 0.471,
+        "mean_pred": 0.411
+      },
+      "Serie A": {
+        "n": 65,
+        "auc": 0.677,
+        "rate": 0.477,
+        "mean_pred": 0.356
+      }
+    }
+  },
+  {
+    "endpoint": "permanent_outbound_24m [corrected: followup>=730 only]",
+    "n": 243,
+    "event_rate": 0.325,
+    "mean_pred": 0.367,
+    "AUC": 0.6968,
+    "Brier": 0.1985,
+    "ECE": 0.0534,
+    "by_league": {
+      "Bundesliga": {
+        "n": 51,
+        "auc": 0.63,
+        "rate": 0.314,
+        "mean_pred": 0.332
+      },
+      "La Liga": {
+        "n": 50,
+        "auc": 0.83,
+        "rate": 0.22,
+        "mean_pred": 0.339
+      },
+      "Ligue 1": {
+        "n": 33,
+        "auc": 0.692,
+        "rate": 0.394,
+        "mean_pred": 0.398
+      },
+      "Premier League": {
+        "n": 56,
+        "auc": 0.653,
+        "rate": 0.357,
+        "mean_pred": 0.419
+      },
+      "Serie A": {
+        "n": 53,
+        "auc": 0.697,
+        "rate": 0.358,
+        "mean_pred": 0.355
+      }
+    }
+  },
+  {
+    "endpoint": "downside_25pct_12m (signed>2023, strict cohort)",
+    "n": 381,
+    "event_rate": 0.307,
+    "mean_pred": 0.289,
+    "AUC": 0.7944,
+    "Brier": 0.1599,
+    "ECE": 0.0454,
+    "by_league": {
+      "Bundesliga": {
+        "n": 88,
+        "auc": 0.816,
+        "rate": 0.227,
+        "mean_pred": 0.28
+      },
+      "La Liga": {
+        "n": 70,
+        "auc": 0.85,
+        "rate": 0.514,
+        "mean_pred": 0.319
+      },
+      "Ligue 1": {
+        "n": 53,
+        "auc": 0.768,
+        "rate": 0.208,
+        "mean_pred": 0.213
+      },
+      "Premier League": {
+        "n": 80,
+        "auc": 0.778,
+        "rate": 0.338,
+        "mean_pred": 0.34
+      },
+      "Serie A": {
+        "n": 90,
+        "auc": 0.753,
+        "rate": 0.256,
+        "mean_pred": 0.273
+      }
+    }
+  },
+  {
+    "endpoint": "downside_25pct_24m (signed>2023, strict cohort)",
+    "n": 41,
+    "event_rate": 0.561,
+    "mean_pred": 0.512,
+    "AUC": 0.901,
+    "Brier": 0.1415,
+    "ECE": 0.1294,
+    "by_league": {
+      "Bundesliga": {
+        "n": 11,
+        "auc": 0.9,
+        "rate": 0.545,
+        "mean_pred": 0.518
+      },
+      "La Liga": {
+        "n": 6,
+        "auc": 0.889,
+        "rate": 0.5,
+        "mean_pred": 0.306
+      },
+      "Ligue 1": {
+        "n": 5,
+        "auc": 1.0,
+        "rate": 0.2,
+        "mean_pred": 0.368
+      },
+      "Premier League": {
+        "n": 11,
+        "auc": 0.917,
+        "rate": 0.727,
+        "mean_pred": 0.633
+      },
+      "Serie A": {
+        "n": 8,
+        "auc": 0.8,
+        "rate": 0.625,
+        "mean_pred": 0.582
+      }
+    }
+  },
+  {
+    "endpoint": "downside_10pct_24m (signed>2023, strict cohort)",
+    "n": 41,
+    "event_rate": 0.61,
+    "mean_pred": 0.607,
+    "AUC": 0.91,
+    "Brier": 0.132,
+    "ECE": 0.1471,
+    "by_league": {
+      "Bundesliga": {
+        "n": 11,
+        "auc": 0.9,
+        "rate": 0.545,
+        "mean_pred": 0.629
+      },
+      "La Liga": {
+        "n": 6,
+        "auc": 1.0,
+        "rate": 0.667,
+        "mean_pred": 0.414
+      },
+      "Ligue 1": {
+        "n": 5,
+        "auc": 1.0,
+        "rate": 0.2,
+        "mean_pred": 0.454
+      },
+      "Premier League": {
+        "n": 11,
+        "auc": 0.917,
+        "rate": 0.727,
+        "mean_pred": 0.713
+      },
+      "Serie A": {
+        "n": 8,
+        "auc": 1.0,
+        "rate": 0.75,
+        "mean_pred": 0.669
+      }
+    }
+  },
+  {
+    "endpoint": "downside_50pct_24m (signed>2023, strict cohort)",
+    "n": 41,
+    "event_rate": 0.341,
+    "mean_pred": 0.339,
+    "AUC": 0.7487,
+    "Brier": 0.1904,
+    "ECE": 0.1541,
+    "by_league": {
+      "Bundesliga": {
+        "n": 11,
+        "auc": 0.833,
+        "rate": 0.273,
+        "mean_pred": 0.295
+      },
+      "La Liga": {
+        "n": 6,
+        "auc": 1.0,
+        "rate": 0.5,
+        "mean_pred": 0.179
+      },
+      "Ligue 1": {
+        "n": 5,
+        "auc": 1.0,
+        "rate": 0.2,
+        "mean_pred": 0.224
+      },
+      "Premier League": {
+        "n": 11,
+        "auc": 0.733,
+        "rate": 0.455,
+        "mean_pred": 0.472
+      },
+      "Serie A": {
+        "n": 8,
+        "auc": 0.417,
+        "rate": 0.25,
+        "mean_pred": 0.409
+      }
+    }
+  }
+]

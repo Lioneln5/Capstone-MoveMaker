@@ -1,0 +1,35 @@
+﻿check,passed,observed,expected,notes
+contract_version_exact,True,engine_v2_public_value_downside_repair_v1_2026-09-09,engine_v2_public_value_downside_repair_v1_2026-09-09,Evidence is tied to the frozen contract.
+source_manifest_exact,True,[],[],Every declared input hash matches the current source.
+prior_output_manifest_exact,True,[],[],The pre-verification evidence package has not changed silently.
+endpoints_exact,True,"['downside_25pct_12m', 'downside_25pct_24m']","['downside_25pct_12m', 'downside_25pct_24m']",Only the 25% target at 12m and 24m is modeled.
+origins_exact,True,"['origin_2020', 'origin_2021', 'origin_2022', 'origin_2023']","['origin_2020', 'origin_2021', 'origin_2022', 'origin_2023']",Four origins per endpoint.
+no_2024plus_predictions,True,"[2023, 2023]","[2023, 2023]",Exposed years never enter evaluation.
+identity_disjoint,True,"[{'identity_overlap': 0, 'tuning_identity_overlap': 0, 'calibration_identity_overlap': 0}, {'identity_overlap': 0, 'tuning_identity_overlap': 0, 'calibration_identity_overlap': 0}, {'identity_overlap': 0, 'tuning_identity_overlap': 0, 'calibration_identity_overlap': 0}, {'identity_overlap': 0, 'tuning_identity_overlap': 0, 'calibration_identity_overlap': 0}, {'identity_overlap': 0, 'tuning_identity_overlap': 0, 'calibration_identity_overlap': 0}, {'identity_overlap': 0, 'tuning_identity_overlap': 0, 'calibration_identity_overlap': 0}, {'identity_overlap': 0, 'tuning_identity_overlap': 0, 'calibration_identity_overlap': 0}, {'identity_overlap': 0, 'tuning_identity_overlap': 0, 'calibration_identity_overlap': 0}]",all zero,"No evaluation player appears in fitting, tuning, or calibration rows."
+proposal_and_scoring_features_absent,True,[],[],Candidate is decision-time-valid and role-safe with respect to scoring rates.
+involvement_redundancy_disclosed,True,"[{'endpoint': 'downside_25pct_12m', 'spearman': 0.957827247232181, 'required_explanation_policy': 'group_only_recent_involvement'}, {'endpoint': 'downside_25pct_24m', 'spearman': 0.9590288439952313, 'required_explanation_policy': 'group_only_recent_involvement'}]",group-only explanation,Correlated involvement inputs cannot receive separate causal importance claims.
+cohort_ids_downside_25pct_12m_origin_2020,True,344,344,No event was silently added or removed.
+cohort_ids_downside_25pct_12m_origin_2021,True,370,370,No event was silently added or removed.
+cohort_ids_downside_25pct_12m_origin_2022,True,340,340,No event was silently added or removed.
+cohort_ids_downside_25pct_12m_origin_2023,True,364,364,No event was silently added or removed.
+cohort_ids_downside_25pct_24m_origin_2020,True,363,363,No event was silently added or removed.
+cohort_ids_downside_25pct_24m_origin_2021,True,334,334,No event was silently added or removed.
+cohort_ids_downside_25pct_24m_origin_2022,True,334,334,No event was silently added or removed.
+cohort_ids_downside_25pct_24m_origin_2023,True,323,323,No event was silently added or removed.
+raw_predictions_reconstructed,True,1.1102230246251565e-16,<1e-12,Independent refits reproduce primary predictions.
+selected_C_reconstructed,True,0.0,<1e-12,Hyperparameters derive only from preceding-year validation.
+one_calibrator_per_endpoint,True,"{'downside_25pct_12m': 'raw', 'downside_25pct_24m': 'raw'}",one per endpoint,Calibration selection is explicit.
+selected_calibration_rows_exact,True,2772,2772,Selected rows come from the declared calibrator only.
+selected_probabilities_exact,True,0.0,<1e-12,No post-selection prediction edits.
+pooled_metrics_reconstructed,True,4.85722573273506e-17,<1e-12,Decision metrics derive from row-level development evidence.
+comparison_intervals_ordered,True,4,all ordered,Candidate uncertainty is explicit.
+parameter_intervals_ordered,True,2772,all ordered,Every prediction has an 80% refit interval.
+parameter_refits_complete,True,100,>=95,At least 95% of predeclared refits succeeded.
+subgroup_intervals_ordered,True,34,all ordered,Subgroup uncertainty is not hidden.
+all_broad_groups_reported,True,"['age', 'league', 'position', 'support']",league and position,Advertised population groups are audited.
+refusals_explained,True,43,all explained,No silent out-of-support score.
+exposure_counts_reconstructed,True,"{'downside_25pct_12m': (376, 332, 209), 'downside_25pct_24m': (41, 41, 26)}","{'downside_25pct_12m': (376, 332, 209), 'downside_25pct_24m': (41, 41, 26)}",Counts use the repaired complete-feature contract.
+exposure_classification_permanent,True,"[{'endpoint': 'downside_25pct_12m', 'classification': 'previously_exposed_restricted_V1_confirmation_only'}, {'endpoint': 'downside_25pct_24m', 'classification': 'previously_exposed_restricted_V1_confirmation_only'}]",restricted only,A fresh chat cannot reset data exposure.
+no_final_release_authorized,True,"[{'endpoint': 'downside_25pct_12m', 'final_release_authorized': False}, {'endpoint': 'downside_25pct_24m', 'final_release_authorized': False}]",all false,Development evidence cannot masquerade as final validation.
+no_model_artifacts,True,0,0,Cleanup writes evidence only.
+frozen_v1_unchanged,True,[],[],Historical V1 remains byte-identical.

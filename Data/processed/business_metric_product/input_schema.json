@@ -104,6 +104,14 @@
       "minimum": 0,
       "maximum": 1
     },
+    "public_value_downside_25pct_probability_12m": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
     "public_value_downside_25pct_probability_24m": {
       "type": [
         "number",

@@ -1,0 +1,22 @@
+﻿check,actual,expected,passed,note
+required_outputs_exact,"['README.md', 'build_checks.csv', 'candidate_comparisons.csv', 'coefficient_stability.csv', 'cohort_by_origin.csv', 'deployment_unchanged_manifest.csv', 'feature_missingness_by_origin.csv', 'independent_verification.csv', 'independent_verification.json', 'origin_metrics.csv', 'out_of_time_predictions.csv', 'output_manifest.csv', 'player_disjoint_sensitivity.csv', 'preregistration.json', 'run_summary.json', 'selection_decision.csv', 'source_manifest.csv', 'subgroup_metrics.csv']","['README.md', 'build_checks.csv', 'candidate_comparisons.csv', 'coefficient_stability.csv', 'cohort_by_origin.csv', 'deployment_unchanged_manifest.csv', 'feature_missingness_by_origin.csv', 'origin_metrics.csv', 'out_of_time_predictions.csv', 'output_manifest.csv', 'player_disjoint_sensitivity.csv', 'preregistration.json', 'run_summary.json', 'selection_decision.csv', 'source_manifest.csv', 'subgroup_metrics.csv']",True,Evidence package contains only declared outputs.
+output_manifest_exact,1,1,True,Every evidence output matches its recorded hash and byte count.
+source_manifest_exact,1,1,True,Every model and data input matches the Run 2 source record.
+repaired_evaluation_cohort_exact,878,878,True,Independent cohort reconstruction matches Run 1.
+repaired_positive_count_exact,438,438,True,Independent target reconstruction has 438 positives.
+all_predictions_refit_exact,1.1102230246251565e-16,<=1e-12,True,Independent refits reproduce both protocols and every candidate.
+selected_hyperparameters_exact,1,1,True,Every preceding-year validation choice reproduces.
+player_disjointness_independent,1,1,True,No evaluation identity appears in fitting rows and no validation identity appears in tuning rows.
+prediction_row_count_exact,7024,7024,True,878 events × four candidates × two protocols are reconstructed.
+saved_brier_loss_exact,2.220446049250313e-16,<=1e-14,True,Every saved row-level loss reconstructs.
+clustered_comparisons_exact,1,1,True,"All pooled deltas, origin wins, and player-cluster intervals reconstruct."
+primary_gate_independent,1,1,True,The compact core passes every predeclared development gate.
+prior_volume_not_selected,0,0,True,Sparse prior-volume fields do not establish incremental Brier skill.
+decision_research_only,not_deployed,not_deployed,True,Passing Run 2 cannot authorize deployment.
+broad_league_position_diagnostic,1,1,True,All five leagues and four broad positions beat chronology with sufficient evidence in the preliminary audit.
+small_age_group_not_overclaimed,insufficient_evidence,insufficient_evidence,True,The 42-row age-34+ view is explicitly limited.
+deployment_model_files_unchanged,1,1,True,Every protected deployment artifact remains at its Run 2 pre-run hash; the two regenerable integrity reports are excluded from artifact immutability.
+no_serialized_candidate,0,0,True,Run 2 writes no model binary.
+final_holdout_not_opened,False,False,True,No 2024+ extension outcome is evaluated.
+development_only_decision,advance_to_reliability_audit,advance_to_reliability_audit,True,Run 2 advances only to a new reliability audit.
+durable_documentation_updated,1,1,True,Run 2 result and its non-deployment boundary are registered.

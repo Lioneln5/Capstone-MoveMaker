@@ -164,6 +164,7 @@ class DeploymentScorer:
     def explain_headline_scores(
         self, feature_values: dict[str, Any],
         displayed_contribution_24m: float | None,
+        displayed_downside_25pct_12m: float | None,
         displayed_downside_25pct_24m: float | None,
         displayed_continuous_stay_24m: float | None,
     ) -> dict[str, Any]:
@@ -193,12 +194,24 @@ class DeploymentScorer:
             )
             result["sustained_contribution"] = {"status": "available", **breakdown}
 
-        downside_artifact = self._load("extension_value_preservation_diagnostic", "downside_25pct_24m", "24m")
-        if displayed_downside_25pct_24m is None:
-            result["public_value_downside_risk"] = {"status": "unavailable"}
-        else:
-            breakdown = explain_single_shot(downside_artifact, feature_values, displayed_probability=displayed_downside_25pct_24m)
-            result["public_value_downside_risk"] = {"status": "available", **breakdown}
+        for horizon, displayed in [
+            ("12m", displayed_downside_25pct_12m),
+            ("24m", displayed_downside_25pct_24m),
+        ]:
+            key = f"public_value_downside_risk_{horizon}"
+            downside_artifact = self._load(
+                "extension_value_preservation_diagnostic", f"downside_25pct_{horizon}", horizon
+            )
+            if displayed is None:
+                result[key] = {"status": "unavailable"}
+            else:
+                breakdown = explain_single_shot(
+                    downside_artifact, feature_values, displayed_probability=displayed
+                )
+                result[key] = {"status": "available", **breakdown}
+
+        # Backward-compatible alias now follows the primary product horizon.
+        result["public_value_downside_risk"] = result["public_value_downside_risk_12m"]
 
         hazard_artifact = self._load("extension_survival_diagnostic", "any_outbound", "24m")
         if displayed_continuous_stay_24m is None:
@@ -271,6 +284,7 @@ class DeploymentScorer:
         explainability = self.explain_headline_scores(
             fv,
             displayed_contribution_24m=_value(opportunity["sustained_contribution_probability_24m"]),
+            displayed_downside_25pct_12m=_value(asset_value["value_downside_25pct_probability_12m"]),
             displayed_downside_25pct_24m=_value(asset_value["value_downside_25pct_probability_24m"]),
             displayed_continuous_stay_24m=_value(continuity["continuous_stay_probability_24m"]),
         )

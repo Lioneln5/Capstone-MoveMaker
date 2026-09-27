@@ -24,6 +24,13 @@ from pydantic import BaseModel, Field
 
 ROOT = Path(__file__).resolve().parents[1]
 HTML_DIR = ROOT / "html"
+HISTORICAL_PROFILES = (
+    ROOT
+    / "Data"
+    / "processed"
+    / "business_metric_product"
+    / "historical_example_profiles.json"
+)
 
 app = FastAPI(title="MoveMaker Incumbent-Extension API", version="1.0.0")
 app.mount("/assets", StaticFiles(directory=HTML_DIR / "assets"), name="assets")
@@ -41,7 +48,9 @@ SCORING_PAUSED_REASON = (
 )
 SCORING_PAUSED_DETAIL = f"Live scoring is unavailable. {SCORING_PAUSED_REASON}"
 
-# The service exposes only static pages, status, and refusing scoring routes.
+# The service exposes static research pages, saved historical exhibit data,
+# status, and refusing scoring routes. The exhibit is a serialized record;
+# serving it never loads or invokes a model.
 app.add_middleware(
     CORSMiddleware, allow_origins=["*"], allow_credentials=False,
     allow_methods=["GET", "POST"], allow_headers=["*"],
@@ -63,17 +72,25 @@ def _load_engine() -> None:
 
 
 @app.get("/", include_in_schema=False)
-def tool_page() -> FileResponse:
-    """Serve the actual MoveMaker interface at the same address as the API."""
+def case_study_page() -> FileResponse:
+    """Serve the MoveMaker case-study landing page."""
     return FileResponse(HTML_DIR / "index.html")
 
 
 @app.get("/{page_name}.html", include_in_schema=False)
 def supporting_page(page_name: str) -> FileResponse:
-    allowed = {"index", "about", "how-it-works", "scope", "contact"}
+    allowed = {"index", "prototype", "about", "how-it-works", "scope", "contact"}
     if page_name not in allowed:
         raise HTTPException(status_code=404, detail="Page not found")
     return FileResponse(HTML_DIR / f"{page_name}.html")
+
+
+@app.get("/historical-example-profiles.json", include_in_schema=False)
+def historical_example_profiles() -> FileResponse:
+    """Serve frozen historical exhibits without invoking a scoring engine."""
+    if not HISTORICAL_PROFILES.is_file():
+        raise HTTPException(status_code=404, detail="Historical exhibits unavailable")
+    return FileResponse(HISTORICAL_PROFILES, media_type="application/json")
 
 
 @app.get("/health")

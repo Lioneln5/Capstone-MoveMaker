@@ -1,0 +1,4 @@
+endpoint,verifier_cohort_rows,rows_with_full_followup,rows_included_only_because_event_occurred,event_rate_verifier_cohort,event_rate_full_followup_only,verifier_reported
+any_outbound_24m,323,244,79,0.604,0.475,AUC 0.6786 (n=319)
+any_outbound_36m,196,0,196,1.0,,"Brier 0.0941 (n=193, one class)"
+permanent_outbound_24m,291,244,47,0.433,0.324,AUC 0.6523 (n=289)

@@ -1,0 +1,19 @@
+﻿check,actual,expected,passed,note
+required_outputs_exact,"['README.md', 'build_checks.csv', 'calibration_bins.csv', 'calibration_fit_predictions.csv', 'calibration_method_comparison.csv', 'calibration_predictions.csv', 'calibration_selection.csv', 'coefficient_stability.csv', 'deployment_unchanged_manifest.csv', 'independent_verification.csv', 'independent_verification.json', 'missingness_reliability.csv', 'monotonicity_stress_test.csv', 'ood_reason_summary.csv', 'ood_support_profiles.json', 'ood_support_summary.csv', 'origin_calibration_metrics.csv', 'output_manifest.csv', 'parameter_uncertainty_summary.csv', 'preregistration.json', 'redundancy_stress_test.csv', 'reliability_decision.csv', 'run_summary.json', 'selected_predictions.csv', 'source_manifest.csv', 'subgroup_reliability.csv', 'temporal_drift.csv']","['README.md', 'build_checks.csv', 'calibration_bins.csv', 'calibration_fit_predictions.csv', 'calibration_method_comparison.csv', 'calibration_predictions.csv', 'calibration_selection.csv', 'coefficient_stability.csv', 'deployment_unchanged_manifest.csv', 'missingness_reliability.csv', 'monotonicity_stress_test.csv', 'ood_reason_summary.csv', 'ood_support_profiles.json', 'ood_support_summary.csv', 'origin_calibration_metrics.csv', 'output_manifest.csv', 'parameter_uncertainty_summary.csv', 'preregistration.json', 'redundancy_stress_test.csv', 'reliability_decision.csv', 'run_summary.json', 'selected_predictions.csv', 'source_manifest.csv', 'subgroup_reliability.csv', 'temporal_drift.csv']",True,The evidence package contains only declared outputs.
+output_manifest_exact,1,1,True,Every declared output matches its recorded hash and size.
+source_manifest_exact,1,1,True,Every Run 3 input retains its recorded hash.
+all_models_and_calibrators_refit,1.1102230246251565e-16,<=1e-12,True,"Independent origin refits reproduce raw, Platt, and isotonic predictions."
+support_policy_reconstructed,4.440892098500626e-16,<=1e-12,True,Origin-local missingness and OOD states reproduce.
+coefficients_refit_exact,9.71445146547012e-17,<=1e-12,True,Every standardized coefficient reproduces.
+calibration_metrics_recomputed,8.847089727481716e-17,<=1e-12,True,All pooled calibration metrics derive from row predictions.
+calibration_selection_recomputed,raw,raw,True,The frozen non-inferiority/ECE/simplicity rule selects raw probabilities.
+nested_parameter_intervals_exact,1.1102230246251565e-16,<=1e-12,True,"All 1,000 independent nested player-cluster refits reproduce the saved intervals."
+subgroup_metrics_and_intervals_exact,1.1102230246251565e-16,<=1e-12,True,Every subgroup metric and 99% player-cluster interval reconstructs.
+subgroup_statuses_exact,[],[],True,The frozen evidence rules reproduce every subgroup status.
+reliability_gate_exact,[],[],True,All 15 frozen gates reconstruct; only all-group support fails.
+group_only_explanation_enforced,0.9481053507835339,>0.9,True,Highly redundant involvement inputs cannot receive separate importance narratives.
+run_recorded_no_deployment_mutation,1,1,True,The Run 3 snapshot records identical before/after hashes for every deployment file.
+serialized_model_files_unchanged,1,1,True,Every frozen serialized model retains its Run 3 hash; regenerable verification reports are not model binaries.
+no_model_binary,0,0,True,Run 3 writes no model or calibrator artifact.
+final_holdout_closed,False,False,True,No 2024+ outcome was evaluated.
+durable_documentation_updated,1,1,True,"The result, release blocker, and runner registry are permanent."

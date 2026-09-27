@@ -1,0 +1,4 @@
+﻿threshold_each_year,eligible_rows,positive_targets,negative_targets,positive_rate,labels_different_from_25pct,status
+0.2,878,466,412,0.530751708428246,28,sensitivity_only
+0.25,878,438,440,0.4988610478359909,0,declared_policy
+0.3,878,409,469,0.46583143507972663,29,sensitivity_only

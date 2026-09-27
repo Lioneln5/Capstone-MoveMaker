@@ -1,0 +1,4 @@
+﻿cohort,rows,positive_targets,negative_targets,positive_rate
+legacy_asymmetric_reference,929,454,475,0.48869752421959095
+symmetric_year1_year2_evidence,922,453,469,0.4913232104121475
+complete_schedule_checked_normalized,878,438,440,0.4988610478359909

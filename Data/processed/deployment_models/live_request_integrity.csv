@@ -4,12 +4,14 @@ sample_scored_without_exception,0,0,True,58/60 usable pairs. Failures: none
 live_request_no_silent_prior_wage_loss,0,0,True,0/58 sampled players -- each KNOWN to have a salary-panel row -- came back 'unavailable' on a live request instead of falling back to their most recent known season. This is exactly the bug class this script exists to catch.
 live_request_staleness_warning_present,51,51,True,"Every live request using a fallback older than its immediate prior season must warn, while requests covered by the live salary overlay must not be mislabeled stale."
 historical_request_no_false_positive_staleness_warning,0,0,True,A decision_date inside the panel's own covered season must NOT trigger a staleness warning -- guards against the fix over-firing.
-live_request_pre365_coverage_gap_warning_present,58,>0,True,"Sporting data cutoff is 2026-07-06, 47 day(s) behind today -- live requests should be warning about the resulting coverage gap."
+live_request_pre365_coverage_gap_warning_present,58,>0,True,"Sporting data cutoff is 2026-07-06, 80 day(s) behind today -- live requests should be warning about the resulting coverage gap."
 historical_request_no_false_positive_pre365_warning,0,0,True,A decision_date well inside the sporting data's coverage must not trigger the coverage-gap warning.
 tier1_engine_scored_without_exception,0,0,True,57 profiles scored through the full engine. Failures: none
 tier1_permanent_relationship_availability_matches_continuity,57,57,True,permanent_relationship supported for 57/57; continuous_stay(24m) supported for 57/57 -- both draw on the same survival-model feature set and should have matching availability.
 tier1_permanent_relationship_ordering_never_violated,0,0,True,Checked 57 profiles where both were available; permanent-relationship probability must never be lower than continuous-stay.
 tier1_duration_peer_supported_rate,57,>=51,True,57/57 live profiles got a supported contract-duration peer estimate.
 tier1_wage_value_peer_supported_rate,57,>=51,True,57/57 live profiles got a supported wage-to-value peer estimate.
-tier2_value_preservation_supported_rate,57,>=51,True,57/57 live profiles got a supported 24-month value-preservation probability.
-tier2_downside_threshold_ordering_never_violated,0,0,True,"Checked 57 profiles' 10%/25%/50% 24-month downside probabilities for non-increasing severity order after the scorer's PAVA correction -- this is exactly the class of bug the permanent-relationship check caught minutes earlier, checked here for the newly-deployed 10% threshold specifically."
+tier2_primary_12m_value_preservation_supported_rate,57,>=51,True,57/57 live profiles got a supported 12-month value-preservation probability.
+tier2_provisional_24m_value_preservation_supported_rate,57,>=51,True,57/57 live profiles got a supported but explicitly provisional 24-month value-preservation probability.
+tier2_public_value_horizon_policy_never_violated,0,0,True,"Every available 12-month estimate must carry the primary-horizon evidence contract, while every available 24-month estimate must carry the exact provisional warning and the 26-row / 3-row-smallest-league bottleneck disclosure."
+tier2_downside_threshold_ordering_never_violated,0,0,True,"Checked 57 primary 12-month and 57 provisional 24-month profiles for non-increasing severity order after the scorer's PAVA correction -- this is exactly the class of bug the permanent-relationship check caught minutes earlier, checked here for the newly-deployed 10% threshold specifically."

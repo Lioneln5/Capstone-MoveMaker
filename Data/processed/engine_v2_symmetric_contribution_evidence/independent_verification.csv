@@ -1,0 +1,18 @@
+﻿check,actual,expected,passed,note
+required_outputs,"['README.md', 'build_checks.csv', 'excluded_asymmetric_evaluation_cases.csv', 'independent_verification.csv', 'output_manifest.csv', 'run_summary.json', 'source_manifest.csv', 'symmetric_evidence_summary.csv', 'target_contract.json', 'unavailability_reasons.csv']","['README.md', 'build_checks.csv', 'excluded_asymmetric_evaluation_cases.csv', 'output_manifest.csv', 'run_summary.json', 'source_manifest.csv', 'symmetric_evidence_summary.csv', 'target_contract.json', 'unavailability_reasons.csv']",True,The target-repair evidence package is complete.
+output_manifest_exact,1,1,True,Every declared output hash and byte count matches.
+source_manifest_exact,1,1,True,The master and V1 freeze record remain byte-identical to the repair run.
+legacy_reference_recomputed,929,929,True,The comparison cohort is independently reconstructed.
+strict_reference_recomputed,922,922,True,The symmetric cohort is independently reconstructed.
+seven_rows_become_unavailable,7,7,True,The seven defective rows receive no binary target.
+strict_positive_count,453,453,True,The strict cohort retains 453 positive labels.
+strict_labels_exact,1,1,True,All eligible labels exactly match the declared 25% both-years rule.
+availability_exact,1,1,True,Availability is exactly the conjunction of both annual evidence gates and shares.
+excluded_ids_exact,7,7,True,Saved cases are all and only the asymmetric rows.
+synthetic_symmetric_gate,"[1, 0, None, None, None]","[1, 0, None, None, None]",True,"Positive, negative, Year-1 ineligible, Year-2 ineligible, and missing-share cases behave correctly."
+stored_flag_mismatch_fails_closed,1,1,True,A stale stored flag cannot silently bypass primitive evidence validation.
+final_holdout_not_opened,False,False,True,The 2024+ cohort remains unopened.
+no_models_fitted,0,0,True,"This is a target repair, not a model experiment."
+no_deployment_change,0,0,True,No model artifact was changed.
+frozen_v1_protected_hashes_exact,1,1,True,Every protected V1 artifact retains its recorded hash; regenerable integrity reports are not model artifacts.
+audit_documents_repair_status,1,1,True,Durable documentation distinguishes the implemented gate from unresolved release blockers.

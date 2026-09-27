@@ -1,0 +1,9 @@
+﻿protocol,candidate,evaluation_rows,mean_origin_brier,mean_origin_auc,mean_origin_calibration_gap
+player_disjoint,B0_chronology_prevalence,878,0.25084627742290216,0.5,0.026422110887548075
+player_disjoint,B1_market_profile,878,0.21393441500613167,0.708110441884495,0.020433226444722216
+player_disjoint,B2_core_recent_involvement,878,0.19624459113466716,0.766043323928842,0.025722880592579996
+player_disjoint,B3_plus_prior_volume,878,0.1963059057363729,0.7673173376718067,0.023755116400076694
+ordinary_temporal_sensitivity,B0_chronology_prevalence,878,0.25119708880013025,0.5,0.031877545967572384
+ordinary_temporal_sensitivity,B1_market_profile,878,0.21328891469964098,0.7103948233733869,0.024496925824265096
+ordinary_temporal_sensitivity,B2_core_recent_involvement,878,0.19491026525706398,0.7664469980143102,0.029723930640351292
+ordinary_temporal_sensitivity,B3_plus_prior_volume,878,0.19597709779596192,0.7677746204014781,0.027048036031158792

@@ -7,7 +7,8 @@ This package implements and verifies candidate business translations for incumbe
 - Fixed-wage commitment, commitment/public-value scale, age at expiration, and proposed wage change.
 - Fixed-commitment difference from the Phase-4 peer estimate and an offer-aggressiveness percentile based on 1,504 frozen out-of-time residuals.
 - Qualified low-contribution wage exposure: two-year fixed wages × modeled low-contribution probability.
-- Paired 24-month public-value downside probability and euro threshold.
+- Primary paired 12-month public-value downside probability and euro threshold.
+- Optional 24-month public-value downside scenarios with an enforced warning that available 2024+ outcomes were previously exposed in frozen V1 verification and that the repaired complete-feature, player-disjoint 2024 cohort contains only 26 outcomes, with as few as 3 in one Big Five league.
 - Paired 36-month continuous-stay probability and scheduled post-36-month fixed wages.
 - Matched known-panel club salary position and payroll share.
 

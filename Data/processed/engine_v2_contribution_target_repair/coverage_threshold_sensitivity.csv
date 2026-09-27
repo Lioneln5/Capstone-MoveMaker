@@ -1,0 +1,6 @@
+﻿minimum_peer_coverage,symmetric_reference_rows,eligible_rows,excluded_rows,status
+0.7,922,883,39,sensitivity_only
+0.75,922,882,40,sensitivity_only
+0.8,922,878,44,declared_policy
+0.85,922,875,47,sensitivity_only
+0.9,922,872,50,sensitivity_only

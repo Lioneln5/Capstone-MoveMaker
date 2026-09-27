@@ -1,0 +1,5 @@
+﻿endpoint,candidate,baseline,rows,player_clusters,brier_improvement,brier_improvement_ci_low_95,brier_improvement_ci_high_95,origin_wins
+downside_25pct_12m,B2_core_recent_involvement,B0_chronology_prevalence,1418,1215,0.03835967944880352,0.028693736976026674,0.04822384376917062,4
+downside_25pct_12m,B2_core_recent_involvement,B1_market_profile,1418,1215,0.003229580845197371,0.0002935024710961361,0.006135323004862304,3
+downside_25pct_24m,B2_core_recent_involvement,B0_chronology_prevalence,1354,1181,0.07977218608946958,0.0680145777565545,0.09163959261556127,4
+downside_25pct_24m,B2_core_recent_involvement,B1_market_profile,1354,1181,0.004009452017791682,0.001271885551515895,0.006720200219373059,3

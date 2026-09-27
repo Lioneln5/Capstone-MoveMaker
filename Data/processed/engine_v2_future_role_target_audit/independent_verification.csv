@@ -1,0 +1,26 @@
+﻿check,actual,expected,passed,note
+required_outputs,"['README.md', 'audit_findings.csv', 'build_checks.csv', 'club_window_coverage_break_cases.csv', 'club_window_coverage_sensitivity.csv', 'cohort_flow.csv', 'definition_sensitivity.csv', 'denominator_sensitivity.csv', 'independent_verification.csv', 'injury_available_denominator_summary.csv', 'injury_burden_decomposition.csv', 'injury_case_audit.csv', 'movement_decomposition.csv', 'output_manifest.csv', 'run_summary.json', 'source_manifest.csv', 'subgroup_prevalence.csv', 'threshold_sensitivity.csv', 'year1_evidence_asymmetry.csv']","['README.md', 'audit_findings.csv', 'build_checks.csv', 'club_window_coverage_break_cases.csv', 'club_window_coverage_sensitivity.csv', 'cohort_flow.csv', 'definition_sensitivity.csv', 'denominator_sensitivity.csv', 'injury_available_denominator_summary.csv', 'injury_burden_decomposition.csv', 'injury_case_audit.csv', 'movement_decomposition.csv', 'output_manifest.csv', 'run_summary.json', 'source_manifest.csv', 'subgroup_prevalence.csv', 'threshold_sensitivity.csv', 'year1_evidence_asymmetry.csv']",True,Required outputs exist; the verifier report is the only allowed extra file.
+output_manifest_exact,1,1,True,Every declared output hash and byte count matches.
+source_manifest_exact,1,1,True,All input sources remain byte-identical to the audited run.
+current_cohort_recomputed,929,929,True,Current asymmetric evaluation cohort independently reconstructed.
+strict_cohort_recomputed,922,922,True,Symmetric Year-1/Year-2 cohort independently reconstructed.
+asymmetry_recomputed,7,7,True,Seven current rows lack valid Year-1 evidence.
+strict_positive_count,453,453,True,25% both-years target count is exact.
+asymmetry_ids_exact,7,7,True,Saved defect cases are the exact reconstructed rows.
+threshold_table_recomputed,1,1,True,Every threshold count and rate is independently reproduced.
+weighted_definition_recomputed,146,146,True,Cumulative two-year alternative changes 146 labels.
+coverage_table_recomputed,1,1,True,Every minimum-game sensitivity count is independently reproduced.
+coverage_break_ids_exact,47,47,True,All and only under-30-game windows are saved.
+movement_partition,922,922,True,Movement states partition the strict cohort.
+temporary_negative_reference,182,182,True,Temporary movement explains 182 negative labels.
+injury_adjusted_share_formula,1,1,True,Saved adjusted shares use raw minutes and audited available-game denominators exactly.
+injury_current_targets_join,1,1,True,Injury subset retains the exact strict target labels.
+injury_label_change_reference,29,29,True,Availability adjustment changes 29 auditable labels.
+finding_ledger_complete,"['FR-01', 'FR-02', 'FR-03', 'FR-04', 'FR-05', 'FR-06', 'FR-07', 'FR-08', 'FR-09']","['FR-01', 'FR-02', 'FR-03', 'FR-04', 'FR-05', 'FR-06', 'FR-07', 'FR-08', 'FR-09']",True,Nine unique target-validity findings are present.
+overall_verdict_unique,1,1,True,One explicit overall product verdict exists.
+final_holdout_not_evaluated,False,False,True,Run metadata explicitly records the holdout policy.
+runner_checks_passed,True,True,True,Runner completed all internal invariants.
+readme_decision_language,1,1,True,README states the limitation and replacement outcome structure.
+durable_audit_document,1,1,True,Permanent audit document preserves the target verdict and core evidence.
+critical_register_linked,1,1,True,Target failure is maintained as its own release blocker.
+public_status_corrected,1,1,True,Top-level publication status reflects the later target audit.

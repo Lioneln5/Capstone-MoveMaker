@@ -160,8 +160,30 @@ def main() -> None:
         "The scope decision uses independently verified evidence.",
     )
     freeze = json.loads(FREEZE.read_text(encoding="utf-8"))
-    unchanged = all(sha256(ROOT / item["path"]) == item["sha256"] for item in freeze["files"])
-    add("v1_frozen", unchanged, unchanged, True, "All 24 V1 artifacts remain byte-identical.")
+    changed = [
+        item["path"] for item in freeze["files"]
+        if sha256(ROOT / item["path"]) != item["sha256"]
+    ]
+    changed_models = [path for path in changed if path.endswith(".joblib")]
+    known_report_changes = {
+        "Data/processed/deployment_models/live_request_integrity.csv",
+        "Data/processed/deployment_models/live_request_integrity.json",
+    }
+    models_unchanged = not changed_models
+    add(
+        "v1_serialized_models_frozen",
+        models_unchanged,
+        changed_models,
+        [],
+        "All frozen V1 model binaries must remain byte-identical.",
+    )
+    add(
+        "v1_freeze_manifest_exceptions_disclosed",
+        set(changed) == known_report_changes,
+        changed,
+        sorted(known_report_changes),
+        "The two live-request audit reports were intentionally regenerated after HTTP scoring was disabled.",
+    )
     add("final_holdout_sealed", True, False, False, "No 2024+ target is opened by this closeout.")
     check_frame = pd.DataFrame(checks)
 
@@ -182,7 +204,8 @@ def main() -> None:
         "checks_total": len(check_frame),
         "final_holdout_opened": False,
         "deployment_changed": False,
-        "v1_unchanged": unchanged,
+        "v1_serialized_models_unchanged": models_unchanged,
+        "v1_freeze_manifest_changed_files": changed,
     }
     write_json(output / "run_summary.json", summary)
     (output / "README.md").write_text(

@@ -1,0 +1,66 @@
+{
+  "artifact_policy": "No fitted model or calibrator is serialized and deployment is unchanged.",
+  "calibration": {
+    "fit_data": "preceding-year player-disjoint validation predictions only",
+    "methods": [
+      "raw",
+      "platt",
+      "isotonic"
+    ],
+    "selection": "retain methods within raw +0.002 Brier and +0.01 log loss; choose lowest pooled ECE, with differences <=0.005 favoring simplicity"
+  },
+  "candidate": "B2_core_recent_involvement",
+  "contract_version": "engine_v2_contribution_reliability_run3_v1_2026-09-08",
+  "development_origins": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "endpoint_gates": {
+    "all_broad_leagues_and_positions_supported": true,
+    "extreme_probability_share_maximum": 0.05,
+    "involvement_coefficients_positive_in_all_origins": true,
+    "latest_involvement_psi_maximum": 0.25,
+    "mean_parameter_width_80_maximum": 0.2,
+    "origin_reliability": "at least 3/4 origins with ECE <= 0.12 and calibration gap <= 0.08",
+    "p90_parameter_width_80_maximum": 0.3,
+    "pooled_calibration_gap_maximum": 0.05,
+    "pooled_calibration_slope_range": [
+      0.75,
+      1.25
+    ],
+    "pooled_ece_maximum": 0.08,
+    "positive_skill_origins": 3,
+    "target_rate_range_maximum": 0.15
+  },
+  "explanation_policy": "If the two recent-involvement inputs have absolute Spearman correlation above 0.9, expose only their combined group contribution; do not present independent causal or importance claims.",
+  "final_holdout_policy": "No extension signed in 2024 or later is evaluated.",
+  "model_contract_version": "engine_v2_contribution_model_run2_v1_2026-09-08",
+  "profile_support": {
+    "limited": "outside a training 1st-99th percentile or above the learned P95 robust-distance envelope",
+    "maximum_refusal_rate": 0.1,
+    "refused": "missing required input, unseen category, outside observed range, or above the learned P99 robust-distance envelope"
+  },
+  "scope": "probability reliability audit only; no feature or model-family search",
+  "subgroup_support": {
+    "brier_skill_rule": "99% player-cluster interval lower bound above zero",
+    "maximum_calibration_gap": 0.1,
+    "minimum_auc": 0.6,
+    "minimum_events": 15,
+    "minimum_nonevents": 15,
+    "minimum_origins": 3,
+    "minimum_rows": 75,
+    "required_types": [
+      "league",
+      "position"
+    ]
+  },
+  "target_contract_version": "engine_v2_sustained_realized_contribution_v2_2026-09-07",
+  "uncertainty": {
+    "parameter_draws": 250,
+    "parameter_interval": "80% nested player-cluster refit interval",
+    "subgroup_draws": 5000,
+    "subgroup_interval": "99% player-cluster Brier-skill interval"
+  }
+}

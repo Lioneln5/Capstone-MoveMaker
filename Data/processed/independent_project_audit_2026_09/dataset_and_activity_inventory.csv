@@ -1,0 +1,22 @@
+asset,kind,coverage_or_size,current_use,activity_status
+Capology extension pages (Data/leagues/*/extensions),"raw, local","2,811 raw -> 2,805 canonical events; 2018-19..2024-25; PL 2022-23 page absent","engine input (targets, terms, cohort)",active
+Capology salary pages (Data/leagues/*/sallaries),"raw, local","19,770 rows through 2023-24 + 9,103 overlay rows 2024-25..2026-27","engine input (prior wage, club panel) + live overlay",active
+Capology payroll / transfer-window pages,"raw, local","1,074 club-seasons 2014-15..2024-25",branch only: club financial context (rejected as predictor),research-only
+Transfermarkt current collection (Data/TransferMarkt),"raw, local","appearances 1.89M, lineups 3.18M, games 88,958, valuations 507,815, transfers 35,139, players 50,149","engine input (windows, identity, valuations, outcomes)",active
+Supplemental Transfermarkt datalake (football-datasets-main),"raw, local","valuations 901K, transfers 1.10M, performances 1.88M, injuries 143K, teammates 1.26M",canonical integration; injuries/teammates unused,partly active / dormant
+FBref seasonal 2017-24 (Data/2017-2024),"raw, local","18,243 player-squad-seasons; 17,790 advanced rows",engine input (pre1/pre2 features),active
+FBref 2024-26 exports (Data/2024-2026),"raw, local","2,854 + 2,839 rows",live overlay only,active (live)
+Injury thesis dataset (Data/injury),"raw, local","15,603 rows",research-only (refinement/repair experiments),dormant
+StatsBomb Open Data (Data/Open-Data-Master),"raw, local, 15 GB","4,235 event files, 642 matches extracted",case studies only,dormant
+"canonical_integration (players 190,592; clubs 46,490; valuations 1.41M; transfers 1.11M)","derived, gitignored tables",row-level tables local; manifests public,engine input,active
+canonical_performance (2.08M rows; modeling scope 905K),"derived, gitignored tables",,engine input,active
+capology_contracts canonical panel/events,derived,"97.2% player linkage, 100% club linkage",engine input,active
+contract_extension_integration/extension_modeling_master.csv,"derived, local","2,805 rows x 392 cols; sha de2886ea...; sporting data to 2026-05-24 (2026-07-06 with overlay), valuations to 2026-02-27, outbound censor 2026-08-10",engine input; all Phase 1-5 evidence,active
+frozen_contract_sources/phase1_5_2026-08-11,"derived, local","2,425-event snapshot",reproducibility of Phase 1-5 only,active (evidence)
+deployment_models (16 joblib + manifest + verification),"artifacts, tracked",hash-stable vs branch freeze inventory,frozen V1,active on main / frozen on branch
+live_input_refresh overlays,"derived, gitignored","5,018 performance rows; 9,103 salary rows",live retrieval,active (live)
+"transfer-risk research outputs (retention, market_value_downside, paid_transfer_*, fee_benchmarking, capital_at_risk, landmark_monitoring)","derived, tracked summaries","transfer cohort, not extensions",research,dormant
+compatibility_* / rolling_origin_stability / subgroup_stability / player_club_case_studies / statsbomb_case_studies,"derived, tracked summaries",original scope,history,dormant
+"engine_v2_* (14 dirs) and data_usage_audit_*, capology_club_financial_context*","derived, untracked on main",row-level leftovers only; source on branch,research,research-only (branch)
+"Data/processed/model_dataset*.csv, player_season_features.csv, transfer_cohort_master.csv, player_crosswalk.csv, club_dimension_union.csv","derived, root-level legacy","1,025 x 227 legacy matrix etc.",none current,obsolete
+"Data/app-html, html/*.dc.html, .tmp, outputs/, output/, git/, slides/",misc,"superseded UI, design export, scratch, legacy workbooks, repo-metadata copy, decks",none,obsolete / presentation

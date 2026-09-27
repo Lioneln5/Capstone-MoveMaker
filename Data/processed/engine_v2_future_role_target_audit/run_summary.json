@@ -1,0 +1,22 @@
+{
+  "audit_population_years": [
+    2020,
+    2023
+  ],
+  "final_holdout_evaluated": false,
+  "current_model_cohort_rows": 929,
+  "strict_symmetric_model_cohort_rows": 922,
+  "year1_evidence_defect_rows": 7,
+  "current_25pct_positive_rows": 453,
+  "current_25pct_positive_rate": 0.4913232104121475,
+  "under_30_game_coverage_break_rows": 47,
+  "game_weighted_definition_changed_rows": 146,
+  "temporary_move_share_of_negative_labels": 0.3880597014925373,
+  "all_outbound_share_of_negative_labels": 0.6545842217484008,
+  "injury_auditable_rows": 703,
+  "injury_adjusted_label_changes": 29,
+  "overall_verdict": "not_deployable_as_future_role; rebuild as precisely named realized same-club contribution and keep movement outcomes separate",
+  "checks_passed": 12,
+  "checks_total": 12,
+  "all_checks_passed": true
+}

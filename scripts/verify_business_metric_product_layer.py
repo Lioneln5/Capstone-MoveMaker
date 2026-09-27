@@ -18,7 +18,11 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from models.business_metric_engine import build_extension_business_profile
+from models.business_metric_engine import (
+    PRIMARY_VALUE_HORIZON_WARNING,
+    PROVISIONAL_24M_VALUE_WARNING,
+    build_extension_business_profile,
+)
 
 
 OUTPUT = ROOT / "Data" / "processed" / "business_metric_product"
@@ -87,7 +91,8 @@ def main() -> None:
     }
     optional_backend = {
         "peer_fixed_commitment_estimate_eur", "sustained_contribution_probability_24m",
-        "continuous_stay_probability_36m", "public_value_downside_25pct_probability_24m",
+        "continuous_stay_probability_36m", "public_value_downside_25pct_probability_12m",
+        "public_value_downside_25pct_probability_24m",
         "club_salary_percentile", "club_known_payroll_share",
     }
     schema_ok = required == set(schema["required"]) and optional_backend.issubset(schema["properties"]) and schema["additionalProperties"] is False
@@ -144,6 +149,10 @@ def main() -> None:
             formula_mismatches += int(not close(metrics["low_contribution_wage_exposure_eur"]["value"], expected_exposure))
             components = metrics["low_contribution_wage_exposure_eur"]["components"]
             evidence_mismatches += int("low_contribution_probability_24m" not in components or "fixed_wages_through_24m_eur" not in components)
+        value_12m = metrics["public_value_downside_25pct_scenario_12m"]["value"]
+        if payload.get("public_value_downside_25pct_probability_12m") is not None:
+            scenario_mismatches += int(not close(value_12m["probability"], payload["public_value_downside_25pct_probability_12m"]))
+            scenario_mismatches += int(not close(value_12m["minimum_threshold_eur"], market * .25))
         value = metrics["public_value_downside_25pct_scenario"]["value"]
         if payload.get("public_value_downside_25pct_probability_24m") is not None:
             scenario_mismatches += int(not close(value["probability"], payload["public_value_downside_25pct_probability_24m"]))
@@ -153,7 +162,11 @@ def main() -> None:
             scenario_mismatches += int(not close(continuity["continuous_stay_probability_36m"], payload["continuous_stay_probability_36m"]))
             scenario_mismatches += int(not close(continuity["scheduled_fixed_wages_after_36m_eur"], wage * max(years - 3, 0)))
         evidence_mismatches += int(metrics["low_contribution_wage_exposure_eur"]["evidence_class"] != "probability_weighted_proxy")
+        evidence_mismatches += int(metrics["public_value_downside_25pct_scenario_12m"]["status"] != "primary_horizon_candidate")
+        evidence_mismatches += int(metrics["public_value_downside_25pct_scenario_12m"]["warning"] != PRIMARY_VALUE_HORIZON_WARNING)
         evidence_mismatches += int(metrics["public_value_downside_25pct_scenario"]["evidence_class"] != "paired_probability_scenario")
+        evidence_mismatches += int(metrics["public_value_downside_25pct_scenario"]["status"] != "provisional_pending_later_validation")
+        evidence_mismatches += int(metrics["public_value_downside_25pct_scenario"]["warning"] != PROVISIONAL_24M_VALUE_WARNING)
         evidence_mismatches += int(metrics["contract_continuity_horizon"]["evidence_class"] != "paired_probability_scenario")
         evidence_mismatches += int(output["overall_contract_score"] is not None)
     add(checks, "historical_formula_recomputation", formula_mismatches, 0, formula_mismatches == 0, "Deterministic, peer, and qualified exposure formulas reproduce independently.")
@@ -172,7 +185,8 @@ def main() -> None:
     minimal_metrics = lookup(minimal_result)
     unavailable_keys = {
         "proposed_wage_change_pct", "fixed_commitment_peer_difference_eur", "offer_aggressiveness_percentile",
-        "low_contribution_wage_exposure_eur", "public_value_downside_25pct_scenario",
+        "low_contribution_wage_exposure_eur", "public_value_downside_25pct_scenario_12m",
+        "public_value_downside_25pct_scenario",
         "contract_continuity_horizon", "club_salary_percentile", "club_known_payroll_share",
     }
     missing_ok = all(minimal_metrics[key]["status"] == "unavailable" and minimal_metrics[key]["value"] is None for key in unavailable_keys)

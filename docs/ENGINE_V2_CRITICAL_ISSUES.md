@@ -1,5 +1,11 @@
 # ENGINE V2 CRITICAL-ISSUES REGISTER
 
+The twelve findings from the original post-presentation engine audit are
+preserved separately in
+[`ENGINE_V2_ORIGINAL_AUDIT.md`](ENGINE_V2_ORIGINAL_AUDIT.md). This register is
+reserved for later findings that independently block release or invalidate a
+specific product claim.
+
 > **RELEASE-BLOCKING REGISTER — NOT A PROGRESS LOG**
 >
 > An issue belongs here only when ignoring it could produce a materially
@@ -14,6 +20,7 @@
 | --- | --- | --- | --- | --- |
 | **E2-CRIT-002** | **CRITICAL / RELEASE BLOCKER** | Final temporal validation for predictive risk modules | **OPEN** | **Future-role, movement/retention, and value-downside artifacts cannot be promoted** |
 | **E2-CRIT-003** | **CRITICAL / RELEASE BLOCKER** | Historical annual-wage benchmark | **OPEN** | **The current Big-Five wage benchmark cannot be serialized or deployed** |
+| **E2-CRIT-005** | **CRITICAL / RELEASE BLOCKER** | Repaired contribution probability reliability across advertised groups | **OPEN / CONTAINED** | **The compact contribution candidate cannot be frozen as an all-Big-Five, all-position probability** |
 
 ---
 
@@ -22,6 +29,7 @@
 | ID | Former severity | Component | Resolution | Closed |
 | --- | --- | --- | --- | --- |
 | **E2-CRIT-001** | **CRITICAL / RELEASE BLOCKER** | Personalized 24-month club continuity | **Resolution C — endpoint retired and product scope replaced by separate non-deployed questions** | **2026-09-02** |
+| **E2-CRIT-004** | **CRITICAL / RELEASE BLOCKER** | Future-role / meaningful-contribution target validity | **Target rebuilt; repaired contribution signal survived a fresh development rerun. Live authorization remains blocked separately by E2-CRIT-002** | **2026-09-08** |
 
 ---
 
@@ -193,8 +201,10 @@ This issue blocks:
 - opening a final holdout and then changing continuity features in response to
   the result.
 
-It does **not** automatically invalidate the separately modeled future-role,
-public-value-downside, or historical-wage-benchmark modules.
+This continuity finding did **not by itself** invalidate the separately modeled
+future-role, public-value-downside, or historical-wage-benchmark modules. The
+later, independent target audit recorded as E2-CRIT-004 does block future role
+and the contribution component of Meaningful Retention.
 
 ### Prohibited workarounds
 
@@ -342,7 +352,8 @@ development data through 2023 and the final test, the mature 2024 cohorts are:
 | --- | ---: | ---: | ---: |
 | Future role | 81 | 56 | 6 |
 | Historical blended continuity labels | 290 | 176 | 23 |
-| Public-value downside | 41 | 26 | 3 |
+| Public-value downside, 12 months | 337 | 212 | 26 |
+| Public-value downside, 24 months | 41 | 26 | 3 |
 
 The future-role and continuity labels for all 81 jointly eligible 2024 cases
 were also included in Phase 4's aggregate target-relationship audit. Phase 4
@@ -350,8 +361,21 @@ did not score those cases, reveal player-level outcomes, or measure 2024 model
 performance, but the labels were inspected in aggregate. They are therefore
 not a pristine final holdout.
 
-Value downside remains sealed, but 26 player-disjoint cases—with as few as
-three in one league—cannot support a final pooled plus Big-Five subgroup claim.
+Neither value horizon is sealed. The frozen V1 out-of-sample verifier scored
+2024+ value outcomes and inspected aggregate performance on 2026-08-22, before
+Phase 5 incorrectly described the value cohort as untouched. Those outcomes
+remain useful only as restricted confirmation of the exact frozen V1 model;
+they cannot select, calibrate, repair, or promote Engine V2. The 24-month
+subset is also underpowered: 26 player-disjoint cases, with as few as three in
+one league, cannot support a final pooled plus Big-Five subgroup claim.
+
+**Product containment adopted 2026-09-05 and corrected 2026-09-09:** the
+12-month public-value downside horizon is the primary research view because it
+matures sooner and has materially more support. The 24-month horizon is an
+optional provisional view. Both must disclose that 2024+ outcomes were already
+used in frozen V1 verification and are not a pristine V2 test; 24 months must
+also disclose its 26-row player-disjoint cohort and smallest league cell of 3.
+This containment does not close E2-CRIT-002 or authorize live Engine V2 scoring.
 
 ### Why this is critical
 
@@ -366,8 +390,8 @@ under those conditions.
 - treating the aggregate-exposed role/continuity labels as pristine;
 - keeping repeat-player events in both development and final partitions;
 - pooling leagues to hide single-digit or very small subgroup samples;
-- opening value-downside outcomes now and weakening gates after seeing them;
-- using 2024 to redesign features, calibration, thresholds, or refusal rules;
+- using the already opened value-downside outcomes to weaken gates;
+- using 2024+ value outcomes to redesign features, calibration, thresholds, or refusal rules;
 - describing rolling 2020–2023 development evidence as a final external test.
 
 ### Required resolution
@@ -385,12 +409,65 @@ post-result tuning.
 - `Data/processed/engine_v2_final_evaluation_gate/holdout_readiness.csv`
 - `Data/processed/engine_v2_final_evaluation_gate/prior_exposure_audit.csv`
 - `Data/processed/engine_v2_final_evaluation_gate/independent_verification.json`
+- `Data/processed/engine_v2_public_value_downside_repair/known_exposure_audit.csv`
 
 ### Closure record
 
 Not eligible. Do not close this issue merely because more calendar time has
 passed; maturity, non-exposure, identity separation, and subgroup counts must
 all be independently verified before the later labels are opened.
+
+---
+
+## E2-CRIT-006 — The 2024+ public-value cohort was falsely recorded as sealed
+
+### Status
+
+**CONTAINED — PERMANENTLY EXPOSED — RELEASE BLOCKING**
+
+- First exposure: frozen V1 out-of-sample verification, 2026-08-22
+- Discovered and corrected: 2026-09-09
+- Affected module: public-value downside at 12 and 24 months
+- Current deployment authorization: **none**
+
+### The problem
+
+The V1 out-of-sample verifier selected every eligible extension signed after
+2023, attached realized public-value outcomes, scored the frozen V1 artifacts,
+and recorded aggregate performance. It included 381 12-month outcomes across
+2024–2025 and 41 24-month outcomes from 2024. Phase 5 later stated that value
+downside was sealed. That statement was factually wrong.
+
+Exposure cannot be reversed by deleting a file, resetting Git, or starting a
+memory-free chat. The outcomes have influenced project knowledge. A clean task
+can independently audit code, but it cannot make already inspected data into a
+new final holdout.
+
+### Containment
+
+- Classify all 2024+ value outcomes as
+  `previously_exposed_restricted_V1_confirmation_only`.
+- Preserve the historical scores only as evidence for the exact frozen V1
+  artifacts that produced them.
+- Exclude signed years 2024+ from every V2 feature, model, calibration,
+  support, threshold, and promotion decision.
+- Treat the repaired 12- and 24-month results as rolling-development evidence
+  until a genuinely later, mature, uninspected cohort exists.
+- Do not serialize or deploy the repaired candidate.
+
+### Required resolution
+
+This issue can be contained now but not retroactively fixed. Final validation
+requires a future cohort whose outcomes have matured and whose labels and
+performance remain uninspected until the candidate, calibration, refusal
+rules, subgroups, and release gates are frozen.
+
+### Evidence
+
+- `scripts/verify_deployment_out_of_sample.py`
+- `Data/processed/deployment_models/out_of_sample_verification.csv`
+- `Data/processed/engine_v2_public_value_downside_repair/known_exposure_audit.csv`
+- [Public-value repair](ENGINE_V2_PUBLIC_VALUE_DOWNSIDE_REPAIR.md)
 
 ---
 
@@ -455,3 +532,215 @@ the independently supported league set.
 Not eligible. A post-holdout patch to the same candidate does not close this
 issue; only a new predeclared version with later untouched evidence, explicit
 scope narrowing, or endpoint retirement can do so.
+
+---
+
+## E2-CRIT-004 — Future-role target mixes role, availability, movement, and incomplete club schedules
+
+### Status
+
+**RESOLVED 2026-09-08 — TARGET REBUILT AND DEVELOPMENT SIGNAL RE-ESTABLISHED; NOT DEPLOYED**
+
+**TARGET-REPAIR STEP 1 IMPLEMENTED 2026-09-04:** the Engine V2 target contract
+now requires symmetric Year-1 and Year-2 evidence and leaves ineligible rows
+unlabeled. The seven known asymmetric evaluation cases are removed without
+changing any eligible label. This is independently verified, but the critical
+issue remains open because incomplete club schedules, shares above 100%,
+development reruns, and final temporal validation are unresolved.
+
+**TARGET-REPAIR RUN 1 COMPLETE 2026-09-07:** target construction now uses a
+versioned, fail-closed schedule rule. Each original-league annual window must
+reach at least 80% of its contemporaneous exact-window peer median; otherwise
+the outcome is unavailable. Annual opportunity shares are recomputed and
+capped to `[0,1]`. This removes 44 schedule-defective rows from the 922-row
+symmetric reference cohort, leaving 878 eligible labels and 438 positives.
+Six annual shares are capped without changing a binary label. No model was
+fitted and 2024+ outcomes were not inspected.
+
+**MODEL RERUN 2 COMPLETE 2026-09-08:** the preregistered compact
+recent-involvement candidate retained positive Brier skill on the rebuilt
+target across all four player-disjoint rolling origins. Its pooled Brier was
+0.196245, ROC AUC was 0.761841, and Brier improvement over chronology was
++0.054602 with a player-cluster 95% interval of [+0.041976, +0.067080]. Older
+season-volume summaries added no established incremental skill and were not
+selected. No candidate was serialized or deployed, and no 2024+ outcome was
+opened.
+
+**Current status:** the target-validity defect tracked by E2-CRIT-004 is
+**FIXED**. “Role when available” remains unavailable by design; the repaired
+target is sustained realized extension-club contribution. The contribution
+component may advance to a reliability audit, but neither it nor the combined
+Meaningful Retention endpoint has live authorization. Later untouched,
+player-disjoint temporal validation remains a separate open release blocker
+under E2-CRIT-002.
+
+- First exposed: post-movement-closeout target audit, 2026-09-02
+- Affected historical target: `target_sustained_meaningful_contribution`
+- Affected candidate: Meaningful Retention, because it uses the same
+  contribution component
+- Current deployment authorization: **none**
+
+### The problem
+
+The frozen target assigns one when a player records at least 25% same-club
+opportunity share in both exact post-signing years. A full target audit found
+that the label cannot support a pure future-role claim:
+
+- the current model cohort assigns labels to seven 2020-2023 rows that fail the
+  matching Year-1 evidence requirement, including three missing Year-1 shares;
+- 47 of 922 otherwise strict rows have fewer than 30 captured extension-club
+  matches in at least one nominal 365-day year, consistent with relegation,
+  top-flight exit, or another club-window coverage break;
+- temporary-first moves account for 38.8% of all negative labels and all
+  outbound-first states account for 65.5%;
+- removing validated same-club injury matches from the denominator changes 29
+  of 701 comparable labels, proving that realized contribution and role when
+  available are not the same outcome; and
+- six annual opportunity shares exceed 100% because the denominator assumes
+  90 minutes per match while extra-time minutes remain in the numerator.
+
+The 25% threshold is not the main failure. Moving the annual floor to 20% or
+30% changes 30 of 922 labels in either direction, so it is locally stable. It
+is still a declared materiality threshold rather than an empirically unique
+football breakpoint.
+
+### Why this is critical
+
+A model can predict a badly named or inconsistently observed target and still
+score well. Historical AUC and Brier improvement do not turn a composite of
+movement, availability, selection, and partial schedules into “future role.”
+Because Meaningful Retention incorporates the same contribution component, it
+cannot advance merely by passing a later model-performance test.
+
+### Required resolution
+
+Before any future-role or Meaningful Retention candidate is refit:
+
+1. require symmetric, nonmissing Year-1 and Year-2 evidence;
+2. integrate lower-tier schedules for relegated/removed clubs or freeze a
+   completeness-based refusal rule;
+3. define the repaired target as **realized same-club contribution**, with the
+   25% floor explicitly treated as a policy threshold;
+4. cap normalized opportunity at 100% or use exact match-minute capacity; and
+5. keep Temporary Displacement and other movement states separate.
+
+A “role when available” outcome requires a separate availability data program;
+partial injury adjustment alone is prohibited because suspensions,
+international duty and other unavailability remain unobserved.
+
+After repair, all development evidence must be rerun under the new target. The
+2024+ cohort cannot be used to tune the definition, and a later untouched,
+player-disjoint temporal cohort remains required under E2-CRIT-002.
+
+### Evidence
+
+- [Future-role target audit](ENGINE_V2_FUTURE_ROLE_TARGET_AUDIT.md)
+- [Complete contribution-target repair](ENGINE_V2_CONTRIBUTION_TARGET_REPAIR.md)
+- [Repaired contribution model — Run 2](ENGINE_V2_CONTRIBUTION_MODEL_RUN2.md)
+- `Data/processed/engine_v2_future_role_target_audit/audit_findings.csv`
+- `Data/processed/engine_v2_future_role_target_audit/year1_evidence_asymmetry.csv`
+- `Data/processed/engine_v2_future_role_target_audit/club_window_coverage_break_cases.csv`
+- `Data/processed/engine_v2_future_role_target_audit/movement_decomposition.csv`
+- `Data/processed/engine_v2_future_role_target_audit/injury_available_denominator_summary.csv`
+- `Data/processed/engine_v2_contribution_target_repair/`
+- `Data/processed/engine_v2_contribution_model_rerun/`
+
+### Closure record
+
+Closed on 2026-09-08 for target validity. The repaired target is independently
+reconstructed, its compact contribution candidate survived a separately
+frozen development rerun, and the misleading pure-role interpretation is
+prohibited. This closure does not authorize a live probability, validate the
+joint Meaningful Retention endpoint, or close E2-CRIT-002.
+
+---
+
+## E2-CRIT-005 — Repaired contribution probability lacks all-group certainty
+
+### Status
+
+**OPEN / CONTAINED 2026-09-09 — RELEASE BLOCKING FOR A UNIVERSAL BIG-FIVE AND ALL-POSITION CLAIM**
+
+- First exposed: repaired-contribution reliability Run 3
+- Affected candidate: `B2_core_recent_involvement`
+- Affected future product component: sustained realized contribution
+- Current deployment authorization: **none**
+
+### The problem
+
+Run 3 tested the exact Run 2 player-disjoint candidate without searching new
+features or opening 2024+ outcomes. The candidate passed pooled calibration,
+temporal, refusal, OOD, uncertainty, monotonicity, and coefficient-direction
+gates. Its raw probabilities have pooled Brier `0.196245`, ROC AUC `0.761841`,
+adaptive ECE `0.035375`, calibration gap `0.011492`, and calibration slope
+`1.051675`. All four origins retain positive chronology-relative Brier skill.
+
+The declared subgroup gate was stricter: every advertised Big-Five league and
+broad position required a 99% player-cluster Brier-skill interval entirely
+above zero. Six of nine groups pass. Three do not:
+
+| Group | Rows | Point Brier skill | 99% interval | AUC | Interpretation |
+| --- | ---: | ---: | ---: | ---: | --- |
+| La Liga | 161 | +0.0333 | [−0.0055, +0.0714] | 0.687 | Positive point estimate; insufficient certainty |
+| Serie A | 163 | +0.0295 | [−0.0176, +0.0723] | 0.704 | Positive point estimate; insufficient certainty |
+| Midfield | 257 | +0.0303 | [−0.0014, +0.0620] | 0.689 | Positive point estimate; insufficient certainty |
+
+This is not evidence that the candidate is harmful in those groups. It is
+evidence that the current sample cannot establish dependable improvement for
+every group at the predeclared standard. Pooled performance cannot be used to
+hide that uncertainty.
+
+Run 3 also finds that the two recent-involvement fields have Spearman
+correlation `0.948`. Their individual coefficients are directionally stable,
+and dropping either barely changes predictions, but independent importance
+allocations are not stable enough to explain separately. This is contained by
+requiring a combined `recent involvement` explanation group.
+
+### Why this is critical
+
+MoveMaker is framed as a Big-Five risk-assessment profile. Displaying one
+unqualified probability for La Liga, Serie A, and midfielders would imply that
+the model's improvement is established in those populations when its current
+uncertainty interval does not support that claim. A strong pooled result is not
+a license to erase advertised-scope failures.
+
+### Current containment
+
+- no repaired contribution model or calibrator is serialized;
+- Engine V2 scoring remains disabled;
+- profiles missing signing-time public value or outside the learned support
+  envelope are refused rather than silently imputed into a confident result;
+- limited profiles must retain an extrapolation warning; and
+- recent opportunity and appearance inputs may be explained only as one
+  combined involvement group.
+
+### Required resolution
+
+Choose and preregister one of the following as a new candidate version:
+
+1. test a partial-pooling or carefully constrained league/position structure
+   designed to improve reliability without fitting separate small models;
+2. narrow the advertised scope before artifact construction and return
+   `unavailable` outside independently supported groups; or
+3. wait for enough additional mature extension outcomes to tighten the weak
+   group intervals without changing the compact candidate.
+
+Because the weak groups are now known, any repair is new development work. It
+must not reuse the existing Run 3 result as if it were an untouched validation
+set, and a survivor still requires the later final test tracked by
+E2-CRIT-002.
+
+### Evidence
+
+- [Run 3 reliability audit](ENGINE_V2_CONTRIBUTION_RELIABILITY_RUN3.md)
+- `Data/processed/engine_v2_contribution_reliability_audit/reliability_decision.csv`
+- `Data/processed/engine_v2_contribution_reliability_audit/subgroup_reliability.csv`
+- `Data/processed/engine_v2_contribution_reliability_audit/calibration_method_comparison.csv`
+- `Data/processed/engine_v2_contribution_reliability_audit/parameter_uncertainty_summary.csv`
+- `Data/processed/engine_v2_contribution_reliability_audit/ood_reason_summary.csv`
+
+### Closure record
+
+Not eligible. The candidate remains contained and non-deployed. Close only
+after an independently verified new scope/candidate clears its declared group
+reliability gates or the affected product scope is explicitly retired.

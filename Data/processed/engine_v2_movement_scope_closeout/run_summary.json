@@ -1,6 +1,6 @@
 {
-  "checks_passed": 8,
-  "checks_total": 8,
+  "checks_passed": 9,
+  "checks_total": 9,
   "contract_version": "engine_v2_movement_product_scope_v1_2026-09-02",
   "deployment_changed": false,
   "development_candidates": [
@@ -13,5 +13,9 @@
   "research_only_outputs": [
     "permanent_separation_risk_24m"
   ],
-  "v1_unchanged": true
+  "v1_freeze_manifest_changed_files": [
+    "Data/processed/deployment_models/live_request_integrity.csv",
+    "Data/processed/deployment_models/live_request_integrity.json"
+  ],
+  "v1_serialized_models_unchanged": true
 }

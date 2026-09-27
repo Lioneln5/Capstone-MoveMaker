@@ -1,0 +1,15 @@
+claim_and_location,implementation_or_evidence,note,issue_ids
+"README.md (main): 'live demo', 'The deployed profile exposes 16 separately validated endpoints'",Hosted service: scoring_enabled=false; /players/search -> 503,Branch README says scoring is unconditionally disabled,MM-01
+docs/MODEL_CARD.md (main): 'Deployed decision signals',Nothing is served; branch model card says 'Frozen V1 decision signals ... not a live product',,MM-01
+"CODEX.md (local, gitignored): 'The FastAPI and HTML application works locally and serves 16 deployed endpoints'",True locally on main; false for the hosted service since 2026-08-30,,MM-01
+html/index.html (main): 'Model basis: ... proposed terms and available wage context',"True, but presented as a strength; branch feature contract classifies proposal terms as prohibited predictors",Perturbation grid quantifies the dependence,MM-02
+html/index.html: 'Sustained meaningful contribution ... not a talent or tactical-fit rating',"63% of negative labels are departures, not low use",,MM-04
+html/index.html: 'modeled low-contribution wage exposure over 24 months',42% of the historical 'exposed' wages belong to players sold within 24 months,,MM-04
+out_of_sample_verification.json: 29/29 checks passed; any_outbound_36m 'reporting Brier only',36m cohort has zero rows with 36 months of follow-up; all 193 rows are events,,MM-03
+Phase-2 README: 'contract economics add signal: True',True in the historical sense; the same fields are user-controlled at scoring time,,MM-02
+html/index.html card 4: 'historical 80% reference range',66% coverage when prior wage is unknown; 59-71% Ligue 1,,MM-07
+docs/journal section 23: 'C6 cleared the pre-declared compact non-inferiority route',Accurate; but README's 'passed the declared non-inferiority' can be read as validation of an improvement,,MM-16
+models/README.md (main): 'Scores the 16 deployed endpoints',Branch models/README: 'Reconstructs the 16 frozen historical endpoints offline',,MM-01
+docs/DATA_PROVENANCE.md: four source families,"StatsBomb Open Data (15 GB local, 4,235 event files) is processed and used for case studies",Branch data-usage audit flags the same gap,MM-20
+scope.html: 'production package was independently checked on post-2023 extension events',Survival portion of that check is biased (MM-03); Phase 1/3 portions rest on n=80 and n=41,,MM-03
+README/MODEL_CARD: rolling chronological evaluation approximates future decisions,Repeat players cross train/test; every selection decision reused the same four evaluation years,,"MM-09, MM-13"

@@ -11,6 +11,7 @@ metric_parity_fixed_commitment_peer_difference_eur,0,0,True,Engine output reprod
 metric_parity_offer_aggressiveness_percentile,0,0,True,Engine output reproduces the frozen translated historical profile.
 metric_parity_fixed_commitment_peer_range_position,0,0,True,Engine output reproduces the frozen translated historical profile.
 metric_parity_low_contribution_wage_exposure_eur,0,0,True,Engine output reproduces the frozen translated historical profile.
+metric_parity_public_value_downside_25pct_scenario_12m,0,0,True,Engine output reproduces the frozen translated historical profile.
 metric_parity_public_value_downside_25pct_scenario,0,0,True,Engine output reproduces the frozen translated historical profile.
 metric_parity_scheduled_fixed_wages_after_36m_eur,0,0,True,Engine output reproduces the frozen translated historical profile.
 metric_parity_contract_continuity_horizon,0,0,True,Engine output reproduces the frozen translated historical profile.

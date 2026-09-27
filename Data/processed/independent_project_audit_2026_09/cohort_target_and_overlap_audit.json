@@ -1,0 +1,117 @@
+{
+  "extension_master_rows": 2805,
+  "unique_players": 2096,
+  "linked_rows": 2726,
+  "signed_year_counts": {
+    "2018": 243,
+    "2019": 395,
+    "2020": 432,
+    "2021": 391,
+    "2022": 381,
+    "2023": 398,
+    "2024": 385,
+    "2025": 180
+  },
+  "events_per_player": {
+    "1": 1597,
+    "2": 399,
+    "3": 75,
+    "4": 20,
+    "5": 4,
+    "6": 1
+  },
+  "players_with_events_in_multiple_years": 488,
+  "evaluation_year_player_overlap_with_earlier_years": {
+    "2020": {
+      "events": 421,
+      "share_players_seen_in_earlier_years": 0.131
+    },
+    "2021": {
+      "events": 384,
+      "share_players_seen_in_earlier_years": 0.201
+    },
+    "2022": {
+      "events": 371,
+      "share_players_seen_in_earlier_years": 0.278
+    },
+    "2023": {
+      "events": 384,
+      "share_players_seen_in_earlier_years": 0.367
+    },
+    "2024": {
+      "events": 376,
+      "share_players_seen_in_earlier_years": 0.388
+    }
+  },
+  "phase1_primary_cohort": 1385,
+  "phase1_unique_players": 1188,
+  "sustained_rate": 0.5011,
+  "non_sustainers": 691,
+  "non_sustainers_with_permanent_outbound_within_730d": 238,
+  "non_sustainers_with_any_outbound_within_730d": 433,
+  "non_sustainers_stayed_low_use": 258,
+  "sustainers_with_any_outbound_within_730d": 87,
+  "sustained_rate_by_contract_band": {
+    "<2y": 0.25,
+    "2-<3y": 0.374,
+    "3-<4y": 0.486,
+    "4-<5y": 0.579,
+    "5y+": 0.69
+  },
+  "sustained_rate_by_signed_wage_quintile": {
+    "0.0": 0.247,
+    "1.0": 0.452,
+    "2.0": 0.522,
+    "3.0": 0.63,
+    "4.0": 0.716
+  },
+  "m5_feature_missing_rate_primary_cohort": {
+    "age_at_signing": 0.0,
+    "log_market_value_at_signing": 0.035,
+    "pre365_same_club_all_competition_opportunity_share": 0.0,
+    "pre365_same_club_all_competition_appearance_rate": 0.0,
+    "pre365_goals_per90": 0.116,
+    "pre365_assists_per90": 0.116,
+    "pre1_canonical_minutes_played": 0.281,
+    "pre1_canonical_goals_per90": 0.281,
+    "pre1_canonical_assists_per90": 0.281,
+    "pre2_canonical_minutes_played": 0.513,
+    "pre2_canonical_goals_per90": 0.513,
+    "pre2_canonical_assists_per90": 0.513,
+    "pre1_fbref_expected_goals": 0.312,
+    "pre1_fbref_progressive_carries": 0.312,
+    "pre1_fbref_progressive_passes": 0.312,
+    "pre1_fbref_pass_completion_pct": 0.312,
+    "exact_duration_years": 0.0,
+    "age_at_expiration": 0.0,
+    "log_annual_gross_eur": 0.024,
+    "log_fixed_wage_commitment_eur": 0.024,
+    "club_salary_percentile": 0.048,
+    "club_salary_share_known": 0.048,
+    "salary_change_from_prior_pct": 0.292,
+    "annual_wage_to_market_value": 0.048,
+    "commitment_to_market_value": 0.048
+  },
+  "position_missing_rows": 79,
+  "non_canonical_position_labels": {
+    "nan": 79,
+    "Midfield - Central Midfield": 1
+  },
+  "at_signing_valuation_gap_days_quantiles": {
+    "0.5": 59.0,
+    "0.9": 155.0,
+    "0.95": 178.0999999999999,
+    "1.0": 5724.0
+  },
+  "first_any_outbound_type_counts": {
+    "transfer": 1289,
+    "nan": 859,
+    "loan": 592,
+    "loan_return": 65
+  },
+  "capology_page_season_minus_signed_season": {
+    "-1": 1,
+    "0": 2751,
+    "1": 53
+  }
+}

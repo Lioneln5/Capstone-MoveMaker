@@ -1,0 +1,3 @@
+﻿scope,rows_before_gate,rows_with_symmetric_outcome_evidence,rows_made_unavailable,positive_targets
+all_development_rows_through_2023,2240,1967,273,802
+rolling_evaluation_reference_2020_2023,929,922,7,453

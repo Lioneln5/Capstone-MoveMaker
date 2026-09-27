@@ -64,6 +64,7 @@ def historical_payload(row: pd.Series) -> dict[str, Any]:
         "sustained_contribution_probability_24m": optional(row, "sustained_contribution_probability"),
         "continuous_stay_probability_24m": optional(row, "continuous_stay_probability_24m"),
         "continuous_stay_probability_36m": optional(row, "continuous_stay_probability_36m"),
+        "public_value_downside_25pct_probability_12m": optional(row, "value_downside_25pct_probability_12m"),
         "public_value_downside_25pct_probability_24m": optional(row, "value_downside_25pct_probability_24m"),
         "public_value_downside_50pct_probability_24m": optional(row, "value_downside_50pct_probability_24m"),
         "club_salary_percentile": optional(row, "club_salary_percentile"),
@@ -98,6 +99,7 @@ def input_schema() -> dict[str, Any]:
         "sustained_contribution_probability_24m": probability,
         "continuous_stay_probability_24m": probability,
         "continuous_stay_probability_36m": probability,
+        "public_value_downside_25pct_probability_12m": probability,
         "public_value_downside_25pct_probability_24m": probability,
         "public_value_downside_50pct_probability_24m": probability,
         "club_salary_percentile": probability,
@@ -147,8 +149,15 @@ def output_contract() -> dict[str, Any]:
             },
             {
                 "card": "asset_value",
-                "headline_metrics": ["public_value_downside_25pct_scenario"],
-                "detail_metrics": ["public_value_downside_50pct_scenario"],
+                "headline_metrics": ["public_value_downside_25pct_scenario_12m"],
+                "detail_metrics": [
+                    "public_value_downside_25pct_scenario",
+                    "public_value_downside_50pct_scenario",
+                ],
+                "horizon_policy": {
+                    "primary": "12m",
+                    "optional_with_warning": "24m",
+                },
             },
             {
                 "card": "continuity",
@@ -187,6 +196,7 @@ def main() -> None:
     profiles = profiles.merge(
         phase5_profiles[[
             "capology_extension_event_id", "fixed_commitment_peer_lower_eur", "fixed_commitment_peer_upper_eur",
+            "value_downside_25pct_probability_12m",
         ]],
         on="capology_extension_event_id", how="left", validate="one_to_one",
     )
@@ -249,7 +259,8 @@ def main() -> None:
         "fixed_wage_commitment_eur", "fixed_commitment_to_public_value", "proposed_wage_change_pct",
         "fixed_commitment_peer_difference_eur", "offer_aggressiveness_percentile",
         "fixed_commitment_peer_range_position",
-        "low_contribution_wage_exposure_eur", "public_value_downside_25pct_scenario",
+        "low_contribution_wage_exposure_eur", "public_value_downside_25pct_scenario_12m",
+        "public_value_downside_25pct_scenario",
         "scheduled_fixed_wages_after_36m_eur", "contract_continuity_horizon",
             "club_salary_percentile", "club_known_payroll_share",
             "club_known_annual_fixed_wages_excluding_player_eur",
@@ -278,6 +289,16 @@ def main() -> None:
                 metric_mismatches[key] += int(observed is not None)
             else:
                 metric_mismatches[key] += int(observed is None or not np.isclose(float(observed), float(expected), atol=1e-8, rtol=1e-8))
+        value_12m_metric = lookup["public_value_downside_25pct_scenario_12m"]
+        if pd.isna(row["value_downside_25pct_probability_12m"]):
+            metric_mismatches["public_value_downside_25pct_scenario_12m"] += int(value_12m_metric["value"] is not None)
+        else:
+            value_12m_ok = (
+                np.isclose(value_12m_metric["value"]["probability"], row["value_downside_25pct_probability_12m"])
+                and np.isclose(value_12m_metric["value"]["minimum_threshold_eur"], row["at_signing_market_value_eur"] * .25)
+                and value_12m_metric["status"] == "primary_horizon_candidate"
+            )
+            metric_mismatches["public_value_downside_25pct_scenario_12m"] += int(not value_12m_ok)
         value_metric = lookup["public_value_downside_25pct_scenario"]
         if pd.isna(row["value_downside_25pct_probability_24m"]):
             metric_mismatches["public_value_downside_25pct_scenario"] += int(value_metric["value"] is not None)
@@ -285,6 +306,7 @@ def main() -> None:
             value_ok = (
                 np.isclose(value_metric["value"]["probability"], row["value_downside_25pct_probability_24m"])
                 and np.isclose(value_metric["value"]["minimum_threshold_eur"], row["public_value_downside_floor_25pct_eur"])
+                and value_metric["status"] == "provisional_pending_later_validation"
             )
             metric_mismatches["public_value_downside_25pct_scenario"] += int(not value_ok)
         continuity_metric = lookup["contract_continuity_horizon"]
@@ -314,7 +336,8 @@ def main() -> None:
     minimal_lookup = metric_lookup(minimal)
     expected_unavailable = {
         "proposed_wage_change_pct", "fixed_commitment_peer_difference_eur", "offer_aggressiveness_percentile",
-        "low_contribution_wage_exposure_eur", "public_value_downside_25pct_scenario",
+        "low_contribution_wage_exposure_eur", "public_value_downside_25pct_scenario_12m",
+        "public_value_downside_25pct_scenario",
         "contract_continuity_horizon", "club_salary_percentile", "club_known_payroll_share",
     }
     unavailable_ok = all(minimal_lookup[key]["status"] == "unavailable" for key in expected_unavailable)
@@ -393,7 +416,8 @@ This package implements and verifies candidate business translations for incumbe
 - Fixed-wage commitment, commitment/public-value scale, age at expiration, and proposed wage change.
 - Fixed-commitment difference from the Phase-4 peer estimate and an offer-aggressiveness percentile based on {len(sorted_residuals):,} frozen out-of-time residuals.
 - Qualified low-contribution wage exposure: two-year fixed wages × modeled low-contribution probability.
-- Paired 24-month public-value downside probability and euro threshold.
+- Primary paired 12-month public-value downside probability and euro threshold.
+- Optional 24-month public-value downside scenarios with an enforced warning that available 2024+ outcomes were previously exposed in frozen V1 verification and that the repaired complete-feature, player-disjoint 2024 cohort contains only 26 outcomes, with as few as 3 in one Big Five league.
 - Paired 36-month continuous-stay probability and scheduled post-36-month fixed wages.
 - Matched known-panel club salary position and payroll share.
 

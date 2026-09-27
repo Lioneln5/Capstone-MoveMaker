@@ -1,0 +1,48 @@
+{
+  "audit_date": "2026-09-09",
+  "head_branch": "main",
+  "head_commit": "fa0d4e3cb437e772cf0dabb3f6a6cf592e8b07ee",
+  "head_commit_date": "2026-08-30 18:34:02 -0400",
+  "unmerged_branch": "origin/codex/engine-v2-safety-freeze",
+  "unmerged_branch_head": "80cb0a04ae3d1fa257bb002dc6f4d7d6bcda8c9b",
+  "unmerged_branch_commits_ahead_of_main": 8,
+  "unmerged_branch_diffstat_tail": "292 files changed, 30215 insertions(+), 214 deletions(-)",
+  "untracked_in_working_tree": [
+    "?? Data/processed/capology_club_financial_context/",
+    "?? Data/processed/capology_club_financial_context_audit/",
+    "?? Data/processed/data_usage_audit_2026_08_31/",
+    "?? Data/processed/data_usage_audit_2026_09_02/",
+    "?? Data/processed/engine_v2_future_role_target_audit/",
+    "?? Data/processed/engine_v2_lagged_club_behavior/",
+    "?? Data/processed/engine_v2_manager_tactical_profiles/",
+    "?? Data/processed/engine_v2_role_squad_profiles/",
+    "?? Data/processed/independent_project_audit_2026_09/"
+  ],
+  "live_service_url": "https://movemaker-production.up.railway.app/",
+  "live_service_health_observed_2026_09_09": {
+    "status": "ok",
+    "product_mode": "research_prototype",
+    "scoring_enabled": false,
+    "engine_loaded": false,
+    "engine_version": null,
+    "message": "Engine V1 is frozen for historical audit. Engine V2 retired generic continuity and has not authorized any live scoring output. The project pages and verified research evidence remain available."
+  },
+  "live_service_players_search_observed": {
+    "http": 503,
+    "detail": "Live scoring is unavailable. ..."
+  },
+  "live_service_matches": "origin/codex/engine-v2-safety-freeze api/main.py (fail-closed)",
+  "main_api_behaviour": "api/main.py on main loads V1 engine and serves /players/search, /players/{id}/input-defaults, POST /profile",
+  "frozen_v1_inventory_hash_check": {
+    "files": 24,
+    "all_match_on_disk": true
+  },
+  "local_runtime_data_present": true,
+  "python_env": {
+    "python": "3.13.5",
+    "sklearn": "1.6.1 (pinned 1.6.1)",
+    "pandas": "2.2.3",
+    "numpy": "2.1.3",
+    "fastapi": "0.138.1 (requirements pin 0.116.1)"
+  }
+}

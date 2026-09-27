@@ -14,7 +14,21 @@ from typing import Any
 
 
 SCOPE = "incumbent_club_extension"
-METRIC_VERSION = "business_metrics_v1_2026-08-12"
+METRIC_VERSION = "business_metrics_v2_2026-09-05"
+
+PRIMARY_VALUE_HORIZON_WARNING = (
+    "The 12-month horizon is the primary public-value research view because it matures sooner and "
+    "has materially more support than 24 months. Available 2024+ outcomes were previously used in "
+    "frozen V1 verification, so they are not a pristine final test for the repaired model; goalkeeper "
+    "skill also remains uncertain under the strict subgroup gate. Public "
+    "market value remains an estimate, not a guaranteed fee, accounting value, or sale result."
+)
+PROVISIONAL_24M_VALUE_WARNING = (
+    "Provisional 24-month estimate: historical rolling-origin evidence is positive, but available "
+    "2024+ outcomes were previously used in frozen V1 verification and are not a pristine V2 test. "
+    "Only 26 complete-feature, player-disjoint 2024 outcomes are observable, with as few as 3 in one "
+    "Big Five league. Do not treat this as a production-validated probability."
+)
 
 
 def _finite_number(value: Any, field: str, *, positive: bool = False) -> float:
@@ -352,10 +366,29 @@ def build_extension_business_profile(
     else:
         cards["asset_value"].append(_metric(
             "value_preservation_probability_24m", "24-month value preservation probability", 1 - value_10_24m, "probability",
-            "model_probability", "supported_candidate",
+            "model_probability", "provisional_pending_later_validation",
             "Probability the player retains at least 90% of current public market value through 24 months.",
-            "Public-value preservation, not accounting value, sale proceeds, or a guarantee.",
+            PROVISIONAL_24M_VALUE_WARNING,
             {"public_value_downside_10pct_probability_24m": value_10_24m},
+        ))
+
+    if value_25_12m is None:
+        cards["asset_value"].append(_unavailable(
+            "public_value_downside_25pct_scenario_12m", "12-month public-value downside scenario", "The approved Phase-3 12-month 25% downside probability is unavailable.",
+        ))
+    else:
+        cards["asset_value"].append(_metric(
+            "public_value_downside_25pct_scenario_12m", "12-month public-value downside scenario",
+            {"probability": value_25_12m, "minimum_threshold_eur": market * .25}, "probability_and_EUR",
+            "paired_probability_scenario", "primary_horizon_candidate",
+            "Probability and minimum euro threshold defining a 25% public-value decline within 12 months.",
+            PRIMARY_VALUE_HORIZON_WARNING,
+            {
+                "current_public_market_value_eur": market,
+                "downside_threshold_pct": .25,
+                "horizon_months": 12,
+                "evidence_policy": "primary_horizon",
+            },
         ))
 
     if value_25 is None:
@@ -366,19 +399,33 @@ def build_extension_business_profile(
         cards["asset_value"].append(_metric(
             "public_value_downside_25pct_scenario", "24-month public-value downside scenario",
             {"probability": value_25, "minimum_threshold_eur": market * .25}, "probability_and_EUR",
-            "paired_probability_scenario", "supported_paired_display",
+            "paired_probability_scenario", "provisional_pending_later_validation",
             "Probability and minimum euro threshold defining a 25% public-value decline.",
-            "Do not multiply into expected loss; public market value is not sale proceeds, impairment, or book value.",
-            {"current_public_market_value_eur": market, "downside_threshold_pct": .25},
+            PROVISIONAL_24M_VALUE_WARNING,
+            {
+                "current_public_market_value_eur": market,
+                "downside_threshold_pct": .25,
+                "horizon_months": 24,
+                "evidence_policy": "provisional_pending_later_validation",
+                "later_player_disjoint_rows": 26,
+                "smallest_big_five_league_rows": 3,
+            },
         ))
     if value_50 is not None:
         cards["asset_value"].append(_metric(
             "public_value_downside_50pct_scenario", "Severe 24-month public-value downside scenario",
             {"probability": value_50, "minimum_threshold_eur": market * .50}, "probability_and_EUR",
-            "paired_probability_scenario", "supported_paired_display_detail",
+            "paired_probability_scenario", "provisional_pending_later_validation",
             "Probability and minimum euro threshold defining a 50% public-value decline.",
-            "Do not multiply into expected loss; this is a public-value threshold scenario.",
-            {"current_public_market_value_eur": market, "downside_threshold_pct": .50},
+            PROVISIONAL_24M_VALUE_WARNING,
+            {
+                "current_public_market_value_eur": market,
+                "downside_threshold_pct": .50,
+                "horizon_months": 24,
+                "evidence_policy": "provisional_pending_later_validation",
+                "later_player_disjoint_rows": 26,
+                "smallest_big_five_league_rows": 3,
+            },
         ))
 
     cards["continuity"].append(_metric(

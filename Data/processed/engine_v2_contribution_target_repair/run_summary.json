@@ -1,0 +1,25 @@
+{
+  "all_checks_passed": true,
+  "annual_shares_capped": 6,
+  "checks_passed": 14,
+  "checks_total": 14,
+  "complete_evaluation_rows": 878,
+  "complete_positive_targets": 438,
+  "deployment_artifacts_changed": 0,
+  "development_cutoff_year": 2023,
+  "evaluation_reference_years": [
+    2020,
+    2023
+  ],
+  "final_holdout_evaluated": false,
+  "legacy_evaluation_rows": 929,
+  "models_fitted": 0,
+  "preexisting_v1_freeze_divergences": [
+    "Data/processed/deployment_models/live_request_integrity.csv",
+    "Data/processed/deployment_models/live_request_integrity.json"
+  ],
+  "release_status": "target_contract_repaired_development_only_model_rerun_not_started",
+  "schedule_exclusions_after_symmetric_gate": 44,
+  "stage": "complete_contribution_target_repair_run_1",
+  "symmetric_evaluation_rows": 922
+}

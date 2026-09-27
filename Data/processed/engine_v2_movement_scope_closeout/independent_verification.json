@@ -132,9 +132,21 @@
       "passed": true
     },
     {
-      "check": "v1_frozen_before_rerun",
-      "expected": true,
-      "observed": true,
+      "check": "v1_serialized_models_frozen_before_rerun",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check": "v1_freeze_manifest_exceptions_disclosed_before_rerun",
+      "expected": [
+        "Data/processed/deployment_models/live_request_integrity.csv",
+        "Data/processed/deployment_models/live_request_integrity.json"
+      ],
+      "observed": [
+        "Data/processed/deployment_models/live_request_integrity.csv",
+        "Data/processed/deployment_models/live_request_integrity.json"
+      ],
       "passed": true
     },
     {
@@ -161,17 +173,33 @@
       "passed": true
     },
     {
-      "check": "v1_frozen_after_rerun",
-      "expected": true,
-      "observed": true,
+      "check": "v1_serialized_models_frozen_after_rerun",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check": "v1_freeze_manifest_exceptions_disclosed_after_rerun",
+      "expected": [
+        "Data/processed/deployment_models/live_request_integrity.csv",
+        "Data/processed/deployment_models/live_request_integrity.json"
+      ],
+      "observed": [
+        "Data/processed/deployment_models/live_request_integrity.csv",
+        "Data/processed/deployment_models/live_request_integrity.json"
+      ],
       "passed": true
     }
   ],
-  "checks_passed": 20,
-  "checks_total": 20,
+  "checks_passed": 22,
+  "checks_total": 22,
   "clean_closeout_rerun_byte_identical": true,
   "deployment_changed": false,
   "development_evidence_maximum_absolute_error": 0.0,
   "final_holdout_opened": false,
-  "v1_unchanged": true
+  "v1_freeze_manifest_changed_files": [
+    "Data/processed/deployment_models/live_request_integrity.csv",
+    "Data/processed/deployment_models/live_request_integrity.json"
+  ],
+  "v1_serialized_models_unchanged": true
 }

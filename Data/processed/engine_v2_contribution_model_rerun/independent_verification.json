@@ -1,0 +1,8 @@
+{
+  "all_checks_passed": true,
+  "checks_passed": 21,
+  "checks_total": 21,
+  "deployment_changed": false,
+  "final_holdout_evaluated": false,
+  "independent_model_refits": 24
+}

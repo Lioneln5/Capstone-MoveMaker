@@ -10,6 +10,13 @@ Release-blocking failures are maintained separately in
 [`docs/ENGINE_V2_CRITICAL_ISSUES.md`](../docs/ENGINE_V2_CRITICAL_ISSUES.md) and
 must not be diluted into ordinary phase notes.
 
+The original twelve findings that triggered the V2 program, together with an
+explicit `FIXED`, `CONTAINED`, `DEFERRED`, or `OPEN` status for each, are
+preserved in
+[`docs/ENGINE_V2_ORIGINAL_AUDIT.md`](../docs/ENGINE_V2_ORIGINAL_AUDIT.md).
+Verify that ledger and its shared Ridge-explainer repair with
+`python scripts/verify_engine_v2_original_audit.py`.
+
 | Stage | Status | Runner | Verifier | Evidence |
 | --- | --- | --- | --- | --- |
 | Phase 0: V1 freeze and containment | Complete | — | `python scripts/verify_engine_v1_freeze.py` | `docs/ENGINE_V1_FREEZE.md` |
@@ -17,8 +24,15 @@ must not be diluted into ordinary phase notes.
 | Phase 2: endpoint and feature specification | Complete; candidates only, not deployed | `python models/run_engine_v2_feature_specification.py` | `python scripts/verify_engine_v2_feature_specification.py` | `Data/processed/engine_v2_feature_specification/` |
 | Phase 3: calibration, uncertainty, subgroup, and OOD reliability | Complete; role/value candidates advance, continuity blocked, none deployed | `python models/run_engine_v2_calibration_reliability.py` | `python scripts/verify_engine_v2_calibration_reliability.py` | `Data/processed/engine_v2_calibration_reliability/` |
 | Phase 4: continuity repair, wage audit, and versioned result contract | Complete; continuity still blocked by Ligue 1 reliability, none deployed | `python models/run_engine_v2_candidate_contract.py` | `python scripts/verify_engine_v2_candidate_contract.py` | `Data/processed/engine_v2_candidate_contract/` |
-| Phase 5: final-evaluation readiness and sealed wage holdout | Complete; predictive holdouts remain closed, wage candidate failed Ligue 1 coverage, none deployed | `python models/run_engine_v2_final_evaluation_gate.py` | `python scripts/verify_engine_v2_final_evaluation_gate.py` | `Data/processed/engine_v2_final_evaluation_gate/` |
+| Phase 5: final-evaluation readiness and sealed wage holdout | Complete and corrected; value 2024+ was already exposed by V1 verification, wage candidate failed Ligue 1 coverage, none deployed | `python models/run_engine_v2_final_evaluation_gate.py` | `python scripts/verify_engine_v2_final_evaluation_gate.py` | `Data/processed/engine_v2_final_evaluation_gate/` |
+| Public-value downside repair | Development cleanup; proposal-free 12m primary and 24m secondary candidates use only player-disjoint 2020–2023 origins; no deployment | `python models/run_engine_v2_public_value_downside_repair.py` | `python scripts/verify_engine_v2_public_value_downside_repair.py` | `Data/processed/engine_v2_public_value_downside_repair/` |
 | Movement-scope closeout | Complete; generic continuity retired, replacement questions separated, none deployed | `python models/run_engine_v2_movement_scope_closeout.py` | `python scripts/verify_engine_v2_movement_scope_closeout.py` | `Data/processed/engine_v2_movement_scope_closeout/` |
+| Future-role target validity audit | Complete; current target blocked as a pure role outcome, no model fitted | `python models/run_engine_v2_future_role_target_audit.py` | `python scripts/verify_engine_v2_future_role_target_audit.py` | `Data/processed/engine_v2_future_role_target_audit/` |
+| Symmetric contribution evidence | Complete; Year-1/Year-2 evidence enforced, seven invalid labels removed, remaining target repairs still blocked | `python models/run_engine_v2_symmetric_contribution_evidence.py` | `python scripts/verify_engine_v2_symmetric_contribution_evidence.py` | `Data/processed/engine_v2_symmetric_contribution_evidence/` |
+| Complete contribution-target repair | Complete; schedule refusal and `[0,1]` normalization implemented, no model fitted or deployed | `python models/run_engine_v2_contribution_target_repair.py` | `python scripts/verify_engine_v2_contribution_target_repair.py` | `Data/processed/engine_v2_contribution_target_repair/` |
+| Repaired contribution development rerun | Complete; compact recent-involvement candidate advanced to reliability audit, not deployed | `python models/run_engine_v2_contribution_model_rerun.py` | `python scripts/verify_engine_v2_contribution_model_rerun.py` | `Data/processed/engine_v2_contribution_model_rerun/` |
+| Contribution reliability audit | Complete; pooled gates passed but the frozen all-group uncertainty gate failed, not deployed | `python models/run_engine_v2_contribution_reliability_audit.py` | `python scripts/verify_engine_v2_contribution_reliability_audit.py` | `Data/processed/engine_v2_contribution_reliability_audit/` |
+| Final case-study metric freeze | Complete; fifteen output families resolved, no model fit or deployment | `python models/run_case_study_metric_freeze.py` | `python scripts/verify_case_study_metric_freeze.py` | `Data/processed/case_study_metric_freeze/` |
 
 Phase 1 permits only research outcome scenarios conditional on an extension.
 It does not validate extend/do-not-extend recommendations because the sources
@@ -60,6 +74,34 @@ endpoint retirement rather than model repair. Meaningful Retention and
 Temporary Displacement Risk are separate development candidates; Permanent
 Separation is research-only and unavailable. The HTTP application has no V1
 scoring override, and no movement/retention probability is deployed.
+
+The future-role target audit then tests the contribution component itself.
+It finds an asymmetric Year-1 evidence gate, materially incomplete annual club
+schedules around relegation/top-flight exit, movement-driven labels, and a
+semantic difference between realized contribution and role when available.
+The frozen target remains historical evidence only. Meaningful Retention is
+blocked until its realized-contribution component is rebuilt and all affected
+development evidence is rerun.
+
+The complete contribution-target repair then rebuilds that component as a
+versioned nullable target. It requires both annual evidence gates, at least 80%
+of the contemporaneous original-league peer schedule in each exact window, and
+bounded opportunity shares. This closes target construction only: no model was
+fit, and Meaningful Retention remains blocked pending a complete development
+rerun and later untouched player-disjoint temporal evaluation.
+
+The subsequent repaired development rerun selected the compact recent-
+involvement candidate. Its reliability audit retained positive pooled signal,
+calibration, uncertainty, refusal, drift, and monotonicity results, but only
+six of nine core league/position groups cleared the frozen 99% skill gate.
+That model is therefore qualified case-study evidence rather than a live
+all-Big-Five probability. Meaningful Retention still requires a new joint-model
+rerun because its earlier evidence predates this target repair.
+
+The final case-study freeze resolves every current output family without
+fitting another model. Its dispositions supersede older advancement language
+where a later target repair, final holdout, or scope decision changed the
+conclusion.
 
 ## Current incumbent-extension pipeline
 
@@ -117,6 +159,9 @@ for regression testing and historical audit; they are not enabled by default.
 | Lagged club behavior | Research only; no block promoted | `models/run_engine_v2_lagged_club_behavior_experiment.py` | `scripts/verify_engine_v2_lagged_club_behavior.py` | `Data/processed/engine_v2_lagged_club_behavior_experiment/` |
 | Role trajectory and squad competition | Research/descriptive only; no block promoted | `models/run_engine_v2_role_squad_experiment.py` | `scripts/verify_engine_v2_role_squad.py` | `Data/processed/engine_v2_role_squad_experiment/` |
 | Manager and tactical context | Research/descriptive only; no block promoted | `models/run_engine_v2_manager_tactical_experiment.py` | `scripts/verify_engine_v2_manager_tactical.py` | `Data/processed/engine_v2_manager_tactical_experiment/` |
+| Repaired contribution target | Target construction complete; no model promotion | `models/run_engine_v2_contribution_target_repair.py` | `scripts/verify_engine_v2_contribution_target_repair.py` | `Data/processed/engine_v2_contribution_target_repair/` |
+| Repaired contribution model rerun | Run 2 development candidate advanced to reliability audit; not deployed | `models/run_engine_v2_contribution_model_rerun.py` | `scripts/verify_engine_v2_contribution_model_rerun.py` | `Data/processed/engine_v2_contribution_model_rerun/` |
+| Repaired contribution reliability audit | Run 3 passed pooled reliability but failed all-league/all-position uncertainty gate; not deployed | `models/run_engine_v2_contribution_reliability_audit.py` | `scripts/verify_engine_v2_contribution_reliability_audit.py` | `Data/processed/engine_v2_contribution_reliability_audit/` |
 
 Do not promote candidate `.joblib` files directly. A production change requires backup, full-history refit through the declared cutoff, manifest update, cross-path scoring parity, endpoint smoke tests, explainability reconstruction, and independent verification.
 

@@ -238,8 +238,26 @@ def main() -> None:
     origins = pd.read_csv(DIAGNOSTIC / "binary_endpoint_origin_metrics.csv")
     add("final_holdout_sealed", origins.evaluation_year.max() == 2023, origins.evaluation_year.max(), 2023)
     freeze = json.loads(FREEZE.read_text(encoding="utf-8"))
-    frozen = all(sha256(ROOT / item["path"]) == item["sha256"] for item in freeze["files"])
-    add("v1_frozen_before_rerun", frozen, frozen, True)
+    known_report_changes = {
+        "Data/processed/deployment_models/live_request_integrity.csv",
+        "Data/processed/deployment_models/live_request_integrity.json",
+    }
+
+    def freeze_state() -> tuple[list[str], list[str]]:
+        changed = [
+            item["path"] for item in freeze["files"]
+            if sha256(ROOT / item["path"]) != item["sha256"]
+        ]
+        return changed, [path for path in changed if path.endswith(".joblib")]
+
+    changed_before, changed_models_before = freeze_state()
+    add("v1_serialized_models_frozen_before_rerun", not changed_models_before, changed_models_before, [])
+    add(
+        "v1_freeze_manifest_exceptions_disclosed_before_rerun",
+        set(changed_before) == known_report_changes,
+        changed_before,
+        sorted(known_report_changes),
+    )
 
     local_only = [
         "Data/processed/engine_v2_manager_tactical_experiment/binary_predictions.csv",
@@ -269,10 +287,14 @@ def main() -> None:
 
     rerun_match = clean_rerun_matches()
     add("clean_closeout_rerun", rerun_match, rerun_match, True)
-    frozen_after = all(
-        sha256(ROOT / item["path"]) == item["sha256"] for item in freeze["files"]
+    changed_after, changed_models_after = freeze_state()
+    add("v1_serialized_models_frozen_after_rerun", not changed_models_after, changed_models_after, [])
+    add(
+        "v1_freeze_manifest_exceptions_disclosed_after_rerun",
+        set(changed_after) == known_report_changes,
+        changed_after,
+        sorted(known_report_changes),
     )
-    add("v1_frozen_after_rerun", frozen_after, frozen_after, True)
 
     checks = pd.DataFrame(rows)
     print(checks.to_string(index=False))
@@ -286,7 +308,8 @@ def main() -> None:
         "clean_closeout_rerun_byte_identical": rerun_match,
         "final_holdout_opened": False,
         "deployment_changed": False,
-        "v1_unchanged": frozen_after,
+        "v1_serialized_models_unchanged": not changed_models_after,
+        "v1_freeze_manifest_changed_files": changed_after,
         "checks": checks.to_dict("records"),
     }
     (OUTPUT / "independent_verification.json").write_text(

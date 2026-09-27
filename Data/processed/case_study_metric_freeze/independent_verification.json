@@ -1,0 +1,8 @@
+{
+  "all_checks_passed": true,
+  "checks_passed": 42,
+  "checks_total": 42,
+  "deployment_changed": false,
+  "freeze_version": "movemaker_case_study_metric_freeze_v1_2026-09-10",
+  "model_artifacts_created": 0
+}

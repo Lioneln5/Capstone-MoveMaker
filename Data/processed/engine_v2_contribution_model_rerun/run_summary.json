@@ -1,0 +1,22 @@
+{
+  "all_checks_passed": true,
+  "checks_passed": 15,
+  "checks_total": 15,
+  "deployment_changed": false,
+  "development_evaluation_years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "evaluation_rows": 878,
+  "final_holdout_evaluated": false,
+  "model_binaries_written": 0,
+  "model_contract_version": "engine_v2_contribution_model_run2_v1_2026-09-08",
+  "models_fitted_in_memory": true,
+  "player_disjoint_primary": true,
+  "run2_decision": "advance_to_reliability_audit",
+  "selected_development_candidate": "B2_core_recent_involvement",
+  "stage": "engine_v2_repaired_contribution_model_run2",
+  "target_contract_version": "engine_v2_sustained_realized_contribution_v2_2026-09-07"
+}

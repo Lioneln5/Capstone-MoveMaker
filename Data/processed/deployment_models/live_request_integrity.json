@@ -1,8 +1,8 @@
 {
-  "checks_passed": 14,
-  "checks_total": 14,
+  "checks_passed": 16,
+  "checks_total": 16,
   "all_checks_passed": true,
-  "run_date": "2026-08-22",
+  "run_date": "2026-09-24",
   "data_source_cutoffs": {
     "salary_panel_max_season_start_year": 2026,
     "sporting_data_max_date": "2026-07-06"

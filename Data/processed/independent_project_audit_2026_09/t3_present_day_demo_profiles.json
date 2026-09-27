@@ -1,0 +1,828 @@
+{
+  "bellingham": {
+    "search_hit": {
+      "canonical_player_id": 581678,
+      "display_name": "Jude Bellingham",
+      "player_name_normalized": "judebellingham",
+      "date_of_birth": "2003-06-29",
+      "position": "Midfield",
+      "current_club_id": 418,
+      "current_club_name": "Real Madrid",
+      "competition_id": "ES1",
+      "last_appearance_date": "2026-05-23"
+    },
+    "input_defaults": {
+      "current_public_market_value_eur": 160000000.0,
+      "market_value_date": "2025-12-12",
+      "market_value_age_days": 271,
+      "latest_known_same_club_annual_wage_eur": 20830000.0,
+      "wage_source_season_start_year": 2026,
+      "wage_source_season": "2026-2027",
+      "current_decision_season": "2026-2027",
+      "wage_is_current_season": true
+    },
+    "proposed_wage_used": 20830000.0,
+    "proposed_years": 3.0,
+    "status": "scored",
+    "model_vintage": "deployment_v1_cutoff_2023",
+    "incumbency_verified": true,
+    "data_density_warning": "This player's market value (EUR 160,000,000) is at the 99.9% percentile of the peer-benchmark training data (only 3 of 2585 historical extensions had a comparable-or-higher market value). Every model in this profile is extrapolating in this range, not interpolating -- treat all estimates, and the peer-commitment benchmark especially, as directional only.",
+    "market_value_training_percentile": 0.9992,
+    "upstream_feature_warnings": [
+      "the pre-365-day sporting window extends 65 day(s) past the last date our sporting data actually covers -- that portion is not observed, not confirmed empty, so recent involvement may be undercounted here. This gap grows every day the sporting-data snapshot isn't refreshed.",
+      "club salary panel context computed from 22 known rows (proposal included); panel is not audited total payroll."
+    ],
+    "upstream_feature_unavailable": {
+      "pre1_fbref_expected_goals": "advanced FBref features unavailable in the matched completed-season snapshot",
+      "pre1_fbref_progressive_carries": "advanced FBref features unavailable in the matched completed-season snapshot",
+      "pre1_fbref_progressive_passes": "advanced FBref features unavailable in the matched completed-season snapshot",
+      "pre1_fbref_pass_completion_pct": "advanced FBref features unavailable in the matched completed-season snapshot"
+    },
+    "availability": {
+      "available_metrics": 18,
+      "unavailable_metrics": 0
+    },
+    "cards": {
+      "capital_commitment": [
+        {
+          "metric": "fixed_wage_commitment_eur",
+          "status": "supported",
+          "value": 62490000.0
+        },
+        {
+          "metric": "fixed_commitment_to_public_value",
+          "status": "supported_proxy",
+          "value": 0.3905625
+        },
+        {
+          "metric": "age_at_expiration",
+          "status": "supported",
+          "value": 26.197809719370294
+        },
+        {
+          "metric": "proposed_wage_change_pct",
+          "status": "supported_when_prior_wage_known",
+          "value": -1.7763568394002505e-15
+        }
+      ],
+      "offer_context": [
+        {
+          "metric": "fixed_commitment_peer_difference_eur",
+          "status": "supported",
+          "value": -41634704.71004529
+        },
+        {
+          "metric": "offer_aggressiveness_percentile",
+          "status": "supported_with_frozen_reference",
+          "value": 0.2081117021276596
+        },
+        {
+          "metric": "contract_duration_peer_delta_years",
+          "status": "supported",
+          "value": -1.7494654157427494
+        },
+        {
+          "metric": "wage_to_market_value_peer_comparison",
+          "status": "supported",
+          "value": 0.22966908447279843
+        }
+      ],
+      "contribution_exposure": [
+        {
+          "metric": "low_contribution_wage_exposure_eur",
+          "status": "supported_proxy",
+          "value": 9151423.92556557
+        }
+      ],
+      "asset_value": [
+        {
+          "metric": "value_preservation_probability_12m",
+          "status": "supported_candidate",
+          "value": 0.4922184630505786
+        },
+        {
+          "metric": "value_preservation_probability_24m",
+          "status": "supported_candidate",
+          "value": 0.19228155876406927
+        },
+        {
+          "metric": "public_value_downside_25pct_scenario",
+          "status": "supported_paired_display",
+          "value": {
+            "probability": 0.6453152675266212,
+            "minimum_threshold_eur": 40000000.0
+          }
+        },
+        {
+          "metric": "public_value_downside_50pct_scenario",
+          "status": "supported_paired_display_detail",
+          "value": {
+            "probability": 0.24227657270946826,
+            "minimum_threshold_eur": 80000000.0
+          }
+        }
+      ],
+      "continuity": [
+        {
+          "metric": "scheduled_fixed_wages_after_36m_eur",
+          "status": "supported",
+          "value": 0.0
+        },
+        {
+          "metric": "contract_continuity_horizon",
+          "status": "supported_paired_display",
+          "value": {
+            "continuous_stay_probability_36m": 0.4599537828785165,
+            "scheduled_fixed_wages_after_36m_eur": 0.0
+          }
+        },
+        {
+          "metric": "permanent_relationship_probability_24m",
+          "status": "supported_candidate",
+          "value": 0.8063556701448182
+        }
+      ],
+      "salary_structure": [
+        {
+          "metric": "club_salary_percentile",
+          "status": "supported_when_matched",
+          "value": 0.9090909090909091
+        },
+        {
+          "metric": "club_known_payroll_share",
+          "status": "supported_when_matched",
+          "value": 0.07058145838980753
+        }
+      ]
+    },
+    "explainability": {
+      "sustained_contribution": {
+        "status": "available",
+        "probability": 0.7803,
+        "ordering_correction_applied": false,
+        "top": [
+          [
+            "League",
+            0.2845,
+            true
+          ],
+          [
+            "Wage share of known club payroll",
+            0.2472,
+            true
+          ],
+          [
+            "Position in club's wage structure",
+            0.2217,
+            true
+          ],
+          [
+            "Proposed contract length",
+            -0.1627,
+            false
+          ],
+          [
+            "Recent appearance rate (same club)",
+            0.1601,
+            true
+          ],
+          [
+            "Market value",
+            0.1498,
+            true
+          ]
+        ]
+      },
+      "public_value_downside_risk": {
+        "status": "available",
+        "probability": 0.6453,
+        "ordering_correction_applied": false,
+        "top": [
+          [
+            "Market value",
+            1.2381,
+            false
+          ],
+          [
+            "Age (at signing)",
+            -0.4764,
+            true
+          ],
+          [
+            "Age (at contract end)",
+            -0.4625,
+            true
+          ],
+          [
+            "Current annual wage",
+            0.2281,
+            false
+          ],
+          [
+            "Proposed wage / market value",
+            0.195,
+            false
+          ],
+          [
+            "Total fixed-wage commitment",
+            -0.1879,
+            true
+          ]
+        ]
+      },
+      "continuity": {
+        "status": "available",
+        "probability": 0.6271,
+        "ordering_correction_applied": false,
+        "top": [
+          [
+            "Total fixed-wage commitment",
+            -0.4784,
+            true
+          ],
+          [
+            "Market value",
+            0.2508,
+            false
+          ],
+          [
+            "League",
+            -0.2005,
+            true
+          ],
+          [
+            "Current annual wage",
+            0.1563,
+            false
+          ],
+          [
+            "Wage share of known club payroll",
+            -0.1172,
+            true
+          ],
+          [
+            "Minutes played (2 seasons ago)",
+            -0.0909,
+            true
+          ]
+        ]
+      }
+    }
+  },
+  "haaland": {
+    "search_hit": {
+      "canonical_player_id": 418560,
+      "display_name": "Erling Haaland",
+      "player_name_normalized": "erlinghaaland",
+      "date_of_birth": "2000-07-21",
+      "position": "Attack",
+      "current_club_id": 281,
+      "current_club_name": "Manchester City",
+      "competition_id": "GB1",
+      "last_appearance_date": "2026-05-19"
+    },
+    "input_defaults": {
+      "current_public_market_value_eur": 200000000.0,
+      "market_value_date": "2025-12-09",
+      "market_value_age_days": 274,
+      "latest_known_same_club_annual_wage_eur": 31964283.0,
+      "wage_source_season_start_year": 2026,
+      "wage_source_season": "2026-2027",
+      "current_decision_season": "2026-2027",
+      "wage_is_current_season": true
+    },
+    "proposed_wage_used": 31964283.0,
+    "proposed_years": 3.0,
+    "status": "scored",
+    "model_vintage": "deployment_v1_cutoff_2023",
+    "incumbency_verified": true,
+    "data_density_warning": "This player's market value (EUR 200,000,000) is at the 100.0% percentile of the peer-benchmark training data (only 1 of 2585 historical extensions had a comparable-or-higher market value). Every model in this profile is extrapolating in this range, not interpolating -- treat all estimates, and the peer-commitment benchmark especially, as directional only.",
+    "market_value_training_percentile": 1.0,
+    "upstream_feature_warnings": [
+      "the pre-365-day sporting window extends 65 day(s) past the last date our sporting data actually covers -- that portion is not observed, not confirmed empty, so recent involvement may be undercounted here. This gap grows every day the sporting-data snapshot isn't refreshed.",
+      "club salary panel context computed from 29 known rows (proposal included); panel is not audited total payroll."
+    ],
+    "upstream_feature_unavailable": {
+      "pre1_fbref_expected_goals": "advanced FBref features unavailable in the matched completed-season snapshot",
+      "pre1_fbref_progressive_carries": "advanced FBref features unavailable in the matched completed-season snapshot",
+      "pre1_fbref_progressive_passes": "advanced FBref features unavailable in the matched completed-season snapshot",
+      "pre1_fbref_pass_completion_pct": "advanced FBref features unavailable in the matched completed-season snapshot"
+    },
+    "availability": {
+      "available_metrics": 18,
+      "unavailable_metrics": 0
+    },
+    "cards": {
+      "capital_commitment": [
+        {
+          "metric": "fixed_wage_commitment_eur",
+          "status": "supported",
+          "value": 95892849.0
+        },
+        {
+          "metric": "fixed_commitment_to_public_value",
+          "status": "supported_proxy",
+          "value": 0.479464245
+        },
+        {
+          "metric": "age_at_expiration",
+          "status": "supported",
+          "value": 29.135523613963038
+        },
+        {
+          "metric": "proposed_wage_change_pct",
+          "status": "supported_when_prior_wage_known",
+          "value": -4.440892098500626e-16
+        }
+      ],
+      "offer_context": [
+        {
+          "metric": "fixed_commitment_peer_difference_eur",
+          "status": "supported",
+          "value": -31320035.04594505
+        },
+        {
+          "metric": "offer_aggressiveness_percentile",
+          "status": "supported_with_frozen_reference",
+          "value": 0.2759308510638298
+        },
+        {
+          "metric": "contract_duration_peer_delta_years",
+          "status": "supported",
+          "value": -1.5006054440021463
+        },
+        {
+          "metric": "wage_to_market_value_peer_comparison",
+          "status": "supported",
+          "value": 0.0705656358067066
+        }
+      ],
+      "contribution_exposure": [
+        {
+          "metric": "low_contribution_wage_exposure_eur",
+          "status": "supported_proxy",
+          "value": 12353308.102242878
+        }
+      ],
+      "asset_value": [
+        {
+          "metric": "value_preservation_probability_12m",
+          "status": "supported_candidate",
+          "value": 0.2032852133011248
+        },
+        {
+          "metric": "value_preservation_probability_24m",
+          "status": "supported_candidate",
+          "value": 0.1010745681542562
+        },
+        {
+          "metric": "public_value_downside_25pct_scenario",
+          "status": "supported_paired_display",
+          "value": {
+            "probability": 0.8349996258216326,
+            "minimum_threshold_eur": 50000000.0
+          }
+        },
+        {
+          "metric": "public_value_downside_50pct_scenario",
+          "status": "supported_paired_display_detail",
+          "value": {
+            "probability": 0.43807547265027047,
+            "minimum_threshold_eur": 100000000.0
+          }
+        }
+      ],
+      "continuity": [
+        {
+          "metric": "scheduled_fixed_wages_after_36m_eur",
+          "status": "supported",
+          "value": 0.0
+        },
+        {
+          "metric": "contract_continuity_horizon",
+          "status": "supported_paired_display",
+          "value": {
+            "continuous_stay_probability_36m": 0.3088847262732317,
+            "scheduled_fixed_wages_after_36m_eur": 0.0
+          }
+        },
+        {
+          "metric": "permanent_relationship_probability_24m",
+          "status": "supported_candidate",
+          "value": 0.6917731740682623
+        }
+      ],
+      "salary_structure": [
+        {
+          "metric": "club_salary_percentile",
+          "status": "supported_when_matched",
+          "value": 1.0
+        },
+        {
+          "metric": "club_known_payroll_share",
+          "status": "supported_when_matched",
+          "value": 0.11700468191751333
+        }
+      ]
+    },
+    "explainability": {
+      "sustained_contribution": {
+        "status": "available",
+        "probability": 0.8068,
+        "ordering_correction_applied": false,
+        "top": [
+          [
+            "Wage share of known club payroll",
+            0.5501,
+            true
+          ],
+          [
+            "Recent-365d same club all competition opportunity share",
+            0.3131,
+            true
+          ],
+          [
+            "Position in club's wage structure",
+            0.2661,
+            true
+          ],
+          [
+            "Recent appearance rate (same club)",
+            0.2416,
+            true
+          ],
+          [
+            "Proposed contract length",
+            -0.1627,
+            false
+          ],
+          [
+            "Market value",
+            0.1599,
+            true
+          ]
+        ]
+      },
+      "public_value_downside_risk": {
+        "status": "available",
+        "probability": 0.835,
+        "ordering_correction_applied": false,
+        "top": [
+          [
+            "Market value",
+            1.311,
+            false
+          ],
+          [
+            "Pre1 canonical goals per90",
+            0.281,
+            false
+          ],
+          [
+            "Current annual wage",
+            0.262,
+            false
+          ],
+          [
+            "Recent-365d same club all competition opportunity share",
+            -0.2457,
+            true
+          ],
+          [
+            "Total fixed-wage commitment",
+            -0.2132,
+            true
+          ],
+          [
+            "Wage change vs. prior season",
+            0.1836,
+            false
+          ]
+        ]
+      },
+      "continuity": {
+        "status": "available",
+        "probability": 0.4928,
+        "ordering_correction_applied": false,
+        "top": [
+          [
+            "Total fixed-wage commitment",
+            -0.5482,
+            true
+          ],
+          [
+            "Goals per 90 (last 365 days)",
+            0.2941,
+            false
+          ],
+          [
+            "Market value",
+            0.2648,
+            false
+          ],
+          [
+            "Wage share of known club payroll",
+            -0.2482,
+            true
+          ],
+          [
+            "Goals per 90 (2 seasons ago)",
+            0.243,
+            false
+          ],
+          [
+            "Position",
+            0.1817,
+            false
+          ]
+        ]
+      }
+    }
+  },
+  "mbapp": {
+    "search_hit": {
+      "canonical_player_id": 342229,
+      "display_name": "Kylian Mbapp\u00e9",
+      "player_name_normalized": "kylianmbappe",
+      "date_of_birth": "1998-12-20",
+      "position": "Attack",
+      "current_club_id": 418,
+      "current_club_name": "Real Madrid",
+      "competition_id": "ES1",
+      "last_appearance_date": "2026-05-23"
+    },
+    "input_defaults": {
+      "current_public_market_value_eur": 180000000.0,
+      "market_value_date": "2025-06-08",
+      "market_value_age_days": 458,
+      "latest_known_same_club_annual_wage_eur": 31250000.0,
+      "wage_source_season_start_year": 2026,
+      "wage_source_season": "2026-2027",
+      "current_decision_season": "2026-2027",
+      "wage_is_current_season": true
+    },
+    "proposed_wage_used": 31250000.0,
+    "proposed_years": 3.0,
+    "status": "scored",
+    "model_vintage": "deployment_v1_cutoff_2023",
+    "incumbency_verified": true,
+    "data_density_warning": "This player's market value (EUR 180,000,000) is at the 100.0% percentile of the peer-benchmark training data (only 2 of 2585 historical extensions had a comparable-or-higher market value). Every model in this profile is extrapolating in this range, not interpolating -- treat all estimates, and the peer-commitment benchmark especially, as directional only.",
+    "market_value_training_percentile": 0.9996,
+    "upstream_feature_warnings": [
+      "the pre-365-day sporting window extends 65 day(s) past the last date our sporting data actually covers -- that portion is not observed, not confirmed empty, so recent involvement may be undercounted here. This gap grows every day the sporting-data snapshot isn't refreshed.",
+      "club salary panel context computed from 22 known rows (proposal included); panel is not audited total payroll."
+    ],
+    "upstream_feature_unavailable": {
+      "pre1_fbref_expected_goals": "advanced FBref features unavailable in the matched completed-season snapshot",
+      "pre1_fbref_progressive_carries": "advanced FBref features unavailable in the matched completed-season snapshot",
+      "pre1_fbref_progressive_passes": "advanced FBref features unavailable in the matched completed-season snapshot",
+      "pre1_fbref_pass_completion_pct": "advanced FBref features unavailable in the matched completed-season snapshot"
+    },
+    "availability": {
+      "available_metrics": 18,
+      "unavailable_metrics": 0
+    },
+    "cards": {
+      "capital_commitment": [
+        {
+          "metric": "fixed_wage_commitment_eur",
+          "status": "supported",
+          "value": 93750000.0
+        },
+        {
+          "metric": "fixed_commitment_to_public_value",
+          "status": "supported_proxy",
+          "value": 0.5208333333333334
+        },
+        {
+          "metric": "age_at_expiration",
+          "status": "supported",
+          "value": 30.720739219712527
+        },
+        {
+          "metric": "proposed_wage_change_pct",
+          "status": "supported_when_prior_wage_known",
+          "value": -2.220446049250313e-16
+        }
+      ],
+      "offer_context": [
+        {
+          "metric": "fixed_commitment_peer_difference_eur",
+          "status": "supported",
+          "value": -35367111.97274743
+        },
+        {
+          "metric": "offer_aggressiveness_percentile",
+          "status": "supported_with_frozen_reference",
+          "value": 0.26263297872340424
+        },
+        {
+          "metric": "contract_duration_peer_delta_years",
+          "status": "supported",
+          "value": -1.6056472070616623
+        },
+        {
+          "metric": "wage_to_market_value_peer_comparison",
+          "status": "supported",
+          "value": 0.1796969646755231
+        }
+      ],
+      "contribution_exposure": [
+        {
+          "metric": "low_contribution_wage_exposure_eur",
+          "status": "supported_proxy",
+          "value": 11742220.059410702
+        }
+      ],
+      "asset_value": [
+        {
+          "metric": "value_preservation_probability_12m",
+          "status": "supported_candidate",
+          "value": 0.12727004293323596
+        },
+        {
+          "metric": "value_preservation_probability_24m",
+          "status": "supported_candidate",
+          "value": 0.06508410990716929
+        },
+        {
+          "metric": "public_value_downside_25pct_scenario",
+          "status": "supported_paired_display",
+          "value": {
+            "probability": 0.888289720863209,
+            "minimum_threshold_eur": 45000000.0
+          }
+        },
+        {
+          "metric": "public_value_downside_50pct_scenario",
+          "status": "supported_paired_display_detail",
+          "value": {
+            "probability": 0.5482787117103035,
+            "minimum_threshold_eur": 90000000.0
+          }
+        }
+      ],
+      "continuity": [
+        {
+          "metric": "scheduled_fixed_wages_after_36m_eur",
+          "status": "supported",
+          "value": 0.0
+        },
+        {
+          "metric": "contract_continuity_horizon",
+          "status": "supported_paired_display",
+          "value": {
+            "continuous_stay_probability_36m": 0.31521121351572157,
+            "scheduled_fixed_wages_after_36m_eur": 0.0
+          }
+        },
+        {
+          "metric": "permanent_relationship_probability_24m",
+          "status": "supported_candidate",
+          "value": 0.7055719011514788
+        }
+      ],
+      "salary_structure": [
+        {
+          "metric": "club_salary_percentile",
+          "status": "supported_when_matched",
+          "value": 0.9772727272727273
+        },
+        {
+          "metric": "club_known_payroll_share",
+          "status": "supported_when_matched",
+          "value": 0.10588912984548658
+        }
+      ]
+    },
+    "explainability": {
+      "sustained_contribution": {
+        "status": "available",
+        "probability": 0.8121,
+        "ordering_correction_applied": false,
+        "top": [
+          [
+            "Wage share of known club payroll",
+            0.4776,
+            true
+          ],
+          [
+            "League",
+            0.2845,
+            true
+          ],
+          [
+            "Recent-365d same club all competition opportunity share",
+            0.2598,
+            true
+          ],
+          [
+            "Position in club's wage structure",
+            0.255,
+            true
+          ],
+          [
+            "Recent appearance rate (same club)",
+            0.1751,
+            true
+          ],
+          [
+            "Proposed contract length",
+            -0.1627,
+            false
+          ]
+        ]
+      },
+      "public_value_downside_risk": {
+        "status": "available",
+        "probability": 0.8883,
+        "ordering_correction_applied": false,
+        "top": [
+          [
+            "Market value",
+            1.2766,
+            false
+          ],
+          [
+            "Pre1 canonical goals per90",
+            0.2981,
+            false
+          ],
+          [
+            "Current annual wage",
+            0.2602,
+            false
+          ],
+          [
+            "Total fixed-wage commitment",
+            -0.2118,
+            true
+          ],
+          [
+            "Recent-365d same club all competition opportunity share",
+            -0.2087,
+            true
+          ],
+          [
+            "Wage change vs. prior season",
+            0.1836,
+            false
+          ]
+        ]
+      },
+      "continuity": {
+        "status": "available",
+        "probability": 0.4989,
+        "ordering_correction_applied": false,
+        "top": [
+          [
+            "Total fixed-wage commitment",
+            -0.5445,
+            true
+          ],
+          [
+            "Goals per 90 (last 365 days)",
+            0.3793,
+            false
+          ],
+          [
+            "Goals per 90 (2 seasons ago)",
+            0.3448,
+            false
+          ],
+          [
+            "Market value",
+            0.2582,
+            false
+          ],
+          [
+            "Wage share of known club payroll",
+            -0.2168,
+            true
+          ],
+          [
+            "League",
+            -0.2005,
+            true
+          ]
+        ]
+      }
+    }
+  },
+  "_probes": {
+    "arbitrary_club": {
+      "status": "scored",
+      "incumbency_verified": false,
+      "refusal_reason": null,
+      "upstream_feature_warnings": [
+        "no recorded senior appearance for canonical_player_id=581678 at canonical_club_id=985 before decision_date -- could be a genuine pre-debut/academy/injury-return extension, or a caller misusing this incumbent-club tool for new-club acquisition scoring. Confirm the club relationship independently before trusting this profile.",
+        "the pre-365-day sporting window extends 65 day(s) past the last date our sporting data actually covers -- that portion is not observed, not confirmed empty, so recent involvement may be undercounted here. This gap grows every day the sporting-data snapshot isn't refreshed.",
+        "club salary panel context computed from 27 known rows (proposal included); panel is not audited total payroll."
+      ]
+    },
+    "out_of_scope_league": {
+      "status": "refused",
+      "refusal_reason": "competition_id 'POR1' is outside the modeled Big-Five scope (GB1/ES1/IT1/L1/FR1); Phase 1-4 models have no training support outside it."
+    }
+  }
+}

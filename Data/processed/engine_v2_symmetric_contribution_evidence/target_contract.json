@@ -1,0 +1,22 @@
+{
+  "available_field": "sustained_realized_contribution_outcome_available",
+  "contract_version": "engine_v2_sustained_realized_contribution_v1_2026-09-04",
+  "deployment_status": "target_repair_step_1_only_not_deployed",
+  "final_holdout_policy": "2024+ outcomes are not evaluated by this repair stage",
+  "ineligible_policy": "target is unavailable; never coerce missing or ineligible evidence to zero",
+  "minimum_captured_club_games_each_year": 10,
+  "policy_threshold_each_year": 0.25,
+  "positive_rule": "Year-1 share >=25% AND Year-2 share >=25%",
+  "reason_field": "sustained_realized_contribution_unavailability_reason",
+  "remaining_blockers": [
+    "complete relegation/lower-tier club schedules or freeze a completeness refusal rule",
+    "cap normalized opportunity at 100% or use exact match-minute capacity",
+    "rerun affected development evidence after the complete target repair",
+    "later untouched player-disjoint temporal evaluation"
+  ],
+  "semantic_scope": "realized same-club contribution, not role when available",
+  "target_field": "target_sustained_realized_contribution_25pct",
+  "target_name": "sustained_realized_extension_club_contribution",
+  "year_1_rule": "fully observable AND >=10 captured extension-club matches AND nonmissing opportunity share",
+  "year_2_rule": "fully observable AND >=10 captured extension-club matches AND nonmissing opportunity share"
+}

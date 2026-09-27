@@ -1,0 +1,9 @@
+﻿protocol,origin_id,train_end_year,validation_year,evaluation_year,base_train_rows,tuning_train_rows,validation_rows,final_fit_rows,evaluation_rows,evaluation_events,evaluation_event_rate,rows_removed_for_validation_player_disjointness,rows_removed_for_evaluation_player_disjointness,tuning_validation_player_overlap,fit_evaluation_player_overlap
+player_disjoint,origin_2020,2018,2019,2020,142,137,218,346,212,99,0.4669811320754717,5,14,0,0
+player_disjoint,origin_2021,2019,2020,2021,360,346,212,539,225,119,0.5288888888888889,14,33,0,0
+player_disjoint,origin_2022,2020,2021,2022,572,539,225,754,206,105,0.5097087378640777,33,43,0,0
+player_disjoint,origin_2023,2021,2022,2023,797,754,206,924,235,115,0.48936170212765956,43,79,0,0
+ordinary_temporal_sensitivity,origin_2020,2018,2019,2020,142,142,218,360,212,99,0.4669811320754717,0,0,5,13
+ordinary_temporal_sensitivity,origin_2021,2019,2020,2021,360,360,212,572,225,119,0.5288888888888889,0,0,13,33
+ordinary_temporal_sensitivity,origin_2022,2020,2021,2022,572,572,225,797,206,105,0.5097087378640777,0,0,33,42
+ordinary_temporal_sensitivity,origin_2023,2021,2022,2023,797,797,206,1003,235,115,0.48936170212765956,0,0,42,69

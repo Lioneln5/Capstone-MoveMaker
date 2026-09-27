@@ -1,0 +1,8 @@
+﻿definition,interpretation,records,positive_outcomes,positive_rate,labels_changed_vs_current,label_change_rate_vs_current
+both_years_at_least_25pct,sustained annual floor; current definition,922,453,0.4913232104121475,0,0.0
+year2_only_at_least_25pct,end-horizon role only,922,494,0.5357917570498916,41,0.044468546637744036
+unweighted_mean_of_years_at_least_25pct,two-year average; gives both years equal weight,922,596,0.6464208242950108,143,0.15509761388286333
+game_weighted_730_day_share_at_least_25pct,cumulative two-year realized contribution,922,599,0.6496746203904555,146,0.15835140997830802
+either_year_at_least_25pct,meaningful involvement at some point,922,686,0.7440347071583514,233,0.2527114967462039
+both_years_at_least_20pct,lower sustained floor,922,483,0.5238611713665944,30,0.03253796095444685
+both_years_at_least_30pct,higher sustained floor,922,423,0.45878524945770066,30,0.03253796095444685
